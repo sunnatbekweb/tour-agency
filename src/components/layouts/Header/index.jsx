@@ -1,18 +1,18 @@
 import Link from "next/link"
 import React from "react"
-export default function Header() {
+export const Header = () => {
   return (
     <div>
       <header className="header bg-red-800">
         <div className="container header__container flex flex-row justify-between items-center px-6 py-12">
           <div className="header__left-box">
             <Link href={'/'}>
-              <img className="header__left-open-burger inline-block" src="/icons/open__burger.svg" alt="open__burger" />
+              <img className="header__left-open-burger inline-block w-[40px] h-[40px]" src="/icons/open__burger.svg" alt="open__burger" />
             </Link>
           </div>
           <div className="header__middle-box">
             <Link href={'/'}>
-              <img className="header__middle-mini-logo inline-block" src="/icons/mini__logo.svg" alt="mini__logo" />
+              <img className="header__middle-mini-logo inline-block w-[67px] h-[37px]" src="/icons/mini__logo.svg" alt="mini__logo" />
             </Link>
           </div>
           <div className="header__right-box bg-white/10 rounded-[33px] border-[#B9B9B9] flex flex-row justify-center items-center gap-x-[5px] py-[7.5px] px-[7.5px]">
