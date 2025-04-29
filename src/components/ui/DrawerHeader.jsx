@@ -70,7 +70,7 @@ export default function DrawerHeader({ modal, close }) {
                     ))}
                 </ul>
             </nav>
-            <div className="drawerHeader__contact-button mt-10 flex justify-center items-center">
+            <div className="drawerHeader__contact-button mt-8 flex justify-center items-center">
                 <ContactButton>Contact us</ContactButton>
             </div>
         </header>
