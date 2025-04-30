@@ -49,6 +49,9 @@ a {
   text-decoration: none;
   display: inline-block;
 }
+button {
+  cursor: pointer;
+}
 html {
   margin: 0;
   padding: 0;
