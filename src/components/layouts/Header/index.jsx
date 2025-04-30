@@ -1,14 +1,20 @@
-import Link from "next/link"
-import React from "react"
+"use client"
+import DrawerHeader from "@/components/ui/DrawerHeader"
+import { Link } from "@/i18n/navigation"
+import React, { useState } from "react"
 export const Header = () => {
+  const [isOpen, setIsOpen] = useState(false)
+  const closeBurger = () => {
+    setIsOpen(false)
+  }
   return (
     <div>
       <header className="header bg-red-800">
         <div className="container header__container flex flex-row justify-between items-center px-6 py-12">
           <div className="header__left-box">
-            <Link href={'/'}>
-              <img className="header__left-open-burger inline-block w-[40px] h-[40px]" src="/icons/open__burger.svg" alt="open__burger" />
-            </Link>
+            <button className="header__left-open-burger-button" onClick={() => setIsOpen(true)}>
+              <img className="header__left-open-burger-icon inline-block w-[40px] h-[40px]" src="/icons/open__burger.svg" alt="open__burger" />
+            </button>
           </div>
           <div className="header__middle-box">
             <Link href={'/'}>
@@ -23,6 +29,7 @@ export const Header = () => {
           </div>
         </div>
       </header>
+      <DrawerHeader modal={isOpen} close={closeBurger} />
     </div>
   )
 }

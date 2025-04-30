@@ -1,0 +1,52 @@
+@media (max-width: 1024px) {
+  .contactButton__button {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 60%;
+    color: white;
+    padding: 21px 44px;
+    border: 2px solid white;
+    border-radius: 33px;
+    background: linear-gradient(90deg, #a5958b, #a5958b, #a5958b, #ffffff);
+    background-size: 180% 180%;
+    animation: gradient-animation 8s ease infinite;
+    font-family: "Nunito";
+  }
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 100%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 100%;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .contactButton__button {
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 60%;
+    color: white;
+    padding: 21px 44px;
+    border: 2px solid white;
+    border-radius: 32px;
+    background: linear-gradient(90deg, #a5958b, #a5958b, #a5958b, #ffffff);
+    background-size: 180% 180%;
+    animation: gradient-animation 8s ease infinite;
+    font-family: "Nunito";
+  }
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 100%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 100%;
+    }
+  }
+}
