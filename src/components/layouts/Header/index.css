@@ -1,0 +1,64 @@
+.header {
+}
+.header__container {
+}
+.header__left-box {
+}
+.header__left-open-burger-button {
+}
+.header__left-open-burger-icon {
+}
+.header__middle-box {
+}
+.header__middle-mini-logo {
+}
+.header__right-box {
+}
+.header__right-icon {
+}
+.header__right-text {
+}
+@media (max-width: 1024px) {
+  .header {
+  }
+  .header__container {
+  }
+  .header__left-box {
+  }
+  .header__left-open-burger-button {
+  }
+  .header__left-open-burger-icon {
+  }
+  .header__middle-box {
+  }
+  .header__middle-mini-logo {
+  }
+  .header__right-box {
+  }
+  .header__right-icon {
+  }
+  .header__right-text {
+  }
+}
+@media (max-width: 767px) {
+  .header {
+  }
+  .header__container {
+  }
+  .header__left-box {
+  }
+  .header__left-open-burger-button {
+  }
+  .header__left-open-burger-icon {
+  }
+  .header__middle-box {
+  }
+  .header__middle-mini-logo {
+  }
+  .header__right-box {
+  }
+  .header__right-icon {
+  }
+  .header__right-text {
+  }
+}

@@ -1,5 +1,5 @@
 @media (max-width: 1024px) {
-  .contactButton__button {
+  .secondContactButton__button {
     font-size: 24px;
     font-weight: 500;
     line-height: 100%;
@@ -7,12 +7,12 @@
     padding: 21px 44px;
     border: 2px solid white;
     border-radius: 33px;
-    background: linear-gradient(90deg, #b4a297, #b4a297, #b4a297, #ffffff);
+    background: linear-gradient(90deg, #3f0c0b, #3f0c0b, #3f0c0b, #d49a2f);
     background-size: 180% 180%;
-    animation: gradient-animation 8s ease infinite;
+    animation: gradient-animation-second 8s ease infinite;
     font-family: "ppneuemontreal";
   }
-  @keyframes gradient-animation {
+  @keyframes gradient-animation-second {
     0% {
       background-position: 0% 100%;
     }
@@ -25,7 +25,7 @@
   }
 }
 @media (max-width: 767px) {
-  .contactButton__button {
+  .secondContactButton__button {
     font-size: 21px;
     font-weight: 500;
     line-height: 60%;
@@ -33,12 +33,12 @@
     padding: 21px 44px;
     border: 2px solid white;
     border-radius: 32px;
-    background: linear-gradient(90deg, #b4a297, #b4a297, #b4a297, #ffffff);
+    background: linear-gradient(90deg, #3f0c0b, #3f0c0b, #3f0c0b, #d49a2f);
     background-size: 180% 180%;
-    animation: gradient-animation 8s ease infinite;
+    animation: gradient-animation-second 8s ease infinite;
     font-family: "ppneuemontreal";
   }
-  @keyframes gradient-animation {
+  @keyframes gradient-animation-second {
     0% {
       background-position: 0% 100%;
     }
