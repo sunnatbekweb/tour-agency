@@ -3,13 +3,11 @@ import React, { useState } from "react"
 import { Link } from "@/i18n/navigation"
 import ContactButton from "./ContactButton"
 import './DrawerHeader.css'
-
 export default function DrawerHeader({ modal, close }) {
     const [showDestinations, setShowDestinations] = useState(false)
     const toggleDestinations = () => {
         setShowDestinations(!showDestinations)
     }
-
     const destinations = [
         { href: '/uzbekistan', label: 'Uzbekistan' },
         { href: '/tajikistan', label: 'Tajikistan' },
@@ -17,7 +15,6 @@ export default function DrawerHeader({ modal, close }) {
         { href: '/turkmenistan', label: 'Turkmenistan' },
         { href: '/kyrgyzstan', label: 'Kyrgyzstan' },
     ]
-
     return (
         <header className={`
             drawerHeader z-[1111] fixed top-0 right-0 left-0 w-full h-[100vh] bg-[#A5958B] duration-500 py-12 
@@ -33,7 +30,6 @@ export default function DrawerHeader({ modal, close }) {
                 </Link>
                 <div className="drawerHeader__empty-box w-[54.92px] h-[37px] opacity-0" />
             </div>
-
             <nav className="drawerHeader__nav flex flex-col items-center justify-center min-h-[70vh]">
                 <ul className="drawerHeader__list w-full flex flex-col items-center">
                     <li className="drawerHeader__lists w-full text-center">
@@ -42,14 +38,12 @@ export default function DrawerHeader({ modal, close }) {
                         </Link>
                         <hr className="drawerHeader__hr w-full bg-white opacity-20 border-none outline-none h-[1px]" />
                     </li>
-
                     <li className="drawerHeader__button-list w-full text-center">
                         <hr className="drawerHeader__hr w-full bg-white opacity-20 border-none outline-none h-[1px]" />
                         <button className="drawerHeader__button w-full" onClick={toggleDestinations}>
                             <p className="drawerHeader__button-text text-white text-[20px] uppercase font-medium py-[32px]">Destinations</p>
                         </button>
                         <hr className="drawerHeader__hr w-full bg-white opacity-20 border-none outline-none h-[1px]" />
-
                         <div
                             className={`
                                 drawerHeader__second-nav 
@@ -72,7 +66,6 @@ export default function DrawerHeader({ modal, close }) {
                             </ul>
                         </div>
                     </li>
-
                     {[
                         { href: '/trip-founder', label: 'Trip Founder' },
                         { href: '/blog', label: 'Blog' },
@@ -90,7 +83,6 @@ export default function DrawerHeader({ modal, close }) {
                     ))}
                 </ul>
             </nav>
-
             <div className="drawerHeader__contact-button mt-8 flex justify-center items-center">
                 <ContactButton>Contact us</ContactButton>
             </div>
