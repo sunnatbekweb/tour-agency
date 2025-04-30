@@ -69,34 +69,36 @@ export const ContactForm = () => {
         className="flex flex-col gap-y-2 font-medium text-sm md:text-base lg:text-lg mb-6"
       >
         <span className="text-[#878787]">Your Destination</span>
-        <input
-          type="text"
-          id="destination"
+        <select
           name="destination"
-          placeholder="Select destination"
+          id="destination"
           required
-          onChange={handleChange}
           value={formData.destination}
-          className="bg-[#B4A2971A] border border-[#D9D9D9] placeholder:text-[#BDBDBD] px-6 py-3 rounded-lg focus:outline-[#A5958B]"
-        />
+          className="bg-[#B4A2971A] border border-[#D9D9D9] text-[#BDBDBD] px-6 py-3 rounded-lg focus:outline-[#A5958B]"
+        >
+          <option value="" selected disabled>
+            Select destination
+          </option>
+        </select>
       </label>
       <label
         htmlFor="tripTour"
         className="flex flex-col gap-y-2 font-medium text-sm md:text-base lg:text-lg mb-6"
       >
         <span className="text-[#878787]">Trip Tour</span>
-        <input
-          type="text"
-          id="tripTour"
+        <select
           name="tripTour"
-          placeholder="Select Trip Tour"
+          id="tripTour"
           required
-          onChange={handleChange}
           value={formData.tripTour}
-          className="bg-[#B4A2971A] border border-[#D9D9D9] placeholder:text-[#BDBDBD] px-6 py-3 rounded-lg focus:outline-[#A5958B]"
-        />
+          className="bg-[#B4A2971A] border border-[#D9D9D9] text-[#BDBDBD] px-6 py-3 rounded-lg focus:outline-[#A5958B]"
+        >
+          <option value="" selected disabled>
+            Select Trip Tour
+          </option>
+        </select>
       </label>
-      <button className="w-full sm:w-[300px] h-12 lg:h-14 grid place-content-center text-white bg-[#A5958B] mx-auto rounded-lg md:rounded-4xl font-medium text-base lg:text-xl mt-8 lg:mt-[60px]">
+      <button className="w-full sm:w-[300px] h-12 lg:h-14 grid place-content-center text-white bg-[#A5958B] hover:opacity-75 active:opacity-100 mx-auto rounded-lg md:rounded-4xl font-medium text-base lg:text-xl mt-8 lg:mt-[60px] duration-300">
         Send a message
       </button>
     </form>
