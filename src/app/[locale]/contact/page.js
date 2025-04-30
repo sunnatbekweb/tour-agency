@@ -1,5 +1,6 @@
 import React from "react";
 import "@/styles/page_styles/contact.css";
+import { ContactForm } from "@/components/ui/ContactForm";
 
 export default function Contact() {
   return (
@@ -36,66 +37,7 @@ export default function Contact() {
           </div>
         </div>
         <div className="form_container w-full lg:w-1/2">
-          <form className="px-8 py-10 bg-white rounded-2xl">
-            <h4 className="font-medium text-[28px] lg:text-[36px] mb-6 md:mb-10 lg:mb-[60px]">
-              Let’s Get in Touch
-            </h4>
-            <label
-              htmlFor="fullName"
-              className="flex flex-col gap-y-2 font-medium text-sm md:text-base lg:text-lg mb-6"
-            >
-              <span className="text-[#878787]">Full name</span>
-              <input
-                type="text"
-                id="fullName"
-                name="fullName"
-                placeholder="Enter your name"
-                className="bg-[#B4A2971A] border border-[#D9D9D9] placeholder:text-[#BDBDBD] px-6 py-3 rounded-lg"
-              />
-            </label>
-            <label
-              htmlFor="email"
-              className="flex flex-col gap-y-2 font-medium text-sm md:text-base lg:text-lg mb-6"
-            >
-              <span className="text-[#878787]">Email</span>
-              <input
-                type="text"
-                id="email"
-                name="email"
-                placeholder="Enter your email"
-                className="bg-[#B4A2971A] border border-[#D9D9D9] placeholder:text-[#BDBDBD] px-6 py-3 rounded-lg"
-              />
-            </label>
-            <label
-              htmlFor="destination"
-              className="flex flex-col gap-y-2 font-medium text-sm md:text-base lg:text-lg mb-6"
-            >
-              <span className="text-[#878787]">Your Destination</span>
-              <input
-                type="text"
-                id="destination"
-                name="destination"
-                placeholder="Select destination"
-                className="bg-[#B4A2971A] border border-[#D9D9D9] placeholder:text-[#BDBDBD] px-6 py-3 rounded-lg"
-              />
-            </label>
-            <label
-              htmlFor="tripTour"
-              className="flex flex-col gap-y-2 font-medium text-sm md:text-base lg:text-lg mb-6"
-            >
-              <span className="text-[#878787]">Trip Tour</span>
-              <input
-                type="text"
-                id="tripTour"
-                name="tripTour"
-                placeholder="Select Trip Tour"
-                className="bg-[#B4A2971A] border border-[#D9D9D9] placeholder:text-[#BDBDBD] px-6 py-3 rounded-lg"
-              />
-            </label>
-            <button className="w-full sm:w-[300px] h-12 lg:h-14 grid place-content-center text-white bg-[#A5958B] mx-auto rounded-lg md:rounded-4xl font-medium text-base lg:text-xl mt-8 lg:mt-[60px]">
-              Send a message
-            </button>
-          </form>
+          <ContactForm />
         </div>
       </div>
     </section>
