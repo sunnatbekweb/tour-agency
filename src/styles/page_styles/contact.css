@@ -18,16 +18,18 @@
   background: #a5958be5;
 }
 
-.form_container {
-  position: relative;
+@media screen and (min-width: 1024px) {
+  .form_container {
+    position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -90px;
-    width: 2px;
-    height: 100%;
-    background: #ffffff;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -90px;
+      width: 2px;
+      height: 100%;
+      background: #ffffff;
+    }
   }
 }
