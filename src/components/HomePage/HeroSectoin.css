@@ -1,7 +1,6 @@
 .hero {
   width: 100%;
-  height: 100vh;
-  background-image: url("../../../public/images/hero__mini-background.jpg");
+  background-image: url("../../../public/images/hero__background.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;

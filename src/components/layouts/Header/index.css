@@ -5,60 +5,197 @@
 .header__left-box {
 }
 .header__left-open-burger-button {
+  display: none !important;
 }
 .header__left-open-burger-icon {
 }
+.header__left-mini-logo {
+  display: inline-block !important;
+}
 .header__middle-box {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 .header__middle-mini-logo {
+  display: none !important;
+}
+.header__middle-nav {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.header__middle-list {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.header__middle-lists {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 74px !important;
+}
+.header__middle-links {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 8.04px !important;
+  padding: 12px 24px;
+  border-radius: 33px;
+}
+.header__middle-links-texts-icons {
+}
+.header__middle-links-texts {
+  font-family: "ppneuemontreal";
 }
 .header__right-box {
 }
-.header__right-icon {
+.header__right-contact-button {
 }
-.header__right-text {
+.header__right-language {
+}
+.header__right-language-icon {
+}
+.header__right-language-text {
+  font-family: "ppneuemontreal";
 }
 @media (max-width: 1024px) {
   .header {
   }
   .header__container {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
   }
   .header__left-box {
   }
   .header__left-open-burger-button {
+    display: inline-block !important;
   }
   .header__left-open-burger-icon {
+  }
+  .header__left-mini-logo {
+    display: none !important;
   }
   .header__middle-box {
   }
   .header__middle-mini-logo {
+    display: inline-block !important;
+  }
+  .header__middle-nav {
+    display: none !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .header__middle-list {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .header__middle-lists {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 74px !important;
+  }
+  .header__middle-links {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 8.04px !important;
+  }
+  .header__middle-links-texts-icons {
+  }
+  .header__middle-links-texts {
+    font-family: "ppneuemontreal";
   }
   .header__right-box {
   }
-  .header__right-icon {
+  .header__right-contact-button {
   }
-  .header__right-text {
+  .header__right-language {
+  }
+  .header__right-language-icon {
+  }
+  .header__right-language-text {
+    font-family: "ppneuemontreal";
   }
 }
 @media (max-width: 767px) {
   .header {
   }
   .header__container {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
   }
   .header__left-box {
   }
   .header__left-open-burger-button {
+    display: inline-block !important;
   }
   .header__left-open-burger-icon {
+  }
+  .header__left-mini-logo {
+    display: none !important;
   }
   .header__middle-box {
   }
   .header__middle-mini-logo {
+    display: inline-block !important;
+  }
+  .header__middle-nav {
+    display: none !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .header__middle-list {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .header__middle-lists {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 74px !important;
+  }
+  .header__middle-links {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 8.04px !important;
+  }
+  .header__middle-links-texts-icons {
+  }
+  .header__middle-links-texts {
+    font-family: "ppneuemontreal";
   }
   .header__right-box {
   }
-  .header__right-icon {
+  .header__right-contact-button {
   }
-  .header__right-text {
+  .header__right-language {
+  }
+  .header__right-language-icon {
+  }
+  .header__right-language-text {
+    font-family: "ppneuemontreal";
   }
 }

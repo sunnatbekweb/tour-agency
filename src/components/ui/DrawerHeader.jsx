@@ -20,7 +20,7 @@ export default function DrawerHeader({ modal, close }) {
             drawerHeader z-[1111] fixed top-0 right-0 left-0 w-full h-[100vh] bg-[#A5958B] duration-500 py-12 md:py-[52px] 
             ${modal ? "translate-x-0 visible" : "translate-x-[-100%] collapse"} 
             ${showDestinations ? "overflow-y-auto" : "overflow-hidden"}
-        `}>
+        `}> 
             <div className="drawerHeader__top-box flex justify-between items-center px-6 md:px-14">
                 <button className="drawerHeader__top-box-open-burger-button" onClick={close}>
                     <img className="drawerHeader__top-box-open-burger-button-icon w-[40px] h-[40px] md:w-[72px] md:h-[72px]" src="/icons/close__burger.svg" alt="close__burger" />

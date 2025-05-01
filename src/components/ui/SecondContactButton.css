@@ -1,27 +1,25 @@
-@media (max-width: 1024px) {
-  .secondContactButton__button {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 100%;
-    color: white;
-    padding: 21px 44px;
-    border: 2px solid white;
-    border-radius: 33px;
-    background: linear-gradient(90deg, #3f0c0b, #3f0c0b, #3f0c0b, #d49a2f);
-    background-size: 180% 180%;
-    animation: gradient-animation-second 8s ease infinite;
-    font-family: "ppneuemontreal";
+.secondContactButton__button {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 100%;
+  color: white;
+  padding: 21px 44px;
+  border: 2px solid white;
+  border-radius: 33px;
+  background: linear-gradient(90deg, #3f0c0b, #3f0c0b, #3f0c0b, #d49a2f);
+  background-size: 180% 180%;
+  animation: gradient-animation-second 8s ease infinite;
+  font-family: "ppneuemontreal";
+}
+@keyframes gradient-animation-second {
+  0% {
+    background-position: 0% 100%;
   }
-  @keyframes gradient-animation-second {
-    0% {
-      background-position: 0% 100%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 100%;
-    }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 100%;
   }
 }
 @media (max-width: 767px) {

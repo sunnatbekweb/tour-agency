@@ -73,14 +73,14 @@ body {
 }
 .container {
   overflow: visible;
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1366px;
+  width: 100% !important;
+  margin: 0 auto !important;
+  max-width: 1920px !important;
 }
 @media (max-width: 1365px) {
   .container {
     width: 100% !important;
-    margin: 0 auto;
+    margin: 0 auto !important;
     max-width: 100% !important;
     margin: 0 !important;
   }
