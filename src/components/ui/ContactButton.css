@@ -2,15 +2,15 @@
   .contactButton__button {
     font-size: 24px;
     font-weight: 500;
-    line-height: 60%;
+    line-height: 100%;
     color: white;
     padding: 21px 44px;
     border: 2px solid white;
     border-radius: 33px;
-    background: linear-gradient(90deg, #a5958b, #a5958b, #a5958b, #ffffff);
+    background: linear-gradient(90deg, #b4a297, #b4a297, #b4a297, #ffffff);
     background-size: 180% 180%;
     animation: gradient-animation 8s ease infinite;
-    font-family: "Nunito";
+    font-family: "ppneuemontreal";
   }
   @keyframes gradient-animation {
     0% {
@@ -33,10 +33,10 @@
     padding: 21px 44px;
     border: 2px solid white;
     border-radius: 32px;
-    background: linear-gradient(90deg, #a5958b, #a5958b, #a5958b, #ffffff);
+    background: linear-gradient(90deg, #b4a297, #b4a297, #b4a297, #ffffff);
     background-size: 180% 180%;
     animation: gradient-animation 8s ease infinite;
-    font-family: "Nunito";
+    font-family: "ppneuemontreal";
   }
   @keyframes gradient-animation {
     0% {
