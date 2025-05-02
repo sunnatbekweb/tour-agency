@@ -5,6 +5,63 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.hero__nav {
+  width: 300px;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: start !important;
+}
+.hero__list {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: start !important;
+}
+.hero__lists {
+  transition: 450ms ease all;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: start !important;
+}
+.hero__lists:hover {
+  transition: 450ms ease all;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 300px;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: start !important;
+}
+.hero__links {
+  width: 100%;
+  display: flex;
+  height: 37px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 26px;
+  padding-top: 59px;
+  padding-bottom: 59px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.hero__link-texts {
+}
+.hero__link-icons {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: 450ms ease all;
+}
+.hero__lists:hover .hero__link-icons {
+  opacity: 1;
+  transform: translateX(-0px);
+  transition: 450ms ease all;
+}
 .hero__container {
 }
 .hero__top-box {
@@ -21,6 +78,59 @@
 .hero__bottom-box {
 }
 .hero__contuct-button {
+}
+@media (max-width: 1800px) {
+  .hero {
+    width: 100%;
+    background-image: url("../../../public/images/hero__background.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .hero__nav {
+    display: none !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.377);
+  }
+  .hero__list {
+    display: none !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  .hero__lists {
+  }
+  .hero__links {
+    display: none !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    padding: 59px 31px;
+  }
+  .hero__link-texts {
+  }
+  .hero__link-icons {
+  }
+  .hero__container {
+  }
+  .hero__top-box {
+  }
+  .hero__top-text {
+    font-family: "ppneuemontreal";
+  }
+  .hero__top-title {
+    font-family: "ppneuemontreal";
+  }
+  .hero__top-second-text {
+    font-family: "ppneuemontreal";
+  }
+  .hero__bottom-box {
+  }
+  .hero__contuct-button {
+  }
 }
 @media (max-width: 1024px) {
   .hero {
