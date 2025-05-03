@@ -79,7 +79,7 @@
 }
 .hero__contuct-button {
 }
-@media (max-width: 1800px) {
+@media (max-width: 1790px) {
   .hero {
     width: 100%;
     background-image: url("../../../public/images/hero__background.jpg");
@@ -130,6 +130,60 @@
   .hero__bottom-box {
   }
   .hero__contuct-button {
+  }
+}
+@media (max-width: 1640px) {
+  .hero {
+    width: 100%;
+    background-image: url("../../../public/images/hero__background.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .hero__nav {
+    display: none !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.377);
+  }
+  .hero__list {
+    display: none !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  .hero__lists {
+  }
+  .hero__links {
+    display: none !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    padding: 59px 31px;
+  }
+  .hero__link-texts {
+  }
+  .hero__link-icons {
+  }
+  .hero__container {
+  }
+  .hero__top-box {
+  }
+  .hero__top-text {
+    font-family: "ppneuemontreal";
+  }
+  .hero__top-title {
+    font-family: "ppneuemontreal";
+  }
+  .hero__top-second-text {
+    font-family: "ppneuemontreal";
+  }
+  .hero__bottom-box {
+  }
+  .hero__contuct-button {
+    display: block !important;
   }
 }
 @media (max-width: 1024px) {

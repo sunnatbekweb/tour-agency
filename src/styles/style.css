@@ -75,9 +75,9 @@ body {
   overflow: visible;
   width: 100% !important;
   margin: 0 auto !important;
-  max-width: 1920px !important;
+  max-width: 1800px !important;
 }
-@media (max-width: 1365px) {
+@media (max-width: 1366px) {
   .container {
     width: 100% !important;
     margin: 0 auto !important;

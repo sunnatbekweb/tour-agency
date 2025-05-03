@@ -7,9 +7,9 @@ import SecondContactButton from '@/components/ui/SecondContactButton'
 export const Header = () => {
   const link = [
     {
-      icon: 'icons/home__icon.svg',
-      path: '/',
-      label: 'Home',
+      icon: 'icons/destinations__icon.svg',
+      path: '/destinations',
+      label: 'Destinations',
     },
     {
       icon: 'icons/tripFound__icon.svg',
@@ -50,7 +50,7 @@ export const Header = () => {
               <img className="header__left-open-burger-icon inline-block w-[40px] h-[40px] md:w-[72px] md:h-[72px]" src="/icons/open__burger.svg" alt="open__burger" />
             </button>
             <Link href={'/'}>
-              <img className="header__left-mini-logo inline-block xl:active:opacity-50 xl:duration-100 xl:w-[140px] xl:h-[77px]" src="/icons/logo.svg" alt="logo" />
+              <img className="header__left-mini-logo inline-block xl:active:opacity-50 xl:duration-100 lg:w-[140px] lg:h-[77px]" src="/icons/logo.svg" alt="logo" />
             </Link>
           </div>
           <div className="header__middle-box">
@@ -71,7 +71,7 @@ export const Header = () => {
             </nav>
           </div>
           <div className='header__right-box flex flex-row justify-center items-center gap-x-[48px]'>
-            <div className='header__right-contact-button hidden 2xl:block'>
+            <div className='header__right-contact-button hidden'>
               <SecondContactButton>Contact us</SecondContactButton>
             </div>
             <div className="header__right-language bg-white/10 rounded-[33px] border-[#A28887] border-[1px] flex flex-row justify-center items-center gap-x-[5px] py-[7.5px] px-[7.5px] md:gap-x-[9px] md:px-[18px] md:py-[18px]">
