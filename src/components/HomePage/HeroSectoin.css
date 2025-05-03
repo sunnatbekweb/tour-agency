@@ -132,7 +132,7 @@
   .hero__contuct-button {
   }
 }
-@media (max-width: 1640px) {
+@media (max-width: 1690px) {
   .hero {
     width: 100%;
     background-image: url("../../../public/images/hero__background.jpg");

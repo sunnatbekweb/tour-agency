@@ -8,7 +8,6 @@ export const Header = () => {
   const link = [
     {
       icon: 'icons/destinations__icon.svg',
-      path: '/destinations',
       label: 'Destinations',
     },
     {
@@ -27,6 +26,28 @@ export const Header = () => {
       label: 'Blog',
     }
   ]
+  const navLink = [
+    {
+      path: '/uzbekistan',
+      label: 'Uzbekistan',
+    },
+    {
+      path: '/kazakhstan',
+      label: 'Kazakhstan',
+    },
+    {
+      path: '/tajikistan',
+      label: 'Tajikistan',
+    },
+    {
+      path: '/turkmanistan',
+      label: 'Turkmanistan',
+    },
+    {
+      path: '/kyrgizistain',
+      label: 'Kyrgizistain',
+    }
+  ]
   const [isScrolled, setIsScrolled] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
   useEffect(() => {
@@ -43,7 +64,7 @@ export const Header = () => {
   }
   return (
     <div>
-      <header className={`header fixed top-0 w-full z-[1111] ${isScrolled ? "backdrop-blur-2xl shadow-2xl duration-500 bg-black/40" : "duration-500"}`}>
+      <header className={`header fixed top-0 w-full z-[1111] ${isScrolled ? "backdrop-blur-2xl shadow-2xl duration-500 bg-black/20" : "duration-500"}`}>
         <div className="container header__container w-full flex flex-row justify-between items-center px-6 py-12 md:px-14 md:py-[52px] xl:py-[36px]">
           <div className="header__left-box">
             <button className="header__left-open-burger-button" onClick={() => setIsOpen(true)}>
@@ -59,14 +80,38 @@ export const Header = () => {
             </Link>
             <nav className='header__middle-nav'>
               <ul className='header__middle-list'>
-                <li className='header__middle-lists'>
-                  {link.map((item, id) => (
-                    <Link href={item.path} className='header__middle-links bg-white/70' key={id}>
-                      <img className='header__middle-links-texts-icons' src={item.icon} alt="icon" />
-                      <p className='header__middle-links-texts font-bold uppercase text-[#656267] xl:16px 2xl:text-[20px]'>{item.label}</p>
-                    </Link>
+                {link.map((item, index) =>
+                  item.label === "Destinations" ? (
+                    <li key={index} className='header__middle-lists relative group'>
+                      <div className='header__middle-links bg-white/70 cursor-pointer flex items-center px-4 py-2'>
+                        <img className='header__middle-links-texts-icons' src={item.icon} alt="icon" />
+                        <p className='header__middle-links-texts font-bold uppercase text-[#656267] xl:16px 2xl:text-[20px]'>
+                          {item.label}
+                        </p>
+                      </div>
+                      <ul className='backdrop-blur-2xl shadow-2xl bg-black/40 absolute left-0 top-full translate-y-[24px] opacity-0 pointer-events-none group-hover:opacity-100 group-hover:translate-y-[0px] group-hover:pointer-events-auto transition-all duration-500 flex flex-col justify-center items-center w-full rounded-[8px] z-50'>
+                        {navLink.map((dest, i) => (
+                          <Link
+                            className={`w-full flex flex-col justify-center items-center text-center duration-500 text-white hover:bg-white/10 hover:text-white whitespace-nowrap
+                            ${i === 0 ? 'rounded-t-[8px]' : ''} 
+                            ${i === navLink.length - 1 ? 'rounded-b-[8px]' : ''}`}
+                            href={dest.path}
+                            key={i}>
+                            <p className='w-full font-bold uppercase xl:16px 2xl:text-[20px] py-4'>
+                              {dest.label}
+                            </p>
+                          </Link>
+                        ))}
+                      </ul>
+                    </li>
+                  ) : (
+                    <li key={index}>
+                      <Link href={item.path} className='header__middle-links bg-white/70 flex items-center px-4 py-2'>
+                        <img className='header__middle-links-texts-icons' src={item.icon} alt="icon" />
+                        <p className='header__middle-links-texts font-bold uppercase text-[#656267] xl:16px 2xl:text-[20px]'>{item.label}</p>
+                      </Link>
+                    </li>
                   ))}
-                </li>
               </ul>
             </nav>
           </div>
@@ -84,6 +129,6 @@ export const Header = () => {
         </div>
       </header>
       <DrawerHeader modal={isOpen} close={closeBurger} />
-    </div >
+    </div>
   )
 }
