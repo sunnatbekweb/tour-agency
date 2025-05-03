@@ -1,5 +1,6 @@
 @media (max-width: 1024px) {
   .contactButton__button {
+    cursor: pointer !important;
     font-size: 24px;
     font-weight: 500;
     line-height: 100%;

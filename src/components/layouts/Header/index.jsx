@@ -63,7 +63,7 @@ export const Header = () => {
                   {link.map((item, id) => (
                     <Link href={item.path} className='header__middle-links bg-white/70' key={id}>
                       <img className='header__middle-links-texts-icons' src={item.icon} alt="icon" />
-                      <p className='header__middle-links-texts font-bold text-[18px] uppercase text-[#656267]'>{item.label}</p>
+                      <p className='header__middle-links-texts font-bold uppercase text-[#656267] xl:16px 2xl:text-[20px]'>{item.label}</p>
                     </Link>
                   ))}
                 </li>
@@ -74,9 +74,9 @@ export const Header = () => {
             <div className='header__right-contact-button hidden'>
               <SecondContactButton>Contact us</SecondContactButton>
             </div>
-            <div className="header__right-language bg-white/10 rounded-[33px] border-[#A28887] border-[1px] flex flex-row justify-center items-center gap-x-[5px] py-[7.5px] px-[7.5px] md:gap-x-[9px] md:px-[18px] md:py-[18px]">
+            <div className="header__right-language bg-white/10 rounded-[33px] border-[#A28887] border-[1px] flex flex-row justify-center items-center gap-x-[5px] py-[7.5px] px-[7.5px] md:gap-x-[9px] lg:px-[14px] 2xl:px-[18px] 2xl:py-[18px]">
               <img className="header__right-language-icon object-cover w-[16px] h-[16px] md:w-[33px] md:h-[33px]" src="/icons/language__icon.svg" alt="language__icon" />
-              <p className="header__right-language-text font-medium text-[11px] leading-[100%] text-white md:text-[24px]">
+              <p className="header__right-language-text font-medium text-[11px] leading-[100%] text-white md:text-[16px] 2xl:text-[20px]">
                 Eng
               </p>
             </div>
