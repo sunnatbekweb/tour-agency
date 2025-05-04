@@ -1,0 +1,148 @@
+.carousel .swiper-slide {
+  width: 100% !important;
+  max-width: 637px !important;
+}
+.carousel__swiper-box {
+}
+.carousel__box {
+  width: 100% !important;
+  max-width: 637px !important;
+}
+.carousel__top-box {
+  width: 100% !important;
+  max-width: 637px !important;
+}
+.carousel__image {
+  width: 100% !important;
+  max-width: 637px !important;
+}
+.carousel__image-info-box {
+}
+.carousel__location-icon {
+}
+.carousel__location-text {
+}
+.carousel__bottom-box {
+}
+.carousel__location-title {
+}
+.carousel__price-text {
+}
+.carousel__lists-main-box {
+}
+.carousel__lists-box {
+}
+.carousel__lists-mini-boxes {
+}
+.carousel__list-icons {
+}
+.carousel__texts {
+}
+.carousel__button {
+}
+.swiper-button-prev:after {
+  display: none;
+}
+.swiper-button-next:after {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .carousel .swiper-slide {
+    width: 100% !important;
+    max-width: 637px !important;
+  }
+  .carousel__swiper-box {
+  }
+  .carousel__box {
+    width: 100% !important;
+    max-width: 637px !important;
+  }
+  .carousel__top-box {
+    width: 100% !important;
+    max-width: 637px !important;
+  }
+  .carousel__image {
+    width: 100% !important;
+    max-width: 637px !important;
+  }
+  .carousel__image-info-box {
+  }
+  .carousel__location-icon {
+  }
+  .carousel__location-text {
+  }
+  .carousel__bottom-box {
+  }
+  .carousel__location-title {
+  }
+  .carousel__price-text {
+  }
+  .carousel__lists-main-box {
+  }
+  .carousel__lists-box {
+  }
+  .carousel__lists-mini-boxes {
+  }
+  .carousel__list-icons {
+  }
+  .carousel__texts {
+  }
+  .carousel__button {
+  }
+  .swiper-button-prev:after {
+    display: none;
+  }
+  .swiper-button-next:after {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .carousel .swiper-slide {
+    width: 100% !important;
+    max-width: 327px !important;
+  }
+  .carousel__swiper-box {
+  }
+  .carousel__box {
+    width: 100% !important;
+    max-width: 327px !important;
+  }
+  .carousel__top-box {
+    width: 100% !important;
+    max-width: 327px !important;
+  }
+  .carousel__image {
+    width: 100% !important;
+    max-width: 327px !important;
+  }
+  .carousel__image-info-box {
+  }
+  .carousel__location-icon {
+  }
+  .carousel__location-text {
+  }
+  .carousel__bottom-box {
+  }
+  .carousel__location-title {
+  }
+  .carousel__price-text {
+  }
+  .carousel__lists-main-box {
+  }
+  .carousel__lists-box {
+  }
+  .carousel__lists-mini-boxes {
+  }
+  .carousel__list-icons {
+  }
+  .carousel__texts {
+  }
+  .carousel__button {
+  }
+  .swiper-button-prev:after {
+    display: none;
+  }
+  .swiper-button-next:after {
+    display: none;
+  }
+}

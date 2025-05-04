@@ -64,8 +64,8 @@ export const Header = () => {
   }
   return (
     <div>
-      <header className={`header fixed top-0 w-full z-[1111] ${isScrolled ? "backdrop-blur-2xl shadow-2xl duration-500 bg-black/20" : "duration-500"}`}>
-        <div className="container header__container w-full flex flex-row justify-between items-center px-6 py-12 md:px-14 md:py-[52px] xl:py-[36px]">
+      <header className={`header fixed top-0 w-full z-[1111] ${isScrolled ? "backdrop-blur-2xl shadow-2xl duration-500 bg-black/40" : "duration-500"}`}>
+        <div className="container header__container w-full flex flex-row justify-between items-center px-6 py-12 md:px-9 md:py-[52px] xl:py-[36px]">
           <div className="header__left-box">
             <button className="header__left-open-burger-button" onClick={() => setIsOpen(true)}>
               <img className="header__left-open-burger-icon inline-block w-[40px] h-[40px] md:w-[72px] md:h-[72px]" src="/icons/open__burger.svg" alt="open__burger" />
@@ -119,7 +119,7 @@ export const Header = () => {
             <div className='header__right-contact-button hidden'>
               <SecondContactButton>Contact us</SecondContactButton>
             </div>
-            <div className="header__right-language bg-white/10 rounded-[33px] border-[#A28887] border-[1px] flex flex-row justify-center items-center gap-x-[5px] py-[7.5px] px-[7.5px] md:gap-x-[9px] lg:px-[14px] 2xl:px-[18px] 2xl:py-[18px]">
+            <div className="header__right-language bg-white/10 rounded-[33px] border-[#A28887] border-[1px] flex flex-row justify-center items-center gap-x-[5px] py-[7.5px] px-[7.5px] md:gap-x-[9px] md:py-[14px] md:px-[14px] 2xl:px-[18px] 2xl:py-[18px]">
               <img className="header__right-language-icon object-cover w-[16px] h-[16px] md:w-[33px] md:h-[33px]" src="/icons/language__icon.svg" alt="language__icon" />
               <p className="header__right-language-text font-medium text-[11px] leading-[100%] text-white md:text-[16px] 2xl:text-[20px]">
                 Eng
