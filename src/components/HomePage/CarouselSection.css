@@ -1,20 +1,22 @@
 .carousel .swiper-slide {
   width: 100% !important;
-  max-width: 637px !important;
+  max-width: 420px !important;
 }
 .carousel__swiper-box {
 }
 .carousel__box {
   width: 100% !important;
-  max-width: 637px !important;
+  max-width: 420px !important;
 }
 .carousel__top-box {
   width: 100% !important;
-  max-width: 637px !important;
+  max-width: 420px !important;
+  height: 794px !important;
 }
 .carousel__image {
   width: 100% !important;
-  max-width: 637px !important;
+  max-width: 420px !important;
+  height: 794px !important;
 }
 .carousel__image-info-box {
 }
@@ -29,6 +31,7 @@
 .carousel__price-text {
 }
 .carousel__lists-main-box {
+  display: none;
 }
 .carousel__lists-box {
 }
@@ -49,21 +52,23 @@
 @media (max-width: 1024px) {
   .carousel .swiper-slide {
     width: 100% !important;
-    max-width: 637px !important;
+    max-width: 420px !important;
   }
   .carousel__swiper-box {
   }
   .carousel__box {
     width: 100% !important;
-    max-width: 637px !important;
+    max-width: 420px !important;
   }
   .carousel__top-box {
     width: 100% !important;
-    max-width: 637px !important;
+    max-width: 420px !important;
+    height: 794px !important;
   }
   .carousel__image {
     width: 100% !important;
-    max-width: 637px !important;
+    max-width: 420px !important;
+    height: 794px !important;
   }
   .carousel__image-info-box {
   }
@@ -78,6 +83,7 @@
   .carousel__price-text {
   }
   .carousel__lists-main-box {
+    display: none;
   }
   .carousel__lists-box {
   }
@@ -99,21 +105,23 @@
 @media (max-width: 767px) {
   .carousel .swiper-slide {
     width: 100% !important;
-    max-width: 327px !important;
+    max-width: 196px !important;
   }
   .carousel__swiper-box {
   }
   .carousel__box {
     width: 100% !important;
-    max-width: 327px !important;
+    max-width: 196px !important;
   }
   .carousel__top-box {
     width: 100% !important;
-    max-width: 327px !important;
+    max-width: 196px !important;
+    height: 275.27px !important;
   }
   .carousel__image {
     width: 100% !important;
-    max-width: 327px !important;
+    max-width: 196px !important;
+    height: 275.27px !important;
   }
   .carousel__image-info-box {
   }
@@ -128,6 +136,7 @@
   .carousel__price-text {
   }
   .carousel__lists-main-box {
+    display: none;
   }
   .carousel__lists-box {
   }

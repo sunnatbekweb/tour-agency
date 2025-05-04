@@ -174,13 +174,13 @@ export default function CarouselSection() {
                 loop={true}
                 modules={[Navigation, Autoplay]}
                 slidesPerView={'auto'}
-                spaceBetween={8}
+                spaceBetween={14}
                 centeredSlides={true}>
                 {data.map((item, index) => (
-                    <SwiperSlide className='carousel__swiperSlide flex flex-row justify-center items-center md:pr-4 xl:pr-6' key={index}>
-                        <div className='carousel__box flex flex-col justify-center items-start pt-[12px] pb-[21.63px] px-[12px] shadow-2xl bg-white rounded-[16px] border-[1px] border-[#EBEBEB] md:px-[23px] md:pt-[22px] md:pb-[56px] md:rounded-[40px]'>
+                    <SwiperSlide className='carousel__swiperSlide flex flex-row justify-center items-center' key={index}>
+                        <div className='carousel__box flex flex-col justify-center items-start pt-[10.3px] pb-[20] px-[7.47px] shadow-2xl bg-white rounded-[16px] border-[1px] border-[#EBEBEB] md:px-[16px] md:pt-[22px] md:pb-[44px] md:rounded-[40px]'>
                             <div className='carousel__top-box'>
-                                <img className='carousel__image relative rounded-[16px]' src={item.locationImage} alt={item.locationDescription} />
+                                <img className='carousel__image relative rounded-[11.24px] object-cover md:rounded-[24px]' src={item.locationImage} alt={item.locationDescription} />
                                 <div className='carousel__image-info-box absolute top-[30.33px] left-[27.25px] flex flex-row justify-center items-center gap-1 bg-white/40 border-[2px] border-[#B6B6B6] rounded-[25px] px-2.5 py-2 md:left-[55px] md:top-[62px]'>
                                     <img className='carousel__location-icon object-contain w-[12.56px] h-[12.56px] md:w-[24px] md:h-[24px]' src={item.locationIcon} alt="location__icon" />
                                     <p className='carousel__location-text text-white font-medium text-[10.48px] tracking-tighter-[-2%] md:text-[17px] md:tracking-tighter-[-2%]'>
@@ -192,10 +192,10 @@ export default function CarouselSection() {
                                 <h4 className='carousel__location-title font-medium text-[18.87px] text-[#323232] mt-[6.2px] mb-[11.28px] md:text-[37px] md:mt-[40px] md:mb-[24px] xl:mb-[28px]'>
                                     {item.locationTitle}
                                 </h4>
-                                <p className='carousel__price-text font-semibold text-[14.67px] text-[#323232] mb-[21.26px] md:text-[40px] md:mb-[34px] xl:text-[32px] xl:mb-[40px]'>
+                                <p className='carousel__price-text font-semibold text-[14.67px] text-[#323232] md:text-[40px] xl:text-[32px]'>
                                     {item.locationPrice}
                                 </p>
-                                <div className='carousel__lists-main-box w-full flex flex-row justify-between items-end'>
+                                <div className='carousel__lists-main-box w-full flex flex-row justify-between items-end mt-[21.26px] md:mt-[34px] xl:mt-[40px]'>
                                     <div className="carousel__lists-box flex flex-col justify-center items-start gap-[5.95px] xl:gap-[17px]">
                                         {item.locationDetails.map((detail, idx) => (
                                             <div className="carousel__lists-mini-boxes flex flex-row justify-center items-center gap-2" key={idx}>
