@@ -1,6 +1,6 @@
-import React from "react"
-import './ContactButton.css'
-import { Link } from "@/i18n/navigation"
+import React from "react";
+import "./ContactButton.css";
+import { Link } from "@/i18n/navigation";
 export default function ContactButton({ children }) {
     return (
         <Link href={'/'}>
