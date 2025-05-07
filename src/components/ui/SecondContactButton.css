@@ -1,12 +1,13 @@
 .secondContactButton__button {
-  font-size: 24px;
+  cursor: pointer !important;
+  font-size: 18px;
   font-weight: 500;
   line-height: 100%;
   color: white;
   padding: 21px 44px;
   border: 2px solid white;
   border-radius: 33px;
-  background: linear-gradient(90deg, #3f0c0b, #3f0c0b, #3f0c0b, #d49a2f);
+  background: linear-gradient(90deg, #b4a297, #b4a297, #b4a297, #ffffff);
   background-size: 180% 180%;
   animation: gradient-animation-second 8s ease infinite;
   font-family: "ppneuemontreal";
@@ -24,14 +25,14 @@
 }
 @media (max-width: 767px) {
   .secondContactButton__button {
-    font-size: 21px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 60%;
     color: white;
     padding: 21px 44px;
     border: 2px solid white;
     border-radius: 32px;
-    background: linear-gradient(90deg, #3f0c0b, #3f0c0b, #3f0c0b, #d49a2f);
+    background: linear-gradient(90deg, #b4a297, #b4a297, #b4a297, #ffffff);
     background-size: 180% 180%;
     animation: gradient-animation-second 8s ease infinite;
     font-family: "ppneuemontreal";
