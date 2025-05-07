@@ -22,7 +22,7 @@ export default async function RootLayout({ children, params }) {
       <body className={`antialiased`}>
         <NextIntlClientProvider>
           <Header />
-          {children}
+          <main>{children}</main>
           <Footer />
         </NextIntlClientProvider>
       </body>

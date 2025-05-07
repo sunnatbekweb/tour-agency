@@ -75,18 +75,9 @@ body {
   scroll-behavior: smooth;
 }
 .container {
-  overflow: visible;
-  width: 100% !important;
+  /* overflow: visible; */
+  /* width: 100% !important; */
   margin: 0 auto !important;
-  max-width: 1800px !important;
-}
-@media (max-width: 1366px) {
-  .container {
-    width: 100% !important;
-    margin: 0 auto !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-  }
 }
 .visually-hidden {
   position: absolute;
