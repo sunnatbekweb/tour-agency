@@ -119,7 +119,7 @@ export const Header = () => {
             <div className='header__right-contact-button hidden'>
               <SecondContactButton>Contact us</SecondContactButton>
             </div>
-            <div className="header__right-language bg-white/10 rounded-[33px] border-[#A28887] border-[1px] flex flex-row justify-center items-center gap-x-[5px] py-[7.5px] px-[7.5px] md:gap-x-[9px] md:py-[14px] md:px-[14px] 2xl:px-[18px] 2xl:py-[18px]">
+            <div className="header__right-language bg-white/10 rounded-[33px] border-[#A28887] border-[1px] flex flex-row justify-center items-center gap-x-[5px] py-[7.5px] px-[7.5px] md:gap-x-[9px] md:py-[14px] md:px-[14px] xl:py-[8px] 2xl:px-[18px] 2xl:py-[18px]">
               <img className="header__right-language-icon object-cover w-[16px] h-[16px] md:w-[33px] md:h-[33px]" src="/icons/language__icon.svg" alt="language__icon" />
               <p className="header__right-language-text font-medium text-[11px] leading-[100%] text-white md:text-[16px] 2xl:text-[20px]">
                 Eng
