@@ -1,0 +1,39 @@
+.trip-finder {
+  height: 100vh;
+  background-image: url(../../../public/images/trip-finder-bg.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & h1 {
+    font-weight: 500;
+    font-size: 63px;
+    line-height: 60px;
+    letter-spacing: -2%;
+    text-align: center;
+    color: #ffffff;
+
+    & span {
+      color: #ffffff4d;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .trip-finder {
+    & h1 {
+      font-size: 140px;
+      line-height: 160px;
+      letter-spacing: -2%;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .trip-finder {
+    & h1 {
+      font-size: 160px;
+    }
+  }
+}
