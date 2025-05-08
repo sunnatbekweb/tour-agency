@@ -122,13 +122,13 @@ export default function QuestionSection() {
                             {secondData.map((content, id) => (
                                 <SwiperSlide className='question__swiper-slide hidden xl:flex xl:flex-col xl:justify-center xl:items-center' key={id}>
                                     <img className='question__swiper-image xl:object-cover xl:relative' src={content.image} alt='nature__image' />
-                                    <div className='question__image-info-box xl:absolute xl:top-0 xl:flex xl:flex-row xl:justify-center xl:items-center'>
+                                    <div className='question__image-info-box lg:absolute lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-3 lg:bg-white/40 lg:rounded-[50px] lg:left-[24px] lg:top-[24px] lg:px-[18px] lg:py-[16px]'>
                                         <img className='question__location-icon' src={content.locationIcon} alt="location__icon" />
-                                        <p className='question__location-text'>
+                                        <p className='question__location-text lg:text-white lg:font-medium lg:text-[17px] lg:leading-[21px]'>
                                             {content.locationText}
                                         </p>
                                     </div>
-                                    <p className='question__swiper-text xl:absolute xl:top-0 xl:w-[400px] xl:text-[24px] xl:leading-[32px] text-[#F2F2F2]'>
+                                    <p className='question__swiper-text md:w-full md:absolute md:bottom-[24px] md:px-[24px] md:text-[16px] md:leading-[20px] md:text-[#F2F2F2] 2xl:text-[24px] 2xl:leading-[32px]'>
                                         {content.text}
                                     </p>
                                 </SwiperSlide>
@@ -146,8 +146,8 @@ export default function QuestionSection() {
                                     onClick={() => toggleAnswer(item.id)}
                                 >
                                     <div className='question__right-texts-box flex flex-row justify-center items-start gap-x-1.5 md:flex md:flex-row md:justify-start md:items-start md:gap-x-3 md:w-full lg:w-[500px]'>
-                                        <p className='question__right-number font-medium text-[16px] text-[#323232] leading-[22px] md:text-[35px]'>{item.number}</p>
-                                        <p className='question__right-title font-medium text-[16px] text-[#323232] leading-[22px] md:text-[35px]'>{item.title}</p>
+                                        <p className='question__right-number font-medium text-[16px] text-[#323232] leading-[22px] md:text-[34px] md:leading-[40px]'>{item.number}</p>
+                                        <p className='question__right-title font-medium text-[16px] text-[#323232] leading-[22px] md:text-[34px] md:leading-[40px]'>{item.title}</p>
                                     </div>
                                     <div className={`question__right-icon-box w-[32px] h-[32px] rounded-full flex flex-row justify-center items-center md:w-[70px] md:h-[70px] ${activeId === item.id ? 'bg-[#A38E82]' : 'bg-[#F0ECEA]'} `}>
                                         <img
