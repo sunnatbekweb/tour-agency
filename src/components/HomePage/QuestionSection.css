@@ -1,0 +1,476 @@
+.question {
+}
+.question__container {
+}
+.question__top-box {
+}
+.question__text {
+  font-family: "ppneuemontreal";
+}
+.question__title {
+  font-family: "ppneuemontreal";
+}
+.question__title-span {
+  font-family: "ppneuemontreal";
+}
+.question__second-text {
+  font-family: "ppneuemontreal";
+}
+.question__second-title {
+  font-family: "ppneuemontreal";
+}
+.question__second-title-span {
+  font-family: "ppneuemontreal";
+}
+.question__bottom-box {
+}
+.question__swiper-box {
+  width: 100% !important;
+  max-width: 720px;
+  height: 100% !important;
+}
+.question__swiper {
+  width: 100% !important;
+  max-width: 720px;
+  height: 100% !important;
+}
+.question__swiper-slide {
+  width: 100% !important;
+  max-width: 720px;
+  height: 100% !important;
+}
+.question__swiper-image {
+  width: 100% !important;
+  max-width: 720px;
+  height: 100% !important;
+}
+.question__image-info-box {
+}
+.question__location-icon {
+}
+.question__location-text {
+  font-family: "ppneuemontreal";
+}
+.question__swiper-text {
+  font-family: "ppneuemontreal";
+}
+.question__right-box {
+}
+.question__right-mini-box {
+}
+.question__right-bottom-box {
+}
+.question__right-texts-box {
+}
+.question__right-number {
+  font-family: "ppneuemontreal";
+}
+.question__right-title {
+  font-family: "ppneuemontreal";
+}
+.question__right-icon-box {
+}
+.question__right-icon {
+}
+.question__right-text {
+  font-family: "ppneuemontreal";
+}
+@media (max-width: 1536px) {
+  .question {
+  }
+  .question__container {
+  }
+  .question__top-box {
+  }
+  .question__text {
+    font-family: "ppneuemontreal";
+  }
+  .question__title {
+    font-family: "ppneuemontreal";
+  }
+  .question__title-span {
+    font-family: "ppneuemontreal";
+  }
+  .question__second-text {
+    font-family: "ppneuemontreal";
+  }
+  .question__second-title {
+    font-family: "ppneuemontreal";
+  }
+  .question__second-title-span {
+    font-family: "ppneuemontreal";
+  }
+  .question__bottom-box {
+  }
+  .question__swiper-box {
+    width: 100% !important;
+    max-width: 740px;
+    height: 100% !important;
+  }
+  .question__swiper {
+    width: 100% !important;
+    max-width: 740px;
+    height: 100% !important;
+  }
+  .question__swiper-slide {
+    width: 100% !important;
+    max-width: 740px;
+    height: 100% !important;
+  }
+  .question__swiper-image {
+    width: 100% !important;
+    max-width: 740px;
+    height: 100% !important;
+  }
+  .question__image-info-box {
+  }
+  .question__location-icon {
+  }
+  .question__location-text {
+    font-family: "ppneuemontreal";
+  }
+  .question__swiper-text {
+    font-family: "ppneuemontreal";
+  }
+  .question__right-box {
+  }
+  .question__right-mini-box {
+  }
+  .question__right-bottom-box {
+  }
+  .question__right-texts-box {
+  }
+  .question__right-number {
+    font-family: "ppneuemontreal";
+  }
+  .question__right-title {
+    font-family: "ppneuemontreal";
+  }
+  .question__right-icon-box {
+  }
+  .question__right-icon {
+  }
+  .question__right-text {
+    font-family: "ppneuemontreal";
+  }
+}
+@media (max-width: 1535px) {
+  .question {
+  }
+  .question__container {
+  }
+  .question__top-box {
+  }
+  .question__text {
+    font-family: "ppneuemontreal";
+  }
+  .question__title {
+    font-family: "ppneuemontreal";
+  }
+  .question__title-span {
+    font-family: "ppneuemontreal";
+  }
+  .question__second-text {
+    font-family: "ppneuemontreal";
+  }
+  .question__second-title {
+    font-family: "ppneuemontreal";
+  }
+  .question__second-title-span {
+    font-family: "ppneuemontreal";
+  }
+  .question__bottom-box {
+  }
+  .question__swiper-box {
+    width: 100% !important;
+    max-width: 490px;
+    height: 100% !important;
+  }
+  .question__swiper {
+    width: 100% !important;
+    max-width: 490px;
+    height: 100% !important;
+  }
+  .question__swiper-slide {
+    width: 100% !important;
+    max-width: 490px;
+    height: 100% !important;
+  }
+  .question__swiper-image {
+    width: 100% !important;
+    max-width: 490px;
+    height: 100% !important;
+  }
+  .question__image-info-box {
+  }
+  .question__location-icon {
+  }
+  .question__location-text {
+    font-family: "ppneuemontreal";
+  }
+  .question__swiper-text {
+    font-family: "ppneuemontreal";
+  }
+  .question__right-box {
+  }
+  .question__right-mini-box {
+  }
+  .question__right-bottom-box {
+  }
+  .question__right-texts-box {
+  }
+  .question__right-number {
+    font-family: "ppneuemontreal";
+  }
+  .question__right-title {
+    font-family: "ppneuemontreal";
+  }
+  .question__right-icon-box {
+  }
+  .question__right-icon {
+  }
+  .question__right-text {
+    font-family: "ppneuemontreal";
+  }
+}
+@media (max-width: 1526px) {
+  .question {
+  }
+  .question__container {
+  }
+  .question__top-box {
+  }
+  .question__text {
+    font-family: "ppneuemontreal";
+  }
+  .question__title {
+    font-family: "ppneuemontreal";
+  }
+  .question__title-span {
+    font-family: "ppneuemontreal";
+  }
+  .question__second-text {
+    font-family: "ppneuemontreal";
+  }
+  .question__second-title {
+    font-family: "ppneuemontreal";
+  }
+  .question__second-title-span {
+    font-family: "ppneuemontreal";
+  }
+  .question__bottom-box {
+  }
+  .question__swiper-box {
+    width: 100% !important;
+    max-width: 480px;
+    height: 100% !important;
+  }
+  .question__swiper {
+    width: 100% !important;
+    max-width: 480px;
+    height: 100% !important;
+  }
+  .question__swiper-slide {
+    width: 100% !important;
+    max-width: 480px;
+    height: 100% !important;
+  }
+  .question__swiper-image {
+    width: 100% !important;
+    max-width: 480px;
+    height: 100% !important;
+  }
+  .question__image-info-box {
+  }
+  .question__location-icon {
+  }
+  .question__location-text {
+    font-family: "ppneuemontreal";
+  }
+  .question__swiper-text {
+    font-family: "ppneuemontreal";
+  }
+  .question__right-box {
+  }
+  .question__right-mini-box {
+  }
+  .question__right-bottom-box {
+  }
+  .question__right-texts-box {
+  }
+  .question__right-number {
+    font-family: "ppneuemontreal";
+  }
+  .question__right-title {
+    font-family: "ppneuemontreal";
+  }
+  .question__right-icon-box {
+  }
+  .question__right-icon {
+  }
+  .question__right-text {
+    font-family: "ppneuemontreal";
+  }
+}
+@media (max-width: 1500px) {
+  .question {
+  }
+  .question__container {
+  }
+  .question__top-box {
+  }
+  .question__text {
+    font-family: "ppneuemontreal";
+  }
+  .question__title {
+    font-family: "ppneuemontreal";
+  }
+  .question__title-span {
+    font-family: "ppneuemontreal";
+  }
+  .question__second-text {
+    font-family: "ppneuemontreal";
+  }
+  .question__second-title {
+    font-family: "ppneuemontreal";
+  }
+  .question__second-title-span {
+    font-family: "ppneuemontreal";
+  }
+  .question__bottom-box {
+  }
+  .question__swiper-box {
+    width: 100% !important;
+    max-width: 480px;
+    height: 100% !important;
+  }
+  .question__swiper {
+    width: 100% !important;
+    max-width: 480px;
+    height: 100% !important;
+  }
+  .question__swiper-slide {
+    width: 100% !important;
+    max-width: 480px;
+    height: 100% !important;
+  }
+  .question__swiper-image {
+    width: 100% !important;
+    max-width: 700px;
+    height: 100% !important;
+  }
+  .question__image-info-box {
+  }
+  .question__location-icon {
+  }
+  .question__location-text {
+    font-family: "ppneuemontreal";
+  }
+  .question__swiper-text {
+    font-family: "ppneuemontreal";
+  }
+  .question__right-box {
+  }
+  .question__right-mini-box {
+  }
+  .question__right-bottom-box {
+  }
+  .question__right-texts-box {
+  }
+  .question__right-number {
+    font-family: "ppneuemontreal";
+  }
+  .question__right-title {
+    font-family: "ppneuemontreal";
+  }
+  .question__right-icon-box {
+  }
+  .question__right-icon {
+  }
+  .question__right-text {
+    font-family: "ppneuemontreal";
+  }
+}
+@media (max-width: 1430px) {
+  .question {
+  }
+  .question__container {
+  }
+  .question__top-box {
+  }
+  .question__text {
+    font-family: "ppneuemontreal";
+  }
+  .question__title {
+    font-family: "ppneuemontreal";
+  }
+  .question__title-span {
+    font-family: "ppneuemontreal";
+  }
+  .question__second-text {
+    font-family: "ppneuemontreal";
+  }
+  .question__second-title {
+    font-family: "ppneuemontreal";
+  }
+  .question__second-title-span {
+    font-family: "ppneuemontreal";
+  }
+  .question__bottom-box {
+  }
+  .question__swiper-box {
+    width: 100% !important;
+    max-width: 480px;
+
+    height: 100% !important;
+  }
+  .question__swiper {
+    width: 100% !important;
+    max-width: 480px;
+
+    height: 100% !important;
+  }
+  .question__swiper-slide {
+    width: 100% !important;
+    max-width: 480px;
+
+    height: 100% !important;
+  }
+  .question__swiper-image {
+    width: 100% !important;
+    max-width: 480px;
+
+    height: 100% !important;
+  }
+  .question__image-info-box {
+  }
+  .question__location-icon {
+  }
+  .question__location-text {
+    font-family: "ppneuemontreal";
+  }
+  .question__swiper-text {
+    font-family: "ppneuemontreal";
+  }
+  .question__right-box {
+  }
+  .question__right-mini-box {
+  }
+  .question__right-bottom-box {
+  }
+  .question__right-texts-box {
+  }
+  .question__right-number {
+    font-family: "ppneuemontreal";
+  }
+  .question__right-title {
+    font-family: "ppneuemontreal";
+  }
+  .question__right-icon-box {
+  }
+  .question__right-icon {
+  }
+  .question__right-text {
+    font-family: "ppneuemontreal";
+  }
+}

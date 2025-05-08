@@ -55,6 +55,7 @@ export default function HeroSectoin() {
                     delay: 5000,
                     disableOnInteraction: false,
                 }}
+                speed={2500}
                 loop={true}
                 modules={[Autoplay]}
             >

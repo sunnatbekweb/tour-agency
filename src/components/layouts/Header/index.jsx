@@ -89,7 +89,7 @@ export const Header = () => {
                           {item.label}
                         </p>
                       </div>
-                      <ul className='backdrop-blur-2xl shadow-2xl bg-black/40 absolute left-0 top-full translate-y-[24px] opacity-0 pointer-events-none group-hover:opacity-100 group-hover:translate-y-[0px] group-hover:pointer-events-auto transition-all duration-500 flex flex-col justify-center items-center w-full rounded-[8px] z-50'>
+                      <ul className='backdrop-blur-2xl shadow-2xl bg-black/40 absolute left-0 top-full translate-y-[24px] opacity-0 pointer-events-none group-hover:opacity-100 group-hover:translate-y-[0px] group-hover:pointer-events-auto transition-all duration-300 flex flex-col justify-center items-center w-full rounded-[8px] z-50'>
                         {navLink.map((dest, i) => (
                           <Link
                             className={`w-full flex flex-col justify-center items-center text-center duration-500 text-white hover:bg-white/10 hover:text-white whitespace-nowrap
@@ -119,7 +119,7 @@ export const Header = () => {
             <div className='header__right-contact-button hidden'>
               <SecondContactButton>Contact us</SecondContactButton>
             </div>
-            <div className="header__right-language bg-white/10 rounded-[33px] border-[#A28887] border-[1px] flex flex-row justify-center items-center gap-x-[5px] py-[7.5px] px-[7.5px] md:gap-x-[9px] md:py-[14px] md:px-[14px] 2xl:px-[18px] 2xl:py-[18px]">
+            <div className="header__right-language bg-white/10 rounded-[33px] border-[#A28887] border-[1px] flex flex-row justify-center items-center gap-x-[5px] py-[7.5px] px-[7.5px] md:gap-x-[9px] md:py-[14px] md:px-[14px] xl:py-[8px] 2xl:px-[18px] 2xl:py-[18px]">
               <img className="header__right-language-icon object-cover w-[16px] h-[16px] md:w-[33px] md:h-[33px]" src="/icons/language__icon.svg" alt="language__icon" />
               <p className="header__right-language-text font-medium text-[11px] leading-[100%] text-white md:text-[16px] 2xl:text-[20px]">
                 Eng
