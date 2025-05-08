@@ -6,14 +6,14 @@
   letter-spacing: 2%;
   color: white;
   padding: 20px 66px;
-  border: 2px solid #ffffff79;
+  border: 2px solid #656267;
   border-radius: 32px;
   background: linear-gradient(90deg, #b4a297, #b4a297, #b4a297, #ffffff);
   background-size: 180% 180%;
-  animation: gradient-animation-uniquee 8s ease infinite;
+  animation: gradient-animation-third 5s ease infinite;
   font-family: "ppneuemontreal";
 }
-@keyframes gradient-animation-uniquee {
+@keyframes gradient-animation-third {
   0% {
     background-position: 0% 100%;
   }
@@ -33,14 +33,14 @@
     letter-spacing: 2%;
     color: white;
     padding: 20px 56px;
-    border: 2px solid #ffffff;
+    border: 2px solid #656267;
     border-radius: 32px;
     background: linear-gradient(90deg, #b4a297, #b4a297, #b4a297, #ffffff);
     background-size: 180% 180%;
-    animation: gradient-animation-uniquee 8s ease infinite;
+    animation: gradient-animation-third 8s ease infinite;
     font-family: "ppneuemontreal";
   }
-  @keyframes gradient-animation-uniquee {
+  @keyframes gradient-animation-third {
     0% {
       background-position: 0% 100%;
     }
@@ -60,14 +60,14 @@
     line-height: 100%;
     color: white;
     padding: 11.5px 29.35px;
-    border: 2px solid #ffffff;
+    border: 2px solid #656267;
     border-radius: 15px;
     background: linear-gradient(90deg, #b4a297, #b4a297, #b4a297, #ffffff);
     background-size: 180% 180%;
-    animation: gradient-animation-uniquee 8s ease infinite;
+    animation: gradient-animation-third 8s ease infinite;
     font-family: "ppneuemontreal";
   }
-  @keyframes gradient-animation-uniquee {
+  @keyframes gradient-animation-third {
     0% {
       background-position: 0% 100%;
     }

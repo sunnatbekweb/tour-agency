@@ -89,7 +89,7 @@ export const Header = () => {
                           {item.label}
                         </p>
                       </div>
-                      <ul className='backdrop-blur-2xl shadow-2xl bg-black/40 absolute left-0 top-full translate-y-[24px] opacity-0 pointer-events-none group-hover:opacity-100 group-hover:translate-y-[0px] group-hover:pointer-events-auto transition-all duration-500 flex flex-col justify-center items-center w-full rounded-[8px] z-50'>
+                      <ul className='backdrop-blur-2xl shadow-2xl bg-black/40 absolute left-0 top-full translate-y-[24px] opacity-0 pointer-events-none group-hover:opacity-100 group-hover:translate-y-[0px] group-hover:pointer-events-auto transition-all duration-300 flex flex-col justify-center items-center w-full rounded-[8px] z-50'>
                         {navLink.map((dest, i) => (
                           <Link
                             className={`w-full flex flex-col justify-center items-center text-center duration-500 text-white hover:bg-white/10 hover:text-white whitespace-nowrap

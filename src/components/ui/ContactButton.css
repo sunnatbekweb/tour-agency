@@ -10,10 +10,10 @@
     border-radius: 33px;
     background: linear-gradient(90deg, #b4a297, #b4a297, #b4a297, #ffffff);
     background-size: 180% 180%;
-    animation: gradient-animation 8s ease infinite;
+    animation: gradient-animation-first 8s ease infinite;
     font-family: "ppneuemontreal";
   }
-  @keyframes gradient-animation {
+  @keyframes gradient-animation-first {
     0% {
       background-position: 0% 100%;
     }
@@ -36,10 +36,10 @@
     border-radius: 32px;
     background: linear-gradient(90deg, #b4a297, #b4a297, #b4a297, #ffffff);
     background-size: 180% 180%;
-    animation: gradient-animation 8s ease infinite;
+    animation: gradient-animation-first 8s ease infinite;
     font-family: "ppneuemontreal";
   }
-  @keyframes gradient-animation {
+  @keyframes gradient-animation-first {
     0% {
       background-position: 0% 100%;
     }
