@@ -2,6 +2,7 @@
   height: 100vh;
   background-image: url(../../../public/images/trip-finder-bg.png);
   background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,6 +19,43 @@
       color: #ffffff4d;
     }
   }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.pagination li {
+  list-style: none;
+}
+
+.pagination li a {
+  padding: 8px 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.pagination li.active a {
+  background-color: #a5958b;
+  color: white;
+  border-color: #a5958b;
+  cursor: pointer;
+}
+
+.pagination li.disabled a {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.pagination .next a {
+  color: #a5958b;
 }
 
 @media screen and (min-width: 768px) {
