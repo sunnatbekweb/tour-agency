@@ -64,14 +64,47 @@ body {
   font-size: 16px;
   height: 100%;
   line-height: 1.5;
-  background-color: var(--seashell);
+  background-color: var(--seashell) !important;
   color: var(--gunmetal);
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+@media (max-width: 1024px) {
+  body {
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    font-family: "ppneuemontreal";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    height: 100%;
+    line-height: 1.5;
+    background-color: var(--white) !important;
+    color: var(--gunmetal);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    font-family: "ppneuemontreal";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    height: 100%;
+    line-height: 1.5;
+    background-color: var(--white) !important;
+    color: var(--gunmetal);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+}
 .container {
-  /* overflow: visible; */
-  /* width: 100% !important; */
+  width: 100% !important;
   margin: 0 auto !important;
 }
 .visually-hidden {

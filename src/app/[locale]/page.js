@@ -3,6 +3,7 @@ import ExploreSection from "@/components/HomePage/ExploreSection";
 import CarouselSection from "@/components/HomePage/CarouselSection";
 import UniqueSection from "@/components/HomePage/UniqueSection";
 import QuestionSection from "@/components/HomePage/QuestionSection";
+import RoadSection from "@/components/HomePage/RoadSection";
 export default function Home() {
   return (
     <div>
@@ -11,6 +12,7 @@ export default function Home() {
       <CarouselSection />
       <UniqueSection />
       <QuestionSection />
+      <RoadSection />
     </div>
   );
 }

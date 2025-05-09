@@ -107,15 +107,15 @@
     font-family: "ppneuemontreal";
     & svg {
       transform: rotate(45deg);
-      transition: all 450ms ease;
+      transition: all 100ms ease;
       & path {
-        transition: all 450ms ease;
+        transition: all 100ms ease;
         fill: white;
       }
     }
-    &:hover {
+    &:active {
       & svg {
-        transition: all 450ms ease;
+        transition: all 100ms ease;
         transform: none !important;
         transform: rotate(0);
         & path {
@@ -177,15 +177,15 @@
     font-family: "ppneuemontreal";
     & svg {
       transform: rotate(45deg);
-      transition: all 450ms ease;
+      transition: all 100ms ease;
       & path {
-        transition: all 450ms ease;
+        transition: all 100ms ease;
         fill: white;
       }
     }
-    &:hover {
+    &:active {
       & svg {
-        transition: all 450ms ease;
+        transition: all 100ms ease;
         transform: none !important;
         transform: rotate(0);
         & path {
