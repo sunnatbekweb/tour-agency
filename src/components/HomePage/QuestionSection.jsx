@@ -85,7 +85,7 @@ export default function QuestionSection() {
         })
     }, [activeId])
     return (
-        <section className='question bg-white pt-[64px] md:pt-[94px] xl:pt-[100px]'>
+        <section className='question mt-[64px] md:mt-[94px] xl:mt-[100px]'>
             <div className="container question__container w-full flex flex-col justify-center items-start gap-[40px] px-6 md:gap-[94px] md:px-9">
                 <div className="question__top-box flex flex-col justify-center items-start gap-2 md:gap-4">
                     <p className='question__text md:text-[#A5958B] hidden md:block md:font-medium md:text-[24px] md:uppercase md:mb-4'>
