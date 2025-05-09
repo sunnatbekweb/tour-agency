@@ -1,17 +1,16 @@
-import { Header } from "@/components/layouts/Header";
-import { Footer } from "@/components/layouts/Footer";
+
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import "../../styles/fonts.css";
 import "../../styles/style.css";
 import "../../styles/globals.css";
-
+import { Header } from "@/components/layouts/Header/Header";
+import { Footer } from "@/components/layouts/Footer/Footer";
 export const metadata = {
   title: "Tour Agency",
   description: "Created by OneSystem",
 };
-
 export default async function RootLayout({ children, params }) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) {
@@ -23,7 +22,7 @@ export default async function RootLayout({ children, params }) {
         <NextIntlClientProvider>
           <Header />
           <main>{children}</main>
-          <Footer />
+          < Footer />
         </NextIntlClientProvider>
       </body>
     </html>

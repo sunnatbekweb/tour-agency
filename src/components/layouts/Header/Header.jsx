@@ -1,5 +1,5 @@
 "use client"
-import './index.css'
+import './Header.css'
 import { Link } from "@/i18n/navigation"
 import DrawerHeader from "@/components/ui/DrawerHeader"
 import React, { useEffect, useState } from "react"

@@ -34,33 +34,33 @@
 }
 .road__button {
   cursor: pointer !important;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
   color: #69382f;
-  line-height: 24px;
+  font-size: 18px;
   text-align: center;
-  padding: 20.73px 33px;
+  padding: 14px 24px;
   border: 2px solid #69382f;
   border-radius: 32px;
-  background: linear-gradient(90deg, #ffffff, #ffffff, #ffffff, #f9e2bc);
+  background: linear-gradient(90deg, #ffffff, #ffffff, #ffffff, #ee8c5c);
   background-size: 180% 180%;
   animation: gradient-animation-fourth 8s ease infinite;
   font-family: "ppneuemontreal";
   & svg {
     transform: rotate(45deg);
-    transition: all 100ms ease;
+    transition: all 450ms ease;
     & path {
-      transition: all 100ms ease;
+      transition: all 450ms ease;
       fill: #69382f;
     }
   }
   &:hover {
     & svg {
-      transition: all 100ms ease;
+      transition: all 450ms ease;
       transform: none !important;
       transform: rotate(0);
       & path {
-        fill: white;
+        fill: #69382f;
       }
     }
   }
@@ -102,33 +102,33 @@
   }
   .road__button {
     cursor: pointer !important;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 500;
     color: #69382f;
-    line-height: 24px;
+    font-size: 18px;
     text-align: center;
-    padding: 20.73px 33px;
+    padding: 14px 24px;
     border: 2px solid #69382f;
     border-radius: 32px;
-    background: linear-gradient(90deg, #ffffff, #ffffff, #ffffff, #f9e2bc);
+    background: linear-gradient(90deg, #ffffff, #ffffff, #ffffff, #ee8c5c);
     background-size: 180% 180%;
     animation: gradient-animation-fourth 8s ease infinite;
     font-family: "ppneuemontreal";
     & svg {
       transform: rotate(45deg);
-      transition: all 100ms ease;
+      transition: all 450ms ease;
       & path {
-        transition: all 100ms ease;
+        transition: all 450ms ease;
         fill: #69382f;
       }
     }
     &:hover {
       & svg {
-        transition: all 100ms ease;
+        transition: all 450ms ease;
         transform: none !important;
         transform: rotate(0);
         & path {
-          fill: white;
+          fill: #69382f;
         }
       }
     }
