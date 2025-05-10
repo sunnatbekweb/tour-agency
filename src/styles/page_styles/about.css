@@ -1,0 +1,8 @@
+.about {
+  height: 100vh;
+  background-image: url(../../../public/images/about_bg.png);
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
