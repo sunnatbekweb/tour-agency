@@ -136,6 +136,20 @@ export default function About() {
           </div>
         </div>
       </section>
+      <section className="py-[80px]">
+        <div className="container">
+          <div className="flex items-center mb-[140px]">
+            <h3 className="font-medium text-7xl w-full lg:w-1/2 uppercase">
+              our Expertise
+            </h3>
+            <p className="text-2xl uppercase w-full lg:w-1/2">
+              Our crew is always getting bigger, but we all work toward one
+              goal: to make sales success not only possible but inevitable for
+              teams everywhere.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
