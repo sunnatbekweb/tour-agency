@@ -1,6 +1,7 @@
 import React from "react";
 import "@/styles/page_styles/about.css";
 import Image from "next/image";
+import { AboutFAQ } from "@/components/about/AboutFAQ";
 
 export default function About() {
   return (
@@ -128,8 +129,12 @@ export default function About() {
                   alt="Tour leader"
                 />
                 <div className="pt-6 px-2 font-medium">
-                  <h5 className="text-xl md:text-2xl lg:text-4xl mb-2">Mr. Eshmat Toshmat</h5>
-                  <p className="text-xs md:text-xl lg:text-2xl">Tour leader Kazakhistan</p>
+                  <h5 className="text-xl md:text-2xl lg:text-4xl mb-2">
+                    Mr. Eshmat Toshmat
+                  </h5>
+                  <p className="text-xs md:text-xl lg:text-2xl">
+                    Tour leader Kazakhistan
+                  </p>
                 </div>
               </div>
             ))}
@@ -171,6 +176,7 @@ export default function About() {
           </div>
         </div>
       </section>
+      <AboutFAQ />
     </>
   );
 }
