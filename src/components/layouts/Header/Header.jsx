@@ -7,21 +7,21 @@ import SecondContactButton from '@/components/ui/SecondContactButton'
 export const Header = () => {
   const link = [
     {
-      icon: 'icons/destinations__icon.svg',
+      icon: '/icons/destinations__icon.svg',
       label: 'Destinations',
     },
     {
-      icon: 'icons/tripFound__icon.svg',
+      icon: '/icons/tripFound__icon.svg',
       path: '/tripFounder',
       label: 'Trip founder',
     },
     {
-      icon: 'icons/aboutUs__icon.svg',
+      icon: '/icons/aboutUs__icon.svg',
       path: '/aboutUs',
       label: 'About us',
     },
     {
-      icon: 'icons/blog__icon.svg',
+      icon: '/icons/blog__icon.svg',
       path: '/blog',
       label: 'Blog',
     }
