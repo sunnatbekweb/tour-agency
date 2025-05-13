@@ -6,15 +6,17 @@ import { AboutFAQ } from "@/components/about/AboutFAQ";
 export default function About() {
   return (
     <>
-      <section className="about">
+      <section className="about relative">
         <div className="container h-full flex flex-col items-center 2xl:items-start justify-center">
-          <span className="font-medium text-3xl sm:text-5xl md:text-7xl xl:text-9xl text-white">
-            Not Just Tours
-          </span>
-          <br className="hidden md:block" />
-          <span className="font-medium text-3xl sm:text-5xl md:text-7xl xl:text-9xl text-white ml-[20%] 2xl:ml-[40%]">
-            We Tell Stories
-          </span>
+          <h1 className="w-full flex flex-col items-center 2xl:items-start justify-center font-medium text-3xl sm:text-5xl md:text-7xl xl:text-9xl text-white">
+            <span>Not Just Tours</span>
+            <span className=" ml-[20%] 2xl:ml-[30%]">We Tell Stories</span>
+          </h1>
+          <div className="absolute bottom-40">
+            <button className="w-[162px] h-[48px] lg:w-[216px] lg:h-[72px] bg-white font-medium text-xl lg:text-2xl text-[#656267] rounded-4xl 2xl:hidden">
+              Contact us
+            </button>
+          </div>
         </div>
       </section>
       <section className="py-20">
