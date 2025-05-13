@@ -12,7 +12,7 @@ export default function About() {
             <span>Not Just Tours</span>
             <span className=" ml-[20%] 2xl:ml-[30%]">We Tell Stories</span>
           </h1>
-          <div className="absolute bottom-40">
+          <div className="absolute bottom-20">
             <button className="w-[162px] h-[48px] lg:w-[216px] lg:h-[72px] bg-white font-medium text-xl lg:text-2xl text-[#656267] rounded-4xl 2xl:hidden">
               Contact us
             </button>
