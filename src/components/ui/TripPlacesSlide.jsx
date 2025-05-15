@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -37,11 +39,14 @@ export const TripPlacesSlide = () => {
           <SwiperSlide key={index}>
             <Image
               src={"/images/hystorical__samarkand.jpg"}
-              width={590}
-              height={610}
-              className="w-[270px] h-[280px] lg:w-[590px] lg:h-[610px]"
+              width={520}
+              height={540}
+              className="w-[270px] h-[280px] lg:w-[520px] lg:h-[540px]"
               alt="Slide image"
             />
+            <h3 className="text-5xl text-white absolute left-10 bottom-10 w-3/4">
+              Splendor of Ancient Khiva
+            </h3>
           </SwiperSlide>
         ))}
       </Swiper>

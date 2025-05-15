@@ -111,4 +111,113 @@
 
 .tripPlacesSlide .swiper-wrapper .swiper-slide {
   width: fit-content;
+  position: relative;
+}
+
+.introduction_header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #bdbdbd;
+  position: relative;
+}
+
+.introduction_header::before {
+  content: url(../../../public/icons/introdution.svg);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: -80px;
+}
+
+.introduction_list {
+  position: relative;
+}
+
+.introduction_list::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  bottom: 60px;
+  left: -60px;
+  width: 2px;
+  height: calc(100% - 120px);
+  background: #a5958b;
+}
+
+.introduction_list-item {
+  position: relative;
+}
+
+.introduction_list-item::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: -75px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #a5958b;
+}
+
+.accordion {
+  position: relative;
+}
+
+.accordion__details {
+  padding: 24px 0;
+  cursor: pointer;
+}
+
+.accordion__details summary::marker {
+  content: "";
+}
+
+.accordion__details .accordion__title {
+  font-weight: 500;
+  font-size: 24px;
+  color: #323232;
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.accordion__details summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordion__details summary .accordion-icon {
+  transition: transform 0.3s ease;
+}
+
+.accordion__details[open] summary .accordion-icon {
+  transform: rotate(90deg);
+}
+
+.accordion__content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: all 0.3s;
+}
+
+.accordion__content-body {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.accordion__content-body p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #878787;
+  padding: 0 20px 20px 0;
+}
+
+.accordion__details[open] + .accordion__content {
+  grid-template-rows: 1fr;
 }

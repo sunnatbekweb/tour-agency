@@ -1,7 +1,7 @@
 import React from "react";
-import "@/styles/page_styles/about.css";
 import Image from "next/image";
 import { AboutFAQ } from "@/components/about/AboutFAQ";
+import "@/styles/page_styles/about.css";
 
 export default function About() {
   return (
