@@ -119,7 +119,7 @@ export default function TripFinder() {
           nextLabel="Next"
           // onPageChange={}
           pageRangeDisplayed={3}
-          marginPagesDisplayed={2}
+          marginPagesDisplayed={1}
           pageCount={10}
           breakLabel="..."
           previousLabel="Prev"
