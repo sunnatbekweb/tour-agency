@@ -12,8 +12,8 @@
 
 .pagination li a {
   padding: 8px 18px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  border: 1px solid #f1f1f1;
+  border-radius: 12px;
   text-decoration: none;
   color: #333;
   cursor: pointer;
@@ -23,7 +23,7 @@
 .pagination li.active a {
   background-color: #a5958b;
   color: white;
-  border-color: #a5958b;
+  border-color: #f1f1f1;
   cursor: pointer;
 }
 
@@ -31,8 +31,10 @@
   opacity: 0.5;
   pointer-events: none;
   cursor: not-allowed;
+  color: #cccccc;
 }
 
-.pagination .next a {
+.pagination .next a,
+.pagination .previous a {
   color: #a5958b;
 }
