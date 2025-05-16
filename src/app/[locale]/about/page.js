@@ -1,7 +1,7 @@
 import React from "react";
-import "@/styles/page_styles/about.css";
 import Image from "next/image";
 import { AboutFAQ } from "@/components/about/AboutFAQ";
+import "@/styles/page_styles/about.css";
 
 export default function About() {
   return (
@@ -178,7 +178,19 @@ export default function About() {
           </div>
         </div>
       </section>
-      <AboutFAQ />
+      <section className="question mt-[64px] md:mt-[94px] xl:mt-[100px]">
+        <div className="container question__container w-full flex flex-col justify-center items-start gap-[40px] px-6 md:gap-[94px] md:px-9">
+          <div className="question__top-box w-full lg:w-1/2 flex flex-col justify-center items-start gap-2 md:gap-4">
+            <p className="question__text md:text-[#A5958B] md:font-medium md:text-[24px] md:uppercase md:mb-4">
+              Trip founder
+            </p>
+            <h2 className="question__title md:font-medium md:text-[56px] md:leading-[100%] md:uppercase md:text-[#323232]">
+              frequently asked question
+            </h2>
+          </div>
+          <AboutFAQ />
+        </div>
+      </section>
     </>
   );
 }
