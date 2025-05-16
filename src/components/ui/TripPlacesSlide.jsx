@@ -10,7 +10,7 @@ import Image from "next/image";
 export const TripPlacesSlide = () => {
   return (
     <div>
-      <div className="container px-6 flex items-center justify-between">
+      <div className="hidden container px-6 lg:flex items-center justify-between">
         <button className="slide_button slide_button-prev">
           <span className="arrow"></span>
         </button>
@@ -44,7 +44,7 @@ export const TripPlacesSlide = () => {
               className="w-[270px] h-[280px] lg:w-[520px] lg:h-[540px]"
               alt="Slide image"
             />
-            <h3 className="text-5xl text-white absolute left-10 bottom-10 w-3/4">
+            <h3 className="text-2xl lg:text-5xl text-white absolute left-4 bottom-6 lg:left-10 lg:bottom-10 w-3/4">
               Splendor of Ancient Khiva
             </h3>
           </SwiperSlide>

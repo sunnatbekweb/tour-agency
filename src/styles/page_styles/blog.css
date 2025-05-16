@@ -12,6 +12,8 @@
   border-radius: 16px;
 }
 
+/* Slide styles */
+
 .line {
   width: 82px;
   height: 1px;
@@ -115,6 +117,8 @@
   position: relative;
 }
 
+/* introduction */
+
 .introduction_header {
   width: 100%;
   display: flex;
@@ -126,11 +130,13 @@
 }
 
 .introduction_header::before {
-  content: url(../../../public/icons/introdution.svg);
-  width: 40px;
-  height: 40px;
+  content: "";
+  background-image: url(../../../public/icons/introdution.svg);
+  background-size: cover;
+  width: 20px;
+  height: 20px;
   position: absolute;
-  left: -80px;
+  left: -40px;
 }
 
 .introduction_list {
@@ -140,11 +146,11 @@
 .introduction_list::before {
   content: "";
   position: absolute;
-  top: 60px;
+  top: 40px;
   bottom: 60px;
-  left: -60px;
+  left: -30px;
   width: 2px;
-  height: calc(100% - 120px);
+  height: calc(100% - 60px);
   background: #a5958b;
 }
 
@@ -155,20 +161,22 @@
 .introduction_list-item::before {
   content: "";
   position: absolute;
-  top: 40px;
-  left: -75px;
-  width: 32px;
-  height: 32px;
+  top: 20px;
+  left: -39px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background: #a5958b;
 }
+
+/* Accordion styles */
 
 .accordion {
   position: relative;
 }
 
 .accordion__details {
-  padding: 24px 0;
+  padding: 12px 0;
   cursor: pointer;
 }
 
@@ -178,11 +186,13 @@
 
 .accordion__details .accordion__title {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 16px;
   color: #323232;
-  display: flex;
-  align-items: center;
-  column-gap: 16px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  column-gap: 8px;
 }
 
 .accordion__details summary {
@@ -226,4 +236,62 @@
 
 .data-price_list .data-price_list-item .accordion {
   border-bottom: 1px solid #bdbdbd;
+}
+
+@media screen and (min-width: 768px) {
+  .introduction_header::before {
+    width: 30px;
+    height: 30px;
+    left: -50px;
+  }
+
+  .introduction_list::before {
+    top: 50px;
+    bottom: 60px;
+    left: -35px;
+    width: 2px;
+    height: calc(100% - 80px);
+  }
+
+  .introduction_list-item::before {
+    top: 25px;
+    left: -47px;
+    width: 26px;
+    height: 26px;
+  }
+
+  .accordion__details {
+    padding: 24px 0;
+  }
+
+  .accordion__details .accordion__title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .introduction_header::before {
+    width: 40px;
+    height: 40px;
+    left: -80px;
+  }
+
+  .introduction_list::before {
+    top: 60px;
+    bottom: 60px;
+    left: -60px;
+    width: 2px;
+    height: calc(100% - 100px);
+  }
+
+  .introduction_list-item::before {
+    top: 40px;
+    left: -75px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .accordion__details .accordion__title {
+    font-size: 24px;
+  }
 }

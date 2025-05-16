@@ -14,7 +14,7 @@ export const TripSlide = () => {
     <Swiper
       pagination={true}
       modules={[Pagination]}
-      className="tripDetail-slide w-[60%]"
+      className="tripDetail-slide w-full md:w-[60%]"
     >
       {[...Array(5)].map((_, index) => (
         <SwiperSlide key={index}>
@@ -23,6 +23,7 @@ export const TripSlide = () => {
             width={1100}
             height={600}
             alt="Slide image"
+            className="w-full h-full object-cover rounded-2xl"
           />
         </SwiperSlide>
       ))}
