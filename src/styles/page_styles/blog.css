@@ -56,6 +56,7 @@
 
 .slide_button:hover {
   background: #a5958b33;
+  border-color: #bebebe;
 }
 
 .slide_button::before {
@@ -211,13 +212,18 @@
   column-gap: 20px;
 }
 
-.accordion__content-body p {
+.accordion__content-body-item {
+  width: 100%;
   font-size: 16px;
   font-weight: 500;
   color: #878787;
-  padding: 0 20px 20px 0;
+  padding: 0 0 40px 0;
 }
 
 .accordion__details[open] + .accordion__content {
   grid-template-rows: 1fr;
+}
+
+.data-price_list .data-price_list-item .accordion {
+  border-bottom: 1px solid #bdbdbd;
 }

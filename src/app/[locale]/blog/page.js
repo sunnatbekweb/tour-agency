@@ -1,9 +1,10 @@
 "use client";
 
 import React from "react";
-import "@/styles/page_styles/blog.css";
 import Image from "next/image";
 import ReactPaginate from "react-paginate";
+import { Link } from "@/i18n/navigation";
+import "@/styles/page_styles/blog.css";
 
 export default function Blog() {
   return (
@@ -54,9 +55,11 @@ export default function Blog() {
                   </div>
                   <div className="flex items-center justify-between gap-x-3">
                     <span className="text-lg text-[#A7A7A7]">6 May, 2025</span>
-                    <button className="w-1/2 h-[48px] bg-[#B4A297] rounded-4xl font-medium text-white text-base">
-                      Read more
-                    </button>
+                    <Link href={`/blog/${index}`} className="w-1/2">
+                      <button className="w-full h-[48px] bg-[#B4A297] rounded-4xl font-medium text-white text-base">
+                        Read more
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>

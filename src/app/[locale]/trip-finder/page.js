@@ -5,6 +5,7 @@ import "@/styles/page_styles/trip-finder.css";
 import TripSearch from "@/components/ui/TripSearch";
 import Image from "next/image";
 import ReactPaginate from "react-paginate";
+import { Link } from "@/i18n/navigation";
 
 export default function TripFinder() {
   return (
@@ -104,9 +105,11 @@ export default function TripFinder() {
                         </span>
                       </li>
                     </ul>
-                    <button className="w-1/2 h-[36px] bg-[#B4A297] rounded-4xl font-medium text-white text-base mt-8 ml-auto ">
-                      Booking
-                    </button>
+                    <Link href={`/trip/${index}`} className="w-1/2">
+                      <button className="w-full h-[36px] bg-[#B4A297] rounded-4xl font-medium text-white text-base mt-8 ml-auto ">
+                        Booking
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
