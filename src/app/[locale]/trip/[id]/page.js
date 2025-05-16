@@ -203,7 +203,7 @@ export default function TripDetail() {
                       <div className="accordion__content">
                         <div className="accordion__content-body">
                           <p className="text-xs md:text-base">
-                            Kazakhstan is the world's ninth-largest country by
+                            Kazakhstan is the world&apos;s ninth-largest country by
                             land area and the largest landlocked country. Hilly
                             plateaus and plains account for nearly half its vast
                             territory, with lowlands composing another third;
