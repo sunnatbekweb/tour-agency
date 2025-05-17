@@ -4,6 +4,7 @@ import './FooterSmSection.css'
 import { useEffect, useRef, useState } from 'react'
 import { Slide, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import RoadSection from './RoadSection';
 export default function FooterSmSection() {
     const moveTop = () => {
         window.scrollTo(0, 0)
@@ -123,8 +124,11 @@ export default function FooterSmSection() {
                 theme="colored"
                 transition={Slide}
             />
+            <div className='relative top-[26px]'>
+                <RoadSection />
+            </div>
             <footer
-                className='footerSmSection w-full bg-[#A98D7D] rounded-tr-[30px] rounded-tl-[30px] py-[52px]'
+                className='footerSmSection w-full bg-[#A98D7D] rounded-tr-[30px] rounded-tl-[30px] py-[52px] absolute'
                 onSubmit={formSubmission}>
                 <div className="container w-full footerSmSection__container flex flex-col justify-center items-center px-6">
                     <div className="footerSmSection__top w-full flex flex-row justify-between items-start ">

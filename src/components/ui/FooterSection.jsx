@@ -4,6 +4,7 @@ import { Link } from '@/i18n/navigation'
 import { useEffect, useRef, useState } from 'react'
 import { Slide, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import RoadSection from './RoadSection';
 export default function FooterSection() {
     const moveTop = () => {
         window.scrollTo(0, 0)
@@ -123,7 +124,10 @@ export default function FooterSection() {
                 theme="colored"
                 transition={Slide}
             />
-            <footer className="footer bg-[#A98D7D] hidden xl:block">
+            <div className='relative top-[50px]'>
+                <RoadSection />
+            </div>
+            <footer className="footer bg-[#A98D7D] hidden xl:w-full xl:block xl:rounded-tr-[56px] xl:rounded-tl-[56px] xl:absolute" >
                 <div className="container footer__container xl:pt-[106.65px]">
                     <div className="footer__top-box xl:flex xl:flex-row xl:justify-between xl:items-start">
                         <div className="footer__top-left-box xl:flex xl:flex-col xl:justify-center xl:items-start xl:w-[419px] 2xl:w-[519px]">
@@ -133,7 +137,7 @@ export default function FooterSection() {
                                     src={'/icons/logo.svg'}
                                     alt="logo" />
                             </Link>
-                            <p className='footer__top-left-text xl:font-medium xl:text-[32px] xl:leading-[34px] xl:tracking-tighter-[-2%] xl:text-white xl:w-[419px] xl:mb-[72px] 2xl:w-[519px]'>
+                            <p className='footer__top-left-text xl:font-normal xl:text-[32px] xl:leading-[34px] xl:tracking-tighter-[-2%] xl:text-white xl:w-[419px] xl:mb-[72px] 2xl:w-[519px]'>
                                 Sign up to get exclusive offers, travel tips, and destination inspiration straight to your inbox!
                             </p>
                             <form
@@ -181,7 +185,7 @@ export default function FooterSection() {
                                         className='footer__top-middle-lists xl:flex xl:flex-col xl:justify-center xl:items-start'
                                         key={index}>
                                         <Link className='footer__top-middle-links xl:flex xl:flex-col xl:justify-center xl:items-start'>
-                                            <p className='footer__top-middle-links-text xl:duration-500 xl:hover:duration-500 xl:font-medium xl:text-[30px] xl:leading-[100%] xl:tracking-tighter-[-2%] xl:text-white/70 xl:hover:text-white xl:active:opacity-50'>
+                                            <p className='footer__top-middle-links-text xl:duration-500 xl:hover:duration-500 xl:font-normal xl:text-[30px] xl:leading-[100%] xl:tracking-tighter-[-2%] xl:text-white/70 xl:hover:text-white xl:active:opacity-50'>
                                                 {item.links}
                                             </p>
                                         </Link>
@@ -190,10 +194,10 @@ export default function FooterSection() {
                             </ul>
                         </nav>
                         <div className="footer__top-seond-middle-bottom-right-box xl:w-[350px] xl:flex xl:flex-col xl:justify-center xl:items-start 2xl:w-[418px]">
-                            <h4 className='footer__top-seond-middle-bottom-right-box-title xl:w-[350px] xl:font-medium xl:text-[35px] xl:leading-[100%] xl:tracking-tighter-[-2%] xl:mb-[57.5px] xl:text-white 2xl:w-[418px]'>
+                            <h4 className='footer__top-seond-middle-bottom-right-box-title xl:w-[350px] xl:font-medium xl:text-[35px] xl:leading-[100%] xl:tracking-tighter-[-2%] xl:mb-[57.5px] xl:text-white 2xl:w-[418px] 2xl:text-[40px]'>
                                 Why travel with us?
                             </h4>
-                            <q className='footer__top-seond-middle-bottom-right-box-texts xl:font-medium xl:text-[30px] xl:leading-[36px] xl:w-[350px] xl:mb-[57.5px] xl:text-white/70 xl:tracking-tighter-[-2%] 2xl:w-[418px]'>
+                            <q className='footer__top-seond-middle-bottom-right-box-texts xl:font-medium xl:text-[30px] xl:leading-[36px] xl:w-[350px] xl:mb-[57.5px] xl:text-white/70 xl:tracking-tighter-[-2%] 2xl:w-[418px] 2xl:text-[32px] 2xl:leading-[40px]'>
                                 Authentic experiences, expert guides, unforgettable memories — discover the true spirit of the Silk Road with Wonder:)
                             </q>
                             <div className='footer__top-seond-middle-icon-box xl:w-full xl:flex xl:flex-row xl:justify-between xl:items-center'>
