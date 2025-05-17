@@ -9,7 +9,9 @@ export default function BlogDetail() {
           The Art of Turning Lookers into Bookers: Mastering the Customer
           Journey
         </h1>
-        <p className="text-xl lg:text-3xl text-[#A7A7A7] my-6 lg:my-12">6 May, 2025</p>
+        <p className="text-xl lg:text-3xl text-[#A7A7A7] my-6 lg:my-12">
+          6 May, 2025
+        </p>
         <Image
           src={"/images/trip-finder-bg.png"}
           width={1920}
