@@ -34,7 +34,7 @@ export default function BlogDetail() {
               for using your “share with client” links.
             </p>
             {[...Array(5)].map((_, index) => (
-              <div>
+              <div key={index}>
                 <br />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl">
                   {index + 1}. Share the right links in the right places
