@@ -6,12 +6,16 @@ import React, { useEffect, useState } from "react";
 import SecondContactButton from "@/components/ui/SecondContactButton";
 import { usePathname } from "next/navigation";
 import { useLocale } from "next-intl";
+
 export const Header = () => {
+  const destinations = [
+    { path: "/destination/uzbekistan", label: "Uzbekistan" },
+    { path: "/destination/kazakhstan", label: "Kazakhstan" },
+    { path: "/destination/tajikistan", label: "Tajikistan" },
+    { path: "/destination/turkmenistan", label: "Turkmanistan" },
+    { path: "/destination/kyrgyzstan", label: "Kyrgizistain" },
+  ];
   const link = [
-    {
-      icon: "/icons/destinations__icon.svg",
-      label: "Destinations",
-    },
     {
       icon: "/icons/tripFound__icon.svg",
       path: "/trip-finder",
@@ -28,45 +32,23 @@ export const Header = () => {
       label: "Blog",
     },
   ];
-  const navLink = [
-    {
-      path: "/uzbekistan",
-      label: "Uzbekistan",
-    },
-    {
-      path: "/kazakhstan",
-      label: "Kazakhstan",
-    },
-    {
-      path: "/tajikistan",
-      label: "Tajikistan",
-    },
-    {
-      path: "/turkmanistan",
-      label: "Turkmanistan",
-    },
-    {
-      path: "/kyrgizistain",
-      label: "Kyrgizistain",
-    },
-  ];
+
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
   const locale = useLocale();
-  console.log(pathname);
+
+  const cleanPath = pathname.replace(`/${locale}`, "");
+  const isDestinationPage = cleanPath.startsWith("/destination");
+
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 0);
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [setIsScrolled]);
-  const closeBurger = () => {
-    setIsOpen(false);
-  };
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const closeBurger = () => setIsOpen(false);
+
   return (
     <div>
       <header
@@ -77,6 +59,7 @@ export const Header = () => {
         }`}
       >
         <div className="container header__container w-full flex flex-row justify-between items-center px-6 py-12 md:px-9 md:py-[52px] xl:py-[36px]">
+          {/* LEFT */}
           <div className="header__left-box">
             <button
               className="header__left-open-burger-button"
@@ -96,6 +79,8 @@ export const Header = () => {
               />
             </Link>
           </div>
+
+          {/* MIDDLE */}
           <div className="header__middle-box">
             <Link href={"/"}>
               <img
@@ -106,73 +91,81 @@ export const Header = () => {
             </Link>
             <nav className="header__middle-nav">
               <ul className="header__middle-list">
-                {link.map((item, index) =>
-                  item.label === "Destinations" ? (
-                    <li
-                      key={index}
-                      className="header__middle-lists relative group"
+                <li className="header__middle-lists relative group">
+                  <div
+                    className={`header__middle-links ${
+                      isDestinationPage && "bg-white/70"
+                    } cursor-pointer flex items-center px-4 py-2`}
+                  >
+                    {isDestinationPage && (
+                      <img
+                        className="header__middle-links-texts-icons"
+                        src={"/icons/destinations__icon.svg"}
+                        alt="icon"
+                      />
+                    )}
+                    <p
+                      className={`header__middle-links-texts font-bold ${
+                        isDestinationPage ? "text-[#656267]" : "text-white"
+                      } uppercase xl:16px 2xl:text-[20px]`}
                     >
-                      <div
-                        className={`header__middle-links ${pathname === `/${locale}` && "bg-white/70"} cursor-pointer flex items-center px-4 py-2`}
+                      {destinations.find(
+                        (destination) => destination.path === cleanPath
+                      )?.label ?? "Destinations"}
+                    </p>
+                  </div>
+                  <ul className="backdrop-blur-2xl shadow-2xl bg-black/40 absolute left-0 top-full translate-y-[24px] opacity-0 pointer-events-none group-hover:opacity-100 group-hover:translate-y-[0px] group-hover:pointer-events-auto transition-all duration-300 flex flex-col justify-center items-center w-full rounded-[8px] z-50">
+                    {destinations.map((dest, i) => (
+                      <Link
+                        className={`w-full flex flex-col justify-center items-center text-center duration-500 text-white hover:bg-white/10 hover:text-white whitespace-nowrap
+                              ${i === 0 ? "rounded-t-[8px]" : ""} 
+                              ${
+                                i === destinations?.length - 1
+                                  ? "rounded-b-[8px]"
+                                  : ""
+                              }`}
+                        href={dest.path}
+                        key={i}
                       >
-                        {pathname === `/${locale}` && <img
+                        <p className="w-full font-bold uppercase xl:16px 2xl:text-[20px] py-4">
+                          {dest.label}
+                        </p>
+                      </Link>
+                    ))}
+                  </ul>
+                </li>
+                {link.map((item, index) => (
+                  <li key={index}>
+                    <Link
+                      href={item.path}
+                      className={`header__middle-links ${
+                        cleanPath === item.path && "bg-white/70"
+                      } flex items-center px-4 py-2`}
+                    >
+                      {cleanPath === item.path && (
+                        <img
                           className="header__middle-links-texts-icons"
                           src={item.icon}
                           alt="icon"
-                        />}
-                        <p className={`header__middle-links-texts font-bold ${pathname === `/${locale}` ? "text-[#656267]" : "text-white"} uppercase xl:16px 2xl:text-[20px]`}>
-                          {item.label}
-                        </p>
-                      </div>
-                      <ul className="backdrop-blur-2xl shadow-2xl bg-black/40 absolute left-0 top-full translate-y-[24px] opacity-0 pointer-events-none group-hover:opacity-100 group-hover:translate-y-[0px] group-hover:pointer-events-auto transition-all duration-300 flex flex-col justify-center items-center w-full rounded-[8px] z-50">
-                        {navLink.map((dest, i) => (
-                          <Link
-                            className={`w-full flex flex-col justify-center items-center text-center duration-500 text-white hover:bg-white/10 hover:text-white whitespace-nowrap
-                            ${i === 0 ? "rounded-t-[8px]" : ""} 
-                            ${
-                              i === navLink.length - 1 ? "rounded-b-[8px]" : ""
-                            }`}
-                            href={dest.path}
-                            key={i}
-                          >
-                            <p className="w-full font-bold uppercase xl:16px 2xl:text-[20px] py-4">
-                              {dest.label}
-                            </p>
-                          </Link>
-                        ))}
-                      </ul>
-                    </li>
-                  ) : (
-                    <li key={index}>
-                      <Link
-                        href={item.path}
-                        className={`header__middle-links ${
-                          pathname === `/${locale}${item.path}` && "bg-white/70"
-                        } flex items-center px-4 py-2`}
+                        />
+                      )}
+                      <p
+                        className={`header__middle-links-texts font-bold uppercase ${
+                          cleanPath === item.path
+                            ? "text-[#656267]"
+                            : "text-white"
+                        } xl:16px 2xl:text-[20px]`}
                       >
-                        {pathname === `/${locale}${item.path}` && (
-                          <img
-                            className="header__middle-links-texts-icons"
-                            src={item.icon}
-                            alt="icon"
-                          />
-                        )}
-                        <p
-                          className={`header__middle-links-texts font-bold uppercase ${
-                            pathname === `/${locale}${item.path}`
-                              ? "text-[#656267]"
-                              : "text-white"
-                          } xl:16px 2xl:text-[20px]`}
-                        >
-                          {item.label}
-                        </p>
-                      </Link>
-                    </li>
-                  )
-                )}
+                        {item.label}
+                      </p>
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </nav>
           </div>
+
+          {/* RIGHT */}
           <div className="header__right-box flex flex-row justify-center items-center gap-x-[48px]">
             <div className="header__right-contact-button hidden">
               <SecondContactButton>Contact us</SecondContactButton>
@@ -190,6 +183,7 @@ export const Header = () => {
           </div>
         </div>
       </header>
+
       <DrawerHeader modal={isOpen} close={closeBurger} />
     </div>
   );
