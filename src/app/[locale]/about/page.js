@@ -8,7 +8,7 @@ export default function About() {
     <>
       <section className="about relative">
         <div className="container h-full flex flex-col items-center 2xl:items-start justify-center">
-          <h1 className="w-full flex flex-col items-center 2xl:items-start justify-center font-medium text-3xl sm:text-5xl md:text-7xl xl:text-9xl text-white">
+          <h1 className="2xl:ml-[10%] w-full flex flex-col items-center 2xl:items-start justify-center font-medium text-3xl sm:text-5xl md:text-7xl xl:text-9xl text-white">
             <span>Not Just Tours</span>
             <span className=" ml-[20%] 2xl:ml-[30%]">We Tell Stories</span>
           </h1>
@@ -178,7 +178,7 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className="question mt-[64px] md:mt-[94px] xl:mt-[100px]">
+      <section className="question my-[64px] md:my-[94px] xl:my-[100px]">
         <div className="container question__container w-full flex flex-col justify-center items-start gap-[40px] px-6 md:gap-[94px] md:px-9">
           <div className="question__top-box w-full lg:w-1/2 flex flex-col justify-center items-start gap-2 md:gap-4">
             <p className="question__text md:text-[#A5958B] md:font-medium md:text-[24px] md:uppercase md:mb-4">

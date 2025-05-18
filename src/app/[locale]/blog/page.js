@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import ReactPaginate from "react-paginate";
 import { Link } from "@/i18n/navigation";
-import "@/styles/page_styles/blog.css";
+import "@/styles/page_styles/trip.css";
 
 export default function Blog() {
   return (
@@ -65,7 +65,7 @@ export default function Blog() {
               </div>
             ))}
           </div>
-          <div className="py-[100px]">
+          <div className="pt-[100px]">
             <ReactPaginate
               nextLabel="Next"
               // onPageChange={}

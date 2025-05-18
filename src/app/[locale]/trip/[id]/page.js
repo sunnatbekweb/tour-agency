@@ -1,15 +1,15 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 import { TripPlacesSlide } from "@/components/ui/TripPlacesSlide";
 import { TripSlide } from "@/components/ui/TripSlide";
 import { Link } from "@/i18n/navigation";
 import { AboutFAQ } from "@/components/about/AboutFAQ";
-import "@/styles/page_styles/blog.css";
+import "@/styles/page_styles/trip.css";
 
 export default function TripDetail() {
   return (
-    <div className="bg-[#FFF7F3] flex flex-col gap-y-14">
-      <section className="mt-[216px] md:mt-[240px] xl:mt-[210px]">
+    <div className="bg-[#FFF7F3] flex flex-col gap-y-14 mt-[136px] md:mt-[180px] xl:mt-[150px] py-[60px]">
+      <section>
         <div className="container px-6 font-medium">
           <span className="hidden text-xl text-[#A5958B] uppercase lg:block mb-8">
             Trip Blogs
@@ -203,14 +203,14 @@ export default function TripDetail() {
                       <div className="accordion__content">
                         <div className="accordion__content-body">
                           <p className="text-xs md:text-base">
-                            Kazakhstan is the world&apos;s ninth-largest country by
-                            land area and the largest landlocked country. Hilly
-                            plateaus and plains account for nearly half its vast
-                            territory, with lowlands composing another third;
-                            its southern and eastern frontiers are composed of
-                            low mountainous regions. Kazakhstan has a population
-                            of 20 million and one of the lowest population
-                            densities in the world
+                            Kazakhstan is the world&apos;s ninth-largest country
+                            by land area and the largest landlocked country.
+                            Hilly plateaus and plains account for nearly half
+                            its vast territory, with lowlands composing another
+                            third; its southern and eastern frontiers are
+                            composed of low mountainous regions. Kazakhstan has
+                            a population of 20 million and one of the lowest
+                            population densities in the world
                           </p>
                           <Image
                             src={"/images/hystorical__samarkand.jpg"}
