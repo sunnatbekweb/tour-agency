@@ -1,13 +1,29 @@
 "use client";
 
-import React from "react";
-import "@/styles/page_styles/trip-finder.css";
+import React, { useEffect, useState } from "react";
 import TripSearch from "@/components/ui/TripSearch";
 import Image from "next/image";
 import ReactPaginate from "react-paginate";
 import { Link } from "@/i18n/navigation";
+import axios from "axios";
+import "@/styles/page_styles/trip-finder.css";
 
 export default function TripFinder() {
+  const [tour_cards, setTour_cards] = useState();
+  const getTourCards = async () => {
+    try {
+      await axios
+        .get(`http://tour.onesystem.uz/api/v1/tour/tour-cards/`)
+        .then((response) => setTour_cards(response.data));
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    getTourCards();
+  }, []);
+
   return (
     <>
       <section className="trip-finder">
@@ -29,14 +45,14 @@ export default function TripFinder() {
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {[...Array(9)].map((_, index) => (
+            {tour_cards?.results?.map((card, index) => (
               <div
                 key={index}
                 className="p-4 pb-6 border border-[#EBEBEB] rounded-4xl shadow-xl"
               >
-                <div className="rounded-3xl">
+                <div className="rounded-xl lg:rounded-3xl overflow-hidden">
                   <Image
-                    src={"/images/hystorical__samarkand.jpg"}
+                    src={card.map_image}
                     width={300}
                     height={180}
                     className="w-full"
@@ -47,7 +63,7 @@ export default function TripFinder() {
                   <div className="text-[#323232] mb-5">
                     <div className="flex items-center gap-x-4 justify-between mb-4">
                       <h4 className="font-semibold text-xl lg:text-2xl line-clamp-1">
-                        Build your own destination
+                        {card.title}
                       </h4>
                       <div className="flex items-center gap-x-3">
                         <Image
@@ -66,7 +82,7 @@ export default function TripFinder() {
                       flexibility.
                     </p>
                     <span className="font-semibold text-base lg:text-xl text-[#323232]">
-                      $456.99
+                      ${card.price}
                     </span>
                   </div>
                   <div className="flex items-end gap-x-3">
@@ -105,7 +121,7 @@ export default function TripFinder() {
                         </span>
                       </li>
                     </ul>
-                    <Link href={`/trip/${index}`} className="w-1/2">
+                    <Link href={`/trip/${card.id}`} className="w-1/2">
                       <button className="w-full h-[36px] bg-[#B4A297] rounded-4xl font-medium text-white text-base mt-8 ml-auto ">
                         Booking
                       </button>
@@ -123,7 +139,7 @@ export default function TripFinder() {
           // onPageChange={}
           pageRangeDisplayed={3}
           marginPagesDisplayed={1}
-          pageCount={10}
+          pageCount={tour_cards?.count}
           breakLabel="..."
           previousLabel="Prev"
           containerClassName="pagination"

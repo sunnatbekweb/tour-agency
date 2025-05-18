@@ -65,7 +65,7 @@ export default function FooterSmSection() {
                                 <button className='footerSmSection__form-button flex justify-center items-center rounded-[20.8px] right-[24px] absolute top-[6px] bottom-[6px] bg-[#A98D7D] px-[18px] py-[9px] active:opacity-50'>
                                     <img
                                         className='footerSmSection__form-button-icon'
-                                        src="icons/right__submit.svg"
+                                        src="/icons/right__submit.svg"
                                         alt="right__submit-icon" />
                                 </button>
                             </div>
