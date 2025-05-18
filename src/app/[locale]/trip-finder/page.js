@@ -1,12 +1,12 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import "@/styles/page_styles/trip-finder.css";
 import TripSearch from "@/components/ui/TripSearch";
 import Image from "next/image";
 import ReactPaginate from "react-paginate";
 import { Link } from "@/i18n/navigation";
 import axios from "axios";
+import "@/styles/page_styles/trip-finder.css";
 
 export default function TripFinder() {
   const [tour_cards, setTour_cards] = useState();

@@ -1,12 +1,37 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import ReactPaginate from "react-paginate";
 import { Link } from "@/i18n/navigation";
+import axios from "axios";
+import { useLocale } from "next-intl";
 import "@/styles/page_styles/trip.css";
 
 export default function Blog() {
+  const [posts, setPosts] = useState();
+  const locale = useLocale();
+  const getPosts = async () => {
+    try {
+      await axios
+        .get(`http://tour.onesystem.uz/api/v1/blog/posts/`)
+        .then((response) => setPosts(response.data));
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const formatDate = (rawDate) => {
+    const date = new Date(rawDate);
+    const day = date.getDate();
+    const month = date.toLocaleString(locale, { month: "long" });
+    const year = date.getFullYear();
+    return `${day} ${month}, ${year}`;
+  };
+
+  useEffect(() => {
+    getPosts();
+  }, []);
   return (
     <>
       <section className="blog_hero">
@@ -30,14 +55,14 @@ export default function Blog() {
             Where Cultures Converge and History Lives
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {[...Array(9)].map((_, index) => (
+            {posts?.results?.map((post, index) => (
               <div
                 key={index}
                 className="p-4 pb-6 border border-[#EBEBEB] rounded-4xl shadow-xl"
               >
-                <div className="rounded-3xl">
+                <div className="rounded-xl lg:rounded-3xl overflow-hidden">
                   <Image
-                    src={"/images/hystorical__samarkand.jpg"}
+                    src={post.image}
                     width={300}
                     height={180}
                     className="w-full"
@@ -48,14 +73,15 @@ export default function Blog() {
                   <div className="text-[#323232] mb-5">
                     <div className="flex items-center gap-x-4 justify-between mb-4">
                       <h4 className="font-medium text-xl lg:text-2xl line-clamp-3">
-                        The Art of Turning Lookers into Bookers: Mastering the
-                        Customer Journey
+                        {post?.[`title_${locale}`]}
                       </h4>
                     </div>
                   </div>
                   <div className="flex items-center justify-between gap-x-3">
-                    <span className="text-lg text-[#A7A7A7]">6 May, 2025</span>
-                    <Link href={`/blog/${index}`} className="w-1/2">
+                    <span className="text-lg text-[#A7A7A7]">
+                      {formatDate(post.created_at)}
+                    </span>
+                    <Link href={`/blog/${post.id}`} className="w-1/2">
                       <button className="w-full h-[48px] bg-[#B4A297] rounded-4xl font-medium text-white text-base">
                         Read more
                       </button>
@@ -71,7 +97,7 @@ export default function Blog() {
               // onPageChange={}
               pageRangeDisplayed={3}
               marginPagesDisplayed={1}
-              pageCount={10}
+              pageCount={posts?.count}
               breakLabel="..."
               previousLabel="Prev"
               containerClassName="pagination"
