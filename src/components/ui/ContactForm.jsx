@@ -13,6 +13,7 @@ export const ContactForm = () => {
     destination: "",
     trip_tour: "",
   });
+  
   const getDestinations = async () => {
     try {
       await axios
@@ -22,14 +23,11 @@ export const ContactForm = () => {
       console.error(error);
     }
   };
-
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
       await axios
         .post(`http://tour.onesystem.uz/api/v1/blog/contact/`, formData)
