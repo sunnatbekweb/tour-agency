@@ -35,7 +35,15 @@
   height: 600px;
 }
 .secondCarousel__image-texts {
+  opacity: 0;
   font-family: "ppneuemontreal";
+  transition: 0.8s ease-in-out;
+  transform: translateY(100px);
+}
+.swiper-slide-active .secondCarousel__image-texts {
+  opacity: 1;
+  transition: 0.8s ease-in-out;
+  transform: translateY(0px);
 }
 @media (max-width: 1024px) {
   .secondCarousel {
