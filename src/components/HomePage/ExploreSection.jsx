@@ -1,22 +1,25 @@
-import './ExploreSection.css'
+import "./ExploreSection.css";
 export default function ExploreSection() {
-    return (
-        <div>
-            <section className="explore mt-[40px] md:mt-[64px]">
-                <div className="container explore__container flex flex-col justify-center items-start px-6 md:px-9 2xl:flex 2xl:flex-row 2xl:justify-between 2xl:items-end">
-                    <div className="explore__left-box flex flex-col justify-center items-start">
-                        <p className='explore__left-text font-medium text-[16px] text-[#A5958B] mb-2 uppercase md:text-[24px] md:mb-4 xl:mb-8 xl:text-[20px]'>
-                            destination preview
-                        </p>
-                        <h2 className='explore__left-title w-full font-medium text-[32px] leading-[40px] uppercase text-[#323232] mb-6 md:text-[56px] md:leading-[100%] md:mb-14 xl:text-[72px] xl:leading-[80px] xl:w-full xl:max-w-[830px]'>
-                            Explore Central Asia Like Never Before
-                        </h2>
-                    </div>
-                    <p className='explore__right-text w-full font-medium text-[12px] leading-[18px] text-[#32323] md:text-[24px] md:leading-[32px] md:w-[637px] xl:leading-[37px]'>
-                        At SRW (Silk Road Wonders), we craft unforgettable journeys across Uzbekistan, Kazakhstan, Kyrgyzstan, and Tajikistan. Whether you're drawn by majestic architecture, ancient bazaars, or serene nature — your perfect adventure awaits.
-                    </p>
-                </div>
-            </section>
+  return (
+    <div>
+      <section className="explore mt-[40px] md:mt-[64px] lg:mt-[100px]">
+        <div className="container explore__container flex flex-col justify-center items-start gap-2 px-6 md:gap-4 md:px-8">
+          <p className="explore__text font-medium text-[16px] leading-[100%] text-[#A5958B] uppercase md:text-[24px]">
+            Destinations Preview
+          </p>
+          <div className="explore__bottom-box w-full flex flex-col justify-center items-start gap-6 md:gap-[56px] 2xl:flex 2xl:flex-row 2xl:justify-between 2xl:items-start">
+            <h2 className="explore__bottom-title w-full font-medium text-[32px] leading-[40px] text-[#323232] uppercase md:text-[56px] md:leading-[60px] lg:w-[642px]">
+              Explore Central Asia Like Never Before
+            </h2>
+            <p className="explore__bottom-text w-full font-medium text-[12px] leading-[16px] text-[#323232] md:text-[24px] md:leading-[32px] lg:w-[700px]">
+              At SRW (Silk Road Wonders), we craft unforgettable journeys across
+              Uzbekistan, Kazakhstan, Kyrgyzstan, Turkmenistan and Tajikistan.
+              Whether you're drawn by majestic architecture, ancient bazaars, or
+              serene nature — your perfect adventure awaits.
+            </p>
+          </div>
         </div>
-    )
+      </section>
+    </div>
+  );
 }

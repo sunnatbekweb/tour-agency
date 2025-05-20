@@ -73,8 +73,23 @@
   transition: 500ms ease all;
 }
 .footer__right-button {
-}
-.footer__button-icon {
+  & svg {
+    transform: rotate(0deg) !important;
+    transition: all 450ms ease !important;
+    & path {
+      transition: all 450ms ease !important;
+      fill: #a98d7d !important;
+    }
+  }
+  &:hover {
+    & svg {
+      transition: all 450ms ease !important;
+      transform: rotate(-45deg) !important;
+      & path {
+        fill: #a98d7d !important;
+      }
+    }
+  }
 }
 .footer__hr {
 }

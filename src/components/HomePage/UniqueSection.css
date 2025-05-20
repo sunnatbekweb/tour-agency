@@ -47,7 +47,6 @@
   &:hover {
     & svg {
       transition: all 450ms ease;
-      transform: none !important;
       transform: rotate(0);
       & path {
         fill: white;
