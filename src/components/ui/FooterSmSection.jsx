@@ -260,6 +260,7 @@ export default function FooterSmSection() {
               </a>
             </div>
           </div>
+          </div>
       </footer>
     </div>
   );

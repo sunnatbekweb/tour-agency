@@ -1,7 +1,7 @@
 import React from "react";
 import { Location } from "../../../public/icons/Location";
-import { Clock } from "../../../public/icons/Clock";
 import { Calendar } from "../../../public/icons/Calendar";
+import { Clock } from "../../../public/icons/Clock";
 import { Flag } from "../../../public/icons/Flag";
 import Image from "next/image";
 
