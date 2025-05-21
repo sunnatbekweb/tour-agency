@@ -21,7 +21,9 @@ export default function TripDetail() {
   const getTrip = async () => {
     try {
       await axios
-        .get(`${process.env.NEXT_PUBLIC_BASE_URL}/tour/tour-cards/${params?.id}/`)
+        .get(
+          `${process.env.NEXT_PUBLIC_BASE_URL}/tour/tour-cards/${params?.id}/`
+        )
         .then((response) => setTrip(response.data));
     } catch (error) {
       console.error(error);
@@ -91,7 +93,9 @@ export default function TripDetail() {
                       alt="checkbox icon"
                     />
                     <span className="font-medium text-sm md:text-base lg:text-2xl">
-                      Including Accomandation
+                      <span className="font-medium">
+                        {trip?.[`text${index + 1}_${locale}`]}
+                      </span>
                     </span>
                   </li>
                 ))}
@@ -228,7 +232,7 @@ export default function TripDetail() {
             </div>
 
             <ul className="data-price_list">
-              {[...Array(2)].map((_, index) => (
+              {trip?.dates_and_prices?.map((_, index) => (
                 <DatePriceItem key={index} />
               ))}
             </ul>
