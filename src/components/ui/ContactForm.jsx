@@ -17,7 +17,7 @@ export const ContactForm = () => {
   const getDestinations = async () => {
     try {
       await axios
-        .get(`http://tour.onesystem.uz/api/v1/tour/destinations/`)
+        .get(`${process.env.NEXT_PUBLIC_BASE_URL}/tour/destinations/`)
         .then((response) => setDestinations(response.data.results));
     } catch (error) {
       console.error(error);
@@ -30,7 +30,7 @@ export const ContactForm = () => {
     e.preventDefault();
     try {
       await axios
-        .post(`http://tour.onesystem.uz/api/v1/blog/contact/`, formData)
+        .post(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/contact/`, formData)
         .then((response) => console.log(response.data));
     } catch (error) {
       console.error(error);

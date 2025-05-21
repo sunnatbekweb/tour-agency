@@ -13,7 +13,7 @@ export default function BlogDetail() {
   const getPost = async () => {
     try {
       axios
-        .get(`http://tour.onesystem.uz/api/v1/blog/posts/${params?.id}/`)
+        .get(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/posts/${params?.id}/`)
         .then((response) => setPost(response.data));
     } catch (error) {
       console.error(error);

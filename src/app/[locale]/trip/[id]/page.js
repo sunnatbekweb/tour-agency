@@ -21,7 +21,7 @@ export default function TripDetail() {
   const getTrip = async () => {
     try {
       await axios
-        .get(`http://tour.onesystem.uz/api/v1/tour/tour-cards/${params?.id}/`)
+        .get(`${process.env.NEXT_PUBLIC_BASE_URL}/tour/tour-cards/${params?.id}/`)
         .then((response) => setTrip(response.data));
     } catch (error) {
       console.error(error);

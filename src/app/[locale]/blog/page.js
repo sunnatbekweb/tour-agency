@@ -14,7 +14,7 @@ export default function Blog() {
   const getPosts = async () => {
     try {
       await axios
-        .get(`http://tour.onesystem.uz/api/v1/blog/posts/`)
+        .get(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/posts/`)
         .then((response) => setPosts(response.data));
     } catch (error) {
       console.error(error);

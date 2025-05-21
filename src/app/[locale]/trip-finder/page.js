@@ -13,7 +13,7 @@ export default function TripFinder() {
   const getTourCards = async () => {
     try {
       await axios
-        .get(`http://tour.onesystem.uz/api/v1/tour/tour-cards/`)
+        .get(`${process.env.NEXT_PUBLIC_BASE_URL}/tour/tour-cards/`)
         .then((response) => setTour_cards(response.data));
     } catch (error) {
       console.error(error);

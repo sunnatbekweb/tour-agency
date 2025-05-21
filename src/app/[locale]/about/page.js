@@ -12,7 +12,7 @@ export default function About() {
   const getTripLeaders = async () => {
     try {
       await axios
-        .get(`http://tour.onesystem.uz/api/v1/blog/team-info/`)
+        .get(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/team-info/`)
         .then((response) => setTripLeaders(response.data));
     } catch (error) {
       console.error(error);
