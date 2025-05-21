@@ -1,14 +1,31 @@
-import React from "react";
-import "@/styles/page_styles/about.css";
+"use client";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { AboutFAQ } from "@/components/about/AboutFAQ";
+import axios from "axios";
+import "@/styles/page_styles/about.css";
+import { useLocale } from "next-intl";
 
 export default function About() {
+  const [tripLeaders, setTripLeaders] = useState();
+  const locale = useLocale();
+  const getTripLeaders = async () => {
+    try {
+      await axios
+        .get(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/team-info/`)
+        .then((response) => setTripLeaders(response.data));
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  useEffect(() => {
+    getTripLeaders();
+  }, []);
   return (
     <>
       <section className="about relative">
         <div className="container h-full flex flex-col items-center 2xl:items-start justify-center">
-          <h1 className="w-full flex flex-col items-center 2xl:items-start justify-center font-medium text-3xl sm:text-5xl md:text-7xl xl:text-9xl text-white">
+          <h1 className="2xl:ml-[10%] w-full flex flex-col items-center 2xl:items-start justify-center font-medium text-3xl sm:text-5xl md:text-7xl xl:text-9xl text-white">
             <span>Not Just Tours</span>
             <span className=" ml-[20%] 2xl:ml-[30%]">We Tell Stories</span>
           </h1>
@@ -122,20 +139,26 @@ export default function About() {
             Meet our amazing tour leaders
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-10">
-            {[...Array(8)].map((_, index) => (
+            {tripLeaders?.results?.map((leader, index) => (
               <div key={index}>
                 <Image
-                  src={"/images/tour_leader.png"}
+                  src={leader.image}
                   width={440}
                   height={480}
                   alt="Tour leader"
                 />
                 <div className="pt-6 px-2 font-medium">
-                  <h5 className="text-xl md:text-2xl lg:text-4xl mb-2">
-                    Mr. Eshmat Toshmat
+                  <h5
+                    className="text-xl md:text-2xl lg:text-3xl mb-1 line-clamp-1"
+                    title={leader?.[`username_${locale}`]}
+                  >
+                    {leader?.[`username_${locale}`]}
                   </h5>
-                  <p className="text-xs md:text-xl lg:text-2xl">
-                    Tour leader Kazakhistan
+                  <p
+                    className="text-xs md:text-lg lg:text-xl line-clamp-1"
+                    title={leader?.[`occupation_${locale}`]}
+                  >
+                    {leader?.[`occupation_${locale}`]}
                   </p>
                 </div>
               </div>
@@ -178,7 +201,19 @@ export default function About() {
           </div>
         </div>
       </section>
-      <AboutFAQ />
+      <section className="question my-[64px] md:my-[94px] xl:my-[100px]">
+        <div className="container question__container w-full flex flex-col justify-center items-start gap-[40px] px-6 md:gap-[94px] md:px-9">
+          <div className="question__top-box w-full lg:w-1/2 flex flex-col justify-center items-start gap-2 md:gap-4">
+            <p className="question__text text-[#A5958B] font-medium text-xl uppercase">
+              Trip founder
+            </p>
+            <h2 className="question__title font-medium text-3xl md:text-5xl lg:text-7xl text-[#323232] uppercase">
+              frequently asked question
+            </h2>
+          </div>
+          <AboutFAQ />
+        </div>
+      </section>
     </>
   );
 }
