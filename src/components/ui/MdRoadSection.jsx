@@ -4,7 +4,7 @@ import RightChevron from "../../../public/icons/RightChevron";
 export default function MdRoadSection() {
   return (
     <div>
-      <section className="mdRoad md:mt-[160px]">
+      <section className="mdRoad hidden md:mt-[160px] md:block xl:hidden">
         <div className="container mdRoad__container md:flex md:flex-col md:justify-center md:items-center md:px-6">
           <Link className="mdRoad-logo-link" href={"/"}>
             <img

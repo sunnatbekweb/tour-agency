@@ -116,7 +116,7 @@ export default function FooterSection() {
     }
   };
   return (
-    <div>
+    <div className="hidden xl:block">
       <ToastContainer
         position="top-right"
         autoClose={2000}
@@ -130,10 +130,10 @@ export default function FooterSection() {
         theme="colored"
         transition={Slide}
       />
-      <div className="relative top-[50px]">
+      <div className="relative top-[95px]">
         <RoadSection />
       </div>
-      <footer className="footer bg-[#A98D7D] hidden xl:w-full xl:block xl:rounded-tr-[56px] xl:rounded-tl-[56px] xl:absolute">
+      <footer className="footer bg-[#A98D7D] xl:w-full xl:rounded-tr-[56px] xl:rounded-tl-[56px] xl:absolute">
         <div className="container footer__container xl:pt-[106.65px]">
           <div className="footer__top-box xl:flex xl:flex-row xl:justify-between xl:items-start">
             <div className="footer__top-left-box xl:flex xl:flex-col xl:justify-center xl:items-start xl:w-[419px] 2xl:w-[519px]">

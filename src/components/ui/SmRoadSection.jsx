@@ -4,7 +4,7 @@ import RightChevron from "../../../public/icons/RightChevron";
 export default function SmRoadSection() {
   return (
     <div>
-      <section className="smRoad mt-[74px]">
+      <section className="smRoad mt-[74px] md:hidden">
         <div className="container smRoad__container flex flex-col justify-center items-center px-6">
           <Link className="smRoad-logo-link" href={"/"}>
             <img
