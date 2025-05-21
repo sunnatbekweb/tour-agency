@@ -7,6 +7,7 @@ import { Link } from "@/i18n/navigation";
 import axios from "axios";
 import { useLocale } from "next-intl";
 import "@/styles/page_styles/trip.css";
+import { Pagination } from "@/components/ui/Pagination";
 
 export default function Blog() {
   const [posts, setPosts] = useState();
@@ -14,7 +15,7 @@ export default function Blog() {
   const getPosts = async () => {
     try {
       await axios
-        .get(`http://tour.onesystem.uz/api/v1/blog/posts/`)
+        .get(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/posts/`)
         .then((response) => setPosts(response.data));
     } catch (error) {
       console.error(error);
@@ -92,20 +93,7 @@ export default function Blog() {
             ))}
           </div>
           <div className="pt-[100px]">
-            <ReactPaginate
-              nextLabel="Next"
-              // onPageChange={}
-              pageRangeDisplayed={3}
-              marginPagesDisplayed={1}
-              pageCount={posts?.count}
-              breakLabel="..."
-              previousLabel="Prev"
-              containerClassName="pagination"
-              pageClassName="page"
-              activeClassName="active"
-              disabledClassName="disabled"
-              renderOnZeroPageCount={null}
-            />
+            <Pagination count={posts?.count} />
           </div>
         </div>
       </section>
