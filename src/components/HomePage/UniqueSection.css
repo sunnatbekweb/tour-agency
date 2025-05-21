@@ -24,12 +24,12 @@
 }
 .unique__button {
   cursor: pointer !important;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 500;
   color: white;
-  line-height: 18px;
+  line-height: 24px;
   text-align: center;
-  padding: 14px 24px;
+  padding: 15px 27px;
   border: 2px solid #656267;
   border-radius: 32px;
   background: linear-gradient(180deg, #b4a297, #b4a297, #b4a297, #ffffff);
@@ -97,15 +97,15 @@
     color: white;
     line-height: 24px;
     text-align: center;
-    padding: 20.73px 33px;
+    padding: 21px 37px;
     border: 2px solid #656267;
     border-radius: 32px;
-    background: linear-gradient(0deg, #b4a297, #b4a297, #b4a297, #ffffff);
+    background: linear-gradient(180deg, #b4a297, #b4a297, #b4a297, #ffffff);
     background-size: 180% 180%;
     animation: gradient-animation-fourth 8s ease infinite;
     font-family: "ppneuemontreal";
     & svg {
-      transform: rotate(45deg);
+      transform: rotate(0deg);
       transition: all 100ms ease;
       & path {
         transition: all 100ms ease;
@@ -115,8 +115,7 @@
     &:active {
       & svg {
         transition: all 100ms ease;
-        transform: none !important;
-        transform: rotate(0);
+        transform: rotate(0deg);
         & path {
           fill: white;
         }
@@ -170,12 +169,12 @@
     padding: 14px 24px;
     border: 2px solid #656267;
     border-radius: 32px;
-    background: linear-gradient(0deg, #b4a297, #b4a297, #b4a297, #ffffff);
+    background: linear-gradient(180deg, #b4a297, #b4a297, #b4a297, #ffffff);
     background-size: 180% 180%;
     animation: gradient-animation-fourth 8s ease infinite;
     font-family: "ppneuemontreal";
     & svg {
-      transform: rotate(45deg);
+      transform: rotate(0deg);
       transition: all 100ms ease;
       & path {
         transition: all 100ms ease;
@@ -185,8 +184,7 @@
     &:active {
       & svg {
         transition: all 100ms ease;
-        transform: none !important;
-        transform: rotate(0);
+        transform: rotate(0deg);
         & path {
           fill: white;
         }

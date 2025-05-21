@@ -4,7 +4,7 @@ import "./FooterSmSection.css";
 import { useEffect, useRef, useState } from "react";
 import { Slide, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import RoadSection from "./RoadSection";
+import SmRoadSection from "./SmRoadSection";
 export default function FooterSmSection() {
   const moveTop = () => {
     window.scrollTo(0, 0);
@@ -128,11 +128,11 @@ export default function FooterSmSection() {
         theme="colored"
         transition={Slide}
       />
-      <div className="relative top-[26px]">
-        <RoadSection />
+      <div className="top-[30px] z-[-1] relative">
+        <SmRoadSection />
       </div>
       <footer
-        className="footerSmSection w-full bg-[#A98D7D] rounded-tr-[30px] rounded-tl-[30px] py-[52px] absolute"
+        className="footerSmSection w-full bg-[#A98D7D] rounded-tr-[30px] rounded-tl-[30px] py-[52px]"
         onSubmit={formSubmission}
       >
         <div className="container w-full footerSmSection__container flex flex-col justify-center items-center px-6">
@@ -156,7 +156,7 @@ export default function FooterSmSection() {
                 ref={emailRef}
               >
                 <input
-                  className="footerSmSection__form-email-input w-[78%] outline-none pl-[24px] font-medium text-[18px] leading-[24px] text-[#323232]"
+                  className="footerSmSection__form-email-input w-[78%] outline-none pl-[24px] font-medium text-[18px] leading-[100%] text-[#323232]"
                   onChange={(e) => {
                     e.preventDefault();
                     setForm({ ...form, email: e.target.value.trimStart() });
@@ -168,7 +168,7 @@ export default function FooterSmSection() {
                   value={form.email}
                   required
                 />
-                <button className="footerSmSection__form-button flex justify-center items-center rounded-[20.8px] right-[24px] absolute top-[6px] bottom-[6px] bg-[#A98D7D] px-[18px] py-[9px] active:opacity-50">
+                <button className="footerSmSection__form-button flex justify-center items-center rounded-[20.8px] right-[14px] absolute top-[6px] bottom-[6px] bg-[#A98D7D] px-[18px] py-[9px] active:opacity-50">
                   <img
                     className="footerSmSection__form-button-icon"
                     src="icons/right__submit.svg"

@@ -130,7 +130,9 @@ export default function FooterSection() {
         theme="colored"
         transition={Slide}
       />
-      <div className="relative top-[50px]">{/* <RoadSection /> */}</div>
+      <div className="relative top-[50px]">
+        <RoadSection />
+      </div>
       <footer className="footer bg-[#A98D7D] hidden xl:w-full xl:block xl:rounded-tr-[56px] xl:rounded-tl-[56px] xl:absolute">
         <div className="container footer__container xl:pt-[106.65px]">
           <div className="footer__top-box xl:flex xl:flex-row xl:justify-between xl:items-start">
@@ -256,7 +258,7 @@ export default function FooterSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <p className="footer__bottom-box-copy-logo-text xl:font-medium xl:text-[24px] xl:leading-[100%] xl:tracking-tighter-[-2%] xl:text-white">
+                  <p className="footer__bottom-box-copy-logo-text xl:font-medium xl:text-[24px] xl:leading-[100%] xl:tracking-tighter-[-2%] xl:text-white xl:hover:opacity-50 xl:duration-500">
                     OneSystem
                   </p>
                 </a>

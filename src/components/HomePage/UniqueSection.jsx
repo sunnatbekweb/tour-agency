@@ -20,7 +20,7 @@ export default function UniqueSection() {
             Unique, Personal,
             <span className="unique__title-span block">Unforgettable</span>
           </h3>
-          <button className="unique__button flex flex-row justify-center items-center gap-3.5">
+          <button className="unique__button flex flex-row justify-center items-center gap-3.5 active:opacity-50">
             Let’s travel
             <RightChevron />
           </button>
