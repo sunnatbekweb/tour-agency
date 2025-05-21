@@ -63,6 +63,7 @@ export const Header = () => {
           <div className="header__left-box">
             <button
               className="header__left-open-burger-button"
+
               onClick={() => setIsOpen(true)}
             >
               <img

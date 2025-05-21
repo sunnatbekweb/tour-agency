@@ -1,0 +1,115 @@
+@media (max-width: 1024px) {
+  .mdRoad {
+    width: 100%;
+    height: 1000px !important;
+    background-image: url("../../../public/images/footer__md-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .mdRoad__container {
+  }
+  .mdRoad-logo-link {
+  }
+  .mdRoad__logo-image {
+  }
+  .mdRoad__text-boxes {
+  }
+  .mdRoad__first-title {
+    font-family: "ppneuemontreal";
+    opacity: 90%;
+  }
+  .mdRoad__second-title {
+    font-family: "ppneuemontreal";
+    opacity: 70%;
+  }
+  .mdRoad__button {
+    cursor: pointer !important;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    line-height: 100%;
+    text-align: center;
+    padding: 22px 37px;
+    border: 2px solid #656267;
+    border-radius: 33px;
+    background: linear-gradient(180deg, #b4a297, #b4a297, #b4a297, #ffffff);
+    background-size: 180% 180%;
+    animation: gradient-animation-fourth 8s ease infinite;
+    font-family: "ppneuemontreal";
+    & svg {
+      transform: rotate(0deg);
+      transition: all 100ms ease;
+      & path {
+        transition: all 100ms ease;
+        fill: white;
+      }
+    }
+    &:active {
+      & svg {
+        transition: all 100ms ease;
+        transform: rotate(0deg);
+        & path {
+          fill: white;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .mdRoad {
+    width: 100%;
+    height: 800px !important;
+    background-image: url("../../../public/images/footer__md-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .mdRoad__container {
+  }
+  .mdRoad-logo-link {
+  }
+  .mdRoad__logo-image {
+  }
+  .mdRoad__text-boxes {
+  }
+  .mdRoad__first-title {
+    font-family: "ppneuemontreal";
+  }
+  .mdRoad__second-title {
+    font-family: "ppneuemontreal";
+    opacity: 70%;
+  }
+  .mdRoad__button {
+    cursor: pointer !important;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    line-height: 100%;
+    text-align: center;
+    padding: 22px 37px;
+    border: 2px solid #656267;
+    border-radius: 33px;
+    background: linear-gradient(180deg, #b4a297, #b4a297, #b4a297, #ffffff);
+    background-size: 180% 180%;
+    animation: gradient-animation-fourth 8s ease infinite;
+    font-family: "ppneuemontreal";
+    & svg {
+      transform: rotate(0deg);
+      transition: all 100ms ease;
+      & path {
+        transition: all 100ms ease;
+        fill: white;
+      }
+    }
+    &:active {
+      & svg {
+        transition: all 100ms ease;
+        transform: rotate(0deg);
+        & path {
+          fill: white;
+        }
+      }
+    }
+  }
+}

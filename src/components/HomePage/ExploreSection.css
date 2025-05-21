@@ -2,87 +2,14 @@
 }
 .explore__container {
 }
-.explore__left-box {
-}
-.explore__left-text {
+.explore__text {
   font-family: "ppneuemontreal";
 }
-.explore__left-title {
-  font-family: "ppneuemontreal";
-
-  margin-bottom: 0px;
+.explore__bottom-box {
 }
-.explore__right-text {
+.explore__bottom-title {
   font-family: "ppneuemontreal";
 }
-
-@media (max-width: 1600px) {
-  .explore {
-  }
-  .explore__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-  }
-  .explore__left-box {
-  }
-  .explore__left-text {
-    font-family: "ppneuemontreal";
-  }
-  .explore__left-title {
-    font-family: "ppneuemontreal";
-
-    margin-bottom: 56px;
-  }
-  .explore__right-text {
-    font-family: "ppneuemontreal";
-  }
+.explore__bottom-text {
+  font-family: "ppneuemontreal";
 }
-@media (max-width: 1024px) {
-  .explore {
-  }
-  .explore__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-  }
-  .explore__left-box {
-  }
-  .explore__left-text {
-    font-family: "ppneuemontreal";
-  }
-  .explore__left-title {
-    font-family: "ppneuemontreal";
-
-    margin-bottom: 56px;
-  }
-  .explore__right-text {
-    font-family: "ppneuemontreal";
-  }
-}
-@media (max-width: 767px) {
-    .explore {
-    }
-    .explore__container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: start;
-    }
-    .explore__left-box {
-    }
-    .explore__left-text {
-      font-family: "ppneuemontreal";
-    }
-    .explore__left-title {
-      font-family: "ppneuemontreal";
-  
-      margin-bottom: 24px;
-    }
-    .explore__right-text {
-      font-family: "ppneuemontreal";
-    }
-  }
-  

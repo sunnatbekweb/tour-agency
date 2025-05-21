@@ -1,3 +1,25 @@
+.swiper-button-next {
+  width: 96px !important;
+  height: 96px !important;
+  background-image: url("../../../public/icons/right__chevron.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translateY(-100px) !important;
+}
+.swiper-button-prev {
+  width: 96px !important;
+  height: 96px !important;
+  background-image: url("../../../public/icons/chevron.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translateY(-100px) !important;
+}
+.swiper-button-next::after {
+  display: none;
+}
+.swiper-button-prev::after {
+  display: none;
+}
 .carousel {
 }
 .carousel__container {
@@ -78,13 +100,29 @@
 }
 .carousel__button {
 }
-.swiper-button-prev:after {
-  display: none;
-}
-.swiper-button-next:after {
-  display: none;
-}
 @media (max-width: 1366px) {
+  .swiper-button-next {
+    width: 96px !important;
+    height: 96px !important;
+    background-image: url("../../../public/icons/right__chevron.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateY(-100px) !important;
+  }
+  .swiper-button-prev {
+    width: 96px !important;
+    height: 96px !important;
+    background-image: url("../../../public/icons/chevron.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateY(-100px) !important;
+  }
+  .swiper-button-next::after {
+    display: none;
+  }
+  .swiper-button-prev::after {
+    display: none;
+  }
   .carousel {
   }
   .carousel__container {
@@ -159,15 +197,22 @@
     font-family: "ppneuemontreal";
   }
   .carousel__button {
-  }
-  .swiper-button-prev:after {
-    display: none;
-  }
-  .swiper-button-next:after {
-    display: none;
   }
 }
 @media (max-width: 1024px) {
+  .swiper-button-next {
+    display: none !important;
+  }
+  .swiper-button-prev {
+    display: none !important;
+  }
+  .swiper-button-next::after {
+    display: none !important;
+  }
+
+  .swiper-button-prev::after {
+    display: none !important;
+  }
   .carousel {
   }
   .carousel__container {
@@ -242,12 +287,6 @@
     font-family: "ppneuemontreal";
   }
   .carousel__button {
-  }
-  .swiper-button-prev:after {
-    display: none;
-  }
-  .swiper-button-next:after {
-    display: none;
   }
 }
 @media (max-width: 767px) {
@@ -329,11 +368,5 @@
     font-family: "ppneuemontreal";
   }
   .carousel__button {
-  }
-  .swiper-button-prev:after {
-    display: none;
-  }
-  .swiper-button-next:after {
-    display: none;
   }
 }
