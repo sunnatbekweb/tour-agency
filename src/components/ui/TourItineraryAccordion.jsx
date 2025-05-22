@@ -1,7 +1,9 @@
 import React from "react";
 import Image from "next/image";
+import { useLocale } from "next-intl";
 
-export const TourItineraryAccordion = () => {
+export const TourItineraryAccordion = ({ props }) => {
+  const locale = useLocale();
   return (
     <li className="introduction_list-item">
       <div className="accordion">
@@ -9,9 +11,9 @@ export const TourItineraryAccordion = () => {
           <summary>
             <h3 className="accordion__title">
               <strong className="font-bold text-[#A5958B]">
-                Day 1{" "}
-              </strong>
-              <span>Introduce Samarkand</span>
+                {props?.[`day_${locale}`]}
+              </strong>{" "}
+              <span>{props?.[`title_${locale}`]}</span>
             </h3>
             <span className="accordion-icon">
               <div
@@ -31,21 +33,15 @@ export const TourItineraryAccordion = () => {
         <div className="accordion__content">
           <div className="accordion__content-body">
             <p className="text-xs md:text-base">
-              Kazakhstan is the world&apos;s ninth-largest country by land area
-              and the largest landlocked country. Hilly plateaus and plains
-              account for nearly half its vast territory, with lowlands
-              composing another third; its southern and eastern frontiers are
-              composed of low mountainous regions. Kazakhstan has a population
-              of 20 million and one of the lowest population densities in the
-              world
+              {props?.[`description_${locale}`]}
             </p>
-            <Image
+            {/* <Image
               src={"/images/hystorical__samarkand.jpg"}
               width={250}
               height={220}
               alt="Accordion image"
               className="hidden lg:block"
-            />
+            /> */}
           </div>
         </div>
       </div>

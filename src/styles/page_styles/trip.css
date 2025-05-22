@@ -1,46 +1,100 @@
+/* ==================== Global Styles ==================== */
 .blog_hero {
   height: 100vh;
-  background: center / cover no-repeat
-    url("../../../public/images/blog_hero_bg.png");
+  background: center / cover no-repeat url("/images/blog_hero_bg.png");
   position: relative;
 }
 
-.blog_detail-slide {
-  width: 60%;
+.tripPlacesSlide .swiper-wrapper .swiper-slide {
+  width: fit-content;
   height: 100%;
   margin: 0;
   border-radius: 16px;
 }
 
-/* Slide styles */
-
-.line {
-  width: 82px;
-  height: 1px;
-  background: #000;
+/* ==================== Trip Detail Slide ==================== */
+.tripDetail-slide {
   position: relative;
+  z-index: 10;
 }
 
-.line::before,
-.line::after {
-  content: "";
-  width: 7px;
-  height: 7px;
+.tripDetail-slide .swiper-pagination-bullets .swiper-pagination-bullet {
+  background: #d9d9d9;
+  transition: all 0.5s ease;
+}
+
+.tripDetail-slide .swiper-pagination-bullets .swiper-pagination-bullet-active {
+  width: 32px;
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.tripDetail-slide .swiper-button-prev,
+.tripDetail-slide .swiper-button-next {
+  width: 54px;
+  height: 54px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 50%;
-  background: #000;
+  display: none;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.line::before {
-  left: -3.5px;
+.tripDetail-slide .swiper-button-prev::after,
+.tripDetail-slide .swiper-button-next::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-left: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  pointer-events: none;
 }
 
-.line::after {
-  right: -3.5px;
+.tripDetail-slide .swiper-button-prev::after {
+  transform: rotate(45deg);
 }
 
+.tripDetail-slide .swiper-button-next::after {
+  transform: rotate(-135deg);
+}
+
+.tripDetail-slide .swiper-button-prev::before,
+.tripDetail-slide .swiper-button-next::before {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #ffffff;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.tripDetail-slide .swiper-button-prev::before {
+  left: 45px;
+}
+
+.tripDetail-slide .swiper-button-prev:hover::before {
+  left: 15px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.tripDetail-slide .swiper-button-next::before {
+  right: 45px;
+}
+
+.tripDetail-slide .swiper-button-next:hover::before {
+  right: 15px;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ==================== Slide Button ==================== */
 .slide_button {
   width: 64px;
   height: 64px;
@@ -71,7 +125,6 @@
   transition: all 0.3s ease;
   opacity: 0;
   visibility: hidden;
-  transform: translateX(0);
 }
 
 .slide_button-prev::before {
@@ -112,15 +165,8 @@
   transform: rotate(-135deg);
 }
 
-.tripPlacesSlide .swiper-wrapper .swiper-slide {
-  width: fit-content;
-  position: relative;
-}
-
-/* introduction */
-
+/* ==================== Introduction Section ==================== */
 .introduction_header {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -131,12 +177,12 @@
 
 .introduction_header::before {
   content: "";
-  background-image: url(../../../public/icons/introdution.svg);
+  background-image: url(/icons/introdution.svg);
   background-size: cover;
-  width: 20px;
-  height: 20px;
   position: absolute;
   left: -40px;
+  width: 20px;
+  height: 20px;
 }
 
 .introduction_list {
@@ -147,7 +193,6 @@
   content: "";
   position: absolute;
   top: 40px;
-  bottom: 60px;
   left: -30px;
   width: 2px;
   height: calc(100% - 60px);
@@ -169,8 +214,7 @@
   background: #a5958b;
 }
 
-/* Accordion styles */
-
+/* ==================== Accordion Section ==================== */
 .accordion {
   position: relative;
 }
@@ -178,6 +222,12 @@
 .accordion__details {
   padding: 12px 0;
   cursor: pointer;
+}
+
+.accordion__details summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .accordion__details summary::marker {
@@ -195,24 +245,19 @@
   column-gap: 8px;
 }
 
-.accordion__details summary {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.accordion__details summary .accordion-icon {
-  transition: transform 0.3s ease;
-}
-
 .accordion__details[open] summary .accordion-icon {
   transform: rotate(90deg);
+  transition: transform 0.3s ease;
 }
 
 .accordion__content {
   display: grid;
   grid-template-rows: 0fr;
   transition: all 0.3s;
+}
+
+.accordion__details[open] + .accordion__content {
+  grid-template-rows: 1fr;
 }
 
 .accordion__content-body {
@@ -227,17 +272,14 @@
   font-size: 16px;
   font-weight: 500;
   color: #878787;
-  padding: 0 0 40px 0;
-}
-
-.accordion__details[open] + .accordion__content {
-  grid-template-rows: 1fr;
+  padding-bottom: 40px;
 }
 
 .data-price_list .data-price_list-item .accordion {
   border-bottom: 1px solid #bdbdbd;
 }
 
+/* ==================== Media Queries ==================== */
 @media screen and (min-width: 768px) {
   .introduction_header::before {
     width: 30px;
@@ -247,9 +289,7 @@
 
   .introduction_list::before {
     top: 50px;
-    bottom: 60px;
     left: -35px;
-    width: 2px;
     height: calc(100% - 80px);
   }
 
@@ -278,9 +318,7 @@
 
   .introduction_list::before {
     top: 60px;
-    bottom: 60px;
     left: -60px;
-    width: 2px;
     height: calc(100% - 100px);
   }
 
@@ -293,5 +331,10 @@
 
   .accordion__details .accordion__title {
     font-size: 24px;
+  }
+
+  .tripDetail-slide .swiper-button-prev,
+  .tripDetail-slide .swiper-button-next {
+    display: flex;
   }
 }
