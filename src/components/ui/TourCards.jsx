@@ -5,14 +5,19 @@ import { useLocale } from "next-intl";
 
 export const TourCards = ({ props }) => {
   const locale = useLocale();
+  function truncateText(text, maxLength) {
+    if (!text) return "";
+    return text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
+  }
+
   return (
     <div className="p-4 pb-6 border border-[#EBEBEB] rounded-4xl shadow-xl">
-      <div className="rounded-xl lg:rounded-3xl overflow-hidden">
+      <div className="h-[200px] xl:h-[320px] rounded-xl lg:rounded-3xl overflow-hidden">
         <Image
           src={props.map_image}
           width={300}
           height={180}
-          className="w-full"
+          className="w-full h-full object-cover object-center"
           alt="Trip image"
         />
       </div>
@@ -41,33 +46,28 @@ export const TourCards = ({ props }) => {
         </div>
         <div className="flex flex-col 2xl:flex-row items-end gap-x-3">
           <ul className="w-full 2xl:w-1/2 flex flex-col gap-y-1">
-            <li className="flex items-center gap-3">
-              <Image
-                src={"/icons/card_checkbox.svg"}
-                width={20}
-                height={20}
-                alt="checkbox icon"
-              />
-              <span className="font-medium">{props?.[`text1_${locale}`]}</span>
-            </li>
-            <li className="flex items-center gap-3">
-              <Image
-                src={"/icons/card_checkbox.svg"}
-                width={20}
-                height={20}
-                alt="checkbox icon"
-              />
-              <span className="font-medium">{props?.[`text2_${locale}`]}</span>
-            </li>
-            <li className="flex items-center gap-3">
-              <Image
-                src={"/icons/card_checkbox.svg"}
-                width={20}
-                height={20}
-                alt="checkbox icon"
-              />
-              <span className="font-medium">{props?.[`text3_${locale}`]}</span>
-            </li>
+            {[...Array(3)].map((_, index) => (
+              <li key={index} className="flex items-center gap-3">
+                <Image
+                  src={"/icons/card_checkbox.svg"}
+                  width={20}
+                  height={20}
+                  alt="checkbox icon"
+                />
+                <span
+                  className="font-medium text-sm md:text-base lg:text-xl hidden 2xl:block"
+                  title={props?.[`text${index + 1}_${locale}`]}
+                >
+                  {truncateText(props?.[`text${index + 1}_${locale}`], 13)}
+                </span>
+                <span
+                  className="font-medium text-sm md:text-base lg:text-xl line-clamp-1 2xl:hidden"
+                  title={props?.[`text${index + 1}_${locale}`]}
+                >
+                  {props?.[`text${index + 1}_${locale}`]}
+                </span>
+              </li>
+            ))}
           </ul>
           <Link href={`/trip/${props.id}`} className="w-full 2xl:w-1/2">
             <button className="w-full h-[36px] bg-[#B4A297] rounded-4xl font-medium text-white text-base mt-8 ml-auto ">

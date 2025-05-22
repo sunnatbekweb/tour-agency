@@ -6,14 +6,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 // import required modules
-import { Pagination } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import Image from "next/image";
 
 export const TripSlide = () => {
   return (
     <Swiper
       pagination={true}
-      modules={[Pagination]}
+      navigation={true}
+      modules={[Pagination, Navigation]}
       className="tripDetail-slide w-full md:w-[60%]"
     >
       {[...Array(5)].map((_, index) => (

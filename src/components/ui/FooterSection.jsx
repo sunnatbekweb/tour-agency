@@ -173,7 +173,7 @@ export default function FooterSection() {
                     <button className="footer__top-left-form-button xl:flex xl:justify-center xl:items-center xl:absolute xl:rounded-[36px] xl:px-[22px] xl:py-[19px] xl:top-[9px] xl:bottom-[9px] xl:right-[9px] xl:bg-[#A98D7D]">
                       <img
                         className="footer__top-left-button-icon xl:inline-block xl:object-contain xl:w-[28.69px] xl:h-[30.94px]"
-                        src="icons/right__submit.svg"
+                        src="/icons/right__submit.svg"
                         alt="right__submit-icon"
                       />
                     </button>

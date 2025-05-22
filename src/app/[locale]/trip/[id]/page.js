@@ -92,8 +92,11 @@ export default function TripDetail() {
                       height={20}
                       alt="checkbox icon"
                     />
-                    <span className="font-medium text-sm md:text-base lg:text-2xl">
-                      <span className="font-medium">
+                    <span className="font-medium text-sm md:text-base lg:text-xl line-clamp-1">
+                      <span
+                        className="font-medium"
+                        title={trip?.[`text${index + 1}_${locale}`]}
+                      >
                         {trip?.[`text${index + 1}_${locale}`]}
                       </span>
                     </span>
@@ -160,13 +163,15 @@ export default function TripDetail() {
       </section>
       <section>
         <div className="container p-6 rounded-2xl bg-white border border-[#EBEBEB]">
-          <Image
-            src={trip?.map_image}
-            width={1700}
-            height={500}
-            alt="Map"
-            className="rounded-2xl overflow-hidden"
-          />
+          {trip?.map_image && (
+            <Image
+              src={trip?.map_image}
+              width={1700}
+              height={500}
+              alt="Map"
+              className="rounded-2xl overflow-hidden"
+            />
+          )}
         </div>
       </section>
       <section>
@@ -211,8 +216,8 @@ export default function TripDetail() {
                 </div>
               </div>
               <ul className="introduction_list">
-                {[...Array(7)].map((_, index) => (
-                  <TourItineraryAccordion key={index} />
+                {trip?.itineraries?.map((item, index) => (
+                  <TourItineraryAccordion props={item} key={index} />
                 ))}
               </ul>
             </div>
@@ -232,8 +237,8 @@ export default function TripDetail() {
             </div>
 
             <ul className="data-price_list">
-              {trip?.dates_and_prices?.map((_, index) => (
-                <DatePriceItem key={index} />
+              {trip?.dates_and_prices?.map((item, index) => (
+                <DatePriceItem props={item} key={index} />
               ))}
             </ul>
           </div>
