@@ -94,6 +94,13 @@
   visibility: visible;
 }
 
+/* ==================== Trip place slide ==================== */
+
+.tripPlacesSlide .swiper-wrapper .swiper-slide {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
 /* ==================== Slide Button ==================== */
 .slide_button {
   width: 64px;

@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
 import Image from "next/image";
 
-export const TripSlide = () => {
+export const TripSlide = ({ props }) => {
   return (
     <Swiper
       pagination={true}
@@ -17,14 +17,14 @@ export const TripSlide = () => {
       modules={[Pagination, Navigation]}
       className="tripDetail-slide w-full md:w-[60%]"
     >
-      {[...Array(5)].map((_, index) => (
+      {props?.map((item, index) => (
         <SwiperSlide key={index}>
           <Image
-            src={"/images/hystorical__samarkand.jpg"}
+            src={item?.image}
             width={1100}
             height={600}
             alt="Slide image"
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full h-full object-cover object-center rounded-2xl"
           />
         </SwiperSlide>
       ))}
