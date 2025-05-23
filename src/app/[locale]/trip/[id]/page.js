@@ -70,7 +70,7 @@ export default function TripDetail() {
             </div>
           </div>
           <div className="flex flex-col md:flex-row gap-y-16 gap-x-6 justify-between">
-            <TripSlide />
+            <TripSlide props={trip?.tour_images} />
             <div className="p-4 md:p-6 lg:p-10 w-full md:w-[40%] h-auto flex flex-col gap-y-8 justify-between bg-white rounded-2xl border border-[#F0F0F0]">
               <div>
                 <span className="text-sm md:text-lg lg:text-2xl text-[#C5C5C5]">
@@ -180,7 +180,7 @@ export default function TripDetail() {
             Places you will see
           </h2>
         </div>
-        <TripPlacesSlide />
+        <TripPlacesSlide props={trip?.tour_images} />
       </section>
       <section>
         <div className="container px-8 py-10 bg-white border border-[#EBEBEB] rounded-2xl">

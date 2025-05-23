@@ -6,8 +6,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import Image from "next/image";
+import { useLocale } from "next-intl";
 
-export const TripPlacesSlide = () => {
+export const TripPlacesSlide = ({ props }) => {
+  const locale = useLocale();
   return (
     <div>
       <div className="hidden container px-6 lg:flex items-center justify-between">
@@ -35,17 +37,17 @@ export const TripPlacesSlide = () => {
         loop={true}
         centeredSlides={true}
       >
-        {[...Array(6)].map((_, index) => (
+        {props?.map((item, index) => (
           <SwiperSlide key={index}>
             <Image
-              src={"/images/hystorical__samarkand.jpg"}
+              src={item?.image}
               width={520}
               height={540}
               className="w-[270px] h-[280px] lg:w-[520px] lg:h-[540px]"
               alt="Slide image"
             />
             <h3 className="text-2xl lg:text-5xl text-white absolute left-4 bottom-6 lg:left-10 lg:bottom-10 w-3/4">
-              Splendor of Ancient Khiva
+              {item?.[`text_${locale}`]}
             </h3>
           </SwiperSlide>
         ))}
