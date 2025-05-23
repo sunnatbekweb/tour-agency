@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import ReactPaginate from "react-paginate";
 import { Link } from "@/i18n/navigation";
 import axios from "axios";
 import { useLocale } from "next-intl";
@@ -11,12 +10,15 @@ import { Pagination } from "@/components/ui/Pagination";
 
 export default function Blog() {
   const [posts, setPosts] = useState();
+  const [currentPage, setCurrentPage] = useState(1);
   const locale = useLocale();
-  const getPosts = async () => {
+
+  const getPosts = async (page = 1) => {
     try {
-      await axios
-        .get(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/posts/`)
-        .then((response) => setPosts(response.data));
+      const response = await axios.get(
+        `${process.env.NEXT_PUBLIC_BASE_URL}/blog/posts/?page=${page}`
+      );
+      setPosts(response.data);
     } catch (error) {
       console.error(error);
     }
@@ -31,8 +33,12 @@ export default function Blog() {
   };
 
   useEffect(() => {
-    getPosts();
-  }, []);
+    getPosts(currentPage);
+  }, [currentPage]);
+
+  const handlePageChange = ({ selected }) => {
+    setCurrentPage(selected + 1);
+  };
   return (
     <>
       <section className="blog_hero">
@@ -61,12 +67,12 @@ export default function Blog() {
                 key={index}
                 className="p-4 pb-6 border border-[#EBEBEB] rounded-4xl shadow-xl"
               >
-                <div className="rounded-xl lg:rounded-3xl overflow-hidden">
+                <div className="h-[200px] xl:h-[320px] rounded-xl lg:rounded-3xl overflow-hidden">
                   <Image
                     src={post.image}
                     width={300}
                     height={180}
-                    className="w-full"
+                    className="w-full h-full object-cover object-center"
                     alt="Trip image"
                   />
                 </div>
@@ -93,7 +99,13 @@ export default function Blog() {
             ))}
           </div>
           <div className="pt-[100px]">
-            <Pagination count={posts?.count} />
+            {posts?.count && posts?.results?.length > 0 && (
+              <Pagination
+                count={Math.ceil(posts.count / 6)}
+                onPageChange={handlePageChange}
+                forcePage={currentPage - 1}
+              />
+            )}
           </div>
         </div>
       </section>

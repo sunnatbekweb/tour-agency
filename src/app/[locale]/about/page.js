@@ -1,13 +1,15 @@
 "use client";
+
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { AboutFAQ } from "@/components/about/AboutFAQ";
 import axios from "axios";
-import "@/styles/page_styles/about.css";
 import { useLocale } from "next-intl";
+import "@/styles/page_styles/about.css";
 
 export default function About() {
   const [tripLeaders, setTripLeaders] = useState();
+  const [statistics, setStatistics] = useState();
   const locale = useLocale();
   const getTripLeaders = async () => {
     try {
@@ -18,8 +20,18 @@ export default function About() {
       console.error(error);
     }
   };
+  const getStatistics = async () => {
+    try {
+      await axios
+        .get(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/statistics/`)
+        .then((response) => setStatistics(response.data));
+    } catch (error) {
+      console.error(error);
+    }
+  };
   useEffect(() => {
     getTripLeaders();
+    getStatistics();
   }, []);
   return (
     <>
@@ -106,29 +118,46 @@ export default function About() {
         <hr />
       </div>
       <section className="pt-14 pb-20">
-        <div className="container px-6 grid grid-cols-1 lg:grid-cols-3 gap-y-12 gap-x-[120px]">
-          <div className="font-medium flex flex-col items-center lg:block">
-            <h5 className="text-sm md:text-lg xl:text-2xl text-center lg:text-left line-clamp-3 mb-2">
-              Our growing team is made up of passionate professionals committed
-              to delivering exceptional service and innovation.
-            </h5>
-            <span className="text-5xl md:text-7xl xl:text-9xl">200+</span>
+        {statistics?.results?.map((item, index) => (
+          <div
+            key={index}
+            className="container px-6 grid grid-cols-1 lg:grid-cols-3 gap-y-12 gap-x-[120px]"
+          >
+            <div className="font-medium flex flex-col items-center lg:block">
+              <h5
+                title={item?.[`first_text_${locale}`]}
+                className="text-sm md:text-lg xl:text-2xl text-center lg:text-left line-clamp-3 mb-2"
+              >
+                {item?.[`first_text_${locale}`]}
+              </h5>
+              <span className="text-5xl md:text-7xl xl:text-9xl">
+                {item?.first_number}
+              </span>
+            </div>
+            <div className="font-medium flex flex-col items-center lg:block">
+              <h5
+                title={item?.[`second_text_${locale}`]}
+                className="text-sm md:text-lg xl:text-2xl text-center lg:text-left line-clamp-3 mb-2"
+              >
+                {item?.[`second_text_${locale}`]}
+              </h5>
+              <span className="text-5xl md:text-7xl xl:text-9xl">
+                {item?.second_number}
+              </span>
+            </div>
+            <div className="font-medium flex flex-col items-center lg:block">
+              <h5
+                title={item?.[`third_text_${locale}`]}
+                className="text-sm md:text-lg xl:text-2xl text-center lg:text-left line-clamp-3 mb-2"
+              >
+                {item?.[`third_text_${locale}`]}
+              </h5>
+              <span className="text-5xl md:text-7xl xl:text-9xl">
+                {item?.third_number}
+              </span>
+            </div>
           </div>
-          <div className="font-medium flex flex-col items-center lg:block">
-            <h5 className="text-sm md:text-lg xl:text-2xl text-center lg:text-left line-clamp-3 mb-2">
-              Over a decade of expertise in creating seamless customer journeys
-              and reliable solutions.
-            </h5>
-            <span className="text-5xl md:text-7xl xl:text-9xl">10+</span>
-          </div>
-          <div className="font-medium flex flex-col items-center lg:block">
-            <h5 className="text-sm md:text-lg xl:text-2xl text-center lg:text-left line-clamp-3 mb-2">
-              We’re proud to have earned the trust of over 20,000 satisfied
-              clients across the globe.
-            </h5>
-            <span className="text-5xl md:text-7xl xl:text-9xl">30K+</span>
-          </div>
-        </div>
+        ))}
       </section>
       <section className="bg-[#F0E6E0] pt-20 pb-[120px]">
         <div className="container px-6">
@@ -139,10 +168,10 @@ export default function About() {
             Meet our amazing tour leaders
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-10">
-            {tripLeaders?.results?.map((leader, index) => (
-              <div key={index}>
+            {tripLeaders?.results?.map((leader) => (
+              <div key={leader?.id}>
                 <Image
-                  src={leader.image}
+                  src={leader?.image}
                   width={440}
                   height={480}
                   alt="Tour leader"
