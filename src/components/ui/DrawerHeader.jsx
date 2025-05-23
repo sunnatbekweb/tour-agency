@@ -86,7 +86,7 @@ export default function DrawerHeader({ modal, close }) {
                         </div>
                     </li>
                     {[
-                        { href: '/trip-founder', label: 'Trip Founder' },
+                        { href: '/trip-finder', label: 'Trip Founder' },
                         { href: '/blog', label: 'Blog' },
                         { href: '/about', label: 'About Us' },
                     ].map((item, index) => (
