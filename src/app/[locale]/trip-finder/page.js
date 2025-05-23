@@ -2,27 +2,33 @@
 
 import React, { useEffect, useState } from "react";
 import TripSearch from "@/components/ui/TripSearch";
-import Image from "next/image";
 import axios from "axios";
 import { TourCards } from "@/components/ui/TourCards";
-import "@/styles/page_styles/trip-finder.css";
 import { Pagination } from "@/components/ui/Pagination";
+import "@/styles/page_styles/trip-finder.css";
 
 export default function TripFinder() {
-  const [tour_cards, setTour_cards] = useState();
-  const getTourCards = async () => {
+  const [tourCards, setTourCards] = useState();
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const getTourCards = async (page = 1) => {
     try {
-      await axios
-        .get(`${process.env.NEXT_PUBLIC_BASE_URL}/tour/tour-cards/`)
-        .then((response) => setTour_cards(response.data));
+      const response = await axios.get(
+        `${process.env.NEXT_PUBLIC_BASE_URL}/tour/tour-cards/?page=${page}`
+      );
+      setTourCards(response.data);
     } catch (error) {
       console.error(error);
     }
   };
 
   useEffect(() => {
-    getTourCards();
-  }, []);
+    getTourCards(currentPage);
+  }, [currentPage]);
+
+  const handlePageChange = ({ selected }) => {
+    setCurrentPage(selected + 1);
+  };
 
   return (
     <>
@@ -41,18 +47,24 @@ export default function TripFinder() {
           <div className="font-medium px-6 lg:px-0 uppercase md:hidden mb-12">
             <span className="text-[#A5958B]">Trip founder</span>
             <h2 className="mt-2 text-3xl text-[#323232]">
-              Explore Our Exclusive Tour packgages
+              Explore Our Exclusive Tour packages
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {tour_cards?.results?.map((card, index) => (
+            {tourCards?.results?.map((card, index) => (
               <TourCards props={card} key={index} />
             ))}
           </div>
         </div>
       </section>
       <div className="py-[100px]">
-        <Pagination count={tour_cards?.count} />
+        {tourCards?.count && (
+          <Pagination
+            count={Math.ceil(tourCards.count / tourCards.results.length)}
+            onPageChange={handlePageChange}
+            forcePage={currentPage - 1}
+          />
+        )}
       </div>
     </>
   );

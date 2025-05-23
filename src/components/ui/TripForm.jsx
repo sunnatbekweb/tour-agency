@@ -61,7 +61,7 @@ export const TripForm = () => {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-4 lg:gap-x-6">
         <label htmlFor="full_name" className="flex flex-col gap-y-2 md:gap-y-4">
-          <span className="pl-2 md:pl-4 lg:text-xl">Full name</span>
+          <span className="lg:text-xl">Full name</span>
           <input
             type="text"
             name="full_name"
@@ -74,7 +74,7 @@ export const TripForm = () => {
           />
         </label>
         <label htmlFor="email" className="flex flex-col gap-y-2 md:gap-y-4">
-          <span className="pl-2 md:pl-4 lg:text-xl">Your email</span>
+          <span className="lg:text-xl">Your email</span>
           <input
             type="email"
             name="email"
@@ -90,7 +90,7 @@ export const TripForm = () => {
           htmlFor="destination"
           className="flex flex-col gap-y-2 font-medium lg:text-lg"
         >
-          <span className="pl-2 md:pl-4 lg:text-xl">Your Destination</span>
+          <span className="lg:text-xl">Your Destination</span>
           <select
             name="destination"
             id="destination"
@@ -114,7 +114,7 @@ export const TripForm = () => {
           htmlFor="trip_tour"
           className="flex flex-col gap-y-2 font-medium lg:text-lg mb-6"
         >
-          <span className="pl-2 md:pl-4 lg:text-xl">Trip Tour</span>
+          <span className="lg:text-xl">Trip Tour</span>
           <select
             name="trip_tour"
             id="trip_tour"
@@ -133,7 +133,7 @@ export const TripForm = () => {
         htmlFor="message"
         className="flex flex-col gap-y-2 md:gap-y-4 mt-4"
       >
-        <span className="pl-2 md:pl-4 lg:text-xl">Trip message</span>
+        <span className="lg:text-xl">Trip message</span>
         <textarea
           type="text"
           name="message"
