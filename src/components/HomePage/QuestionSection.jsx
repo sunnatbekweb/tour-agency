@@ -127,7 +127,7 @@ export default function QuestionSection() {
                   key={id}
                 >
                   <img
-                    className="question__swiper-image xl:object-cover xl:relative"
+                    className="question__swiper-image cursor-grab xl:object-cover xl:relative"
                     src={content.image}
                     alt="nature__image"
                   />

@@ -1,6 +1,7 @@
 import HeroSectoin from "@/components/HomePage/HeroSectoin";
 import ExploreSection from "@/components/HomePage/ExploreSection";
 import CarouselSection from "@/components/HomePage/CarouselSection";
+import SmCountriesSection from "@/components/HomePage/SmCountriesSection";
 import UniqueSection from "@/components/HomePage/UniqueSection";
 import DesertSection from "@/components/HomePage/DesertSection";
 import SecondCarouselSection from "@/components/HomePage/SecondCarouselSection";
@@ -11,6 +12,7 @@ export default function Home() {
       <HeroSectoin />
       <ExploreSection />
       <CarouselSection />
+      <SmCountriesSection />
       <UniqueSection />
       <DesertSection />
       <SecondCarouselSection />

@@ -103,41 +103,10 @@
   }
   .secondCarousel__container {
   }
-  .swiper-button-next {
+  .swiper-button-right {
     display: none !important;
   }
-  .swiper-button-prev {
-    display: none !important;
-  }
-  .secondCarousel__swiper {
-  }
-  .secondCarousel__swiperSlide {
-  }
-  .secondCarousel__box {
-    width: 100%;
-    height: 327px;
-  }
-  .secondCarousel__images {
-    width: 100%;
-    height: 327px;
-  }
-  .secondCarousel__image-texts {
-    font-family: "ppneuemontreal";
-  }
-}
-@media (max-width: 767px) {
-  .secondCarousel {
-  }
-  .secondCarousel .swiper-slide {
-    width: 100% !important;
-    max-width: 327px !important;
-  }
-  .secondCarousel__container {
-  }
-  .swiper-button-next {
-    display: none !important;
-  }
-  .swiper-button-prev {
+  .swiper-button-left {
     display: none !important;
   }
   .secondCarousel__swiper {
@@ -165,10 +134,10 @@
   }
   .secondCarousel__container {
   }
-  .swiper-button-next {
+  .swiper-button-right {
     display: none !important;
   }
-  .swiper-button-prev {
+  .swiper-button-left {
     display: none !important;
   }
   .secondCarousel__swiper {
