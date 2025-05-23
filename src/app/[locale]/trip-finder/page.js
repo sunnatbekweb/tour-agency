@@ -60,7 +60,7 @@ export default function TripFinder() {
       <div className="py-[100px]">
         {tourCards?.count && (
           <Pagination
-            count={Math.ceil(tourCards.count / tourCards.results.length)}
+            count={Math.ceil(tourCards.count / 6)}
             onPageChange={handlePageChange}
             forcePage={currentPage - 1}
           />
