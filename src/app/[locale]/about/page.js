@@ -24,7 +24,7 @@ export default function About() {
     try {
       await axios
         .get(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/statistics/`)
-        .then((response) => setStatistics(response.data));
+        .then((response) => setStatistics(response.data.results[0]));
     } catch (error) {
       console.error(error);
     }
@@ -118,46 +118,41 @@ export default function About() {
         <hr />
       </div>
       <section className="pt-14 pb-20">
-        {statistics?.results?.map((item, index) => (
-          <div
-            key={index}
-            className="container px-6 grid grid-cols-1 lg:grid-cols-3 gap-y-12 gap-x-[120px]"
-          >
-            <div className="font-medium flex flex-col items-center lg:block">
-              <h5
-                title={item?.[`first_text_${locale}`]}
-                className="text-sm md:text-lg xl:text-2xl text-center lg:text-left line-clamp-3 mb-2"
-              >
-                {item?.[`first_text_${locale}`]}
-              </h5>
-              <span className="text-5xl md:text-7xl xl:text-9xl">
-                {item?.first_number}
-              </span>
-            </div>
-            <div className="font-medium flex flex-col items-center lg:block">
-              <h5
-                title={item?.[`second_text_${locale}`]}
-                className="text-sm md:text-lg xl:text-2xl text-center lg:text-left line-clamp-3 mb-2"
-              >
-                {item?.[`second_text_${locale}`]}
-              </h5>
-              <span className="text-5xl md:text-7xl xl:text-9xl">
-                {item?.second_number}
-              </span>
-            </div>
-            <div className="font-medium flex flex-col items-center lg:block">
-              <h5
-                title={item?.[`third_text_${locale}`]}
-                className="text-sm md:text-lg xl:text-2xl text-center lg:text-left line-clamp-3 mb-2"
-              >
-                {item?.[`third_text_${locale}`]}
-              </h5>
-              <span className="text-5xl md:text-7xl xl:text-9xl">
-                {item?.third_number}
-              </span>
-            </div>
+        <div className="container px-6 grid grid-cols-1 lg:grid-cols-3 gap-y-12 gap-x-[120px]">
+          <div className="font-medium flex flex-col items-center lg:block">
+            <h5
+              title={statistics?.[`first_text_${locale}`]}
+              className="text-sm md:text-lg xl:text-2xl text-center lg:text-left line-clamp-3 mb-2"
+            >
+              {statistics?.[`first_text_${locale}`]}
+            </h5>
+            <span className="text-5xl md:text-7xl xl:text-9xl">
+              {statistics?.first_number}
+            </span>
           </div>
-        ))}
+          <div className="font-medium flex flex-col items-center lg:block">
+            <h5
+              title={statistics?.[`second_text_${locale}`]}
+              className="text-sm md:text-lg xl:text-2xl text-center lg:text-left line-clamp-3 mb-2"
+            >
+              {statistics?.[`second_text_${locale}`]}
+            </h5>
+            <span className="text-5xl md:text-7xl xl:text-9xl">
+              {statistics?.second_number}
+            </span>
+          </div>
+          <div className="font-medium flex flex-col items-center lg:block">
+            <h5
+              title={statistics?.[`third_text_${locale}`]}
+              className="text-sm md:text-lg xl:text-2xl text-center lg:text-left line-clamp-3 mb-2"
+            >
+              {statistics?.[`third_text_${locale}`]}
+            </h5>
+            <span className="text-5xl md:text-7xl xl:text-9xl">
+              {statistics?.third_number}
+            </span>
+          </div>
+        </div>
       </section>
       <section className="bg-[#F0E6E0] pt-20 pb-[120px]">
         <div className="container px-6">
