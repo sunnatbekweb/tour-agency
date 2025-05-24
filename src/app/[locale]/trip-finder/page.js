@@ -57,7 +57,7 @@ export default function TripFinder() {
           </div>
         </div>
       </section>
-      <div className="py-[100px]">
+      <div className="pt-[100px]">
         {tourCards?.count && (
           <Pagination
             count={Math.ceil(tourCards.count / 6)}
