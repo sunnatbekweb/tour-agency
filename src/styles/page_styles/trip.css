@@ -15,6 +15,7 @@
 /* ==================== Trip Detail Slide ==================== */
 .tripDetail-slide {
   position: relative;
+  /* height: 540px; */
   z-index: 10;
 }
 
@@ -340,8 +341,18 @@
     font-size: 24px;
   }
 
+  .tripDetail-slide {
+    height: 480px;
+  }
+
   .tripDetail-slide .swiper-button-prev,
   .tripDetail-slide .swiper-button-next {
     display: flex;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .tripDetail-slide {
+    height: 540px;
   }
 }

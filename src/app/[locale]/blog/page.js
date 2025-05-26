@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { useLocale } from "next-intl";
 import { Pagination } from "@/components/ui/Pagination";
 import { BlogCard } from "@/components/ui/BlogCard";
 import "@/styles/page_styles/trip.css";

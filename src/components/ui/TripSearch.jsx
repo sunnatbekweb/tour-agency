@@ -1,6 +1,6 @@
 import React from "react";
 import { Location } from "../../../public/icons/Location";
-import { Calendar } from "../../../public/icons/Calendar";
+// import { Calendar } from "../../../public/icons/Calendar";
 import { Clock } from "../../../public/icons/Clock";
 import { Flag } from "../../../public/icons/Flag";
 import Image from "next/image";
@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function TripSearch() {
   return (
     <div className="w-full px-2.5 lg:px-8 py-4 lg:py-10 rounded-2xl lg:rounded-4xl bg-[#CCB9AEE5] border border-[#989898] absolute -top-[42px] md:-top-[146px] xl:-top-[85px]">
-      <form className="hidden p-2 rounded-2xl md:rounded-[46px] bg-transparent xl:bg-white xl:border border-[#E6E6E6] md:grid grid-cols-2 xl:grid-cols-5 gap-4 items-center">
+      <form className="hidden p-2 rounded-2xl md:rounded-[46px] bg-transparent xl:bg-white xl:border border-[#E6E6E6] md:grid grid-cols-2 xl:grid-cols-4 gap-4 items-center">
         <label
           htmlFor="destination"
           className="flex items-center gap-x-6 xl:pl-10 bg-white rounded-3xl px-6"
@@ -32,14 +32,14 @@ export default function TripSearch() {
             <Clock />
           </div>
           <input
-            type="text"
+            type="number"
             name="duration"
             id="duration"
             placeholder="Duration"
-            className="h-[70px] focus:outline-none "
+            className="h-[70px] focus:outline-none"
           />
         </label>
-        <label
+        {/* <label
           htmlFor="year"
           className="flex items-center gap-x-6 bg-white rounded-3xl px-6"
         >
@@ -53,7 +53,7 @@ export default function TripSearch() {
             placeholder="Year"
             className="h-[70px] focus:outline-none "
           />
-        </label>
+        </label> */}
         <label
           htmlFor="tripType"
           className="flex items-center gap-x-6 bg-white rounded-3xl px-6"
@@ -69,7 +69,7 @@ export default function TripSearch() {
             className="h-[70px] focus:outline-none "
           />
         </label>
-        <button className="w-full xl:max-w-[270px] h-[70px] col-span-2 xl:col-span-1 rounded-[40px] bg-[#A5958B] border-4 xl:border-none border-white font-medium text-2xl text-white">
+        <button className="w-full h-[70px] col-span-2 xl:col-span-1 rounded-[40px] bg-[#A5958B] border-4 xl:border-none border-white font-medium text-2xl text-white">
           Search
         </button>
       </form>
