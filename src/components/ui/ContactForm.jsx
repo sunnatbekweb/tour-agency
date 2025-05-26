@@ -13,7 +13,7 @@ export const ContactForm = () => {
     destination: "",
     trip_tour: "",
   });
-  
+
   const getDestinations = async () => {
     try {
       await axios
@@ -96,9 +96,11 @@ export const ContactForm = () => {
           required
           value={formData.destination}
           onChange={handleChange}
-          className="bg-[#B4A2971A] border border-[#D9D9D9] text-[#BDBDBD] px-6 py-3 rounded-lg focus:outline-[#A5958B]"
+          className="bg-[#B4A2971A] border border-[#D9D9D9] text-[#BDBDBD] px-6 py-3 rounded-lg focus:outline-[#A5958B] cursor-pointer"
         >
-          <option value="">Select destination</option>
+          <option value="" disabled>
+            Select destination
+          </option>
           {destinations?.map((destination) => (
             <option
               key={destination.id}
@@ -120,7 +122,7 @@ export const ContactForm = () => {
           required
           value={formData.trip_tour}
           onChange={handleChange}
-          className="bg-[#B4A2971A] border border-[#D9D9D9] text-[#BDBDBD] px-6 py-3 rounded-lg focus:outline-[#A5958B]"
+          className="bg-[#B4A2971A] border border-[#D9D9D9] text-[#BDBDBD] px-6 py-3 rounded-lg focus:outline-[#A5958B] cursor-pointer"
         >
           <option value="">Select Trip Tour</option>
           <option value="For one person">For one person</option>

@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import TripSearch from "@/components/ui/TripSearch";
 import axios from "axios";
+import TripSearch from "@/components/ui/TripSearch";
 import { TourCards } from "@/components/ui/TourCards";
 import { Pagination } from "@/components/ui/Pagination";
 import "@/styles/page_styles/trip-finder.css";
