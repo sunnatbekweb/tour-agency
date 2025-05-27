@@ -1,33 +1,25 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React, { useEffect } from "react";
 import TripSearch from "@/components/ui/TripSearch";
 import { TourCards } from "@/components/ui/TourCards";
 import { Pagination } from "@/components/ui/Pagination";
+import { useAppDispatch, useAppSelector } from "@/lib/hooks";
+import { fetchTours, setPage } from "@/features/tours/toursSlice";
 import "@/styles/page_styles/trip-finder.css";
 
 export default function TripFinder() {
-  const [tourCards, setTourCards] = useState();
-  const [currentPage, setCurrentPage] = useState(1);
-
-  const getTourCards = async (page = 1) => {
-    try {
-      const response = await axios.get(
-        `${process.env.NEXT_PUBLIC_BASE_URL}/tour/tour-cards/?page=${page}`
-      );
-      setTourCards(response.data);
-    } catch (error) {
-      console.error(error);
-    }
-  };
+  const dispatch = useAppDispatch();
+  const { list, count, loading, currentPage } = useAppSelector(
+    (state) => state.tours
+  );
 
   useEffect(() => {
-    getTourCards(currentPage);
+    dispatch(fetchTours(currentPage));
   }, [currentPage]);
 
   const handlePageChange = ({ selected }) => {
-    setCurrentPage(selected + 1);
+    dispatch(setPage(selected + 1));
   };
 
   return (
@@ -51,16 +43,18 @@ export default function TripFinder() {
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {tourCards?.results?.map((card, index) => (
-              <TourCards props={card} key={index} />
-            ))}
+            {loading ? (
+              <p>Loading...</p>
+            ) : (
+              list?.map((card, index) => <TourCards props={card} key={index} />)
+            )}
           </div>
         </div>
       </section>
       <div className="pt-[100px]">
-        {tourCards?.count && (
+        {count > 0 && (
           <Pagination
-            count={Math.ceil(tourCards.count / 6)}
+            count={Math.ceil(count / 6)}
             onPageChange={handlePageChange}
             forcePage={currentPage - 1}
           />

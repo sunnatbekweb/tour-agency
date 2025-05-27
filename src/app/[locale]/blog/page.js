@@ -1,33 +1,27 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React, { useEffect } from "react";
 import { Pagination } from "@/components/ui/Pagination";
 import { BlogCard } from "@/components/ui/BlogCard";
+import { useAppDispatch, useAppSelector } from "@/lib/hooks";
+import { fetchBlogs } from "@/features/blogs/blogsSlice";
+import { setPage } from "@/features/tours/toursSlice";
 import "@/styles/page_styles/trip.css";
 
 export default function Blog() {
-  const [posts, setPosts] = useState();
-  const [currentPage, setCurrentPage] = useState(1);
-
-  const getPosts = async (page = 1) => {
-    try {
-      const response = await axios.get(
-        `${process.env.NEXT_PUBLIC_BASE_URL}/blog/posts/?page=${page}`
-      );
-      setPosts(response.data);
-    } catch (error) {
-      console.error(error);
-    }
-  };
+  const dispatch = useAppDispatch();
+  const { list, count, loading, currentPage } = useAppSelector(
+    (state) => state.blogs
+  );
 
   useEffect(() => {
-    getPosts(currentPage);
+    dispatch(fetchBlogs(currentPage));
   }, [currentPage]);
 
   const handlePageChange = ({ selected }) => {
-    setCurrentPage(selected + 1);
+    dispatch(setPage(selected + 1));
   };
+
   return (
     <>
       <section className="blog_hero">
@@ -51,14 +45,16 @@ export default function Blog() {
             Where Cultures Converge and History Lives
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {posts?.results?.map((post, index) => (
-              <BlogCard key={index} post={post} />
-            ))}
+            {loading ? (
+              <p>Loading...</p>
+            ) : (
+              list?.map((post, index) => <BlogCard post={post} key={index} />)
+            )}
           </div>
           <div className="pt-[100px]">
-            {posts?.count && posts?.results?.length > 0 && (
+            {count > 0 && (
               <Pagination
-                count={Math.ceil(posts.count / 6)}
+                count={Math.ceil(count / 6)}
                 onPageChange={handlePageChange}
                 forcePage={currentPage - 1}
               />
