@@ -125,7 +125,7 @@ export default function TripDetail() {
               <TourInfoItem
                 icon="/icons/navigator.svg"
                 title={"Trip Theme"}
-                text={trip?.[`trip_theme_${locale}`]}
+                text={trip?.trip_theme?.[`name_${locale}`]}
               />
               <TourInfoItem
                 icon="/icons/navigator.svg"

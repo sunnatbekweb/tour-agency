@@ -15,7 +15,6 @@
 /* ==================== Trip Detail Slide ==================== */
 .tripDetail-slide {
   position: relative;
-  /* height: 540px; */
   z-index: 10;
 }
 
