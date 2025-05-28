@@ -1,62 +1,62 @@
-"use client";
+'use client';
 
-import React, { useEffect, useRef, useState } from "react";
-import "../HomePage/QuestionSection.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css";
+import React, { useEffect, useRef, useState } from 'react';
+import '../HomePage/QuestionSection.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
 export const AboutFAQ = () => {
   const data = [
     {
       id: 1,
-      number: "1.",
-      title: "How do I booking trip with your agency?",
+      number: '1.',
+      title: 'How do I booking trip with your agency?',
       text: `Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; `,
-      iconOpen: "/icons/open__chevron.svg",
-      iconClose: "/icons/close__chevron.svg",
+      iconOpen: '/icons/open__chevron.svg',
+      iconClose: '/icons/close__chevron.svg',
     },
     {
       id: 2,
-      number: "2.",
-      title: "Can I customize my travel?",
+      number: '2.',
+      title: 'Can I customize my travel?',
       text: `Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; `,
-      iconOpen: "/icons/open__chevron.svg",
-      iconClose: "/icons/close__chevron.svg",
+      iconOpen: '/icons/open__chevron.svg',
+      iconClose: '/icons/close__chevron.svg',
     },
     {
       id: 3,
-      number: "3.",
-      title: "Do you offer travel insurance?",
+      number: '3.',
+      title: 'Do you offer travel insurance?',
       text: `Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; `,
-      iconOpen: "/icons/open__chevron.svg",
-      iconClose: "/icons/close__chevron.svg",
+      iconOpen: '/icons/open__chevron.svg',
+      iconClose: '/icons/close__chevron.svg',
     },
     {
       id: 4,
-      number: "4.",
-      title: "Can you arrange flights and accomandations?",
+      number: '4.',
+      title: 'Can you arrange flights and accomandations?',
       text: `Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; `,
-      iconOpen: "/icons/open__chevron.svg",
-      iconClose: "/icons/close__chevron.svg",
+      iconOpen: '/icons/open__chevron.svg',
+      iconClose: '/icons/close__chevron.svg',
     },
   ];
   const secondData = [
     {
-      image: "/images/hero__background-image.jpg",
-      locationIcon: "/icons/location__icon.svg",
-      locationText: "Uzbekistan, Samarkand",
+      image: '/images/hero__background-image.jpg',
+      locationIcon: '/icons/location__icon.svg',
+      locationText: 'Uzbekistan, Samarkand',
       text: `Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; Kazakhstan has a population of 20 million and one of the lowest population densities in the world`,
     },
     {
-      image: "/images/hero__second-background-image.jpg",
-      locationIcon: "/icons/location__icon.svg",
-      locationText: "Uzbekistan, Samarkand",
+      image: '/images/hero__second-background-image.jpg',
+      locationIcon: '/icons/location__icon.svg',
+      locationText: 'Uzbekistan, Samarkand',
       text: `Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; Kazakhstan has a population of 20 million and one of the lowest population densities in the world`,
     },
     {
-      image: "/images/hero__third-background-image.jpg",
-      locationIcon: "/icons/location__icon.svg",
-      locationText: "Uzbekistan, Samarkand",
+      image: '/images/hero__third-background-image.jpg',
+      locationIcon: '/icons/location__icon.svg',
+      locationText: 'Uzbekistan, Samarkand',
       text: `Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; Kazakhstan has a population of 20 million and one of the lowest population densities in the world`,
     },
   ];
@@ -70,19 +70,19 @@ export const AboutFAQ = () => {
       const itemId = data[index].id;
       if (ref) {
         if (activeId === itemId) {
-          ref.style.maxHeight = ref.scrollHeight + "px";
+          ref.style.maxHeight = ref.scrollHeight + 'px';
 
           const width = window.innerWidth;
           if (width <= 767) {
-            ref.style.marginTop = "24.32px";
+            ref.style.marginTop = '24.32px';
           } else if (width <= 1023) {
-            ref.style.marginTop = "40px";
+            ref.style.marginTop = '40px';
           } else {
-            ref.style.marginTop = "33px";
+            ref.style.marginTop = '33px';
           }
         } else {
-          ref.style.maxHeight = "0px";
-          ref.style.marginTop = "0px";
+          ref.style.maxHeight = '0px';
+          ref.style.marginTop = '0px';
         }
       }
     });
@@ -147,7 +147,7 @@ export const AboutFAQ = () => {
               </div>
               <div
                 className={`question__right-icon-box w-[32px] h-[32px] rounded-full flex flex-row justify-center items-center md:w-[70px] md:h-[70px] ${
-                  activeId === item.id ? "bg-[#A38E82]" : "bg-[#F0ECEA]"
+                  activeId === item.id ? 'bg-[#A38E82]' : 'bg-[#F0ECEA]'
                 } `}
               >
                 <img

@@ -6,6 +6,7 @@ import UniqueSection from "@/components/HomePage/UniqueSection";
 import DesertSection from "@/components/HomePage/DesertSection";
 import SecondCarouselSection from "@/components/HomePage/SecondCarouselSection";
 import QuestionSection from "@/components/HomePage/QuestionSection";
+import FeedbackSection from "@/components/HomePage/FeedbackSection";
 export default function Home() {
   return (
     <div>
@@ -17,6 +18,7 @@ export default function Home() {
       <DesertSection />
       <SecondCarouselSection />
       <QuestionSection />
+      <FeedbackSection />
     </div>
   );
 }

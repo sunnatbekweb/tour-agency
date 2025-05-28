@@ -1,7 +1,7 @@
-import React from "react";
-import ReactPaginate from "react-paginate";
+import React from 'react';
+import ReactPaginate from 'react-paginate';
 
-export const Pagination = ({count}) => {
+export const Pagination = ({ count }) => {
   return (
     <ReactPaginate
       nextLabel="Next"

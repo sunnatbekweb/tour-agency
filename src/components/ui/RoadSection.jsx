@@ -1,15 +1,15 @@
-import { Link } from "@/i18n/navigation";
-import "./RoadSection.css";
-import RightChevron from "../../../public/icons/RightChevron";
+import { Link } from '@/i18n/navigation';
+import './RoadSection.css';
+import RightChevron from '../../../public/icons/RightChevron';
 export default function RoadSection() {
   return (
     <div>
       <section className="road xl:mt-[282px] hidden xl:w-full xl:block">
         <div className="container road__container xl:flex xl:flex-col xl:justify-center xl:items-center xl:px-6">
-          <Link className="road-logo-link" href={"/"}>
+          <Link className="road-logo-link" href={'/'}>
             <img
               className="road__logo-image xl:inline-block xl:w-[140px] xl:h-[77px] xl:mb-[76px]"
-              src={"/icons/gold__logo.svg"}
+              src={'/icons/gold__logo.svg'}
               alt="logo"
             />
           </Link>

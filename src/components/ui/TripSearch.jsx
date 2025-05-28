@@ -1,9 +1,9 @@
-import React from "react";
-import { Location } from "../../../public/icons/Location";
-import { Calendar } from "../../../public/icons/Calendar";
-import { Clock } from "../../../public/icons/Clock";
-import { Flag } from "../../../public/icons/Flag";
-import Image from "next/image";
+import React from 'react';
+import { Location } from '../../../public/icons/Location';
+import { Calendar } from '../../../public/icons/Calendar';
+import { Clock } from '../../../public/icons/Clock';
+import { Flag } from '../../../public/icons/Flag';
+import Image from 'next/image';
 
 export default function TripSearch() {
   return (
@@ -24,10 +24,7 @@ export default function TripSearch() {
             className="h-[70px] focus:outline-none"
           />
         </label>
-        <label
-          htmlFor="duration"
-          className="flex items-center gap-x-6 bg-white rounded-3xl px-6"
-        >
+        <label htmlFor="duration" className="flex items-center gap-x-6 bg-white rounded-3xl px-6">
           <div>
             <Clock />
           </div>
@@ -39,10 +36,7 @@ export default function TripSearch() {
             className="h-[70px] focus:outline-none "
           />
         </label>
-        <label
-          htmlFor="year"
-          className="flex items-center gap-x-6 bg-white rounded-3xl px-6"
-        >
+        <label htmlFor="year" className="flex items-center gap-x-6 bg-white rounded-3xl px-6">
           <div>
             <Calendar />
           </div>
@@ -54,10 +48,7 @@ export default function TripSearch() {
             className="h-[70px] focus:outline-none "
           />
         </label>
-        <label
-          htmlFor="tripType"
-          className="flex items-center gap-x-6 bg-white rounded-3xl px-6"
-        >
+        <label htmlFor="tripType" className="flex items-center gap-x-6 bg-white rounded-3xl px-6">
           <div>
             <Flag />
           </div>
@@ -82,12 +73,7 @@ export default function TripSearch() {
           className="w-full ps-3 focus:outline-none"
         />
         <button className="px-3 py-2 rounded-3xl bg-[#A5958B]">
-          <Image
-            src={"/icons/search_icon.svg"}
-            width={24}
-            height={24}
-            alt="Search"
-          />
+          <Image src={'/icons/search_icon.svg'} width={24} height={24} alt="Search" />
         </button>
       </form>
     </div>

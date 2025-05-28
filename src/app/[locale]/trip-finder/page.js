@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import React, { useEffect, useState } from "react";
-import TripSearch from "@/components/ui/TripSearch";
-import Image from "next/image";
-import axios from "axios";
-import { TourCards } from "@/components/ui/TourCards";
-import "@/styles/page_styles/trip-finder.css";
-import { Pagination } from "@/components/ui/Pagination";
+import React, { useEffect, useState } from 'react';
+import TripSearch from '@/components/ui/TripSearch';
+import Image from 'next/image';
+import axios from 'axios';
+import { TourCards } from '@/components/ui/TourCards';
+import '@/styles/page_styles/trip-finder.css';
+import { Pagination } from '@/components/ui/Pagination';
 
 export default function TripFinder() {
   const [tour_cards, setTour_cards] = useState();
@@ -40,9 +40,7 @@ export default function TripFinder() {
         <div className="container">
           <div className="font-medium px-6 lg:px-0 uppercase md:hidden mb-12">
             <span className="text-[#A5958B]">Trip founder</span>
-            <h2 className="mt-2 text-3xl text-[#323232]">
-              Explore Our Exclusive Tour packgages
-            </h2>
+            <h2 className="mt-2 text-3xl text-[#323232]">Explore Our Exclusive Tour packgages</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {tour_cards?.results?.map((card, index) => (

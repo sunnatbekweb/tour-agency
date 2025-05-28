@@ -74,11 +74,9 @@ export default function SmCountriesSection() {
       ],
     },
   ];
-
   const [selectedCountry, setSelectedCountry] = useState(countryData[0]);
   const [activeId, setActiveId] = useState(null);
   const contentRef = useRef(null);
-
   useEffect(() => {
     if (contentRef.current) {
       if (activeId === selectedCountry.id) {
@@ -99,36 +97,33 @@ export default function SmCountriesSection() {
       }
     }
   }, [activeId, selectedCountry]);
-
   const handleCountrySelect = (country) => {
     setSelectedCountry(country);
     setActiveId(null);
   };
-
   const toggleAccordion = (id) => {
     setActiveId((prev) => (prev === id ? null : id));
   };
-
   return (
     <div>
       <section className="countries w-full mt-[80px] md:mt-[100px]">
         <div className="container countries__container">
-          <div className="countries__top-box flex flex-row justify-start items-center gap-2 overflow-x-auto px-6 mb-8 md:px-9 md:mb-[56px]">
+          <div className="countries__top-box flex flex-row justify-start items-center gap-2 overflow-x-auto px-6 mb-8 md:mb-[56px] md:gap-4 md:px-9">
             {countryData.map((item) => (
               <button
-                key={item.id}
                 className={`countries__top-buttons transition-all duration-500 ease-in-out flex justify-center items-center px-[18px] py-[12px] rounded-[16px] font-medium text-[16px] leading-[100%] md:text-[32px] md:px-[25px] md:py-[17px] md:rounded-[32px] ${
                   selectedCountry.id === item.id
                     ? "bg-[#B4A297] text-white"
                     : "bg-[#F5F5F5] text-[#323232]"
                 }`}
                 onClick={() => handleCountrySelect(item)}
+                key={item.id}
               >
                 {item.title}
               </button>
             ))}
           </div>
-          <div className="countries__bottom-box w-full px-6">
+          <div className="countries__bottom-box w-full px-6 md:px-9">
             <div className="countries__top-info transition-all duration-500 ease-in-out w-full bg-[#E9DED8] rounded-[10px] px-[22px] pt-[14px] pb-[14px] md:px-[48px] md:pt-[32px] md:pb-[32px] md:rounded-[24px]">
               <div
                 className="countries__mini-top-info w-full cursor-pointer flex flex-row justify-between items-center transition-all duration-500 ease-in-out"

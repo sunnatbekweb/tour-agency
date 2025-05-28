@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
-import axios from "axios";
-import { useLocale } from "next-intl";
+import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
+import axios from 'axios';
+import { useLocale } from 'next-intl';
 
 export const TripForm = () => {
   const [destinations, setDestinations] = useState();
   const [formData, setFormData] = useState({
-    full_name: "",
-    email: "",
-    destination: "",
-    trip_tour: "",
-    message: "",
+    full_name: '',
+    email: '',
+    destination: '',
+    trip_tour: '',
+    message: '',
   });
   const locale = useLocale();
   const getDestinations = async () => {
@@ -29,21 +29,18 @@ export const TripForm = () => {
     e.preventDefault();
     try {
       await axios
-        .post(
-          `${process.env.NEXT_PUBLIC_BASE_URL}/blog/tour-contact/`,
-          formData
-        )
+        .post(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/tour-contact/`, formData)
         .then((response) => console.log(response.data));
     } catch (error) {
       console.error(error);
     }
-    alert("Successfully sended!");
+    alert('Successfully sended!');
     setFormData({
-      full_name: "",
-      email: "",
-      destination: "",
-      trip_tour: "",
-      message: "",
+      full_name: '',
+      email: '',
+      destination: '',
+      trip_tour: '',
+      message: '',
     });
   };
 
@@ -52,10 +49,7 @@ export const TripForm = () => {
   }, []);
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="py-6 px-4 rounded-2xl bg-[#B4A297]"
-    >
+    <form onSubmit={handleSubmit} className="py-6 px-4 rounded-2xl bg-[#B4A297]">
       <h2 className="text-2xl md:text-4xl lg:text-5xl w-full xl:w-[55%] mb-10 md:mb-14">
         Your journey starts with a message, Get in Touch 👋
       </h2>
@@ -86,10 +80,7 @@ export const TripForm = () => {
             className="px-4 lg:px-6 py-2 lg:py-3 rounded-lg bg-[#FFFFFF1A] focus:bg-[#FFFFFF33] focus:outline-white border border-[#CBCBCB]"
           />
         </label>
-        <label
-          htmlFor="destination"
-          className="flex flex-col gap-y-2 font-medium lg:text-lg"
-        >
+        <label htmlFor="destination" className="flex flex-col gap-y-2 font-medium lg:text-lg">
           <span className="pl-2 md:pl-4 lg:text-xl">Your Destination</span>
           <select
             name="destination"
@@ -101,19 +92,13 @@ export const TripForm = () => {
           >
             <option value="">Select destination</option>
             {destinations?.map((destination) => (
-              <option
-                key={destination.id}
-                value={destination?.[`name_${locale}`]}
-              >
+              <option key={destination.id} value={destination?.[`name_${locale}`]}>
                 {destination?.[`name_${locale}`]}
               </option>
             ))}
           </select>
         </label>
-        <label
-          htmlFor="trip_tour"
-          className="flex flex-col gap-y-2 font-medium lg:text-lg mb-6"
-        >
+        <label htmlFor="trip_tour" className="flex flex-col gap-y-2 font-medium lg:text-lg mb-6">
           <span className="pl-2 md:pl-4 lg:text-xl">Trip Tour</span>
           <select
             name="trip_tour"
@@ -129,10 +114,7 @@ export const TripForm = () => {
           </select>
         </label>
       </div>
-      <label
-        htmlFor="message"
-        className="flex flex-col gap-y-2 md:gap-y-4 mt-4"
-      >
+      <label htmlFor="message" className="flex flex-col gap-y-2 md:gap-y-4 mt-4">
         <span className="pl-2 md:pl-4 lg:text-xl">Trip message</span>
         <textarea
           type="text"
@@ -151,15 +133,13 @@ export const TripForm = () => {
         </button>
         <div className="opacity-50 text-right hidden lg:flex flex-col">
           <p>
-            Company contacts:{" "}
-            <Link href={"mailto:silroadwondres@gmail.com"}>
-              silroadwondres@gmail.com
-            </Link>
+            Company contacts:{' '}
+            <Link href={'mailto:silroadwondres@gmail.com'}>silroadwondres@gmail.com</Link>
           </p>
           <p>
-            <Link href={"tel:+998(90)1234567"}>998 (90) 123 45 67</Link>
+            <Link href={'tel:+998(90)1234567'}>998 (90) 123 45 67</Link>
                 
-            <Link href={"tel:+998(90)1234567"}>998 (90) 123 45 67</Link>
+            <Link href={'tel:+998(90)1234567'}>998 (90) 123 45 67</Link>
           </p>
         </div>
       </div>

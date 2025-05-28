@@ -1,6 +1,6 @@
-import React from "react";
-import Image from "next/image";
-import { useLocale } from "next-intl";
+import React from 'react';
+import Image from 'next/image';
+import { useLocale } from 'next-intl';
 
 export const TourItineraryAccordion = ({ props }) => {
   const locale = useLocale();
@@ -10,9 +10,7 @@ export const TourItineraryAccordion = ({ props }) => {
         <details className="accordion__details" name="introdution">
           <summary>
             <h3 className="accordion__title">
-              <strong className="font-bold text-[#A5958B]">
-                {props?.[`day_${locale}`]}
-              </strong>{" "}
+              <strong className="font-bold text-[#A5958B]">{props?.[`day_${locale}`]}</strong>{' '}
               <span>{props?.[`title_${locale}`]}</span>
             </h3>
             <span className="accordion-icon">
@@ -20,7 +18,7 @@ export const TourItineraryAccordion = ({ props }) => {
                 className={`question__right-icon-box w-8 h-8 md:w-12 md:h-12 lg:w-16 lg:h-16 rounded-full flex flex-row justify-center items-center bg-[#F0ECEA]`}
               >
                 <Image
-                  src={"/icons/close__chevron.svg"}
+                  src={'/icons/close__chevron.svg'}
                   width={22}
                   height={22}
                   alt="toggle icon"
@@ -32,9 +30,7 @@ export const TourItineraryAccordion = ({ props }) => {
         </details>
         <div className="accordion__content">
           <div className="accordion__content-body">
-            <p className="text-xs md:text-base">
-              {props?.[`description_${locale}`]}
-            </p>
+            <p className="text-xs md:text-base">{props?.[`description_${locale}`]}</p>
             {/* <Image
               src={"/images/hystorical__samarkand.jpg"}
               width={250}

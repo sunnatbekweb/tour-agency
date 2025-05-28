@@ -1,19 +1,19 @@
-"use client";
+'use client';
 
-import axios from "axios";
-import { useLocale } from "next-intl";
-import React, { useEffect, useState } from "react";
+import axios from 'axios';
+import { useLocale } from 'next-intl';
+import React, { useEffect, useState } from 'react';
 
 export const ContactForm = () => {
   const [destinations, setDestinations] = useState();
   const locale = useLocale();
   const [formData, setFormData] = useState({
-    full_name: "",
-    email: "",
-    destination: "",
-    trip_tour: "",
+    full_name: '',
+    email: '',
+    destination: '',
+    trip_tour: '',
   });
-  
+
   const getDestinations = async () => {
     try {
       await axios
@@ -35,12 +35,12 @@ export const ContactForm = () => {
     } catch (error) {
       console.error(error);
     }
-    alert("Successfully sended!");
+    alert('Successfully sended!');
     setFormData({
-      full_name: "",
-      email: "",
-      destination: "",
-      trip_tour: "",
+      full_name: '',
+      email: '',
+      destination: '',
+      trip_tour: '',
     });
   };
 
@@ -100,10 +100,7 @@ export const ContactForm = () => {
         >
           <option value="">Select destination</option>
           {destinations?.map((destination) => (
-            <option
-              key={destination.id}
-              value={destination?.[`name_${locale}`]}
-            >
+            <option key={destination.id} value={destination?.[`name_${locale}`]}>
               {destination?.[`name_${locale}`]}
             </option>
           ))}

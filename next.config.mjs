@@ -1,8 +1,8 @@
-import createNextIntlPlugin from "next-intl/plugin";
+import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin();
 const nextConfig = {
   images: {
-    domains: ["tour.onesystem.uz"],
+    domains: ['tour.onesystem.uz'],
   },
 };
 export default withNextIntl(nextConfig);

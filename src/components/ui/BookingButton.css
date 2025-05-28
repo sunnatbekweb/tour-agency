@@ -11,7 +11,7 @@
   background: linear-gradient(90deg, #b4a297, #b4a297, #b4a297, #ffffff);
   background-size: 180% 180%;
   animation: gradient-animation-third 5s ease infinite;
-  font-family: "ppneuemontreal";
+  font-family: 'ppneuemontreal';
 }
 @keyframes gradient-animation-third {
   0% {
@@ -38,7 +38,7 @@
     background: linear-gradient(90deg, #b4a297, #b4a297, #b4a297, #ffffff);
     background-size: 180% 180%;
     animation: gradient-animation-third 8s ease infinite;
-    font-family: "ppneuemontreal";
+    font-family: 'ppneuemontreal';
   }
   @keyframes gradient-animation-third {
     0% {
@@ -65,7 +65,7 @@
     background: linear-gradient(90deg, #b4a297, #b4a297, #b4a297, #ffffff);
     background-size: 180% 180%;
     animation: gradient-animation-third 8s ease infinite;
-    font-family: "ppneuemontreal";
+    font-family: 'ppneuemontreal';
   }
   @keyframes gradient-animation-third {
     0% {

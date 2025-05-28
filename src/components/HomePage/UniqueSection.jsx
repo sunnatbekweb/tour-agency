@@ -1,6 +1,6 @@
-import { Link } from "@/i18n/navigation";
-import "./UniqueSection.css";
-import RightChevron from "../../../public/icons/RightChevron.jsx";
+import { Link } from '@/i18n/navigation';
+import './UniqueSection.css';
+import RightChevron from '../../../public/icons/RightChevron.jsx';
 export default function UniqueSection() {
   return (
     <div>
