@@ -10,13 +10,13 @@ import "@/styles/page_styles/trip-finder.css";
 
 export default function TripFinder() {
   const dispatch = useAppDispatch();
-  const { list, count, loading, currentPage } = useAppSelector(
+  const { list, count, loading, currentPage, filters } = useAppSelector(
     (state) => state.tours
   );
 
   useEffect(() => {
-    dispatch(fetchTours(currentPage));
-  }, [currentPage]);
+    dispatch(fetchTours({ page: currentPage, filters }));
+  }, [currentPage, filters]);
 
   const handlePageChange = ({ selected }) => {
     dispatch(setPage(selected + 1));
@@ -42,11 +42,19 @@ export default function TripFinder() {
               Explore Our Exclusive Tour packages
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div
+            className={`${list?.length > 0 && loading === false && "grid"} grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4`}
+          >
             {loading ? (
-              <p>Loading...</p>
-            ) : (
+              <p className="font-medium text-2xl text-center mt-40">
+                Loading...
+              </p>
+            ) : list?.length > 0 ? (
               list?.map((card, index) => <TourCards props={card} key={index} />)
+            ) : (
+              <p className="font-medium text-2xl text-center mt-40">
+                Trips not found!
+              </p>
             )}
           </div>
         </div>

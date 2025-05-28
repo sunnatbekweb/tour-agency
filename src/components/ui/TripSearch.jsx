@@ -5,15 +5,30 @@ import { Clock } from "../../../public/icons/Clock";
 import { Flag } from "../../../public/icons/Flag";
 import { useLocale } from "next-intl";
 import axios from "axios";
+import { useDispatch } from "react-redux";
+import { setFilters } from "@/features/tours/toursSlice";
 
 export default function TripSearch() {
   const [destinations, setDestinations] = useState();
-  const locale = useLocale();
+  const [tripTheme, setTripTheme] = useState();
   const [filterData, setFilterData] = useState({
     destination: "",
     duration: "",
     trip_type: "",
   });
+  const locale = useLocale();
+  const dispatch = useDispatch();
+
+  const getTripTheme = async () => {
+    try {
+      await axios
+        .get(`${process.env.NEXT_PUBLIC_BASE_URL}/tour/trip-theme/`)
+        .then((response) => setTripTheme(response.data.results));
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   const getDestinations = async () => {
     try {
       await axios
@@ -28,12 +43,25 @@ export default function TripSearch() {
     setFilterData({ ...filterData, [e.target.name]: e.target.value });
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const apiFilters = {
+      destination: filterData.destination,
+      duration: filterData.duration,
+      trip_type: filterData.trip_type,
+    };
+    dispatch(setFilters(apiFilters));
+  };
   useEffect(() => {
     getDestinations();
+    getTripTheme();
   }, []);
   return (
     <div className="w-full px-2.5 lg:px-8 py-4 lg:py-10 rounded-2xl lg:rounded-4xl bg-[#CCB9AEE5] border border-[#989898] absolute -top-[42px] md:-top-[146px] xl:-top-[85px]">
-      <form className="hidden p-2 rounded-2xl md:rounded-[46px] bg-transparent xl:bg-white xl:border border-[#E6E6E6] md:grid grid-cols-2 xl:grid-cols-4 gap-4 items-center">
+      <form
+        onSubmit={handleSubmit}
+        className="hidden p-2 rounded-2xl md:rounded-[46px] bg-transparent xl:bg-white xl:border border-[#E6E6E6] md:grid grid-cols-2 xl:grid-cols-4 gap-4 items-center font-medium"
+      >
         <label
           htmlFor="destination"
           className="flex items-center gap-x-6 xl:pl-10 bg-white rounded-3xl px-6"
@@ -54,10 +82,7 @@ export default function TripSearch() {
               Destination
             </option>
             {destinations?.map((destination) => (
-              <option
-                key={destination.id}
-                value={destination?.[`name_${locale}`]}
-              >
+              <option key={destination.id} value={destination?.id}>
                 {destination?.[`name_${locale}`]}
               </option>
             ))}
@@ -77,7 +102,7 @@ export default function TripSearch() {
             placeholder="Duration"
             value={filterData.duration}
             onChange={handleChange}
-            className="h-[70px] focus:outline-none"
+            className="w-full h-[70px] focus:outline-none"
           />
         </label>
         <label
@@ -98,8 +123,11 @@ export default function TripSearch() {
             <option value="" disabled>
               Trip Type
             </option>
-            <option value="one_way">One Way</option>
-            <option value="round_trip">Round Trip</option>
+            {tripTheme?.map((theme) => (
+              <option key={theme?.id} value={theme?.id}>
+                {theme?.[`name_${locale}`]}
+              </option>
+            ))}
           </select>
         </label>
         <button className="w-full h-[70px] col-span-2 xl:col-span-1 rounded-[40px] bg-[#A5958B] border-4 xl:border-none border-white font-medium text-2xl text-white">
