@@ -7,7 +7,11 @@ import { DestinationTours } from "@/components/ui/DestinationTours";
 export default function Uzbekistan() {
   return (
     <div>
-      <HeroSecondSection />
+      <HeroSecondSection
+        image={"/images/uzbekistan__xl.jpg"}
+        title={"Uzbekistan"}
+        subtitle={"Land of Endless Horizons and Land of the Great Steppe"}
+      />
       <CivilizationSection />
       <FilterSection />
       <GallerySection />

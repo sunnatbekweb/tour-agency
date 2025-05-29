@@ -4,18 +4,6 @@
   height: 100vh;
   overflow: hidden;
 }
-.heroSecond::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("../../../public/images/uzbekistan__xl.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transform-origin: center;
-  animation: zoomInOut 10s ease-in-out infinite;
-  z-index: 0;
-}
 .heroSecond__container {
   position: relative;
   z-index: 1;

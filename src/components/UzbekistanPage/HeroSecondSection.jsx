@@ -1,19 +1,24 @@
 import "./HeroSecondSection.css";
 import ContactButton from "../ui/ContactButton";
-export default function HeroSecondSection() {
+import Image from "next/image";
+export default function HeroSecondSection({ image, title, subtitle }) {
   return (
     <div>
       <section className="heroSecond">
-        <div className="container heroSecond__container flex flex-col justify-center items-center min-h-screen px-6 xl:pt-[100px] md:px-9">
+        <div className="w-full h-screen relative flex flex-col items-center justify-center">
+          <Image
+            src={image}
+            width={1920}
+            height={1080}
+            loading="lazy"
+            className="absolute top-0 left-0 w-full h-full -z-10 object-cover"
+            alt="Hero background image"
+          />
           <h2 className="heroSecond__title font-medium uppercase text-[55px] leading-[72px] text-white mb-4 md:text-[115px] md:leading-[120px] xl:normal-case xl:mb-[48px]">
-            Uzbekistan
+            {title}
           </h2>
           <p className="heroSecond__text font-medium w-full text-[24px] leading-[100%] uppercase tracking-tighter-[-2%] text-white mb-[101px] text-center md:w-[634px] md:text-[48px] md:mb-[168px] lg:mb-[268px] xl:normal-case xl:w-full xl:text-[42px] xl:mb-[50px]">
-            Land of Great Scholars{" "}
-            <span className="heroSecond__span-text block md:inline-block">
-              and Crossroads of
-            </span>
-            Cultures
+            {subtitle}
           </p>
           <div className="heroSecond__button 2xl:hidden">
             <ContactButton>Contact us</ContactButton>
