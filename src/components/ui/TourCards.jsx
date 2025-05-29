@@ -1,13 +1,13 @@
-import React from "react";
-import Image from "next/image";
-import { Link } from "@/i18n/navigation";
-import { useLocale } from "next-intl";
+import React from 'react';
+import Image from 'next/image';
+import { Link } from '@/i18n/navigation';
+import { useLocale } from 'next-intl';
 
 export const TourCards = ({ props }) => {
   const locale = useLocale();
   function truncateText(text, maxLength) {
-    if (!text) return "";
-    return text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
+    if (!text) return '';
+    return text.length > maxLength ? text.slice(0, maxLength) + '...' : text;
   }
 
   return (
@@ -40,16 +40,14 @@ export const TourCards = ({ props }) => {
           <p className="font-medium text-sm md:text-base lg:text-xl line-clamp-2 mb-4">
             Traveling privately on a custom itinerary means flexibility.
           </p>
-          <span className="font-semibold text-base lg:text-xl text-[#323232]">
-            ${props.price}
-          </span>
+          <span className="font-semibold text-base lg:text-xl text-[#323232]">${props.price}</span>
         </div>
         <div className="flex flex-col 2xl:flex-row items-end gap-x-3">
           <ul className="w-full 2xl:w-1/2 flex flex-col gap-y-1">
             {[...Array(3)].map((_, index) => (
               <li key={index} className="flex items-center gap-3">
                 <Image
-                  src={"/icons/card_checkbox.svg"}
+                  src={'/icons/card_checkbox.svg'}
                   width={20}
                   height={20}
                   alt="checkbox icon"

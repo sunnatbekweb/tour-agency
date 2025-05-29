@@ -1,3 +1,28 @@
+.contactButton__button {
+  cursor: pointer !important;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 100%;
+  color: white;
+  padding: 15px 27px;
+  border: 2px solid white;
+  border-radius: 33px;
+  background: linear-gradient(90deg, #b4a297, #b4a297, #b4a297, #ffffff);
+  background-size: 180% 180%;
+  animation: gradient-animation-first 8s ease infinite;
+  font-family: "ppneuemontreal";
+}
+@keyframes gradient-animation-first {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
 @media (max-width: 1024px) {
   .contactButton__button {
     cursor: pointer !important;
@@ -5,7 +30,7 @@
     font-weight: 500;
     line-height: 100%;
     color: white;
-    padding: 21px 44px;
+    padding: 15px 27px;
     border: 2px solid white;
     border-radius: 33px;
     background: linear-gradient(90deg, #b4a297, #b4a297, #b4a297, #ffffff);

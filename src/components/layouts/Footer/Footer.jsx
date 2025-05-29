@@ -1,7 +1,7 @@
-import './Footer.css'
-import FooterSmSection from '@/components/ui/FooterSmSection'
-import FooterMdSection from '@/components/ui/FooterMdSection'
-import FooterSection from '@/components/ui/FooterSection'
+import './Footer.css';
+import FooterSmSection from '@/components/ui/FooterSmSection';
+import FooterMdSection from '@/components/ui/FooterMdSection';
+import FooterSection from '@/components/ui/FooterSection';
 export const Footer = () => {
   return (
     <div>
@@ -11,5 +11,5 @@ export const Footer = () => {
         <FooterSection />
       </footer>
     </div>
-  )
-}
+  );
+};

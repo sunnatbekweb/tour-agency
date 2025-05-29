@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import Image from "next/image";
-import { useLocale } from "next-intl";
-import { useParams } from "next/navigation";
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import Image from 'next/image';
+import { useLocale } from 'next-intl';
+import { useParams } from 'next/navigation';
 
 export default function BlogDetail() {
   const [post, setPost] = useState();
@@ -22,7 +22,7 @@ export default function BlogDetail() {
   const formatDate = (rawDate) => {
     const date = new Date(rawDate);
     const day = date.getDate();
-    const month = date.toLocaleString(locale, { month: "long" });
+    const month = date.toLocaleString(locale, { month: 'long' });
     const year = date.getFullYear();
     return `${day} ${month}, ${year}`;
   };
@@ -52,19 +52,15 @@ export default function BlogDetail() {
             {post?.extra_text.map((text, index) => (
               <div key={index}>
                 <br />
-                <h2 className="text-2xl md:text-3xl lg:text-4xl">
-                  {text?.[`title_${locale}`]}
-                </h2>
+                <h2 className="text-2xl md:text-3xl lg:text-4xl">{text?.[`title_${locale}`]}</h2>
                 <br />
                 <p className="md:text-lg lg:text-2xl">
-                  {text?.[`text_${locale}`]
-                    ?.split(/\r?\n/)
-                    .map((line, index) => (
-                      <React.Fragment key={index}>
-                        {line}
-                        <br />
-                      </React.Fragment>
-                    ))}
+                  {text?.[`text_${locale}`]?.split(/\r?\n/).map((line, index) => (
+                    <React.Fragment key={index}>
+                      {line}
+                      <br />
+                    </React.Fragment>
+                  ))}
                 </p>
               </div>
             ))}

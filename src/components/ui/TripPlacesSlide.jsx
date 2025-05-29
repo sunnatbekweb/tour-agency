@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
-import Image from "next/image";
-import { useLocale } from "next-intl";
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
+import Image from 'next/image';
+import { useLocale } from 'next-intl';
 
 export const TripPlacesSlide = ({ props }) => {
   const locale = useLocale();
@@ -22,11 +22,11 @@ export const TripPlacesSlide = ({ props }) => {
       </div>
       <Swiper
         navigation={{
-          prevEl: ".slide_button-prev",
-          nextEl: ".slide_button-next",
+          prevEl: '.slide_button-prev',
+          nextEl: '.slide_button-next',
         }}
         modules={[Navigation]}
-        slidesPerView={"auto"}
+        slidesPerView={'auto'}
         spaceBetween={16}
         breakpoints={{
           1024: {

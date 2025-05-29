@@ -1,14 +1,8 @@
-import React from "react";
+import React from 'react';
 
 export const Calendar = () => {
   return (
-    <svg
-      width="32"
-      height="33"
-      viewBox="0 0 32 33"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M28.2499 31.0879H3.74999C2.36925 31.0879 1.25 29.9686 1.25 28.5879V6.50465C1.25 5.12391 2.36925 4.00466 3.74999 4.00466H28.2499C29.6307 4.00466 30.7499 5.12391 30.7499 6.50465V28.5879C30.7499 29.9686 29.6307 31.0879 28.2499 31.0879Z"
         stroke="#C3C3C3"

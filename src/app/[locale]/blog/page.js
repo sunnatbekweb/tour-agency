@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import React, { useEffect } from "react";
 import { Pagination } from "@/components/ui/Pagination";
@@ -38,9 +38,7 @@ export default function Blog() {
       </section>
       <section className="pt-[100px]">
         <div className="container font-medium px-5">
-          <span className="text-xl text-[#A5958B] uppercase block mb-8">
-            Trip Blogs
-          </span>
+          <span className="text-xl text-[#A5958B] uppercase block mb-8">Trip Blogs</span>
           <h2 className="text-3xl md:text-5xl lg:text-7xl uppercase w-full lg:w-3/4 mb-20">
             Where Cultures Converge and History Lives
           </h2>

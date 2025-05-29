@@ -1,5 +1,5 @@
-import React from "react";
-import ReactPaginate from "react-paginate";
+import React from 'react';
+import ReactPaginate from 'react-paginate';
 
 export const Pagination = ({ count, onPageChange, forcePage }) => {
   return (

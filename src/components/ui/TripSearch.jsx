@@ -88,10 +88,7 @@ export default function TripSearch() {
             ))}
           </select>
         </label>
-        <label
-          htmlFor="duration"
-          className="flex items-center gap-x-6 bg-white rounded-3xl px-6"
-        >
+        <label htmlFor="duration" className="flex items-center gap-x-6 bg-white rounded-3xl px-6">
           <div>
             <Clock />
           </div>
@@ -143,12 +140,7 @@ export default function TripSearch() {
           className="w-full ps-3 focus:outline-none"
         />
         <button className="px-3 py-2 rounded-3xl bg-[#A5958B]">
-          <Image
-            src={"/icons/search_icon.svg"}
-            width={24}
-            height={24}
-            alt="Search"
-          />
+          <Image src={'/icons/search_icon.svg'} width={24} height={24} alt="Search" />
         </button>
       </form>
     </div>

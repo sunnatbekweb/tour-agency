@@ -6,7 +6,6 @@ import { Slide, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import RoadSection from "./RoadSection";
 import WhiteChevron from "../../../public/icons/WhiteChevron";
-
 export default function FooterSection() {
   const moveTop = () => {
     window.scrollTo(0, 0);

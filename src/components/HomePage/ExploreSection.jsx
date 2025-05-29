@@ -1,4 +1,4 @@
-import "./ExploreSection.css";
+import './ExploreSection.css';
 export default function ExploreSection() {
   return (
     <div>
@@ -12,10 +12,9 @@ export default function ExploreSection() {
               Explore Central Asia Like Never Before
             </h2>
             <p className="explore__bottom-text w-full font-medium text-[12px] leading-[16px] text-[#323232] md:text-[24px] md:leading-[32px] lg:w-[700px]">
-              At SRW (Silk Road Wonders), we craft unforgettable journeys across
-              Uzbekistan, Kazakhstan, Kyrgyzstan, Turkmenistan and Tajikistan.
-              Whether you're drawn by majestic architecture, ancient bazaars, or
-              serene nature — your perfect adventure awaits.
+              At SRW (Silk Road Wonders), we craft unforgettable journeys across Uzbekistan,
+              Kazakhstan, Kyrgyzstan, Turkmenistan and Tajikistan. Whether you're drawn by majestic
+              architecture, ancient bazaars, or serene nature — your perfect adventure awaits.
             </p>
           </div>
         </div>

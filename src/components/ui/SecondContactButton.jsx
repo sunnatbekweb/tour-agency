@@ -1,12 +1,12 @@
-import React from "react"
-import './SecondContactButton.css'
-import { Link } from "@/i18n/navigation"
+import React from 'react';
+import './SecondContactButton.css';
+import { Link } from '@/i18n/navigation';
 export default function SecondContactButton({ children }) {
-    return (
-        <Link href={'/'}>
-            <button className="secondContactButton__button cursor-pointer active:opacity-50 active:duration-75 font-bold uppercase text-[#656267]">
-                {children}
-            </button>
-        </Link>
-    )
+  return (
+    <Link href={'/'}>
+      <button className="secondContactButton__button cursor-pointer active:opacity-50 active:duration-75 font-bold uppercase text-[#656267]">
+        {children}
+      </button>
+    </Link>
+  );
 }

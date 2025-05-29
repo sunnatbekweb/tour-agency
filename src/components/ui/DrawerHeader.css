@@ -20,14 +20,14 @@
 .drawerHeader__links {
 }
 .drawerHeader__links-texts {
-  font-family: "ppneuemontreal";
+  font-family: 'ppneuemontreal';
 }
 .drawerHeader__button-list {
 }
 .drawerHeader__button {
 }
 .drawerHeader__button-text {
-  font-family: "ppneuemontreal";
+  font-family: 'ppneuemontreal';
 }
 .drawerHeader__second-nav {
 }
@@ -38,17 +38,17 @@
 .drawerHeader__second-links {
 }
 .drawerHeader__second-links-texts {
-  font-family: "ppneuemontreal";
+  font-family: 'ppneuemontreal';
 }
 .drawerHeader__third-list {
 }
 .drawerHeader__third-links {
 }
 .drawerHeader__third-links-texts {
-  font-family: "ppneuemontreal";
+  font-family: 'ppneuemontreal';
 }
 .drawerHeader__contact-button {
-  font-family: "ppneuemontreal";
+  font-family: 'ppneuemontreal';
 }
 @media (max-width: 1024px) {
   .drawerHeader {
@@ -73,14 +73,14 @@
   .drawerHeader__links {
   }
   .drawerHeader__links-texts {
-    font-family: "ppneuemontreal";
+    font-family: 'ppneuemontreal';
   }
   .drawerHeader__button-list {
   }
   .drawerHeader__button {
   }
   .drawerHeader__button-text {
-    font-family: "ppneuemontreal";
+    font-family: 'ppneuemontreal';
   }
   .drawerHeader__second-nav {
   }
@@ -91,17 +91,17 @@
   .drawerHeader__second-links {
   }
   .drawerHeader__second-links-texts {
-    font-family: "ppneuemontreal";
+    font-family: 'ppneuemontreal';
   }
   .drawerHeader__third-list {
   }
   .drawerHeader__third-links {
   }
   .drawerHeader__third-links-texts {
-    font-family: "ppneuemontreal";
+    font-family: 'ppneuemontreal';
   }
   .drawerHeader__contact-button {
-    font-family: "ppneuemontreal";
+    font-family: 'ppneuemontreal';
   }
 }
 @media (max-width: 767px) {
@@ -127,14 +127,14 @@
   .drawerHeader__links {
   }
   .drawerHeader__links-texts {
-    font-family: "ppneuemontreal";
+    font-family: 'ppneuemontreal';
   }
   .drawerHeader__button-list {
   }
   .drawerHeader__button {
   }
   .drawerHeader__button-text {
-    font-family: "ppneuemontreal";
+    font-family: 'ppneuemontreal';
   }
   .drawerHeader__second-nav {
   }
@@ -145,16 +145,16 @@
   .drawerHeader__second-links {
   }
   .drawerHeader__second-links-texts {
-    font-family: "ppneuemontreal";
+    font-family: 'ppneuemontreal';
   }
   .drawerHeader__third-list {
   }
   .drawerHeader__third-links {
   }
   .drawerHeader__third-links-texts {
-    font-family: "ppneuemontreal";
+    font-family: 'ppneuemontreal';
   }
   .drawerHeader__contact-button {
-    font-family: "ppneuemontreal";
+    font-family: 'ppneuemontreal';
   }
 }

@@ -9,7 +9,7 @@
 .swiper-button-right {
   width: 96px !important;
   height: 96px !important;
-  background-image: url("../../../public/icons/right__chevron.svg");
+  background-image: url('../../../public/icons/right__chevron.svg');
   background-repeat: no-repeat;
   background-size: contain;
   transform: translateY(-100px) !important;
@@ -17,7 +17,7 @@
 .swiper-button-left {
   width: 96px !important;
   height: 96px !important;
-  background-image: url("../../../public/icons/chevron.svg");
+  background-image: url('../../../public/icons/chevron.svg');
   background-repeat: no-repeat;
   background-size: contain;
   transform: translateY(-100px) !important;
@@ -36,7 +36,7 @@
 }
 .secondCarousel__image-texts {
   opacity: 0;
-  font-family: "ppneuemontreal";
+  font-family: 'ppneuemontreal';
   transition: 0.8s ease-in-out;
   transform: translateY(100px);
 }
@@ -57,7 +57,7 @@
   .swiper-button-right {
     width: 96px !important;
     height: 96px !important;
-    background-image: url("../../../public/icons/right__chevron.svg");
+    background-image: url('../../../public/icons/right__chevron.svg');
     background-repeat: no-repeat;
     background-size: contain;
     transform: translateY(-100px) !important;
@@ -65,7 +65,7 @@
   .swiper-button-left {
     width: 96px !important;
     height: 96px !important;
-    background-image: url("../../../public/icons/chevron.svg");
+    background-image: url('../../../public/icons/chevron.svg');
     background-repeat: no-repeat;
     background-size: contain;
     transform: translateY(-100px) !important;
@@ -84,7 +84,7 @@
   }
   .secondCarousel__image-texts {
     opacity: 0;
-    font-family: "ppneuemontreal";
+    font-family: 'ppneuemontreal';
     transition: 0.8s ease-in-out;
     transform: translateY(100px);
   }
@@ -122,7 +122,7 @@
     height: 327px;
   }
   .secondCarousel__image-texts {
-    font-family: "ppneuemontreal";
+    font-family: 'ppneuemontreal';
   }
 }
 @media (max-width: 360px) {
@@ -153,6 +153,6 @@
     height: 327px;
   }
   .secondCarousel__image-texts {
-    font-family: "ppneuemontreal";
+    font-family: 'ppneuemontreal';
   }
 }

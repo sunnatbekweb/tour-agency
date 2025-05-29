@@ -1,7 +1,7 @@
 .smRoad {
   width: 100%;
   height: 645px;
-  background-image: url("../../../public/images/footer__sm-background.jpg");
+  background-image: url('../../../public/images/footer__sm-background.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -15,15 +15,15 @@
 .smRoad__text-boxes {
 }
 .smRoad__first-title {
-  font-family: "ppneuemontreal";
+  font-family: 'ppneuemontreal';
   opacity: 1 !important;
 }
 .smRoad__second-title {
-  font-family: "ppneuemontreal";
+  font-family: 'ppneuemontreal';
   opacity: 70% !important;
 }
 .smRoad__third-title {
-  font-family: "ppneuemontreal";
+  font-family: 'ppneuemontreal';
   opacity: 50% !important;
 }
 .smRoad__button {
@@ -39,7 +39,7 @@
   background: linear-gradient(180deg, #b4a297, #b4a297, #b4a297, #ffffff);
   background-size: 180% 180%;
   animation: gradient-animation-fourth 8s ease infinite;
-  font-family: "ppneuemontreal";
+  font-family: 'ppneuemontreal';
   & svg {
     transform: rotate(0deg);
     transition: all 100ms ease;

@@ -1,43 +1,42 @@
 @font-face {
-  font-family: "ppneuemontreal";
+  font-family: 'ppneuemontreal';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("../../public/fonts/ppneuemontreal-bold.otf") format("opentype");
+  src: url('../../public/fonts/ppneuemontreal-bold.otf') format('opentype');
 }
 @font-face {
-  font-family: "ppneuemontreal";
+  font-family: 'ppneuemontreal';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../../public/fonts/ppneuemontreal-book.otf") format("opentype");
+  src: url('../../public/fonts/ppneuemontreal-book.otf') format('opentype');
 }
 @font-face {
-  font-family: "ppneuemontreal";
+  font-family: 'ppneuemontreal';
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url("../../public/fonts/ppneuemontreal-italic.otf") format("opentype");
+  src: url('../../public/fonts/ppneuemontreal-italic.otf') format('opentype');
 }
 @font-face {
-  font-family: "ppneuemontreal";
+  font-family: 'ppneuemontreal';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("../../public/fonts/ppneuemontreal-medium.otf") format("opentype");
+  src: url('../../public/fonts/ppneuemontreal-medium.otf') format('opentype');
 }
 @font-face {
-  font-family: "ppneuemontreal";
+  font-family: 'ppneuemontreal';
   font-style: italic;
   font-weight: 600;
   font-display: swap;
-  src: url("../../public/fonts/ppneuemontreal-semibolditalic.otf")
-    format("opentype");
+  src: url('../../public/fonts/ppneuemontreal-semibolditalic.otf') format('opentype');
 }
 @font-face {
-  font-family: "ppneuemontreal";
+  font-family: 'ppneuemontreal';
   font-style: normal;
   font-weight: 100;
   font-display: swap;
-  src: url("../../public/fonts/ppneuemontreal-thin.otf") format("opentype");
+  src: url('../../public/fonts/ppneuemontreal-thin.otf') format('opentype');
 }

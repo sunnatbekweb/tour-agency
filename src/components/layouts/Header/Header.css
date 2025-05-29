@@ -52,7 +52,7 @@
 .header__middle-links-texts-icons {
 }
 .header__middle-links-texts {
-  font-family: "ppneuemontreal";
+  font-family: 'ppneuemontreal';
 }
 .header__right-box {
 }
@@ -64,7 +64,7 @@
 .header__right-language-icon {
 }
 .header__right-language-text {
-  font-family: "ppneuemontreal";
+  font-family: 'ppneuemontreal';
 }
 @media (max-width: 1690px) {
   .header {
@@ -121,7 +121,7 @@
   .header__middle-links-texts-icons {
   }
   .header__middle-links-texts {
-    font-family: "ppneuemontreal";
+    font-family: 'ppneuemontreal';
   }
   .header__right-box {
   }
@@ -133,7 +133,7 @@
   .header__right-language-icon {
   }
   .header__right-language-text {
-    font-family: "ppneuemontreal";
+    font-family: 'ppneuemontreal';
   }
 }
 @media (max-width: 1310px) {
@@ -189,7 +189,7 @@
   .header__middle-links-texts-icons {
   }
   .header__middle-links-texts {
-    font-family: "ppneuemontreal";
+    font-family: 'ppneuemontreal';
   }
   .header__right-box {
   }
@@ -200,7 +200,7 @@
   .header__right-language-icon {
   }
   .header__right-language-text {
-    font-family: "ppneuemontreal";
+    font-family: 'ppneuemontreal';
   }
 }
 @media (max-width: 767px) {
@@ -256,7 +256,7 @@
   .header__middle-links-texts-icons {
   }
   .header__middle-links-texts {
-    font-family: "ppneuemontreal";
+    font-family: 'ppneuemontreal';
   }
   .header__right-box {
   }
@@ -267,6 +267,6 @@
   .header__right-language-icon {
   }
   .header__right-language-text {
-    font-family: "ppneuemontreal";
+    font-family: 'ppneuemontreal';
   }
 }
