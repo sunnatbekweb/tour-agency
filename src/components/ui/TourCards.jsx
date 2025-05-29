@@ -25,7 +25,7 @@ export const TourCards = ({ props }) => {
         <div className="text-[#323232] mb-5">
           <div className="flex items-center gap-x-4 justify-between mb-4">
             <h4 className="w-[80%] font-semibold text-xl lg:text-2xl line-clamp-1">
-              {props.title}
+              {props?.[`name_${locale}`]}
             </h4>
             <div className="w-[20%] flex items-center justify-end gap-x-3">
               <Image

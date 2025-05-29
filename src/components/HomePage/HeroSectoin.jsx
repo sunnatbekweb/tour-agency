@@ -94,7 +94,7 @@ export default function HeroSectoin() {
           {link.map((item, index) => (
             <li className="hero__lists w-full" key={index}>
               <hr className="w-full bg-white/20 h-[1px] border-none outline-none" />
-              <Link className="hero__links" href={'/contact'}>
+              <Link className="hero__links" href={item.path}>
                 <p className="hero__link-texts font-medium text-[24px] uppercase text-white">
                   {item.label}
                 </p>
