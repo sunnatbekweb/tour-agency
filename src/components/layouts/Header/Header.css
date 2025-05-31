@@ -1,13 +1,5 @@
-.header {
-}
-.header__container {
-}
-.header__left-box {
-}
 .header__left-open-burger-button {
   display: none !important;
-}
-.header__left-open-burger-icon {
 }
 .header__left-mini-logo {
   display: inline-block !important;
@@ -49,34 +41,52 @@
   padding: 18px 24px;
   border-radius: 33px;
 }
-.header__middle-links-texts-icons {
-}
 .header__middle-links-texts {
-  font-family: 'ppneuemontreal';
-}
-.header__right-box {
+  font-family: "ppneuemontreal";
 }
 .header__right-contact-button {
   display: block;
 }
 .header__right-language {
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden;
+  width: 90px;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  overflow: hidden;
 }
-.header__right-language-icon {
+
+.header__right-language:hover {
+  width: 228px;
+}
+
+.header__right-language span,
+.header__right-language .gray_text {
+  display: none;
+}
+
+.header__right-language:hover span,
+.header__right-language:hover .gray_text {
+  display: block;
+}
+.gray_text {
+  color: #ffffff99;
 }
 .header__right-language-text {
-  font-family: 'ppneuemontreal';
+  font-family: "ppneuemontreal";
+}
+@media (max-width: 768px) {
+  .header__right-language {
+    width: 60px;
+  }
+  .header__right-language:hover {
+    width: 160px;
+  }
 }
 @media (max-width: 1690px) {
-  .header {
-  }
-  .header__container {
-  }
-  .header__left-box {
-  }
   .header__left-open-burger-button {
     display: none !important;
-  }
-  .header__left-open-burger-icon {
   }
   .header__left-mini-logo {
     display: inline-block !important;
@@ -118,44 +128,28 @@
     padding: 12px 24px !important;
     border-radius: 33px;
   }
-  .header__middle-links-texts-icons {
-  }
   .header__middle-links-texts {
-    font-family: 'ppneuemontreal';
-  }
-  .header__right-box {
+    font-family: "ppneuemontreal";
   }
   .header__right-contact-button {
     display: none;
   }
-  .header__right-language {
-  }
-  .header__right-language-icon {
-  }
   .header__right-language-text {
-    font-family: 'ppneuemontreal';
+    font-family: "ppneuemontreal";
   }
 }
 @media (max-width: 1310px) {
-  .header {
-  }
   .header__container {
     display: flex !important;
     flex-direction: row !important;
     justify-content: space-between !important;
     align-items: center !important;
   }
-  .header__left-box {
-  }
   .header__left-open-burger-button {
     display: inline-block !important;
   }
-  .header__left-open-burger-icon {
-  }
   .header__left-mini-logo {
     display: none !important;
-  }
-  .header__middle-box {
   }
   .header__middle-mini-logo {
     display: inline-block !important;
@@ -186,43 +180,25 @@
     align-items: center !important;
     gap: 8.04px !important;
   }
-  .header__middle-links-texts-icons {
-  }
   .header__middle-links-texts {
-    font-family: 'ppneuemontreal';
-  }
-  .header__right-box {
-  }
-  .header__right-contact-button {
-  }
-  .header__right-language {
-  }
-  .header__right-language-icon {
+    font-family: "ppneuemontreal";
   }
   .header__right-language-text {
-    font-family: 'ppneuemontreal';
+    font-family: "ppneuemontreal";
   }
 }
 @media (max-width: 767px) {
-  .header {
-  }
   .header__container {
     display: flex !important;
     flex-direction: row !important;
     justify-content: space-between !important;
     align-items: center !important;
   }
-  .header__left-box {
-  }
   .header__left-open-burger-button {
     display: inline-block !important;
   }
-  .header__left-open-burger-icon {
-  }
   .header__left-mini-logo {
     display: none !important;
-  }
-  .header__middle-box {
   }
   .header__middle-mini-logo {
     display: inline-block !important;
@@ -253,20 +229,10 @@
     align-items: center !important;
     gap: 8.04px !important;
   }
-  .header__middle-links-texts-icons {
-  }
   .header__middle-links-texts {
-    font-family: 'ppneuemontreal';
-  }
-  .header__right-box {
-  }
-  .header__right-contact-button {
-  }
-  .header__right-language {
-  }
-  .header__right-language-icon {
+    font-family: "ppneuemontreal";
   }
   .header__right-language-text {
-    font-family: 'ppneuemontreal';
+    font-family: "ppneuemontreal";
   }
 }
