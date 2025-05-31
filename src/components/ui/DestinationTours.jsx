@@ -42,7 +42,7 @@ export const DestinationTours = () => {
   }, []);
 
   return (
-    <section className="pt-[120px] font-medium">
+    <section className="pt-[120px] px-6 font-medium">
       <div className="container">
         <span className="font-medium text-xl text-[#A5958B] uppercase block mb-8">
           Trip Blogs
@@ -58,10 +58,10 @@ export const DestinationTours = () => {
             multi-day immersion, your journey begins here.
           </p>
         </div>
-        <div className="w-full flex items-center gap-x-6 overflow-x-auto mt-20 mb-14">
+        <div className="w-full flex items-center gap-x-6 overflow-x-auto scrollbar-hidden mt-20 mb-14">
           <button
             onClick={() => dispatch(setTripTheme(""))}
-            className={`px-20 py-5 rounded-4xl text-xl ${
+            className={`px-10 lg:px-20 py-3 lg:py-5 rounded-2xl lg:rounded-4xl text-sm md:text-base lg:text-xl ${
               !filters.trip_theme
                 ? "bg-[#A5958B] text-white"
                 : "bg-[#EDEDED] text-[#A5958B]"
@@ -73,7 +73,7 @@ export const DestinationTours = () => {
             <button
               key={theme?.id}
               onClick={() => handleThemeSelect(theme.id)}
-              className={`px-20 py-5 rounded-4xl text-xl ${
+              className={`px-10 lg:px-20 py-3 lg:py-5 whitespace-nowrap rounded-2xl lg:rounded-4xl text-sm md:text-base lg:text-xl ${
                 filters.trip_theme === theme.id
                   ? "bg-[#A5958B] text-white"
                   : "bg-[#EDEDED] text-[#A5958B]"

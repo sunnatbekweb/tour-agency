@@ -53,7 +53,7 @@ export const Header = () => {
             : "duration-500"
         }`}
       >
-        <div className="container header__container w-full flex flex-row justify-between items-center px-6 py-12 md:px-9 md:py-[52px] xl:py-[36px]">
+        <div className="container header__container w-full flex flex-row justify-between items-center px-6 py-6 md:px-9">
           <div className="header__left-box">
             <button
               className="header__left-open-burger-button"
