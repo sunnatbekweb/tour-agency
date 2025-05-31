@@ -14,7 +14,7 @@ export default function TripSearch() {
   const [filterData, setFilterData] = useState({
     destination: "",
     duration: "",
-    trip_type: "",
+    trip_theme: "",
   });
   const locale = useLocale();
   const dispatch = useDispatch();
@@ -48,7 +48,7 @@ export default function TripSearch() {
     const apiFilters = {
       destination: filterData.destination,
       duration: filterData.duration,
-      trip_type: filterData.trip_type,
+      trip_theme: filterData.trip_theme,
     };
     dispatch(setFilters(apiFilters));
   };
@@ -106,7 +106,7 @@ export default function TripSearch() {
           />
         </label>
         <label
-          htmlFor="trip_type"
+          htmlFor="trip_theme"
           className="flex items-center gap-x-6 bg-white rounded-3xl px-6"
         >
           <div>
@@ -114,9 +114,9 @@ export default function TripSearch() {
           </div>
           <select
             type="text"
-            name="trip_type"
-            id="trip_type"
-            value={filterData.trip_type}
+            name="trip_theme"
+            id="trip_theme"
+            value={filterData.trip_theme}
             onChange={handleChange}
             className="w-full h-[70px] focus:outline-none cursor-pointer"
           >
