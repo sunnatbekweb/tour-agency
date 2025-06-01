@@ -164,9 +164,6 @@ export const Header = () => {
                 src="/icons/language__icon.svg"
                 alt="Language icon"
               />
-              <span className="block ml-2 font-medium text-white/60 text-xs md:text-base 2xl:text-lg">
-                {t("language")}
-              </span>
               <div className="flex items-center gap-x-2 ml-2">
                 {["uz", "ru", "en"].map((lang) => {
                   const newPathname = pathname.replace(`/${locale}`, "") || "/";
