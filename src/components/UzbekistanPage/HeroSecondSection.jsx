@@ -9,11 +9,7 @@ export default function HeroSecondSection() {
             Uzbekistan
           </h2>
           <p className="heroSecond__text font-medium w-full text-[24px] leading-[100%] uppercase tracking-tighter-[-2%] text-white mb-[101px] text-center md:w-[634px] md:text-[48px] md:mb-[168px] lg:mb-[268px] xl:normal-case xl:w-full xl:text-[42px] xl:mb-[50px]">
-            Land of Great Scholars{" "}
-            <span className="heroSecond__span-text block md:inline-block">
-              and Crossroads of
-            </span>
-            Cultures
+            Land of Great Scholars and Crossroads of Cultures
           </p>
           <div className="heroSecond__button 2xl:hidden">
             <ContactButton>Contact us</ContactButton>

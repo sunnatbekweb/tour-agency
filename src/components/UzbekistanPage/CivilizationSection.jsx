@@ -8,7 +8,7 @@ export default function CivilizationSection() {
             <p className="civilization__top-title text-[#A5958B] font-medium text-[18px] leading-[100%] uppercase md:text-[24px]">
               About country
             </p>
-            <h2 className="civilization__top-text font-medium text-[32px] leading-[40px] text-[#323232] uppercase mb-8 md:text-[56px] md:leading-[100%] xl:text-[72px] xl:mb-[80px] xl:w-[963px]">
+            <h2 className="civilization__top-text font-medium text-[32px] leading-[40px] text-[#323232] uppercase mb-8 md:text-[56px] md:mb-[56px] md:leading-[100%] xl:text-[72px] xl:mb-[80px] xl:w-[963px]">
               Uzbekistan: Crossroads of Civilizations
             </h2>
           </div>
@@ -25,7 +25,7 @@ export default function CivilizationSection() {
                 journey unlike any other. It’s where science once thrived, trade
                 flourished, and traditions were born that still color the land
                 today. Let the Silk Road guide your footsteps through this
-                timeless land.2
+                timeless land.
               </p>
               <p className="civilization__bottom-second-text w-full text-[#878787] text-[14px] font-medium leading-[18px] mb-8 md:text-[32px] md:leading-[40px] md:mb-20 2xl:text-[24px] 2xl:leading-[32px] 2xl:mb-0 2xl:w-[550px]">
                 Uzbekistan’s charm lies not only in its architectural wonders

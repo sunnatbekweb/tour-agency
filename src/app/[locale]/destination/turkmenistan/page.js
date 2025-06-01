@@ -1,5 +1,15 @@
-import React from 'react';
-
+import React from "react";
+import HeroSixthSection from "@/components/TurkmenistanPage/HeroSixthSection";
+import FifthCivilizationSection from "@/components/TurkmenistanPage/FifthCivilizationSection";
+import FifthFilterSection from "@/components/TurkmenistanPage/FifthFilterSection";
+import FifthGallerySection from "@/components/TurkmenistanPage/FifthGallerySection";
 export default function Turkmenistan() {
-  return <div>page</div>;
+  return (
+    <div>
+      <HeroSixthSection />
+      <FifthCivilizationSection />
+      <FifthFilterSection />
+      <FifthGallerySection />
+    </div>
+  );
 }

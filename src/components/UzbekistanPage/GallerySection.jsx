@@ -5,10 +5,8 @@ import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import Masonry from "@mui/lab/Masonry";
 import { useEffect, useState } from "react";
-
 export default function GallerySection() {
   const [images, setImages] = useState([]);
-
   const getImagesWidth = (width) => {
     if (width <= 640) {
       return [
