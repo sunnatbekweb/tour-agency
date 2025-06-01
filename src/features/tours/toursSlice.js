@@ -15,6 +15,9 @@ export const fetchTours = createAsyncThunk(
     if (filters.duration) {
       params.append("duration", filters.duration);
     }
+    if (filters.year) {
+      params.append("year", filters.year);
+    }
 
     const response = await axios.get(
       `${process.env.NEXT_PUBLIC_BASE_URL}/tour/tour-cards/search/?${params.toString()}`
@@ -35,6 +38,7 @@ const toursSlice = createSlice({
       trip_theme: "",
       destination: "",
       duration: "",
+      year: "",
     },
   },
   reducers: {
@@ -60,11 +64,16 @@ const toursSlice = createSlice({
       state.filters.duration = action.payload;
       state.currentPage = 1;
     },
+    setYear(state, action) {
+      state.filters.year = action.payload;
+      state.currentPage = 1;
+    },
     resetFilters(state) {
       state.filters = {
         trip_theme: "",
         destination: "",
         duration: "",
+        year: "",
       };
       state.currentPage = 1;
     },
@@ -93,6 +102,7 @@ export const {
   setTripTheme,
   setDestination,
   setDuration,
+  setYear,
   resetFilters,
 } = toursSlice.actions;
 

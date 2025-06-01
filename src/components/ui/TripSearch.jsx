@@ -15,6 +15,7 @@ export default function TripSearch() {
     destination: "",
     duration: "",
     trip_theme: "",
+    year: "",
   });
   const locale = useLocale();
   const dispatch = useDispatch();
@@ -49,6 +50,7 @@ export default function TripSearch() {
       destination: filterData.destination,
       duration: filterData.duration,
       trip_theme: filterData.trip_theme,
+      year: filterData.year,
     };
     dispatch(setFilters(apiFilters));
   };
@@ -60,7 +62,7 @@ export default function TripSearch() {
     <div className="w-full px-2.5 lg:px-8 py-4 lg:py-10 rounded-2xl lg:rounded-4xl bg-[#CCB9AEE5] border border-[#989898] absolute -top-[42px] md:-top-[103px] xl:-top-[85px]">
       <form
         onSubmit={handleSubmit}
-        className="hidden p-2 rounded-2xl md:rounded-[46px] bg-transparent xl:bg-white xl:border border-[#E6E6E6] md:grid grid-cols-2 xl:grid-cols-4 gap-4 items-center font-medium"
+        className="hidden p-2 rounded-2xl md:rounded-[46px] bg-transparent xl:bg-white xl:border border-[#E6E6E6] md:grid grid-cols-2 xl:grid-cols-5 gap-4 items-center font-medium"
       >
         <label
           htmlFor="destination"
@@ -101,6 +103,23 @@ export default function TripSearch() {
             id="duration"
             placeholder="Duration"
             value={filterData.duration}
+            onChange={handleChange}
+            className="w-full h-[70px] focus:outline-none"
+          />
+        </label>
+        <label
+          htmlFor="year"
+          className="flex items-center gap-x-6 bg-white rounded-3xl px-6"
+        >
+          <div>
+            <Clock />
+          </div>
+          <input
+            type="number"
+            name="year"
+            id="year"
+            placeholder="Year"
+            value={filterData.year}
             onChange={handleChange}
             className="w-full h-[70px] focus:outline-none"
           />
