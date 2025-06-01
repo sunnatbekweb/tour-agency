@@ -34,7 +34,7 @@ export default function TripFinder() {
           <TripSearch />
         </div>
       </section>
-      <section className="pt-20 md:pt-[240px] xl:pt-[145px] bg-[#FFF7F3]">
+      <section className="pt-[240px] sm:pt-[180px] lg:pt-[145px] bg-[#FFF7F3]">
         <div className="container">
           <div className="font-medium px-6 lg:px-0 uppercase md:hidden mb-12">
             <span className="text-[#A5958B]">Trip founder</span>
