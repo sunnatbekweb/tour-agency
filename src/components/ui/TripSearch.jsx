@@ -59,10 +59,10 @@ export default function TripSearch() {
     getTripTheme();
   }, []);
   return (
-    <div className="w-full px-2.5 lg:px-8 py-4 lg:py-10 rounded-2xl lg:rounded-4xl bg-[#CCB9AEE5] border border-[#989898] absolute -top-[42px] md:-top-[103px] xl:-top-[85px]">
+    <div className="w-full px-2.5 lg:px-8 py-4 lg:py-10 rounded-2xl lg:rounded-4xl bg-[#CCB9AEE5] border border-[#989898] absolute -top-[177px] sm:-top-[113px] lg:-top-[85px]">
       <form
         onSubmit={handleSubmit}
-        className="hidden p-2 rounded-2xl md:rounded-[46px] bg-transparent xl:bg-white xl:border border-[#E6E6E6] md:grid grid-cols-2 xl:grid-cols-5 gap-4 items-center font-medium"
+        className="p-2 rounded-2xl md:rounded-[46px] bg-transparent lg:bg-white xl:border border-[#E6E6E6] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 items-center font-medium"
       >
         <label
           htmlFor="destination"
@@ -78,7 +78,7 @@ export default function TripSearch() {
             placeholder="Destination"
             value={filterData.destination}
             onChange={handleChange}
-            className="w-full h-[70px] focus:outline-none cursor-pointer"
+            className="w-full h-[48px] text-sm md:text-base lg:h-[70px] focus:outline-none cursor-pointer"
           >
             <option value="" disabled>
               Destination
@@ -104,7 +104,7 @@ export default function TripSearch() {
             placeholder="Duration"
             value={filterData.duration}
             onChange={handleChange}
-            className="w-full h-[70px] focus:outline-none"
+            className="w-full h-[48px] text-sm md:text-base lg:h-[70px] focus:outline-none"
           />
         </label>
         <label
@@ -121,7 +121,7 @@ export default function TripSearch() {
             placeholder="Year"
             value={filterData.year}
             onChange={handleChange}
-            className="w-full h-[70px] focus:outline-none"
+            className="w-full h-[48px] text-sm md:text-base lg:h-[70px] focus:outline-none"
           />
         </label>
         <label
@@ -137,7 +137,7 @@ export default function TripSearch() {
             id="trip_theme"
             value={filterData.trip_theme}
             onChange={handleChange}
-            className="w-full h-[70px] focus:outline-none cursor-pointer"
+            className="w-full h-[48px] text-sm md:text-base lg:h-[70px] focus:outline-none cursor-pointer"
           >
             <option value="" disabled>
               Trip Type
@@ -149,25 +149,8 @@ export default function TripSearch() {
             ))}
           </select>
         </label>
-        <button className="w-full h-[70px] rounded-[40px] bg-[#A5958B] border-4 xl:border-none border-white font-medium text-2xl text-white">
+        <button className="w-full h-[48px] md:text-base lg:h-[70px] sm:col-span-2 lg:col-span-1 rounded-[40px] bg-[#A5958B] border-4 xl:border-none border-white font-medium text-2xl text-white">
           Search
-        </button>
-      </form>
-      <form className="p-1.5 bg-white rounded-4xl flex md:hidden items-center">
-        <input
-          type="search"
-          name="search"
-          id="search"
-          placeholder="Search your destinations..."
-          className="w-full ps-3 focus:outline-none"
-        />
-        <button className="px-3 py-2 rounded-3xl bg-[#A5958B]">
-          <Image
-            src={"/icons/search_icon.svg"}
-            width={24}
-            height={24}
-            alt="Search"
-          />
         </button>
       </form>
     </div>

@@ -1,4 +1,7 @@
 {
+  "header": {
+    "language": "Язык:"
+  },
   "HomePage": {
     "title": "Привет мир!",
     "about": "Перейти на about page"

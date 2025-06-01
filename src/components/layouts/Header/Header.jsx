@@ -5,7 +5,7 @@ import DrawerHeader from "@/components/ui/DrawerHeader";
 import React, { useEffect, useState } from "react";
 import SecondContactButton from "@/components/ui/SecondContactButton";
 import { usePathname } from "next/navigation";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 export const Header = () => {
   const destinations = [
     { path: "/destination/uzbekistan", label: "Uzbekistan" },
@@ -42,6 +42,7 @@ export const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  const t = useTranslations("header");
 
   const closeBurger = () => setIsOpen(false);
   return (
@@ -163,9 +164,8 @@ export const Header = () => {
                 alt="Language icon"
               />
               <span className="font-medium text-white/60 text-xs md:text-base 2xl:text-lg">
-                Language:
+                {t("language")}
               </span>
-
               {["uz", "ru", "en"].map((lang) => {
                 const newPathname = pathname.replace(`/${locale}`, "") || "/";
                 return (
