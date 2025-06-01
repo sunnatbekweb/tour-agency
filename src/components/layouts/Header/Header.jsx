@@ -33,6 +33,7 @@ export const Header = () => {
   ];
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [langDropdown, setLangDropdown] = useState(false);
   const pathname = usePathname();
   const locale = useLocale();
   const cleanPath = pathname.replace(`/${locale}`, "");
@@ -54,7 +55,7 @@ export const Header = () => {
             : "duration-500"
         }`}
       >
-        <div className="container header__container w-full flex flex-row justify-between items-center px-6 py-6 md:px-9">
+        <div className="container header__container w-full flex flex-row justify-between items-center px-5 py-6">
           <div className="header__left-box">
             <button
               className="header__left-open-burger-button"
@@ -157,32 +158,78 @@ export const Header = () => {
             <div className="header__right-contact-button hidden">
               <SecondContactButton>Contact us</SecondContactButton>
             </div>
-            <div className="header__right-language bg-white/10 rounded-3xl border-[#A28887] border-[1px] flex-row justify-center items-center gap-x-[5px] py-1 px-[7.5px] md:gap-x-[9px] md:py-2 md:px-[14px] xl:py-[8px]">
+            <div className="language-switcher hidden h-[48px] w-auto cursor-pointer items-center justify-center overflow-hidden rounded-[24px] border border-solid border-[#FFFFFF33] px-[11px] duration-200 lg:flex">
               <img
-                className="header__right-language-icon object-cover w-[16px] h-[16px] md:w-[33px] md:h-[33px]"
+                className="language-switcher-icon object-cover w-[16px] h-[16px] md:w-[33px] md:h-[33px]"
                 src="/icons/language__icon.svg"
                 alt="Language icon"
               />
-              <span className="font-medium text-white/60 text-xs md:text-base 2xl:text-lg">
+              <span className="block ml-2 font-medium text-white/60 text-xs md:text-base 2xl:text-lg">
                 {t("language")}
               </span>
-              {["uz", "ru", "en"].map((lang) => {
-                const newPathname = pathname.replace(`/${locale}`, "") || "/";
-                return (
-                  <Link
-                    key={lang}
-                    href={`${newPathname}`}
-                    locale={lang}
-                    aria-pressed={locale === lang}
-                    className={`header__right-language-text font-medium text-xs leading-[100%] md:text-base 2xl:text-lg ${
-                      locale === lang ? "text-white" : "gray_text"
-                    }`}
-                  >
-                    {lang === "uz" ? "Uz" : lang === "ru" ? "Ru" : "En"}
-                  </Link>
-                );
-              })}
+              <div className="flex items-center gap-x-2 ml-2">
+                {["uz", "ru", "en"].map((lang) => {
+                  const newPathname = pathname.replace(`/${locale}`, "") || "/";
+                  return (
+                    <Link
+                      key={lang}
+                      href={`${newPathname}`}
+                      locale={lang}
+                      aria-pressed={locale === lang}
+                      className={`language-switcher-text px-2 font-medium text-xs leading-[100%] md:text-base 2xl:text-lg ${
+                        locale === lang ? "text-white" : "gray_text"
+                      }`}
+                    >
+                      {lang === "uz" ? "Uz" : lang === "ru" ? "Ru" : "En"}
+                    </Link>
+                  );
+                })}
+              </div>
             </div>
+            <button
+              onClick={() => setLangDropdown(!langDropdown)}
+              className="language-switcher-sm bg-[#ffffff33] flex h-[40px] cursor-pointer items-center rounded-[12px] border border-solid border-transparent px-[11px] lg:hidden relative"
+            >
+              <img
+                className="language-switcher-sm-icon object-cover w-[16px] h-[16px] md:w-[24px] md:h-[24px]"
+                src="/icons/language__icon.svg"
+                alt="Language icon"
+              />
+              <p className="uppercase text-sm text-white ml-2">{locale}</p>
+              <div
+                className={`${langDropdown ? "opacity-100 visible" : "opacity-0 collapse"} absolute top-full left-1/2 -translate-x-1/2 -mt-1.5 w-full rounded-b-lg border-2 border-solid border-[#FFFFFF33] border-t-transparent pt-3 transition duration-500 ease-in-out animate-fade-in`}
+              >
+                <ul className="flex flex-col mb-2 gap-y-2">
+                  {["uz", "ru", "en"]
+                    .filter((lang) => lang !== locale)
+                    .map((lang, index) => {
+                      const newPathname =
+                        pathname.replace(`/${locale}`, "") || "/";
+                      return (
+                        <li
+                          key={index}
+                          className="flex items-center justify-center gap-2 px-2"
+                        >
+                          <img
+                            className="language-switcher-sm-icon object-cover w-[12px] h-[12px] md:w-[20px] md:h-[20px]"
+                            src="/icons/language__icon.svg"
+                            alt="Language icon"
+                          />
+                          <Link
+                            key={lang}
+                            href={`${newPathname}`}
+                            locale={lang}
+                            aria-pressed={locale === lang}
+                            className={`language-switcher-sm-text uppercase px-2 font-medium leading-[100%] text-white/60`}
+                          >
+                            {lang}
+                          </Link>
+                        </li>
+                      );
+                    })}
+                </ul>
+              </div>
+            </button>
           </div>
         </div>
       </header>
