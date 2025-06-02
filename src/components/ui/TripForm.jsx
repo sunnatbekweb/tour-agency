@@ -1,16 +1,17 @@
-import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
-import axios from 'axios';
-import { useLocale } from 'next-intl';
+import React, { useEffect, useState } from "react";
+import Link from "next/link";
+import axios from "axios";
+import { useLocale } from "next-intl";
 
 export const TripForm = () => {
   const [destinations, setDestinations] = useState();
+  const [tripThemes, setTripThemes] = useState();
   const [formData, setFormData] = useState({
-    full_name: '',
-    email: '',
-    destination: '',
-    trip_tour: '',
-    message: '',
+    full_name: "",
+    email: "",
+    destination: "",
+    trip_tour: "",
+    message: "",
   });
   const locale = useLocale();
   const getDestinations = async () => {
@@ -22,6 +23,16 @@ export const TripForm = () => {
       console.error(error);
     }
   };
+  const getTripThemes = async () => {
+    try {
+      const res = await axios.get(
+        `${process.env.NEXT_PUBLIC_BASE_URL}/tour/trip-theme/`
+      );
+      setTripThemes(res.data.results);
+    } catch (error) {
+      console.error(error);
+    }
+  };
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -29,32 +40,42 @@ export const TripForm = () => {
     e.preventDefault();
     try {
       await axios
-        .post(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/tour-contact/`, formData)
+        .post(
+          `${process.env.NEXT_PUBLIC_BASE_URL}/blog/tour-contact/`,
+          formData
+        )
         .then((response) => console.log(response.data));
     } catch (error) {
       console.error(error);
     }
-    alert('Successfully sended!');
+    alert("Successfully sended!");
     setFormData({
-      full_name: '',
-      email: '',
-      destination: '',
-      trip_tour: '',
-      message: '',
+      full_name: "",
+      email: "",
+      destination: "",
+      trip_tour: "",
+      message: "",
     });
   };
 
   useEffect(() => {
     getDestinations();
+    getTripThemes();
   }, []);
 
   return (
-    <form onSubmit={handleSubmit} className="py-6 px-4 rounded-2xl bg-[#B4A297]">
+    <form
+      onSubmit={handleSubmit}
+      className="py-6 px-4 rounded-2xl bg-[#B4A297]"
+    >
       <h2 className="text-2xl md:text-4xl lg:text-5xl w-full xl:w-[55%] mb-10 md:mb-14">
         Your journey starts with a message, Get in Touch 👋
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-4 lg:gap-x-6">
-        <label htmlFor="full_name" className="flex flex-col gap-y-2 md:gap-y-4">
+        <label
+          htmlFor="full_name"
+          className="flex flex-col gap-y-2 font-medium lg:text-lg"
+        >
           <span className="lg:text-xl">Full name</span>
           <input
             type="text"
@@ -67,18 +88,27 @@ export const TripForm = () => {
             className="px-4 lg:px-6 py-2 lg:py-3 rounded-lg bg-[#FFFFFF1A] focus:bg-[#FFFFFF33] focus:outline-white border border-[#CBCBCB]"
           />
         </label>
-        <label htmlFor="email" className="flex flex-col gap-y-2 md:gap-y-4">
+        <label
+          htmlFor="email"
+          className="flex flex-col gap-y-2 font-medium lg:text-lg"
+        >
           <span className="lg:text-xl">Your email</span>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter your email"
-            onChange={handleChange}
-            value={formData.email}
-            required
-            className="px-4 lg:px-6 py-2 lg:py-3 rounded-lg bg-[#FFFFFF1A] focus:bg-[#FFFFFF33] focus:outline-white border border-[#CBCBCB]"
-          />
+          <div className="relative">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              onChange={handleChange}
+              value={formData.email}
+              required
+              className="w-full px-4 lg:px-6 py-2 lg:py-3 rounded-lg bg-[#FFFFFF1A] focus:bg-[#FFFFFF33] focus:outline-white border border-[#CBCBCB]"
+            />
+            {formData.email === "" && (
+              <span className="absolute left-[17px] lg:left-[25px] z-0 top-1/2 -translate-y-1/2 text-white/60 text-sm md:text-base lg:text-lg">
+                Enter your email
+              </span>
+            )}
+          </div>
         </label>
         <label
           htmlFor="destination"
@@ -93,9 +123,13 @@ export const TripForm = () => {
             onChange={handleChange}
             className="px-4 lg:px-6 py-2 lg:py-3 rounded-lg bg-[#FFFFFF1A] focus:bg-[#FFFFFF33] focus:outline-white border border-[#CBCBCB]"
           >
-            <option value="">Select destination</option>
+            <option value="" disabled>Select destination</option>
             {destinations?.map((destination) => (
-              <option key={destination.id} value={destination?.[`name_${locale}`]}>
+              <option
+                key={destination.id}
+                value={destination?.[`name_${locale}`]}
+                className="text-[#323232]"
+              >
                 {destination?.[`name_${locale}`]}
               </option>
             ))}
@@ -114,9 +148,18 @@ export const TripForm = () => {
             onChange={handleChange}
             className="px-4 lg:px-6 py-2 lg:py-3 rounded-lg bg-[#FFFFFF1A] focus:bg-[#FFFFFF33] focus:outline-white border border-[#CBCBCB]"
           >
-            <option value="">Select Trip Tour</option>
-            <option value="For one person">For one person</option>
-            <option value="Group tour">Group tour</option>
+            <option value="" disabled>
+              Select Trip Tour
+            </option>
+            {tripThemes?.map((theme) => (
+              <option
+                key={theme.id}
+                value={theme?.[`name_${locale}`]}
+                className="text-[#323232]"
+              >
+                {theme?.[`name_${locale}`]}
+              </option>
+            ))}
           </select>
         </label>
       </div>
@@ -142,13 +185,15 @@ export const TripForm = () => {
         </button>
         <div className="opacity-50 text-right hidden lg:flex flex-col">
           <p>
-            Company contacts:{' '}
-            <Link href={'mailto:silroadwondres@gmail.com'}>silroadwondres@gmail.com</Link>
+            Company contacts:{" "}
+            <Link href={"mailto:silroadwondres@gmail.com"}>
+              silroadwondres@gmail.com
+            </Link>
           </p>
           <p>
-            <Link href={'tel:+998(90)1234567'}>998 (90) 123 45 67</Link>
+            <Link href={"tel:+998(90)1234567"}>998 (90) 123 45 67</Link>
                 
-            <Link href={'tel:+998(90)1234567'}>998 (90) 123 45 67</Link>
+            <Link href={"tel:+998(90)1234567"}>998 (90) 123 45 67</Link>
           </p>
         </div>
       </div>
