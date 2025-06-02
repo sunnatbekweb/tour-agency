@@ -1,43 +1,21 @@
 .countries {
   display: none !important;
 }
-.countries__container {
-}
 .countries__top-box::-webkit-scrollbar {
   display: none !important;
 }
 .countries__top-buttons {
   font-family: 'ppneuemontreal';
 }
-.countries__bottom-box {
-}
-.countries__top-info {
-}
-.countries__mini-top-info {
-}
 .countries__top-info-title {
   font-family: 'ppneuemontreal';
-}
-.countries__top-info-icon-box {
-}
-.countries__top-info-icon {
 }
 .countries__top-info-text {
   font-family: 'ppneuemontreal';
 }
-.countries__bottom-info {
-}
-.countries__bottom-left-image {
-}
-.countries__bottom-right-image-box {
-}
-.countries__bottom-right-image {
-}
 @media (max-width: 1024px) {
   .countries {
     display: block !important;
-  }
-  .countries__container {
   }
   .countries__top-box::-webkit-scrollbar {
     display: none !important;
@@ -45,65 +23,27 @@
   .countries__top-buttons {
     font-family: 'ppneuemontreal';
   }
-  .countries__bottom-box {
-  }
-  .countries__top-info {
-  }
-  .countries__mini-top-info {
-  }
   .countries__top-info-title {
     font-family: 'ppneuemontreal';
   }
-  .countries__top-info-icon-box {
-  }
-  .countries__top-info-icon {
-  }
   .countries__top-info-text {
     font-family: 'ppneuemontreal';
-  }
-  .countries__bottom-info {
-  }
-  .countries__bottom-left-image {
-  }
-  .countries__bottom-right-image-box {
-  }
-  .countries__bottom-right-image {
   }
 }
 @media (max-width: 767px) {
   .countries {
     display: block !important;
   }
-  .countries__container {
-  }
   .countries__top-box::-webkit-scrollbar {
     display: none !important;
   }
   .countries__top-buttons {
     font-family: 'ppneuemontreal';
   }
-  .countries__bottom-box {
-  }
-  .countries__top-info {
-  }
-  .countries__mini-top-info {
-  }
   .countries__top-info-title {
     font-family: 'ppneuemontreal';
   }
-  .countries__top-info-icon-box {
-  }
-  .countries__top-info-icon {
-  }
   .countries__top-info-text {
     font-family: 'ppneuemontreal';
-  }
-  .countries__bottom-info {
-  }
-  .countries__bottom-left-image {
-  }
-  .countries__bottom-right-image-box {
-  }
-  .countries__bottom-right-image {
   }
 }
