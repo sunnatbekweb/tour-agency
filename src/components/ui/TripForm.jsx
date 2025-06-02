@@ -123,7 +123,9 @@ export const TripForm = () => {
             onChange={handleChange}
             className="px-4 lg:px-6 py-2 lg:py-3 rounded-lg bg-[#FFFFFF1A] focus:bg-[#FFFFFF33] focus:outline-white border border-[#CBCBCB]"
           >
-            <option value="" disabled>Select destination</option>
+            <option value="" disabled>
+              Select destination
+            </option>
             {destinations?.map((destination) => (
               <option
                 key={destination.id}
