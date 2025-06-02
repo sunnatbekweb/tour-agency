@@ -30,7 +30,11 @@ export const Header = () => {
   ];
 
   const links = [
-    { icon: "/icons/tripFound__icon.svg", path: "/trip-finder", label: "Trip founder" },
+    {
+      icon: "/icons/tripFound__icon.svg",
+      path: "/trip-finder",
+      label: "Trip founder",
+    },
     { icon: "/icons/aboutUs__icon.svg", path: "/about", label: "About us" },
     { icon: "/icons/blog__icon.svg", path: "/blog", label: "Blog" },
   ];
@@ -46,11 +50,13 @@ export const Header = () => {
 
   return (
     <div>
-      <header className={`header fixed top-0 w-full z-[1111] ${
-        isScrolled
-          ? `backdrop-blur-2xl shadow-2xl duration-500 ${isDimmed ? "bg-white" : "bg-black/40"}`
-          : "duration-500"
-      }`}>
+      <header
+        className={`header fixed top-0 w-full z-[1111] ${
+          isScrolled
+            ? `backdrop-blur-2xl shadow-2xl duration-500 ${isDimmed ? "bg-white" : "bg-black/40"}`
+            : "duration-500"
+        }`}
+      >
         <div className="container header__container flex justify-between items-center px-5 py-6">
           <div className="header__left-box">
             <button
@@ -59,7 +65,11 @@ export const Header = () => {
             >
               <img
                 className="header__left-open-burger-icon w-[40px] h-[40px] md:w-[72px] md:h-[72px]"
-                src={isDimmed ? "/icons/open__burger_colored.svg" : "/icons/open__burger.svg"}
+                src={
+                  isDimmed
+                    ? "/icons/open__burger_colored.svg"
+                    : "/icons/open__burger.svg"
+                }
                 alt="Open menu"
               />
             </button>
@@ -93,10 +103,15 @@ export const Header = () => {
                         alt="Destinations"
                       />
                     )}
-                    <p className={`font-bold uppercase xl:16px 2xl:text-[20px] ${
-                      isDestinationPage || isDimmed ? "text-[#656267]" : "text-white"
-                    }`}>
-                      {destinations.find(dest => dest.path === cleanPath)?.label || "Destinations"}
+                    <p
+                      className={`font-bold uppercase xl:16px 2xl:text-[20px] ${
+                        isDestinationPage || isDimmed
+                          ? "text-[#656267]"
+                          : "text-white"
+                      }`}
+                    >
+                      {destinations.find((dest) => dest.path === cleanPath)
+                        ?.label || "Destinations"}
                     </p>
                   </div>
                   <ul className="absolute left-0 top-full bg-black/40 backdrop-blur-2xl shadow-2xl rounded-[8px] translate-y-[24px] opacity-0 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-50">
@@ -105,7 +120,8 @@ export const Header = () => {
                         key={i}
                         href={dest.path}
                         className={`block text-center text-white hover:bg-white/10 font-bold uppercase xl:16px 2xl:text-[20px] py-4 ${
-                          i === 0 ? "rounded-t-[8px]" : ""} ${i === destinations.length - 1 ? "rounded-b-[8px]" : ""}`}
+                          i === 0 ? "rounded-t-[8px]" : ""
+                        } ${i === destinations.length - 1 ? "rounded-b-[8px]" : ""}`}
                       >
                         {dest.label}
                       </Link>
@@ -117,13 +133,23 @@ export const Header = () => {
                     <Link
                       href={item.path}
                       className={`header__middle-links flex items-center px-4 py-2 ${
-                        (cleanPath === item.path) && (isDimmed ? "bg-[#CBBCB3]" : "bg-white/70")}`}
+                        cleanPath === item.path &&
+                        (isDimmed ? "bg-[#CBBCB3]" : "bg-white/70")
+                      }`}
                     >
                       {cleanPath === item.path && (
-                        <img className="header__middle-links-texts-icons" src={item.icon} alt="icon" />
+                        <img
+                          className="header__middle-links-texts-icons"
+                          src={item.icon}
+                          alt="icon"
+                        />
                       )}
-                      <p className={`font-bold uppercase xl:16px 2xl:text-[20px] ${
-                        cleanPath === item.path || isDimmed ? "text-[#656267]" : "text-white"}`}
+                      <p
+                        className={`font-bold uppercase xl:16px 2xl:text-[20px] ${
+                          cleanPath === item.path || isDimmed
+                            ? "text-[#656267]"
+                            : "text-white"
+                        }`}
                       >
                         {item.label}
                       </p>
@@ -139,8 +165,14 @@ export const Header = () => {
               <SecondContactButton>Contact us</SecondContactButton>
             </div>
 
-            <div className={`language-switcher hidden lg:flex items-center border border-[#FFFFFF33] rounded-[24px] px-[11px] h-[48px] ${isDimmed && "bg-[#CBBCB3]"}`}>
-              <img className="w-[16px] h-[16px] md:w-[33px] md:h-[33px]" src="/icons/language__icon.svg" alt="Lang icon" />
+            <div
+              className={`language-switcher hidden lg:flex items-center border cursor-pointer duration-300 overflow-hidden border-[#FFFFFF33] rounded-[24px] px-[11px] h-[48px] ${isDimmed && "bg-[#CBBCB3]"}`}
+            >
+              <img
+                className="w-[16px] h-[16px] md:w-[32px] md:h-[32px]"
+                src="/icons/language__icon.svg"
+                alt="Lang icon"
+              />
               <div className="flex items-center gap-x-2 ml-2">
                 {["uz", "ru", "en"].map((lang) => (
                   <Link
@@ -158,26 +190,42 @@ export const Header = () => {
 
             <button
               onClick={() => setLangDropdown(!langDropdown)}
-              className={`language-switcher-sm lg:hidden flex items-center px-[11px] h-[40px] border border-transparent rounded-[12px] ${isDimmed ? "bg-[#CBBCB3]" : "bg-[#ffffff33]"}`}
+              className={`language-switcher-sm relative lg:hidden flex flex-col gap-y-2 items-center px-3 py-1.5 h-[40px] rounded-[12px] ${langDropdown && "rounded-b-none"} ${isDimmed ? "bg-[#CBBCB3]" : "bg-[#ffffff33]"}`}
             >
-              <img className="w-[16px] h-[16px] md:w-[24px] md:h-[24px]" src="/icons/language__icon.svg" alt="Lang icon" />
-              <p className="uppercase text-sm text-white ml-2">{locale}</p>
-              <div className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-1.5 rounded-b-lg border-t-0 pt-3 transition duration-500 ${
-                langDropdown ? "opacity-100 visible" : "opacity-0 collapse"}`}
+              <div className="flex items-center gap-2">
+                <img
+                  className="w-[16px] h-[16px] md:w-[24px] md:h-[24px]"
+                  src="/icons/language__icon.svg"
+                  alt="Lang icon"
+                />
+                <p className="font-medium uppercase text-white">{locale}</p>
+              </div>
+              <div
+                className={`w-full absolute top-full px-3 pb-1.5 rounded-b-xl overflow-hidden duration-500 ${isDimmed ? "bg-[#CBBCB3]" : "bg-[#ffffff33]"} ${
+                  langDropdown
+                    ? `h-[62px] opacity-100 visible translate-y-0 ${isDimmed && "bg-[#CBBCB3]"}`
+                    : "h-0 opacity-0 collapse -translate-y-5"
+                }`}
               >
-                <ul className="bg-black/80 flex flex-col mb-2 gap-y-2 p-2 rounded-md">
-                  {["uz", "ru", "en"].filter((lang) => lang !== locale).map((lang, index) => (
-                    <li key={index} className="flex items-center gap-2">
-                      <img className="w-[12px] h-[12px] md:w-[20px] md:h-[20px]" src="/icons/language__icon.svg" alt="Lang icon" />
-                      <Link
-                        href={newPathname}
-                        locale={lang}
-                        className="uppercase px-2 font-medium text-white/60"
-                      >
-                        {lang}
-                      </Link>
-                    </li>
-                  ))}
+                <ul className="flex flex-col gap-y-2">
+                  {["uz", "ru", "en"]
+                    .filter((lang) => lang !== locale)
+                    .map((lang, index) => (
+                      <li key={index} className="flex items-center gap-2">
+                        <img
+                          className="w-[12px] h-[12px] md:w-[24px] md:h-[24px]"
+                          src="/icons/language__icon.svg"
+                          alt="Lang icon"
+                        />
+                        <Link
+                          href={newPathname}
+                          locale={lang}
+                          className="uppercase px-2 font-medium text-white/60"
+                        >
+                          {lang}
+                        </Link>
+                      </li>
+                    ))}
                 </ul>
               </div>
             </button>
