@@ -114,12 +114,12 @@ export const Header = () => {
                         ?.label || "Destinations"}
                     </p>
                   </div>
-                  <ul className="absolute left-0 top-full bg-black/40 backdrop-blur-2xl shadow-2xl rounded-[8px] translate-y-[24px] opacity-0 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-50">
+                  <ul className="w-full absolute left-0 top-full bg-black/40 backdrop-blur-2xl shadow-2xl rounded-[8px] translate-y-[24px] opacity-0 pointer-events-none flex flex-col justify-center group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-50">
                     {destinations.map((dest, i) => (
                       <Link
                         key={i}
                         href={dest.path}
-                        className={`block text-center text-white hover:bg-white/10 font-bold uppercase xl:16px 2xl:text-[20px] py-4 ${
+                        className={`block text-center text-white my-1 hover:bg-white/10 font-bold uppercase xl:16px 2xl:text-[20px] py-1 ${
                           i === 0 ? "rounded-t-[8px]" : ""
                         } ${i === destinations.length - 1 ? "rounded-b-[8px]" : ""}`}
                       >
@@ -180,7 +180,7 @@ export const Header = () => {
                     href={newPathname}
                     locale={lang}
                     aria-pressed={locale === lang}
-                    className={`px-2 font-medium text-xs md:text-base 2xl:text-lg ${locale === lang ? "text-white" : "gray_text"}`}
+                    className={`pr-2 font-medium text-xs md:text-base 2xl:text-lg ${locale === lang ? "text-white" : "gray_text"}`}
                   >
                     {lang.toUpperCase()}
                   </Link>
@@ -220,7 +220,7 @@ export const Header = () => {
                         <Link
                           href={newPathname}
                           locale={lang}
-                          className="uppercase px-2 font-medium text-white/60"
+                          className="uppercase font-medium text-white/60"
                         >
                           {lang}
                         </Link>
