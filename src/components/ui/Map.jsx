@@ -9,31 +9,31 @@ import { Turkmenistan } from "./Maps/Turkmenistan";
 export const Map = ({ onSelectCountry, selectedCountry }) => {
   return (
     <svg
-      width="912"
+      width="712"
       height="785"
       viewBox="0 0 912 785"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <Uzbekistan
-        onClickFn={() => onSelectCountry("Uzbekistan")}
-        selected={selectedCountry === "Uzbekistan"}
+        onClickFn={() => onSelectCountry(1)}
+        selected={selectedCountry === 1}
       />
       <Kazahstan
-        onClickFn={() => onSelectCountry("Kazakhstan")}
-        selected={selectedCountry === "Kazakhstan"}
+        onClickFn={() => onSelectCountry(2)}
+        selected={selectedCountry === 2}
       />
       <Kyrgyzystan
-        onClickFn={() => onSelectCountry("Kyrgyzstan")}
-        selected={selectedCountry === "Kyrgyzstan"}
+        onClickFn={() => onSelectCountry(3)}
+        selected={selectedCountry === 3}
       />
       <Tadjikistan
-        onClickFn={() => onSelectCountry("Tajikistan")}
-        selected={selectedCountry === "Tajikistan"}
+        onClickFn={() => onSelectCountry(4)}
+        selected={selectedCountry === 4}
       />
       <Turkmenistan
-        onClickFn={() => onSelectCountry("Turkmenistan")}
-        selected={selectedCountry === "Turkmenistan"}
+        onClickFn={() => onSelectCountry(5)}
+        selected={selectedCountry === 5}
       />
     </svg>
   );

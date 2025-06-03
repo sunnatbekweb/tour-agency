@@ -4,7 +4,7 @@ import RightChevron from '../../../public/icons/RightChevron.jsx';
 export default function UniqueSection() {
   return (
     <div>
-      <section className="unique mt-[40px] md:mt-[100px] xl:mt-[158px]">
+      <section className="unique">
         <div className="container unique__container flex flex-col justify-center items-center min-h-screen">
           <Link>
             <img
