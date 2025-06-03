@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import { Map } from "../ui/maps/Map";
 import { countryData } from "@/store/data";
 import { Link } from "@/i18n/navigation";
+import { Map } from "../ui/maps/Map";
 
 export const XlCountry = () => {
   const [selectedCountry, setSelectedCountry] = useState(1);
