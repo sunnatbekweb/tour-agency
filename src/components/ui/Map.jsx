@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
-import { Uzbekistan } from "./Uzbekistan";
-import { Kazahstan } from "./Kazahstan";
-import { Kyrgyzystan } from "./Kyrgyzystan";
-import { Tadjikistan } from "./Tadjikistan";
-import { Turkmenistan } from "./Turkmenistan";
+import { Uzbekistan } from "./maps/Uzbekistan";
+import { Kazahstan } from "./maps/Kazahstan";
+import { Kyrgyzystan } from "./maps/Kyrgyzystan";
+import { Tadjikistan } from "./maps/Tadjikistan";
+import { Turkmenistan } from "./maps/Turkmenistan";
 
 export const Map = ({ onSelectCountry, selectedCountry }) => {
   return (
