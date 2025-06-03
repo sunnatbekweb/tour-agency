@@ -24,7 +24,7 @@ export const Header = () => {
   const destinations = [
     { path: "/destination/uzbekistan", label: "Uzbekistan" },
     { path: "/destination/kazakhstan", label: "Kazakhstan" },
-    { path: "/destination/tajikistan", label: "Tajikistan" },
+    { path: "/destination/tadjikistan", label: "Tajikistan" },
     { path: "/destination/turkmenistan", label: "Turkmenistan" },
     { path: "/destination/kyrgyzstan", label: "Kyrgyzstan" },
   ];
@@ -119,7 +119,7 @@ export const Header = () => {
                       <Link
                         key={i}
                         href={dest.path}
-                        className={`block text-center text-white my-1 hover:bg-white/10 font-bold uppercase xl:16px 2xl:text-[20px] py-1 ${
+                        className={`block text-center text-white hover:bg-white/10 font-bold uppercase xl:16px 2xl:text-[20px] py-2 ${
                           i === 0 ? "rounded-t-[8px]" : ""
                         } ${i === destinations.length - 1 ? "rounded-b-[8px]" : ""}`}
                       >

@@ -1,18 +1,25 @@
+"use client";
 import React from "react";
 import HeroSecondSection from "@/components/UzbekistanPage/HeroSecondSection";
 import CivilizationSection from "@/components/UzbekistanPage/CivilizationSection";
 import FilterSection from "@/components/UzbekistanPage/FilterSection";
 import GallerySection from "@/components/UzbekistanPage/GallerySection";
 import { DestinationTours } from "@/components/ui/DestinationTours";
+import { usePathname } from "next/navigation";
+import { AboutCountries } from "@/store/data";
+
 export default function Uzbekistan() {
+  const pathname = usePathname();
+  const country = pathname.split("/")[3];
+  const aboutCountry = AboutCountries.filter((item) => item.slug === country);
   return (
     <div>
       <HeroSecondSection
         image={"/images/uzbekistan__xl.jpg"}
         title={"Uzbekistan"}
-        subtitle={"Land of Endless Horizons and Land of the Great Steppe"}
+        subtitle={"Land of Great Scholars and Crossroads of Cultures"}
       />
-      <CivilizationSection />
+      <CivilizationSection props={aboutCountry[0]} />
       <FilterSection />
       <GallerySection />
       <DestinationTours />
