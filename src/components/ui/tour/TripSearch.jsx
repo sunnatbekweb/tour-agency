@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
-import { Location } from "../../../public/icons/Location";
-import { Clock } from "../../../public/icons/Clock";
-import { Flag } from "../../../public/icons/Flag";
+import { Location } from "../../../../public/icons/Location";
+import { Clock } from "../../../../public/icons/Clock";
+import { Flag } from "../../../../public/icons/Flag";
 import { useLocale } from "next-intl";
-import axios from "axios";
 import { useDispatch } from "react-redux";
 import { setFilters } from "@/features/tours/toursSlice";
+import axios from "axios";
 
-export default function TripSearch() {
+export function TripSearch() {
   const [destinations, setDestinations] = useState();
   const [tripTheme, setTripTheme] = useState();
   const [filterData, setFilterData] = useState({

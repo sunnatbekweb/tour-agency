@@ -5,7 +5,7 @@ import { useAppDispatch, useAppSelector } from "@/lib/hooks";
 import axios from "axios";
 import { useLocale } from "next-intl";
 import React, { useEffect, useState } from "react";
-import { TourCards } from "./TourCards";
+import { TourCards } from "./tour/TourCards";
 import { Pagination } from "./Pagination";
 
 export const DestinationTours = () => {

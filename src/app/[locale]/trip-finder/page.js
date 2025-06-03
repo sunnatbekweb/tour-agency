@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useEffect } from "react";
-import TripSearch from "@/components/ui/TripSearch";
-import { TourCards } from "@/components/ui/TourCards";
+import { TripSearch } from "@/components/ui/tour/TripSearch";
+import { TourCards } from "@/components/ui/tour/TourCards";
 import { Pagination } from "@/components/ui/Pagination";
 import { useAppDispatch, useAppSelector } from "@/lib/hooks";
 import { fetchTours, setPage } from "@/features/tours/toursSlice";

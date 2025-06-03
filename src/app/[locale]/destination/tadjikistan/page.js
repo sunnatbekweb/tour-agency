@@ -5,7 +5,7 @@ import FilterSection from "@/components/UzbekistanPage/FilterSection";
 import GallerySection from "@/components/UzbekistanPage/GallerySection";
 import { DestinationTours } from "@/components/ui/DestinationTours";
 
-export default function Tajikistan() {
+export default function Tadjikistan() {
   return (
     <>
       <HeroSecondSection
