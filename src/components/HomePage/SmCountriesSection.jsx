@@ -1,8 +1,8 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
-import "./SmCountriesSection.css";
+import { useState } from "react";
 import { countryData } from "@/store/data";
 import { Link } from "@/i18n/navigation";
+import "./SmCountriesSection.css";
 export default function SmCountriesSection() {
   const [selectedCountry, setSelectedCountry] = useState(countryData[0]);
   const handleCountrySelect = (country) => {
