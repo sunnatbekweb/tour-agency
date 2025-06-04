@@ -83,7 +83,7 @@ export default function FourthFilterSection() {
             </button>
           ))}
         </div>
-        <div className="fourthFilter__bottom-box px-6 md:px-9">
+        <div className="fourthFilter__bottom-box w-full px-6 md:px-9">
           <div className="fourthFilter__bottom-card flex flex-col justify-center items-start shadow-xl rounded-[14px] bg-white px-3.5 pt-3.5 pb-[44px] border-[1px] border-[#E5E5E5] md:pt-6 md:px-6 md:rounded-[16px]">
             <img
               src={selectedCountry.images}
