@@ -1,0 +1,51 @@
+.fifthFilter {
+    display: none !important;
+  }
+  .fifthFilter__container {
+  }
+  .fifthFilter__top-box::-webkit-scrollbar {
+    display: none !important;
+  }
+  .fifthFilter__top-buttons {
+    outline: none !important;
+    white-space: nowrap;
+    font-family: "ppneuemontreal";
+  }
+  .fifthFilter__bottom-box {
+  }
+  .fifthFilter__bottom-card {
+  }
+  .fifthFilter__bottom-card-image {
+  }
+  .fifthFilter__bottom-card-title {
+    font-family: "ppneuemontreal";
+  }
+  .fifthFilter__bottom-card-text {
+    font-family: "ppneuemontreal";
+  }
+  @media (max-width: 1024px) {
+    .fifthFilter {
+      display: block !important;
+    }
+    .fifthFilter__container {
+    }
+    .fifthFilter__top-box::-webkit-scrollbar {
+      display: none !important;
+    }
+    .fifthFilter__top-buttons {
+      font-family: "ppneuemontreal";
+    }
+    .fifthFilter__bottom-box {
+    }
+    .fifthFilter__bottom-card {
+    }
+    .fifthFilter__bottom-card-image {
+    }
+    .fifthFilter__bottom-card-title {
+      font-family: "ppneuemontreal";
+    }
+    .fifthFilter__bottom-card-text {
+      font-family: "ppneuemontreal";
+    }
+  }
+  

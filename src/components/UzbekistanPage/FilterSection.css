@@ -7,6 +7,7 @@
   display: none !important;
 }
 .filter__top-buttons {
+  white-space: nowrap;
   font-family: "ppneuemontreal";
 }
 .filter__bottom-box {
