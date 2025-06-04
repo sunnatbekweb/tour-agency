@@ -7,7 +7,7 @@ import GallerySection from "@/components/UzbekistanPage/GallerySection";
 import { DestinationTours } from "@/components/ui/DestinationTours";
 import { usePathname } from "next/navigation";
 import { AboutCountries } from "@/store/data";
-
+import UzbekistanSection from "@/components/UzbekistanPage/UzbekistanSection";
 export default function Uzbekistan() {
   const pathname = usePathname();
   const country = pathname.split("/")[3];
@@ -20,6 +20,9 @@ export default function Uzbekistan() {
         subtitle={"Land of Great Scholars and Crossroads of Cultures"}
       />
       <CivilizationSection props={aboutCountry[0]} />
+      <HeroSecondSection />
+      <CivilizationSection />
+      <UzbekistanSection />
       <FilterSection />
       <GallerySection />
       <DestinationTours />

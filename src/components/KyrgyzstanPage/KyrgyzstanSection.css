@@ -1,0 +1,43 @@
+.kyrgyzstan {
+}
+.kyrgyzstan__container {
+}
+.kyrgyzstan__circle-map {
+}
+.kyrgyzstan__top-map {
+}
+.kyrgyzstan__top-box {
+}
+.kyrgyzstan__bottom-card {
+}
+.kyrgyzstan__bottom-card-image {
+}
+.kyrgyzstan__bottom-card-title {
+  font-family: "ppneuemontreal";
+}
+.kyrgyzstan__bottom-card-text {
+  font-family: "ppneuemontreal";
+}
+@media (max-width: 1279px) {
+  .kyrgyzstan {
+    display: none !important;
+  }
+  .kyrgyzstan__container {
+  }
+  .kyrgyzstan__circle-map {
+  }
+  .kyrgyzstan__top-map {
+  }
+  .kyrgyzstan__top-box {
+  }
+  .kyrgyzstan__bottom-card {
+  }
+  .kyrgyzstan__bottom-card-image {
+  }
+  .kyrgyzstan__bottom-card-title {
+    font-family: "ppneuemontreal";
+  }
+  .kyrgyzstan__bottom-card-text {
+    font-family: "ppneuemontreal";
+  }
+}

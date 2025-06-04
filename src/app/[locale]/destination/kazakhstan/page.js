@@ -7,7 +7,11 @@ import HeroSecondSection from "@/components/UzbekistanPage/HeroSecondSection";
 import { DestinationTours } from "@/components/ui/DestinationTours";
 import { usePathname } from "next/navigation";
 import { AboutCountries } from "@/store/data";
-
+import HeroThirdSection from "@/components/KazakhstanPage/HeroThirdSection";
+import SecondCivilizationSection from "@/components/KazakhstanPage/SecondCivilizationSection";
+import KazakhstanSection from "@/components/KazakhstanPage/KazakhstanSection";
+import SecondFilterSection from "@/components/KazakhstanPage/SecondFilterSection";
+import SecondsecondGallerySection from "@/components/KazakhstanPage/SecondGallerySection";
 export default function Kazahstan() {
   const pathname = usePathname();
   const country = pathname.split("/")[3];
@@ -23,6 +27,11 @@ export default function Kazahstan() {
       <FilterSection />
       <GallerySection />
       <DestinationTours />
+      <HeroThirdSection />
+      <SecondCivilizationSection />
+      <KazakhstanSection />
+      <SecondFilterSection />
+      <SecondsecondGallerySection />
     </>
   );
 }

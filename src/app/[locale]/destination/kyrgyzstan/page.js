@@ -7,7 +7,11 @@ import HeroSecondSection from "@/components/UzbekistanPage/HeroSecondSection";
 import { DestinationTours } from "@/components/ui/DestinationTours";
 import { usePathname } from "next/navigation";
 import { AboutCountries } from "@/store/data";
-
+import HeroFifthSection from "@/components/KyrgyzstanPage/HeroFifthSection";
+import FourthCivilizationSection from "@/components/KyrgyzstanPage/FourthCivilizationSection";
+import KyrgyzstanSection from "@/components/KyrgyzstanPage/KyrgyzstanSection";
+import FourthFilterSection from "@/components/KyrgyzstanPage/FourthFilterSection";
+import FourthGallerySection from "@/components/KyrgyzstanPage/FourthGallerySection";
 export default function Kyrgyzstan() {
   const pathname = usePathname();
   const country = pathname.split("/")[3];
@@ -23,6 +27,11 @@ export default function Kyrgyzstan() {
       <FilterSection />
       <GallerySection />
       <DestinationTours />
+      <HeroFifthSection />
+      <FourthCivilizationSection />
+      <KyrgyzstanSection />
+      <FourthFilterSection />
+      <FourthGallerySection />
     </>
   );
 }

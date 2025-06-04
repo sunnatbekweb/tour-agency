@@ -1,0 +1,43 @@
+.turkmenistan {
+}
+.turkmenistan__container {
+}
+.turkmenistan__circle-map {
+}
+.turkmenistan__top-map {
+}
+.turkmenistan__top-box {
+}
+.turkmenistan__bottom-card {
+}
+.turkmenistan__bottom-card-image {
+}
+.turkmenistan__bottom-card-title {
+  font-family: "ppneuemontreal";
+}
+.turkmenistan__bottom-card-text {
+  font-family: "ppneuemontreal";
+}
+@media (max-width: 1279px) {
+  .turkmenistan {
+    display: none !important;
+  }
+  .turkmenistan__container {
+  }
+  .turkmenistan__circle-map {
+  }
+  .turkmenistan__top-map {
+  }
+  .turkmenistan__top-box {
+  }
+  .turkmenistan__bottom-card {
+  }
+  .turkmenistan__bottom-card-image {
+  }
+  .turkmenistan__bottom-card-title {
+    font-family: "ppneuemontreal";
+  }
+  .turkmenistan__bottom-card-text {
+    font-family: "ppneuemontreal";
+  }
+}

@@ -8,6 +8,7 @@ import SecondCarouselSection from "@/components/HomePage/SecondCarouselSection";
 import QuestionSection from "@/components/HomePage/QuestionSection";
 import FeedbackSection from "@/components/HomePage/FeedbackSection";
 import { XlCountry } from "@/components/HomePage/XlCountry";
+import MapSection from "@/components/HomePage/MapSection";
 export default function Home() {
   return (
     <div>
@@ -15,6 +16,7 @@ export default function Home() {
       <ExploreSection />
       <CarouselSection />
       <XlCountry/>
+      <MapSection />
       <SmCountriesSection />
       <UniqueSection />
       <DesertSection />

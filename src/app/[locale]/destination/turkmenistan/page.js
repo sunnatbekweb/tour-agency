@@ -7,7 +7,11 @@ import GallerySection from "@/components/UzbekistanPage/GallerySection";
 import HeroSecondSection from "@/components/UzbekistanPage/HeroSecondSection";
 import { AboutCountries } from "@/store/data";
 import { usePathname } from "next/navigation";
-
+import HeroSixthSection from "@/components/TurkmenistanPage/HeroSixthSection";
+import FifthCivilizationSection from "@/components/TurkmenistanPage/FifthCivilizationSection";
+import TurkmenistanSection from "@/components/TurkmenistanPage/TurkmenistanSection";
+import FifthFilterSection from "@/components/TurkmenistanPage/FifthFilterSection";
+import FifthGallerySection from "@/components/TurkmenistanPage/FifthGallerySection";
 export default function Turkmenistan() {
   const pathname = usePathname();
   const country = pathname.split("/")[3];
@@ -25,6 +29,11 @@ export default function Turkmenistan() {
       <FilterSection />
       <GallerySection />
       <DestinationTours />
+      <HeroSixthSection />
+      <FifthCivilizationSection />
+      <TurkmenistanSection />
+      <FifthFilterSection />
+      <FifthGallerySection />
     </>
   );
 }

@@ -46,7 +46,6 @@ export const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
   const closeBurger = () => setIsOpen(false);
 
   return (
