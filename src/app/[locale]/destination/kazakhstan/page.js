@@ -1,18 +1,15 @@
 "use client";
 import React from "react";
 import CivilizationSection from "@/components/UzbekistanPage/CivilizationSection";
-import FilterSection from "@/components/UzbekistanPage/FilterSection";
-import GallerySection from "@/components/UzbekistanPage/GallerySection";
 import HeroSecondSection from "@/components/UzbekistanPage/HeroSecondSection";
 import { DestinationTours } from "@/components/ui/DestinationTours";
 import { usePathname } from "next/navigation";
-import { AboutCountries } from "@/store/data";
-import HeroThirdSection from "@/components/KazakhstanPage/HeroThirdSection";
-import SecondCivilizationSection from "@/components/KazakhstanPage/SecondCivilizationSection";
+import { useAboutCountries } from "@/store/data";
 import KazakhstanSection from "@/components/KazakhstanPage/KazakhstanSection";
 import SecondFilterSection from "@/components/KazakhstanPage/SecondFilterSection";
 import SecondsecondGallerySection from "@/components/KazakhstanPage/SecondGallerySection";
 export default function Kazahstan() {
+  const AboutCountries = useAboutCountries();
   const pathname = usePathname();
   const country = pathname.split("/")[3];
   const aboutCountry = AboutCountries.filter((item) => item.slug === country);
@@ -24,14 +21,10 @@ export default function Kazahstan() {
         subtitle={"Land of Endless Horizons and Land of the Great Steppe"}
       />
       <CivilizationSection props={aboutCountry[0]} />
-      <FilterSection />
-      <GallerySection />
-      <DestinationTours />
-      <HeroThirdSection />
-      <SecondCivilizationSection />
+      <SecondsecondGallerySection />
       <KazakhstanSection />
       <SecondFilterSection />
-      <SecondsecondGallerySection />
+      <DestinationTours />
     </>
   );
 }

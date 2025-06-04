@@ -2,17 +2,14 @@
 import React from "react";
 import { DestinationTours } from "@/components/ui/DestinationTours";
 import CivilizationSection from "@/components/UzbekistanPage/CivilizationSection";
-import FilterSection from "@/components/UzbekistanPage/FilterSection";
-import GallerySection from "@/components/UzbekistanPage/GallerySection";
 import HeroSecondSection from "@/components/UzbekistanPage/HeroSecondSection";
-import { AboutCountries } from "@/store/data";
+import { useAboutCountries } from "@/store/data";
 import { usePathname } from "next/navigation";
-import HeroSixthSection from "@/components/TurkmenistanPage/HeroSixthSection";
-import FifthCivilizationSection from "@/components/TurkmenistanPage/FifthCivilizationSection";
 import TurkmenistanSection from "@/components/TurkmenistanPage/TurkmenistanSection";
 import FifthFilterSection from "@/components/TurkmenistanPage/FifthFilterSection";
 import FifthGallerySection from "@/components/TurkmenistanPage/FifthGallerySection";
 export default function Turkmenistan() {
+  const AboutCountries = useAboutCountries();
   const pathname = usePathname();
   const country = pathname.split("/")[3];
   const aboutCountry = AboutCountries.filter((item) => item.slug === country);
@@ -26,14 +23,10 @@ export default function Turkmenistan() {
         }
       />
       <CivilizationSection props={aboutCountry[0]} />
-      <FilterSection />
-      <GallerySection />
-      <DestinationTours />
-      <HeroSixthSection />
-      <FifthCivilizationSection />
       <TurkmenistanSection />
-      <FifthFilterSection />
       <FifthGallerySection />
+      <FifthFilterSection />
+      <DestinationTours />
     </>
   );
 }

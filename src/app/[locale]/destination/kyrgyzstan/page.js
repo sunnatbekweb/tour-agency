@@ -1,18 +1,15 @@
 "use client";
 import React from "react";
 import CivilizationSection from "@/components/UzbekistanPage/CivilizationSection";
-import FilterSection from "@/components/UzbekistanPage/FilterSection";
-import GallerySection from "@/components/UzbekistanPage/GallerySection";
 import HeroSecondSection from "@/components/UzbekistanPage/HeroSecondSection";
 import { DestinationTours } from "@/components/ui/DestinationTours";
 import { usePathname } from "next/navigation";
-import { AboutCountries } from "@/store/data";
-import HeroFifthSection from "@/components/KyrgyzstanPage/HeroFifthSection";
-import FourthCivilizationSection from "@/components/KyrgyzstanPage/FourthCivilizationSection";
+import { useAboutCountries } from "@/store/data";
 import KyrgyzstanSection from "@/components/KyrgyzstanPage/KyrgyzstanSection";
 import FourthFilterSection from "@/components/KyrgyzstanPage/FourthFilterSection";
 import FourthGallerySection from "@/components/KyrgyzstanPage/FourthGallerySection";
 export default function Kyrgyzstan() {
+  const AboutCountries = useAboutCountries();
   const pathname = usePathname();
   const country = pathname.split("/")[3];
   const aboutCountry = AboutCountries.filter((item) => item.slug === country);
@@ -24,14 +21,10 @@ export default function Kyrgyzstan() {
         subtitle={"Where Mountains Whisper Ancient Tales"}
       />
       <CivilizationSection props={aboutCountry[0]} />
-      <FilterSection />
-      <GallerySection />
-      <DestinationTours />
-      <HeroFifthSection />
-      <FourthCivilizationSection />
       <KyrgyzstanSection />
       <FourthFilterSection />
       <FourthGallerySection />
+      <DestinationTours />
     </>
   );
 }

@@ -6,9 +6,10 @@ import FilterSection from "@/components/UzbekistanPage/FilterSection";
 import GallerySection from "@/components/UzbekistanPage/GallerySection";
 import { DestinationTours } from "@/components/ui/DestinationTours";
 import { usePathname } from "next/navigation";
-import { AboutCountries } from "@/store/data";
+import { useAboutCountries } from "@/store/data";
 
 export default function Tadjikistan() {
+  const AboutCountries = useAboutCountries();
   const pathname = usePathname();
   const country = pathname.split("/")[3];
   const aboutCountry = AboutCountries.filter((item) => item.slug === country);
@@ -20,9 +21,9 @@ export default function Tadjikistan() {
         subtitle={"Land of Mountains and Glaciers and Ancient Cultures"}
       />
       <CivilizationSection props={aboutCountry[0]} />
-      <FilterSection />
       <GallerySection />
       <DestinationTours />
+      <FilterSection />
     </>
   );
 }
