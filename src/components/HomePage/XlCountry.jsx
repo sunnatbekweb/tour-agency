@@ -1,11 +1,12 @@
 "use client";
 import React, { useState } from "react";
-import { countryData } from "@/store/data";
+import { useCountryData } from "@/store/data";
 import { Link } from "@/i18n/navigation";
 import { Map } from "../ui/Map";
 
 export const XlCountry = () => {
   const [selectedCountry, setSelectedCountry] = useState(1);
+  const countryData = useCountryData();
   return (
     <section className="py-[120px] font-medium hidden lg:block">
       <div className="container px-6 2xl:hidden">

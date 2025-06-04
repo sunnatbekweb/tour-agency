@@ -1,9 +1,11 @@
 "use client";
 import { useState } from "react";
-import { countryData } from "@/store/data";
 import { Link } from "@/i18n/navigation";
+import { useCountryData } from "@/store/data";
 import "./SmCountriesSection.css";
+
 export default function SmCountriesSection() {
+  const countryData = useCountryData();
   const [selectedCountry, setSelectedCountry] = useState(countryData[0]);
   const handleCountrySelect = (country) => {
     setSelectedCountry(country);

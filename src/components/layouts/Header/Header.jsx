@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import DrawerHeader from "@/components/ui/DrawerHeader";
 import SecondContactButton from "@/components/ui/SecondContactButton";
@@ -17,26 +17,28 @@ export const Header = () => {
   const pathname = usePathname();
   const locale = useLocale();
   const cleanPath = pathname.replace(`/${locale}`, "");
+  const t = useTranslations("header");
 
   const isDimmed = isDynamicRoute(cleanPath, ["/trip", "/blog"]);
   const isDestinationPage = cleanPath.startsWith("/destination");
+  const newPathname = pathname.replace(`/${locale}`, "") || "/";
 
   const destinations = [
-    { path: "/destination/uzbekistan", label: "Uzbekistan" },
-    { path: "/destination/kazakhstan", label: "Kazakhstan" },
-    { path: "/destination/tadjikistan", label: "Tajikistan" },
-    { path: "/destination/turkmenistan", label: "Turkmenistan" },
-    { path: "/destination/kyrgyzstan", label: "Kyrgyzstan" },
+    { path: "/destination/uzbekistan", label: t("destinations.uz") },
+    { path: "/destination/kazakhstan", label: t("destinations.kz") },
+    { path: "/destination/tadjikistan", label: t("destinations.tj") },
+    { path: "/destination/kyrgyzstan", label: t("destinations.kg") },
+    { path: "/destination/turkmenistan", label: t("destinations.tk") },
   ];
 
   const links = [
     {
       icon: "/icons/tripFound__icon.svg",
       path: "/trip-finder",
-      label: "Trip founder",
+      label: t("nav.finder"),
     },
-    { icon: "/icons/aboutUs__icon.svg", path: "/about", label: "About us" },
-    { icon: "/icons/blog__icon.svg", path: "/blog", label: "Blog" },
+    { icon: "/icons/aboutUs__icon.svg", path: "/about", label: t("nav.about") },
+    { icon: "/icons/blog__icon.svg", path: "/blog", label: t("nav.blog") },
   ];
 
   useEffect(() => {
@@ -46,7 +48,6 @@ export const Header = () => {
   }, []);
 
   const closeBurger = () => setIsOpen(false);
-  const newPathname = pathname.replace(`/${locale}`, "") || "/";
 
   return (
     <div>
@@ -111,7 +112,7 @@ export const Header = () => {
                       }`}
                     >
                       {destinations.find((dest) => dest.path === cleanPath)
-                        ?.label || "Destinations"}
+                        ?.label || t("destinations.index")}
                     </p>
                   </div>
                   <ul className="w-full absolute left-0 top-full bg-black/40 backdrop-blur-2xl shadow-2xl rounded-[8px] translate-y-[24px] opacity-0 pointer-events-none flex flex-col justify-center group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-50">
@@ -162,7 +163,7 @@ export const Header = () => {
 
           <div className="header__right-box flex items-center gap-x-[48px]">
             <div className="hidden">
-              <SecondContactButton>Contact us</SecondContactButton>
+              <SecondContactButton>{t("contact")}</SecondContactButton>
             </div>
 
             <div
