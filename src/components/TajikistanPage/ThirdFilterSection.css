@@ -23,7 +23,7 @@
 .thirdFilter__bottom-card-text {
   font-family: "ppneuemontreal";
 }
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .thirdFilter {
     display: block !important;
   }
