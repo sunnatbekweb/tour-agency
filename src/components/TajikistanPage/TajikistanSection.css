@@ -1,0 +1,43 @@
+.tajikistan {
+}
+.tajikistan__container {
+}
+.tajikistan__circle-map {
+}
+.tajikistan__top-map {
+}
+.tajikistan__top-box {
+}
+.tajikistan__bottom-card {
+}
+.tajikistan__bottom-card-image {
+}
+.tajikistan__bottom-card-title {
+  font-family: "ppneuemontreal";
+}
+.tajikistan__bottom-card-text {
+  font-family: "ppneuemontreal";
+}
+@media (max-width: 1279px) {
+  .tajikistan {
+    display: none !important;
+  }
+  .tajikistan__container {
+  }
+  .tajikistan__circle-map {
+  }
+  .tajikistan__top-map {
+  }
+  .tajikistan__top-box {
+  }
+  .tajikistan__bottom-card {
+  }
+  .tajikistan__bottom-card-image {
+  }
+  .tajikistan__bottom-card-title {
+    font-family: "ppneuemontreal";
+  }
+  .tajikistan__bottom-card-text {
+    font-family: "ppneuemontreal";
+  }
+}
