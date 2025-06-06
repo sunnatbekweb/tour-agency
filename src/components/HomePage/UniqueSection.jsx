@@ -1,7 +1,11 @@
-import { Link } from '@/i18n/navigation';
-import './UniqueSection.css';
-import RightChevron from '../../../public/icons/RightChevron.jsx';
+"use client";
+
+import { Link } from "@/i18n/navigation";
+import "./UniqueSection.css";
+import RightChevron from "../../../public/icons/RightChevron.jsx";
+import { useTranslations } from "next-intl";
 export default function UniqueSection() {
+  const t = useTranslations("craft_adventure");
   return (
     <div>
       <section className="unique">
@@ -13,15 +17,16 @@ export default function UniqueSection() {
               alt="logo__image"
             />
           </Link>
-          <p className="unique__text font-medium text-[24px] leading-[24px] text-white mb-2 md:text-[40px] md:leading-[60px]">
-            Craft Your Own Adventure
-          </p>
-          <h3 className="unique__title font-medium text-[40px] leading-[40px] text-white text-center mb-[100px] md:text-[72px] md:leading-[72px] md:mb-[120px] xl:leading-[74px] xl:mb-[80px]">
-            Unique, Personal,
-            <span className="unique__title-span block">Unforgettable</span>
-          </h3>
+          <div className="w-full sm:w-[80%] md:w-full xl:w-3/4">
+            <p className="unique__text font-medium text-[24px] leading-[24px] text-white mb-2 md:text-[40px] md:leading-[60px] text-center">
+              {t("subtitle")}
+            </p>
+            <h3 className="unique__title font-medium text-[40px] text-white text-center mb-[100px] md:text-6xl lg:text-[72px] md:mb-[120px] xl:mb-[80px]">
+              {t("title")}
+            </h3>
+          </div>
           <button className="unique__button flex flex-row justify-center items-center gap-3.5 active:opacity-50">
-            Let’s travel
+            {t("button")}
             <RightChevron />
           </button>
         </div>
