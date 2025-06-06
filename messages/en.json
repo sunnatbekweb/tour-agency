@@ -35,5 +35,19 @@
       "infoTj": "Welcome to Tajikistan — a land of soaring mountains, ancient fortresses, and untouched natural beauty. Nestled in the heart of Central Asia, this hidden gem offers breathtaking alpine landscapes and warm-hearted hospitality. From the towering peaks of the Pamir Mountains to the crystal-clear waters of Iskanderkul Lake, every path in Tajikistan leads to adventure, reflection, and awe.",
       "infoTk": "Welcome to Turkmenistan — a land of desert mysteries, marble cities, and ancient legacies hidden beneath the sands. From the blazing heart of the Karakum Desert rises the Darvaza Gas Crater — the “Door to Hell” — a symbol of the country’s raw and powerful beauty. Wander through the silent ruins of Merv, once a jewel of the Silk Road, and marvel at Ashgabat’s gleaming white architecture. Turkmenistan is where history and surreal modernity meet in mesmerizing contrast."
     }
+  },
+  "craft_adventure": {
+    "subtitle": "Craft Your Own Adventure",
+    "title": "Unique, Personal, Unforgettable",
+    "button": "Let’s travel"
+  },
+  "culturalHighlights": {
+    "top_title": "Cultural Highlights",
+    "title": "From Desert Fortresses to Mountain Festivals — Central Asia is Calling",
+    "text": "At Silk Road Wonders, we don't just offer tours — we open doors to ancient civilizations, vibrant traditions, and breathtaking landscapes. Whether you're drawn to architectural marvels or the rhythms of rural life, there's a story here waiting just for you."
+  },
+  "faq": {
+    "top_title": "Frequently asked questions",
+    "title": "Need Help Before You Go? we’ve got answers"
   }
 }

@@ -35,5 +35,19 @@
       "infoTj": "Tojikistonga xush kelibsiz — bu yer baland tog‘lar, qadimiy qal’alar va musaffo tabiat yurti. Markaziy Osiyoning yuragida joylashgan bu yashirin durdona sizga hayratomuz tog‘ manzaralari va mehmondo‘st xalqni taqdim etadi. Pomir tog‘larining baland cho‘qqilaridan tortib Iskandarkul ko‘lining tiniq suvlari — har bir yo‘l sarguzasht, tafakkur va hayratga olib boradi.",
       "infoTk": "Turkmanistonga xush kelibsiz — bu yerda sahro sirlari, marmar shaharlar va qumlar ostida yashiringan qadimiy meros yashaydi. Gar qaynab turgan Garagum cho‘lining yuragida Darvoza gaz krateri — “Do‘zax darvozasi” — mamlakatning kuchli va yovvoyi go‘zalligini aks ettiradi. Ipak yo‘lining marvaridlaridan biri bo‘lgan Merw xarobalarini kezib chiqing va Ashxobodning oppoq zamonaviy arxitekturasi bilan tanishing. Turkmaniston — tarix va surreal zamonaviylik bir-biriga to‘qnash keladigan yurtdir."
     }
+  },
+  "craft_adventure": {
+    "subtitle": "Sizga mos sayohatni yarating",
+    "title": "Noyob, Shaxsiy, Unutilmas",
+    "button": "Sayohat qilamiz"
+  },
+  "culturalHighlights": {
+    "top_title": "Madaniy voqealar",
+    "title": "Choʻl qal’alaridan togʻ bayramlarigacha — Markaziy Osiyo sizni chorlayapti",
+    "text": "Silk Road Wonders’da biz shunchaki sayohatlar emas, balki qadimgi sivilizatsiyalar, rang-barang an’analar va hayratlanarli manzaralarga eshik ochamiz. Agar sizni me’moriy moʻjizalar yoki qishloq hayoti jalb qilsa — bu yerda siz uchun alohida bir hikoya bor."
+  },
+  "faq": {
+    "top_title": "Ko‘p so‘raladigan savollar",
+    "title": "Safarga chiqishdan oldin savolingiz bormi? Javob bizda"
   }
 }
