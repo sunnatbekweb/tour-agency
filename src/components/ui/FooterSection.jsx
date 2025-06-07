@@ -135,7 +135,7 @@ export default function FooterSection() {
         <RoadSection />
       </div>
       <footer className="footer bg-[#A98D7D] xl:w-full xl:rounded-tr-[56px] xl:rounded-tl-[56px] xl:absolute">
-        <div className="container footer__container xl:pt-[106.65px]">
+        <div className="container footer__container xl:pt-[106.65px] px-6">
           <div className="footer__top-box xl:flex xl:flex-row xl:justify-between xl:items-start">
             <div className="footer__top-left-box xl:flex xl:flex-col xl:justify-center xl:items-start xl:w-[419px] 2xl:w-[519px]">
               <Link className="footer__top-left-logo-link" href={"/"}>

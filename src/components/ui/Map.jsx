@@ -10,7 +10,7 @@ export const Map = ({ onSelectCountry, selectedCountry }) => {
     <svg
       width="712"
       height="785"
-      viewBox="0 0 912 785"
+      viewBox="0 0 990 785"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >

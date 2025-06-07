@@ -133,7 +133,7 @@ export default function FooterMdSection() {
       <div className="relative top-[90px] z-[-1]">
         <MdRoadSection />
       </div>
-      <footer className="footerMdSection md:w-full md:bg-[#A98D7D] md:rounded-tr-[56px] md:rounded-tl-[56px] md:py-[52px]">
+      <footer className="footerMdSection md:w-full md:bg-[#A98D7D] md:rounded-tr-[56px] md:rounded-tl-[56px] md:py-[52px] px-6">
         <div className="container footerMdSection__container md:w-full md:flex md:flex-col md:justify-center md:items-center md:px-9">
           <div className="footerMdSection__top-box md:w-full md:flex md:flex-row md:justify-between md:items-end md:gap-[47px] md:mb-[102px]">
             <div className="footerMdSection__top-left-box md:flex md:flex-col md:justify-center md:items-start md:gap-8">
