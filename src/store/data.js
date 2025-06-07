@@ -49,7 +49,7 @@ export const useCountryData = () => {
       text: t("home_map.country_info.infoTj"),
       iconOpen: "icons/open__chevron.svg",
       iconClose: "icons/close__chevron.svg",
-      link: "/destination/tadjikistan",
+      link: "/destination/tajikistan",
       images: [
         "/images/tajikistan__third.jpg",
         "/images/tajikistan__first.jpg",
@@ -72,7 +72,7 @@ export const useCountryData = () => {
   ];
 };
 export const useAboutCountries = () => {
-  const t = useTranslations();
+  // const t = useTranslations();
 
   return [
     {
@@ -98,7 +98,7 @@ export const useAboutCountries = () => {
       image3: "/images/kazakhstan__third.jpg",
     },
     {
-      slug: "tadjikistan",
+      slug: "tajikistan",
       title: "Tajikistan: Roof of Central Asia",
       text1:
         "Tajikistan is a land of staggering mountains and deep-rooted history — a place where the Pamir Mountains scrape the sky and ancient caravan routes still echo with stories of travelers long gone. Here, rugged beauty and raw nature create a backdrop like no other in Central Asia. With over 90% of the country covered in mountains, this is where trekkers, dreamers, and seekers of solitude find their path.",

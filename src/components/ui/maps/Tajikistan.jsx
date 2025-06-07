@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Tadjikistan = ({ onClickFn, selected }) => {
+export const Tajikistan = ({ onClickFn, selected }) => {
   return (
     <>
       <path

@@ -3,7 +3,7 @@ import React from "react";
 import { Uzbekistan } from "./maps/Uzbekistan";
 import { Kazahstan } from "./maps/Kazahstan";
 import { Kyrgyzystan } from "./maps/Kyrgyzystan";
-import { Tadjikistan } from "./maps/Tadjikistan";
+import { Tajikistan } from "./maps/Tajikistan";
 import { Turkmenistan } from "./maps/Turkmenistan";
 
 export const Map = ({ onSelectCountry, selectedCountry }) => {
@@ -27,7 +27,7 @@ export const Map = ({ onSelectCountry, selectedCountry }) => {
         onClickFn={() => onSelectCountry(3)}
         selected={selectedCountry === 3}
       />
-      <Tadjikistan
+      <Tajikistan
         onClickFn={() => onSelectCountry(4)}
         selected={selectedCountry === 4}
       />

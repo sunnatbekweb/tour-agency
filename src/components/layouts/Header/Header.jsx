@@ -26,7 +26,7 @@ export const Header = () => {
   const destinations = [
     { path: "/destination/uzbekistan", label: t("destinations.uz") },
     { path: "/destination/kazakhstan", label: t("destinations.kz") },
-    { path: "/destination/tadjikistan", label: t("destinations.tj") },
+    { path: "/destination/tajikistan", label: t("destinations.tj") },
     { path: "/destination/kyrgyzstan", label: t("destinations.kg") },
     { path: "/destination/turkmenistan", label: t("destinations.tk") },
   ];
