@@ -17,20 +17,6 @@ export default function ThirdFilterSection() {
       images: "/images/sughd.png",
       description: "city__images",
     },
-    {
-      id: 3,
-      title: "Hisor",
-      text: `Hisor is a historic city near Dushanbe, Tajikistan. It is famous for the Hisor Fortress, which dates back over 2,500 years. The city reflects rich cultural and architectural heritage. Surrounded by mountains, Hisor combines natural beauty with deep history, making it an important cultural and tourist destination.`,
-      images: "/images/hisor.jpg",
-      description: "city__images",
-    },
-    {
-      id: 4,
-      title: "Gorno-Badakkshan",
-      text: `Gorno-Badakhshan is an autonomous region in eastern Tajikistan, known for its stunning Pamir Mountains. Its capital is Khorugh. The region is rich in natural beauty, unique culture, and history. Though remote, it attracts adventurers and researchers interested in high-altitude landscapes, traditional lifestyles, and the vibrant Pamiri heritage.`,
-      images: "/images/gorno__badakkshan.jpg",
-      description: "city__images",
-    },
   ];
   const [selectedCountry, setSelectedCountry] = useState(countryData[0]);
   const handleCountrySelect = (country) => {
