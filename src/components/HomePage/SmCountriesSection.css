@@ -1,49 +1,30 @@
 .countries {
-  display: none !important;
 }
 .countries__top-box::-webkit-scrollbar {
   display: none !important;
 }
 .countries__top-buttons {
-  font-family: 'ppneuemontreal';
+  font-family: "ppneuemontreal";
 }
 .countries__top-info-title {
-  font-family: 'ppneuemontreal';
+  font-family: "ppneuemontreal";
 }
 .countries__top-info-text {
-  font-family: 'ppneuemontreal';
-}
-@media (max-width: 1024px) {
-  .countries {
-    display: block !important;
-  }
-  .countries__top-box::-webkit-scrollbar {
-    display: none !important;
-  }
-  .countries__top-buttons {
-    font-family: 'ppneuemontreal';
-  }
-  .countries__top-info-title {
-    font-family: 'ppneuemontreal';
-  }
-  .countries__top-info-text {
-    font-family: 'ppneuemontreal';
-  }
+  font-family: "ppneuemontreal";
 }
 @media (max-width: 767px) {
   .countries {
-    display: block !important;
   }
   .countries__top-box::-webkit-scrollbar {
     display: none !important;
   }
   .countries__top-buttons {
-    font-family: 'ppneuemontreal';
+    font-family: "ppneuemontreal";
   }
   .countries__top-info-title {
-    font-family: 'ppneuemontreal';
+    font-family: "ppneuemontreal";
   }
   .countries__top-info-text {
-    font-family: 'ppneuemontreal';
+    font-family: "ppneuemontreal";
   }
 }

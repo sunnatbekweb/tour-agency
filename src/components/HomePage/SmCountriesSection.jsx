@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Link } from "@/i18n/navigation";
 import { useCountryData } from "@/store/data";
 import "./SmCountriesSection.css";
-
 export default function SmCountriesSection() {
   const countryData = useCountryData();
   const [selectedCountry, setSelectedCountry] = useState(countryData[0]);
@@ -12,7 +11,7 @@ export default function SmCountriesSection() {
   };
   return (
     <div>
-      <section className="countries w-full py-[80px] md:py-[100px]">
+      <section className="countries w-full py-[80px] md:py-[100px] 2xl:hidden">
         <div className="container countries__container">
           <div className="countries__top-box flex flex-row justify-start items-center gap-2 overflow-x-auto px-6 mb-8 md:mb-[56px] md:gap-4 md:px-9">
             {countryData.map((item) => (

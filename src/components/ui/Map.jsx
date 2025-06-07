@@ -5,7 +5,6 @@ import { Kazahstan } from "./maps/Kazahstan";
 import { Kyrgyzystan } from "./maps/Kyrgyzystan";
 import { Tajikistan } from "./maps/Tajikistan";
 import { Turkmenistan } from "./maps/Turkmenistan";
-
 export const Map = ({ onSelectCountry, selectedCountry }) => {
   return (
     <svg

@@ -3,14 +3,14 @@ import React, { useState } from "react";
 import { useCountryData } from "@/store/data";
 import { Link } from "@/i18n/navigation";
 import { Map } from "../ui/Map";
+import "./XlCountry.css";
 import { useTranslations } from "next-intl";
-
 export const XlCountry = () => {
   const [selectedCountry, setSelectedCountry] = useState(1);
   const countryData = useCountryData();
   const t = useTranslations("home_map");
   return (
-    <section className="py-[120px] font-medium hidden lg:block">
+    <section className="homemap hidden 2xl:block py-[120px] font-medium">
       <div className="container px-6 2xl:hidden">
         <div className="w-3/4 xl:w-3/5">
           <span className="text-xl text-[#A5958B] uppercase">
@@ -21,7 +21,7 @@ export const XlCountry = () => {
           </h2>
         </div>
       </div>
-      <div className="container flex flex-col-reverse 2xl:flex-row items-center gap-x-12 px-6">
+      <div className="container flex flex-col-reverse 2xl:flex-row justify-between items-center gap-x-12 px-6">
         <div className="2xl:w-1/2">
           <div className="hidden 2xl:block">
             <span className="text-xl text-[#A5958B] uppercase">
