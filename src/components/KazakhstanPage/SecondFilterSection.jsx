@@ -10,7 +10,6 @@ export default function SecondFilterSection() {
       images: "/images/turkistan__city.jpg",
       description: "city__images",
     },
-
     {
       id: 2,
       title: "Astana",
