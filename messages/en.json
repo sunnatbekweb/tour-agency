@@ -49,5 +49,17 @@
   "faq": {
     "top_title": "Frequently asked questions",
     "title": "Need Help Before You Go? we’ve got answers"
+  },
+  "feedbacks": {
+    "top_title": "clients reviews",
+    "title": "Trusted by Travelers Worldwide"
+  },
+  "footer": {
+    "email_text": "Sign up to get exclusive offers, travel tips, and destination inspiration straight to your inbox!",
+    "email_placeholder": "Enter your email",
+    "explore_text": "Explore",
+    "why_travel_title": "Why travel with us?",
+    "why_travel_text": "Authentic experiences, expert guides, unforgettable memories — discover the true spirit of the Silk Road with Wonder:)",
+    "developed_by": "Developed by"
   }
 }
