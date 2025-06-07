@@ -12,7 +12,7 @@
   background-image: url("../../../public/icons/right__chevron.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  transform: translateY(-100px) !important;
+  transform: translateY(-72px) !important;
 }
 .swiper-button-left {
   width: 96px !important;
@@ -20,7 +20,7 @@
   background-image: url("../../../public/icons/chevron.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  transform: translateY(-100px) !important;
+  transform: translateY(-72px) !important;
 }
 .secondCarousel__swiper {
 }

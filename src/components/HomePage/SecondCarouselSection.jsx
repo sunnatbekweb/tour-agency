@@ -35,7 +35,7 @@ export default function SecondCarouselSection() {
   ];
   return (
     <div style={{ direction: "ltr" }}>
-      <section className="secondCarousel w-full mt-16 md:mt-[88px] lg:mt-[88px]">
+      <section className="secondCarousel w-full mt-16 md:mt-[88px] lg:mt-[88px] xl:mt-[148px]">
         <div className="container w-full secondCarousel__container flex flex-row justify-between items-center px-6 md:px-9">
           <div className="swiper-button-left"></div>
           <div className="swiper-button-right"></div>
