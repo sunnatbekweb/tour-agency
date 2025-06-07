@@ -1,9 +1,8 @@
 "use client";
-
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useLocale } from "next-intl";
-import React, { useEffect, useState } from "react";
-
+import "./ContactForm.css";
 export const ContactForm = () => {
   const [destinations, setDestinations] = useState();
   const [tripThemes, setTripThemes] = useState();
@@ -14,7 +13,6 @@ export const ContactForm = () => {
     destination: "",
     trip_tour: "",
   });
-
   const getDestinations = async () => {
     try {
       await axios
@@ -54,12 +52,10 @@ export const ContactForm = () => {
       trip_tour: "",
     });
   };
-
   useEffect(() => {
     getDestinations();
     getTripThemes();
   }, []);
-
   return (
     <form onSubmit={handleSubmit} className="px-8 py-10 bg-white rounded-2xl">
       <h4 className="font-medium text-[28px] lg:text-[36px] mb-6 md:mb-10 lg:mb-[60px]">

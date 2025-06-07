@@ -1,0 +1,10 @@
+#email::placeholder {
+  font-weight: 500;
+  font-size: 16px !important;
+  color: #d4d4d4;
+}
+#full_name::placeholder {
+  font-weight: 500;
+  font-size: 16px !important;
+  color: #d4d4d4;
+}

@@ -5,10 +5,11 @@ import CivilizationSection from "@/components/UzbekistanPage/CivilizationSection
 import FilterSection from "@/components/UzbekistanPage/FilterSection";
 import GallerySection from "@/components/UzbekistanPage/GallerySection";
 import { DestinationTours } from "@/components/ui/DestinationTours";
+import TajikistanSection from "@/components/TajikistanPage/TajikistanSection";
 import { usePathname } from "next/navigation";
 import { useAboutCountries } from "@/store/data";
 
-export default function Tadjikistan() {
+export default function Tajikistan() {
   const AboutCountries = useAboutCountries();
   const pathname = usePathname();
   const country = pathname.split("/")[3];
@@ -17,10 +18,11 @@ export default function Tadjikistan() {
     <>
       <HeroSecondSection
         image={"/images/tadjikistan_hero.jpg"}
-        title={"Tadjikistan"}
+        title={"Tajikistan"}
         subtitle={"Land of Mountains and Glaciers and Ancient Cultures"}
       />
       <CivilizationSection props={aboutCountry[0]} />
+      <TajikistanSection />
       <GallerySection />
       <DestinationTours />
       <FilterSection />
