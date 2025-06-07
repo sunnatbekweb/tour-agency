@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
@@ -8,21 +7,17 @@ import DrawerHeader from "@/components/ui/DrawerHeader";
 import SecondContactButton from "@/components/ui/SecondContactButton";
 import { isDynamicRoute } from "@/lib/utils/routes";
 import "./Header.css";
-
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [langDropdown, setLangDropdown] = useState(false);
-
   const pathname = usePathname();
   const locale = useLocale();
   const cleanPath = pathname.replace(`/${locale}`, "");
   const t = useTranslations("header");
-
   const isDimmed = isDynamicRoute(cleanPath, ["/trip", "/blog"]);
   const isDestinationPage = cleanPath.startsWith("/destination");
   const newPathname = pathname.replace(`/${locale}`, "") || "/";
-
   const destinations = [
     { path: "/destination/uzbekistan", label: t("destinations.uz") },
     { path: "/destination/kazakhstan", label: t("destinations.kz") },
@@ -30,7 +25,6 @@ export const Header = () => {
     { path: "/destination/kyrgyzstan", label: t("destinations.kg") },
     { path: "/destination/turkmenistan", label: t("destinations.tk") },
   ];
-
   const links = [
     {
       icon: "/icons/tripFound__icon.svg",
@@ -40,14 +34,12 @@ export const Header = () => {
     { icon: "/icons/aboutUs__icon.svg", path: "/about", label: t("nav.about") },
     { icon: "/icons/blog__icon.svg", path: "/blog", label: t("nav.blog") },
   ];
-
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 0);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   const closeBurger = () => setIsOpen(false);
-
   return (
     <div>
       <header
@@ -81,7 +73,6 @@ export const Header = () => {
               />
             </Link>
           </div>
-
           <div className="header__middle-box">
             <Link href="/">
               <img
@@ -159,9 +150,8 @@ export const Header = () => {
               </ul>
             </nav>
           </div>
-
           <div className="header__right-box flex items-center gap-x-[48px]">
-            <div className="hidden">
+            <div className="hidden 2xl:block">
               <SecondContactButton>{t("contact")}</SecondContactButton>
             </div>
 
@@ -187,7 +177,6 @@ export const Header = () => {
                 ))}
               </div>
             </div>
-
             <button
               onClick={() => setLangDropdown(!langDropdown)}
               className={`language-switcher-sm relative lg:hidden flex flex-col gap-y-2 items-center px-3 py-1.5 h-[40px] rounded-[12px] ${langDropdown && "rounded-b-none"} ${isDimmed ? "bg-[#CBBCB3]" : "bg-[#ffffff33]"}`}
@@ -232,7 +221,6 @@ export const Header = () => {
           </div>
         </div>
       </header>
-
       <DrawerHeader modal={isOpen} close={closeBurger} />
     </div>
   );
