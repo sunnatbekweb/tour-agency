@@ -72,12 +72,13 @@ export const useCountryData = () => {
   ];
 };
 export const useAboutCountries = () => {
-  // const t = useTranslations();
+  const t = useTranslations();
 
   return [
     {
       slug: "uzbekistan",
-      title: "Uzbekistan: Crossroads of Civilizations",
+      country_name: t("header.destinations.uz"),
+      title: t("destinations.uzbekistan.about_country_title"),
       text1:
         "Uzbekistan is the beating heart of Central Asia — a country where history lives in every mosaic and hospitality greets you at every corner. From the towering minarets of Khiva to the majestic Registan of Samarkand, Uzbekistan offers a cultural journey unlike any other. It’s where science once thrived, trade flourished, and traditions were born that still color the land today. Let the Silk Road guide your footsteps through this timeless land.",
       text2:
@@ -88,6 +89,7 @@ export const useAboutCountries = () => {
     },
     {
       slug: "kazakhstan",
+      country_name: t("header.destinations.kz"),
       title: "Kazakhstan: Land of Wide Horizons and Bold Spirits",
       text1:
         "Kazakhstan’s true magic lies not only in its vastness, but in its contrasts — where silence meets strength, and ancient traditions meet modern ambition. Venture beyond the urban skylines of Astana and Almaty, and you’ll discover a world sculpted by wind, time, and nomadic pride. The boundless steppe isn’t just a landscape — it’s a symbol of freedom that has shaped generations of resilient, welcoming people.",
@@ -99,6 +101,7 @@ export const useAboutCountries = () => {
     },
     {
       slug: "tajikistan",
+      country_name: t("header.destinations.tj"),
       title: "Tajikistan: Roof of Central Asia",
       text1:
         "Tajikistan is a land of staggering mountains and deep-rooted history — a place where the Pamir Mountains scrape the sky and ancient caravan routes still echo with stories of travelers long gone. Here, rugged beauty and raw nature create a backdrop like no other in Central Asia. With over 90% of the country covered in mountains, this is where trekkers, dreamers, and seekers of solitude find their path.",
@@ -110,6 +113,7 @@ export const useAboutCountries = () => {
     },
     {
       slug: "kyrgyzstan",
+      country_name: t("header.destinations.kg"),
       title: "Kyrgyzstan: Land of Peaks, Lakes & Nomads",
       text1:
         "But Kyrgyzstan is more than scenery — it's a living legacy of the nomadic soul. In the vast jailoo (summer pastures), families still herd their animals as they have for generations. Travelers are not strangers here — they are guests, welcomed with a bowl of warm kumis and heartfelt hospitality that knows no boundaries. Sharing stories under the stars, listening to the music of komuz, and tasting bread baked in clay tandyrs — this is everyday life, as rich as the land itself.",
@@ -121,6 +125,7 @@ export const useAboutCountries = () => {
     },
     {
       slug: "turkmenistan",
+      country_name: t("header.destinations.tk"),
       title: "Turkmenistan: The Hidden Jewel of the Silk Road",
       text1:
         "Turkmenistan is a land of deep silence and timeless secrets — where golden sands hide ancient cities, and marble cities rise in the desert. Once home to mighty empires like Parthia and Khwarezm, this country holds the ruins of Merv and Nisa, whispering stories of traders, scholars, and civilizations that shaped the Silk Road.",

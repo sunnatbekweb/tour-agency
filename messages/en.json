@@ -61,5 +61,22 @@
     "why_travel_title": "Why travel with us?",
     "why_travel_text": "Authentic experiences, expert guides, unforgettable memories — discover the true spirit of the Silk Road with Wonder:)",
     "developed_by": "Developed by"
-  }
+  },
+  "destinations": {
+    "about": "About",
+    "about_text": "About country",
+    "exclusive_text": "Exclusive photos",
+    "uzbekistan": {
+      "about_country_title": "Uzbekistan: Crossroads of Civilizations",
+      "about_country_text1": "Uzbekistan is the beating heart of Central Asia — a country where history lives in every mosaic and hospitality greets you at every corner. From the towering minarets of Khiva to the majestic Registan of Samarkand, Uzbekistan offers a cultural journey unlike any other. It’s where science once thrived, trade flourished, and traditions were born that still color the land today. Let the Silk Road guide your footsteps through this timeless land.",
+      "about_country_text2": "Uzbekistan is the beating heart of Central Asia — a country where history lives in every mosaic and hospitality greets you at every corner. From the towering minarets of Khiva to the majestic Registan of Samarkand, Uzbekistan offers a cultural journey unlike any other. It’s where science once thrived, trade flourished, and traditions were born that still color the land today. Let the Silk Road guide your footsteps through this timeless land.",
+      "hero_title": "Land of Great Scholars and Crossroads of Cultures",
+      "photos_text": "Exclusive photos",
+      "tours_title": "Explore Uzbekistan with Our Signature Tours",
+      "tours_text": "From the blue domes of Samarkand to the ancient streets of Khiva — our Uzbekistan tour packages are crafted for culture lovers, history seekers, and adventurous souls. Whether it’s a weekend escape or a multi-day immersion, your journey begins here."
+    }
+  },
+  "all": "All",
+  "loading": "Loading...",
+  "not_found": "Trips not found!"
 }

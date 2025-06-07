@@ -5,7 +5,9 @@ import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import Masonry from "@mui/lab/Masonry";
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 export default function GallerySection() {
+  const t = useTranslations();
   const [images, setImages] = useState([]);
   const getImagesWidth = (width) => {
     if (width <= 640) {
@@ -163,10 +165,10 @@ export default function GallerySection() {
       <div className="container gallery__container w-full flex flex-col justify-center items-start gap-10 px-6 md:px-9 md:gap-[56px] lg:gap-[51px]">
         <div className="gallery__top flex flex-col justify-center items-start gap-2 md:gap-4">
           <p className="gallery__top-text font-medium text-[16px] leading-[100%] uppercase text-[#A5958B] md:text-[24px]">
-            Trip founder
+            {t("header.nav.finder")}
           </p>
           <h2 className="gallery__top-title font-medium text-[32px] leading-[40px] uppercase text-[#323232] w-[170px] md:w-full md:text-[56px]">
-            Exclusive photos
+            {t("destinations.exclusive_text")}
           </h2>
         </div>
         <div className="gallery__bottom-box w-full">

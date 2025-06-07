@@ -8,23 +8,28 @@ import { DestinationTours } from "@/components/ui/DestinationTours";
 import { usePathname } from "next/navigation";
 import { useAboutCountries } from "@/store/data";
 import UzbekistanSection from "@/components/UzbekistanPage/UzbekistanSection";
+import { useTranslations } from "next-intl";
 export default function Uzbekistan() {
   const AboutCountries = useAboutCountries();
   const pathname = usePathname();
   const country = pathname.split("/")[3];
   const aboutCountry = AboutCountries.filter((item) => item.slug === country);
+  const t = useTranslations();
   return (
     <div>
       <HeroSecondSection
         image={"/images/uzbekistan__xl.jpg"}
-        title={"Uzbekistan"}
+        title={t("header.destinations.uz")}
         subtitle={"Land of Great Scholars and Crossroads of Cultures"}
       />
       <CivilizationSection props={aboutCountry[0]} />
       <UzbekistanSection />
       <GallerySection />
       <FilterSection />
-      <DestinationTours />
+      <DestinationTours
+        title={t("destinations.uzbekistan.tours_title")}
+        text={t("destinations.uzbekistan.tours_text")}
+      />
     </div>
   );
 }

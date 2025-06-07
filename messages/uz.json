@@ -61,5 +61,22 @@
     "why_travel_title": "Nega biz bilan sayohat qilish kerak?",
     "why_travel_text": "Haqiqiy tajribalar, tajribali gidlar, unutilmas xotiralar — Wonder bilan Ipak yo‘lining ruhini kashf eting:)",
     "developed_by": "Dasturchi"
-  }
+  },
+  "destinations": {
+    "about": "Mamlakat haqida",
+    "about_text": "Mamlakat haqida ma’lumot",
+    "exclusive_text": "Eksklyuziv suratlar",
+    "uzbekistan": {
+      "about_country_title": "Oʻzbekiston: Sivilizatsiyalar Qarshisida",
+      "about_country_text1":"",
+      "about_country_text2":"",
+      "hero_title": "Buyuk allomalar yurti va madaniyatlar chorrahasi",
+      "photos_text": "Eksklyuziv suratlar",
+      "tours_title": "Bizning maxsus turlar bilan O‘zbekistonni kashf eting",
+      "tours_text": "Samarqandning moviy gumbazlaridan tortib Xivaning qadimiy ko‘chalarigacha — O‘zbekiston bo‘ylab sayohatlarimiz madaniyat ixlosmandlari, tarix izlovchilari va sarguzashtsevarlar uchun yaratilgan. Dam olish kunlari sayohatidan tortib bir necha kunlik sarguzashtlargacha — sizning safaringiz aynan shu yerda boshlanadi."
+    }
+  },
+  "all": "Barchasi",
+  "loading": "Yuklanmoqda...",
+  "not_found": "Turlar topilmadi!"
 }
