@@ -3,19 +3,21 @@ import React, { useState } from "react";
 import { useCountryData } from "@/store/data";
 import { Link } from "@/i18n/navigation";
 import { Map } from "../ui/Map";
+import { useTranslations } from "next-intl";
 
 export const XlCountry = () => {
   const [selectedCountry, setSelectedCountry] = useState(1);
   const countryData = useCountryData();
+  const t = useTranslations("home_map");
   return (
     <section className="py-[120px] font-medium hidden lg:block">
       <div className="container px-6 2xl:hidden">
         <div className="w-3/4 xl:w-3/5">
           <span className="text-xl text-[#A5958B] uppercase">
-            see your own adventure
+            {t("top_title")}
           </span>
           <h2 className="mt-8 mb-12 text-6xl text-[#323232] uppercase">
-            Unveil Central Asia’s Hidden Wonders
+            {t("title")}
           </h2>
         </div>
       </div>
@@ -23,10 +25,10 @@ export const XlCountry = () => {
         <div className="2xl:w-1/2">
           <div className="hidden 2xl:block">
             <span className="text-xl text-[#A5958B] uppercase">
-              see your own adventure
+              {t("top_title")}
             </span>
             <h2 className="mt-8 mb-12 text-6xl text-[#323232] uppercase">
-              Unveil Central Asia’s Hidden Wonders
+              {t("title")}
             </h2>
           </div>
           {countryData

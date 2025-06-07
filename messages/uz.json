@@ -49,5 +49,17 @@
   "faq": {
     "top_title": "Ko‘p so‘raladigan savollar",
     "title": "Safarga chiqishdan oldin savolingiz bormi? Javob bizda"
+  },
+  "feedbacks": {
+    "top_title": "Mijozlar fikrlari",
+    "title": "Dunyo bo‘ylab sayohatchilar ishonadi"
+  },
+  "footer": {
+    "email_text": "Maxsus takliflar, sayohat bo‘yicha maslahatlar va ilhomlar uchun obuna bo‘ling!",
+    "email_placeholder": "Email manzilingizni kiriting",
+    "explore_text": "O‘rganing",
+    "why_travel_title": "Nega biz bilan sayohat qilish kerak?",
+    "why_travel_text": "Haqiqiy tajribalar, tajribali gidlar, unutilmas xotiralar — Wonder bilan Ipak yo‘lining ruhini kashf eting:)",
+    "developed_by": "Dasturchi"
   }
 }
