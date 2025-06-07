@@ -1,19 +1,17 @@
-'use client';
-
-import axios from 'axios';
-import { useLocale } from 'next-intl';
-import React, { useEffect, useState } from 'react';
-
+"use client";
+import "./ContactForm.css";
+import axios from "axios";
+import { useLocale } from "next-intl";
+import React, { useEffect, useState } from "react";
 export const ContactForm = () => {
   const [destinations, setDestinations] = useState();
   const locale = useLocale();
   const [formData, setFormData] = useState({
-    full_name: '',
-    email: '',
-    destination: '',
-    trip_tour: '',
+    full_name: "",
+    email: "",
+    destination: "",
+    trip_tour: "",
   });
-
   const getDestinations = async () => {
     try {
       await axios
@@ -35,19 +33,17 @@ export const ContactForm = () => {
     } catch (error) {
       console.error(error);
     }
-    alert('Successfully sended!');
+    alert("Successfully sended!");
     setFormData({
-      full_name: '',
-      email: '',
-      destination: '',
-      trip_tour: '',
+      full_name: "",
+      email: "",
+      destination: "",
+      trip_tour: "",
     });
   };
-
   useEffect(() => {
     getDestinations();
   }, []);
-
   return (
     <form onSubmit={handleSubmit} className="px-8 py-10 bg-white rounded-2xl">
       <h4 className="font-medium text-[28px] lg:text-[36px] mb-6 md:mb-10 lg:mb-[60px]">
@@ -100,7 +96,10 @@ export const ContactForm = () => {
         >
           <option value="">Select destination</option>
           {destinations?.map((destination) => (
-            <option key={destination.id} value={destination?.[`name_${locale}`]}>
+            <option
+              key={destination.id}
+              value={destination?.[`name_${locale}`]}
+            >
               {destination?.[`name_${locale}`]}
             </option>
           ))}
