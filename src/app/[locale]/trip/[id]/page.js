@@ -2,15 +2,15 @@
 
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import { TripPlacesSlide } from '@/components/ui/TripPlacesSlide';
-import { TripSlide } from '@/components/ui/TripSlide';
+import { TripPlacesSlide } from '@/components/ui/tour/TripPlacesSlide';
+import { TripSlide } from '@/components/ui/tour/TripSlide';
 import { AboutFAQ } from '@/components/about/AboutFAQ';
 import { useParams } from 'next/navigation';
 import axios from 'axios';
 import { useLocale } from 'next-intl';
-import { TourInfoItem } from '@/components/ui/TourInfoItem';
-import { TourItineraryAccordion } from '@/components/ui/TourItineraryAccordion';
-import { TripForm } from '@/components/ui/TripForm';
+import { TourInfoItem } from '@/components/ui/tour/TourInfoItem';
+import { TourItineraryAccordion } from '@/components/ui/tour/TourItineraryAccordion';
+import { TripForm } from '@/components/ui/tour/TripForm';
 import { DatePriceItem } from '@/components/ui/DatePriceItem';
 import '@/styles/page_styles/trip.css';
 
@@ -104,8 +104,8 @@ export default function TripDetail() {
               />
               <TourInfoItem
                 icon="/icons/navigator.svg"
-                title={'Trip Theme'}
-                text={trip?.[`trip_theme_${locale}`]}
+                title={"Trip Theme"}
+                text={trip?.trip_theme?.[`name_${locale}`]}
               />
               <TourInfoItem
                 icon="/icons/navigator.svg"

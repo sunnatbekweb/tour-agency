@@ -1,71 +1,73 @@
-'use client';
-import { Link } from '@/i18n/navigation';
-import './FooterSmSection.css';
-import { useEffect, useRef, useState } from 'react';
-import { Slide, ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import SmRoadSection from './SmRoadSection';
+"use client";
+import { Link } from "@/i18n/navigation";
+import "./FooterSmSection.css";
+import { useEffect, useRef, useState } from "react";
+import { Slide, ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import SmRoadSection from "./SmRoadSection";
+import { useTranslations } from "next-intl";
 export default function FooterSmSection() {
+  const t = useTranslations();
   const moveTop = () => {
     window.scrollTo(0, 0);
   };
   const link = [
     {
-      links: 'Trip founder',
+      links: t("header.nav.finder"),
     },
     {
-      links: 'About us',
+      links: t("header.nav.about"),
     },
     {
-      links: 'Blog',
+      links: t("header.nav.blog"),
     },
     {
-      links: 'Contact us',
+      links: t("header.contact"),
     },
   ];
   const icon = [
     {
-      icons: '/icons/telegram.svg',
-      descriptions: 'telegram__icon',
-      links: 'https://t.me/VueMid',
+      icons: "/icons/telegram.svg",
+      descriptions: "telegram__icon",
+      links: "https://t.me/VueMid",
     },
     {
-      icons: '/icons/facebook.svg',
-      descriptions: 'facebook__icon',
-      links: 'https://www.facebook.com/cleanhouse.uz',
+      icons: "/icons/facebook.svg",
+      descriptions: "facebook__icon",
+      links: "https://www.facebook.com/cleanhouse.uz",
     },
     {
-      icons: '/icons/instagram.svg',
-      descriptions: 'instagram__icon',
-      links: 'https://www.instagram.com/umid_dev',
+      icons: "/icons/instagram.svg",
+      descriptions: "instagram__icon",
+      links: "https://www.instagram.com/umid_dev",
     },
   ];
-  const [form, setForm] = useState({ email: '' });
-  const [correct, setCorrect] = useState({ email: '' });
+  const [form, setForm] = useState({ email: "" });
+  const [correct, setCorrect] = useState({ email: "" });
   const [error, setError] = useState({ email: false });
   const [isFormValid, setIsFormValid] = useState(false);
   const emailRef = useRef();
   if (form.email.length > 0) {
     if (error.email) {
-      emailRef.current.style.borderColor = 'red';
-      emailRef.current.style.borderWidth = '2px';
+      emailRef.current.style.borderColor = "red";
+      emailRef.current.style.borderWidth = "2px";
     } else {
-      emailRef.current.style.borderColor = 'green';
-      emailRef.current.style.borderWidth = '2px';
+      emailRef.current.style.borderColor = "green";
+      emailRef.current.style.borderWidth = "2px";
     }
   }
   useEffect(() => {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (form.email.length === null) {
-      setError({ ...error, email: '*Please enter your email.' });
+      setError({ ...error, email: "*Please enter your email." });
       setCorrect({ ...correct, email: false });
     } else if (!emailRegex.test(form.email)) {
-      setError({ ...error, email: '*Please enter a valid email address.' });
+      setError({ ...error, email: "*Please enter a valid email address." });
       setCorrect({ ...correct, email: false });
     } else {
       setCorrect({
         ...correct,
-        email: 'This field has been filled correctly!',
+        email: "This field has been filled correctly!",
       });
       setError({ ...error, email: false });
     }
@@ -75,40 +77,40 @@ export default function FooterSmSection() {
   }, [correct]);
   async function sendData(email) {
     const TOKEN = `7331186148:AAEXcMJUHFCgpzm1TghB9itA7WT0KHlVu3M`;
-    const botID = '-1001837026407';
+    const botID = "-1001837026407";
     const info = `User  %0A<strong>📧: </strong>${email}`;
     const response = await fetch(
       `https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${botID}&text=${info}&parse_mode=html`
     );
     const data = await response.json();
     console.log(data);
-    setForm({ email: '' });
+    setForm({ email: "" });
   }
   const formSubmission = async (e) => {
     e.preventDefault();
     if (isFormValid) {
       await sendData(form.email);
-      toast.success('Successful!', {
-        position: 'top-right',
+      toast.success("Successful!", {
+        position: "top-right",
         autoClose: 2000,
         hideProgressBar: false,
         closeOnClick: false,
         pauseOnHover: false,
         draggable: true,
         progress: undefined,
-        theme: 'colored',
+        theme: "colored",
         transition: Slide,
       });
     } else {
-      toast.error('Error', {
-        position: 'top-right',
+      toast.error("Error", {
+        position: "top-right",
         autoClose: 2000,
         hideProgressBar: false,
         closeOnClick: false,
         pauseOnHover: false,
         draggable: true,
         progress: undefined,
-        theme: 'colored',
+        theme: "colored",
         transition: Slide,
       });
     }
@@ -137,16 +139,15 @@ export default function FooterSmSection() {
       >
         <div className="container w-full footerSmSection__container flex flex-col justify-center items-center px-6">
           <div className="footerSmSection__top w-full flex flex-row justify-between items-start ">
-            <Link href={'/'}>
+            <Link href={"/"}>
               <img
                 className="footerSmSection__top-logo inline-block w-[80px] h-[44px] md:w-[140px] md:h-[77px]"
-                src={'/icons/logo.svg'}
+                src={"/icons/logo.svg"}
                 alt="logo"
               />
             </Link>
             <p className="footerSmSection__top-text w-[196px] font-normal text-[14px] leading-[18px] tracking-tighter-[-2%] text-white">
-              Sign up to get exclusive offers, travel tips, and destination inspiration straight to
-              your inbox!
+              {t("footer.email_text")}
             </p>
           </div>
           <form className="footerSmSection__form w-full flex flex-row justify-center items-center mt-[41px]">
@@ -163,7 +164,7 @@ export default function FooterSmSection() {
                   }}
                   type="email"
                   id="email"
-                  placeholder="Enter your email"
+                  placeholder={t("footer.email_placeholder")}
                   autoComplete="off"
                   value={form.email}
                   required
@@ -185,7 +186,7 @@ export default function FooterSmSection() {
             <nav className="footerSmSection__nav flex flex-col justify-center items-start">
               <ul className="footerSmSection__list flex flex-col justify-center items-start gap-6">
                 <h4 className="footerSmSection__list-text font-medium text-[24px] leading-[100%] tracking-tighter-[-2%] text-white">
-                  Explore
+                  {t("footer.explore_text")}
                 </h4>
                 {link.map((item, index) => (
                   <li
@@ -203,11 +204,10 @@ export default function FooterSmSection() {
             </nav>
             <div className="footerSmSection__bottom-right-box flex flex-col justify-center items-start w-[151px] gap-6">
               <h4 className="footerSmSection__bottom-right-box-title font-medium text-[19px] leading-[24px] tracking-tighter-[-2%] text-white">
-                Why travel with us?
+                {t("footer.why_travel_title")}
               </h4>
               <q className="footerSmSection__bottom-right-box-texts font-medium text-[16px] leading-[20px] tracking-tighter-[-2%] text-white/70">
-                Authentic experiences, expert guides, unforgettable memories — discover the true
-                spirit of the Silk Road with Wonder:)
+                {t("footer.why_travel_text")}
               </q>
             </div>
           </div>
@@ -235,7 +235,7 @@ export default function FooterSmSection() {
           >
             <img
               className="footerSmSection__button-icon rotate-[316deg]"
-              src={'/icons/white__arrow-icon.svg'}
+              src={"/icons/white__arrow-icon.svg"}
               alt="button__icon"
             />
           </button>
@@ -246,7 +246,7 @@ export default function FooterSmSection() {
             </p>
             <div className="footerSmSection__copy-logo-box flex flex-row justify-center items-center">
               <p className="footerSmSection__developing-text font-medium text-[19px] leading-[24px] tracking-tighter-[-2%] text-white">
-                Developed by:&nbsp;&nbsp;
+                {t("footer.developed_by")}:&nbsp;&nbsp;
               </p>
               <a
                 className="footerSmSection__copy-logo-link"

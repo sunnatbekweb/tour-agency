@@ -1,50 +1,53 @@
-'use client';
-import './HeroSectoin.css';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import SecondContactButton from '../ui/SecondContactButton';
-import { Link } from '@/i18n/navigation';
+"use client";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import SecondContactButton from "../ui/SecondContactButton";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "use-intl";
+import "./HeroSectoin.css";
 const images = [
   {
-    image: 'images/hero__background-image.jpg',
-    description: 'first__background',
+    image: "images/hero__background-image.jpg",
+    description: "first__background",
   },
   {
-    image: 'images/hero__second-background-image.jpg',
-    description: 'second__background',
+    image: "images/hero__second-background-image.jpg",
+    description: "second__background",
   },
   {
-    image: 'images/hero__third-background-image.jpg',
-    description: 'third__background',
+    image: "images/hero__third-background-image.jpg",
+    description: "third__background",
   },
 ];
 export default function HeroSectoin() {
+  const t = useTranslations();
+
   const link = [
     {
-      icon: 'icons/right__arrow.svg',
-      path: '/destination/uzbekistan',
-      label: 'Uzbekistan',
+      icon: "icons/right__arrow.svg",
+      path: "/destination/uzbekistan",
+      label: t("header.destinations.uz"),
     },
     {
-      icon: 'icons/right__arrow.svg',
-      path: '/destination/kazakhstan',
-      label: 'Kazakhstan',
+      icon: "icons/right__arrow.svg",
+      path: "/destination/kazakhstan",
+      label: t("header.destinations.kz"),
     },
     {
-      icon: 'icons/right__arrow.svg',
-      path: '/destination/tajikistan',
-      label: 'Tajikistan',
+      icon: "icons/right__arrow.svg",
+      path: "/destination/tajikistan",
+      label: t("header.destinations.tj"),
     },
     {
-      icon: 'icons/right__arrow.svg',
-      path: '/destination/turkmanistan',
-      label: 'Turkmanistan',
+      icon: "icons/right__arrow.svg",
+      path: "/destination/kyrgizistain",
+      label: t("header.destinations.kg"),
     },
     {
-      icon: 'icons/right__arrow.svg',
-      path: '/destination/kyrgizistain',
-      label: 'Kyrgizistain',
+      icon: "icons/right__arrow.svg",
+      path: "/destination/turkmanistan",
+      label: t("header.destinations.tk"),
     },
   ];
   return (
@@ -72,18 +75,18 @@ export default function HeroSectoin() {
           <div className="container hero__container flex flex-col justify-center items-center min-h-screen gap-y-[89px] px-6 md:px-9 xl:pt-[290px]">
             <div className="hero__top-box flex flex-col justify-center items-center">
               <p className="hero__top-text text-center w-full font-medium text-[16px] tracking-tighter-[-2%] text-white mb-6 md:text-[32px] md:mb-[32px] lg:text-[40px] lg:mb-4">
-                From Ancient Steppes to Timeless Cities
+                {t("home_hero.subtitle1")}
               </p>
               <h2 className="hero__top-title text-center w-full font-medium text-[40px] leading-[48px] uppercase text-white mb-6 md:text-[72px] md:leading-[80px] md:mb-[56px] lg:text-[96px] lg:mb-10 xl:w-[1214px]">
-                Welcome to the Heart of the Silk Road
+                {t("home_hero.title")}
               </h2>
               <p className="hero__top-second-text text-center w-[162px] font-medium text-[16px] tracking-tighter-[-2%] text-white md:text-[32px] md:w-full">
-                Your Central Asian Adventure Begins Here
+                {t("home_hero.subtitle2")}
               </p>
             </div>
             <div className="hero__bottom-box flex flex-col justify-center items-center">
               <div className="hero__contuct-button 2xl:hidden">
-                <SecondContactButton>Contact us</SecondContactButton>
+                <SecondContactButton>{t("header.contact")}</SecondContactButton>
               </div>
             </div>
           </div>
@@ -94,7 +97,7 @@ export default function HeroSectoin() {
           {link.map((item, index) => (
             <li className="hero__lists w-full" key={index}>
               <hr className="w-full bg-white/20 h-[1px] border-none outline-none" />
-              <Link className="hero__links" href={'/contact'}>
+              <Link className="hero__links" href={item.path}>
                 <p className="hero__link-texts font-medium text-[24px] uppercase text-white">
                   {item.label}
                 </p>

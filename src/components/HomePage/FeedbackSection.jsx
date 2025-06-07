@@ -6,8 +6,10 @@ import "./FeedbackSection.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 export default function FeedbackSection() {
   const [isMobile, setIsMobile] = useState(false);
+  const t = useTranslations("feedbacks");
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 1025);
@@ -55,10 +57,10 @@ export default function FeedbackSection() {
       <div className="container feedback__container flex flex-col justify-center items-start gap-14 ">
         <div className="feedback__top-box flex flex-col items-start gap-2 pl-6 md:pl-9 md:gap-4">
           <p className="feedback__top-text font-medium text-[#A5958B] text-[16px] leading-[100%] uppercase md:text-[24px]">
-            Trip founder
+            {t("top_title")}
           </p>
           <h2 className="feedback__top-title font-medium w-[200px] text-[32px] leading-[40px] uppercase md:text-[56px] md:w-[654px] md:leading-[100%]">
-            Trusted by Travelers Worldwide
+            {t("title")}
           </h2>
         </div>
         <Swiper

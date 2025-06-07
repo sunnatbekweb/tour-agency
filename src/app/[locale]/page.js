@@ -7,14 +7,14 @@ import DesertSection from "@/components/HomePage/DesertSection";
 import SecondCarouselSection from "@/components/HomePage/SecondCarouselSection";
 import QuestionSection from "@/components/HomePage/QuestionSection";
 import FeedbackSection from "@/components/HomePage/FeedbackSection";
-import MapSection from "@/components/HomePage/MapSection";
+import { XlCountry } from "@/components/HomePage/XlCountry";
 export default function Home() {
   return (
     <div>
       <HeroSectoin />
       <ExploreSection />
       <CarouselSection />
-      <MapSection />
+      <XlCountry/>
       <SmCountriesSection />
       <UniqueSection />
       <DesertSection />

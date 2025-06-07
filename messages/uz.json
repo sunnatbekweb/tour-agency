@@ -1,6 +1,65 @@
 {
-  "HomePage": {
-    "title": "Salom dunyo!",
-    "about": "about pagega o'tish"
+  "header": {
+    "destinations": {
+      "index": "Yo‘nalishlar",
+      "uz": "O‘zbekiston",
+      "kz": "Qozog‘iston",
+      "tj": "Tojikiston",
+      "kg": "Qirg‘iziston",
+      "tk": "Turkmaniston"
+    },
+    "nav": {
+      "finder": "Sayohat qidiruvi",
+      "about": "Biz haqimizda",
+      "blog": "Blog"
+    },
+    "contact": "Biz bilan bog‘lanish"
+  },
+  "home_hero": {
+    "subtitle1": "Qadimiy dashtlardan abadiy shaharlargacha",
+    "title": "Ipak yo‘lining yuragiga xush kelibsiz",
+    "subtitle2": "Sizning Markaziy Osiyodagi sarguzashtingiz shu yerdan boshlanadi"
+  },
+  "home_destinations": {
+    "top_title": "Yo‘nalishlarga qisqacha nazar",
+    "title": "Markaziy Osiyoni hech qachon bo‘lmagandek kashf eting",
+    "subtitle": "SRW (Ipak yo‘li mo‘jizalari) da biz unutilmas sayohatlarni yaratamiz — O‘zbekiston, Qozog‘iston, Qirg‘iziston, Turkmaniston va Tojikiston bo‘ylab. Agar sizni ulug‘vor me’morchilik, qadimiy bozorlari yoki osoyishta tabiat tortsa — mukammal sarguzashtingiz sizni kutmoqda."
+  },
+  "home_map": {
+    "top_title": "O‘z sarguzashtingizni tanlang",
+    "title": "Markaziy Osiyoning yashirin mo‘jizalarini kashf eting",
+    "country_info": {
+      "infoUz": "O‘zbekistonga xush kelibsiz — bu yerda Ipak yo‘li tirik: rang-barang bozorlarda, ulug‘vor madrasalarda va abadiy me’morchilikda. Bu qadimiy yurt — madaniyatlar chorrahasi, har bir moviy gumbaz va bezakli darvozadan tarix so‘zlaydi. Qizilqum cho‘lining porlab turgan qumlaridan tortib, Samarqand va Buxoroning she’riy go‘zalligigacha — O‘zbekiston sizni imperiyalar va orzuchilar izidan yurishga chorlaydi.",
+      "infoKz": "Qozog‘istonga xush kelibsiz — bu yerda oltin dashtlar cheksizlikka cho‘ziladi, zamonaviy shaharlar qadimiy an’analarning yonida yashaydi. Dunyoning eng katta dengizga chiqishsiz davlati sifatida, Qozog‘iston sizga erkinlikni qayta kashf etish, nafas olish va yurish uchun cheksiz imkoniyat beradi. Bayterek minorasining yaltirab turgan cho‘qqisidan Charyn kanyonining g‘ayrioddiy go‘zalligigacha — har bir qadam hikoya qiladi.",
+      "infoKg": "Qirg‘izistonga xush kelibsiz — bu yerda qorli cho‘qqilar ko‘chmanchi an’analarni asraydi, moviy ko‘llar osmonning cheksizligini aks ettiradi. Bu dag‘al, ammo jonli yurt sarguzasht ixlosmandlari uchun jannat, bu yerda yaylovlarda yurta turgan, otlar erkin yuradi. Issiqko‘lning osoyishta go‘zalligidan to Tyan-Shan tog‘larining hayajonli yo‘llarigacha — Qirg‘iziston sizni tabiat va erkinlikka asoslangan hayot tarziga qaytishga chorlaydi.",
+      "infoTj": "Tojikistonga xush kelibsiz — bu yer baland tog‘lar, qadimiy qal’alar va musaffo tabiat yurti. Markaziy Osiyoning yuragida joylashgan bu yashirin durdona sizga hayratomuz tog‘ manzaralari va mehmondo‘st xalqni taqdim etadi. Pomir tog‘larining baland cho‘qqilaridan tortib Iskandarkul ko‘lining tiniq suvlari — har bir yo‘l sarguzasht, tafakkur va hayratga olib boradi.",
+      "infoTk": "Turkmanistonga xush kelibsiz — bu yerda sahro sirlari, marmar shaharlar va qumlar ostida yashiringan qadimiy meros yashaydi. Gar qaynab turgan Garagum cho‘lining yuragida Darvoza gaz krateri — “Do‘zax darvozasi” — mamlakatning kuchli va yovvoyi go‘zalligini aks ettiradi. Ipak yo‘lining marvaridlaridan biri bo‘lgan Merw xarobalarini kezib chiqing va Ashxobodning oppoq zamonaviy arxitekturasi bilan tanishing. Turkmaniston — tarix va surreal zamonaviylik bir-biriga to‘qnash keladigan yurtdir."
+    }
+  },
+  "craft_adventure": {
+    "subtitle": "Sizga mos sayohatni yarating",
+    "title": "Noyob, Shaxsiy, Unutilmas",
+    "button": "Sayohat qilamiz"
+  },
+  "culturalHighlights": {
+    "top_title": "Madaniy voqealar",
+    "title": "Choʻl qal’alaridan togʻ bayramlarigacha — Markaziy Osiyo sizni chorlayapti",
+    "text": "Silk Road Wonders’da biz shunchaki sayohatlar emas, balki qadimgi sivilizatsiyalar, rang-barang an’analar va hayratlanarli manzaralarga eshik ochamiz. Agar sizni me’moriy moʻjizalar yoki qishloq hayoti jalb qilsa — bu yerda siz uchun alohida bir hikoya bor."
+  },
+  "faq": {
+    "top_title": "Ko‘p so‘raladigan savollar",
+    "title": "Safarga chiqishdan oldin savolingiz bormi? Javob bizda"
+  },
+  "feedbacks": {
+    "top_title": "Mijozlar fikrlari",
+    "title": "Dunyo bo‘ylab sayohatchilar ishonadi"
+  },
+  "footer": {
+    "email_text": "Maxsus takliflar, sayohat bo‘yicha maslahatlar va ilhomlar uchun obuna bo‘ling!",
+    "email_placeholder": "Email manzilingizni kiriting",
+    "explore_text": "O‘rganing",
+    "why_travel_title": "Nega biz bilan sayohat qilish kerak?",
+    "why_travel_text": "Haqiqiy tajribalar, tajribali gidlar, unutilmas xotiralar — Wonder bilan Ipak yo‘lining ruhini kashf eting:)",
+    "developed_by": "Dasturchi"
   }
 }

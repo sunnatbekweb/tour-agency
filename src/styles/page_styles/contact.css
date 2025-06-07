@@ -5,7 +5,11 @@
   background-position: center;
   position: relative;
   z-index: 1;
-  padding: 200px 0 50px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  padding: 120px 0 40px 0;
 }
 
 .contact_section-bg {
@@ -23,7 +27,7 @@
     position: relative;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: -90px;
