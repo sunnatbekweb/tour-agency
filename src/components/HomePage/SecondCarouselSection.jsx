@@ -69,7 +69,7 @@ export default function SecondCarouselSection() {
                   alt={item.description}
                 />
               </div>
-              <p className="secondCarousel__image-texts rounded-b-[8px] font-medium text-center text-white text-[32px] absolute bottom-[0px] py-[24px] pl-[24px] z-[1] bg-black/65 w-full md:rounded-b-[24px] md:pr-[56px] md:py-[36px] xl:py-[16px] xl:text-[48px] xl:text-start xl:leading-[56px]">
+              <p className="secondCarousel__image-texts rounded-b-[8px] font-medium text-center text-white text-[18px] absolute bottom-[0px] py-[24px] pl-[0px] z-[1] bg-black/65 w-full md:rounded-b-[24px] md:text-[32px] md:pr-[0px] md:py-[36px] xl:py-[26px] xl:text-[48px] xl:text-center xl:leading-[56px]">
                 {item.titles}
               </p>
             </SwiperSlide>

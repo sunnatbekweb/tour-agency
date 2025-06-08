@@ -23,7 +23,7 @@ export default function FeedbackSection() {
       comment:
         "Working with this team was a pleasure. They understood our vision and helped us find a property that exceeded our expectations. We couldn’t have done it without them!",
       name: "Kattaxo'jayev Muhammad Qodir",
-      job: "UX/UI Designer",
+      job: "Chief Executive Officer",
       quotationIcon: "/icons/quotation.svg",
       userImages: "/images/first__user.jpg",
     },
@@ -64,7 +64,7 @@ export default function FeedbackSection() {
           </h2>
         </div>
         <Swiper
-          className="feedback__swiper w-full xl:flex xl:flex-row xl:justify-center xl:items-center"
+          className="feedback__swiper w-full cursor-grab xl:flex xl:flex-row xl:justify-center xl:items-center"
           navigation={true}
           autoplay={{
             delay: 5000,
