@@ -68,12 +68,43 @@
     "exclusive_text": "Eksklyuziv suratlar",
     "uzbekistan": {
       "about_country_title": "Oʻzbekiston: Sivilizatsiyalar Qarshisida",
-      "about_country_text1":"",
-      "about_country_text2":"",
+      "about_country_text1": "O‘zbekiston — Markaziy Osiyoning yuragi bo‘lib, tarix har bir mozaikada yashaydi, mehmondo‘stlik esa sizni har bir burilishda qarshi oladi. Xivaning osmon bilan tenglashgan minoralari va Samarqandning ulug‘vor Registoni — bularning barchasi sizni tengsiz madaniy sayohatga chorlaydi. Ilgari bu yerda ilm-fan gullab-yashnagan, savdo-sotiq avj olgan va bugungi kungacha o‘z rangini yo‘qotmagan urf-odatlar paydo bo‘lgan. Ipak yo‘li sizning qadamingizga yo‘l ko‘rsatsin.",
+      "about_country_text2": "O‘zbekistonning jozibasi nafaqat uning arxitektura mo‘jizalarida, balki odamlarining iliqligida va uning hayotiy an'alarining boyligida yotadi. Shovqinli bozorlarida, ziravorlarning hidlari hunarmandlarning ish faoliyatining ovozi bilan aralashadi. Musiqa, hikoyalar va murakkab san'at asarlari kundalik hayotning ajralmas qismi bo‘lib qolmoqda — qadimiy meros va hayotiy madaniyatning haqiqiy uyg‘unligi. Siz tarixiy karvonsaroylardan o‘tayotganingizda yoki mahalliy aholi bilan ovqatlanayotganingizda, O‘zbekiston sizni ochiq quchoq bilan va abadiy ruh bilan kutib oladi.",
       "hero_title": "Buyuk allomalar yurti va madaniyatlar chorrahasi",
-      "photos_text": "Eksklyuziv suratlar",
       "tours_title": "Bizning maxsus turlar bilan O‘zbekistonni kashf eting",
       "tours_text": "Samarqandning moviy gumbazlaridan tortib Xivaning qadimiy ko‘chalarigacha — O‘zbekiston bo‘ylab sayohatlarimiz madaniyat ixlosmandlari, tarix izlovchilari va sarguzashtsevarlar uchun yaratilgan. Dam olish kunlari sayohatidan tortib bir necha kunlik sarguzashtlargacha — sizning safaringiz aynan shu yerda boshlanadi."
+    },
+    "kazakhstan": {
+      "about_country_title": "Qozog'iston: Keng Ufqlar va Dadil Ruhlar Diyori",
+      "about_country_text1": "Qozog‘istonning chinakam mo‘jizasi nafaqat uning kengligida, balki uning qarama-qarshiliklaridadir — bu yerda sukunat kuch bilan, qadimiy an’analar zamonaviy intilishlar bilan uchrashadi. Astana va Olmaotaning zamonaviy osmono‘par binolaridan tashqariga chiqing — bu yerda shamol, vaqt va ko‘chmanchi g‘ururi bilan yasalgan dunyoni topasiz. Cheksiz dasht faqat manzara emas — u erkinlik ramzidir, avlodlarni shakllantirgan xalqning ruhidir.",
+      "about_country_text2": "Har bir qishloqda, olov atrofida aytilgan afsonalar mavjud. Har bir an’anaviy yurtda — o‘tmishga bog‘liqlik. Qozog‘ hayoti tabiatga hurmat, mehmondo‘stlik va jasoratga asoslangan — siz chorvador bilan qimiz ichayotganingizda yoki Tyan-Shan tog‘lariga chiqayotganingizda. Bu yer sayohatchilar, orzuchilar va sof, qudratli hamda abadiy narsani izlayotganlar uchun diyordir.",
+      "hero_title": "Cheksiz Ufqlar va Buyuk Dashtlar Diyori",
+      "tours_title": "Qozog‘istondagi Maxsus Turlarimizni Kashf Qiling",
+      "tours_text": "Har bir marshrut sizni dashtning yuragiga olib kiradi — bu yerda meros, tabiat va sarguzashtlar unutilmas tajribaga aylanadi."
+    },
+    "tajikistan": {
+      "about_country_title": "Tojikiston: Markaziy Osiyoning Tomi",
+      "about_country_text1": "Tojikiston — bu osmonu falakka cho‘zilgan tog‘lar va qadimiy tarix yurti. Pomir tog‘lari osmonga tegadi, va qadimiy karvon yo‘llari hanuz sayohatchilar hikoyalarini eslatadi. Bu yerda yovvoyi tabiat va go‘zallik Markaziy Osiyoda betakror manzara yaratadi. Mamlakat hududining 90 foizidan ortig‘i tog‘lardan iborat — bu joylar yurakdan tinchlik izlaganlar va orzuchilar uchun mo‘ljallangan.",
+      "about_country_text2": "Ammo Tojikiston faqat tog‘lar emas — bu iliqlik yurti. O‘lkadagi chekka qishloqlarda mehmondo‘stlik hayot tarzidir. Choy ulashiladi, hikoyalar aytiladi, urf-odatlar esa raqslar, matolar va bayramlar orqali yashaydi. Siz Vaxon Daryosi bo‘yidan yurganingizda ham, Dushanbening jonli bozorlarida sayr qilganingizda ham, har bir qadamingiz sizni qadimiy, ma’noli va unutilmas dunyoga olib boradi.",
+      "hero_title": "Tog‘lar, Muzliklar va Qadimiy Madaniyatlar Diyori",
+      "tours_title": "Tojikistondagi Maxsus Turlarimizni O‘rganing",
+      "tours_text": "Bizning tanlangan sayohatlarimiz sizni Tojikistonning yovvoyi go‘zalligi va madaniy yuragi bilan tanishtiradi — baland tog‘li sarguzashtlardan tortib, mahalliy oilalar bilan iliq suhbatlargacha."
+    },
+    "kyrgyzstan": {
+      "about_country_title": "Qirg‘iziston: Tog‘lar, Ko‘llar va Ko‘chmanchilar Diyori",
+      "about_country_text1": "Ammo Qirg‘iziston faqat manzara emas — bu ko‘chmanchi ruhning yashovchan merosidir. Keng yaylovlarda (jailoo) oilalar hali ham chorva boqadi, bu ajdodlardan qolgan hayot tarzidir. Sayohatchilar bu yerda begonalar emas — ular mehmon sifatida kutib olinadi: iliq qimiz va cheksiz samimiyat bilan. Yulduzlar ostida ertaklar tinglash, komuz ohanglari eshitish, tandirda pishirilgan nonni tatib ko‘rish — bu hayotning kundalik bir qismi, va u yerning o‘ziday boy.",
+      "about_country_text2": "Qirg‘iziston — bu tirik madaniyat. Baland yaylovlarda chorvachilik davom etmoqda, sayohatchilar ochiq qo‘llar bilan kutib olinadi. Bayramlarda burgutchilar, kiyiz ustalari va qadimiy ot o‘yinlari nishonlanadi. Har bir tashrif vaqt sayohatiga aylanadi — abadiy an’analarga boy, ammo hanuz hayotga to‘la olamga.",
+      "hero_title": "Tog‘lar Qadimiy Rivoyatlarni Pichirlaydi",
+      "tours_title": "Qirg‘izistondagi Maxsus Turlarimizni Kashf Qiling",
+      "tours_text": "Qirg‘izistondagi sayohatlarimiz sizni muhtasham tabiat, qadimiy turmush tarzi va tog‘larning ochiqko‘ngil ruhi bilan bog‘laydi."
+    },
+    "turkmenistan": {
+      "about_country_title": "Turkmaniston: Ipak Yo‘lining Yashirin Gavhari",
+      "about_country_text1": "Turkmaniston — bu sokinlik va abadiy sirlar diyori. Bu yerda oltin qumlar qadimiy shaharlarni yashiradi, cho‘l bag‘ridan esa marmardan shaharlar qad ko‘taradi. Qadimda Parfiya va Xorazm kabi qudratli imperiyalar hukmronlik qilgan, Merv va Nisa xarobalari esa savdogarlar, olimlar va Ipak yo‘lini bosib o‘tgan sivilizatsiyalar haqidagi hikoyalarni pichirlab turadi.",
+      "about_country_text2": "Ammo tarix ortida tirik madaniyat yashaydi: g‘ururli, bardoshli va mehmondo‘st. An’anaviy qishloqlarda gilamlar hanuz qadimiy ramzlar bilan to‘qiladi, keng Qoraqum cho‘lida yurtdan yurtdagi hayot davom etadi. Mashhur Darvoza gaz krateri — “Do‘zax darvozasi” — tunni go‘yo yer ostidan chiqqan mash’al kabi yoritadi. Bu yurtda mehmondo‘stlik muqaddas — choy ulashiladi, hikoyalar aytiladi, mehmon esa aziz inson sifatida kutib olinadi. Turkmaniston — bu shunchaki manzil emas, balki jasoratli va qiziquvchanlar uchun ochiladigan kashfiyotdir.",
+      "hero_title": "Tarix Nafas Olayotgan Zamin va Abadiy An’analar Oazisi",
+      "tours_title": "Eksklyuziv Sayohat Dasturlarimizni Ko‘rib Chiqing",
+      "tours_text": "Bizning maxsus tuzilgan sayohat paketlarimiz orom, sarguzasht va madaniyatni uyg‘unlashtiradi. Siz uchun eng zo‘r sayohat bu yerda!"
     }
   },
   "all": "Barchasi",

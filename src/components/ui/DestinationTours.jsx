@@ -49,7 +49,7 @@ export const DestinationTours = ({ title, text }) => {
           Trip Blogs
         </span>
         <div className="flex flex-col gap-y-8 lg:flex-row gap-x-5 items-center font-medium text-[#323232] uppercase">
-          <h2 className="text-3xl md:text-5xl lg:text-7xl w-full lg:w-[65%]">
+          <h2 className="text-3xl md:text-5xl w-full lg:w-[65%]">
             {title}
           </h2>
           <p className="text-xs md:text-lg w-full lg:w-[35%]">{text}</p>

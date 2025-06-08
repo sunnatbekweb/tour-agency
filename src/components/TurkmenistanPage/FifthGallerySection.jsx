@@ -5,7 +5,9 @@ import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import Masonry from "@mui/lab/Masonry";
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 export default function FifthGallerySection() {
+  const t = useTranslations();
   const [images, setImages] = useState([]);
   const getImagesWidth = (width) => {
     if (width <= 640) {
@@ -166,7 +168,7 @@ export default function FifthGallerySection() {
             Trip founder
           </p>
           <h2 className="fifthGallery__top-title font-medium text-[32px] leading-[40px] uppercase text-[#323232] w-[170px] md:w-full md:text-[56px]">
-            Exclusive photos
+            {t("destinations.exclusive_text")}
           </h2>
         </div>
         <div className="fifthGallery__bottom-box w-full">

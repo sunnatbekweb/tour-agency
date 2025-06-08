@@ -4,8 +4,8 @@ import { Link } from "@/i18n/navigation";
 import { useEffect, useRef, useState } from "react";
 import { Slide, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import RoadSection from "./RoadSection";
-import WhiteChevron from "../../../public/icons/WhiteChevron";
+import RoadSection from "../RoadSection";
+import WhiteChevron from "../../../../public/icons/WhiteChevron";
 import { useTranslations } from "next-intl";
 export default function FooterSection() {
   const t = useTranslations();
@@ -145,7 +145,7 @@ export default function FooterSection() {
                   alt="logo"
                 />
               </Link>
-              <p className="footer__top-left-text xl:font-normal xl:text-[32px] xl:leading-[34px] xl:tracking-tighter-[-2%] xl:text-white xl:w-[419px] xl:mb-[72px] 2xl:w-[519px]">
+              <p className="footer__top-left-text xl:font-normal xl:text-2xl xl:tracking-tighter-[-2%] xl:text-white xl:w-[419px] xl:mb-[72px] 2xl:w-[519px]">
                 {t("footer.email_text")}
               </p>
               <form
@@ -187,7 +187,7 @@ export default function FooterSection() {
               </form>
             </div>
             <nav className="footer__top-middle-box xl:flex xl:flex-col xl:justify-center xl:items-start">
-              <h4 className="footer__top-middle-list-text xl:font-medium xl:text-[40px] xl:leading-[100%] xl:tracking-tighter-[-2%] xl:text-white xl:mb-12">
+              <h4 className="footer__top-middle-list-text xl:font-medium xl:text-4xl xl:leading-[100%] xl:tracking-tighter-[-2%] xl:text-white xl:mb-12">
                 {t("footer.explore_text")}
               </h4>
               <ul className="footer__top-middle-list xl:flex xl:flex-col xl:justify-center xl:items-start xl:gap-9">
@@ -197,7 +197,7 @@ export default function FooterSection() {
                     key={index}
                   >
                     <Link className="footer__top-middle-links xl:flex xl:flex-col xl:justify-center xl:items-start">
-                      <p className="footer__top-middle-links-text xl:duration-500 xl:hover:duration-500 xl:font-normal xl:text-[30px] xl:leading-[100%] xl:tracking-tighter-[-2%] xl:text-white/70 xl:hover:text-white xl:active:opacity-50">
+                      <p className="footer__top-middle-links-text xl:duration-500 xl:hover:duration-500 xl:font-normal xl:text-2xl xl:leading-[100%] xl:tracking-tighter-[-2%] xl:text-white/70 xl:hover:text-white xl:active:opacity-50">
                         {item.links}
                       </p>
                     </Link>
@@ -206,10 +206,10 @@ export default function FooterSection() {
               </ul>
             </nav>
             <div className="footer__top-seond-middle-bottom-right-box xl:w-[350px] xl:flex xl:flex-col xl:justify-center xl:items-start 2xl:w-[418px]">
-              <h4 className="footer__top-seond-middle-bottom-right-box-title xl:w-[350px] xl:font-medium xl:text-[35px] xl:leading-[100%] xl:tracking-tighter-[-2%] xl:mb-[57.5px] xl:text-white 2xl:w-[418px] 2xl:text-[40px]">
+              <h4 className="footer__top-seond-middle-bottom-right-box-title xl:w-[350px] xl:font-medium xl:text-[35px] xl:leading-[100%] xl:tracking-tighter-[-2%] xl:mb-[57.5px] xl:text-white 2xl:w-[418px] 2xl:text-4xl">
                 {t("footer.why_travel_title")}
               </h4>
-              <q className="footer__top-seond-middle-bottom-right-box-texts xl:font-medium xl:text-[30px] xl:leading-[36px] xl:w-[350px] xl:mb-[57.5px] xl:text-white/70 xl:tracking-tighter-[-2%] 2xl:w-[418px] 2xl:text-[32px] 2xl:leading-[40px]">
+              <q className="footer__top-seond-middle-bottom-right-box-texts xl:font-medium xl:text-2xl xl:w-[350px] xl:mb-[57.5px] xl:text-white/70 xl:tracking-tighter-[-2%] 2xl:w-[418px]">
                 {t("footer.why_travel_text")}
               </q>
               <div className="footer__top-seond-middle-icon-box xl:w-full xl:flex xl:flex-row xl:justify-between xl:items-center">
@@ -244,11 +244,11 @@ export default function FooterSection() {
           <hr className="footer__hr xl:border-none xl:outline-none xl:bg-white/15 xl:w-full xl:h-[2px] xl:my-[52px]" />
           <div className="footer__bottom-box xl:pb-[52px]">
             <div className="footer__bottom-box-copy-box xl:w-full xl:flex xl:flex-row xl:justify-between xl:items-center xl:gap-8">
-              <p className="footer__bottom-box-copy-text xl:font-medium xl:text-[24px] xl:leading-[100%] xl:tracking-tighter-[-2%] xl:text-white xl:uppercase">
+              <p className="footer__bottom-box-copy-text xl:font-medium xl:text-xl xl:leading-[100%] xl:tracking-tighter-[-2%] xl:text-white xl:uppercase">
                 &copy; "Silk Road Wonders" 2025
               </p>
               <div className="footer__bottom-box-copy-logo-box xl:flex xl:flex-row xl:justify-center xl:items-center">
-                <p className="footer__bottom-box-developing-text xl:font-medium xl:text-[24px] xl:leading-[100%] xl:tracking-tighter-[-2%] xl:text-white">
+                <p className="footer__bottom-box-developing-text xl:font-medium xl:text-xl xl:leading-[100%] xl:tracking-tighter-[-2%] xl:text-white">
                   {t("footer.developed_by")}:&nbsp;&nbsp;
                 </p>
                 <a
@@ -257,7 +257,7 @@ export default function FooterSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <p className="footer__bottom-box-copy-logo-text xl:font-medium xl:text-[24px] xl:leading-[100%] xl:tracking-tighter-[-2%] xl:text-white xl:hover:opacity-50 xl:duration-500">
+                  <p className="footer__bottom-box-copy-logo-text xl:font-medium xl:text-xl xl:leading-[100%] xl:tracking-tighter-[-2%] xl:text-white xl:hover:opacity-50 xl:duration-500">
                     OneSystem
                   </p>
                 </a>

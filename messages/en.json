@@ -69,11 +69,42 @@
     "uzbekistan": {
       "about_country_title": "Uzbekistan: Crossroads of Civilizations",
       "about_country_text1": "Uzbekistan is the beating heart of Central Asia — a country where history lives in every mosaic and hospitality greets you at every corner. From the towering minarets of Khiva to the majestic Registan of Samarkand, Uzbekistan offers a cultural journey unlike any other. It’s where science once thrived, trade flourished, and traditions were born that still color the land today. Let the Silk Road guide your footsteps through this timeless land.",
-      "about_country_text2": "Uzbekistan is the beating heart of Central Asia — a country where history lives in every mosaic and hospitality greets you at every corner. From the towering minarets of Khiva to the majestic Registan of Samarkand, Uzbekistan offers a cultural journey unlike any other. It’s where science once thrived, trade flourished, and traditions were born that still color the land today. Let the Silk Road guide your footsteps through this timeless land.",
+      "about_country_text2": "Uzbekistan’s charm lies not only in its architectural wonders but in the warmth of its people and the richness of its living traditions. In bustling bazaars, the scent of spices mingles with the sound of craftsmen at work. Music, storytelling, and intricate artistry remain part of daily life — a true blend of ancient legacy and vibrant culture. Whether you're wandering through historic caravanserais or sharing a meal with locals, Uzbekistan welcomes you with open arms and timeless soul.",
       "hero_title": "Land of Great Scholars and Crossroads of Cultures",
-      "photos_text": "Exclusive photos",
       "tours_title": "Explore Uzbekistan with Our Signature Tours",
       "tours_text": "From the blue domes of Samarkand to the ancient streets of Khiva — our Uzbekistan tour packages are crafted for culture lovers, history seekers, and adventurous souls. Whether it’s a weekend escape or a multi-day immersion, your journey begins here."
+    },
+    "kazakhstan": {
+      "about_country_title": "Kazakhstan: Land of Wide Horizons and Bold Spirits",
+      "about_country_text1": "Kazakhstan’s true magic lies not only in its vastness, but in its contrasts — where silence meets strength, and ancient traditions meet modern ambition. Venture beyond the urban skylines of Astana and Almaty, and you’ll discover a world sculpted by wind, time, and nomadic pride. The boundless steppe isn’t just a landscape — it’s a symbol of freedom that has shaped generations of resilient, welcoming people.",
+      "about_country_text2": "In every village, you'll find stories passed down around the fire. In every traditional yurt, a connection to the past. The Kazakh way of life is deeply rooted in respect for nature, hospitality, and courage — whether you're sharing fermented kumis with a herder or climbing snow-covered peaks in the Tien Shan. This is a land for wanderers, dreamers, and anyone yearning to reconnect with something pure, powerful, and timeless.",
+      "hero_title": "Land of Endless Horizons and Land of the Great Steppe",
+      "tours_title": "Explore Kazakhstan Through Our Signature Tours",
+      "tours_text": "Each itinerary is designed to immerse you in the soul of the steppe — where heritage, nature, and adventure blend into unforgettable experiences."
+    },
+    "tajikistan": {
+      "about_country_title": "Tajikistan: Roof of Central Asia",
+      "about_country_text1": "Tajikistan is a land of staggering mountains and deep-rooted history — a place where the Pamir Mountains scrape the sky and ancient caravan routes still echo with stories of travelers long gone. Here, rugged beauty and raw nature create a backdrop like no other in Central Asia. With over 90% of the country covered in mountains, this is where trekkers, dreamers, and seekers of solitude find their path.",
+      "about_country_text2": "But Tajikistan is not only wilderness — it is warmth. In remote villages, hospitality is a way of life. Chai is shared, stories are offered, and traditions are kept alive in dances, fabrics, and festivals. Whether you’re tracing the Wakhan Corridor or wandering the vibrant markets of Dushanbe, every step here connects you with something ancient, soulful, and utterly unforgettable.",
+      "hero_title": "Land of Mountains and Glaciers and Ancient Cultures",
+      "tours_title": "Explore tajikistan Through Our Signature Tours",
+      "tours_text": "Our curated tours reveal the untamed beauty and cultural heartbeat of Tajikistan — from high-altitude adventures to quiet moments with local families."
+    },
+    "kyrgyzstan": {
+      "about_country_title": "Kyrgyzstan: Land of Peaks, Lakes & Nomads",
+      "about_country_text1": "But Kyrgyzstan is more than scenery — it's a living legacy of the nomadic soul. In the vast jailoo (summer pastures), families still herd their animals as they have for generations. Travelers are not strangers here — they are guests, welcomed with a bowl of warm kumis and heartfelt hospitality that knows no boundaries. Sharing stories under the stars, listening to the music of komuz, and tasting bread baked in clay tandyrs — this is everyday life, as rich as the land itself.",
+      "about_country_text2": "But Kyrgyzstan is more than scenery — it's a living culture. In the high pastures (jailoo), families still herd livestock and welcome travelers with open arms and warm kumis. Festivals celebrate eagle hunters, felt artisans, and horse games that date back millennia. Every visit becomes a soulful journey into a world untouched by time, yet alive with tradition.",
+      "hero_title": "Where Mountains Whisper Ancient Tales",
+      "tours_title": "Explore kyrgyzstan Through Our Signature Tours",
+      "tours_text": "Our Kyrgyzstan tours connect you with majestic nature, ancient ways of life, and the open-hearted spirit of the mountains."
+    },
+    "turkmenistan": {
+      "about_country_title": "Turkmenistan: The Hidden Jewel of the Silk Road",
+      "about_country_text1": "Turkmenistan is a land of deep silence and timeless secrets — where golden sands hide ancient cities, and marble cities rise in the desert. Once home to mighty empires like Parthia and Khwarezm, this country holds the ruins of Merv and Nisa, whispering stories of traders, scholars, and civilizations that shaped the Silk Road.",
+      "about_country_text2": "But beyond the history lies a living culture: proud, resilient, and welcoming. In traditional villages, carpets are still handwoven with centuries-old symbolism; in the vast Karakum Desert, yurts still dot the horizon. The blazing Darvaza Gas Crater — “The Door to Hell” — lights up the night like a torch from the underworld. Hospitality here is sacred — tea is shared, stories are offered, and visitors are treated as honored guests. Turkmenistan isn’t just a destination — it’s a revelation waiting to unfold, for the curious and the courageous.",
+      "hero_title": "Where the Past Still Breathes and Oasis of Timeless Traditions",
+      "tours_title": "Explore Our Exclusive Tour packgages",
+      "tours_text": "Find your perfect getaway with our curated tour packages. Adventure, relaxation or culture—it's all here for you!"
     }
   },
   "all": "All",

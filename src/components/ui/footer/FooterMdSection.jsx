@@ -4,7 +4,7 @@ import "./FooterMdSection.css";
 import { useEffect, useRef, useState } from "react";
 import { Slide, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import MdRoadSection from "./MdRoadSection";
+import MdRoadSection from "../MdRoadSection";
 import { useTranslations } from "next-intl";
 export default function FooterMdSection() {
   const t = useTranslations();

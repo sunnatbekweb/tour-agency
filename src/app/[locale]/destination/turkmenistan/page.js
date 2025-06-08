@@ -8,25 +8,28 @@ import { usePathname } from "next/navigation";
 import TurkmenistanSection from "@/components/TurkmenistanPage/TurkmenistanSection";
 import FifthFilterSection from "@/components/TurkmenistanPage/FifthFilterSection";
 import FifthGallerySection from "@/components/TurkmenistanPage/FifthGallerySection";
+import { useTranslations } from "next-intl";
 export default function Turkmenistan() {
   const AboutCountries = useAboutCountries();
   const pathname = usePathname();
   const country = pathname.split("/")[3];
   const aboutCountry = AboutCountries.filter((item) => item.slug === country);
+  const t = useTranslations();
   return (
     <>
       <HeroSecondSection
         image={"/images/turkmenistan_hero.svg"}
-        title={"Turkmenistan"}
-        subtitle={
-          "Where the Past Still Breathes and Oasis of Timeless Traditions"
-        }
+        title={t("header.destinations.tk")}
+        subtitle={t("destinations.turkmenistan.hero_title")}
       />
       <CivilizationSection props={aboutCountry[0]} />
       <TurkmenistanSection />
-      <FifthGallerySection />
       <FifthFilterSection />
-      <DestinationTours />
+      <FifthGallerySection />
+      <DestinationTours
+        title={t("destinations.turkmenistan.tours_title")}
+        text={t("destinations.turkmenistan.tours_text")}
+      />
     </>
   );
 }

@@ -4,7 +4,7 @@ import "./FooterSmSection.css";
 import { useEffect, useRef, useState } from "react";
 import { Slide, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import SmRoadSection from "./SmRoadSection";
+import SmRoadSection from "../SmRoadSection";
 import { useTranslations } from "next-intl";
 export default function FooterSmSection() {
   const t = useTranslations();

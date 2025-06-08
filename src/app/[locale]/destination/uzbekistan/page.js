@@ -20,7 +20,7 @@ export default function Uzbekistan() {
       <HeroSecondSection
         image={"/images/uzbekistan__xl.jpg"}
         title={t("header.destinations.uz")}
-        subtitle={"Land of Great Scholars and Crossroads of Cultures"}
+        subtitle={t("destinations.uzbekistan.hero_title")}
       />
       <CivilizationSection props={aboutCountry[0]} />
       <UzbekistanSection />

@@ -8,23 +8,28 @@ import { useAboutCountries } from "@/store/data";
 import KyrgyzstanSection from "@/components/KyrgyzstanPage/KyrgyzstanSection";
 import FourthFilterSection from "@/components/KyrgyzstanPage/FourthFilterSection";
 import FourthGallerySection from "@/components/KyrgyzstanPage/FourthGallerySection";
+import { useTranslations } from "next-intl";
 export default function Kyrgyzstan() {
   const AboutCountries = useAboutCountries();
   const pathname = usePathname();
   const country = pathname.split("/")[3];
   const aboutCountry = AboutCountries.filter((item) => item.slug === country);
+  const t = useTranslations();
   return (
     <>
       <HeroSecondSection
         image={"/images/kyrgyzstan_hero.jpg"}
-        title={"Kyrgyzstan"}
-        subtitle={"Where Mountains Whisper Ancient Tales"}
+        title={t("header.destinations.kg")}
+        subtitle={t("destinations.kyrgyzstan.hero_title")}
       />
       <CivilizationSection props={aboutCountry[0]} />
       <KyrgyzstanSection />
       <FourthFilterSection />
       <FourthGallerySection />
-      <DestinationTours />
+      <DestinationTours
+        title={t("destinations.kyrgyzstan.tours_title")}
+        text={t("destinations.kyrgyzstan.tours_text")}
+      />
     </>
   );
 }

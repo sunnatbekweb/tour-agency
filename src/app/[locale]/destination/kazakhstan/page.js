@@ -8,23 +8,28 @@ import { useAboutCountries } from "@/store/data";
 import KazakhstanSection from "@/components/KazakhstanPage/KazakhstanSection";
 import SecondFilterSection from "@/components/KazakhstanPage/SecondFilterSection";
 import SecondsecondGallerySection from "@/components/KazakhstanPage/SecondGallerySection";
+import { useTranslations } from "next-intl";
 export default function Kazahstan() {
   const AboutCountries = useAboutCountries();
   const pathname = usePathname();
   const country = pathname.split("/")[3];
   const aboutCountry = AboutCountries.filter((item) => item.slug === country);
+  const t = useTranslations();
   return (
     <>
       <HeroSecondSection
         image={"/images/kazahstan_hero.jpg"}
-        title={"Kazahstan"}
-        subtitle={"Land of Endless Horizons and Land of the Great Steppe"}
+        title={t("header.destinations.kz")}
+        subtitle={t("destinations.kazakhstan.hero_title")}
       />
       <CivilizationSection props={aboutCountry[0]} />
-      <SecondsecondGallerySection />
       <KazakhstanSection />
       <SecondFilterSection />
-      <DestinationTours />
+      <SecondsecondGallerySection />
+      <DestinationTours
+        title={t("destinations.kazakhstan.tours_title")}
+        text={t("destinations.kazakhstan.tours_text")}
+      />
     </>
   );
 }
