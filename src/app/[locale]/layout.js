@@ -8,19 +8,16 @@ import { Footer } from "@/components/layouts/Footer/Footer";
 import "@/styles/fonts.css";
 import "@/styles/style.css";
 import "@/styles/globals.css";
-
 export const metadata = {
   title: "Tour Agency",
   description: "Created by OneSystem",
 };
-
 export default async function RootLayout({ children, params }) {
   const { locale } = await params;
   const messages = await getMessages();
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
-
   return (
     <html lang={locale}>
       <body className="antialiased">

@@ -13,7 +13,6 @@ import { TourItineraryAccordion } from '@/components/ui/tour/TourItineraryAccord
 import { TripForm } from '@/components/ui/tour/TripForm';
 import { DatePriceItem } from '@/components/ui/DatePriceItem';
 import '@/styles/page_styles/trip.css';
-
 export default function TripDetail() {
   const [trip, setTrip] = useState();
   const params = useParams();
