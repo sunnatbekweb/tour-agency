@@ -107,6 +107,17 @@
       "tours_text": "Bizning maxsus tuzilgan sayohat paketlarimiz orom, sarguzasht va madaniyatni uyg‘unlashtiradi. Siz uchun eng zo‘r sayohat bu yerda!"
     }
   },
+  "trip_finder": {
+    "top_title": "Sayohat topuvchisi",
+    "title": "Maxsus Sayohat Dasturlarimizni Kashiﬂang",
+    "search": {
+      "destination": "Manzil",
+      "duration": "Davomiyligi",
+      "year": "Yil",
+      "type": "Sayohat Turi",
+      "search_btn": "Qidirish"
+    }
+  },
   "all": "Barchasi",
   "loading": "Yuklanmoqda...",
   "not_found": "Turlar topilmadi!"

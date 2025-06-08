@@ -89,6 +89,7 @@ export const ContactForm = () => {
             name="email"
             required
             onChange={handleChange}
+            placeholder="Enter you email"
             value={formData.email}
             className="w-full bg-[#B4A2971A] border border-[#D9D9D9] placeholder:text-[#BDBDBD] px-6 py-3 rounded-lg focus:outline-[#A5958B]"
           />

@@ -107,6 +107,17 @@
       "tours_text": "Find your perfect getaway with our curated tour packages. Adventure, relaxation or culture—it's all here for you!"
     }
   },
+  "trip_finder": {
+    "top_title": "Trip founder",
+    "title": "Explore Our Exclusive Tour packgages",
+    "search": {
+      "destination": "Destination",
+      "duration": "Duration",
+      "year": "Year",
+      "type": "Trip Type",
+      "search_btn": "Search"
+    }
+  },
   "all": "All",
   "loading": "Loading...",
   "not_found": "Trips not found!"

@@ -7,8 +7,11 @@ import { Pagination } from "@/components/ui/Pagination";
 import { useAppDispatch, useAppSelector } from "@/lib/hooks";
 import { fetchTours, setPage } from "@/features/tours/toursSlice";
 import "@/styles/page_styles/trip-finder.css";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function TripFinder() {
+  const locale = useLocale();
+  const t = useTranslations();
   const dispatch = useAppDispatch();
   const { list, count, loading, currentPage, filters } = useAppSelector(
     (state) => state.tours
@@ -26,7 +29,19 @@ export default function TripFinder() {
     <>
       <section className="trip-finder">
         <h1>
-          Best Trips to <br /> <span>Central Asia</span>
+          {locale === "en" ? (
+            <>
+              Best Trips to <br /> <span>Central Asia</span>
+            </>
+          ) : locale === "ru" ? (
+            <>
+              Лучшие путешествия в <br /> <span>Центральную Азию</span>
+            </>
+          ) : (
+            <>
+              Markaziy Osiyoga <br /> <span>Eng Zo'r Sayohatlar</span>
+            </>
+          )}
         </h1>
       </section>
       <section>
@@ -37,9 +52,9 @@ export default function TripFinder() {
       <section className="pt-[240px] sm:pt-[180px] lg:pt-[145px] bg-[#FFF7F3]">
         <div className="container">
           <div className="font-medium px-6 lg:px-0 uppercase md:hidden mb-12">
-            <span className="text-[#A5958B]">Trip founder</span>
+            <span className="text-[#A5958B]">{t("trip_finder.top_title")}</span>
             <h2 className="mt-2 text-3xl text-[#323232]">
-              Explore Our Exclusive Tour packages
+              {t("trip_finder.title")}
             </h2>
           </div>
           <div
@@ -47,13 +62,13 @@ export default function TripFinder() {
           >
             {loading ? (
               <p className="font-medium text-2xl text-center mt-40">
-                Loading...
+                {t("loading")}
               </p>
             ) : list?.length > 0 ? (
               list?.map((card, index) => <TourCards props={card} key={index} />)
             ) : (
               <p className="font-medium text-2xl text-center mt-40">
-                Trips not found!
+                {t("not_found")}
               </p>
             )}
           </div>

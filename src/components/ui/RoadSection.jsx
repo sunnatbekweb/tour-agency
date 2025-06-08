@@ -17,14 +17,14 @@ export default function RoadSection() {
             />
           </Link>
           <div className="road__text-boxes xl:flex xl:flex-col xl:justify-center xl:items-center xl:mb-[114px]">
-            <h3 className="road__first-title xl:block xl:font-medium xl:text-[64px] xl:leading-[100%] xl:tracking-tighter-[-2%] xl:uppercase xl:text-[#323232]">
+            <h3 className="road__first-title text-center xl:block xl:font-medium xl:text-[64px] xl:leading-[100%] xl:tracking-tighter-[-2%] xl:uppercase xl:text-[#323232]">
               {locale === "en"
                 ? "Explore and find yourself"
                 : locale === "uz"
                   ? "Ipak yo'lida sayohat qilib,"
                   : "Исследуйте и найдите себя"}
             </h3>
-            <h3 className="road__second-title xl:block xl:font-medium xl:text-[64px] xl:leading-[100%] xl:tracking-tighter-[-2%] xl:uppercase xl:text-[#323232]">
+            <h3 className="road__second-title text-center xl:block xl:font-medium xl:text-[64px] xl:leading-[100%] xl:tracking-tighter-[-2%] xl:uppercase xl:text-[#323232]">
               {locale === "en"
                 ? "In Silk road Journey"
                 : locale === "uz"

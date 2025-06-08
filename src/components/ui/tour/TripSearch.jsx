@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Location } from "../../../../public/icons/Location";
 import { Clock } from "../../../../public/icons/Clock";
 import { Flag } from "../../../../public/icons/Flag";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useDispatch } from "react-redux";
 import { setFilters } from "@/features/tours/toursSlice";
 import axios from "axios";
@@ -17,6 +17,7 @@ export function TripSearch() {
     year: "",
   });
   const locale = useLocale();
+  const t = useTranslations();
   const dispatch = useDispatch();
 
   const getTripTheme = async () => {
@@ -74,16 +75,19 @@ export function TripSearch() {
             type="text"
             name="destination"
             id="destination"
-            placeholder="Destination"
             value={filterData.destination}
             onChange={handleChange}
-            className="w-full h-[48px] text-sm md:text-base lg:h-[70px] focus:outline-none cursor-pointer"
+            className={`w-full h-[48px] text-sm md:text-base lg:h-[70px] focus:outline-none cursor-pointer ${filterData.destination === "" ? "text-[#BDBDBD]" : "text-[#323232]"}`}
           >
-            <option value="" disabled>
-              Destination
+            <option value="" disabled className="text-[#BDBDBD]">
+              {t("trip_finder.search.destination")}
             </option>
             {destinations?.map((destination) => (
-              <option key={destination.id} value={destination?.id}>
+              <option
+                key={destination.id}
+                value={destination?.id}
+                className="text-[#323232]"
+              >
                 {destination?.[`name_${locale}`]}
               </option>
             ))}
@@ -100,7 +104,7 @@ export function TripSearch() {
             type="number"
             name="duration"
             id="duration"
-            placeholder="Duration"
+            placeholder={t("trip_finder.search.duration")}
             value={filterData.duration}
             onChange={handleChange}
             className="w-full h-[48px] text-sm md:text-base lg:h-[70px] focus:outline-none"
@@ -117,7 +121,7 @@ export function TripSearch() {
             type="number"
             name="year"
             id="year"
-            placeholder="Year"
+            placeholder={t("trip_finder.search.year")}
             value={filterData.year}
             onChange={handleChange}
             className="w-full h-[48px] text-sm md:text-base lg:h-[70px] focus:outline-none"
@@ -136,20 +140,24 @@ export function TripSearch() {
             id="trip_theme"
             value={filterData.trip_theme}
             onChange={handleChange}
-            className="w-full h-[48px] text-sm md:text-base lg:h-[70px] focus:outline-none cursor-pointer"
+            className={`w-full h-[48px] text-sm md:text-base lg:h-[70px] focus:outline-none cursor-pointer ${filterData.trip_theme === "" ? "text-[#BDBDBD]" : "text-[#323232]"}`}
           >
             <option value="" disabled>
-              Trip Type
+              {t("trip_finder.search.type")}
             </option>
             {tripTheme?.map((theme) => (
-              <option key={theme?.id} value={theme?.id}>
+              <option
+                key={theme?.id}
+                value={theme?.id}
+                className="text-[#323232]"
+              >
                 {theme?.[`name_${locale}`]}
               </option>
             ))}
           </select>
         </label>
         <button className="w-full h-[48px] md:text-base lg:h-[70px] sm:col-span-2 lg:col-span-1 rounded-[40px] bg-[#A5958B] border-4 xl:border-none border-white font-medium text-2xl text-white">
-          Search
+          {t("trip_finder.search.search_btn")}
         </button>
       </form>
     </div>
