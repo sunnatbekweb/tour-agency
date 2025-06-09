@@ -39,7 +39,7 @@ export default function TripFinder() {
             </>
           ) : (
             <>
-              Markaziy Osiyoga <br /> <span>Eng Zo'r Sayohatlar</span>
+              Markaziy Osiyoga <br /> <span>Eng Zo&apos;r Sayohatlar</span>
             </>
           )}
         </h1>
