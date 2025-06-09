@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React, { useEffect } from "react";
 import { Pagination } from "@/components/ui/Pagination";
@@ -7,12 +7,15 @@ import { useAppDispatch, useAppSelector } from "@/lib/hooks";
 import { fetchBlogs } from "@/features/blogs/blogsSlice";
 import { setPage } from "@/features/tours/toursSlice";
 import "@/styles/page_styles/trip.css";
+import SecondContactButton from "@/components/ui/SecondContactButton";
+import { useTranslations } from "next-intl";
 
 export default function Blog() {
   const dispatch = useAppDispatch();
   const { list, count, loading, currentPage } = useAppSelector(
     (state) => state.blogs
   );
+  const t = useTranslations();
 
   useEffect(() => {
     dispatch(fetchBlogs(currentPage));
@@ -26,19 +29,19 @@ export default function Blog() {
     <>
       <section className="blog_hero">
         <div className="container h-full flex flex-col items-center justify-center">
-          <h1 className="w-full sm:w-1/2 lg:max-w-[860px] font-medium text-7xl lg:text-9xl text-white text-center">
+          <h1 className="w-full sm:w-1/2 lg:max-w-1/5 font-medium text-5xl lg:text-7xl text-white text-center">
             Wander. Discover. Share.
           </h1>
-          <div className="absolute bottom-20">
-            <button className="w-[162px] h-[48px] lg:w-[216px] lg:h-[72px] bg-white font-medium text-xl lg:text-2xl text-[#656267] rounded-4xl 2xl:hidden">
-              Contact us
-            </button>
+          <div className="absolute bottom-20 2xl:hidden">
+            <SecondContactButton>{t("header.contact")}</SecondContactButton>
           </div>
         </div>
       </section>
       <section className="pt-[100px]">
         <div className="container font-medium px-5">
-          <span className="text-xl text-[#A5958B] uppercase block mb-8">Trip Blogs</span>
+          <span className="text-xl text-[#A5958B] uppercase block mb-8">
+            Trip Blogs
+          </span>
           <h2 className="text-3xl md:text-5xl lg:text-7xl uppercase w-full lg:w-3/4 mb-20">
             Where Cultures Converge and History Lives
           </h2>
