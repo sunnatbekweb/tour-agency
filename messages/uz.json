@@ -116,6 +116,33 @@
       "year": "Yil",
       "type": "Sayohat Turi",
       "search_btn": "Qidirish"
+    },
+    "trip_detail": {
+      "top_text": "Sayohat Bloglari",
+      "from": "Boshlanishi",
+      "reservation": "Bron qilish",
+      "tour_info": {
+        "title": "Sayohat haqida ma’lumot",
+        "destination": "Manzil",
+        "trip_theme": "Sayohat Mavzusi",
+        "transports": "Transport vositalari",
+        "ages": "Yosh chegarasi",
+        "accomendation": "Yotoq joyi",
+        "duration": "Davomiyligi",
+        "group_size": "Guruh hajmi"
+      },
+      "places": "Ko‘rasiz",
+      "tour_itinerary": {
+        "title": "Sayohat dasturi",
+        "showAll": "Hammasini ko‘rish",
+        "introduction": "Kirish"
+      },
+      "dates_Prices": "Sana va Narxlar",
+      "form_title": "Sayohatingiz xabardan boshlanadi, Biz bilan bog‘laning 👋",
+      "contacts": "Kompaniya bilan bog‘lanish:",
+      "avilable": "Mavjud",
+      "sold_out": "Sotilgan",
+      "occupancy": "Ikki kishilik tur joylashuvi"
     }
   },
   "all": "Barchasi",

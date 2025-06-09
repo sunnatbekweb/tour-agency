@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import axios from "axios";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export const TripForm = () => {
   const [destinations, setDestinations] = useState();
@@ -14,6 +14,7 @@ export const TripForm = () => {
     message: "",
   });
   const locale = useLocale();
+  const t = useTranslations();
   const getDestinations = async () => {
     try {
       await axios
@@ -69,7 +70,7 @@ export const TripForm = () => {
       className="py-6 px-4 rounded-2xl bg-[#B4A297]"
     >
       <h2 className="text-2xl md:text-4xl lg:text-5xl w-full xl:w-[55%] mb-10 md:mb-14">
-        Your journey starts with a message, Get in Touch 👋
+        {t("trip_finder.trip_detail.form_title")}
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-4 lg:gap-x-6">
         <label
@@ -183,11 +184,11 @@ export const TripForm = () => {
       </label>
       <div className="mt-6 md:mt-8 flex items-center justify-between">
         <button className="w-full md:w-[180px] lg:w-[320px] py-4 rounded-lg md:rounded-4xl bg-white font-semibold md:text-lg lg:text-xl text-[#656267]">
-          Contact us
+          {t("header.contact")}
         </button>
         <div className="opacity-50 text-right hidden lg:flex flex-col">
           <p>
-            Company contacts:{" "}
+            {t("trip_finder.trip_detail.contacts")}{" "}
             <Link href={"mailto:silroadwondres@gmail.com"}>
               silroadwondres@gmail.com
             </Link>

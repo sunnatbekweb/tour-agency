@@ -116,6 +116,33 @@
       "year": "Year",
       "type": "Trip Type",
       "search_btn": "Search"
+    },
+    "trip_detail": {
+      "top_text": "Trip Blogs",
+      "from": "From",
+      "reservation": "Make a reservation",
+      "tour_info": {
+        "title": "Tour information",
+        "destination": "Destination",
+        "trip_theme": "Trip Theme",
+        "transports": "Transports",
+        "ages": "Ages",
+        "accomendation": "Accomendation",
+        "duration": "Duration",
+        "group_size": "Group Size"
+      },
+      "places": "Places you will see",
+      "tour_itinerary": {
+        "title": "Tour itinerary",
+        "showAll": "Show all",
+        "introduction": "Introduction"
+      },
+      "dates_Prices": "Dates & Prices",
+      "form_title": "Your journey starts with a message, Get in Touch 👋 ",
+      "contacts": "Company contacts:",
+      "avilable": "Avilable",
+      "sold_out": "Sold out",
+      "occupancy": "Tour double occupancy"
     }
   },
   "all": "All",

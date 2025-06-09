@@ -6,9 +6,9 @@ import { BlogCard } from "@/components/ui/BlogCard";
 import { useAppDispatch, useAppSelector } from "@/lib/hooks";
 import { fetchBlogs } from "@/features/blogs/blogsSlice";
 import { setPage } from "@/features/tours/toursSlice";
-import "@/styles/page_styles/trip.css";
 import SecondContactButton from "@/components/ui/SecondContactButton";
 import { useTranslations } from "next-intl";
+import "@/styles/page_styles/trip.css";
 
 export default function Blog() {
   const dispatch = useAppDispatch();
