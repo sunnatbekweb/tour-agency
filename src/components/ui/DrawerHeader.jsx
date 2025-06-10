@@ -36,12 +36,12 @@ export default function DrawerHeader({ modal, close }) {
           </button>
           <Link href="/">
             <img
-              className="drawerHeader__mini-logo w-[67px] h-[37px] md:w-[140px] md:h-[77px]"
+              className="drawerHeader__mini-logo inline-block w-[67px] h-[37px] md:w-[140px] md:h-[77px]"
               src="/icons/logo.svg"
               alt="logo"
             />
           </Link>
-          <div className="drawerHeader__empty-box w-[54.92px] h-[37px] opacity-0 md:w-[121.29px] md:h-[73px]" />
+          <div className="drawerHeader__empty-box opacity-0 w-[69.75px] h-[38px] md:w-[87.75px] md:h-[55px]" />
         </div>
         <nav className="drawerHeader__nav flex flex-col items-center justify-center min-h-[70vh]">
           <ul className="drawerHeader__list w-full flex flex-col items-center">

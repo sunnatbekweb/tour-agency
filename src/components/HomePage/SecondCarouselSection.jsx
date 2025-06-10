@@ -5,31 +5,33 @@ import "swiper/css/autoplay";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
+import { useTranslations } from "use-intl";
 export default function SecondCarouselSection() {
+  const t = useTranslations();
   const data = [
     {
       image: "/images/first__image.jpg",
-      titles: "Splendor of Ancient Khiva",
+      titles: t("home_SecondCarousel.home_SecondCarousel-title"),
       description: "images",
     },
     {
       image: "/images/second__image.jpg",
-      titles: "Splendor of Ancient Khiva",
+      titles: t("home_SecondCarousel.home_SecondCarousel-second-title"),
       description: "images",
     },
     {
       image: "/images/third__image.jpg",
-      titles: "Elegance of Uzbek Traditions",
+      titles: t("home_SecondCarousel.home_SecondCarousel-third-title"),
       description: "images",
     },
     {
       image: "/images/second__image.jpg",
-      titles: "Traditional Colorful Crafts",
+      titles: t("home_SecondCarousel.home_SecondCarousel-fourth-title"),
       description: "images",
     },
     {
       image: "/images/third__image.jpg",
-      titles: "Elegance of Uzbek Traditions",
+      titles: t("home_SecondCarousel.home_SecondCarousel-fifth-title"),
       description: "images",
     },
   ];
@@ -69,7 +71,7 @@ export default function SecondCarouselSection() {
                   alt={item.description}
                 />
               </div>
-              <p className="secondCarousel__image-texts rounded-b-[8px] font-medium text-center text-white text-[18px] absolute bottom-[0px] py-[24px] pl-[0px] z-[1] bg-black/65 w-full md:rounded-b-[24px] md:text-[32px] md:pr-[0px] md:py-[36px] xl:py-[26px] xl:text-[48px] xl:text-center xl:leading-[56px]">
+              <p className="secondCarousel__image-texts rounded-b-[8px] font-medium text-center text-white text-[18px] absolute bottom-[0px] py-[24px] pl-[0px] z-[1] bg-black/65 w-full md:rounded-b-[24px] md:text-[32px] md:pr-[0px] md:py-[36px] xl:py-[26px] xl:text-center">
                 {item.titles}
               </p>
             </SwiperSlide>

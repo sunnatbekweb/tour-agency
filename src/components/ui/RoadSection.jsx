@@ -21,21 +21,23 @@ export default function RoadSection() {
               {locale === "en"
                 ? "Explore and find yourself"
                 : locale === "uz"
-                  ? "Ipak yo'lida sayohat qilib,"
+                  ? "Ipak yo'li sayohatida o'zingizni,"
                   : "Исследуйте и найдите себя"}
             </h3>
             <h3 className="road__second-title text-center xl:block xl:font-medium xl:text-[64px] xl:leading-[100%] xl:tracking-tighter-[-2%] xl:uppercase xl:text-[#323232]">
               {locale === "en"
                 ? "In Silk road Journey"
                 : locale === "uz"
-                  ? "o'zingizni kashf eting"
-                  : "в путешествии по Шелковому пути"}
+                  ? "kashf qiling va toping"
+                  : "в путешествии по шелковому пути"}
             </h3>
           </div>
-          <button className="road__button xl:flex xl:flex-row xl:justify-center xl:items-center xl:gap-3.5 xl:active:opacity-50">
-            {t("craft_adventure.button")}
-            <RightChevron />
-          </button>
+          <Link href={"/contact"}>
+            <button className="road__button xl:flex xl:flex-row xl:justify-center xl:items-center xl:gap-3.5 xl:active:opacity-50">
+              {t("home_unique.home_unique-button")}
+              <RightChevron />
+            </button>
+          </Link>
         </div>
       </section>
     </div>

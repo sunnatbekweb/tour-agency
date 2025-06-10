@@ -21,19 +21,21 @@ export default function MdRoadSection() {
               {locale === "en"
                 ? "Explore and find yourself"
                 : locale === "uz"
-                  ? "Ipak yo'lida sayohat qilib,"
+                  ? "Ipak yo'li sayohatida o'zingizni,"
                   : "Исследуйте и найдите себя"}
               {locale === "en"
                 ? "In Silk road Journey"
                 : locale === "uz"
-                  ? "o'zingizni kashf eting"
-                  : "в путешествии по Шелковому пути"}
+                  ? "kashf qiling va toping"
+                  : "в путешествии по шелковому пути"}
             </h3>
           </div>
-          <button className="mdRoad__button md:flex md:flex-row md:justify-center md:items-center md:gap-3.5 md:active:opacity-50">
-            {t("craft_adventure.button")}
-            <RightChevron />
-          </button>
+          <Link href={"/contact"}>
+            <button className="mdRoad__button md:flex md:flex-row md:justify-center md:items-center md:gap-3.5 md:active:opacity-50">
+              {t("home_unique.home_unique-button")}
+              <RightChevron />
+            </button>
+          </Link>
         </div>
       </section>
     </div>

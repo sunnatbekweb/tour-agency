@@ -22,7 +22,6 @@ const images = [
 ];
 export default function HeroSectoin() {
   const t = useTranslations();
-
   const link = [
     {
       icon: "icons/right__arrow.svg",
