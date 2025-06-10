@@ -1,95 +1,133 @@
-'use client';
-import './CarouselSection.css';
-import 'swiper/css';
-import 'swiper/css/autoplay';
-import 'swiper/css/navigation';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay } from 'swiper/modules';
-import BookingButton from '../ui/BookingButton';
+"use client";
+import "./CarouselSection.css";
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/navigation";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
+import BookingButton from "../ui/BookingButton";
+import { useTranslations } from "use-intl";
 export default function CarouselSection() {
+  const t = useTranslations();
   const data = [
     {
-      locationIcon: 'icons/location__icon.svg',
-      locationText: 'Uzbekistan, Samarkand',
-      locationImage: 'images/hystorical__samarkand.jpg',
-      locationDescription: 'samarkand__image',
-      locationTitle: 'Hystorical Samarkand City',
-      locationPrice: '$456.99',
-      locationTickIcon: 'icons/tick__icon.svg',
+      locationIcon: "icons/location__icon.svg",
+      locationText: t("home_carousel.home_carousel-text"),
+      locationImage: "images/hystorical__samarkand.jpg",
+      locationDescription: "samarkand__image",
+      locationTitle: t("home_carousel.home_carousel-title"),
+      locationPrice: "$456.99",
+      locationTickIcon: "icons/tick__icon.svg",
       locationDetails: [
-        'Including Accomandation',
-        'Free Proffesional Guide Tour',
-        '3 Days 2 Nights trip',
+        t(
+          "home_carousel.home_carousel-detail-first.home_carousel-detail-first-1"
+        ),
+        t(
+          "home_carousel.home_carousel-detail-first.home_carousel-detail-first-2"
+        ),
+        t(
+          "home_carousel.home_carousel-detail-first.home_carousel-detail-first-3"
+        ),
       ],
     },
     {
-      locationIcon: 'icons/location__icon.svg',
-      locationText: 'Uzbekistan, Samarkand',
-      locationImage: 'images/hystorical__samarkand.jpg',
-      locationDescription: 'samarkand__image',
-      locationTitle: 'Hystorical Samarkand City',
-      locationPrice: '$456.99',
-      locationTickIcon: 'icons/tick__icon.svg',
+      locationIcon: "icons/location__icon.svg",
+      locationText: t("home_carousel.home_carousel-second-text"),
+      locationImage: "images/hystorical__samarkand.jpg",
+      locationDescription: "samarkand__image",
+      locationTitle: t("home_carousel.home_carousel-second-title"),
+      locationPrice: "$456.99",
+      locationTickIcon: "icons/tick__icon.svg",
       locationDetails: [
-        'Including Accomandation',
-        'Free Proffesional Guide Tour',
-        '3 Days 2 Nights trip',
+        t(
+          "home_carousel.home_carousel-detail-second.home_carousel-detail-second-1"
+        ),
+        t(
+          "home_carousel.home_carousel-detail-second.home_carousel-detail-second-2"
+        ),
+        t(
+          "home_carousel.home_carousel-detail-second.home_carousel-detail-second-3"
+        ),
       ],
     },
     {
-      locationIcon: 'icons/location__icon.svg',
-      locationText: 'Uzbekistan, Samarkand',
-      locationImage: 'images/hystorical__samarkand.jpg',
-      locationDescription: 'samarkand__image',
-      locationTitle: 'Hystorical Samarkand City',
-      locationPrice: '$456.99',
-      locationTickIcon: 'icons/tick__icon.svg',
+      locationIcon: "icons/location__icon.svg",
+      locationText: t("home_carousel.home_carousel-third-text"),
+      locationImage: "images/hystorical__samarkand.jpg",
+      locationDescription: "samarkand__image",
+      locationTitle: t("home_carousel.home_carousel-third-title"),
+      locationPrice: "$456.99",
+      locationTickIcon: "icons/tick__icon.svg",
       locationDetails: [
-        'Including Accomandation',
-        'Free Proffesional Guide Tour',
-        '3 Days 2 Nights trip',
+        t(
+          "home_carousel.home_carousel-detail-third.home_carousel-detail-third-1"
+        ),
+        t(
+          "home_carousel.home_carousel-detail-third.home_carousel-detail-third-2"
+        ),
+        t(
+          "home_carousel.home_carousel-detail-third.home_carousel-detail-third-3"
+        ),
       ],
     },
     {
-      locationIcon: 'icons/location__icon.svg',
-      locationText: 'Uzbekistan, Samarkand',
-      locationImage: 'images/hystorical__samarkand.jpg',
-      locationDescription: 'samarkand__image',
-      locationTitle: 'Hystorical Samarkand City',
-      locationPrice: '$456.99',
-      locationTickIcon: 'icons/tick__icon.svg',
+      locationIcon: "icons/location__icon.svg",
+      locationText: t("home_carousel.home_carousel-fourth-text"),
+      locationImage: "images/hystorical__samarkand.jpg",
+      locationDescription: "samarkand__image",
+      locationTitle: t("home_carousel.home_carousel-fourth-title"),
+      locationPrice: "$456.99",
+      locationTickIcon: "icons/tick__icon.svg",
       locationDetails: [
-        'Including Accomandation',
-        'Free Proffesional Guide Tour',
-        '3 Days 2 Nights trip',
+        t(
+          "home_carousel.home_carousel-detail-fourth.home_carousel-detail-fourth-1"
+        ),
+        t(
+          "home_carousel.home_carousel-detail-fourth.home_carousel-detail-fourth-2"
+        ),
+        t(
+          "home_carousel.home_carousel-detail-fourth.home_carousel-detail-fourth-3"
+        ),
       ],
     },
     {
-      locationIcon: 'icons/location__icon.svg',
-      locationText: 'Uzbekistan, Samarkand',
-      locationImage: 'images/hystorical__samarkand.jpg',
-      locationDescription: 'samarkand__image',
-      locationTitle: 'Hystorical Samarkand City',
-      locationPrice: '$456.99',
-      locationTickIcon: 'icons/tick__icon.svg',
+      locationIcon: "icons/location__icon.svg",
+      locationText: t("home_carousel.home_carousel-fifth-text"),
+      locationImage: "images/hystorical__samarkand.jpg",
+      locationDescription: "samarkand__image",
+      locationTitle: t("home_carousel.home_carousel-fifth-title"),
+      locationPrice: "$456.99",
+      locationTickIcon: "icons/tick__icon.svg",
       locationDetails: [
-        'Including Accomandation',
-        'Free Proffesional Guide Tour',
-        '3 Days 2 Nights trip',
+        t(
+          "home_carousel.home_carousel-detail-fifth.home_carousel-detail-fifth-1"
+        ),
+        t(
+          "home_carousel.home_carousel-detail-fifth.home_carousel-detail-fifth-2"
+        ),
+        t(
+          "home_carousel.home_carousel-detail-fifth.home_carousel-detail-fifth-3"
+        ),
       ],
     },
     {
-      locationIcon: 'icons/location__icon.svg',
-      locationText: 'Uzbekistan, Samarkand',
-      locationImage: 'images/hystorical__samarkand.jpg',
-      locationDescription: 'samarkand__image',
-      locationTitle: 'Hystorical Samarkand City',
-      locationPrice: '$456.99',
-      locationTickIcon: 'icons/tick__icon.svg',
+      locationIcon: "icons/location__icon.svg",
+      locationText: t("home_carousel.home_carousel-sixth-text"),
+      locationImage: "images/hystorical__samarkand.jpg",
+      locationDescription: "samarkand__image",
+      locationTitle: t("home_carousel.home_carousel-sixth-title"),
+      locationPrice: "$456.99",
+      locationTickIcon: "icons/tick__icon.svg",
       locationDetails: [
-        'Including Accomandation',
-        'Free Proffesional Guide Tour',
-        '3 Days 2 Nights trip',
+        t(
+          "home_carousel.home_carousel-detail-sixth.home_carousel-detail-sixth-1"
+        ),
+        t(
+          "home_carousel.home_carousel-detail-sixth.home_carousel-detail-sixth-2"
+        ),
+        t(
+          "home_carousel.home_carousel-detail-sixth.home_carousel-detail-sixth-3"
+        ),
       ],
     },
   ];
@@ -102,8 +140,8 @@ export default function CarouselSection() {
       <Swiper
         className="carousel__swiper-box flex flex-row justify-center items-center cursor-grab"
         navigation={{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         }}
         autoplay={{
           delay: 3000,
@@ -112,7 +150,7 @@ export default function CarouselSection() {
         speed={1800}
         loop={true}
         modules={[Navigation, Autoplay]}
-        slidesPerView={'auto'}
+        slidesPerView={"auto"}
         spaceBetween={24}
         centeredSlides={true}
       >
@@ -140,13 +178,13 @@ export default function CarouselSection() {
                 </div>
               </div>
               <div className="carousel__bottom-box w-full flex flex-col justify-center items-start">
-                <h4 className="carousel__location-title font-medium text-[18.87px] text-[#323232] mt-[6.2px] mb-[11.28px] md:text-[37px] md:mt-[20px] 2xl:mb-[28px]">
+                <h4 className="carousel__location-title font-medium text-[18.87px] text-[#323232] mt-[6.2px] mb-[11.28px] md:text-[27px] md:mt-[20px]">
                   {item.locationTitle}
                 </h4>
-                <p className="carousel__price-text font-semibold text-[14.67px] text-[#323232] md:text-[40px] xl:text-[32px]">
+                <p className="carousel__price-text font-semibold text-[14.67px] text-[#323232] md:text-[32px]">
                   {item.locationPrice}
                 </p>
-                <div className="carousel__lists-main-box w-full flex flex-row justify-between items-end mt-[21.26px] 2xl:mt-[40px]">
+                <div className="carousel__lists-main-box w-full flex flex-row justify-between items-end mt-[21.26px]">
                   <div className="carousel__lists-box flex flex-col justify-center items-start gap-[5.95px] md:gap-[16px]">
                     {item.locationDetails.map((detail, idx) => (
                       <div

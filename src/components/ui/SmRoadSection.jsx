@@ -21,22 +21,23 @@ export default function SmRoadSection() {
               {locale === "en"
                 ? "Explore and find yourself"
                 : locale === "uz"
-                  ? "Ipak yo'lida sayohat qilib,"
+                  ? "Ipak yo'li sayohatida o'zingizni,"
                   : "Исследуйте и найдите себя"}
             </h3>
             <h3 className="smRoad__third-title text-center block font-medium text-[32px] leading-[100%] tracking-tighter-[-2%] uppercase text-[#323232]">
               {locale === "en"
                 ? "In Silk road Journey"
                 : locale === "uz"
-                  ? "o'zingizni kashf eting"
-                  : "в путешествии по Шелковому пути"}
+                  ? "kashf qiling va toping"
+                  : "в путешествии по шелковому пути"}
             </h3>
           </div>
-
-          <button className="smRoad__button flex flex-row justify-center items-center gap-3.5 active:opacity-50">
-            {t("craft_adventure.button")}
-            <RightChevron />
-          </button>
+          <Link href={"/contact"}>
+            <button className="smRoad__button flex flex-row justify-center items-center gap-3.5 active:opacity-50">
+              {t("home_unique.home_unique-button")}
+              <RightChevron />
+            </button>
+          </Link>
         </div>
       </section>
     </div>

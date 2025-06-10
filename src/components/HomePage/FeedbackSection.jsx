@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 export default function FeedbackSection() {
   const [isMobile, setIsMobile] = useState(false);
-  const t = useTranslations("feedbacks");
+  const t = useTranslations();
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 1025);
@@ -20,34 +20,30 @@ export default function FeedbackSection() {
   }, []);
   const data = [
     {
-      comment:
-        "Working with this team was a pleasure. They understood our vision and helped us find a property that exceeded our expectations. We couldn’t have done it without them!",
-      name: "Kattaxo'jayev Muhammad Qodir",
-      job: "Chief Executive Officer",
+      comment: t("home_feedback.home_feedback-comment1"),
+      name: t("home_feedback.home_feedback-name1"),
+      job: t("home_feedback.home_feedback-job1"),
       quotationIcon: "/icons/quotation.svg",
       userImages: "/images/first__user.jpg",
     },
     {
-      comment:
-        "Working with this team was a pleasure. They understood our vision and helped us find a property that exceeded our expectations. We couldn’t have done it without them!",
-      name: "Turabov Umidjon",
-      job: "Frontend Developer",
+      comment: t("home_feedback.home_feedback-comment2"),
+      name: t("home_feedback.home_feedback-name2"),
+      job: t("home_feedback.home_feedback-job2"),
       quotationIcon: "/icons/quotation.svg",
       userImages: "/images/second__user.jpg",
     },
     {
-      comment:
-        "Working with this team was a pleasure. They understood our vision and helped us find a property that exceeded our expectations. We couldn’t have done it without them!",
-      name: "Alimardon Boqijonov",
-      job: "Backend Developer",
+      comment: t("home_feedback.home_feedback-comment3"),
+      name: t("home_feedback.home_feedback-name3"),
+      job: t("home_feedback.home_feedback-job3"),
       quotationIcon: "/icons/quotation.svg",
       userImages: "/images/third__user.jpg",
     },
     {
-      comment:
-        "Working with this team was a pleasure. They understood our vision and helped us find a property that exceeded our expectations. We couldn’t have done it without them!",
-      name: "Salimov Davlat",
-      job: "Mobile Developer",
+      comment: t("home_feedback.home_feedback-comment4"),
+      name: t("home_feedback.home_feedback-name4"),
+      job: t("home_feedback.home_feedback-job4"),
       quotationIcon: "/icons/quotation.svg",
       userImages: "/images/fourth__user.jpg",
     },
@@ -57,10 +53,10 @@ export default function FeedbackSection() {
       <div className="container feedback__container flex flex-col justify-center items-start gap-14 ">
         <div className="feedback__top-box flex flex-col items-start gap-2 pl-6 md:pl-9 md:gap-4">
           <p className="feedback__top-text font-medium text-[#A5958B] text-[16px] leading-[100%] uppercase md:text-[24px]">
-            {t("top_title")}
+            {t("home_feedback.home_feedback-text")}
           </p>
           <h2 className="feedback__top-title font-medium w-[200px] text-[32px] leading-[40px] uppercase md:text-[56px] md:w-[654px] md:leading-[100%]">
-            {t("title")}
+            {t("home_feedback.home_feedback-title")}
           </h2>
         </div>
         <Swiper

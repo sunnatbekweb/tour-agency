@@ -9,8 +9,8 @@ import "@/styles/fonts.css";
 import "@/styles/style.css";
 import "@/styles/globals.css";
 export const metadata = {
-  title: "Tour Agency",
-  description: "Created by OneSystem",
+  title: "Tour Agency - Silk Road Wonders",
+  description: "Developed by OneSystem",
 };
 export default async function RootLayout({ children, params }) {
   const { locale } = await params;

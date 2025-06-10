@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { Slide, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import MdRoadSection from "../MdRoadSection";
-import { useTranslations } from "next-intl";
+import { useTranslations } from "use-intl";
 export default function FooterMdSection() {
   const t = useTranslations();
   const moveTop = () => {
@@ -13,16 +13,16 @@ export default function FooterMdSection() {
   };
   const link = [
     {
-      links: t("header.nav.finder"),
+      links: t("footer.nav.finder"),
     },
     {
-      links: t("header.nav.about"),
+      links: t("footer.nav.about"),
     },
     {
-      links: t("header.nav.blog"),
+      links: t("footer.nav.blog"),
     },
     {
-      links: t("header.contact"),
+      links: t("footer.contact"),
     },
   ];
   const icon = [
@@ -59,15 +59,15 @@ export default function FooterMdSection() {
   useEffect(() => {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (form.email.length === null) {
-      setError({ ...error, email: "*Please enter your email." });
+      setError({ ...error, email: t("footer.footer__error-text1") });
       setCorrect({ ...correct, email: false });
     } else if (!emailRegex.test(form.email)) {
-      setError({ ...error, email: "*Please enter a valid email address." });
+      setError({ ...error, email: t("footer.footer__error-text2") });
       setCorrect({ ...correct, email: false });
     } else {
       setCorrect({
         ...correct,
-        email: "This field has been filled correctly!",
+        email: t("footer.footer__correct-text2"),
       });
       setError({ ...error, email: false });
     }
@@ -90,7 +90,7 @@ export default function FooterMdSection() {
     e.preventDefault();
     if (isFormValid) {
       await sendData(form.email);
-      toast.success("Successful!", {
+      toast.success(t("footer.footer__toast-correct"), {
         position: "top-right",
         autoClose: 2000,
         hideProgressBar: false,
@@ -102,7 +102,7 @@ export default function FooterMdSection() {
         transition: Slide,
       });
     } else {
-      toast.error("Error", {
+      toast.error(t("footer.footer__toast-error"), {
         position: "top-right",
         autoClose: 2000,
         hideProgressBar: false,
@@ -145,7 +145,7 @@ export default function FooterMdSection() {
                 />
               </Link>
               <p className="footerMdSection__top-text md:w-[235px] md:font-medium md:text-[24px] md:leading-[30px] md:tracking-tighter-[-2%] md:text-white">
-                {t("footer.email_text")}
+                {t("footer.footer__top-text")}
               </p>
             </div>
             <form
@@ -165,7 +165,7 @@ export default function FooterMdSection() {
                     }}
                     type="email"
                     id="email"
-                    placeholder={t("footer.email_placeholder")}
+                    placeholder={t("footer.footer__email-placeholder")}
                     autoComplete="off"
                     value={form.email}
                     required
@@ -189,7 +189,7 @@ export default function FooterMdSection() {
           <div className="footerMdSection__middle-box md:w-full md:flex md:flex-row md:justify-between md:items-center">
             <nav className="footerMdSection__nav md:flex md:flex-col md:justify-center md:items-start">
               <h4 className="footerMdSection__list-text md:font-medium md:text-[40px] md:leading-[100%] md:tracking-tighter-[-2%] md:text-white md:mb-12">
-                {t("footer.explore_text")}
+                {t("footer.footer__explore-text")}
               </h4>
               <ul className="footerMdSection__list md:flex md:flex-col md:justify-center md:items-start md:gap-9">
                 {link.map((item, index) => (
@@ -218,10 +218,10 @@ export default function FooterMdSection() {
             </button>
             <div className="footerMdSection__bottom-right-box md:w-[277px] md:flex md:flex-col md:justify-center md:items-center">
               <h4 className="footerMdSection__bottom-right-box-title md:w-[277px] md:font-medium md:text-[35px] md:leading-[100%] md:tracking-tighter-[-2%] md:mb-[57.5px] md:text-white">
-                {t("footer.why_travel_title")}
+                {t("footer.footer__why-travel-title")}
               </h4>
               <q className="footerMdSection__bottom-right-box-texts md:w-[277px] md:mb-[57.5px] md:text-white/70">
-                {t("footer.why_travel_text")}
+                {t("footer.footer__why-travel-text")}
               </q>
               <div className="footerMdSection__icon-box md:w-full md:flex md:flex-row md:justify-between md:items-center">
                 {icon.map((icons, id) => (
@@ -253,7 +253,7 @@ export default function FooterMdSection() {
             </p>
             <div className="footerMdSection__copy-logo-box md:flex md:flex-row md:justify-center md:items-center">
               <p className="footerMdSection__developing-text md:font-medium md:text-[24px] md:leading-[100%] md:tracking-tighter-[-2%] md:text-white">
-                {t("footer.developed_by")}:&nbsp;&nbsp;
+                {t("footer.footer__developed-by")}:&nbsp;&nbsp;
               </p>
               <a
                 className="footerMdSection__copy-logo-link"

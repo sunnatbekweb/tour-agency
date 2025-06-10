@@ -49,7 +49,7 @@ export const Header = () => {
             : "duration-500"
         }`}
       >
-        <div className="container header__container flex justify-between items-center px-5 py-6">
+        <div className="container header__container flex justify-between items-center px-6 py-5 md:px-9 md:py-[32px]">
           <div className="header__left-box">
             <button
               className={`header__left-open-burger-button ${isDimmed && "bg-[#F3ECE8] rounded-lg"}`}
@@ -179,21 +179,21 @@ export const Header = () => {
             </div>
             <button
               onClick={() => setLangDropdown(!langDropdown)}
-              className={`language-switcher-sm relative lg:hidden flex flex-col gap-y-2 items-center px-3 py-1.5 h-[40px] rounded-[12px] ${langDropdown && "rounded-b-none"} ${isDimmed ? "bg-[#CBBCB3]" : "bg-[#ffffff33]"}`}
+              className={`language-switcher-sm relative lg:hidden flex flex-col gap-y-[10px] items-center px-3 py-1.5 border-[1px] md:py-[10px] border-[#B9B9B9] rounded-[12px] ${langDropdown && "rounded-b-none"} ${isDimmed ? "bg-[#CBBCB3]" : "bg-[#ffffff33]"}`}
             >
               <div className="flex items-center gap-2">
                 <img
-                  className="w-[16px] h-[16px] md:w-[24px] md:h-[24px]"
+                  className="object-contain inline-block w-[15px] h-[15px] md:w-[33px] md:h-[33px]"
                   src="/icons/language__icon.svg"
                   alt="Lang icon"
                 />
                 <p className="font-medium uppercase text-white">{locale}</p>
               </div>
               <div
-                className={`w-full absolute top-full px-3 pb-1.5 rounded-b-xl overflow-hidden duration-500 ${isDimmed ? "bg-[#CBBCB3]" : "bg-[#ffffff33]"} ${
+                className={`w-[70.56px] md:w-[88.56px] absolute top-full px-3 pb-1.5 rounded-b-xl border-[1px] border-[#B9B9B9] overflow-hidden duration-500 ${isDimmed ? "bg-[#CBBCB3]" : "bg-[#ffffff33]"} ${
                   langDropdown
-                    ? `h-[62px] opacity-100 visible translate-y-0 ${isDimmed && "bg-[#CBBCB3]"}`
-                    : "h-0 opacity-0 collapse -translate-y-5"
+                    ? `opacity-100 pt-[8px] visible translate-y-0 duration-500  ${isDimmed && "bg-[#CBBCB3]"}`
+                    : "h-0 opacity-0 collapse -translate-y-5 duration-[600ms]"
                 }`}
               >
                 <ul className="flex flex-col gap-y-2">
@@ -202,7 +202,7 @@ export const Header = () => {
                     .map((lang, index) => (
                       <li key={index} className="flex items-center gap-2">
                         <img
-                          className="w-[12px] h-[12px] md:w-[24px] md:h-[24px]"
+                          className="w-[15px] h-[15px] md:w-[33px] md:h-[33px]"
                           src="/icons/language__icon.svg"
                           alt="Lang icon"
                         />

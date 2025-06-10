@@ -6,7 +6,7 @@ import { Slide, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import RoadSection from "../RoadSection";
 import WhiteChevron from "../../../../public/icons/WhiteChevron";
-import { useTranslations } from "next-intl";
+import { useTranslations } from "use-intl";
 export default function FooterSection() {
   const t = useTranslations();
   const moveTop = () => {
@@ -14,16 +14,16 @@ export default function FooterSection() {
   };
   const link = [
     {
-      links: t("header.nav.finder"),
+      links: t("footer.nav.finder"),
     },
     {
-      links: t("header.nav.about"),
+      links: t("footer.nav.about"),
     },
     {
-      links: t("header.nav.blog"),
+      links: t("footer.nav.blog"),
     },
     {
-      links: t("header.contact"),
+      links: t("footer.contact"),
     },
   ];
   const icon = [
@@ -60,15 +60,15 @@ export default function FooterSection() {
   useEffect(() => {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (form.email.length === null) {
-      setError({ ...error, email: "*Please enter your email." });
+      setError({ ...error, email: t("footer.footer__error-text1") });
       setCorrect({ ...correct, email: false });
     } else if (!emailRegex.test(form.email)) {
-      setError({ ...error, email: "*Please enter a valid email address." });
+      setError({ ...error, email: t("footer.footer__error-text2") });
       setCorrect({ ...correct, email: false });
     } else {
       setCorrect({
         ...correct,
-        email: "This field has been filled correctly!",
+        email: t("footer.footer__correct-text2"),
       });
       setError({ ...error, email: false });
     }
@@ -91,7 +91,7 @@ export default function FooterSection() {
     e.preventDefault();
     if (isFormValid) {
       await sendData(form.email);
-      toast.success("Successful!", {
+      toast.success(t("footer.footer__toast-correct"), {
         position: "top-right",
         autoClose: 2000,
         hideProgressBar: false,
@@ -103,7 +103,7 @@ export default function FooterSection() {
         transition: Slide,
       });
     } else {
-      toast.error("Error", {
+      toast.error(t("footer.footer__toast-error"), {
         position: "top-right",
         autoClose: 2000,
         hideProgressBar: false,
@@ -135,7 +135,7 @@ export default function FooterSection() {
         <RoadSection />
       </div>
       <footer className="footer bg-[#A98D7D] xl:w-full xl:rounded-tr-[56px] xl:rounded-tl-[56px] xl:absolute">
-        <div className="container footer__container xl:pt-[106.65px] px-6">
+        <div className="container footer__container xl:pt-[106.65px] px-6 md:px-9">
           <div className="footer__top-box xl:flex xl:flex-row xl:justify-between xl:items-start">
             <div className="footer__top-left-box xl:flex xl:flex-col xl:justify-center xl:items-start xl:w-[419px] 2xl:w-[519px]">
               <Link className="footer__top-left-logo-link" href={"/"}>
@@ -146,7 +146,7 @@ export default function FooterSection() {
                 />
               </Link>
               <p className="footer__top-left-text xl:font-normal xl:text-2xl xl:tracking-tighter-[-2%] xl:text-white xl:w-[419px] xl:mb-[72px] 2xl:w-[519px]">
-                {t("footer.email_text")}
+                {t("footer.footer__top-text")}
               </p>
               <form
                 className="footer__top-left-form xl:w-[419px] 2xl:w-[519px]"
@@ -165,7 +165,7 @@ export default function FooterSection() {
                       }}
                       type="email"
                       id="email"
-                      placeholder={t("footer.email_placeholder")}
+                      placeholder={t("footer.footer__email-placeholder")}
                       autoComplete="off"
                       value={form.email}
                       required
@@ -188,7 +188,7 @@ export default function FooterSection() {
             </div>
             <nav className="footer__top-middle-box xl:flex xl:flex-col xl:justify-center xl:items-start">
               <h4 className="footer__top-middle-list-text xl:font-medium xl:text-4xl xl:leading-[100%] xl:tracking-tighter-[-2%] xl:text-white xl:mb-12">
-                {t("footer.explore_text")}
+                {t("footer.footer__explore-text")}
               </h4>
               <ul className="footer__top-middle-list xl:flex xl:flex-col xl:justify-center xl:items-start xl:gap-9">
                 {link.map((item, index) => (
@@ -207,10 +207,10 @@ export default function FooterSection() {
             </nav>
             <div className="footer__top-seond-middle-bottom-right-box xl:w-[350px] xl:flex xl:flex-col xl:justify-center xl:items-start 2xl:w-[418px]">
               <h4 className="footer__top-seond-middle-bottom-right-box-title xl:w-[350px] xl:font-medium xl:text-[35px] xl:leading-[100%] xl:tracking-tighter-[-2%] xl:mb-[57.5px] xl:text-white 2xl:w-[418px] 2xl:text-4xl">
-                {t("footer.why_travel_title")}
+                {t("footer.footer__why-travel-title")}
               </h4>
               <q className="footer__top-seond-middle-bottom-right-box-texts xl:font-medium xl:text-2xl xl:w-[350px] xl:mb-[57.5px] xl:text-white/70 xl:tracking-tighter-[-2%] 2xl:w-[418px]">
-                {t("footer.why_travel_text")}
+                {t("footer.footer__why-travel-text")}
               </q>
               <div className="footer__top-seond-middle-icon-box xl:w-full xl:flex xl:flex-row xl:justify-between xl:items-center">
                 {icon.map((icons, id) => (
@@ -249,7 +249,7 @@ export default function FooterSection() {
               </p>
               <div className="footer__bottom-box-copy-logo-box xl:flex xl:flex-row xl:justify-center xl:items-center">
                 <p className="footer__bottom-box-developing-text xl:font-medium xl:text-xl xl:leading-[100%] xl:tracking-tighter-[-2%] xl:text-white">
-                  {t("footer.developed_by")}:&nbsp;&nbsp;
+                  {t("footer.footer__developed-by")}:&nbsp;&nbsp;
                 </p>
                 <a
                   className="footer__bottom-box-copy-logo-link"

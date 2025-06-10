@@ -1,7 +1,7 @@
 {
   "header": {
     "destinations": {
-      "index": "Yo‘nalishlar",
+      "index": "Manzillar",
       "uz": "O‘zbekiston",
       "kz": "Qozog‘iston",
       "tj": "Tojikiston",
@@ -13,112 +13,132 @@
       "about": "Biz haqimizda",
       "blog": "Blog"
     },
-    "contact": "Biz bilan bog‘lanish"
+    "contact": "Bog‘lanish"
   },
   "home_hero": {
-    "subtitle1": "Qadimiy dashtlardan abadiy shaharlargacha",
-    "title": "Ipak yo‘lining yuragiga xush kelibsiz",
-    "subtitle2": "Sizning Markaziy Osiyodagi sarguzashtingiz shu yerdan boshlanadi"
+    "subtitle1": "Qadimgi Dashtlardan Abadiy Shaharlargacha",
+    "title": "Ipak Yo'lining Yuragiga Xush Kelibsiz",
+    "subtitle2": "Sizning Markaziy Osiyo Sarguzashtingiz Shu Yerda Boshlanadi"
   },
-  "home_destinations": {
-    "top_title": "Yo‘nalishlarga qisqacha nazar",
-    "title": "Markaziy Osiyoni hech qachon bo‘lmagandek kashf eting",
-    "subtitle": "SRW (Ipak yo‘li mo‘jizalari) da biz unutilmas sayohatlarni yaratamiz — O‘zbekiston, Qozog‘iston, Qirg‘iziston, Turkmaniston va Tojikiston bo‘ylab. Agar sizni ulug‘vor me’morchilik, qadimiy bozorlari yoki osoyishta tabiat tortsa — mukammal sarguzashtingiz sizni kutmoqda."
+  "home_explore": {
+    "home_explore-text": "Mo‘ljallarni oldindan ko‘rish",
+    "home_explore-title": "Markaziy Osiyoni hech qachon ko'rmagandek o'rganing",
+    "home_explore-second-text": "SRW (Silk Road Wonders) da biz O'zbekiston, Qozog'iston, Qirg'iziston, Turkmaniston va Tojikiston bo'ylab unutilmas sayohatlarni amalga oshiramiz. Sizni ulug'vor me'morchilik, qadimiy bozorlar yoki sokin tabiat o'ziga jalb qiladimi - sizni mukammal sarguzasht kutmoqda."
   },
-  "home_map": {
-    "top_title": "O‘z sarguzashtingizni tanlang",
-    "title": "Markaziy Osiyoning yashirin mo‘jizalarini kashf eting",
-    "country_info": {
-      "infoUz": "O‘zbekistonga xush kelibsiz — bu yerda Ipak yo‘li tirik: rang-barang bozorlarda, ulug‘vor madrasalarda va abadiy me’morchilikda. Bu qadimiy yurt — madaniyatlar chorrahasi, har bir moviy gumbaz va bezakli darvozadan tarix so‘zlaydi. Qizilqum cho‘lining porlab turgan qumlaridan tortib, Samarqand va Buxoroning she’riy go‘zalligigacha — O‘zbekiston sizni imperiyalar va orzuchilar izidan yurishga chorlaydi.",
-      "infoKz": "Qozog‘istonga xush kelibsiz — bu yerda oltin dashtlar cheksizlikka cho‘ziladi, zamonaviy shaharlar qadimiy an’analarning yonida yashaydi. Dunyoning eng katta dengizga chiqishsiz davlati sifatida, Qozog‘iston sizga erkinlikni qayta kashf etish, nafas olish va yurish uchun cheksiz imkoniyat beradi. Bayterek minorasining yaltirab turgan cho‘qqisidan Charyn kanyonining g‘ayrioddiy go‘zalligigacha — har bir qadam hikoya qiladi.",
-      "infoKg": "Qirg‘izistonga xush kelibsiz — bu yerda qorli cho‘qqilar ko‘chmanchi an’analarni asraydi, moviy ko‘llar osmonning cheksizligini aks ettiradi. Bu dag‘al, ammo jonli yurt sarguzasht ixlosmandlari uchun jannat, bu yerda yaylovlarda yurta turgan, otlar erkin yuradi. Issiqko‘lning osoyishta go‘zalligidan to Tyan-Shan tog‘larining hayajonli yo‘llarigacha — Qirg‘iziston sizni tabiat va erkinlikka asoslangan hayot tarziga qaytishga chorlaydi.",
-      "infoTj": "Tojikistonga xush kelibsiz — bu yer baland tog‘lar, qadimiy qal’alar va musaffo tabiat yurti. Markaziy Osiyoning yuragida joylashgan bu yashirin durdona sizga hayratomuz tog‘ manzaralari va mehmondo‘st xalqni taqdim etadi. Pomir tog‘larining baland cho‘qqilaridan tortib Iskandarkul ko‘lining tiniq suvlari — har bir yo‘l sarguzasht, tafakkur va hayratga olib boradi.",
-      "infoTk": "Turkmanistonga xush kelibsiz — bu yerda sahro sirlari, marmar shaharlar va qumlar ostida yashiringan qadimiy meros yashaydi. Gar qaynab turgan Garagum cho‘lining yuragida Darvoza gaz krateri — “Do‘zax darvozasi” — mamlakatning kuchli va yovvoyi go‘zalligini aks ettiradi. Ipak yo‘lining marvaridlaridan biri bo‘lgan Merw xarobalarini kezib chiqing va Ashxobodning oppoq zamonaviy arxitekturasi bilan tanishing. Turkmaniston — tarix va surreal zamonaviylik bir-biriga to‘qnash keladigan yurtdir."
+  "home_carousel": {
+    "home_carousel-text": "O'zbekiston, Samarqand",
+    "home_carousel-title": "Tarixiy Samarqand Shahar",
+    "home_carousel-detail-first": {
+      "home_carousel-detail-first-1": "Turar Joy Bilan",
+      "home_carousel-detail-first-2": "Bepul Professional Ekskursiya Gid Sayohatchi",
+      "home_carousel-detail-first-3": "3 Kun 2 Kecha Sayohat"
+    },
+    "home_carousel-second-text": "O'zbekiston, Samarqand",
+    "home_carousel-second-title": "Tarixiy Samarqand Shahar",
+    "home_carousel-detail-second": {
+      "home_carousel-detail-second-1": "Turar Joy Bilan",
+      "home_carousel-detail-second-2": "Bepul Professional Ekskursiya Gid Sayohatchi",
+      "home_carousel-detail-second-3": "3 Kun 2 Kecha Sayohat"
+    },
+    "home_carousel-third-text": "O'zbekiston, Samarqand",
+    "home_carousel-third-title": "Tarixiy Samarqand Shahar",
+    "home_carousel-detail-third": {
+      "home_carousel-detail-third-1": "Turar Joy Bilan",
+      "home_carousel-detail-third-2": "Bepul Professional Ekskursiya Gid Sayohatchi",
+      "home_carousel-detail-third-3": "3 Kun 2 Kecha Sayohat"
+    },
+    "home_carousel-fourth-text": "O'zbekiston, Samarqand",
+    "home_carousel-fourth-title": "Tarixiy Samarqand Shahar",
+    "home_carousel-detail-fourth": {
+      "home_carousel-detail-fourth-1": "Turar Joy Bilan",
+      "home_carousel-detail-fourth-2": "Bepul Professional Ekskursiya Gid Sayohatchi",
+      "home_carousel-detail-fourth-3": "3 Kun 2 Kecha Sayohat"
+    },
+    "home_carousel-fifth-text": "O'zbekiston, Samarqand",
+    "home_carousel-fifth-title": "Tarixiy Samarqand Shahar",
+    "home_carousel-detail-fifth": {
+      "home_carousel-detail-fifth-1": "Turar Joy Bilan",
+      "home_carousel-detail-fifth-2": "Bepul Professional Ekskursiya Gid Sayohatchi",
+      "home_carousel-detail-fifth-3": "3 Kun 2 Kecha Sayohat"
+    },
+    "home_carousel-sixth-text": "O'zbekiston, Samarqand",
+    "home_carousel-sixth-title": "Tarixiy Samarqand Shahar",
+    "home_carousel-detail-sixth": {
+      "home_carousel-detail-sixth-1": "Turar Joy Bilan",
+      "home_carousel-detail-sixth-2": "Bepul Professional Ekskursiya Gid Sayohatchi",
+      "home_carousel-detail-sixth-3": "3 Kun 2 Kecha Sayohat"
     }
   },
-  "craft_adventure": {
-    "subtitle": "Sizga mos sayohatni yarating",
-    "title": "Noyob, Shaxsiy, Unutilmas",
-    "button": "Sayohat qilamiz"
+  "home_unique": {
+    "home_unique-text": "O'z Sarguzashtingizni Yarating",
+    "home_unique-title": "Noyob, Shaxsiy, Unutilmas",
+    "home_unique-button": "Sayohat Qilish"
   },
-  "culturalHighlights": {
-    "top_title": "Madaniy voqealar",
-    "title": "Choʻl qal’alaridan togʻ bayramlarigacha — Markaziy Osiyo sizni chorlayapti",
-    "text": "Silk Road Wonders’da biz shunchaki sayohatlar emas, balki qadimgi sivilizatsiyalar, rang-barang an’analar va hayratlanarli manzaralarga eshik ochamiz. Agar sizni me’moriy moʻjizalar yoki qishloq hayoti jalb qilsa — bu yerda siz uchun alohida bir hikoya bor."
+  "home_desert": {
+    "home_desert-text": "Madaniy Diqqatga Sazovor Joylar",
+    "home_desert-title": "Cho‘l Qal’alaridan to Tog‘ Festivallarigacha – Markaziy Osiyo Chaqirmoqda",
+    "home_desert-second-text": "Silk Road Wonders’da biz shunchaki ekskursiyalarni taklif qilmaymiz — biz qadimiy tsivilizatsiyalar, jo‘shqin an’analar va hayratlanarli manzaralar uchun eshiklarni ochamiz. Sizni me'moriy mo''jizalar yoki qishloq hayotining ritmlari o'ziga jalb qiladimi, bu erda sizni faqat bir hikoya kutmoqda."
   },
-  "faq": {
-    "top_title": "Ko‘p so‘raladigan savollar",
-    "title": "Safarga chiqishdan oldin savolingiz bormi? Javob bizda"
+  "home_SecondCarousel": {
+    "home_SecondCarousel-title": "Qadimgi Xivaning Ulug'vorligi",
+    "home_SecondCarousel-second-title": "Qadimgi Xivaning Ulug'vorligi",
+    "home_SecondCarousel-third-title": "O'zbek An'analarining Nafisligi",
+    "home_SecondCarousel-fourth-title": "An'anaviy Rangli Hunarmandchilik",
+    "home_SecondCarousel-fifth-title": "O'zbek An'analarining Nafisligi"
   },
-  "feedbacks": {
-    "top_title": "Mijozlar fikrlari",
-    "title": "Dunyo bo‘ylab sayohatchilar ishonadi"
+  "home_question": {
+    "home_question-text": "doimiy so'raladigan savollar",
+    "home_question-title": "Ketishdan oldin yordam kerakmi? javoblarimiz bor",
+    "home_question-second-text": "Sayohat asoschisi",
+    "home_question-second-title": "doimiy so'raladigan savollar",
+    "home_question-text1": "Qozogʻiston yer maydoni boʻyicha dunyoning toʻqqizinchi yirik davlati va dengizga chiqa olmaydigan eng katta davlatdir. Adirli platolar va tekisliklar uning katta hududining deyarli yarmini, pasttekisliklar yana uchdan bir qismini tashkil qiladi;",
+    "home_question-question-text1": "Qanday agentlik bilan sayohatni buyurtma qilishim mumkin?",
+    "home_question-text2": "Qozogʻiston yer maydoni boʻyicha dunyoning toʻqqizinchi yirik davlati va dengizga chiqa olmaydigan eng katta davlatdir. Adirli platolar va tekisliklar uning katta hududining deyarli yarmini, pasttekisliklar yana uchdan bir qismini tashkil qiladi;",
+    "home_question-question-text2": "Sayohatimni moslashtira olamanmi?",
+    "home_question-text3": "Qozogʻiston yer maydoni boʻyicha dunyoning toʻqqizinchi yirik davlati va dengizga chiqa olmaydigan eng katta davlatdir. Adirli platolar va tekisliklar uning katta hududining deyarli yarmini, pasttekisliklar yana uchdan bir qismini tashkil qiladi;",
+    "home_question-question-text3": "Siz sayohat sug'urtasini taklif qilasizmi?",
+    "home_question-text4": "Qozogʻiston yer maydoni boʻyicha dunyoning toʻqqizinchi yirik davlati va dengizga chiqa olmaydigan eng katta davlatdir. Adirli platolar va tekisliklar uning katta hududining deyarli yarmini, pasttekisliklar yana uchdan bir qismini tashkil qiladi;",
+    "home_question-question-text4": "Parvoz va turar joyni tashkil qila olasizmi?",
+    "home_question-title1": "Qozogʻiston yer maydoni boʻyicha dunyoning toʻqqizinchi yirik davlati va dengizga chiqa olmaydigan eng katta davlatdir. Adirli platolar va tekisliklar uning katta hududining deyarli yarmini, pasttekisliklar yana uchdan bir qismini tashkil qiladi; Qozog‘iston 20 million aholiga ega va aholi zichligi bo‘yicha dunyodagi eng past davlatlardan biri hisoblanadi",
+    "home_question-country-text1": "O'zbekiston, Samarqand",
+    "home_question-title2": "Qozogʻiston yer maydoni boʻyicha dunyoning toʻqqizinchi yirik davlati va dengizga chiqa olmaydigan eng katta davlatdir. Adirli platolar va tekisliklar uning katta hududining deyarli yarmini, pasttekisliklar yana uchdan bir qismini tashkil qiladi; Qozog‘iston 20 million aholiga ega va aholi zichligi bo‘yicha dunyodagi eng past davlatlardan biri hisoblanadi",
+    "home_question-country-text2": "O'zbekiston, Samarqand",
+    "home_question-title3": "Qozogʻiston yer maydoni boʻyicha dunyoning toʻqqizinchi yirik davlati va dengizga chiqa olmaydigan eng katta davlatdir. Adirli platolar va tekisliklar uning katta hududining deyarli yarmini, pasttekisliklar yana uchdan bir qismini tashkil qiladi; Qozog‘iston 20 million aholiga ega va aholi zichligi bo‘yicha dunyodagi eng past davlatlardan biri hisoblanadi",
+    "home_question-country-text3": "O'zbekiston, Samarqand"
+  },
+  "home_feedback": {
+    "home_feedback-text": "mijozlar sharhlari",
+    "home_feedback-title": "Dunyo bo'ylab sayohatchilar tomonidan ishonchli",
+    "home_feedback-comment1": "Bu jamoa bilan ishlash juda yoqimli edi. Ular bizning qarashlarimizni tushunishdi va bizning kutganimizdan oshib ketadigan mulkni topishga yordam berishdi. Ularsiz biz buni qilolmasdik!",
+    "home_feedback-name1": "Kattaxo'jayev Muhammad Qodir",
+    "home_feedback-job1": "Boshqaruvchi Вirektor",
+    "home_feedback-comment2": "Bu jamoa bilan ishlash juda yoqimli edi. Ular bizning qarashlarimizni tushunishdi va bizning kutganimizdan oshib ketadigan mulkni topishga yordam berishdi. Ularsiz biz buni qilolmasdik!",
+    "home_feedback-name2": "Turabov Umidjon",
+    "home_feedback-job2": "Frontend Dasturchi",
+    "home_feedback-comment3": "Bu jamoa bilan ishlash juda yoqimli edi. Ular bizning qarashlarimizni tushunishdi va bizning kutganimizdan oshib ketadigan mulkni topishga yordam berishdi. Ularsiz biz buni qilolmasdik!",
+    "home_feedback-name3": "Alimardon Boqijonov",
+    "home_feedback-job3": "Backend Dasturchi",
+    "home_feedback-comment4": "Bu jamoa bilan ishlash juda yoqimli edi. Ular bizning qarashlarimizni tushunishdi va bizning kutganimizdan oshib ketadigan mulkni topishga yordam berishdi. Ularsiz biz buni qilolmasdik!",
+    "home_feedback-name4": "Salimov Davlat",
+    "home_feedback-job4": "Mobile Dasturchi"
   },
   "footer": {
-    "email_text": "Maxsus takliflar, sayohat bo‘yicha maslahatlar va ilhomlar uchun obuna bo‘ling!",
-    "email_placeholder": "Email manzilingizni kiriting",
-    "explore_text": "O‘rganing",
-    "why_travel_title": "Nega biz bilan sayohat qilish kerak?",
-    "why_travel_text": "Haqiqiy tajribalar, tajribali gidlar, unutilmas xotiralar — Wonder bilan Ipak yo‘lining ruhini kashf eting:)",
-    "developed_by": "Dasturchi"
-  },
-  "destinations": {
-    "about": "Mamlakat haqida",
-    "about_text": "Mamlakat haqida ma’lumot",
-    "exclusive_text": "Eksklyuziv suratlar",
-    "uzbekistan": {
-      "about_country_title": "Oʻzbekiston: Sivilizatsiyalar Qarshisida",
-      "about_country_text1": "O‘zbekiston — Markaziy Osiyoning yuragi bo‘lib, tarix har bir mozaikada yashaydi, mehmondo‘stlik esa sizni har bir burilishda qarshi oladi. Xivaning osmon bilan tenglashgan minoralari va Samarqandning ulug‘vor Registoni — bularning barchasi sizni tengsiz madaniy sayohatga chorlaydi. Ilgari bu yerda ilm-fan gullab-yashnagan, savdo-sotiq avj olgan va bugungi kungacha o‘z rangini yo‘qotmagan urf-odatlar paydo bo‘lgan. Ipak yo‘li sizning qadamingizga yo‘l ko‘rsatsin.",
-      "about_country_text2": "O‘zbekistonning jozibasi nafaqat uning arxitektura mo‘jizalarida, balki odamlarining iliqligida va uning hayotiy an'alarining boyligida yotadi. Shovqinli bozorlarida, ziravorlarning hidlari hunarmandlarning ish faoliyatining ovozi bilan aralashadi. Musiqa, hikoyalar va murakkab san'at asarlari kundalik hayotning ajralmas qismi bo‘lib qolmoqda — qadimiy meros va hayotiy madaniyatning haqiqiy uyg‘unligi. Siz tarixiy karvonsaroylardan o‘tayotganingizda yoki mahalliy aholi bilan ovqatlanayotganingizda, O‘zbekiston sizni ochiq quchoq bilan va abadiy ruh bilan kutib oladi.",
-      "hero_title": "Buyuk allomalar yurti va madaniyatlar chorrahasi",
-      "tours_title": "Bizning maxsus turlar bilan O‘zbekistonni kashf eting",
-      "tours_text": "Samarqandning moviy gumbazlaridan tortib Xivaning qadimiy ko‘chalarigacha — O‘zbekiston bo‘ylab sayohatlarimiz madaniyat ixlosmandlari, tarix izlovchilari va sarguzashtsevarlar uchun yaratilgan. Dam olish kunlari sayohatidan tortib bir necha kunlik sarguzashtlargacha — sizning safaringiz aynan shu yerda boshlanadi."
+    "nav": {
+      "finder": "Sayohat qidiruvi",
+      "about": "Biz haqimizda",
+      "blog": "Blog",
+      "contact": "Bog‘lanish"
     },
-    "kazakhstan": {
-      "about_country_title": "Qozog'iston: Keng Ufqlar va Dadil Ruhlar Diyori",
-      "about_country_text1": "Qozog‘istonning chinakam mo‘jizasi nafaqat uning kengligida, balki uning qarama-qarshiliklaridadir — bu yerda sukunat kuch bilan, qadimiy an’analar zamonaviy intilishlar bilan uchrashadi. Astana va Olmaotaning zamonaviy osmono‘par binolaridan tashqariga chiqing — bu yerda shamol, vaqt va ko‘chmanchi g‘ururi bilan yasalgan dunyoni topasiz. Cheksiz dasht faqat manzara emas — u erkinlik ramzidir, avlodlarni shakllantirgan xalqning ruhidir.",
-      "about_country_text2": "Har bir qishloqda, olov atrofida aytilgan afsonalar mavjud. Har bir an’anaviy yurtda — o‘tmishga bog‘liqlik. Qozog‘ hayoti tabiatga hurmat, mehmondo‘stlik va jasoratga asoslangan — siz chorvador bilan qimiz ichayotganingizda yoki Tyan-Shan tog‘lariga chiqayotganingizda. Bu yer sayohatchilar, orzuchilar va sof, qudratli hamda abadiy narsani izlayotganlar uchun diyordir.",
-      "hero_title": "Cheksiz Ufqlar va Buyuk Dashtlar Diyori",
-      "tours_title": "Qozog‘istondagi Maxsus Turlarimizni Kashf Qiling",
-      "tours_text": "Har bir marshrut sizni dashtning yuragiga olib kiradi — bu yerda meros, tabiat va sarguzashtlar unutilmas tajribaga aylanadi."
-    },
-    "tajikistan": {
-      "about_country_title": "Tojikiston: Markaziy Osiyoning Tomi",
-      "about_country_text1": "Tojikiston — bu osmonu falakka cho‘zilgan tog‘lar va qadimiy tarix yurti. Pomir tog‘lari osmonga tegadi, va qadimiy karvon yo‘llari hanuz sayohatchilar hikoyalarini eslatadi. Bu yerda yovvoyi tabiat va go‘zallik Markaziy Osiyoda betakror manzara yaratadi. Mamlakat hududining 90 foizidan ortig‘i tog‘lardan iborat — bu joylar yurakdan tinchlik izlaganlar va orzuchilar uchun mo‘ljallangan.",
-      "about_country_text2": "Ammo Tojikiston faqat tog‘lar emas — bu iliqlik yurti. O‘lkadagi chekka qishloqlarda mehmondo‘stlik hayot tarzidir. Choy ulashiladi, hikoyalar aytiladi, urf-odatlar esa raqslar, matolar va bayramlar orqali yashaydi. Siz Vaxon Daryosi bo‘yidan yurganingizda ham, Dushanbening jonli bozorlarida sayr qilganingizda ham, har bir qadamingiz sizni qadimiy, ma’noli va unutilmas dunyoga olib boradi.",
-      "hero_title": "Tog‘lar, Muzliklar va Qadimiy Madaniyatlar Diyori",
-      "tours_title": "Tojikistondagi Maxsus Turlarimizni O‘rganing",
-      "tours_text": "Bizning tanlangan sayohatlarimiz sizni Tojikistonning yovvoyi go‘zalligi va madaniy yuragi bilan tanishtiradi — baland tog‘li sarguzashtlardan tortib, mahalliy oilalar bilan iliq suhbatlargacha."
-    },
-    "kyrgyzstan": {
-      "about_country_title": "Qirg‘iziston: Tog‘lar, Ko‘llar va Ko‘chmanchilar Diyori",
-      "about_country_text1": "Ammo Qirg‘iziston faqat manzara emas — bu ko‘chmanchi ruhning yashovchan merosidir. Keng yaylovlarda (jailoo) oilalar hali ham chorva boqadi, bu ajdodlardan qolgan hayot tarzidir. Sayohatchilar bu yerda begonalar emas — ular mehmon sifatida kutib olinadi: iliq qimiz va cheksiz samimiyat bilan. Yulduzlar ostida ertaklar tinglash, komuz ohanglari eshitish, tandirda pishirilgan nonni tatib ko‘rish — bu hayotning kundalik bir qismi, va u yerning o‘ziday boy.",
-      "about_country_text2": "Qirg‘iziston — bu tirik madaniyat. Baland yaylovlarda chorvachilik davom etmoqda, sayohatchilar ochiq qo‘llar bilan kutib olinadi. Bayramlarda burgutchilar, kiyiz ustalari va qadimiy ot o‘yinlari nishonlanadi. Har bir tashrif vaqt sayohatiga aylanadi — abadiy an’analarga boy, ammo hanuz hayotga to‘la olamga.",
-      "hero_title": "Tog‘lar Qadimiy Rivoyatlarni Pichirlaydi",
-      "tours_title": "Qirg‘izistondagi Maxsus Turlarimizni Kashf Qiling",
-      "tours_text": "Qirg‘izistondagi sayohatlarimiz sizni muhtasham tabiat, qadimiy turmush tarzi va tog‘larning ochiqko‘ngil ruhi bilan bog‘laydi."
-    },
-    "turkmenistan": {
-      "about_country_title": "Turkmaniston: Ipak Yo‘lining Yashirin Gavhari",
-      "about_country_text1": "Turkmaniston — bu sokinlik va abadiy sirlar diyori. Bu yerda oltin qumlar qadimiy shaharlarni yashiradi, cho‘l bag‘ridan esa marmardan shaharlar qad ko‘taradi. Qadimda Parfiya va Xorazm kabi qudratli imperiyalar hukmronlik qilgan, Merv va Nisa xarobalari esa savdogarlar, olimlar va Ipak yo‘lini bosib o‘tgan sivilizatsiyalar haqidagi hikoyalarni pichirlab turadi.",
-      "about_country_text2": "Ammo tarix ortida tirik madaniyat yashaydi: g‘ururli, bardoshli va mehmondo‘st. An’anaviy qishloqlarda gilamlar hanuz qadimiy ramzlar bilan to‘qiladi, keng Qoraqum cho‘lida yurtdan yurtdagi hayot davom etadi. Mashhur Darvoza gaz krateri — “Do‘zax darvozasi” — tunni go‘yo yer ostidan chiqqan mash’al kabi yoritadi. Bu yurtda mehmondo‘stlik muqaddas — choy ulashiladi, hikoyalar aytiladi, mehmon esa aziz inson sifatida kutib olinadi. Turkmaniston — bu shunchaki manzil emas, balki jasoratli va qiziquvchanlar uchun ochiladigan kashfiyotdir.",
-      "hero_title": "Tarix Nafas Olayotgan Zamin va Abadiy An’analar Oazisi",
-      "tours_title": "Eksklyuziv Sayohat Dasturlarimizni Ko‘rib Chiqing",
-      "tours_text": "Bizning maxsus tuzilgan sayohat paketlarimiz orom, sarguzasht va madaniyatni uyg‘unlashtiradi. Siz uchun eng zo‘r sayohat bu yerda!"
-    }
-  },
-  "trip_finder": {
-    "top_title": "Sayohat topuvchisi",
-    "title": "Maxsus Sayohat Dasturlarimizni Kashiﬂang",
-    "search": {
-      "destination": "Manzil",
-      "duration": "Davomiyligi",
-      "year": "Yil",
-      "type": "Sayohat Turi",
-      "search_btn": "Qidirish"
-    }
-  },
-  "all": "Barchasi",
-  "loading": "Yuklanmoqda...",
-  "not_found": "Turlar topilmadi!"
+    "footer__top-text": "Eksklyuziv takliflar, sayohat bo'yicha maslahatlar va maqsad sari to'g'ridan-to'g'ri g'oyalar uchun pochta qutingizga olish uchun ro'yxatdan o'ting!",
+    "footer__email-placeholder": "Elektron pochta manzilingizni kiriting",
+    "footer__explore-text": "Tadqiqot",
+    "footer__why-travel-title": "Nega biz bilan sayohat qilish kerak?",
+    "footer__why-travel-text": "Haqiqiy tajribalar, tajribali qo'llanmalar, unutilmas xotiralar - Wonder bilan Ipak yo'lining haqiqiy ruhini kashf eting :)",
+    "footer__error-text1": "*Iltimos, elektron pochta manzilingizni kiriting.",
+    "footer__error-text2": "*Iltimos, to'g'ri e-pochta manzilini kiriting.",
+    "footer__correct-text3": "Maydonni to'g'ri to'ldirilgan!",
+    "footer__toast-correct": "Muvaffaqiyatli!",
+    "footer__toast-error": "Xato",
+    "footer__developed-by": "Ishlab chiqardi"
+  }
 }

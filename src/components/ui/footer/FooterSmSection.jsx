@@ -13,16 +13,16 @@ export default function FooterSmSection() {
   };
   const link = [
     {
-      links: t("header.nav.finder"),
+      links: t("footer.nav.finder"),
     },
     {
-      links: t("header.nav.about"),
+      links: t("footer.nav.about"),
     },
     {
-      links: t("header.nav.blog"),
+      links: t("footer.nav.blog"),
     },
     {
-      links: t("header.contact"),
+      links: t("footer.contact"),
     },
   ];
   const icon = [
@@ -59,15 +59,15 @@ export default function FooterSmSection() {
   useEffect(() => {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (form.email.length === null) {
-      setError({ ...error, email: "*Please enter your email." });
+      setError({ ...error, email: t("footer.footer__error-text1") });
       setCorrect({ ...correct, email: false });
     } else if (!emailRegex.test(form.email)) {
-      setError({ ...error, email: "*Please enter a valid email address." });
+      setError({ ...error, email: t("footer.footer__error-text2") });
       setCorrect({ ...correct, email: false });
     } else {
       setCorrect({
         ...correct,
-        email: "This field has been filled correctly!",
+        email: t("footer.footer__correct-text2"),
       });
       setError({ ...error, email: false });
     }
@@ -90,7 +90,7 @@ export default function FooterSmSection() {
     e.preventDefault();
     if (isFormValid) {
       await sendData(form.email);
-      toast.success("Successful!", {
+      toast.success(t("footer.footer__toast-correct"), {
         position: "top-right",
         autoClose: 2000,
         hideProgressBar: false,
@@ -102,7 +102,7 @@ export default function FooterSmSection() {
         transition: Slide,
       });
     } else {
-      toast.error("Error", {
+      toast.error(t("footer.footer__toast-error"), {
         position: "top-right",
         autoClose: 2000,
         hideProgressBar: false,
@@ -147,7 +147,7 @@ export default function FooterSmSection() {
               />
             </Link>
             <p className="footerSmSection__top-text w-[196px] font-normal text-[14px] leading-[18px] tracking-tighter-[-2%] text-white">
-              {t("footer.email_text")}
+              {t("footer.footer__top-text")}
             </p>
           </div>
           <form className="footerSmSection__form w-full flex flex-row justify-center items-center mt-[41px]">
@@ -164,7 +164,7 @@ export default function FooterSmSection() {
                   }}
                   type="email"
                   id="email"
-                  placeholder={t("footer.email_placeholder")}
+                  placeholder={t("footer.footer__email-placeholder")}
                   autoComplete="off"
                   value={form.email}
                   required
@@ -186,7 +186,7 @@ export default function FooterSmSection() {
             <nav className="footerSmSection__nav flex flex-col justify-center items-start">
               <ul className="footerSmSection__list flex flex-col justify-center items-start gap-6">
                 <h4 className="footerSmSection__list-text font-medium text-[24px] leading-[100%] tracking-tighter-[-2%] text-white">
-                  {t("footer.explore_text")}
+                  {t("footer.footer__explore-text")}
                 </h4>
                 {link.map((item, index) => (
                   <li
@@ -204,10 +204,10 @@ export default function FooterSmSection() {
             </nav>
             <div className="footerSmSection__bottom-right-box flex flex-col justify-center items-start w-[151px] gap-6">
               <h4 className="footerSmSection__bottom-right-box-title font-medium text-[19px] leading-[24px] tracking-tighter-[-2%] text-white">
-                {t("footer.why_travel_title")}
+                {t("footer.footer__why-travel-title")}
               </h4>
               <q className="footerSmSection__bottom-right-box-texts font-medium text-[16px] leading-[20px] tracking-tighter-[-2%] text-white/70">
-                {t("footer.why_travel_text")}
+                {t("footer.footer__why-travel-text")}
               </q>
             </div>
           </div>
@@ -246,7 +246,7 @@ export default function FooterSmSection() {
             </p>
             <div className="footerSmSection__copy-logo-box flex flex-row justify-center items-center">
               <p className="footerSmSection__developing-text font-medium text-[19px] leading-[24px] tracking-tighter-[-2%] text-white">
-                {t("footer.developed_by")}:&nbsp;&nbsp;
+                {t("footer.footer__developed-by")}:&nbsp;&nbsp;
               </p>
               <a
                 className="footerSmSection__copy-logo-link"

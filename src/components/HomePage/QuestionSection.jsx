@@ -6,37 +6,37 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { useTranslations } from "next-intl";
 export default function QuestionSection() {
-  const t = useTranslations("faq");
+  const t = useTranslations();
   const data = [
     {
       id: 1,
       number: "1.",
-      title: "How do I booking trip with your agency?",
-      text: `Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; `,
+      title: t("home_question.home_question-question-text1"),
+      text: t("home_question.home_question-text1"),
       iconOpen: "icons/open__chevron.svg",
       iconClose: "icons/close__chevron.svg",
     },
     {
       id: 2,
       number: "2.",
-      title: "Can I customize my travel?",
-      text: `Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; `,
+      title: t("home_question.home_question-question-text2"),
+      text: t("home_question.home_question-text2"),
       iconOpen: "icons/open__chevron.svg",
       iconClose: "icons/close__chevron.svg",
     },
     {
       id: 3,
       number: "3.",
-      title: "Do you offer travel insurance?",
-      text: `Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; `,
+      title: t("home_question.home_question-question-text3"),
+      text: t("home_question.home_question-text3"),
       iconOpen: "icons/open__chevron.svg",
       iconClose: "icons/close__chevron.svg",
     },
     {
       id: 4,
       number: "4.",
-      title: "Can you arrange flights and accomandations?",
-      text: `Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; `,
+      title: t("home_question.home_question-question-text4"),
+      text: t("home_question.home_question-text4"),
       iconOpen: "icons/open__chevron.svg",
       iconClose: "icons/close__chevron.svg",
     },
@@ -45,20 +45,20 @@ export default function QuestionSection() {
     {
       image: "images/hero__background-image.jpg",
       locationIcon: "icons/location__icon.svg",
-      locationText: "Uzbekistan, Samarkand",
-      text: `Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; Kazakhstan has a population of 20 million and one of the lowest population densities in the world`,
+      locationText: t("home_question.home_question-country-text1"),
+      text: t("home_question.home_question-title1"),
     },
     {
       image: "images/hero__second-background-image.jpg",
       locationIcon: "icons/location__icon.svg",
-      locationText: "Uzbekistan, Samarkand",
-      text: `Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; Kazakhstan has a population of 20 million and one of the lowest population densities in the world`,
+      locationText: t("home_question.home_question-country-text2"),
+      text: t("home_question.home_question-title2"),
     },
     {
       image: "images/hero__third-background-image.jpg",
       locationIcon: "icons/location__icon.svg",
-      locationText: "Uzbekistan, Samarkand",
-      text: `Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; Kazakhstan has a population of 20 million and one of the lowest population densities in the world`,
+      locationText: t("home_question.home_question-country-text3"),
+      text: t("home_question.home_question-title3"),
     },
   ];
   const [activeId, setActiveId] = useState(null);
@@ -93,16 +93,16 @@ export default function QuestionSection() {
       <div className="container question__container w-full flex flex-col justify-center items-start gap-[40px] px-6 md:gap-[94px] md:px-9">
         <div className="question__top-box flex flex-col justify-center items-start gap-2 md:gap-4">
           <p className="question__text md:text-[#A5958B] hidden md:block md:font-medium md:text-[24px] md:uppercase md:mb-4">
-            {t("top_title")}
+            {t("home_question.home_question-text")}
           </p>
           <h2 className="question__title hidden w-full lg:w-3/4 2xl:w-3/5 md:block md:font-medium md:text-[56px] md:leading-[100%] md:uppercase md:text-[#323232]">
-            {t("title")}
+            {t("home_question.home_question-title")}
           </h2>
           <p className="question__second-text font-medium text-[16px] uppercase text-[#A5958B] md:hidden">
-            Trip founder
+            {t("home_question.home_question-second-text")}
           </p>
           <h2 className="question__second-title font-medium text-[32px] leading-[40px] uppercase text-[#323232] md:hidden">
-            {t("top_title")}
+            {t("home_question.home_question-second-title")}
           </h2>
         </div>
         <div className="question__bottom-box w-full flex flex-col justify-center items-center gap-2 md:gap-4 xl:w-full xl:flex xl:flex-row xl:justify-between xl:items-start xl:gap-5 xl:relative">
