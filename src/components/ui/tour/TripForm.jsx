@@ -77,45 +77,39 @@ export const TripForm = () => {
           htmlFor="full_name"
           className="flex flex-col gap-y-2 font-medium lg:text-lg"
         >
-          <span className="lg:text-xl">Full name</span>
+          <span className="lg:text-xl">{t("contact.form.full_name")}</span>
           <input
             type="text"
             name="full_name"
             id="full_name"
-            placeholder="Enter you full name"
+            placeholder={t("contact.form.full_name-placeholder")}
             onChange={handleChange}
             value={formData.full_name}
             required
-            className="px-4 lg:px-6 py-2 lg:py-3 rounded-lg bg-[#FFFFFF1A] focus:bg-[#FFFFFF33] focus:outline-white border border-[#CBCBCB]"
+            className="w-full px-4 lg:px-6 py-2 lg:py-3 rounded-lg bg-[#FFFFFF1A] focus:bg-[#FFFFFF33] focus:outline-white border border-[#CBCBCB]"
           />
         </label>
         <label
           htmlFor="email"
           className="flex flex-col gap-y-2 font-medium lg:text-lg"
         >
-          <span className="lg:text-xl">Your email</span>
-          <div className="relative">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              onChange={handleChange}
-              value={formData.email}
-              required
-              className="w-full px-4 lg:px-6 py-2 lg:py-3 rounded-lg bg-[#FFFFFF1A] focus:bg-[#FFFFFF33] focus:outline-white border border-[#CBCBCB]"
-            />
-            {formData.email === "" && (
-              <span className="absolute left-[17px] lg:left-[25px] z-0 top-1/2 -translate-y-1/2 text-white/60 text-sm md:text-base lg:text-lg">
-                Enter your email
-              </span>
-            )}
-          </div>
+          <span className="lg:text-xl">{t("contact.form.email")}</span>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            onChange={handleChange}
+            value={formData.email}
+            required
+            placeholder={t("contact.form.email-placeholder")}
+            className="w-full px-4 lg:px-6 py-2 lg:py-3 rounded-lg bg-[#FFFFFF1A] focus:bg-[#FFFFFF33] focus:outline-white border border-[#CBCBCB]"
+          />
         </label>
         <label
           htmlFor="destination"
           className="flex flex-col gap-y-2 font-medium lg:text-lg"
         >
-          <span className="lg:text-xl">Your Destination</span>
+          <span className="lg:text-xl">{t("contact.form.destination")}</span>
           <select
             name="destination"
             id="destination"
@@ -125,7 +119,7 @@ export const TripForm = () => {
             className="px-4 lg:px-6 py-2 lg:py-3 rounded-lg bg-[#FFFFFF1A] focus:bg-[#FFFFFF33] focus:outline-white border border-[#CBCBCB]"
           >
             <option value="" disabled>
-              Select destination
+              {t("contact.form.destination-placeholder")}
             </option>
             {destinations?.map((destination) => (
               <option
@@ -142,7 +136,7 @@ export const TripForm = () => {
           htmlFor="trip_tour"
           className="flex flex-col gap-y-2 font-medium lg:text-lg mb-6"
         >
-          <span className="lg:text-xl">Trip Tour</span>
+          <span className="lg:text-xl">{t("contact.form.trip_tour")}</span>
           <select
             name="trip_tour"
             id="trip_tour"
@@ -152,7 +146,7 @@ export const TripForm = () => {
             className="px-4 lg:px-6 py-2 lg:py-3 rounded-lg bg-[#FFFFFF1A] focus:bg-[#FFFFFF33] focus:outline-white border border-[#CBCBCB]"
           >
             <option value="" disabled>
-              Select Trip Tour
+              {t("contact.form.trip_tour-placeholder")}
             </option>
             {tripThemes?.map((theme) => (
               <option
@@ -170,12 +164,12 @@ export const TripForm = () => {
         htmlFor="message"
         className="flex flex-col gap-y-2 md:gap-y-4 mt-4"
       >
-        <span className="lg:text-xl">Trip message</span>
+        <span className="lg:text-xl">{t("contact.form.message")}</span>
         <textarea
           type="text"
           name="message"
           id="message"
-          placeholder="Enter your message"
+          placeholder={t("contact.form.message-placeholder")}
           onChange={handleChange}
           value={formData.message}
           required
