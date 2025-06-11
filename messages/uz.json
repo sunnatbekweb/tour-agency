@@ -69,6 +69,17 @@
       "home_carousel-detail-sixth-3": "3 Kun 2 Kecha Sayohat"
     }
   },
+  "home_map": {
+    "top_title": "Sizning sarguzashtingiz shu yerdan boshlanadi",
+    "title": "Markaziy Osiyoning yashirin mo‘jizalarini kashf eting",
+    "country_info": {
+      "infoUz": "O‘zbekistonga xush kelibsiz — bu yerda Ipak yo‘li rang-barang bozorlarda, ulug‘vor madrasalarda va abadiy me’morchilikda yashamoqda. Ushbu qadimiy yurtda madaniyatlar chorrahasi mavjud, har bir moviy gumbaz va nozik o‘yilgan darvozalar tarixni pichirlab turadi. Qizilqum cho‘lining yaltiragan qumlaridan tortib, Samarqand va Buxoroning she’rday go‘zalligigacha — O‘zbekiston sizni imperiyalar va orzuvchilarning izidan yurishga chorlaydi.",
+      "infoKz": "Qozog‘istonga xush kelibsiz — bu yurt, oltin dashtlar ufqdan narigacha cho‘zilgan, zamonaviy shaharlar esa qadimiy an’analar bilan yonma-yon yashaydi. Dunyoning eng yirik dengizga chiqmaydigan davlati sifatida Qozog‘iston sizga erkin nafas olish, kezish va ozodlikni qayta kashf etish imkonini beradi. Bayterek minorasining yaltiragan cho‘qqilaridan tortib, Charin kanyonining g‘ayritabiiy go‘zalligigacha — bu yurtda har bir qadamda bir hikoya bor.",
+      "infoKg": "Qirg‘izistonga xush kelibsiz — bu yerda oppoq cho‘qqilar ko‘chmanchi an’analarni bag‘riga oladi, moviy ko‘llar esa osmonning cheksizligini aks ettiradi. Bu dag‘al va ruhli yurt — sayohatchilar uchun jannat, u yerda yurta-yurtalar tog‘lar bag‘rida qad rostlagan, otlar esa erkin kezadi. Issiqko‘lning osoyishta go‘zalligidan tortib, Tyan-Shan tog‘larining hayratga soluvchi yo‘llarigacha — Qirg‘iziston sizni tabiat va erkinlikda ildiz otgan hayot tarzi bilan bog‘lanishga chorlaydi.",
+      "infoTj": "Tojikistonga xush kelibsiz — bu yurt baland tog‘lar, qadimiy qal’alar va beg‘ubor tabiat go‘zalligi yurti. Markaziy Osiyoning yuragida joylashgan bu yashirin durdona betakror alp manzaralari va samimiy mehmondo‘stlikni taklif etadi. Pomir tog‘larining osmonu falakka yetgan cho‘qqilaridan tortib, Iskandarkul ko‘lining musaffo suvlari — Tojikistonda har bir yo‘l sizni sarguzasht, tafakkur va hayratga yetaklaydi.",
+      "infoTk": "Turkmanistonga xush kelibsiz — bu yurt sahro sirlari, marmar shaharlar va qumlarda yashiringan qadimiy meroslar yurti. Qizil issiqlikda yonayotgan Qoraqum cho‘lidagi Darvoza gaz krateri — “Do‘zax darvozasi” — mamlakatning kuchli va yovvoyi go‘zalligining ramzidir. Ipak yo‘lining durdonasi bo‘lgan qadimiy Merw xarobalari bo‘ylab sayr qiling, Ashxobodning oppoq marmar arxitekturasidan hayratga tushing. Turkmaniston — tarix va g‘aroyib zamonaviylik jozibali uyg‘unlikda uchrashadigan yurtdir."
+    }
+  },
   "home_unique": {
     "home_unique-text": "O'z Sarguzashtingizni Yarating",
     "home_unique-title": "Noyob, Shaxsiy, Unutilmas",
@@ -128,7 +139,12 @@
     "explore_text": "O‘rganing",
     "why_travel_title": "Nega biz bilan sayohat qilish kerak?",
     "why_travel_text": "Haqiqiy tajribalar, tajribali gidlar, unutilmas xotiralar — Wonder bilan Ipak yo‘lining ruhini kashf eting:)",
-    "developed_by": "Dasturchi"
+    "developed_by": "Dasturchi",
+    "footer__error-text1": "*Iltimos, emailingizni kiriting.",
+    "footer__error-text2": "*Iltimos, to‘g‘ri email manzilini kiriting.",
+    "footer__correct-text3": "Bu maydon to‘g‘ri to‘ldirildi!",
+    "footer__toast-correct": "Muvaffaqiyatli",
+    "footer__toast-error": "Xatolik yuz berdi"
   },
   "destinations": {
     "about": "Mamlakat haqida",
