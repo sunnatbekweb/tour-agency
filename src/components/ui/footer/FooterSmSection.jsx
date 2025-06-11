@@ -11,18 +11,22 @@ export default function FooterSmSection() {
   const moveTop = () => {
     window.scrollTo(0, 0);
   };
-  const link = [
+  const links = [
     {
-      links: t("footer.nav.finder"),
+      text: t("header.destinations.index"),
+      link: "#",
     },
     {
-      links: t("footer.nav.about"),
+      text: t("header.nav.about"),
+      link: "/about",
     },
     {
-      links: t("footer.nav.blog"),
+      text: t("header.nav.blog"),
+      link: "/blog",
     },
     {
-      links: t("footer.contact"),
+      text: t("header.contact"),
+      link: "/contact",
     },
   ];
   const icon = [
@@ -147,7 +151,7 @@ export default function FooterSmSection() {
               />
             </Link>
             <p className="footerSmSection__top-text w-[196px] font-normal text-[14px] leading-[18px] tracking-tighter-[-2%] text-white">
-              {t("footer.footer__top-text")}
+              {t("footer.email_text")}
             </p>
           </div>
           <form className="footerSmSection__form w-full flex flex-row justify-center items-center mt-[41px]">
@@ -164,7 +168,7 @@ export default function FooterSmSection() {
                   }}
                   type="email"
                   id="email"
-                  placeholder={t("footer.footer__email-placeholder")}
+                  placeholder={t("email_placeholder")}
                   autoComplete="off"
                   value={form.email}
                   required
@@ -186,16 +190,16 @@ export default function FooterSmSection() {
             <nav className="footerSmSection__nav flex flex-col justify-center items-start">
               <ul className="footerSmSection__list flex flex-col justify-center items-start gap-6">
                 <h4 className="footerSmSection__list-text font-medium text-[24px] leading-[100%] tracking-tighter-[-2%] text-white">
-                  {t("footer.footer__explore-text")}
+                  {t("footer.explore_text")}
                 </h4>
-                {link.map((item, index) => (
+                {links.map((item, index) => (
                   <li
                     className="footerSmSection__lists flex flex-col justify-center items-start"
                     key={index}
                   >
-                    <Link className="footerSmSection__links flex flex-col justify-center items-start">
+                    <Link href={item.link} className="footerSmSection__links flex flex-col justify-center items-start">
                       <p className="footerSmSection__links-text font-medium text-[16px] leading-[100%] tracking-tighter-[-2%] text-white/70 active:opacity-50">
-                        {item.links}
+                        {item.text}
                       </p>
                     </Link>
                   </li>
@@ -204,10 +208,10 @@ export default function FooterSmSection() {
             </nav>
             <div className="footerSmSection__bottom-right-box flex flex-col justify-center items-start w-[151px] gap-6">
               <h4 className="footerSmSection__bottom-right-box-title font-medium text-[19px] leading-[24px] tracking-tighter-[-2%] text-white">
-                {t("footer.footer__why-travel-title")}
+                {t("footer.why_travel_title")}
               </h4>
               <q className="footerSmSection__bottom-right-box-texts font-medium text-[16px] leading-[20px] tracking-tighter-[-2%] text-white/70">
-                {t("footer.footer__why-travel-text")}
+                {t("footer.why_travel_text")}
               </q>
             </div>
           </div>
@@ -246,7 +250,7 @@ export default function FooterSmSection() {
             </p>
             <div className="footerSmSection__copy-logo-box flex flex-row justify-center items-center">
               <p className="footerSmSection__developing-text font-medium text-[19px] leading-[24px] tracking-tighter-[-2%] text-white">
-                {t("footer.footer__developed-by")}:&nbsp;&nbsp;
+                {t("footer.developed_by")}:&nbsp;&nbsp;
               </p>
               <a
                 className="footerSmSection__copy-logo-link"
