@@ -276,7 +276,15 @@
       }
     }
   },
+  "blog": {
+    "hero_title": "Wander. Discover. Share.",
+    "top_text": "Trip Blogs",
+    "title": "Where Cultures Converge and History Lives",
+    "read_more": "Read more"
+  },
   "all": "All",
   "loading": "Loading...",
-  "not_found": "No tours found!"
+  "not_found": "No tours found!",
+  "pagination_prev": "Prev",
+  "pagination_next": "Next"
 }

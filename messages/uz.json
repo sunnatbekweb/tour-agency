@@ -276,7 +276,15 @@
       }
     }
   },
+  "blog": {
+    "hero_title": "Sayr qil. Kashf et. Ulash.",
+    "top_text": "Sayohat bloglari",
+    "title": "Madaniyatlar uchrashadigan va tarix jonlanadigan joy",
+    "read_more": "Batafsil o‘qish"
+  },
   "all": "Barchasi",
   "loading": "Yuklanmoqda...",
-  "not_found": "Turlar topilmadi!"
+  "not_found": "Turlar topilmadi!",
+  "pagination_prev": "Oldingi",
+  "pagination_next": "Keyingi"
 }
