@@ -282,6 +282,27 @@
     "title": "Madaniyatlar uchrashadigan va tarix jonlanadigan joy",
     "read_more": "Batafsil o‘qish"
   },
+  "contact": {
+    "text1": "Keyingi sayohatingiz haqida savollaringiz bormi?",
+    "text2": "Agar kerak bo‘lsa, qo‘shimcha yordam uchun siz bilan telefon orqali bog‘lanishdan mamnunmiz. Keling, mukammal sayohatingizni birga rejalashtiraylik!",
+    "address_text": "Bizning manzil",
+    "address": "O‘zbekiston, Toshkent shahri, Mirobod tumani, Shahrisabz ko‘chasi, 23-uy",
+    "contacts": "Aloqa",
+    "form": {
+      "title": "Biz bilan bog‘laning",
+      "full_name": "To‘liq ismingiz",
+      "full_name-placeholder": "Ismingizni kiriting",
+      "email": "Elektron pochta",
+      "email-placeholder": "Email manzilingizni kiriting",
+      "destination": "Borishni istagan joyingiz",
+      "destination-placeholder": "Manzilni tanlang",
+      "trip_tour": "Sayohat turi",
+      "trip_tour-placeholder": "Sayohat turini tanlang",
+      "message": "Xabaringiz",
+      "message-placeholder": "Xabaringizni kiriting",
+      "send": "Xabar yuborish"
+    }
+  },
   "all": "Barchasi",
   "loading": "Yuklanmoqda...",
   "not_found": "Turlar topilmadi!",
