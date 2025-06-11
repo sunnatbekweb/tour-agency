@@ -168,7 +168,7 @@ export default function FooterSmSection() {
                   }}
                   type="email"
                   id="email"
-                  placeholder={t("email_placeholder")}
+                  placeholder={t("footer.email_placeholder")}
                   autoComplete="off"
                   value={form.email}
                   required
