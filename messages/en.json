@@ -16,9 +16,10 @@
     "contact": "Contact us"
   },
   "home_hero": {
-    "subtitle1": "From Ancient Steppes to Timeless Cities",
-    "title": "Welcome to the Heart of the Silk Road",
-    "subtitle2": "Your Central Asian Adventure Begins Here"
+    "home_hero-subtitle1": "From Ancient Steppes to Timeless Cities",
+    "home_hero-title": "Welcome to the Heart of the Silk Road",
+    "home_hero-subtitle2": "Your Central Asian Adventure Begins Here",
+    "home_hero-contact": "Contact us"
   },
   "home_explore": {
     "home_explore-text": "Destinations Preview",
@@ -67,7 +68,25 @@
       "home_carousel-detail-sixth-1": "Including Accomandation",
       "home_carousel-detail-sixth-2": "Free Proffesional Guide Tour",
       "home_carousel-detail-sixth-3": "3 Days 2 Nights trip"
-    }
+    },
+    "home_carousel-button": "Booking"
+  },
+  "home_countries": {
+    "home_countries-button-text1": "Kazakhstan",
+    "home_countries-title1": "Kazakhstan",
+    "home_countries-text1": "Welcome to Kazakhstan — a land where golden steppes stretch beyond the horizon, where futuristic cities rise beside ancient traditions. As the world’s largest landlocked country, Kazakhstan offers boundless space to breathe, roam, and rediscover freedom. From the shimmering heights of Baiterek Tower to the otherworldly beauty of Charyn Canyon, every step here tells a story.",
+    "home_countries-button-text2": "Uzbekistan",
+    "home_countries-title2": "Uzbekistan",
+    "home_countries-text2": "Welcome to Uzbekistan — a crossroads of ancient civilizations and vibrant cultures. Explore majestic madrasahs, bustling bazaars, and the timeless beauty of Samarkand, Bukhara, and Khiva. With warm hospitality, rich traditions, and stunning architecture along the Silk Road, Uzbekistan invites you to step back in time while enjoying the charm of today.",
+    "home_countries-button-text3": "Kyrgyzstan",
+    "home_countries-title3": "Kyrgyzstan",
+    "home_countries-text3": "Welcome to Kyrgyzstan — a land of soaring mountains, crystal-clear lakes, and nomadic heritage. From the breathtaking beauty of Lake Issyk-Kul to the rugged trails of the Tian Shan, adventure awaits. Experience yurt stays, horseback rides, and warm hospitality in a country where nature and tradition create an unforgettable journey.",
+    "home_countries-button-text4": "Tajikistan",
+    "home_countries-title4": "Tajikistan",
+    "home_countries-text4": "Welcome to Tajikistan — a land of towering peaks, ancient history, and heartfelt traditions. Discover the majestic Pamir Mountains, serene alpine lakes, and Silk Road echoes in cities like Khujand and Dushanbe. With its warm-hearted people and breathtaking landscapes, Tajikistan offers an authentic adventure shaped by culture, nature, and resilience.",
+    "home_countries-button-text5": "Turkmenistan",
+    "home_countries-title5": "Turkmenistan",
+    "home_countries-text5": "Welcome to Turkmenistan — a land of mystery, marble cities, and desert wonders. Explore the blazing Darvaza Gas Crater, ancient ruins of Merv, and the quiet beauty of the Karakum Desert. With deep-rooted traditions and a unique cultural identity, Turkmenistan invites you to uncover its hidden treasures and timeless heritage."
   },
   "home_unique": {
     "home_unique-text": "Craft Your Own Adventure",

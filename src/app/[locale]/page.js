@@ -26,7 +26,9 @@ export default function Home() {
       {loading && (
         <div
           className={`fixed top-0 left-0 right-0 w-full h-screen flex items-center justify-center bg-[#A5958B] z-[9999] transition-all duration-700 ease-in-out ${
-            fadeOut ? "opacity-0" : "opacity-100 scale-100"
+            fadeOut
+              ? "opacity-0 cursor-auto"
+              : "opacity-100 scale-100 cursor-none"
           }`}
         >
           <span className="loader" />

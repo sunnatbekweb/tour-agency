@@ -203,7 +203,9 @@ export default function CarouselSection() {
                     ))}
                   </div>
                   <div className="carousel__button">
-                    <BookingButton>Booking</BookingButton>
+                    <BookingButton>
+                      {t("home_carousel.home_carousel-button")}
+                    </BookingButton>
                   </div>
                 </div>
               </div>

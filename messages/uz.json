@@ -16,9 +16,10 @@
     "contact": "Bog‘lanish"
   },
   "home_hero": {
-    "subtitle1": "Qadimgi Dashtlardan Abadiy Shaharlargacha",
-    "title": "Ipak Yo'lining Yuragiga Xush Kelibsiz",
-    "subtitle2": "Sizning Markaziy Osiyo Sarguzashtingiz Shu Yerda Boshlanadi"
+    "home_hero-subtitle1": "Qadimgi Dashtlardan Abadiy Shaharlargacha",
+    "home_hero-title": "Ipak Yo'lining Yuragiga Xush Kelibsiz",
+    "home_hero-subtitle2": "Sizning Markaziy Osiyo Sarguzashtingiz Shu Yerda Boshlanadi",
+    "home_hero-contact": "Bog‘lanish"
   },
   "home_explore": {
     "home_explore-text": "Mo‘ljallarni oldindan ko‘rish",
@@ -67,7 +68,25 @@
       "home_carousel-detail-sixth-1": "Turar Joy Bilan",
       "home_carousel-detail-sixth-2": "Bepul Professional Ekskursiya Gid Sayohatchi",
       "home_carousel-detail-sixth-3": "3 Kun 2 Kecha Sayohat"
-    }
+    },
+    "home_carousel-button": "Buyurtma"
+  },
+  "home_countries": {
+    "home_countries-button-text1": "Qozog'iston",
+    "home_countries-title1": "Qozog'iston",
+    "home_countries-text1": "Qozog‘istonga xush kelibsiz – oltin dashtlar ufqdan uzoqqa cho‘zilgan, qadimiy an’analar yonida futuristik shaharlar ko‘tarilgan o‘lka. Dunyodagi dengizga chiqish imkoni bo'lmagan eng yirik davlat sifatida Qozog'iston nafas olish, sayr qilish va erkinlikni qayta kashf qilish uchun cheksiz makonni taklif etadi. Bayterek minorasining yaltirab turgan cho‘qqisidan tortib to Charin kanyonining o‘zga dunyo go‘zalligigacha bu yerdagi har bir qadam bir voqeani hikoya qiladi.",
+    "home_countries-button-text2": "O'zbekiston",
+    "home_countries-title2": "O'zbekiston",
+    "home_countries-text2": "Qadimgi sivilizatsiyalar va jo‘shqin madaniyatlar chorrahasi bo‘lgan O‘zbekistonga xush kelibsiz. Ulug‘vor madrasalar, gavjum bozorlar, Samarqand, Buxoro va Xivaning abadiy go‘zalligi bilan tanishing. Ipak yo‘li bo‘ylab samimiy mehmondo‘stligi, boy an’analari va ajoyib me’morchiligi bilan O‘zbekiston sizni bugungi jozibadan bahramand bo‘lib, o‘tmishda orqaga qaytishga taklif qiladi.",
+    "home_countries-button-text3": "Qirg'iziston",
+    "home_countries-title3": "Qirg'iziston",
+    "home_countries-text3": "Qirg'izistonga xush kelibsiz - baland tog'lar, tiniq ko'llar va ko'chmanchilar merosi. Issiqko'lning hayratlanarli go'zalligidan Tyan-Shanning qo'pol so'qmoqlarigacha sarguzashtlar kutmoqda. Tabiat va urf-odatlar unutilmas sayohatni yaratadigan mamlakatda uydagi turar joy, ot minish va samimiy mehmondo'stlikni his eting.",
+    "home_countries-button-text4": "Tojikiston",
+    "home_countries-title4": "Tojikiston",
+    "home_countries-text4": "Tojikistonga xush kelibsiz - baland cho'qqilar, qadimiy tarix va samimiy an'analar o'lkasi. Ulug‘vor Pomir tog‘larini, sokin alp ko‘llarini va Xo‘jand va Dushanbe kabi shaharlardagi Ipak yo‘li aks sadolarini kashf eting. O'zining samimiy odamlari va hayajonli manzaralari bilan Tojikiston madaniyat, tabiat va chidamlilik bilan shakllangan haqiqiy sarguzashtni taklif qiladi.",
+    "home_countries-button-text5": "Turkmaniston",
+    "home_countries-title5": "Turkmaniston",
+    "home_countries-text5": "Turkmanistonga xush kelibsiz - sirli, marmar shaharlar va cho'l mo''jizalari mamlakati. Yonayotgan Darvaza gaz krateri, Marvning qadimiy xarobalari va Qoraqum cho'lining sokin go'zalligini o'rganing. Turkmaniston chuqur ildiz otgan an'analari va o'ziga xos madaniy o'ziga xosligi bilan sizni o'zining yashirin xazinalari va abadiy merosini ochishga taklif qiladi."
   },
   "home_unique": {
     "home_unique-text": "O'z Sarguzashtingizni Yarating",
