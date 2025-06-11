@@ -1,4 +1,4 @@
-import { useTranslations } from "use-intl";
+import { useTranslations } from "next-intl";
 
 export const useCountryData = () => {
   const t = useTranslations("");
@@ -124,6 +124,42 @@ export const useAboutCountries = () => {
       image1: "/images/turkmenistan__first.jpg",
       image2: "/images/turkmenistan__second.jpg",
       image3: "/images/turkmenistan__third.jpg",
+    },
+  ];
+};
+
+export const useExpertise = () => {
+  const t = useTranslations("about.expertise.data");
+  return [
+    {
+      icon: "/icons/expertise_icon.svg",
+      title: t("item.title"),
+      text: t("item.text"),
+    },
+    {
+      icon: "/icons/expertise_icon.svg",
+      title: t("item1.title"),
+      text: t("item1.text"),
+    },
+    {
+      icon: "/icons/expertise_icon.svg",
+      title: t("item2.title"),
+      text: t("item2.text"),
+    },
+    {
+      icon: "/icons/expertise_icon.svg",
+      title: t("item3.title"),
+      text: t("item3.text"),
+    },
+    {
+      icon: "/icons/expertise_icon.svg",
+      title: t("item4.title"),
+      text: t("item4.text"),
+    },
+    {
+      icon: "/icons/expertise_icon.svg",
+      title: t("item5.title"),
+      text: t("item5.text"),
     },
   ];
 };

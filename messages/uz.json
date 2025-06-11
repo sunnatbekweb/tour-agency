@@ -192,7 +192,7 @@
     }
   },
   "trip_finder": {
-    "top_title": "Sayohat topuvchisi",
+    "top_title": "Sayohat qidiruvi",
     "title": "Maxsus Sayohat Dasturlarimizni Kashiﬂang",
     "search": {
       "destination": "Manzil",
@@ -202,7 +202,7 @@
       "search_btn": "Qidirish"
     },
     "trip_detail": {
-      "top_text": "Sayohat Bloglari",
+      "top_text": "Sayohat qidiruvi",
       "from": "Boshlanishi",
       "reservation": "Bron qilish",
       "tour_info": {
@@ -229,7 +229,62 @@
       "occupancy": "Ikki kishilik tur joylashuvi"
     }
   },
+  "about": {
+    "hero": {
+      "text1": "Faqat sayohat emas",
+      "text2": "Biz hikoyalarni so'zlaymiz"
+    },
+    "section1": {
+      "title": "Madaniyatlar uchrashadigan va tarix jonlanadigan joy",
+      "text": "Silk Road Wonders — bu oddiy sayohat kompaniyasi emas, bu sizni afsonaviy Ipak yo‘liga olib kiradigan eshikdir. Biz o‘tmish bilan bugunni bog‘laydigan, qadimiy karvon yo‘llari, rang-barang madaniyatlar va bir paytlar sivilizatsiyalarni bog‘lagan savdo ruhi orqali sizni sayohatga chorlaymiz. Har bir sayohat — bu tarixga zamonaviy sayohatchi ko‘zi bilan qarash."
+    },
+    "section2": {
+      "title": "Bizning eksklyuziv turimizni kashf eting",
+      "subtitle": "Jamoamiz doim kengayib bormoqda, lekin barchamizni yagona maqsad birlashtiradi: jamoalar uchun muvaffaqiyatli savdo jarayonini nafaqat mumkin, balki muqarrar qilish.",
+      "text": "2022-yilda biz ko‘plab qiyinchiliklarga duch keldik, lekin ularni yengib o‘tdik. Biz ishonamizki, vaqt, erkinlik va to‘g‘ri tanlov sayohatni unutilmas qiladi. Har bir tajriba qadrlanishi, har bir muammo — yengil bo‘lishi kerak. Biz sizga texnologiya, madaniyat va mijozlarga xizmatni uyg‘unlashtirgan noyob imkoniyatlarni taqdim etamiz.",
+      "bottom_text": "“Bizning maqsadimiz — kichik va o‘rta bizneslar uchun mijozlar bilan barqaror va foydali aloqalar o‘rnatishga yordam beradigan dasturiy yechimlar yaratish.”"
+    },
+    "tour_leaders": "Ajoyib gidlarimiz bilan tanishing",
+    "expertise": {
+      "title": "Bizning ustunliklarimiz",
+      "subtitle": "Silk Road Adventures kompaniyasida biz sizga alohida sayohat tajribasini taqdim etamiz. Bizni boshqalardan ajratib turadigan jihatlar:",
+      "data": {
+        "item": {
+          "title": "Madaniy bilimlar",
+          "text": "Markaziy Osiyo va Ipak yo‘li tarixi, an’analari va urf-odatlarini chuqur tushunish."
+        },
+        "item1": {
+          "title": "Logistika ustaligi",
+          "text": "Sayohatingizning har bir tafsilotini mukammal rejalashtirish va amalga oshirish."
+        },
+        "item2": {
+          "title": "Mijozlar roziligi",
+          "text": "Har bir sayohatchining unutilmas tajriba olishini ta’minlash."
+        },
+        "item3": {
+          "title": "Barqarorlik",
+          "text": "O‘zbekistonning go‘zalligini asrash uchun ekologik sayohat amaliyotlarini ilgari surish."
+        },
+        "item4": {
+          "title": "Sarguzashtlarni rejalashtirish",
+          "text": "Sizning qiziqishlaringizga mos, xavfsiz va hayajonli yo‘nalishlarni yaratish."
+        },
+        "item5": {
+          "title": "Mahalliy hamkorlik",
+          "text": "Mahalliy hamjamiyatlar bilan hamkorlik qilib, chinakam tajriba taqdim etish."
+        }
+      }
+    }
+  },
+  "blog": {
+    "hero_title": "Sayr qil. Kashf et. Ulash.",
+    "top_text": "Sayohat bloglari",
+    "title": "Madaniyatlar uchrashadigan va tarix jonlanadigan joy",
+    "read_more": "Batafsil o‘qish"
+  },
   "all": "Barchasi",
   "loading": "Yuklanmoqda...",
-  "not_found": "Turlar topilmadi!"
+  "not_found": "Turlar topilmadi!",
+  "pagination_prev": "Oldingi",
+  "pagination_next": "Keyingi"
 }

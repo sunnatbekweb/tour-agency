@@ -19,7 +19,7 @@ export default function TripDetail() {
   const params = useParams();
   const locale = useLocale();
   const t = useTranslations("trip_finder.trip_detail");
-  const faq = useTranslations("faq");
+  const faq = useTranslations("home_question");
   const getTrip = async () => {
     try {
       await axios
@@ -252,8 +252,8 @@ export default function TripDetail() {
       <section className="question mt-[64px] md:mt-[94px] xl:mt-[100px]">
         <div className="container question__container w-full flex flex-col justify-center items-start gap-[40px] px-6 md:gap-[94px] md:px-9">
           <div className="question__top-box w-full md:w-3/4 xl:w-3/5 flex flex-col justify-center items-start gap-2 md:gap-4">
-            <h2 className="question__title font-medium text-3xl md:text-5xl lg:text-7xl text-[#323232] uppercase">
-              {faq("top_title")}
+            <h2 className="question__title font-medium text-xl md:text-3xl lg:text-5xl text-[#323232] uppercase">
+              {faq("home_question-text")}
             </h2>
           </div>
           <AboutFAQ />
