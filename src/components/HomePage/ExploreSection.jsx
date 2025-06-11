@@ -6,7 +6,7 @@ export default function ExploreSection() {
   return (
     <div>
       <section className="explore mt-[40px] md:mt-[64px] lg:mt-[100px]">
-        <div className="container explore__container flex flex-col justify-center items-start gap-2 px-6 md:gap-4 md:px-8">
+        <div className="container explore__container flex flex-col justify-center items-start gap-2 px-6 md:gap-4 md:px-9">
           <p className="explore__text font-medium text-[16px] leading-[100%] text-[#A5958B] uppercase md:text-[24px]">
             {t("home_explore.home_explore-text")}
           </p>

@@ -74,8 +74,16 @@ export default function SmCountriesSection() {
   return (
     <div>
       <section className="countries w-full py-[80px] md:py-[100px] 2xl:hidden">
-        <div className="container countries__container">
-          <div className="countries__top-box flex flex-row justify-start items-center gap-2 overflow-x-auto px-6 mb-8 md:mb-[56px] md:gap-4 md:px-9">
+        <div className="container countries__container px-6 md:px-9">
+          <div className="countries__top-box mb-[48px] flex flex-col justify-center items-start gap-4 md:mb-[80px] xl:mb-[100px]">
+            <p className="countries__top-text text-[16px] leading-[100%] text-[#A5958B] uppercase md:text-[24px]">
+              see your own adventure
+            </p>
+            <h2 className="countries__top-title w-full font-medium text-[32px] leading-[40px] text-[#323232] uppercase md:text-[56px] md:leading-[60px] lg:w-[642px]">
+              Unveil Central Asia’s Hidden Wonders
+            </h2>
+          </div>
+          <div className="countries__top-box w-full flex flex-row justify-start items-start gap-2 overflow-x-auto px-6 mb-8 md:mb-[56px] md:gap-4 md:px-9">
             {countryData.map((item) => (
               <button
                 className={`countries__top-buttons transition-all duration-500 ease-in-out flex justify-center items-center px-[18px] py-[12px] rounded-[16px] font-medium text-[16px] leading-[100%] md:text-[32px] md:px-[25px] md:py-[17px] md:rounded-[32px] ${
@@ -90,7 +98,7 @@ export default function SmCountriesSection() {
               </button>
             ))}
           </div>
-          <div className="countries__bottom-box w-full px-6 md:px-9">
+          <div className="countries__bottom-box w-full">
             <div className="countries__top-info transition-all duration-500 ease-in-out w-full bg-[#E9DED8] rounded-[10px] px-[22px] pt-[14px] pb-[14px] md:px-[48px] md:pt-[32px] md:pb-[32px] md:rounded-[24px]">
               <div className="countries__mini-top-info w-full cursor-pointer mb-8 flex flex-row justify-between items-center transition-all duration-500 ease-in-out">
                 <h3 className="countries__top-info-title font-medium text-[22px] md:text-[40px] md:leading-[60px] transition-all duration-500 ease-in-out">
