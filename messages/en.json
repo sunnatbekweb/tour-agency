@@ -202,7 +202,7 @@
       "search_btn": "Search"
     },
     "trip_detail": {
-      "top_text": "Trip Blogs",
+      "top_text": "Trip Finder",
       "from": "From",
       "reservation": "Make a Reservation",
       "tour_info": {
@@ -227,6 +227,53 @@
       "avilable": "Available",
       "sold_out": "Sold Out",
       "occupancy": "Double Occupancy"
+    }
+  },
+  "about": {
+    "hero": {
+      "text1": "Not Just Tours",
+      "text2": "We Tell Stories"
+    },
+    "section1": {
+      "title": "Where Cultures Converge and History Lives",
+      "text": "Silk Road Wonders is more than just a travel company — it’s your gateway to the legendary Silk Road. We craft immersive journeys that connect the past with the present, guiding you through ancient caravan routes, vibrant cultures, and the enduring spirit of trade that once linked civilizations.Each journey with us is a step into history, reimagined for the modern explorer."
+    },
+    "section2": {
+      "title": "Explore Our Exclusive Tour",
+      "subtitle": "Our crew is always getting bigger, but we all work toward one goal: to make sales success not only possible but inevitable for teams everywhere.",
+      "text": "In 2022, at vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+      "bottom_text": "“Our goal is to build software that gives customer-facing teams at SMBs the ability to create fruitful and enduring relationships with customers.”"
+    },
+    "tour_leaders": "Meet our amazing tour leaders",
+    "expertise": {
+      "title": "our Expertise",
+      "subtitle": "At Silk Road Adventures, we pride ourselves on delivering exceptional travel experiences. Here’s what sets us apart:",
+      "data": {
+        "item": {
+          "title": "Cultural Knowledge",
+          "text": "Deep understanding of Central Asia and Silk Road traditions, history, and local customs."
+        },
+        "item1": {
+          "title": "Logistics Mastery",
+          "text": "Seamless planning and execution of every detail of your journey."
+        },
+        "item2": {
+          "title": "Customer Satisfaction",
+          "text": "Commitment to making every traveler's experience unforgettable."
+        },
+        "item3": {
+          "title": "Sustainability",
+          "text": "Promoting eco-friendly travel practices to preserve Uzbekistan’s beauty."
+        },
+        "item4": {
+          "title": "Adventure Planning",
+          "text": "Creating thrilling and safe adventures tailored to your interests."
+        },
+        "item5": {
+          "title": "Local Partnerships",
+          "text": "Collaborating with communities to offer authentic experiences."
+        }
+      }
     }
   },
   "all": "All",
