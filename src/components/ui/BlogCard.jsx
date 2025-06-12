@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export const BlogCard = ({ post }) => {
   const locale = useLocale();
+  const t = useTranslations();
 
   const formatDate = (rawDate) => {
     const date = new Date(rawDate);
@@ -39,7 +40,7 @@ export const BlogCard = ({ post }) => {
           </span>
           <Link href={`/blog/${post.id}`} className="w-1/2">
             <button className="w-full h-[48px] bg-[#B4A297] rounded-4xl font-medium text-white text-base">
-              Read more
+              {t("blog.read_more")}
             </button>
           </Link>
         </div>

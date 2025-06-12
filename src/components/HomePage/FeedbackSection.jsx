@@ -86,7 +86,7 @@ export default function FeedbackSection() {
                     src={item.quotationIcon}
                     alt="quotation"
                   />
-                  <h4 className="feedback__swiper-comment font-medium text-[22px] leading-[32px] text-[#323232] md:text-[40px] md:leading-[52px] xl:text-[28px] xl:leading-[32px] xl:w-full">
+                  <h4 className="feedback__swiper-comment font-medium text-[22px] leading-[32px] text-[#323232] md:text-[40px] md:leading-[52px] xl:text-[28px] xl:leading-[32px] xl:w-full xl:line-clamp-5 2xl:line-clamp-3">
                     {item.comment}
                   </h4>
                   <div className="feedback__swiper-mini-box flex flex-col justify-center items-start gap-2 md:gap-0">
@@ -98,7 +98,7 @@ export default function FeedbackSection() {
                     </p>
                   </div>
                 </div>
-                <div className="feedback__swiper-right-box hidden  xl:block">
+                <div className="feedback__swiper-right-box hidden xl:block">
                   <img
                     className="feedback__swiper-images xl:object-cover xl:rounded-[18px] xl:h-[449px] 2xl:h-[385px]"
                     src={item.userImages}

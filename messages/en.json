@@ -3,68 +3,75 @@
     "destinations": {
       "index": "Destinations",
       "uz": "Uzbekistan",
-      "kz": "Kazahstan",
+      "kz": "Kazakhstan",
       "tj": "Tajikistan",
-      "kg": "Kyrgyzystain",
+      "kg": "Kyrgyzstan",
       "tk": "Turkmenistan"
     },
     "nav": {
       "finder": "Trip Finder",
-      "about": "About us",
+      "about": "About Us",
       "blog": "Blog"
     },
-    "contact": "Contact us"
+    "contact": "Contact Us"
   },
   "home_hero": {
+<<<<<<< HEAD
     "home_hero-subtitle1": "From Ancient Steppes to Timeless Cities",
     "home_hero-title": "Welcome to the Heart of the Silk Road",
     "home_hero-subtitle2": "Your Central Asian Adventure Begins Here",
     "home_hero-contact": "Contact us"
+=======
+    "subtitle1": "From ancient steppes to timeless cities",
+    "title": "Welcome to the Heart of the Silk Road",
+    "subtitle2": "Your Central Asia adventure starts here"
+>>>>>>> e0ef1abf6c6e943d91e4d1cdc46d3c3a51026fe8
   },
   "home_explore": {
-    "home_explore-text": "Destinations Preview",
-    "home_explore-title": "Explore Central Asia Like Never Before",
-    "home_explore-second-text": "At SRW (Silk Road Wonders), we craft unforgettable journeys across Uzbekistan, Kazakhstan, Kyrgyzstan, Turkmenistan and Tajikistan. Whether you're drawn by majestic architecture, ancient bazaars, or serene nature — your perfect adventure awaits."
+    "home_explore-text": "Destination preview",
+    "home_explore-title": "Explore Central Asia like never before",
+    "home_explore-second-text": "At SRW (Silk Road Wonders), we create unforgettable journeys through Uzbekistan, Kazakhstan, Kyrgyzstan, Turkmenistan, and Tajikistan. Whether you're drawn to majestic architecture, ancient bazaars, or serene nature—you’re in for the perfect adventure."
   },
   "home_carousel": {
     "home_carousel-text": "Uzbekistan, Samarkand",
-    "home_carousel-title": "Hystorical Samarkand City",
+    "home_carousel-title": "The Historic City of Samarkand",
     "home_carousel-detail-first": {
-      "home_carousel-detail-first-1": "Including Accomandation",
-      "home_carousel-detail-first-2": "Free Proffesional Guide Tour",
-      "home_carousel-detail-first-3": "3 Days 2 Nights trip"
+      "home_carousel-detail-first-1": "Includes Accommodation",
+      "home_carousel-detail-first-2": "Free Guided Tour with Professional Guide",
+      "home_carousel-detail-first-3": "3 Days / 2 Nights Trip"
     },
     "home_carousel-second-text": "Uzbekistan, Samarkand",
-    "home_carousel-second-title": "Hystorical Samarkand City",
+    "home_carousel-second-title": "The Historic City of Samarkand",
     "home_carousel-detail-second": {
-      "home_carousel-detail-second-1": "Including Accomandation",
-      "home_carousel-detail-second-2": "Free Proffesional Guide Tour",
-      "home_carousel-detail-second-3": "3 Days 2 Nights trip"
+      "home_carousel-detail-second-1": "Includes Accommodation",
+      "home_carousel-detail-second-2": "Free Guided Tour with Professional Guide",
+      "home_carousel-detail-second-3": "3 Days / 2 Nights Trip"
     },
     "home_carousel-third-text": "Uzbekistan, Samarkand",
-    "home_carousel-third-title": "Hystorical Samarkand City",
+    "home_carousel-third-title": "The Historic City of Samarkand",
     "home_carousel-detail-third": {
-      "home_carousel-detail-third-1": "Including Accomandation",
-      "home_carousel-detail-third-2": "Free Proffesional Guide Tour",
-      "home_carousel-detail-third-3": "3 Days 2 Nights trip"
+      "home_carousel-detail-third-1": "Includes Accommodation",
+      "home_carousel-detail-third-2": "Free Guided Tour with Professional Guide",
+      "home_carousel-detail-third-3": "3 Days / 2 Nights Trip"
     },
     "home_carousel-fourth-text": "Uzbekistan, Samarkand",
-    "home_carousel-fourth-title": "Hystorical Samarkand City",
+    "home_carousel-fourth-title": "The Historic City of Samarkand",
     "home_carousel-detail-fourth": {
-      "home_carousel-detail-fourth-1": "Including Accomandation",
-      "home_carousel-detail-fourth-2": "Free Proffesional Guide Tour",
-      "home_carousel-detail-fourth-3": "3 Days 2 Nights trip"
+      "home_carousel-detail-fourth-1": "Includes Accommodation",
+      "home_carousel-detail-fourth-2": "Free Guided Tour with Professional Guide",
+      "home_carousel-detail-fourth-3": "3 Days / 2 Nights Trip"
     },
     "home_carousel-fifth-text": "Uzbekistan, Samarkand",
-    "home_carousel-fifth-title": "Hystorical Samarkand City",
+    "home_carousel-fifth-title": "The Historic City of Samarkand",
     "home_carousel-detail-fifth": {
-      "home_carousel-detail-fifth-1": "Including Accomandation",
-      "home_carousel-detail-fifth-2": "Free Proffesional Guide Tour",
-      "home_carousel-detail-fifth-3": "3 Days 2 Nights trip"
+      "home_carousel-detail-fifth-1": "Includes Accommodation",
+      "home_carousel-detail-fifth-2": "Free Guided Tour with Professional Guide",
+      "home_carousel-detail-fifth-3": "3 Days / 2 Nights Trip"
     },
     "home_carousel-sixth-text": "Uzbekistan, Samarkand",
-    "home_carousel-sixth-title": "Hystorical Samarkand City",
+    "home_carousel-sixth-title": "The Historic City of Samarkand",
     "home_carousel-detail-sixth": {
+<<<<<<< HEAD
       "home_carousel-detail-sixth-1": "Including Accomandation",
       "home_carousel-detail-sixth-2": "Free Proffesional Guide Tour",
       "home_carousel-detail-sixth-3": "3 Days 2 Nights trip"
@@ -87,76 +94,250 @@
     "home_countries-button-text5": "Turkmenistan",
     "home_countries-title5": "Turkmenistan",
     "home_countries-text5": "Welcome to Turkmenistan — a land of mystery, marble cities, and desert wonders. Explore the blazing Darvaza Gas Crater, ancient ruins of Merv, and the quiet beauty of the Karakum Desert. With deep-rooted traditions and a unique cultural identity, Turkmenistan invites you to uncover its hidden treasures and timeless heritage."
+=======
+      "home_carousel-detail-sixth-1": "Includes Accommodation",
+      "home_carousel-detail-sixth-2": "Free Guided Tour with Professional Guide",
+      "home_carousel-detail-sixth-3": "3 Days / 2 Nights Trip"
+    }
+  },
+  "home_map": {
+    "top_title": "See Your Own Adventure",
+    "title": "Unveil Central Asia’s Hidden Wonders",
+    "country_info": {
+      "infoUz": "Welcome to Uzbekistan — where the Silk Road lives on through vibrant bazaars, majestic madrasas, and timeless architecture. This ancient land is a crossroads of cultures, where history whispers from every turquoise dome and intricately carved gate. From the glowing sands of the Kyzylkum Desert to the poetic beauty of Samarkand and Bukhara, Uzbekistan invites you to walk in the footsteps of empires and dreamers alike.",
+      "infoKz": "Welcome to Kazakhstan — a land where golden steppes stretch beyond the horizon, where futuristic cities rise beside ancient traditions. As the world’s largest landlocked country, Kazakhstan offers boundless space to breathe, roam, and rediscover freedom. From the shimmering heights of Baiterek Tower to the otherworldly beauty of Charyn Canyon, every step here tells a story.",
+      "infoKg": "Welcome to Kyrgyzstan — where snow-capped peaks cradle nomadic traditions and turquoise lakes reflect the sky’s vastness. This rugged and soulful land is a paradise for explorers, where yurts dot alpine meadows and horses roam free. From the serene beauty of Lake Issyk-Kul to the dramatic trails of the Tien Shan Mountains, Kyrgyzstan invites you to reconnect with nature and a way of life rooted in harmony and freedom.",
+      "infoTj": "Welcome to Tajikistan — a land of soaring mountains, ancient fortresses, and untouched natural beauty. Nestled in the heart of Central Asia, this hidden gem offers breathtaking alpine landscapes and warm-hearted hospitality. From the towering peaks of the Pamir Mountains to the crystal-clear waters of Iskanderkul Lake, every path in Tajikistan leads to adventure, reflection, and awe.",
+      "infoTk": "Welcome to Turkmenistan — a land of desert mysteries, marble cities, and ancient legacies hidden beneath the sands. From the blazing heart of the Karakum Desert rises the Darvaza Gas Crater — the “Door to Hell” — a symbol of the country’s raw and powerful beauty. Wander through the silent ruins of Merv, once a jewel of the Silk Road, and marvel at Ashgabat’s gleaming white architecture. Turkmenistan is where history and surreal modernity meet in mesmerizing contrast."
+    }
+>>>>>>> e0ef1abf6c6e943d91e4d1cdc46d3c3a51026fe8
   },
   "home_unique": {
-    "home_unique-text": "Craft Your Own Adventure",
+    "home_unique-text": "Create Your Own Adventure",
     "home_unique-title": "Unique, Personal, Unforgettable",
-    "home_unique-button": "Let’s travel"
+    "home_unique-button": "Travel"
   },
   "home_desert": {
     "home_desert-text": "Cultural Highlights",
-    "home_desert-title": "From Desert Fortresses to Mountain Festivals — Central Asia is Calling",
-    "home_desert-second-text": "At Silk Road Wonders, we don't just offer tours — we open doors to ancient civilizations, vibrant traditions, and breathtaking landscapes. Whether you're drawn to architectural marvels or the rhythms of rural life, there's a story here waiting just for you."
+    "home_desert-title": "From Desert Fortresses to Mountain Festivals—Central Asia is Calling",
+    "home_desert-second-text": "At Silk Road Wonders, we don’t just offer tours—we open doors to ancient civilizations, vibrant traditions, and breathtaking landscapes. Whether you’re drawn to architectural marvels or the rhythms of rural life, there’s a story waiting for you."
   },
   "home_SecondCarousel": {
-    "home_SecondCarousel-title": "Splendor of Ancient Khiva",
-    "home_SecondCarousel-second-title": "Splendor of Ancient Khiva",
-    "home_SecondCarousel-third-title": "Elegance of Uzbek Traditions",
+    "home_SecondCarousel-title": "Magnificence of Ancient Khiva",
+    "home_SecondCarousel-second-title": "Magnificence of Ancient Khiva",
+    "home_SecondCarousel-third-title": "The Elegance of Uzbek Traditions",
     "home_SecondCarousel-fourth-title": "Traditional Colorful Crafts",
-    "home_SecondCarousel-fifth-title": "Elegance of Uzbek Traditions"
+    "home_SecondCarousel-fifth-title": "The Elegance of Uzbek Traditions"
   },
   "home_question": {
-    "home_question-text": "frequendly asked questions",
-    "home_question-title": "Need Help Before You Go? we’ve got answers",
-    "home_question-second-text": "Trip founder",
-    "home_question-second-title": "frequently asked question",
-    "home_question-text1": "Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third;",
-    "home_question-question-text1": "How do I booking trip with your agency?",
-    "home_question-text2": "Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third;",
-    "home_question-question-text2": "Can I customize my travel?",
-    "home_question-text3": "Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third;",
+    "home_question-text": "Frequently Asked Questions",
+    "home_question-title": "Need help before departure? We’ve got answers",
+    "home_question-second-text": "Trip Creator",
+    "home_question-second-title": "Frequently Asked Question",
+    "home_question-text1": "Kazakhstan is the ninth‑largest country in the world by land area and the largest landlocked country. Its hills and plains make up nearly half its vast territory, with the lowlands occupying another third;",
+    "home_question-question-text1": "How do I book a trip through your agency?",
+    "home_question-text2": "Kazakhstan is the ninth‑largest country in the world by land area and the largest landlocked country. Its hills and plains make up nearly half its vast territory, with the lowlands occupying another third;",
+    "home_question-question-text2": "Can I personalize my trip?",
+    "home_question-text3": "Kazakhstan is the ninth‑largest country in the world by land area and the largest landlocked country. Its hills and plains make up nearly half its vast territory, with the lowlands occupying another third;",
     "home_question-question-text3": "Do you offer travel insurance?",
-    "home_question-text4": "Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third;",
-    "home_question-question-text4": "Can you arrange flights and accomandations?",
-    "home_question-title1": "Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; Kazakhstan has a population of 20 million and one of the lowest population densities in the world",
+    "home_question-text4": "Kazakhstan is the ninth‑largest country in the world by land area and the largest landlocked country. Its hills and plains make up nearly half its vast territory, with the lowlands occupying another third;",
+    "home_question-question-text4": "Can you arrange flights and accommodation?",
+    "home_question-title1": "Kazakhstan is the ninth‑largest country in the world by land area and the largest landlocked country. Its hills and plains make up nearly half its vast territory, with the lowlands occupying another third; Kazakhstan’s population is about 20 million, with one of the lowest population densities in the world",
     "home_question-country-text1": "Uzbekistan, Samarkand",
-    "home_question-title2": "Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; Kazakhstan has a population of 20 million and one of the lowest population densities in the world",
+    "home_question-title2": "Kazakhstan is the ninth‑largest country in the world by land area and the largest landlocked country. Its hills and plains make up nearly half its vast territory, with the lowlands occupying another third; Kazakhstan’s population is about 20 million, with one of the lowest population densities in the world",
     "home_question-country-text2": "Uzbekistan, Samarkand",
-    "home_question-title3": "Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; Kazakhstan has a population of 20 million and one of the lowest population densities in the world",
+    "home_question-title3": "Kazakhstan is the ninth‑largest country in the world by land area and the largest landlocked country. Its hills and plains make up nearly half its vast territory, with the lowlands occupying another third; Kazakhstan’s population is about 20 million, with one of the lowest population densities in the world",
     "home_question-country-text3": "Uzbekistan, Samarkand"
   },
   "home_feedback": {
-    "home_feedback-text": "clients reviews",
-    "home_feedback-title": "Trusted by Travelers Worldwide",
+    "home_feedback-text": "Customer Testimonials",
+    "home_feedback-title": "Trusted by travelers around the world",
     "home_feedback-comment1": "Working with this team was a pleasure. They understood our vision and helped us find a property that exceeded our expectations. We couldn’t have done it without them!",
     "home_feedback-name1": "Kattakhodjayev Muhammad Kadir",
-    "home_feedback-job1": "Chief Executive Officer",
+    "home_feedback-job1": "Company Director",
     "home_feedback-comment2": "Working with this team was a pleasure. They understood our vision and helped us find a property that exceeded our expectations. We couldn’t have done it without them!",
     "home_feedback-name2": "Turabov Umidjon",
     "home_feedback-job2": "Frontend Developer",
     "home_feedback-comment3": "Working with this team was a pleasure. They understood our vision and helped us find a property that exceeded our expectations. We couldn’t have done it without them!",
-    "home_feedback-name3": "Alimardon Boqijonov",
+    "home_feedback-name3": "Alimardon Bokidjonov",
     "home_feedback-job3": "Backend Developer",
     "home_feedback-comment4": "Working with this team was a pleasure. They understood our vision and helped us find a property that exceeded our expectations. We couldn’t have done it without them!",
     "home_feedback-name4": "Salimov Davlat",
     "home_feedback-job4": "Mobile Developer"
   },
   "footer": {
-    "nav": {
-      "finder": "Trip Finder",
-      "about": "About us",
-      "blog": "Blog",
-      "contact": "Contact us"
-    },
-    "footer__top-text": "Sign up to get exclusive offers, travel tips, and destination inspiration straight to your inbox!",
-    "footer__email-placeholder": "Enter your email",
-    "footer__explore-text": "Explore",
-    "footer__why-travel-title": "Why travel with us?",
-    "footer__why-travel-text": "Why travel with us?",
+    "email_text": "Subscribe to receive exclusive offers, travel tips, and inspiration straight to your inbox!",
+    "email_placeholder": "Enter your email",
+    "explore_text": "Explore",
+    "why_travel_title": "Why travel with us?",
+    "why_travel_text": "Authentic experiences, expert guides, unforgettable memories—discover the spirit of the Silk Road with Wonder :)",
+    "developed_by": "Developed by",
     "footer__error-text1": "*Please enter your email.",
     "footer__error-text2": "*Please enter a valid email address.",
     "footer__correct-text3": "This field has been filled correctly!",
     "footer__toast-correct": "Successful",
     "footer__toast-error": "Error"
-  }
+  },
+  "destinations": {
+    "about": "About the country",
+    "about_text": "Country information",
+    "exclusive_text": "Exclusive photos",
+    "uzbekistan": {
+      "about_country_title": "Uzbekistan: Crossroads of Civilizations",
+      "about_country_text1": "Uzbekistan is the beating heart of Central Asia, a country where history lives in every mosaic and hospitality greets you at every turn. From the towering minarets of Khiva to the majestic Registan in Samarkand, Uzbekistan offers a cultural journey like no other. Here, scholarship once flourished, trade thrived, and traditions were born that continue to color this land today. Let the Great Silk Road guide your footsteps across this timeless terrain.",
+      "about_country_text2": "The charm of Uzbekistan lies not only in its architectural wonders but in the warmth of its people and the richness of its living traditions. In bustling bazaars, aromas of spices mingle with the sounds of artisans at work. Music, storytelling, and intricate craftsmanship remain part of daily life—a true blend of ancient heritage and vibrant culture. Whether you're wandering ancient caravanserais or sharing a meal with locals, Uzbekistan welcomes you with open arms and a timeless soul.",
+      "hero_title": "Land of Great Scholars and Cultural Crossroads",
+      "tours_title": "Discover Uzbekistan with Our Signature Tours",
+      "tours_text": "From the azure domes of Samarkand to the ancient streets of Khiva—our tours in Uzbekistan are crafted for culture enthusiasts, history seekers, and adventure lovers. Whether it’s a weekend escape or a multi-day immersion—your journey starts here."
+    },
+    "kazakhstan": {
+      "about_country_title": "Kazakhstan: Land of Wide Horizons and Bold Spirits",
+      "about_country_text1": "Kazakhstan’s true magic lies not only in its vastness but in its contrasts—where silence meets strength and ancient traditions meet modern ambition. Venture beyond the skylines of Astana and Almaty, and you’ll discover a world sculpted by wind, time, and nomadic pride. The boundless steppe isn’t just a landscape—it’s a symbol of freedom that has shaped generations of resilient, welcoming people.",
+      "about_country_text2": "In every village, you'll find stories passed down around the fire. In every traditional yurt, a connection to the past. The Kazakh way of life is deeply rooted in respect for nature, hospitality, and courage—whether you're sharing fermented kumis with a herder or climbing snow-covered peaks in the Tien Shan. This is a land for wanderers, dreamers, and anyone yearning to reconnect with something pure, powerful, and timeless.",
+      "hero_title": "Land of Endless Horizons and Great Steppes",
+      "tours_title": "Explore Kazakhstan with Our Signature Tours",
+      "tours_text": "Each itinerary is designed to immerse you in the soul of the steppe—where heritage, nature, and adventure blend into unforgettable experiences."
+    },
+    "tajikistan": {
+      "about_country_title": "Tajikistan: Roof of Central Asia",
+      "about_country_text1": "Tajikistan is a land of staggering mountains and deep-rooted history—a place where the Pamir Mountains scrape the sky and ancient caravan routes still echo with stories of travelers long gone. Here, rugged beauty and raw nature create a backdrop like no other in Central Asia. With over 90% of the country covered in mountains, this is where trekkers, dreamers, and seekers of solitude find their path.",
+      "about_country_text2": "But Tajikistan is not only wilderness—it is warmth. In remote villages, hospitality is a way of life. Chai is shared, stories are offered, and traditions are kept alive in dances, fabrics, and festivals. Whether you’re tracing the Wakhan Corridor or wandering the vibrant markets of Dushanbe, every step here connects you with something ancient, soulful, and utterly unforgettable.",
+      "hero_title": "Land of Mountains, Glaciers & Ancient Cultures",
+      "tours_title": "Explore Tajikistan with Our Signature Tours",
+      "tours_text": "Our curated tours reveal the untamed beauty and cultural heartbeat of Tajikistan—from high-altitude adventures to quiet moments with local families."
+    },
+    "kyrgyzstan": {
+      "about_country_title": "Kyrgyzstan: Land of Peaks, Lakes & Nomads",
+      "about_country_text1": "More than just scenery—Kyrgyzstan is a living legacy of the nomadic soul. In the vast jailoo (summer pastures), families still herd livestock, welcoming travelers with warm kumis and open hearts as guests. Sharing stories under the stars, listening to the music of komuz, and tasting bread baked in clay tandyrs—this is everyday life, rich as the land itself.",
+      "about_country_text2": "Kyrgyzstan is more than scenery—it’s a living culture. In the high pastures, families still herd livestock and welcome travelers with open arms and warm kumis. Festivals celebrate eagle hunters, felt artisans, and horse games that date back millennia. Every visit becomes a soulful journey into a world untouched by time, yet alive with tradition.",
+      "hero_title": "Where Mountains Whisper Ancient Tales",
+      "tours_title": "Explore Kyrgyzstan with Our Signature Tours",
+      "tours_text": "Our Kyrgyzstan tours connect you with majestic nature, ancient ways of life, and the open-hearted spirit of the mountains."
+    },
+    "turkmenistan": {
+      "about_country_title": "Turkmenistan: The Hidden Jewel of the Silk Road",
+      "about_country_text1": "Turkmenistan is a land of deep silence and timeless secrets—where golden sands hide ancient cities, and marble cities rise in the desert. Once home to mighty empires like Parthia and Khwarezm, this country holds the ruins of Merv and Nisa, whispering stories of traders, scholars, and civilizations that shaped the Silk Road.",
+      "about_country_text2": "But beyond the history lies a living culture: proud, resilient, and welcoming. In traditional villages, carpets are still handwoven with centuries-old symbolism; in the vast Karakum Desert, yurts still dot the horizon. The blazing Darvaza Gas Crater—“The Door to Hell”—lights up the night like a torch from the underworld. Hospitality here is sacred—tea is shared, stories are offered, and visitors are treated as honored guests. Turkmenistan isn’t just a destination—it’s a revelation waiting to unfold, for the curious and the courageous.",
+      "hero_title": "Where the Past Still Breathes & Oasis of Timeless Traditions",
+      "tours_title": "Explore Our Exclusive Tour Packages",
+      "tours_text": "Find your perfect getaway with our curated tour packages. Adventure, relaxation or culture—it's all here for you!"
+    }
+  },
+  "trip_finder": {
+    "top_title": "Trip Finder",
+    "title": "Explore Our Exclusive Tour Packages",
+    "search": {
+      "destination": "Destination",
+      "duration": "Duration",
+      "year": "Year",
+      "type": "Trip Type",
+      "search_btn": "Search"
+    },
+    "trip_detail": {
+      "top_text": "Trip Finder",
+      "from": "From",
+      "reservation": "Make a Reservation",
+      "tour_info": {
+        "title": "Tour Information",
+        "destination": "Destination",
+        "trip_theme": "Trip Theme",
+        "transports": "Transports",
+        "ages": "Ages",
+        "accomendation": "Accommodation",
+        "duration": "Duration",
+        "group_size": "Group Size"
+      },
+      "places": "Places You Will See",
+      "tour_itinerary": {
+        "title": "Tour Itinerary",
+        "showAll": "Show All",
+        "introduction": "Introduction"
+      },
+      "dates_Prices": "Dates & Prices",
+      "form_title": "Your journey starts with a message—Get in touch 👋",
+      "contacts": "Company Contacts:",
+      "avilable": "Available",
+      "sold_out": "Sold Out",
+      "occupancy": "Double Occupancy"
+    }
+  },
+  "about": {
+    "hero": {
+      "text1": "Not Just Tours",
+      "text2": "We Tell Stories"
+    },
+    "section1": {
+      "title": "Where Cultures Converge and History Lives",
+      "text": "Silk Road Wonders is more than just a travel company — it’s your gateway to the legendary Silk Road. We craft immersive journeys that connect the past with the present, guiding you through ancient caravan routes, vibrant cultures, and the enduring spirit of trade that once linked civilizations.Each journey with us is a step into history, reimagined for the modern explorer."
+    },
+    "section2": {
+      "title": "Explore Our Exclusive Tour",
+      "subtitle": "Our crew is always getting bigger, but we all work toward one goal: to make sales success not only possible but inevitable for teams everywhere.",
+      "text": "In 2022, at vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+      "bottom_text": "“Our goal is to build software that gives customer-facing teams at SMBs the ability to create fruitful and enduring relationships with customers.”"
+    },
+    "tour_leaders": "Meet our amazing tour leaders",
+    "expertise": {
+      "title": "our Expertise",
+      "subtitle": "At Silk Road Adventures, we pride ourselves on delivering exceptional travel experiences. Here’s what sets us apart:",
+      "data": {
+        "item": {
+          "title": "Cultural Knowledge",
+          "text": "Deep understanding of Central Asia and Silk Road traditions, history, and local customs."
+        },
+        "item1": {
+          "title": "Logistics Mastery",
+          "text": "Seamless planning and execution of every detail of your journey."
+        },
+        "item2": {
+          "title": "Customer Satisfaction",
+          "text": "Commitment to making every traveler's experience unforgettable."
+        },
+        "item3": {
+          "title": "Sustainability",
+          "text": "Promoting eco-friendly travel practices to preserve Uzbekistan’s beauty."
+        },
+        "item4": {
+          "title": "Adventure Planning",
+          "text": "Creating thrilling and safe adventures tailored to your interests."
+        },
+        "item5": {
+          "title": "Local Partnerships",
+          "text": "Collaborating with communities to offer authentic experiences."
+        }
+      }
+    }
+  },
+  "blog": {
+    "hero_title": "Wander. Discover. Share.",
+    "top_text": "Trip Blogs",
+    "title": "Where Cultures Converge and History Lives",
+    "read_more": "Read more"
+  },
+  "contact": {
+    "text1": "Have questions about your next adventure?",
+    "text2": "If needed, we’re happy to connect by phone for further assistance. Let’s plan your perfect trip together!",
+    "address_text": "Our adress",
+    "address": "Uzbekistan,Tashkent City, Mirabad district, Street Shahrisabz, 23",
+    "contacts": "Contacts",
+    "form": {
+      "title": "Let’s Get in Touch",
+      "full_name": "Full name",
+      "full_name-placeholder": "Enter your full name",
+      "email": "Email",
+      "email-placeholder": "Enter your email",
+      "destination": "Your Destination",
+      "destination-placeholder": "Select destination",
+      "trip_tour": "Trip Tour",
+      "trip_tour-placeholder": "Select Trip Tour",
+      "message": "Your message",
+      "message-placeholder": "Enter you message",
+      "send": "Send a message"
+    }
+  },
+  "all": "All",
+  "loading": "Loading...",
+  "not_found": "No tours found!",
+  "pagination_prev": "Prev",
+  "pagination_next": "Next"
 }

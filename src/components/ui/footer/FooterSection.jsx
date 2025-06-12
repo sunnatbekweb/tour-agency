@@ -12,18 +12,22 @@ export default function FooterSection() {
   const moveTop = () => {
     window.scrollTo(0, 0);
   };
-  const link = [
+  const links = [
     {
-      links: t("footer.nav.finder"),
+      text: t("header.destinations.index"),
+      link:"#"
     },
     {
-      links: t("footer.nav.about"),
+      text: t("header.nav.about"),
+      link:"/about"
     },
     {
-      links: t("footer.nav.blog"),
+      text: t("header.nav.blog"),
+      link:"/blog"
     },
     {
-      links: t("footer.contact"),
+      text: t("header.contact"),
+      link:"/contact"
     },
   ];
   const icon = [
@@ -146,7 +150,7 @@ export default function FooterSection() {
                 />
               </Link>
               <p className="footer__top-left-text xl:font-normal xl:text-2xl xl:tracking-tighter-[-2%] xl:text-white xl:w-[419px] xl:mb-[72px] 2xl:w-[519px]">
-                {t("footer.footer__top-text")}
+                {t("footer.email_text")}
               </p>
               <form
                 className="footer__top-left-form xl:w-[419px] 2xl:w-[519px]"
@@ -165,7 +169,7 @@ export default function FooterSection() {
                       }}
                       type="email"
                       id="email"
-                      placeholder={t("footer.footer__email-placeholder")}
+                      placeholder={t("footer.email_placeholder")}
                       autoComplete="off"
                       value={form.email}
                       required
@@ -188,17 +192,17 @@ export default function FooterSection() {
             </div>
             <nav className="footer__top-middle-box xl:flex xl:flex-col xl:justify-center xl:items-start">
               <h4 className="footer__top-middle-list-text xl:font-medium xl:text-4xl xl:leading-[100%] xl:tracking-tighter-[-2%] xl:text-white xl:mb-12">
-                {t("footer.footer__explore-text")}
+                {t("footer.explore_text")}
               </h4>
               <ul className="footer__top-middle-list xl:flex xl:flex-col xl:justify-center xl:items-start xl:gap-9">
-                {link.map((item, index) => (
+                {links.map((item, index) => (
                   <li
                     className="footer__top-middle-lists xl:flex xl:flex-col xl:justify-center xl:items-start"
                     key={index}
                   >
-                    <Link className="footer__top-middle-links xl:flex xl:flex-col xl:justify-center xl:items-start">
+                    <Link href={item.link} className="footer__top-middle-links xl:flex xl:flex-col xl:justify-center xl:items-start">
                       <p className="footer__top-middle-links-text xl:duration-500 xl:hover:duration-500 xl:font-normal xl:text-2xl xl:leading-[100%] xl:tracking-tighter-[-2%] xl:text-white/70 xl:hover:text-white xl:active:opacity-50">
-                        {item.links}
+                        {item.text}
                       </p>
                     </Link>
                   </li>
@@ -207,10 +211,10 @@ export default function FooterSection() {
             </nav>
             <div className="footer__top-seond-middle-bottom-right-box xl:w-[350px] xl:flex xl:flex-col xl:justify-center xl:items-start 2xl:w-[418px]">
               <h4 className="footer__top-seond-middle-bottom-right-box-title xl:w-[350px] xl:font-medium xl:text-[35px] xl:leading-[100%] xl:tracking-tighter-[-2%] xl:mb-[57.5px] xl:text-white 2xl:w-[418px] 2xl:text-4xl">
-                {t("footer.footer__why-travel-title")}
+                {t("footer.why_travel_title")}
               </h4>
               <q className="footer__top-seond-middle-bottom-right-box-texts xl:font-medium xl:text-2xl xl:w-[350px] xl:mb-[57.5px] xl:text-white/70 xl:tracking-tighter-[-2%] 2xl:w-[418px]">
-                {t("footer.footer__why-travel-text")}
+                {t("footer.why_travel_text")}
               </q>
               <div className="footer__top-seond-middle-icon-box xl:w-full xl:flex xl:flex-row xl:justify-between xl:items-center">
                 {icon.map((icons, id) => (
@@ -249,7 +253,7 @@ export default function FooterSection() {
               </p>
               <div className="footer__bottom-box-copy-logo-box xl:flex xl:flex-row xl:justify-center xl:items-center">
                 <p className="footer__bottom-box-developing-text xl:font-medium xl:text-xl xl:leading-[100%] xl:tracking-tighter-[-2%] xl:text-white">
-                  {t("footer.footer__developed-by")}:&nbsp;&nbsp;
+                  {t("footer.developed_by")}:&nbsp;&nbsp;
                 </p>
                 <a
                   className="footer__bottom-box-copy-logo-link"

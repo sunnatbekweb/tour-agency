@@ -11,18 +11,22 @@ export default function FooterMdSection() {
   const moveTop = () => {
     window.scrollTo(0, 0);
   };
-  const link = [
+  const links = [
     {
-      links: t("footer.nav.finder"),
+      text: t("header.destinations.index"),
+      link: "#",
     },
     {
-      links: t("footer.nav.about"),
+      text: t("header.nav.about"),
+      link: "/about",
     },
     {
-      links: t("footer.nav.blog"),
+      text: t("header.nav.blog"),
+      link: "/blog",
     },
     {
-      links: t("footer.contact"),
+      text: t("header.contact"),
+      link: "/contact",
     },
   ];
   const icon = [
@@ -145,7 +149,7 @@ export default function FooterMdSection() {
                 />
               </Link>
               <p className="footerMdSection__top-text md:w-[235px] md:font-medium md:text-[24px] md:leading-[30px] md:tracking-tighter-[-2%] md:text-white">
-                {t("footer.footer__top-text")}
+                {t("footer.email_text")}
               </p>
             </div>
             <form
@@ -165,7 +169,7 @@ export default function FooterMdSection() {
                     }}
                     type="email"
                     id="email"
-                    placeholder={t("footer.footer__email-placeholder")}
+                    placeholder={t("footer.email_placeholder")}
                     autoComplete="off"
                     value={form.email}
                     required
@@ -189,17 +193,17 @@ export default function FooterMdSection() {
           <div className="footerMdSection__middle-box md:w-full md:flex md:flex-row md:justify-between md:items-center">
             <nav className="footerMdSection__nav md:flex md:flex-col md:justify-center md:items-start">
               <h4 className="footerMdSection__list-text md:font-medium md:text-[40px] md:leading-[100%] md:tracking-tighter-[-2%] md:text-white md:mb-12">
-                {t("footer.footer__explore-text")}
+                {t("footer.explore_text")}
               </h4>
               <ul className="footerMdSection__list md:flex md:flex-col md:justify-center md:items-start md:gap-9">
-                {link.map((item, index) => (
+                {links.map((item, index) => (
                   <li
                     className="footerMdSection__lists md:flex md:flex-col md:justify-center md:items-start"
                     key={index}
                   >
-                    <Link className="footerMdSection__links md:flex md:flex-col md:justify-center md:items-start">
+                    <Link href={item.link} className="footerMdSection__links md:flex md:flex-col md:justify-center md:items-start">
                       <p className="footerMdSection__links-text font-medium text-[30px] leading-[100%] tracking-tighter-[-2%] md:text-white/70 md:active:opacity-50">
-                        {item.links}
+                        {item.text}
                       </p>
                     </Link>
                   </li>
@@ -218,10 +222,10 @@ export default function FooterMdSection() {
             </button>
             <div className="footerMdSection__bottom-right-box md:w-[277px] md:flex md:flex-col md:justify-center md:items-center">
               <h4 className="footerMdSection__bottom-right-box-title md:w-[277px] md:font-medium md:text-[35px] md:leading-[100%] md:tracking-tighter-[-2%] md:mb-[57.5px] md:text-white">
-                {t("footer.footer__why-travel-title")}
+                {t("footer.why_travel_title")}
               </h4>
               <q className="footerMdSection__bottom-right-box-texts md:w-[277px] md:mb-[57.5px] md:text-white/70">
-                {t("footer.footer__why-travel-text")}
+                {t("footer.why_travel_text")}
               </q>
               <div className="footerMdSection__icon-box md:w-full md:flex md:flex-row md:justify-between md:items-center">
                 {icon.map((icons, id) => (
@@ -253,7 +257,7 @@ export default function FooterMdSection() {
             </p>
             <div className="footerMdSection__copy-logo-box md:flex md:flex-row md:justify-center md:items-center">
               <p className="footerMdSection__developing-text md:font-medium md:text-[24px] md:leading-[100%] md:tracking-tighter-[-2%] md:text-white">
-                {t("footer.footer__developed-by")}:&nbsp;&nbsp;
+                {t("footer.developed_by")}:&nbsp;&nbsp;
               </p>
               <a
                 className="footerMdSection__copy-logo-link"
