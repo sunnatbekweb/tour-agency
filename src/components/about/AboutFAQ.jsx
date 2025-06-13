@@ -1,5 +1,4 @@
 'use client';
-
 import React, { useEffect, useRef, useState } from 'react';
 import '../HomePage/QuestionSection.css';
 import { Swiper, SwiperSlide } from 'swiper/react';

@@ -1,5 +1,4 @@
 "use client"
-
 import "./Footer.css";
 import FooterSmSection from "@/components/ui/footer/FooterSmSection";
 import FooterMdSection from "@/components/ui/footer/FooterMdSection";

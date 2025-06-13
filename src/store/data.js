@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-import { useTranslations } from "use-intl";
-=======
 import { useTranslations } from "next-intl";
-
->>>>>>> e0ef1abf6c6e943d91e4d1cdc46d3c3a51026fe8
 export const useCountryData = () => {
   const t = useTranslations("");
   return [

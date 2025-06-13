@@ -1,6 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-
 export const fetchTours = createAsyncThunk(
   "tours/fetchTours",
   async ({ page = 1, filters = {} }) => {
@@ -25,7 +24,6 @@ export const fetchTours = createAsyncThunk(
     return response.data;
   }
 );
-
 const toursSlice = createSlice({
   name: "tours",
   initialState: {
@@ -95,7 +93,6 @@ const toursSlice = createSlice({
       });
   },
 });
-
 export const {
   setPage,
   setFilters,
@@ -105,5 +102,4 @@ export const {
   setYear,
   resetFilters,
 } = toursSlice.actions;
-
 export default toursSlice.reducer;
