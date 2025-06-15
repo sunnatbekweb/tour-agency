@@ -49,13 +49,13 @@ export default function FeedbackSection() {
     },
   ];
   return (
-    <section className="feedback mt-[74px] md:mt-[100px] overflow-x-hidden">
+    <section className="feedback mt-[120px] md:mt-[100px] overflow-x-hidden">
       <div className="container feedback__container flex flex-col justify-center items-start gap-14 ">
         <div className="feedback__top-box flex flex-col items-start gap-2 pl-6 md:pl-9 md:gap-4">
           <p className="feedback__top-text font-medium text-[#A5958B] text-[16px] leading-[100%] uppercase md:text-[24px]">
             {t("home_feedback.home_feedback-text")}
           </p>
-          <h2 className="feedback__top-title font-medium w-[200px] text-[32px] leading-[40px] uppercase md:text-[56px] md:w-[654px] md:leading-[100%]">
+          <h2 className="feedback__top-title font-medium w-[328px] text-[22px] leading-[30px] uppercase md:text-[36px] md:leading-[40px] md:w-[620px] lg:w-[738px] xl:text-[46px] xl:leading-[50px]">
             {t("home_feedback.home_feedback-title")}
           </h2>
         </div>

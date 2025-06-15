@@ -38,7 +38,7 @@ export default function FourthFilterSection() {
             <button
               key={item.id}
               onClick={() => handleCountrySelect(item)}
-              className={`fourthFilter__top-buttons transition-all duration-500 ease-in-out flex justify-center items-center px-[22px] py-[10px] rounded-[16px] font-medium text-[16px] leading-[100%] md:text-[32px] md:px-[25px] md:py-[17px] md:rounded-[32px]
+              className={`fourthFilter__top-buttons transition-all border-[2px] border-[#B4A297] duration-500 ease-in-out flex justify-center items-center px-[18px] py-[12px] rounded-[16px] font-medium text-[16px] leading-[100%] md:text-[22px] md:px-[25px] md:py-[17px] md:rounded-[32px]
               ${
                 selectedCountry.id === item.id
                   ? "bg-[#B4A297] text-white"

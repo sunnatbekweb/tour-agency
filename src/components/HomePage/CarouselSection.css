@@ -1,24 +1,15 @@
 .swiper-button-next {
-  width: 96px !important;
-  height: 96px !important;
-  background-image: url("../../../public/icons/right__chevron.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  transform: translateY(-100px) !important;
+  display: none !important;
 }
 .swiper-button-prev {
-  width: 96px !important;
-  height: 96px !important;
-  background-image: url("../../../public/icons/chevron.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  transform: translateY(-100px) !important;
+  display: none !important;
 }
 .swiper-button-next::after {
-  display: none;
+  display: none !important;
 }
+
 .swiper-button-prev::after {
-  display: none;
+  display: none !important;
 }
 .carousel {
 }
@@ -26,36 +17,31 @@
 }
 .carousel .swiper-slide {
   width: 100% !important;
-  max-width: 500px !important;
+  max-width: 450px !important;
 }
 .carousel__swiper-box {
-  padding: 20px 0;
 }
 .carousel__box {
   transition: 0.8s ease-in-out;
   width: 100% !important;
-  max-width: 500px !important;
-  filter: grayscale(1);
+  max-width: 450px !important;
 }
 .swiper-slide-active .carousel__box {
   box-shadow: rgba(165, 164, 163, 0.829) 0px 3px 8px;
   transition: 0.8s ease-in-out;
-  filter: grayscale(0);
 }
 .carousel__top-box {
   width: 100% !important;
-  height: 422px !important;
+  height: 250px !important;
 }
 .carousel__image {
-  filter: grayscale(1);
   width: 100% !important;
-  height: 558px !important;
+  height: 390px !important;
   transition: 0.8s ease-in-out;
 }
 .swiper-slide-active .carousel__image {
-  filter: grayscale(0);
   width: 100% !important;
-  height: 422px !important;
+  height: 250px !important;
   transition: 0.8s ease-in-out;
 }
 .carousel__image-info-box {
@@ -67,7 +53,7 @@
 }
 .carousel__bottom-box {
   transition: 0.2s ease-in-out;
-  transform: translateY(155px);
+  transform: translateY(140px);
 }
 .swiper-slide-active .carousel__bottom-box {
   transition: 0.8s ease-in-out;
@@ -100,195 +86,7 @@
 }
 .carousel__button {
 }
-@media (max-width: 1366px) {
-  .swiper-button-next {
-    width: 96px !important;
-    height: 96px !important;
-    background-image: url("../../../public/icons/right__chevron.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    transform: translateY(-100px) !important;
-  }
-  .swiper-button-prev {
-    width: 96px !important;
-    height: 96px !important;
-    background-image: url("../../../public/icons/chevron.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    transform: translateY(-100px) !important;
-  }
-  .swiper-button-next::after {
-    display: none;
-  }
-  .swiper-button-prev::after {
-    display: none;
-  }
-  .carousel {
-  }
-  .carousel__container {
-  }
-  .carousel .swiper-slide {
-    width: 100% !important;
-    max-width: 500px !important;
-  }
-  .carousel__swiper-box {
-  }
-  .carousel__box {
-    transition: 0.8s ease-in-out;
-    width: 100% !important;
-    max-width: 500px !important;
-  }
-  .swiper-slide-active .carousel__box {
-    box-shadow: rgba(165, 164, 163, 0.829) 0px 3px 8px;
-    transition: 0.8s ease-in-out;
-  }
-  .carousel__top-box {
-    width: 100% !important;
-    height: 422px !important;
-  }
-  .carousel__image {
-    width: 100% !important;
-    height: 558px !important;
-    transition: 0.8s ease-in-out;
-  }
-  .swiper-slide-active .carousel__image {
-    width: 100% !important;
-    height: 422px !important;
-    transition: 0.8s ease-in-out;
-  }
-  .carousel__image-info-box {
-  }
-  .carousel__location-icon {
-  }
-  .carousel__location-text {
-    font-family: "ppneuemontreal";
-  }
-  .carousel__bottom-box {
-    transition: 0.2s ease-in-out;
-    transform: translateY(140px);
-  }
-  .swiper-slide-active .carousel__bottom-box {
-    transition: 0.8s ease-in-out;
-    transform: translateY(0px);
-  }
-  .carousel__location-title {
-    font-family: "ppneuemontreal";
-  }
-  .carousel__price-text {
-    font-family: "ppneuemontreal";
-  }
-  .carousel__lists-main-box {
-    transform: translateY(-200px);
-    opacity: 0;
-    transition: 0.2s ease-in-out;
-  }
-  .swiper-slide-active .carousel__lists-main-box {
-    transform: translateY(0px);
-    opacity: 1;
-    transition: 0.8s ease-in-out;
-  }
-  .carousel__lists-box {
-  }
-  .carousel__lists-mini-boxes {
-  }
-  .carousel__list-icons {
-  }
-  .carousel__texts {
-    font-family: "ppneuemontreal";
-  }
-  .carousel__button {
-  }
-}
-@media (max-width: 1024px) {
-  .swiper-button-next {
-    display: none !important;
-  }
-  .swiper-button-prev {
-    display: none !important;
-  }
-  .swiper-button-next::after {
-    display: none !important;
-  }
 
-  .swiper-button-prev::after {
-    display: none !important;
-  }
-  .carousel {
-  }
-  .carousel__container {
-  }
-  .carousel .swiper-slide {
-    width: 100% !important;
-    max-width: 500px !important;
-  }
-  .carousel__swiper-box {
-  }
-  .carousel__box {
-    transition: 0.8s ease-in-out;
-    width: 100% !important;
-    max-width: 500px !important;
-  }
-  .swiper-slide-active .carousel__box {
-    box-shadow: rgba(165, 164, 163, 0.829) 0px 3px 8px;
-    transition: 0.8s ease-in-out;
-  }
-  .carousel__top-box {
-    width: 100% !important;
-    height: 422px !important;
-  }
-  .carousel__image {
-    width: 100% !important;
-    height: 558px !important;
-    transition: 0.8s ease-in-out;
-  }
-  .swiper-slide-active .carousel__image {
-    width: 100% !important;
-    height: 422px !important;
-    transition: 0.8s ease-in-out;
-  }
-  .carousel__image-info-box {
-  }
-  .carousel__location-icon {
-  }
-  .carousel__location-text {
-    font-family: "ppneuemontreal";
-  }
-  .carousel__bottom-box {
-    transition: 0.2s ease-in-out;
-    transform: translateY(140px);
-  }
-  .swiper-slide-active .carousel__bottom-box {
-    transition: 0.8s ease-in-out;
-    transform: translateY(0px);
-  }
-  .carousel__location-title {
-    font-family: "ppneuemontreal";
-  }
-  .carousel__price-text {
-    font-family: "ppneuemontreal";
-  }
-  .carousel__lists-main-box {
-    transform: translateY(-200px);
-    opacity: 0;
-    transition: 0.2s ease-in-out;
-  }
-  .swiper-slide-active .carousel__lists-main-box {
-    transform: translateY(0px);
-    opacity: 1;
-    transition: 0.8s ease-in-out;
-  }
-  .carousel__lists-box {
-  }
-  .carousel__lists-mini-boxes {
-  }
-  .carousel__list-icons {
-  }
-  .carousel__texts {
-    font-family: "ppneuemontreal";
-  }
-  .carousel__button {
-  }
-}
 @media (max-width: 767px) {
   .carousel {
   }

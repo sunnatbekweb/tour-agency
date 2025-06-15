@@ -7,7 +7,7 @@ export default function MdRoadSection() {
   const t = useTranslations();
   return (
     <div>
-      <section className="mdRoad hidden md:mt-[160px] md:block xl:hidden">
+      <section className="mdRoad hidden md:mt-[60px] md:block xl:hidden">
         <div className="container mdRoad__container md:flex md:flex-col md:justify-center md:items-center md:px-6">
           <Link className="mdRoad-logo-link" href={"/"}>
             <img
@@ -23,6 +23,7 @@ export default function MdRoadSection() {
                 : locale === "uz"
                   ? "Ipak yo'li sayohatida o'zingizni,"
                   : "Исследуйте и найдите себя"}
+              <span className="block"></span>
               {locale === "en"
                 ? "In Silk road Journey"
                 : locale === "uz"

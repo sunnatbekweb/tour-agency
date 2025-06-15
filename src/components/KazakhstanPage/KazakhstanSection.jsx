@@ -8,28 +8,28 @@ export default function KazakhstanSection() {
     {
       id: "KZ-AS",
       title: "Astana",
-      text: `Astana, now officially called Nur-Sultan, is the capital city of Kazakhstan. It is located in the northern part of the country and is known for its modern architecture and rapid development. As the political and cultural center, it hosts government institutions, businesses, and cultural events, symbolizing Kazakhstan’s progress and future.`,
+      text: `Astana, now called Nur-Sultan, is the capital of Kazakhstan. Located in the north, it is known for modern architecture and fast growth. As a political and cultural center, it hosts government offices, businesses, and events representing the nation’s progress.`,
       images: "/images/astana__city.jpg",
       description: "city__images",
     },
     {
       id: "KZ-TU",
       title: "Turkistan",
-      text: `Turkistan, Kazakhstan, is a city rich in history and culture. It is home to the Mausoleum of Khoja Ahmed Yasawi, an important spiritual site. The city blends ancient architecture with modern development. As a center of Turkic heritage, Turkistan attracts tourists, scholars, and pilgrims from many countries.`,
+      text: `Turkistan, Kazakhstan, is a historic city known for the Mausoleum of Khoja Ahmed Yasawi, a key spiritual site. Blending ancient architecture with modern growth, it serves as a hub of Turkic heritage and attracts tourists, scholars, and pilgrims globally.`,
       images: "/images/turkistan__city.jpg",
       description: "city__images",
     },
     {
       id: "KZ-SH",
       title: "Shymkent",
-      text: `Shymkent is a major city in southern Kazakhstan and one of the country’s largest urban centers. It is an important industrial, cultural, and economic hub with a diverse population. Shymkent is known for its warm climate, vibrant markets, and historical sites, blending traditional Kazakh culture with modern development.`,
+      text: `Shymkent is a major city in southern Kazakhstan and one of its largest urban centers. It is an industrial, cultural, and economic hub known for a warm climate, lively markets, and historic sites, blending Kazakh traditions with modern development.`,
       images: "/images/shymkent__city.jpg",
       description: "city__images",
     },
     {
       id: "KZ-AL",
       title: "Almaty",
-      text: `Almaty is the largest city in Kazakhstan, located in the southeastern part of the country near the foothills of the Trans-Ili Alatau mountains. It is a major cultural, financial, and educational center, famous for its beautiful parks, vibrant arts scene, and diverse cuisine. Almaty was the former capital and remains an important hub for business and tourism.`,
+      text: `Almaty, Kazakhstan’s largest city, lies in the southeast near the Trans-Ili Alatau mountains. A major cultural, financial, and educational center, it is known for parks, arts, and cuisine. Formerly the capital, it remains vital for business and tourism.`,
       images: "/images/almaty__city.jpg",
       description: "city__images",
     },
@@ -185,7 +185,7 @@ export default function KazakhstanSection() {
         <div className="kazakhstan__top-box absolute z-50 pointer-events-none">
           {hoveredRegion && hoveredData && (
             <div
-              className="kazakhstan__bottom-card flex flex-col justify-center items-start bg-white/80 w-[390px] shadow-xl rounded-[16px] px-4 pt-4 pb-[34px] border-[#E5E5E5] border-2 transition-all duration-500 ease-in-out"
+              className="kazakhstan__bottom-card flex flex-col justify-center items-start bg-white/80 w-[287px] shadow-xl rounded-[14px] px-3.5 pt-3.5 pb-3.5 border-[#E5E5E5] border-2 transition-all duration-500 ease-in-out"
               style={{
                 position: "fixed",
                 top: cursorPos.y + 10,
@@ -196,12 +196,12 @@ export default function KazakhstanSection() {
               <img
                 src={hoveredData.images}
                 alt={hoveredData.title}
-                className="kazakhstan__bottom-card-image w-full rounded-[8px] h-[223px] object-cover mb-4"
+                className="kazakhstan__bottom-card-image w-full rounded-[6px] h-[147px] object-cover mb-3.5"
               />
-              <h4 className="kazakhstan__bottom-card-title font-medium text-[27px] leading-[100%] mb-[17px] text-[#333333]">
+              <h4 className="kazakhstan__bottom-card-title font-medium text-[27px] leading-[100%] mb-3.5 text-[#333333]">
                 {hoveredData.title}
               </h4>
-              <p className="kazakhstan__bottom-card-text w-full font-medium text-[16px] leading-[18px] text-[#878787]">
+              <p className="kazakhstan__bottom-card-text w-full font-medium text-[14px] leading-[16px] text-[#878787]">
                 {hoveredData.text}
               </p>
             </div>

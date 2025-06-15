@@ -8,35 +8,35 @@ export default function TurkmenistanSection() {
     {
       id: "TU-AS",
       title: "Ashgabat",
-      text: `Ashgabat is the capital and largest city of Turkmenistan. Known for its white marble buildings, it features grand monuments and wide boulevards. The city is a political, cultural, and economic center, hosting government offices, museums, and universities. It lies near the Kopet Dag mountains.`,
+      text: `Ashgabat, the capital and largest city of Turkmenistan, is famed for its white marble architecture, grand monuments, and wide boulevards. Nestled near the Kopet Dag mountains, it serves as the political, cultural, and economic heart of the country, hosting government offices, museums, and universities.`,
       images: "/images/ashgabat.jpg",
       description: "city__images",
     },
     {
       id: "TU-BA",
       title: "Balkan",
-      text: `Balkan Region is located in the western part of Turkmenistan, bordering the Caspian Sea. It is known for its oil and gas reserves, making it a major energy-producing area. The region features deserts, the Balkan Mountains, and important ports like Türkmenbaşy. It plays a key role in Turkmenistan’s economy and trade.`,
+      text: `Balkan Region lies in western Turkmenistan, along the Caspian Sea. Known for rich oil and gas reserves, it’s a key energy hub. The region features vast deserts, the Balkan Mountains, and vital ports like Türkmenbaşy, playing a crucial role in Turkmenistan’s economy and international trade.`,
       images: "/images/balkan.webp",
       description: "city__images",
     },
     {
       id: "TU-DA",
       title: "Dashoguz",
-      text: `Dashoguz Region is located in northern Turkmenistan, bordering turkmenistan. It is known for its vast deserts and steppe landscapes. The region has a strong agricultural sector, especially cotton and grain farming. Dashoguz also contains several historical sites, including ancient ruins like those at Konye-Urgench, a UNESCO World Heritage Site.`,
+      text: `Dashoguz Region is located in northern Turkmenistan and is known for its expansive deserts and steppe landscapes. With a strong agricultural base—especially cotton and grain—the region also holds historic treasures, including the ancient ruins of Konye-Urgench, a designated UNESCO World Heritage Site.`,
       images: "/images/dashoguz.jpg",
       description: "city__images",
     },
     {
       id: "TU-LE",
       title: "Lebap",
-      text: `Lebap Region is located in eastern Turkmenistan, along the border with turkmenistan and Afghanistan. It is known for its fertile lands thanks to the Amu Darya River, supporting agriculture like cotton and wheat. The region is also rich in natural gas and oil resources. Lebap has important cities such as Türkmenabat and several cultural and historical sites.`,
+      text: `Lebap Region lies in eastern Turkmenistan, along the border with Afghanistan. Fed by the Amu Darya River, it has fertile lands supporting cotton and wheat farming. Rich in natural gas and oil, the region includes major cities like Türkmenabat and holds various cultural and historical landmarks.`,
       images: "/images/lebap.jpg",
       description: "city__images",
     },
     {
       id: "TU-MA",
       title: "Mary",
-      text: `Mary Region is located in southeastern Turkmenistan. It is an important agricultural and industrial area, known especially for cotton and grain production. The region is rich in natural gas and oil resources. Mary city, the regional capital, is a key cultural and economic center. The ancient archaeological site of Merv, a UNESCO World Heritage Site, is also located here.`,
+      text: `Mary Region lies in southeastern Turkmenistan and is a major agricultural and industrial hub, known for cotton, grain, and energy resources. Mary city serves as the cultural and economic center. The region also hosts Merv, an ancient archaeological site and designated UNESCO World Heritage Site.`,
       images: "/images/mary.jpg",
       description: "city__images",
     },
@@ -134,7 +134,7 @@ export default function TurkmenistanSection() {
         <div className="turkmenistan__top-box absolute z-50 pointer-events-none">
           {hoveredRegion && hoveredData && (
             <div
-              className="turkmenistan__bottom-card flex flex-col justify-center items-start bg-white/80 w-[390px] shadow-xl rounded-[16px] px-4 pt-4 pb-[34px] border-[#E5E5E5] border-2 transition-all duration-500 ease-in-out"
+              className="turkmenistan__bottom-card flex flex-col justify-center items-start bg-white/80 w-[287px] shadow-xl rounded-[14px] px-3.5 pt-3.5 pb-3.5 border-[#E5E5E5] border-2 transition-all duration-500 ease-in-out"
               style={{
                 position: "fixed",
                 top: cursorPos.y + 10,
@@ -145,12 +145,12 @@ export default function TurkmenistanSection() {
               <img
                 src={hoveredData.images}
                 alt={hoveredData.title}
-                className="turkmenistan__bottom-card-image w-full rounded-[8px] h-[223px] object-cover mb-4"
+                className="turkmenistan__bottom-card-image w-full rounded-[6px] h-[147px] object-cover mb-3.5"
               />
-              <h4 className="turkmenistan__bottom-card-title font-medium text-[27px] leading-[100%] mb-[17px] text-[#333333]">
+              <h4 className="turkmenistan__bottom-card-title font-medium text-[27px] leading-[100%] mb-3.5 text-[#333333]">
                 {hoveredData.title}
               </h4>
-              <p className="turkmenistan__bottom-card-text w-full font-medium text-[16px] leading-[18px] text-[#878787]">
+              <p className="turkmenistan__bottom-card-text w-full font-medium text-[14px] leading-[16px] text-[#878787]">
                 {hoveredData.text}
               </p>
             </div>

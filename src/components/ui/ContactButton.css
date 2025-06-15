@@ -1,11 +1,11 @@
 .contactButton__button {
   cursor: pointer !important;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 100%;
   color: white;
   padding: 15px 27px;
-  border: 2px solid white;
+  border: 2px solid rgba(255, 255, 255, 0.801);
   border-radius: 33px;
   background: linear-gradient(90deg, #b4a297, #b4a297, #b4a297, #ffffff);
   background-size: 180% 180%;
@@ -26,12 +26,12 @@
 @media (max-width: 1024px) {
   .contactButton__button {
     cursor: pointer !important;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 100%;
     color: white;
     padding: 15px 27px;
-    border: 2px solid white;
+    border: 2px solid rgba(255, 255, 255, 0.801);
     border-radius: 33px;
     background: linear-gradient(90deg, #b4a297, #b4a297, #b4a297, #ffffff);
     background-size: 180% 180%;
@@ -52,12 +52,12 @@
 }
 @media (max-width: 767px) {
   .contactButton__button {
-    font-size: 21px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 60%;
     color: white;
     padding: 21px 44px;
-    border: 2px solid white;
+    border: 2px solid rgba(255, 255, 255, 0.801);
     border-radius: 32px;
     background: linear-gradient(90deg, #b4a297, #b4a297, #b4a297, #ffffff);
     background-size: 180% 180%;

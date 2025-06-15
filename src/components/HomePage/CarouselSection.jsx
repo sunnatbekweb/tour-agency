@@ -156,32 +156,32 @@ export default function CarouselSection() {
       >
         {data.map((item, index) => (
           <SwiperSlide
-            className="carousel__swiperSlide flex flex-row justify-center items-center"
+            className="carousel__swiperSlide flex flex-row justify-center items-center md:py-[20px]"
             key={index}
           >
-            <div className="carousel__box flex flex-col justify-center items-start pt-[11.5px] pb-[21.94px] px-[11.53px] border-2 border-[#EBEBEB] bg-white rounded-[16px] md:px-[23px] md:pt-[22px] md:pb-[56px] md:rounded-[40px]">
+            <div className="carousel__box flex flex-col justify-center items-start pt-[11.5px] pb-[21.94px] px-[11.53px] border-2 border-[#EBEBEB] bg-white rounded-[16px] md:px-[23px] md:pt-[22px] md:pb-[22px] md:rounded-[40px]">
               <div className="carousel__top-box">
                 <img
                   className="carousel__image relative rounded-[11.78px] object-cover md:rounded-[24px]"
                   src={item.locationImage}
                   alt={item.locationDescription}
                 />
-                <div className="carousel__image-info-box absolute top-[30.33px] left-[27.25px] flex flex-row justify-center items-center gap-1 bg-white/40 border-[2px] border-[#B6B6B6] rounded-[24.55px] px-2.5 py-2 md:rounded-[50px] md:left-[55px] md:top-[62px] md:px-[25px] md:py-[19px]">
+                <div className="carousel__image-info-box absolute top-[30.33px] left-[27.25px] flex flex-row justify-center items-center gap-1 bg-white/40 border-[2px] border-[#B6B6B6] rounded-[24.55px] px-2.5 py-2 md:rounded-[50px] md:left-[50px] md:top-[60px] md:px-[10px]">
                   <img
-                    className="carousel__location-icon object-contain w-[12.56px] h-[12.56px] md:w-[24px] md:h-[24px]"
+                    className="carousel__location-icon object-contain w-[12.56px] h-[12.56px] md:w-[16px] md:h-[16px]"
                     src={item.locationIcon}
                     alt="location__icon"
                   />
-                  <p className="carousel__location-text text-white font-medium text-[10.48px] tracking-tighter-[-2%] md:text-[17px] md:tracking-tighter-[-2%]">
+                  <p className="carousel__location-text text-white font-medium text-[10.48px] tracking-tighter-[-2%] md:text-[14px] md:tracking-tighter-[-2%]">
                     {item.locationText}
                   </p>
                 </div>
               </div>
               <div className="carousel__bottom-box w-full flex flex-col justify-center items-start">
-                <h4 className="carousel__location-title font-medium text-[18.87px] text-[#323232] mt-[6.2px] mb-[11.28px] md:text-[27px] md:mt-[20px]">
+                <h4 className="carousel__location-title font-medium text-[18.87px] text-[#323232] mt-[6.2px] mb-[11.28px] md:text-[22px] md:mt-[20px]">
                   {item.locationTitle}
                 </h4>
-                <p className="carousel__price-text font-semibold text-[14.67px] text-[#323232] md:text-[32px]">
+                <p className="carousel__price-text font-semibold text-[14.67px] text-[#323232] md:text-[22px]">
                   {item.locationPrice}
                 </p>
                 <div className="carousel__lists-main-box w-full flex flex-row justify-between items-end mt-[21.26px]">

@@ -5,7 +5,7 @@
   line-height: 100%;
   color: white;
   padding: 15px 27px;
-  border: 2px solid white;
+  border: 2px solid rgba(255, 255, 255, 0.801);
   border-radius: 33px;
   background: linear-gradient(90deg, #b4a297, #b4a297, #b4a297, #ffffff);
   background-size: 180% 180%;
@@ -30,7 +30,7 @@
     line-height: 60%;
     color: white;
     padding: 21px 44px;
-    border: 2px solid white;
+    border: 2px solid rgba(255, 255, 255, 0.801);
     border-radius: 32px;
     background: linear-gradient(90deg, #b4a297, #b4a297, #b4a297, #ffffff);
     background-size: 180% 180%;

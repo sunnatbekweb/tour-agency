@@ -102,7 +102,7 @@
   "home_unique": {
     "home_unique-text": "O'z Sarguzashtingizni Yarating",
     "home_unique-title": "Noyob, Shaxsiy, Unutilmas",
-    "home_unique-button": "Sayohat Qilish"
+    "home_unique-button": "Sayohat"
   },
   "home_desert": {
     "home_desert-text": "Madaniy Diqqatga Sazovor Joylar",
@@ -118,9 +118,7 @@
   },
   "home_question": {
     "home_question-text": "doimiy so'raladigan savollar",
-    "home_question-title": "Ketishdan oldin yordam kerakmi? javoblarimiz bor",
-    "home_question-second-text": "Sayohat asoschisi",
-    "home_question-second-title": "doimiy so'raladigan savollar",
+    "home_question-title": "Ketishdan oldin yordam kerakmi? Bizda javoblar bor",
     "home_question-text1": "Qozogʻiston yer maydoni boʻyicha dunyoning toʻqqizinchi yirik davlati va dengizga chiqa olmaydigan eng katta davlatdir. Adirli platolar va tekisliklar uning katta hududining deyarli yarmini, pasttekisliklar yana uchdan bir qismini tashkil qiladi;",
     "home_question-question-text1": "Qanday agentlik bilan sayohatni buyurtma qilishim mumkin?",
     "home_question-text2": "Qozogʻiston yer maydoni boʻyicha dunyoning toʻqqizinchi yirik davlati va dengizga chiqa olmaydigan eng katta davlatdir. Adirli platolar va tekisliklar uning katta hududining deyarli yarmini, pasttekisliklar yana uchdan bir qismini tashkil qiladi;",

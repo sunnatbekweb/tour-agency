@@ -2,7 +2,7 @@
 }
 .secondCarousel .swiper-slide {
   width: 100% !important;
-  max-width: 500px !important;
+  max-width: 480px !important;
 }
 .secondCarousel__container {
 }
@@ -30,11 +30,11 @@
 }
 .secondCarousel__box {
   width: 100%;
-  height: 550px;
+  height: 480px;
 }
 .secondCarousel__images {
   width: 100%;
-  height: 550px;
+  height: 480px;
 }
 .secondCarousel__image-texts {
   opacity: 0;
@@ -52,7 +52,7 @@
   }
   .secondCarousel .swiper-slide {
     width: 100% !important;
-    max-width: 500px !important;
+    max-width: 480px !important;
   }
   .secondCarousel__container {
   }
@@ -80,11 +80,11 @@
   }
   .secondCarousel__box {
     width: 100%;
-    height: 550px;
+    height: 480px;
   }
   .secondCarousel__images {
     width: 100%;
-    height: 550px;
+    height: 480px;
   }
   .secondCarousel__image-texts {
     opacity: 0;

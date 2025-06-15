@@ -137,9 +137,9 @@ export default function FooterMdSection() {
       <div className="relative top-[90px] z-[-1]">
         <MdRoadSection />
       </div>
-      <footer className="footerMdSection md:w-full md:bg-[#A98D7D] md:rounded-tr-[56px] md:rounded-tl-[56px] md:py-[52px] px-6">
+      <footer className="footerMdSection md:w-full md:bg-[#A98D7D] md:rounded-tr-[56px] md:rounded-tl-[56px] md:py-[42px] px-6">
         <div className="container footerMdSection__container md:w-full md:flex md:flex-col md:justify-center md:items-center md:px-9">
-          <div className="footerMdSection__top-box md:w-full md:flex md:flex-row md:justify-between md:items-end md:gap-[47px] md:mb-[102px]">
+          <div className="footerMdSection__top-box md:w-full md:flex md:flex-row md:justify-between md:items-end md:gap-[47px] md:mb-[56px]">
             <div className="footerMdSection__top-left-box md:flex md:flex-col md:justify-center md:items-start md:gap-8">
               <Link href={"/"}>
                 <img
@@ -167,8 +167,8 @@ export default function FooterMdSection() {
                       e.preventDefault();
                       setForm({ ...form, email: e.target.value.trimStart() });
                     }}
-                    type="email"
-                    id="email"
+                    type="email2"
+                    id="email2"
                     placeholder={t("footer.email_placeholder")}
                     autoComplete="off"
                     value={form.email}
@@ -201,7 +201,10 @@ export default function FooterMdSection() {
                     className="footerMdSection__lists md:flex md:flex-col md:justify-center md:items-start"
                     key={index}
                   >
-                    <Link href={item.link} className="footerMdSection__links md:flex md:flex-col md:justify-center md:items-start">
+                    <Link
+                      href={item.link}
+                      className="footerMdSection__links md:flex md:flex-col md:justify-center md:items-start"
+                    >
                       <p className="footerMdSection__links-text font-medium text-[30px] leading-[100%] tracking-tighter-[-2%] md:text-white/70 md:active:opacity-50">
                         {item.text}
                       </p>

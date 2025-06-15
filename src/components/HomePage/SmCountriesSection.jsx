@@ -75,18 +75,18 @@ export default function SmCountriesSection() {
     <div>
       <section className="countries w-full py-[80px] md:py-[100px] 2xl:hidden">
         <div className="container countries__container px-6 md:px-9">
-          <div className="countries__top-box mb-[48px] flex flex-col justify-center items-start gap-4 md:mb-[80px] xl:mb-[100px]">
+          <div className="countries__top-box mb-[48px] flex flex-col justify-center items-start gap-4 md:mb-[80px] xl:mb-[80px]">
             <p className="countries__top-text text-[16px] leading-[100%] text-[#A5958B] uppercase md:text-[24px]">
               see your own adventure
             </p>
-            <h2 className="countries__top-title w-full font-medium text-[32px] leading-[40px] text-[#323232] uppercase md:text-[56px] md:leading-[60px] lg:w-[642px]">
+            <h2 className="countries__top-title w-full font-medium text-[22px] leading-[30px] text-[#323232] uppercase md:w-[620px] md:text-[36px] md:leading-[40px] lg:w-[642px] xl:text-[46px] xl:leading-[50px]">
               Unveil Central Asia’s Hidden Wonders
             </h2>
           </div>
-          <div className="countries__top-box w-full flex flex-row justify-start items-start gap-2 overflow-x-auto px-6 mb-8 md:mb-[56px] md:gap-4 md:px-9">
+          <div className="countries__top-box w-full flex flex-row justify-start items-start gap-2 overflow-x-auto pr-6 mb-8 md:mb-[56px] md:gap-4 md:pr-9">
             {countryData.map((item) => (
               <button
-                className={`countries__top-buttons transition-all duration-500 ease-in-out flex justify-center items-center px-[18px] py-[12px] rounded-[16px] font-medium text-[16px] leading-[100%] md:text-[32px] md:px-[25px] md:py-[17px] md:rounded-[32px] ${
+                className={`countries__top-buttons transition-all border-[2px] border-[#B4A297] duration-500 ease-in-out flex justify-center items-center px-[18px] py-[12px] rounded-[16px] font-medium text-[16px] leading-[100%] md:text-[22px] md:px-[25px] md:py-[17px] md:rounded-[32px] ${
                   selectedCountry.id === item.id
                     ? "bg-[#B4A297] text-white"
                     : "bg-[#F5F5F5] text-[#323232]"
@@ -99,14 +99,14 @@ export default function SmCountriesSection() {
             ))}
           </div>
           <div className="countries__bottom-box w-full">
-            <div className="countries__top-info transition-all duration-500 ease-in-out w-full bg-[#E9DED8] rounded-[10px] px-[22px] pt-[14px] pb-[14px] md:px-[48px] md:pt-[32px] md:pb-[32px] md:rounded-[24px]">
+            <div className="countries__top-info transition-all border-[2px] border-[#B4A297] duration-500 ease-in-out w-full bg-[#E9DED8] rounded-[10px] px-[22px] pt-[14px] pb-[14px] md:px-[48px] md:pt-[32px] md:pb-[32px] md:rounded-[24px]">
               <div className="countries__mini-top-info w-full cursor-pointer mb-8 flex flex-row justify-between items-center transition-all duration-500 ease-in-out">
                 <h3 className="countries__top-info-title font-medium text-[22px] md:text-[40px] md:leading-[60px] transition-all duration-500 ease-in-out">
                   {selectedCountry.countryTitle}
                 </h3>
                 <Link href={selectedCountry.link}>
                   <div
-                    className={`countries__top-info-icon-box transition-all duration-500 ease-in-out w-[36px] h-[36px] rounded-full flex justify-center items-center md:w-[64px] md:h-[64px] bg-[#A38E82]`}
+                    className={`countries__top-info-icon-box transition-all duration-500  ease-in-out w-[36px] h-[36px] rounded-full flex justify-center items-center md:w-[64px] md:h-[64px] bg-[#A38E82]`}
                   >
                     <img
                       className="countries__top-info-icon w-[12px] h-[12px] transition-transform duration-500 md:w-[23px] md:h-[23px]"

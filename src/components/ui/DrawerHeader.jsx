@@ -22,7 +22,7 @@ export default function DrawerHeader({ modal, close }) {
             ${modal ? "translate-x-0 visible" : "translate-x-[-100%] collapse"} 
             ${showDestinations ? "overflow-y-auto" : "overflow-hidden"}`}
     >
-      <div className="container py-5 md:py-[32px]">
+      <div className="container py-5 md:py-[30px] xl:py-[10px]">
         <div className="drawerHeader__top-box flex justify-between items-center px-6 md:px-9">
           <button
             className="drawerHeader__top-box-open-burger-button"

@@ -5,10 +5,10 @@ export default function HeroFourthSection() {
     <div>
       <section className="heroFourth">
         <div className="container heroFourth__container flex flex-col justify-center items-center min-h-screen px-6 xl:pt-[100px] md:px-9">
-          <h2 className="heroFourth__title font-medium uppercase text-[55px] leading-[72px] text-white mb-4 md:text-[115px] md:leading-[120px] xl:normal-case xl:mb-[48px]">
+          <h2 className="heroFourth__title font-medium uppercase text-[40px] leading-[48px] text-white mb-4 md:text-[62px] md:leading-[70px] lg:capitalize">
             Tajikistan
           </h2>
-          <p className="heroFourth__text font-medium w-full text-[24px] leading-[100%] uppercase tracking-tighter-[-2%] text-white mb-[101px] text-center md:w-[634px] md:text-[48px] md:mb-[168px] lg:mb-[268px] xl:normal-case xl:w-full xl:text-[42px] xl:mb-[50px]">
+          <p className="heroFourth__text font-medium uppercase sm:normal-case w-full text-[16px] tracking-tighter-[-2%] text-white mb-[101px] text-center sm:w-3/4 md:w-[60%] md:text-[32px] lg:w-[45%] xl:w-full md:text-4xl md:mb-[168px] lg:mb-[268px] xl:mb-[50px]">
             Land of Mountains and Glaciers and Ancient Cultures
           </p>
           <div className="heroFourth__button 2xl:hidden">

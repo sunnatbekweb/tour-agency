@@ -1,5 +1,4 @@
 "use client";
-
 import { fetchTours, setTripTheme } from "@/features/tours/toursSlice";
 import { useAppDispatch, useAppSelector } from "@/lib/hooks";
 import axios from "axios";
@@ -7,7 +6,6 @@ import { useLocale, useTranslations } from "next-intl";
 import React, { useEffect, useState } from "react";
 import { TourCards } from "./tour/TourCards";
 import { Pagination } from "./Pagination";
-
 export const DestinationTours = ({ title, text }) => {
   const [tripThemes, setTripThemes] = useState();
   const locale = useLocale();
@@ -29,30 +27,28 @@ export const DestinationTours = ({ title, text }) => {
   const handlePageChange = ({ selected }) => {
     dispatch(setPage(selected + 1));
   };
-
   useEffect(() => {
     dispatch(fetchTours({ page: currentPage, filters }));
   }, [currentPage, filters]);
-
   const handleThemeSelect = (id) => {
     dispatch(setTripTheme(id));
   };
-
   useEffect(() => {
     getTripThemes();
   }, []);
-
   return (
     <section className="pt-[120px] px-6 font-medium">
       <div className="container">
-        <span className="font-medium text-xl text-[#A5958B] uppercase block mb-8">
+        <span className="font-medium text-[16px] leading-[100%] text-[#A5958B] uppercase md:text-[24px]">
           Trip Blogs
         </span>
-        <div className="flex flex-col gap-y-8 lg:flex-row gap-x-5 items-center font-medium text-[#323232] uppercase">
-          <h2 className="text-3xl md:text-5xl w-full lg:w-[65%]">
+        <div className="w-full flex flex-col justify-center items-start gap-6 md:gap-[36px] xl:w-full xl:flex xl:flex-row xl:justify-between xl:items-start xl:gap-0">
+          <h2 className="w-full font-medium text-[22px] leading-[30px] text-[#323232] uppercase md:w-[620px] md:text-[36px] md:leading-[40px] lg:w-[642px] xl:text-[40px] xl:leading-[46px]">
             {title}
           </h2>
-          <p className="text-xs md:text-lg w-full lg:w-[35%]">{text}</p>
+          <p className="w-full font-medium text-[12px] leading-[16px] text-[#323232] md:text-[20px] md:leading-[28px] lg:w-[500px]">
+            {text}
+          </p>
         </div>
         <div className="w-full flex items-center gap-x-6 overflow-x-auto scrollbar-hidden mt-20 mb-14">
           <button

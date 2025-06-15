@@ -15,14 +15,14 @@ export default function KyrgyzstanSection() {
     {
       id: "KG-OS",
       title: "Osh",
-      text: `Osh Region is located in the southern part of Kyrgyzstan. It is known for its rich history, diverse culture, and vibrant bazaars. The region includes the city of Osh, beautiful mountains, fertile valleys, and friendly people. Agriculture and trade play important roles in its economy.`,
+      text: `Osh Region lies in southern Kyrgyzstan and is known for its deep history, diverse culture, and lively bazaars. Home to the ancient city of Osh, the region features stunning mountains, fertile valleys, and warm hospitality. Agriculture and trade are central to its thriving local economy.`,
       images: "/images/osh.jpg",
       description: "city__images",
     },
     {
       id: "KG-YS",
       title: "Issyk-Kul",
-      text: `Issyk-Kul Region is located in the northeastern part of Kyrgyzstan. It surrounds the famous Issyk-Kul Lake, one of the largest alpine lakes in the world. The region is known for its stunning natural beauty, tourism, mountains, resorts, warm climate, and friendly people.`,
+      text: `Issyk-Kul Region lies in northeastern Kyrgyzstan, surrounding the famous Issyk-Kul Lake — one of the world’s largest alpine lakes. Renowned for its breathtaking nature, warm climate, scenic mountains, resorts, and welcoming people, the region is a beloved destination for relaxation, adventure, and cultural exploration.`,
       images: "/images/Issyk-Kul.jpg",
       description: "city__images",
     },
@@ -128,7 +128,7 @@ export default function KyrgyzstanSection() {
         <div className="kyrgyzstan__top-box absolute z-50 pointer-events-none">
           {hoveredRegion && hoveredData && (
             <div
-              className="kyrgyzstan__bottom-card flex flex-col justify-center items-start bg-white/80 w-[390px] shadow-xl rounded-[16px] px-4 pt-4 pb-[34px] border-[#E5E5E5] border-2 transition-all duration-500 ease-in-out"
+              className="kyrgyzstan__bottom-card flex flex-col justify-center items-start bg-white/80 w-[287px] shadow-xl rounded-[14px] px-3.5 pt-3.5 pb-3.5 border-[#E5E5E5] border-2 transition-all duration-500 ease-in-out"
               style={{
                 position: "fixed",
                 top: cursorPos.y + 10,
@@ -139,12 +139,12 @@ export default function KyrgyzstanSection() {
               <img
                 src={hoveredData.images}
                 alt={hoveredData.title}
-                className="kyrgyzstan__bottom-card-image w-full rounded-[8px] h-[223px] object-cover mb-4"
+                className="kyrgyzstan__bottom-card-image w-full rounded-[6px] h-[147px] object-cover mb-3.5"
               />
-              <h4 className="kyrgyzstan__bottom-card-title font-medium text-[27px] leading-[100%] mb-[17px] text-[#333333]">
+              <h4 className="kyrgyzstan__bottom-card-title font-medium text-[27px] leading-[100%] mb-3.5 text-[#333333]">
                 {hoveredData.title}
               </h4>
-              <p className="kyrgyzstan__bottom-card-text w-full font-medium text-[16px] leading-[18px] text-[#878787]">
+              <p className="kyrgyzstan__bottom-card-text w-full font-medium text-[14px] leading-[16px] text-[#878787]">
                 {hoveredData.text}
               </p>
             </div>
