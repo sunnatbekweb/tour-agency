@@ -1,10 +1,9 @@
-"use client";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useLocale, useTranslations } from "next-intl";
 import "./ContactForm.css";
 import { toast } from "react-toastify";
-export const ContactForm = () => {
+export const ContactForm = ({ setSuccess }) => {
   const [destinations, setDestinations] = useState();
   const [tripThemes, setTripThemes] = useState();
   const locale = useLocale();
@@ -40,20 +39,25 @@ export const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios
-        .post(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/contact/`, formData)
-        .then((response) => console.log(response.data));
+      await axios.post(
+        `${process.env.NEXT_PUBLIC_BASE_URL}/blog/contact/`,
+        formData
+      );
+      setFormData({
+        full_name: "",
+        email: "",
+        destination: "",
+        trip_tour: "",
+      });
+      setTimeout(() => {
+        setSuccess(true);
+      }, 1000);
     } catch (error) {
       console.error(error);
+      toast.error("Something went wrong!");
     }
-    toast.success("Successfully sended!");
-    setFormData({
-      full_name: "",
-      email: "",
-      destination: "",
-      trip_tour: "",
-    });
   };
+
   useEffect(() => {
     getDestinations();
     getTripThemes();

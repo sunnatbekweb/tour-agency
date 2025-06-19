@@ -318,6 +318,12 @@
       "message": "Your message",
       "message-placeholder": "Enter you message",
       "send": "Send a message"
+    },
+    "form_success": {
+      "title": "Your message was received!",
+      "text": "Thanks for contacting Silk Road Wonders :).",
+      "text1": "We'll be in touch shortly!",
+      "button": "Go to the homepage"
     }
   },
   "all": "All",
