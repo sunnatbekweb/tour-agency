@@ -10,7 +10,7 @@ import axios from "axios";
 import { useLocale, useTranslations } from "next-intl";
 import { TourInfoItem } from "@/components/ui/tour/TourInfoItem";
 import { TourItineraryAccordion } from "@/components/ui/tour/TourItineraryAccordion";
-import { TripForm } from "@/components/ui/tour/TripForm";
+import { TripForm } from "@/components/ui/form/TripForm";
 import { DatePriceItem } from "@/components/ui/DatePriceItem";
 import "@/styles/page_styles/trip.css";
 
