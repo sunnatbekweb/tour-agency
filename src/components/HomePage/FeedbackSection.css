@@ -26,44 +26,23 @@
   background-color: #b4a297;
   border-radius: 12px;
 }
-.feedback {
-}
-.feedback__container {
-}
-.feedback .swiper-slide {
-}
-.feedback__top-box {
-}
 .feedback__top-text {
   font-family: "ppneuemontreal";
 }
 .feedback__top-title {
   font-family: "ppneuemontreal";
 }
-.feedback__swiper {
-}
-.feedback__swiper-slide {
-}
 .feedback__swiper-left-box {
   margin: 0 0 !important;
-  width: 55% !important;
 }
 .feedback__swiper-comment {
   font-family: "ppneuemontreal";
-}
-.feedback__swiper-quotationIcon {
-}
-.feedback__swiper-mini-box {
 }
 .feedback__swiper-name-texts {
   font-family: "ppneuemontreal";
 }
 .feedback__swiper-job-title {
   font-family: "ppneuemontreal";
-}
-.feedback__swiper-right-box {
-}
-.feedback__swiper-images {
 }
 @media (max-width: 1366px) {
   .swiper-button-next::after,
@@ -94,44 +73,23 @@
     background-color: #b4a297;
     border-radius: 12px;
   }
-  .feedback {
-  }
-  .feedback__container {
-  }
-  .feedback .swiper-slide {
-  }
-  .feedback__top-box {
-  }
   .feedback__top-text {
     font-family: "ppneuemontreal";
   }
   .feedback__top-title {
     font-family: "ppneuemontreal";
   }
-  .feedback__swiper {
-  }
-  .feedback__swiper-slide {
-  }
   .feedback__swiper-left-box {
     margin: 0 0 !important;
-    width: 50% !important;
   }
   .feedback__swiper-comment {
     font-family: "ppneuemontreal";
-  }
-  .feedback__swiper-quotationIcon {
-  }
-  .feedback__swiper-mini-box {
   }
   .feedback__swiper-name-texts {
     font-family: "ppneuemontreal";
   }
   .feedback__swiper-job-title {
     font-family: "ppneuemontreal";
-  }
-  .feedback__swiper-right-box {
-  }
-  .feedback__swiper-images {
   }
 }
 @media (max-width: 1024px) {
@@ -162,44 +120,23 @@
     background-color: #b4a297;
     border-radius: 12px;
   }
-  .feedback {
-  }
-  .feedback__container {
-  }
-  .feedback .swiper-slide {
-  }
-  .feedback__top-box {
-  }
   .feedback__top-text {
     font-family: "ppneuemontreal";
   }
   .feedback__top-title {
     font-family: "ppneuemontreal";
   }
-  .feedback__swiper {
-  }
-  .feedback__swiper-slide {
-  }
   .feedback__swiper-left-box {
     margin: 0 auto !important;
-    width: 93% !important;
   }
   .feedback__swiper-comment {
     font-family: "ppneuemontreal";
-  }
-  .feedback__swiper-quotationIcon {
-  }
-  .feedback__swiper-mini-box {
   }
   .feedback__swiper-name-texts {
     font-family: "ppneuemontreal";
   }
   .feedback__swiper-job-title {
     font-family: "ppneuemontreal";
-  }
-  .feedback__swiper-right-box {
-  }
-  .feedback__swiper-images {
   }
 }
 @media (max-width: 820px) {
@@ -230,23 +167,11 @@
     background-color: #b4a297;
     border-radius: 999px;
   }
-  .feedback {
-  }
-  .feedback__container {
-  }
-  .feedback .swiper-slide {
-  }
-  .feedback__top-box {
-  }
   .feedback__top-text {
     font-family: "ppneuemontreal";
   }
   .feedback__top-title {
     font-family: "ppneuemontreal";
-  }
-  .feedback__swiper {
-  }
-  .feedback__swiper-slide {
   }
   .feedback__swiper-left-box {
     margin: 0 auto !important;
@@ -255,19 +180,11 @@
   .feedback__swiper-comment {
     font-family: "ppneuemontreal";
   }
-  .feedback__swiper-quotationIcon {
-  }
-  .feedback__swiper-mini-box {
-  }
   .feedback__swiper-name-texts {
     font-family: "ppneuemontreal";
   }
   .feedback__swiper-job-title {
     font-family: "ppneuemontreal";
-  }
-  .feedback__swiper-right-box {
-  }
-  .feedback__swiper-images {
   }
 }
 @media (max-width: 768px) {
@@ -298,44 +215,23 @@
     background-color: #b4a297;
     border-radius: 999px;
   }
-  .feedback {
-  }
-  .feedback__container {
-  }
-  .feedback .swiper-slide {
-  }
-  .feedback__top-box {
-  }
   .feedback__top-text {
     font-family: "ppneuemontreal";
   }
   .feedback__top-title {
     font-family: "ppneuemontreal";
   }
-  .feedback__swiper {
-  }
-  .feedback__swiper-slide {
-  }
   .feedback__swiper-left-box {
     margin: 0 auto !important;
-    width: 90.5% !important;
   }
   .feedback__swiper-comment {
     font-family: "ppneuemontreal";
-  }
-  .feedback__swiper-quotationIcon {
-  }
-  .feedback__swiper-mini-box {
   }
   .feedback__swiper-name-texts {
     font-family: "ppneuemontreal";
   }
   .feedback__swiper-job-title {
     font-family: "ppneuemontreal";
-  }
-  .feedback__swiper-right-box {
-  }
-  .feedback__swiper-images {
   }
 }
 @media (max-width: 767px) {
@@ -366,44 +262,23 @@
     background-color: #b4a297;
     border-radius: 999px;
   }
-  .feedback {
-  }
-  .feedback__container {
-  }
-  .feedback .swiper-slide {
-  }
-  .feedback__top-box {
-  }
   .feedback__top-text {
     font-family: "ppneuemontreal";
   }
   .feedback__top-title {
     font-family: "ppneuemontreal";
   }
-  .feedback__swiper {
-  }
-  .feedback__swiper-slide {
-  }
   .feedback__swiper-left-box {
     margin: 0 auto !important;
-    width: 89% !important;
   }
   .feedback__swiper-comment {
     font-family: "ppneuemontreal";
-  }
-  .feedback__swiper-quotationIcon {
-  }
-  .feedback__swiper-mini-box {
   }
   .feedback__swiper-name-texts {
     font-family: "ppneuemontreal";
   }
   .feedback__swiper-job-title {
     font-family: "ppneuemontreal";
-  }
-  .feedback__swiper-right-box {
-  }
-  .feedback__swiper-images {
   }
 }
 @media (max-width: 414px) {
@@ -434,43 +309,22 @@
     background-color: #b4a297;
     border-radius: 999px;
   }
-  .feedback {
-  }
-  .feedback__container {
-  }
-  .feedback .swiper-slide {
-  }
-  .feedback__top-box {
-  }
   .feedback__top-text {
     font-family: "ppneuemontreal";
   }
   .feedback__top-title {
     font-family: "ppneuemontreal";
   }
-  .feedback__swiper {
-  }
-  .feedback__swiper-slide {
-  }
   .feedback__swiper-left-box {
     margin: 0 auto !important;
-    width: 85% !important;
   }
   .feedback__swiper-comment {
     font-family: "ppneuemontreal";
-  }
-  .feedback__swiper-quotationIcon {
-  }
-  .feedback__swiper-mini-box {
   }
   .feedback__swiper-name-texts {
     font-family: "ppneuemontreal";
   }
   .feedback__swiper-job-title {
     font-family: "ppneuemontreal";
-  }
-  .feedback__swiper-right-box {
-  }
-  .feedback__swiper-images {
   }
 }

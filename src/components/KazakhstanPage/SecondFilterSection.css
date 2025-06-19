@@ -1,8 +1,6 @@
 .secondFilter {
   display: none !important;
 }
-.secondFilter__container {
-}
 .secondFilter__top-box::-webkit-scrollbar {
   display: none !important;
 }
@@ -10,12 +8,6 @@
   outline: none !important;
   white-space: nowrap;
   font-family: "ppneuemontreal";
-}
-.secondFilter__bottom-box {
-}
-.secondFilter__bottom-card {
-}
-.secondFilter__bottom-card-image {
 }
 .secondFilter__bottom-card-title {
   font-family: "ppneuemontreal";
@@ -27,19 +19,11 @@
   .secondFilter {
     display: block !important;
   }
-  .secondFilter__container {
-  }
   .secondFilter__top-box::-webkit-scrollbar {
     display: none !important;
   }
   .secondFilter__top-buttons {
     font-family: "ppneuemontreal";
-  }
-  .secondFilter__bottom-box {
-  }
-  .secondFilter__bottom-card {
-  }
-  .secondFilter__bottom-card-image {
   }
   .secondFilter__bottom-card-title {
     font-family: "ppneuemontreal";

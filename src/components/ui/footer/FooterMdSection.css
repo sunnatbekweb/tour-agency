@@ -7,54 +7,20 @@
 .footerMdSection {
   display: block !important;
 }
-.footerMdSection__container {
-}
-.footerMdSection__top-box {
-}
-.footerMdSection__top-left-box {
-}
-.footerMdSection__top-logo {
-}
 .footerMdSection__top-text {
   font-family: "ppneuemontreal";
-}
-.footerMdSection__form {
-}
-.footerMdSection__form-box {
-}
-.footerMdSection__form-input-box {
 }
 .footerMdSection__form-email-input {
   font-family: "ppneuemontreal";
 }
-.footerMdSection__form-button {
-}
-.footerMdSection__form-button-icon {
-}
 .footerMdSection__form-text {
   font-family: "ppneuemontreal";
-}
-.footerMdSection__middle-box {
-}
-.footerMdSection__nav {
 }
 .footerMdSection__list-text {
   font-family: "ppneuemontreal";
 }
-.footerMdSection__list {
-}
-.footerMdSection__lists {
-}
-.footerMdSection__links {
-}
 .footerMdSection__links-text {
   font-family: "ppneuemontreal";
-}
-.footerMdSection__button {
-}
-.footerMdSection__button-icon {
-}
-.footerMdSection__bottom-right-box {
 }
 .footerMdSection__bottom-right-box-title {
   font-family: "ppneuemontreal";
@@ -62,27 +28,11 @@
 .footerMdSection__bottom-right-box-texts {
   font-family: "ppneuemontreal";
 }
-.footerMdSection__icon-box {
-}
-.footerMdSection__icon-mini-boxes {
-}
-.footerMdSection__icon-links {
-}
-.footerMdSection__icon-images {
-}
-.footerMdSection__hr {
-}
-.footerMdSection__copy-box {
-}
 .footerMdSection__copy-text {
   font-family: "ppneuemontreal";
 }
-.footerMdSection__copy-logo-box {
-}
 .footerMdSection__developing-text {
   font-family: "ppneuemontreal";
-}
-.footerMdSection__copy-logo-link {
 }
 .footerMdSection__copy-logo-text {
   font-family: "ppneuemontreal";
