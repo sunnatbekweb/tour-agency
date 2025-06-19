@@ -134,8 +134,8 @@ export default function CarouselSection() {
   return (
     <section className="carousel w-full mt-8 md:mt-[88px] lg:mt-[232px]">
       <div className="container carousel__container relative w-full flex flex-row justify-between items-center px-6 md:px-9">
-        <div className="swiper-button-next"></div>
-        <div className="swiper-button-prev"></div>
+        <div className="swiper-button-next bg-amber-500"></div>
+        <div className="swiper-button-prev bg-amber-500"></div>
       </div>
       <Swiper
         className="carousel__swiper-box flex flex-row justify-center items-center cursor-grab"
