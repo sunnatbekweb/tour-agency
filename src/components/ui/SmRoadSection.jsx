@@ -7,7 +7,7 @@ export default function SmRoadSection() {
   const locale = useLocale();
   return (
     <div>
-      <section className="smRoad mt-[74px] md:hidden">
+      <section className="smRoad md:hidden">
         <div className="container smRoad__container flex flex-col justify-center items-center px-6">
           <Link className="smRoad-logo-link" href={"/"}>
             <img
@@ -17,19 +17,26 @@ export default function SmRoadSection() {
             />
           </Link>
           <div className="smRoad__text-boxes flex flex-col justify-center items-center mb-[80px]">
-            <h3 className="smRoad__first-title text-center block font-medium text-[32px] leading-[100%] tracking-tighter-[-2%] uppercase text-[#323232]">
+            <h3 className="smRoad__first-title text-center block font-medium text-[24px] leading-[100%] tracking-tighter-[-2%] uppercase text-[#323232]">
               {locale === "en"
-                ? "Explore and find yourself"
+                ? "Explore and find"
                 : locale === "uz"
-                  ? "Ipak yo'li sayohatida o'zingizni,"
-                  : "Исследуйте и найдите себя"}
+                  ? "Ipak yo'li sayohatida"
+                  : "Исследуйте и найдите"}
             </h3>
-            <h3 className="smRoad__third-title text-center block font-medium text-[32px] leading-[100%] tracking-tighter-[-2%] uppercase text-[#323232]">
+            <h3 className="smRoad__second-title text-center block font-medium text-[24px] leading-[100%] tracking-tighter-[-2%] uppercase text-[#323232]">
               {locale === "en"
-                ? "In Silk road Journey"
+                ? "yourself In Silk"
                 : locale === "uz"
-                  ? "kashf qiling va toping"
-                  : "в путешествии по шелковому пути"}
+                  ? "o'zingizni kashf"
+                  : "себя в путешествии по"}
+            </h3>
+            <h3 className="smRoad__third-title text-center block font-medium text-[24px] leading-[100%] tracking-tighter-[-2%] uppercase text-[#323232]">
+              {locale === "en"
+                ? "road Journey"
+                : locale === "uz"
+                  ? "qiling va toping"
+                  : " Шелковому пути"}
             </h3>
           </div>
           <Link href={"/contact"}>

@@ -89,20 +89,14 @@ export default function QuestionSection() {
     });
   }, [activeId]);
   return (
-    <section className="question mt-[64px] md:mt-[94px] xl:mt-[100px]">
+    <section className="question mt-[64px] md:mt-[120px] xl:mt-[150px]">
       <div className="container question__container w-full flex flex-col justify-center items-start gap-[40px] px-6 md:gap-[94px] md:px-9">
         <div className="question__top-box flex flex-col justify-center items-start gap-2 md:gap-4">
-          <p className="question__text md:text-[#A5958B] hidden md:block md:font-medium md:text-[24px] md:uppercase md:mb-4">
+          <p className="question__text font-medium text-[16px] uppercase text-[#A5958B] md:text-[24px]">
             {t("home_question.home_question-text")}
           </p>
-          <h2 className="question__title hidden w-full lg:w-3/4 2xl:w-3/5 md:block md:font-medium md:text-[56px] md:leading-[100%] md:uppercase md:text-[#323232]">
+          <h2 className="question__title w-full font-medium text-xl uppercase text-[#323232 md:font-medium md:text-[#323232] md:w-[620px] md:text-2xl xl:text-4xl xl:w-[800px]">
             {t("home_question.home_question-title")}
-          </h2>
-          <p className="question__second-text font-medium text-[16px] uppercase text-[#A5958B] md:hidden">
-            {t("home_question.home_question-second-text")}
-          </p>
-          <h2 className="question__second-title font-medium text-[32px] leading-[40px] uppercase text-[#323232] md:hidden">
-            {t("home_question.home_question-second-title")}
           </h2>
         </div>
         <div className="question__bottom-box w-full flex flex-col justify-center items-center gap-2 md:gap-4 xl:w-full xl:flex xl:flex-row xl:justify-between xl:items-start xl:gap-5 xl:relative">
@@ -127,13 +121,13 @@ export default function QuestionSection() {
                     src={content.image}
                     alt="nature__image"
                   />
-                  <div className="question__image-info-box lg:absolute lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-3 lg:bg-white/40 lg:rounded-[50px] lg:left-[24px] lg:top-[24px] lg:px-[18px] lg:py-[16px]">
+                  <div className="question__image-info-box lg:absolute lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-3 lg:bg-white/40 lg:rounded-[50px] lg:left-[24px] lg:top-[24px] lg:px-[18px] lg:py-[12px]">
                     <img
                       className="question__location-icon"
                       src={content.locationIcon}
                       alt="location__icon"
                     />
-                    <p className="question__location-text lg:text-white lg:font-medium lg:text-[17px] lg:leading-[21px]">
+                    <p className="question__location-text lg:text-white lg:font-medium lg:text-[14px] lg:leading-[18px]">
                       {content.locationText}
                     </p>
                   </div>
@@ -148,25 +142,25 @@ export default function QuestionSection() {
             {data.map((item, index) => (
               <div
                 key={item.id}
-                className="question__right-mini-box w-full flex flex-col justify-between items-center border-[1px] border-[#DCDCDC] rounded-[8px] px-[18px] py-4 md:px-[40px] md:py-10 md:rounded-[24px] xl:w-[700px] xl:px-[24px] xl:py-5 2xl:px-[51px] 2xl:py-[40px]"
+                className="question__right-mini-box w-full flex flex-col justify-between items-center border-[1px] border-[#DCDCDC] rounded-[8px] px-[18px] py-4 md:px-[40px] md:py-10 md:rounded-[24px] xl:w-[700px] xl:px-[24px] xl:py-5 2xl:px-[20px] 2xl:py-[35px]"
               >
                 <div
-                  className="question__right-bottom-box w-full flex flex-row justify-between items-center h-[32px] cursor-pointer md:h-[90px]"
+                  className="question__right-bottom-box w-full flex flex-row justify-between items-center h-[32px] cursor-pointer md:h-[60px]"
                   onClick={() => toggleAnswer(item.id)}
                 >
-                  <div className="question__right-texts-box flex flex-row justify-center items-start gap-x-1.5 md:flex md:flex-row md:justify-start md:items-start md:gap-x-3 md:w-full lg:w-[500px]">
-                    <p className="question__right-number font-medium text-[16px] text-[#323232] leading-[22px] md:text-[34px] md:leading-[40px]">
+                  <div className="question__right-texts-box flex flex-row justify-center items-start gap-x-1.5 md:flex md:flex-row md:justify-start md:items-start md:gap-x-3 md:w-full">
+                    <p className="question__right-number font-medium text-[16px] text-[#323232] leading-[22px] md:text-[32px] md:leading-[40px] xl:text-[24px] xl:leading-[30px]">
                       {item.number}
                     </p>
-                    <p className="question__right-title font-medium text-[16px] text-[#323232] leading-[22px] md:text-[34px] md:leading-[40px]">
+                    <p className="question__right-title font-medium text-[16px] text-[#323232] leading-[22px] md:text-[32px] md:leading-[40px] xl:text-[24px] xl:leading-[30px]">
                       {item.title}
                     </p>
                   </div>
                   <div
-                    className={`question__right-icon-box w-[32px] h-[32px] rounded-full flex flex-row justify-center items-center md:w-[70px] md:h-[70px] ${activeId === item.id ? "bg-[#A38E82]" : "bg-[#F0ECEA]"} `}
+                    className={`question__right-icon-box w-[32px] h-[32px] rounded-full flex flex-row justify-center items-center md:w-[45px] md:h-[45px] ${activeId === item.id ? "bg-[#A38E82]" : "bg-[#F0ECEA]"} `}
                   >
                     <img
-                      className="question__right-icon object-contain transition-transform duration-500 w-[12px] h-[12px] md:w-[32px] md:h-[32px]"
+                      className="question__right-icon object-contain transition-transform duration-500 w-[12px] h-[12px] md:w-[22px] md:h-[22px]"
                       src={
                         activeId === item.id ? item.iconOpen : item.iconClose
                       }
@@ -178,7 +172,7 @@ export default function QuestionSection() {
                   ref={(el) => (contentRefs.current[index] = el)}
                   className="question__right-text-box font-medium text-[12px] leading-[16px] text-[#323232] w-full overflow-hidden transition-all duration-500 ease-in-out max-h-0"
                 >
-                  <p className="question__right-text text-[12px] leading-[16px] md:text-[24px] md:leading-[32px] md:w-full lg:w-full">
+                  <p className="question__right-text text-[12px] leading-[16px] md:text-[18px] md:leading-[22px] md:w-full lg:w-full">
                     {item.text}
                   </p>
                 </div>

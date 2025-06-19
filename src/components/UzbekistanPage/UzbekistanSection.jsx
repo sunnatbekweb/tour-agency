@@ -8,70 +8,70 @@ export default function UzbekistanSection() {
     {
       id: "UZ-SA",
       title: "Samarkand",
-      text: `Step into a city where history breathes through turquoise domes and timeless architecture. Once the crown jewel of the Silk Road, Samarkand dazzles with its monumental madrasahs, ancient mosques, and the majestic Registan Square. A place where every stone tells a story, and every corner whispers centuries of wisdom.`,
+      text: `Step into a city where history lives in turquoise domes and ancient architecture. Once the crown of the Silk Road, Samarkand shines with grand madrasahs, old mosques, and the majestic Registan. Every stone tells a story, every corner echoes centuries of wisdom.`,
       images: "/images/samarkand__city.jpg",
       description: "city__images",
     },
     {
       id: "UZ-TA",
       title: "Tashkent",
-      text: `Step into Tashkent – a dynamic metropolis where ancient history blends with modern vitality. As Uzbekistan’s capital and cultural hub, the city radiates life through its broad boulevards, elegant metro stations, lively neighborhoods, and a spirit that captures both timeless tradition and contemporary charm.`,
+      text: `Step into Tashkent – a vibrant metropolis where ancient history meets modern energy. As Uzbekistan’s capital and cultural center, it shines through broad boulevards, elegant metro stations, lively districts, and a spirit reflecting both timeless tradition and contemporary charm.`,
       images: "/images/tashkent__city.jpg",
       description: "city__images",
     },
     {
       id: "UZ-FE",
       title: "Fergana",
-      text: `Step into Fergana — a vibrant gem in the fertile Fergana Valley. Famed for its rich culture, bustling bazaars, and warm people, Fergana is a city where tradition and modern life blend seamlessly, creating an atmosphere both timeless and alive with energy.`,
+      text: `Step into Fergana — a vibrant jewel of the fertile Fergana Valley. Known for rich culture, lively bazaars, and warm hospitality, it’s a place where tradition meets modern life, creating a spirit that’s both timeless and full of energy.`,
       images: "/images/fergana__city.jpg",
       description: "city__images",
     },
     {
       id: "UZ-AN",
       title: "Andijan",
-      text: `Step into Andijan — the vibrant heart of the Fergana Valley, where deep history and living traditions meet. With fragrant orchards, lively bazaars, and heartfelt hospitality, Andijan is a city that radiates resilience, culture, and a spirit rooted in heritage.`,
+      text: `Step into Andijan — the vibrant heart of the Fergana Valley, where rich history meets living tradition. With fragrant orchards, bustling bazaars, and warm hospitality, Andijan shines with culture, resilience, and a timeless spirit deeply rooted in heritage.`,
       images: "/images/andijan__city.jpg",
       description: "city__images",
     },
     {
       id: "UZ-KA",
       title: "Kashkadarya",
-      text: `Discover Qashqadaryo – where towering mountains meet deep-rooted culture, and every valley holds centuries of untold stories. From the majestic Gissar peaks to Karshi’s fertile plains, this region embraces history, nature, and the spirit of Uzbekistan.`,
+      text: `Discover Qashqadaryo — where majestic mountains meet deep-rooted culture, and every valley holds centuries of untold stories. From the towering Gissar peaks to Karshi’s fertile plains, the region blends nature, heritage, and the enduring spirit of southern Uzbekistan.`,
       images: "/images/kashkadarya__city.jpg",
       description: "city__images",
     },
     {
       id: "UZ-SU",
       title: "Surkhandarya",
-      text: `Venture into Surkhandarya – a region of dramatic contrasts and timeless soul. Between sun-kissed plains and majestic mountains, Surkhandarya reveals ancient secrets, vibrant culture, and resilient spirit passed through generations in Uzbekistan’s southern heart.`,
+      text: `Venture into Surkhandarya — a land of striking contrasts and timeless spirit. Between sun-drenched plains and towering mountains, this southern gem of Uzbekistan reveals ancient secrets, vibrant culture, and a resilient soul passed down through generations, echoing the region’s rich heritage and natural beauty.`,
       images: "/images/surkhandarya__city.jpg",
       description: "city__images",
     },
     {
       id: "UZ-BU",
       title: "Bukhara",
-      text: `Step into Bukhara – a timeless city carved by centuries, where every breeze carries whispers of history and every brick holds stories of ancient wisdom. The city’s enchanting bazaars, majestic mosques, and rich culture invite visitors to explore a world shaped by time and tradition.`,
+      text: `Step into Bukhara — a timeless city shaped by centuries, where every breeze whispers history and each brick holds ancient wisdom. With its enchanting bazaars, majestic mosques, and rich culture, Bukhara invites visitors to explore a world defined by time and tradition.`,
       images: "/images/bukhara__city.jpg",
       description: "city__images",
     },
     {
       id: "UZ-NV",
       title: "Navoi",
-      text: `Discover Navoi – a unique land where the golden desert sands meet the bright promise of progress and innovation. Named after the great poet Alisher Navoi, this region beautifully blends creative spirit, cultural heritage, and strong industrial growth to shape its dynamic future.`,
+      text: `Discover Navoi — where golden desert sands meet the bright promise of innovation. Named after the great poet Alisher Navoi, this region blends cultural heritage, creative spirit, and strong industrial growth, shaping a future that honors its past while embracing progress.`,
       images: "/images/navoi__city.jpg",
       description: "city__images",
     },
     {
       id: "UZ-KH",
       title: "Khorezm",
-      text: `Step into Khorezm – a cradle of ancient civilizations where the sands of time gently preserve the timeless stories of kings, scholars, and merchants. This historic land holds echoes of the past, rich culture, and enduring legacies that continue to inspire.`,
+      text: `Step into Khorezm — a cradle of ancient civilizations where the sands of time preserve stories of kings, scholars, and merchants. This historic land echoes with rich culture, architectural wonders, and enduring legacies that continue to inspire generations across Uzbekistan and beyond.`,
       images: "/images/khorezm__city.jpg",
       description: "city__images",
     },
     {
       id: "UZ-NU",
       title: "Nukus",
-      text: `Discover Nukus – a city of quiet strength and deep culture, nestled in Karakalpakstan’s heart. Surrounded by vast deserts and plateaus, Nukus is more than a remote outpost; it is a true sanctuary of art, history, and enduring identity.`,
+      text: `Discover Nukus — a city of quiet strength and deep culture, nestled in the heart of Karakalpakstan. Surrounded by vast deserts and windswept plateaus, Nukus stands not just as a remote outpost, but as a sanctuary of art, history, and enduring cultural identity.`,
       images: "/images/nukus__city.jpg",
       description: "city__images",
     },
@@ -240,7 +240,7 @@ export default function UzbekistanSection() {
         <div className="uzbekistan__top-box absolute z-50 pointer-events-none">
           {hoveredRegion && hoveredData && (
             <div
-              className="uzbekistan__bottom-card flex flex-col justify-center items-start bg-white/80 w-[390px] shadow-xl rounded-[16px] px-4 pt-4 pb-[34px] border-[#E5E5E5] border-2 transition-all duration-500 ease-in-out"
+              className="uzbekistan__bottom-card flex flex-col justify-center items-start bg-white/80 w-[287px] shadow-xl rounded-[14px] px-3.5 pt-3.5 pb-3.5 border-[#E5E5E5] border-2 transition-all duration-500 ease-in-out"
               style={{
                 position: "fixed",
                 top: cursorPos.y + 10,
@@ -251,12 +251,12 @@ export default function UzbekistanSection() {
               <img
                 src={hoveredData.images}
                 alt={hoveredData.title}
-                className="uzbekistan__bottom-card-image w-full rounded-[8px] h-[223px] object-cover mb-4"
+                className="uzbekistan__bottom-card-image w-full rounded-[6px] h-[147px] object-cover mb-3.5"
               />
-              <h4 className="uzbekistan__bottom-card-title font-medium text-[27px] leading-[100%] mb-[17px] text-[#333333]">
+              <h4 className="uzbekistan__bottom-card-title font-medium text-[27px] leading-[100%] mb-3.5 text-[#333333]">
                 {hoveredData.title}
               </h4>
-              <p className="uzbekistan__bottom-card-text w-full font-medium text-[16px] leading-[18px] text-[#878787]">
+              <p className="uzbekistan__bottom-card-text w-full font-medium text-[14px] leading-[16px] text-[#878787]">
                 {hoveredData.text}
               </p>
             </div>

@@ -13,7 +13,7 @@
       "about": "About Us",
       "blog": "Blog"
     },
-    "contact": "Contact Us"
+    "contact": "Contact us"
   },
   "home_hero": {
     "home_hero-subtitle1": "From Ancient Steppes to Timeless Cities",
@@ -66,7 +66,7 @@
     "home_carousel-sixth-title": "The Historic City of Samarkand",
     "home_carousel-detail-sixth": {
       "home_carousel-detail-sixth-1": "Including Accomandation",
-      "home_carousel-detail-sixth-2": "Free Proffesional Guide Tour",
+      "home_carousel-detail-sixth-2": "Free Guided Tour with Professional Guide",
       "home_carousel-detail-sixth-3": "3 Days 2 Nights trip"
     },
     "home_carousel-button": "Booking"
@@ -88,10 +88,21 @@
     "home_countries-title5": "Turkmenistan",
     "home_countries-text5": "Welcome to Turkmenistan — a land of mystery, marble cities, and desert wonders. Explore the blazing Darvaza Gas Crater, ancient ruins of Merv, and the quiet beauty of the Karakum Desert. With deep-rooted traditions and a unique cultural identity, Turkmenistan invites you to uncover its hidden treasures and timeless heritage."
   },
+  "home_map": {
+    "top_title": "See Your Own Adventure",
+    "title": "Unveil Central Asia’s Hidden Wonders",
+    "country_info": {
+      "infoUz": "Welcome to Uzbekistan — where the Silk Road lives on through vibrant bazaars, majestic madrasas, and timeless architecture. This ancient land is a crossroads of cultures, where history whispers from every turquoise dome and intricately carved gate. From the glowing sands of the Kyzylkum Desert to the poetic beauty of Samarkand and Bukhara, Uzbekistan invites you to walk in the footsteps of empires and dreamers alike.",
+      "infoKz": "Welcome to Kazakhstan — a land where golden steppes stretch beyond the horizon, where futuristic cities rise beside ancient traditions. As the world’s largest landlocked country, Kazakhstan offers boundless space to breathe, roam, and rediscover freedom. From the shimmering heights of Baiterek Tower to the otherworldly beauty of Charyn Canyon, every step here tells a story.",
+      "infoKg": "Welcome to Kyrgyzstan — where snow-capped peaks cradle nomadic traditions and turquoise lakes reflect the sky’s vastness. This rugged and soulful land is a paradise for explorers, where yurts dot alpine meadows and horses roam free. From the serene beauty of Lake Issyk-Kul to the dramatic trails of the Tien Shan Mountains, Kyrgyzstan invites you to reconnect with nature and a way of life rooted in harmony and freedom.",
+      "infoTj": "Welcome to Tajikistan — a land of soaring mountains, ancient fortresses, and untouched natural beauty. Nestled in the heart of Central Asia, this hidden gem offers breathtaking alpine landscapes and warm-hearted hospitality. From the towering peaks of the Pamir Mountains to the crystal-clear waters of Iskanderkul Lake, every path in Tajikistan leads to adventure, reflection, and awe.",
+      "infoTk": "Welcome to Turkmenistan — a land of desert mysteries, marble cities, and ancient legacies hidden beneath the sands. From the blazing heart of the Karakum Desert rises the Darvaza Gas Crater — the “Door to Hell” — a symbol of the country’s raw and powerful beauty. Wander through the silent ruins of Merv, once a jewel of the Silk Road, and marvel at Ashgabat’s gleaming white architecture. Turkmenistan is where history and surreal modernity meet in mesmerizing contrast."
+    }
+  },
   "home_unique": {
     "home_unique-text": "Create Your Own Adventure",
     "home_unique-title": "Unique, Personal, Unforgettable",
-    "home_unique-button": "Travel"
+    "home_unique-button": "Let’s travel"
   },
   "home_desert": {
     "home_desert-text": "Cultural Highlights",
@@ -107,9 +118,7 @@
   },
   "home_question": {
     "home_question-text": "Frequently Asked Questions",
-    "home_question-title": "Need help before departure? We’ve got answers",
-    "home_question-second-text": "Trip Creator",
-    "home_question-second-title": "Frequently Asked Question",
+    "home_question-title": "Need Help Before You Go? We've Got Answers",
     "home_question-text1": "Kazakhstan is the ninth‑largest country in the world by land area and the largest landlocked country. Its hills and plains make up nearly half its vast territory, with the lowlands occupying another third;",
     "home_question-question-text1": "How do I book a trip through your agency?",
     "home_question-text2": "Kazakhstan is the ninth‑largest country in the world by land area and the largest landlocked country. Its hills and plains make up nearly half its vast territory, with the lowlands occupying another third;",

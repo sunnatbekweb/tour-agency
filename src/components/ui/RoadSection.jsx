@@ -7,7 +7,7 @@ export default function RoadSection() {
   const locale = useLocale();
   return (
     <div>
-      <section className="road xl:mt-[282px] hidden xl:w-full xl:block">
+      <section className="road hidden xl:w-full xl:block">
         <div className="container road__container xl:flex xl:flex-col xl:justify-center xl:items-center xl:px-6">
           <Link className="road-logo-link" href={"/"}>
             <img
@@ -17,14 +17,14 @@ export default function RoadSection() {
             />
           </Link>
           <div className="road__text-boxes xl:flex xl:flex-col xl:justify-center xl:items-center xl:mb-[114px]">
-            <h3 className="road__first-title text-center xl:block xl:font-medium xl:text-[64px] xl:leading-[100%] xl:tracking-tighter-[-2%] xl:uppercase xl:text-[#323232]">
+            <h3 className="road__first-title text-center xl:block xl:font-medium  md:text-[72px] md:leading-[80px] xl:tracking-tighter-[-2%] xl:uppercase xl:text-[#323232]">
               {locale === "en"
                 ? "Explore and find yourself"
                 : locale === "uz"
                   ? "Ipak yo'li sayohatida o'zingizni,"
                   : "Исследуйте и найдите себя"}
             </h3>
-            <h3 className="road__second-title text-center xl:block xl:font-medium xl:text-[64px] xl:leading-[100%] xl:tracking-tighter-[-2%] xl:uppercase xl:text-[#323232]">
+            <h3 className="road__second-title text-center xl:block xl:font-medium  md:text-[72px] md:leading-[80px] xl:tracking-tighter-[-2%] xl:uppercase xl:text-[#323232]">
               {locale === "en"
                 ? "In Silk road Journey"
                 : locale === "uz"

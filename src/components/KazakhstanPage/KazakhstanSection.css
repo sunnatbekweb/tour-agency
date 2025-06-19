@@ -1,17 +1,3 @@
-.kazakhstan {
-}
-.kazakhstan__container {
-}
-.kazakhstan__circle-map {
-}
-.kazakhstan__top-map {
-}
-.kazakhstan__top-box {
-}
-.kazakhstan__bottom-card {
-}
-.kazakhstan__bottom-card-image {
-}
 .kazakhstan__bottom-card-title {
   font-family: "ppneuemontreal";
 }
@@ -21,18 +7,6 @@
 @media (max-width: 1279px) {
   .kazakhstan {
     display: none !important;
-  }
-  .kazakhstan__container {
-  }
-  .kazakhstan__circle-map {
-  }
-  .kazakhstan__top-map {
-  }
-  .kazakhstan__top-box {
-  }
-  .kazakhstan__bottom-card {
-  }
-  .kazakhstan__bottom-card-image {
   }
   .kazakhstan__bottom-card-title {
     font-family: "ppneuemontreal";

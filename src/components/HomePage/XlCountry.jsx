@@ -27,7 +27,7 @@ export const XlCountry = () => {
             <span className="text-xl text-[#A5958B] uppercase">
               {t("top_title")}
             </span>
-            <h2 className="mt-8 mb-12 text-6xl text-[#323232] uppercase">
+            <h2 className="mt-8 mb-12 text-5xl text-[#323232] uppercase">
               {t("title")}
             </h2>
           </div>

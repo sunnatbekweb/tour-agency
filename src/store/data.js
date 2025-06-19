@@ -71,7 +71,6 @@ export const useCountryData = () => {
 };
 export const useAboutCountries = () => {
   const t = useTranslations();
-
   return [
     {
       slug: "uzbekistan",

@@ -134,15 +134,15 @@ export default function FooterSmSection() {
         theme="colored"
         transition={Slide}
       />
-      <div className="top-[30px] z-[-1] relative">
+      <div className="top-[100px] z-[-1] relative">
         <SmRoadSection />
       </div>
       <footer
-        className="footerSmSection w-full bg-[#A98D7D] rounded-tr-[30px] rounded-tl-[30px] py-[52px]"
+        className="footerSmSection w-full bg-[#A98D7D] rounded-tr-[30px] rounded-tl-[30px] py-[32px]"
         onSubmit={formSubmission}
       >
         <div className="container w-full footerSmSection__container flex flex-col justify-center items-center px-6">
-          <div className="footerSmSection__top w-full flex flex-row justify-between items-start ">
+          <div className="footerSmSection__top w-full flex flex-row justify-between items-start">
             <Link href={"/"}>
               <img
                 className="footerSmSection__top-logo inline-block w-[80px] h-[44px] md:w-[140px] md:h-[77px]"
@@ -154,7 +154,7 @@ export default function FooterSmSection() {
               {t("footer.email_text")}
             </p>
           </div>
-          <form className="footerSmSection__form w-full flex flex-row justify-center items-center mt-[41px]">
+          <form className="footerSmSection__form w-full flex flex-row justify-center items-center mt-[24px]">
             <div className="footerSmSection__form-box w-full flex flex-col justify-items-center items-start gap-2 h-[90px]">
               <div
                 className="footerSmSection__form-input-box w-full flex flex-row justify-start items-center relative bg-white rounded-[26.5px] py-[15px]"
@@ -186,7 +186,7 @@ export default function FooterSmSection() {
               ) : null}
             </div>
           </form>
-          <div className="footerSmSection__bottom-box w-full flex flex-row justify-between items-start mt-[56px]">
+          <div className="footerSmSection__bottom-box w-full flex flex-row justify-between items-start mt-[24px]">
             <nav className="footerSmSection__nav flex flex-col justify-center items-start">
               <ul className="footerSmSection__list flex flex-col justify-center items-start gap-6">
                 <h4 className="footerSmSection__list-text font-medium text-[24px] leading-[100%] tracking-tighter-[-2%] text-white">
@@ -197,7 +197,10 @@ export default function FooterSmSection() {
                     className="footerSmSection__lists flex flex-col justify-center items-start"
                     key={index}
                   >
-                    <Link href={item.link} className="footerSmSection__links flex flex-col justify-center items-start">
+                    <Link
+                      href={item.link}
+                      className="footerSmSection__links flex flex-col justify-center items-start"
+                    >
                       <p className="footerSmSection__links-text font-medium text-[16px] leading-[100%] tracking-tighter-[-2%] text-white/70 active:opacity-50">
                         {item.text}
                       </p>
@@ -215,7 +218,7 @@ export default function FooterSmSection() {
               </q>
             </div>
           </div>
-          <div className="footerSmSection__icon-box flex flex-row justify-center items-center gap-[70px] mt-[58px]">
+          <div className="footerSmSection__icon-box flex flex-row justify-center items-center gap-[70px] mt-[24px]">
             {icon.map((icons, id) => (
               <div className="footerSmSection__icon-mini-boxes" key={id}>
                 <a

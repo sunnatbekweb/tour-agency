@@ -15,19 +15,19 @@ export default function FooterSection() {
   const links = [
     {
       text: t("header.destinations.index"),
-      link:"#"
+      link: "#",
     },
     {
       text: t("header.nav.about"),
-      link:"/about"
+      link: "/about",
     },
     {
       text: t("header.nav.blog"),
-      link:"/blog"
+      link: "/blog",
     },
     {
       text: t("header.contact"),
-      link:"/contact"
+      link: "/contact",
     },
   ];
   const icon = [
@@ -135,21 +135,21 @@ export default function FooterSection() {
         theme="colored"
         transition={Slide}
       />
-      <div className="relative top-[95px]">
+      <div className="relative top-[200px]">
         <RoadSection />
       </div>
       <footer className="footer bg-[#A98D7D] xl:w-full xl:rounded-tr-[56px] xl:rounded-tl-[56px] xl:absolute">
-        <div className="container footer__container xl:pt-[106.65px] px-6 md:px-9">
+        <div className="container footer__container xl:pt-[100px] px-6 md:px-9">
           <div className="footer__top-box xl:flex xl:flex-row xl:justify-between xl:items-start">
             <div className="footer__top-left-box xl:flex xl:flex-col xl:justify-center xl:items-start xl:w-[419px] 2xl:w-[519px]">
               <Link className="footer__top-left-logo-link" href={"/"}>
                 <img
-                  className="footer__top-left-logo-image xl:inline-block xl:w-[140px] xl:h-[77px] xl:mb-[72px]"
+                  className="footer__top-left-logo-image xl:inline-block xl:w-[140px] xl:h-[77px] xl:mb-[24px]"
                   src={"/icons/logo.svg"}
                   alt="logo"
                 />
               </Link>
-              <p className="footer__top-left-text xl:font-normal xl:text-2xl xl:tracking-tighter-[-2%] xl:text-white xl:w-[419px] xl:mb-[72px] 2xl:w-[519px]">
+              <p className="footer__top-left-text xl:font-normal xl:text-2xl xl:tracking-tighter-[-2%] xl:text-white xl:w-[419px] xl:mb-[24px] 2xl:w-[519px]">
                 {t("footer.email_text")}
               </p>
               <form
@@ -162,7 +162,7 @@ export default function FooterSection() {
                     ref={emailRef}
                   >
                     <input
-                      className="footer__top-left-form-email-input xl:font-medium xl:text-[24px] xl:leading-[20px] xl:text-[#323232] xl:outline-none"
+                      className="footer__top-left-form-email-input xl:font-medium xl:text-[18px] xl:leading-[24px] xl:text-[#323232] xl:outline-none"
                       onChange={(e) => {
                         e.preventDefault();
                         setForm({ ...form, email: e.target.value.trimStart() });
@@ -191,7 +191,7 @@ export default function FooterSection() {
               </form>
             </div>
             <nav className="footer__top-middle-box xl:flex xl:flex-col xl:justify-center xl:items-start">
-              <h4 className="footer__top-middle-list-text xl:font-medium xl:text-4xl xl:leading-[100%] xl:tracking-tighter-[-2%] xl:text-white xl:mb-12">
+              <h4 className="footer__top-middle-list-text xl:font-medium xl:text-4xl xl:leading-[100%] xl:tracking-tighter-[-2%] xl:text-white xl:mb-15">
                 {t("footer.explore_text")}
               </h4>
               <ul className="footer__top-middle-list xl:flex xl:flex-col xl:justify-center xl:items-start xl:gap-9">
@@ -200,7 +200,10 @@ export default function FooterSection() {
                     className="footer__top-middle-lists xl:flex xl:flex-col xl:justify-center xl:items-start"
                     key={index}
                   >
-                    <Link href={item.link} className="footer__top-middle-links xl:flex xl:flex-col xl:justify-center xl:items-start">
+                    <Link
+                      href={item.link}
+                      className="footer__top-middle-links xl:flex xl:flex-col xl:justify-center xl:items-start"
+                    >
                       <p className="footer__top-middle-links-text xl:duration-500 xl:hover:duration-500 xl:font-normal xl:text-2xl xl:leading-[100%] xl:tracking-tighter-[-2%] xl:text-white/70 xl:hover:text-white xl:active:opacity-50">
                         {item.text}
                       </p>
@@ -210,10 +213,10 @@ export default function FooterSection() {
               </ul>
             </nav>
             <div className="footer__top-seond-middle-bottom-right-box xl:w-[350px] xl:flex xl:flex-col xl:justify-center xl:items-start 2xl:w-[418px]">
-              <h4 className="footer__top-seond-middle-bottom-right-box-title xl:w-[350px] xl:font-medium xl:text-[35px] xl:leading-[100%] xl:tracking-tighter-[-2%] xl:mb-[57.5px] xl:text-white 2xl:w-[418px] 2xl:text-4xl">
+              <h4 className="footer__top-seond-middle-bottom-right-box-title xl:w-[350px] xl:font-medium xl:text-[35px] xl:leading-[100%] xl:tracking-tighter-[-2%] xl:mb-[50px] xl:text-white 2xl:w-[418px] 2xl:text-4xl">
                 {t("footer.why_travel_title")}
               </h4>
-              <q className="footer__top-seond-middle-bottom-right-box-texts xl:font-medium xl:text-2xl xl:w-[350px] xl:mb-[57.5px] xl:text-white/70 xl:tracking-tighter-[-2%] 2xl:w-[418px]">
+              <q className="footer__top-seond-middle-bottom-right-box-texts xl:font-medium xl:text-2xl xl:w-[350px] xl:mb-[24px] xl:text-white/70 xl:tracking-tighter-[-2%] 2xl:w-[418px]">
                 {t("footer.why_travel_text")}
               </q>
               <div className="footer__top-seond-middle-icon-box xl:w-full xl:flex xl:flex-row xl:justify-between xl:items-center">
@@ -245,8 +248,8 @@ export default function FooterSection() {
               <WhiteChevron />
             </button>
           </div>
-          <hr className="footer__hr xl:border-none xl:outline-none xl:bg-white/15 xl:w-full xl:h-[2px] xl:my-[52px]" />
-          <div className="footer__bottom-box xl:pb-[52px]">
+          <hr className="footer__hr xl:border-none xl:outline-none xl:bg-white/15 xl:w-full xl:h-[2px] xl:my-[24px]" />
+          <div className="footer__bottom-box xl:pb-[24px]">
             <div className="footer__bottom-box-copy-box xl:w-full xl:flex xl:flex-row xl:justify-between xl:items-center xl:gap-8">
               <p className="footer__bottom-box-copy-text xl:font-medium xl:text-xl xl:leading-[100%] xl:tracking-tighter-[-2%] xl:text-white xl:uppercase">
                 &copy; "Silk Road Wonders" 2025

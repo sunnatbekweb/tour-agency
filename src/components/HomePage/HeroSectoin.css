@@ -1,5 +1,3 @@
-.hero {
-}
 .hero__nav {
   width: 300px;
   display: flex !important;
@@ -58,10 +56,6 @@
   transform: translateX(-0px);
   transition: 450ms ease all;
 }
-.hero__container {
-}
-.hero__top-box {
-}
 .hero__top-text {
   font-family: 'ppneuemontreal';
 }
@@ -71,13 +65,7 @@
 .hero__top-second-text {
   font-family: 'ppneuemontreal';
 }
-.hero__bottom-box {
-}
-.hero__contuct-button {
-}
 @media (max-width: 1790px) {
-  .hero {
-  }
   .hero__nav {
     display: none !important;
     flex-direction: column;
@@ -91,8 +79,6 @@
     justify-content: center;
     align-items: start;
   }
-  .hero__lists {
-  }
   .hero__links {
     display: none !important;
     flex-direction: row;
@@ -104,12 +90,6 @@
   .hero__link-texts {
     font-family: 'ppneuemontreal';
   }
-  .hero__link-icons {
-  }
-  .hero__container {
-  }
-  .hero__top-box {
-  }
   .hero__top-text {
     font-family: 'ppneuemontreal';
   }
@@ -118,15 +98,9 @@
   }
   .hero__top-second-text {
     font-family: 'ppneuemontreal';
-  }
-  .hero__bottom-box {
-  }
-  .hero__contuct-button {
   }
 }
 @media (max-width: 1690px) {
-  .hero {
-  }
   .hero__nav {
     display: none !important;
     flex-direction: column;
@@ -140,8 +114,6 @@
     justify-content: center;
     align-items: start;
   }
-  .hero__lists {
-  }
   .hero__links {
     display: none !important;
     flex-direction: row;
@@ -153,12 +125,6 @@
   .hero__link-texts {
     font-family: 'ppneuemontreal';
   }
-  .hero__link-icons {
-  }
-  .hero__container {
-  }
-  .hero__top-box {
-  }
   .hero__top-text {
     font-family: 'ppneuemontreal';
   }
@@ -167,20 +133,12 @@
   }
   .hero__top-second-text {
     font-family: 'ppneuemontreal';
-  }
-  .hero__bottom-box {
   }
   .hero__contuct-button {
     display: block !important;
   }
 }
 @media (max-width: 1024px) {
-  .hero {
-  }
-  .hero__container {
-  }
-  .hero__top-box {
-  }
   .hero__top-text {
     font-family: 'ppneuemontreal';
   }
@@ -189,19 +147,9 @@
   }
   .hero__top-second-text {
     font-family: 'ppneuemontreal';
-  }
-  .hero__bottom-box {
-  }
-  .hero__contuct-button {
   }
 }
 @media (max-width: 767px) {
-  .hero {
-  }
-  .hero__container {
-  }
-  .hero__top-box {
-  }
   .hero__top-text {
     font-family: 'ppneuemontreal';
   }
@@ -210,9 +158,5 @@
   }
   .hero__top-second-text {
     font-family: 'ppneuemontreal';
-  }
-  .hero__bottom-box {
-  }
-  .hero__contuct-button {
   }
 }

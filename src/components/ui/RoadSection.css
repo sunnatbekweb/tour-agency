@@ -1,25 +1,17 @@
 .road {
   width: 100%;
-  height: 948px !important;
-  background-image: url('../../../public/images/footer__background.jpg');
+  height: 1100px !important;
+  background-image: url("../../../public/images/footer__background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.road__container {
-}
-.road-logo-link {
-}
-.road__logo-image {
-}
-.road__text-boxes {
-}
 .road__first-title {
-  font-family: 'ppneuemontreal';
-  opacity: 80%;
+  font-family: "ppneuemontreal";
+  opacity: 90%;
 }
 .road__second-title {
-  font-family: 'ppneuemontreal';
+  font-family: "ppneuemontreal";
   opacity: 50%;
 }
 .road__button {
@@ -35,7 +27,7 @@
   background: linear-gradient(180deg, #b4a297, #b4a297, #b4a297, #ffffff);
   background-size: 180% 180%;
   animation: gradient-animation-fourth 8s ease infinite;
-  font-family: 'ppneuemontreal';
+  font-family: "ppneuemontreal";
   & svg {
     transform: rotate(45deg);
     transition: all 450ms ease;

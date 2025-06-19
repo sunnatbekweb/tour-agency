@@ -101,7 +101,7 @@ export default function TajikistanSection() {
         <div className="tajikistan__top-box absolute z-50 pointer-events-none">
           {hoveredRegion && hoveredData && (
             <div
-              className="tajikistan__bottom-card flex flex-col justify-center items-start bg-white/80 w-[390px] shadow-xl rounded-[16px] px-4 pt-4 pb-[34px] border-[#E5E5E5] border-2 transition-all duration-500 ease-in-out"
+              className="tajikistan__bottom-card flex flex-col justify-center items-start bg-white/80 w-[287px] shadow-xl rounded-[14px] px-3.5 pt-3.5 pb-3.5 border-[#E5E5E5] border-2 transition-all duration-500 ease-in-out"
               style={{
                 position: "fixed",
                 top: cursorPos.y + 10,
@@ -112,12 +112,12 @@ export default function TajikistanSection() {
               <img
                 src={hoveredData.images}
                 alt={hoveredData.title}
-                className="tajikistan__bottom-card-image w-full rounded-[8px] h-[223px] object-cover mb-4"
+                className="tajikistan__bottom-card-image w-full rounded-[6px] h-[147px] object-cover mb-3.5"
               />
-              <h4 className="tajikistan__bottom-card-title font-medium text-[27px] leading-[100%] mb-[17px] text-[#333333]">
+              <h4 className="tajikistan__bottom-card-title font-medium text-[27px] leading-[100%] mb-3.5 text-[#333333]">
                 {hoveredData.title}
               </h4>
-              <p className="tajikistan__bottom-card-text w-full font-medium text-[16px] leading-[18px] text-[#878787]">
+              <p className="tajikistan__bottom-card-text w-full font-medium text-[14px] leading-[16px] text-[#878787]">
                 {hoveredData.text}
               </p>
             </div>

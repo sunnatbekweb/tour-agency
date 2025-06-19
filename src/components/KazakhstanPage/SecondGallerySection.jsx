@@ -58,42 +58,42 @@ export default function SecondGallerySection() {
         {
           image: "/images/kazakhstan__first.jpg",
           description: "images",
-          height: 675,
+          height: 575,
         },
         {
           image: "/images/kazakhstan__second.jpg",
           description: "images",
-          height: 343,
+          height: 243,
         },
         {
           image: "/images/kazakhstan__third.jpg",
           description: "images",
-          height: 675,
+          height: 575,
         },
         {
           image: "/images/kazakhstan__fourth.jpg",
           description: "images",
-          height: 345,
+          height: 245,
         },
         {
           image: "/images/kazakhstan__fifth.jpg",
           description: "images",
-          height: 674,
+          height: 574,
         },
         {
           image: "/images/kazakhstan__sixth.jpg",
           description: "images",
-          height: 528,
+          height: 428,
         },
         {
           image: "/images/kazakhstan__seventh.jpg",
           description: "images",
-          height: 491,
+          height: 391,
         },
         {
           image: "/images/kazakhstan__eight.jpg",
           description: "images",
-          height: 344,
+          height: 244,
         },
       ];
     } else {
@@ -101,42 +101,42 @@ export default function SecondGallerySection() {
         {
           image: "/images/kazakhstan__first.jpg",
           description: "images",
-          height: 668,
+          height: 368,
         },
         {
           image: "/images/kazakhstan__second.jpg",
           description: "images",
-          height: 339,
+          height: 184,
         },
         {
           image: "/images/kazakhstan__third.jpg",
           description: "images",
-          height: 523,
+          height: 368,
         },
         {
           image: "/images/kazakhstan__fourth.jpg",
           description: "images",
-          height: 341,
+          height: 184,
         },
         {
           image: "/images/kazakhstan__fifth.jpg",
           description: "images",
-          height: 668,
+          height: 368,
         },
         {
           image: "/images/kazakhstan__sixth.jpg",
           description: "images",
-          height: 668,
+          height: 368,
         },
         {
           image: "/images/kazakhstan__seventh.jpg",
           description: "images",
-          height: 486,
+          height: 184,
         },
         {
           image: "/images/kazakhstan__eight.jpg",
           description: "images",
-          height: 341,
+          height: 184,
         },
       ];
     }
@@ -158,16 +158,16 @@ export default function SecondGallerySection() {
     textAlign: "center",
     color: theme.palette.text.secondary,
     borderRadius: "8px",
-    overflow: "hidden",
-  }));
+
+    overflow: "hidden",  }));
   return (
     <section className="secondGallery mt-[64px] md:mt-[120px]">
       <div className="container secondGallery__container w-full flex flex-col justify-center items-start gap-10 px-6 md:px-9 md:gap-[56px] lg:gap-[51px]">
         <div className="secondGallery__top flex flex-col justify-center items-start gap-2 md:gap-4">
-          <p className="secondGallery__top-text font-medium text-[16px] leading-[100%] uppercase text-[#A5958B] md:text-[24px]">
+          <p className="secondGallery__top-text text-[16px] leading-[100%] text-[#A5958B] uppercase md:text-[24px]">
             Trip founder
           </p>
-          <h2 className="secondGallery__top-title font-medium text-[32px] leading-[40px] uppercase text-[#323232] w-[170px] md:w-full md:text-[56px]">
+          <h2 className="secondGallery__top-title w-full font-medium text-[22px] leading-[30px] text-[#323232] uppercase md:w-[620px] md:text-[36px] md:leading-[40px] lg:w-[642px] xl:text-[40px] xl:leading-[46px]">
             {t("destinations.exclusive_text")}
           </h2>
         </div>

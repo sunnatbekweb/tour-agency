@@ -61,10 +61,10 @@ export default function About() {
             {t("header.nav.about")}
           </span>
           <div className="flex flex-col gap-y-8 lg:flex-row gap-x-5 font-medium text-[#323232] uppercase">
-            <h2 className="text-2xl md:text-4xl lg:text-6xl w-full lg:w-1/2">
+            <h2 className="text-xl md:text-3xl lg:text-5xl w-full lg:w-1/2">
               {t("about.section1.title")}
             </h2>
-            <p className="text-xs md:text-lg lg:text-2xl w-full lg:w-1/2">
+            <p className="text-xs lg:text-xl w-full lg:w-1/2">
               {t("about.section1.text")}
             </p>
           </div>
@@ -82,17 +82,17 @@ export default function About() {
             {t("header.nav.about")}
           </span>
           <div className="flex flex-col gap-y-12 lg:flex-row gap-x-5 font-medium text-[#323232]">
-            <h3 className="text-3xl md:text-5xl lg:text-7xl w-full lg:w-1/2 uppercase">
+            <h3 className="text-xl md:text-3xl lg:text-5xl w-full lg:w-1/2 uppercase">
               {t("about.section2.title")}
             </h3>
             <div className="w-full lg:w-1/2">
-              <p className="text-xs md:text-lg lg:text-2xl uppercase">
+              <p className="text-xs md:text-lg lg:text-xl uppercase">
                 {t("about.section2.subtitle")}
               </p>
-              <p className="text-xs md:text-lg lg:text-2xl mt-8 lg:mt-[100px] mb-8 lg:mb-[72px]">
+              <p className="text-xs md:text-lg lg:text-xl mt-8 lg:mt-[100px] mb-8 lg:mb-[72px]">
                 {t("about.section2.text")}
               </p>
-              <h4 className="text-xl md:text-3xl lg:text-5xl uppercase">
+              <h4 className="text-xl md:text-2xl lg:text-4xl uppercase">
                 {t("about.section2.bottom_text")}
               </h4>
             </div>
@@ -181,7 +181,7 @@ export default function About() {
       <section className="py-[80px]">
         <div className="container px-6">
           <div className="flex flex-col gap-y-8 lg:flex-row items-center mb-[60px]">
-            <h3 className="font-medium text-3xl md:text-5xl lg:text-7xl w-full lg:w-1/2 uppercase">
+            <h3 className="font-medium text-xl md:text-3xl lg:text-5xl w-full lg:w-1/2 uppercase">
               {t("about.expertise.title")}
             </h3>
             <p className="font-medium md:text-2xl w-full lg:w-[30%] ml-auto">
@@ -212,7 +212,7 @@ export default function About() {
             <p className="question__text text-[#A5958B] font-medium text-xl uppercase">
               {t("header.nav.about")}
             </p>
-            <h2 className="question__title font-medium text-2xl md:text-4xl lg:text-6xl text-[#323232] uppercase">
+            <h2 className="question__title font-medium text-xl md:text-3xl lg:text-5xl text-[#323232] uppercase">
               {t("home_question.home_question-text")}
             </h2>
           </div>

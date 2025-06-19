@@ -49,7 +49,7 @@ export const Header = () => {
             : "duration-500"
         }`}
       >
-        <div className="container header__container flex justify-between items-center px-6 py-5 md:px-9 md:py-[32px]">
+        <div className="container header__container flex justify-between items-center px-6 py-5 md:px-9 md:py-[30px] xl:py-[10px]">
           <div className="header__left-box">
             <button
               className={`header__left-open-burger-button ${isDimmed && "bg-[#F3ECE8] rounded-lg"}`}

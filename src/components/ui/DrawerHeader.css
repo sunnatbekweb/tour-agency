@@ -1,48 +1,14 @@
 .drawerHeader {
   display: none !important;
 }
-.drawerHeader__top-box {
-}
-.drawerHeader__top-box-open-burger-button {
-}
-.drawerHeader__top-box-open-burger-button-icon {
-}
-.drawerHeader__mini-logo {
-}
-.drawerHeader__empty-box {
-}
-.drawerHeader__nav {
-}
-.drawerHeader__list {
-}
-.drawerHeader__lists {
-}
-.drawerHeader__links {
-}
 .drawerHeader__links-texts {
   font-family: 'ppneuemontreal';
-}
-.drawerHeader__button-list {
-}
-.drawerHeader__button {
 }
 .drawerHeader__button-text {
   font-family: 'ppneuemontreal';
 }
-.drawerHeader__second-nav {
-}
-.drawerHeader__second-list {
-}
-.drawerHeader__second-lists {
-}
-.drawerHeader__second-links {
-}
 .drawerHeader__second-links-texts {
   font-family: 'ppneuemontreal';
-}
-.drawerHeader__third-list {
-}
-.drawerHeader__third-links {
 }
 .drawerHeader__third-links-texts {
   font-family: 'ppneuemontreal';
@@ -54,48 +20,14 @@
   .drawerHeader {
     display: block !important;
   }
-  .drawerHeader__top-box {
-  }
-  .drawerHeader__top-box-open-burger-button {
-  }
-  .drawerHeader__top-box-open-burger-button-icon {
-  }
-  .drawerHeader__mini-logo {
-  }
-  .drawerHeader__empty-box {
-  }
-  .drawerHeader__nav {
-  }
-  .drawerHeader__list {
-  }
-  .drawerHeader__lists {
-  }
-  .drawerHeader__links {
-  }
   .drawerHeader__links-texts {
     font-family: 'ppneuemontreal';
-  }
-  .drawerHeader__button-list {
-  }
-  .drawerHeader__button {
   }
   .drawerHeader__button-text {
     font-family: 'ppneuemontreal';
   }
-  .drawerHeader__second-nav {
-  }
-  .drawerHeader__second-list {
-  }
-  .drawerHeader__second-lists {
-  }
-  .drawerHeader__second-links {
-  }
   .drawerHeader__second-links-texts {
     font-family: 'ppneuemontreal';
-  }
-  .drawerHeader__third-list {
-  }
-  .drawerHeader__third-links {
   }
   .drawerHeader__third-links-texts {
     font-family: 'ppneuemontreal';
@@ -108,48 +40,14 @@
   .drawerHeader {
     display: block !important;
   }
-  .drawerHeader__top-box {
-  }
-  .drawerHeader__top-box-open-burger-button {
-  }
-  .drawerHeader__top-box-open-burger-button-icon {
-  }
-  .drawerHeader__mini-logo {
-  }
-  .drawerHeader__empty-box {
-  }
-  .drawerHeader__nav {
-  }
-  .drawerHeader__list {
-  }
-  .drawerHeader__lists {
-  }
-  .drawerHeader__links {
-  }
   .drawerHeader__links-texts {
     font-family: 'ppneuemontreal';
-  }
-  .drawerHeader__button-list {
-  }
-  .drawerHeader__button {
   }
   .drawerHeader__button-text {
     font-family: 'ppneuemontreal';
   }
-  .drawerHeader__second-nav {
-  }
-  .drawerHeader__second-list {
-  }
-  .drawerHeader__second-lists {
-  }
-  .drawerHeader__second-links {
-  }
   .drawerHeader__second-links-texts {
     font-family: 'ppneuemontreal';
-  }
-  .drawerHeader__third-list {
-  }
-  .drawerHeader__third-links {
   }
   .drawerHeader__third-links-texts {
     font-family: 'ppneuemontreal';
