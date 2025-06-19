@@ -95,7 +95,7 @@ export default function QuestionSection() {
           <p className="question__text font-medium text-[16px] uppercase text-[#A5958B] md:text-[24px]">
             {t("home_question.home_question-text")}
           </p>
-          <h2 className="question__title w-full font-medium text-[22px] leading-[30px] uppercase text-[#323232 md:font-medium md:text-[#323232] md:w-[620px] md:text-[36px] md:leading-[40px] xl:text-[40px] xl:w-[800px] xl:leading-[46px]">
+          <h2 className="question__title w-full font-medium text-xl uppercase text-[#323232 md:font-medium md:text-[#323232] md:w-[620px] md:text-2xl xl:text-4xl xl:w-[800px]">
             {t("home_question.home_question-title")}
           </h2>
         </div>

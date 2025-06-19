@@ -55,7 +55,7 @@ export default function FeedbackSection() {
           <p className="feedback__top-text font-medium text-[#A5958B] text-[16px] leading-[100%] uppercase md:text-[24px]">
             {t("home_feedback.home_feedback-text")}
           </p>
-          <h2 className="feedback__top-title font-medium w-[328px] text-[22px] leading-[30px] uppercase md:text-[36px] md:leading-[40px] md:w-[620px] lg:w-[738px] xl:text-[46px] xl:leading-[50px]">
+          <h2 className="feedback__top-title font-medium w-[328px] text-2xl uppercase md:text-3xl md:w-[620px] lg:w-[738px] xl:text-4xl">
             {t("home_feedback.home_feedback-title")}
           </h2>
         </div>
