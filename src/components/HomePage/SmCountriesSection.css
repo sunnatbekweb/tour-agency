@@ -1,5 +1,3 @@
-.countries {
-}
 .countries__top-box::-webkit-scrollbar {
   display: none !important;
 }
@@ -13,8 +11,6 @@
   font-family: "ppneuemontreal";
 }
 @media (max-width: 767px) {
-  .countries {
-  }
   .countries__top-box::-webkit-scrollbar {
     display: none !important;
   }

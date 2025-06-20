@@ -55,7 +55,7 @@ export default function FeedbackSection() {
           <p className="feedback__top-text font-medium text-[#A5958B] text-[16px] leading-[100%] uppercase md:text-[24px]">
             {t("home_feedback.home_feedback-text")}
           </p>
-          <h2 className="feedback__top-title font-medium w-[328px] text-[22px] leading-[30px] uppercase md:text-[36px] md:leading-[40px] md:w-[620px] lg:w-[738px] xl:text-[46px] xl:leading-[50px]">
+          <h2 className="feedback__top-title font-medium w-[328px] text-2xl uppercase md:text-3xl md:w-[620px] lg:w-[738px] xl:text-4xl">
             {t("home_feedback.home_feedback-title")}
           </h2>
         </div>
@@ -76,31 +76,31 @@ export default function FeedbackSection() {
         >
           {data.map((item, index) => (
             <SwiperSlide
-              className="feedback__swiper-slide xl:w-full xl:flex xl:flex-row xl:justify-between xl:items-start"
+              className="feedback__swiper-slide h-[400px]"
               key={index}
             >
-              <div className="xl:w-full xl:flex xl:flex-row xl:justify-center xl:items-start xl:gap-[20px] 2xl:gap-[56px]">
-                <div className="feedback__swiper-left-box w-full flex flex-col justify-center items-start gap-8 shadow-xl bg-[#F3F3F3] rounded-[16px] border border-[#EBEBEB] px-6 pt-[80px] pb-8 relative md:rounded-[18px] md:gap-[51px] md:pb-[86.5px] md:pt-[125px] md:px-[60px] xl:shadow-none xl:pb-[82px] xl:gap-[48px] xl:pt-[117px] xl:w-[200px]">
+              <div className="xl:w-full xl:grid grid-cols-3 xl:justify-center xl:items-start xl:gap-[20px] 2xl:gap-[56px]">
+                <div className="feedback__swiper-left-box col-span-2 w-full h-full flex flex-col justify-center items-start gap-8 shadow-xl bg-[#F3F3F3] rounded-[16px] border border-[#EBEBEB] px-6 pt-[80px] pb-8 relative md:rounded-[18px] md:gap-[51px] md:pb-[86.5px] md:pt-[125px] md:px-[60px] xl:shadow-none xl:pb-[82px] xl:gap-[48px] xl:pt-[117px]">
                   <img
                     className="absolute top-[35px] left-[30px] w-[29px] h-[21px] md:w-[54px] md:h-[39px] md:top-[46px] md:left-[60px] xl:w-[50px] xl:h-[36px] xl:top-[43px] xl:left-[56px]"
                     src={item.quotationIcon}
                     alt="quotation"
                   />
-                  <h4 className="feedback__swiper-comment font-medium text-[22px] leading-[32px] text-[#323232] md:text-[40px] md:leading-[52px] xl:text-[28px] xl:leading-[32px] xl:w-full xl:line-clamp-5 2xl:line-clamp-3">
+                  <h4 className="feedback__swiper-comment font-medium text-xl text-[#323232] md:text-2xl xl:text-2xl xl:w-full xl:line-clamp-5 2xl:line-clamp-3">
                     {item.comment}
                   </h4>
                   <div className="feedback__swiper-mini-box flex flex-col justify-center items-start gap-2 md:gap-0">
-                    <h6 className="feedback__swiper-name-texts font-semibold text-[16px] leading-[24px] text-[#323232] md:text-[30px] md:leading-[52px] xl:text-[16px] xl:leading-[24px]">
+                    <h6 className="feedback__swiper-name-texts font-semibold text-lg text-[#323232] md:text-lg xl:text-xl">
                       {item.name}
                     </h6>
-                    <p className="feedback__swiper-job-title font-medium text-[14px] leading-[16px] text-[#323232] md:text-[20px] md:leading-[35px] xl:text-[14px] xl:leading-[16px]">
+                    <p className="feedback__swiper-job-title font-medium text-sm text-[#323232] md:text-lg xl:text-base">
                       {item.job}
                     </p>
                   </div>
                 </div>
                 <div className="feedback__swiper-right-box hidden xl:block">
                   <img
-                    className="feedback__swiper-images xl:object-cover xl:rounded-[18px] xl:h-[449px] 2xl:h-[385px]"
+                    className="feedback__swiper-images w-full h-full xl:object-cover object-center xl:rounded-[18px]"
                     src={item.userImages}
                     alt="user__images"
                   />

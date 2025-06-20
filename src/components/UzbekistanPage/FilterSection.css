@@ -1,20 +1,12 @@
 .filter {
   display: none !important;
 }
-.filter__container {
-}
 .filter__top-box::-webkit-scrollbar {
   display: none !important;
 }
 .filter__top-buttons {
   white-space: nowrap;
   font-family: "ppneuemontreal";
-}
-.filter__bottom-box {
-}
-.filter__bottom-card {
-}
-.filter__bottom-card-image {
 }
 .filter__bottom-card-title {
   font-family: "ppneuemontreal";
@@ -26,19 +18,11 @@
   .filter {
     display: block !important;
   }
-  .filter__container {
-  }
   .filter__top-box::-webkit-scrollbar {
     display: none !important;
   }
   .filter__top-buttons {
     font-family: "ppneuemontreal";
-  }
-  .filter__bottom-box {
-  }
-  .filter__bottom-card {
-  }
-  .filter__bottom-card-image {
   }
   .filter__bottom-card-title {
     font-family: "ppneuemontreal";

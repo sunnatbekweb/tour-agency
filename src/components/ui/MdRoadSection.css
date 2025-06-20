@@ -7,19 +7,9 @@
     background-position: center;
     background-size: cover;
   }
-  .mdRoad__container {
-  }
-  .mdRoad-logo-link {
-  }
-  .mdRoad__logo-image {
-  }
-  .mdRoad__text-boxes {
-  }
   .mdRoad__first-title {
     font-family: "ppneuemontreal";
     opacity: 70% !important;
-  }
-  .mdRoad__second-title {
   }
   .mdRoad__button {
     cursor: pointer !important;
@@ -62,14 +52,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  }
-  .mdRoad__container {
-  }
-  .mdRoad-logo-link {
-  }
-  .mdRoad__logo-image {
-  }
-  .mdRoad__text-boxes {
   }
   .mdRoad__first-title {
     font-family: "ppneuemontreal";

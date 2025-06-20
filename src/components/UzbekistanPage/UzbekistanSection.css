@@ -1,17 +1,3 @@
-.uzbekistan {
-}
-.uzbekistan__container {
-}
-.uzbekistan__circle-map {
-}
-.uzbekistan__top-map {
-}
-.uzbekistan__top-box {
-}
-.uzbekistan__bottom-card {
-}
-.uzbekistan__bottom-card-image {
-}
 .uzbekistan__bottom-card-title {
   font-family: "ppneuemontreal";
 }
@@ -21,18 +7,6 @@
 @media (max-width: 1279px) {
   .uzbekistan {
     display: none !important;
-  }
-  .uzbekistan__container {
-  }
-  .uzbekistan__circle-map {
-  }
-  .uzbekistan__top-map {
-  }
-  .uzbekistan__top-box {
-  }
-  .uzbekistan__bottom-card {
-  }
-  .uzbekistan__bottom-card-image {
   }
   .uzbekistan__bottom-card-title {
     font-family: "ppneuemontreal";

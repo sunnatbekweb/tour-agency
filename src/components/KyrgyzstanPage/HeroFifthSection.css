@@ -40,8 +40,6 @@
 .heroFifth__span-text {
   font-family: "ppneuemontreal";
 }
-.heroFifth__button {
-}
 @media (max-width: 1024px) {
   .heroFifth {
     position: relative;
@@ -84,8 +82,6 @@
   }
   .heroFifth__span-text {
     font-family: "ppneuemontreal";
-  }
-  .heroFifth__button {
   }
 }
 @media (max-width: 767px) {
@@ -130,7 +126,5 @@
   }
   .heroFifth__span-text {
     font-family: "ppneuemontreal";
-  }
-  .heroFifth__button {
   }
 }

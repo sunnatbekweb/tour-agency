@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import axios from "axios";
 import { useLocale, useTranslations } from "next-intl";
+import { toast } from "react-toastify";
 
 export const TripForm = () => {
   const [destinations, setDestinations] = useState();
@@ -49,7 +50,7 @@ export const TripForm = () => {
     } catch (error) {
       console.error(error);
     }
-    alert("Successfully sended!");
+    toast.success("Successfully sended!");
     setFormData({
       full_name: "",
       email: "",

@@ -42,7 +42,7 @@ export default function Blog() {
           <span className="text-xl text-[#A5958B] uppercase block mb-8">
             {t("blog.top_text")}
           </span>
-          <h2 className="text-2xl md:text-4xl lg:text-6xl uppercase w-full lg:w-3/5 mb-20">
+          <h2 className="text-xl md:text-3xl lg:text-5xl uppercase w-full lg:w-3/5 mb-20">
             {t("blog.title")}
           </h2>
           <div

@@ -476,6 +476,12 @@
       "message": "Xabaringiz",
       "message-placeholder": "Xabaringizni kiriting",
       "send": "Xabar yuborish"
+    },
+    "form_success": {
+      "title": "Xabaringiz qabul qilindi!",
+      "text": "Silk Road Wonders bilan bog‘langaningiz uchun rahmat :)",
+      "text1": "Tez orada siz bilan bog‘lanamiz!",
+      "button": "Bosh sahifaga o‘tish"
     }
   },
   "all": "Barchasi",

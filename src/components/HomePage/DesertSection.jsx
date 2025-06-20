@@ -11,10 +11,10 @@ export default function DesertSection() {
             {t("home_desert.home_desert-text")}
           </p>
           <div className="desert__bottom-box w-full flex flex-col justify-center items-start gap-6 md:gap-[36px] xl:flex xl:flex-row xl:justify-between xl:items-start xl:gap-0">
-            <h2 className="desert__bottom-title w-full font-medium text-[22px] leading-[30px] text-[#323232] uppercase md:w-[620px] md:text-[36px] md:leading-[40px] lg:w-[620px] xl:text-[46px] xl:leading-[50px]">
+            <h2 className="desert__bottom-title w-full font-medium text-xl text-[#323232] uppercase md:w-[620px] md:text-2xl lg:w-[620px] xl:text-4xl">
               {t("home_desert.home_desert-title")}
             </h2>
-            <p className="desert__bottom-text w-full font-medium text-[12px] leading-[16px] text-[#323232] md:text-[20px] md:leading-[28px] lg:w-[500px]">
+            <p className="desert__bottom-text w-full font-medium text-sm text-[#323232] md:text-xl lg:w-[500px]">
               {t("home_desert.home_desert-second-text")}
             </p>
           </div>
