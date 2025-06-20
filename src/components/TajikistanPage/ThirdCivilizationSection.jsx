@@ -1,39 +1,39 @@
 import "./ThirdCivilizationSection.css";
+import { useTranslations } from "use-intl";
 export default function ThirdCivilizationSection() {
+  const t = useTranslations();
   return (
     <div>
       <section className="thirdCivilization mt-10 md:mt-[64px] xl:mt-[100px]">
-        <div className="container thirdCivilization__container w-full flex flex-col justify-center items-start px-6 md:px-9">
+        <div className="container thirdCivilization__container w-full flex flex-col justify-center items-start px-6 gap-8 md:px-9 xl:gap-[56px]">
           <div className="thirdCivilization__top-box flex flex-col justify-center items-start gap-2 md:gap-4 xl:gap-[32px]">
-            <p className="thirdCivilization__top-title text-[#A5958B] font-medium text-[18px] leading-[100%] uppercase md:text-[24px]">
-              About country
+            <p className="thirdCivilization__top-title text-[16px] leading-[100%] text-[#A5958B] uppercase md:text-[24px]">
+              {t(
+                "destinations.tajikistan.tajikistan__civilization.civilization__title"
+              )}
             </p>
-            <h2 className="thirdCivilization__top-text font-medium text-[32px] leading-[40px] text-[#323232] uppercase mb-8 md:text-[56px] md:mb-[56px] md:leading-[100%] xl:text-[72px] xl:mb-[80px] xl:w-[963px]">
-              Tajikistan: Roof of Central Asia
+            <h2 className="thirdCivilization__top-text w-full font-medium text-[22px] leading-[30px] text-[#323232] uppercase md:w-[620px] md:text-[36px] md:leading-[40px] lg:w-[642px] xl:text-[40px] xl:leading-[46px]">
+              {t(
+                "destinations.tajikistan.tajikistan__civilization.civilization__text"
+              )}
             </h2>
           </div>
           <div className="thirdCivilization__bottom-box w-full flex flex-col justify-center items-start bg-[#E5DFDC] rounded-[10px] py-[23px] px-4 md:px-[24px] md:py-[24px] md:rounded-[24px] xl:px-[48px] xl:py-[48px] 2xl:flex 2xl:flex-row 2xl:justify-between 2xl:gap-[50px] 2xl:items-start 2xl:px-[32px] 2xl:py-[32px] 2xl:h-full">
             <div className="">
               <h4 className="thirdCivilization__bottom-title text-[#323232] font-medium text-[22px] leading-[100%] mb-3 md:text-[48px] md:leading-[100%] md:mb-[42px]">
-                About Tajikistan
+                {t(
+                  "destinations.tajikistan.tajikistan__civilization.civilization__bottom-title"
+                )}
               </h4>
-              <p className="thirdCivilization__bottom-text w-full text-[#878787] text-[14px] font-medium leading-[18px] mb-6 md:text-[32px] md:leading-[40px] md:mb-10 2xl:mb-[30px] 2xl:text-[24px] 2xl:leading-[32px] 2xl:w-[550px]">
-                Tajikistan is a land of staggering mountains and deep-rooted
-                history — a place where the Pamir Mountains scrape the sky and
-                ancient caravan routes still echo with stories of travelers long
-                gone. Here, rugged beauty and raw nature create a backdrop like
-                no other in Central Asia. With over 90% of the country covered
-                in mountains, this is where trekkers, dreamers, and seekers of
-                solitude find their path.
+              <p className="thirdCivilization__bottom-text w-full text-[#878787] text-[14px] font-medium leading-[18px] mb-6 md:text-[24px] md:leading-[32px] md:mb-10 2xl:mb-[30px] 2xl:text-[24px] 2xl:leading-[32px] 2xl:w-[550px]">
+                {t(
+                  "destinations.tajikistan.tajikistan__civilization.civilization__bottom-text"
+                )}
               </p>
-              <p className="thirdCivilization__bottom-second-text w-full text-[#878787] text-[14px] font-medium leading-[18px] mb-8 md:text-[32px] md:leading-[40px] md:mb-20 2xl:text-[24px] 2xl:leading-[32px] 2xl:mb-0 2xl:w-[550px]">
-                But Tajikistan is not only wilderness — it is warmth. In remote
-                villages, hospitality is a way of life. Chai is shared, stories
-                are offered, and traditions are kept alive in dances, fabrics,
-                and festivals. Whether you’re tracing the Wakhan Corridor or
-                wandering the vibrant markets of Dushanbe, every step here
-                connects you with something ancient, soulful, and utterly
-                unforgettable.
+              <p className="thirdCivilization__bottom-second-text w-full text-[#878787] text-[14px] font-medium leading-[18px] mb-8 md:text-[24px] md:leading-[32px] md:mb-20 2xl:text-[24px] 2xl:leading-[32px] 2xl:mb-0 2xl:w-[550px]">
+                {t(
+                  "destinations.tajikistan.tajikistan__civilization.civilization__bottom-second-text"
+                )}
               </p>
             </div>
             <div className="thirdCivilization__bottom-box-images w-full">

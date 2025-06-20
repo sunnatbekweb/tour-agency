@@ -1,27 +1,20 @@
 import ContactButton from "../ui/ContactButton";
-import Image from "next/image";
 import "./HeroSecondSection.css";
-export default function HeroSecondSection({ image, title, subtitle }) {
+import { useTranslations } from "use-intl";
+export default function HeroSecondSection() {
+  const t = useTranslations();
   return (
     <div>
       <section className="heroSecond">
-        <div className="w-full h-screen relative flex flex-col items-center justify-center px-6">
-          <Image
-            src={image}
-            width={1920}
-            height={1080}
-            loading="lazy"
-            className="absolute top-0 left-0 w-full h-full -z-10 object-cover"
-            alt="Hero background image"
-          />
+        <div className="container heroSecond__container flex flex-col justify-center items-center min-h-screen px-6 xl:pt-[100px] md:px-9">
           <h2 className="heroSecond__title font-medium uppercase text-[40px] leading-[48px] text-white mb-4 md:text-[62px] md:leading-[70px] lg:capitalize">
-            {title}
+            {t("destinations.uzbekistan.uzbekistan__hero.hero__title")}
           </h2>
           <p className="heroSecond__text font-medium uppercase sm:normal-case w-full text-[16px] tracking-tighter-[-2%] text-white mb-[101px] text-center sm:w-3/4 md:w-[60%] md:text-[32px] lg:w-[45%] xl:w-full md:text-4xl md:mb-[168px] lg:mb-[268px] xl:mb-[50px]">
-            {subtitle}
+            {t("destinations.uzbekistan.uzbekistan__hero.hero__text")}
           </p>
           <div className="heroSecond__button 2xl:hidden">
-            <ContactButton>Contact us</ContactButton>
+            <ContactButton>{t("header.contact")}</ContactButton>
           </div>
         </div>
       </section>

@@ -1,42 +1,64 @@
 "use client";
 import { useState } from "react";
 import "./TurkmenistanSection.css";
+import { useTranslations } from "next-intl";
 export default function TurkmenistanSection() {
+  const t = useTranslations();
   const [hoveredRegion, setHoveredRegion] = useState(null);
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
   const countryData = [
     {
       id: "TU-AS",
-      title: "Ashgabat",
-      text: `Ashgabat, the capital and largest city of Turkmenistan, is famed for its white marble architecture, grand monuments, and wide boulevards. Nestled near the Kopet Dag mountains, it serves as the political, cultural, and economic heart of the country, hosting government offices, museums, and universities.`,
+      title: t(
+        "destinations.turkmenistan.turkmenistan__map.turkmenistan__map-title1"
+      ),
+      text: t(
+        "destinations.turkmenistan.turkmenistan__map.turkmenistan__map-text1"
+      ),
       images: "/images/ashgabat.jpg",
       description: "city__images",
     },
     {
       id: "TU-BA",
-      title: "Balkan",
-      text: `Balkan Region lies in western Turkmenistan, along the Caspian Sea. Known for rich oil and gas reserves, it’s a key energy hub. The region features vast deserts, the Balkan Mountains, and vital ports like Türkmenbaşy, playing a crucial role in Turkmenistan’s economy and international trade.`,
+      title: t(
+        "destinations.turkmenistan.turkmenistan__map.turkmenistan__map-title2"
+      ),
+      text: t(
+        "destinations.turkmenistan.turkmenistan__map.turkmenistan__map-text2"
+      ),
       images: "/images/balkan.webp",
       description: "city__images",
     },
     {
       id: "TU-DA",
-      title: "Dashoguz",
-      text: `Dashoguz Region is located in northern Turkmenistan and is known for its expansive deserts and steppe landscapes. With a strong agricultural base—especially cotton and grain—the region also holds historic treasures, including the ancient ruins of Konye-Urgench, a designated UNESCO World Heritage Site.`,
+      title: t(
+        "destinations.turkmenistan.turkmenistan__map.turkmenistan__map-title3"
+      ),
+      text: t(
+        "destinations.turkmenistan.turkmenistan__map.turkmenistan__map-text3"
+      ),
       images: "/images/dashoguz.jpg",
       description: "city__images",
     },
     {
       id: "TU-LE",
-      title: "Lebap",
-      text: `Lebap Region lies in eastern Turkmenistan, along the border with Afghanistan. Fed by the Amu Darya River, it has fertile lands supporting cotton and wheat farming. Rich in natural gas and oil, the region includes major cities like Türkmenabat and holds various cultural and historical landmarks.`,
+      title: t(
+        "destinations.turkmenistan.turkmenistan__map.turkmenistan__map-title4"
+      ),
+      text: t(
+        "destinations.turkmenistan.turkmenistan__map.turkmenistan__map-text4"
+      ),
       images: "/images/lebap.jpg",
       description: "city__images",
     },
     {
       id: "TU-MA",
-      title: "Mary",
-      text: `Mary Region lies in southeastern Turkmenistan and is a major agricultural and industrial hub, known for cotton, grain, and energy resources. Mary city serves as the cultural and economic center. The region also hosts Merv, an ancient archaeological site and designated UNESCO World Heritage Site.`,
+      title: t(
+        "destinations.turkmenistan.turkmenistan__map.turkmenistan__map-title5"
+      ),
+      text: t(
+        "destinations.turkmenistan.turkmenistan__map.turkmenistan__map-text5"
+      ),
       images: "/images/mary.jpg",
       description: "city__images",
     },

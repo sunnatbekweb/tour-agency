@@ -153,48 +153,206 @@
     "footer__toast-error": "Error"
   },
   "destinations": {
-    "about": "About the country",
-    "about_text": "Country information",
-    "exclusive_text": "Exclusive photos",
     "uzbekistan": {
-      "about_country_title": "Uzbekistan: Crossroads of Civilizations",
-      "about_country_text1": "Uzbekistan is the beating heart of Central Asia, a country where history lives in every mosaic and hospitality greets you at every turn. From the towering minarets of Khiva to the majestic Registan in Samarkand, Uzbekistan offers a cultural journey like no other. Here, scholarship once flourished, trade thrived, and traditions were born that continue to color this land today. Let the Great Silk Road guide your footsteps across this timeless terrain.",
-      "about_country_text2": "The charm of Uzbekistan lies not only in its architectural wonders but in the warmth of its people and the richness of its living traditions. In bustling bazaars, aromas of spices mingle with the sounds of artisans at work. Music, storytelling, and intricate craftsmanship remain part of daily life—a true blend of ancient heritage and vibrant culture. Whether you're wandering ancient caravanserais or sharing a meal with locals, Uzbekistan welcomes you with open arms and a timeless soul.",
-      "hero_title": "Land of Great Scholars and Cultural Crossroads",
-      "tours_title": "Discover Uzbekistan with Our Signature Tours",
-      "tours_text": "From the azure domes of Samarkand to the ancient streets of Khiva—our tours in Uzbekistan are crafted for culture enthusiasts, history seekers, and adventure lovers. Whether it’s a weekend escape or a multi-day immersion—your journey starts here."
+      "uzbekistan__hero": {
+        "hero__title": "Uzbekistan",
+        "hero__text": "Land of Great Scholars and Cultural Crossroads"
+      },
+      "uzbekistan__civilization": {
+        "civilization__title": "About the country",
+        "civilization__text": "Uzbekistan: Crossroads of Civilizations",
+        "civilization__bottom-title": "About Uzbekistan",
+        "civilization__bottom-text": "Uzbekistan is the beating heart of Central Asia, a country where history lives in every mosaic and hospitality greets you at every turn. From the towering minarets of Khiva to the majestic Registan in Samarkand, Uzbekistan offers a cultural journey like no other. Here, scholarship once flourished, trade thrived, and traditions were born that continue to color this land today. Let the Great Silk Road guide your footsteps across this timeless terrain.",
+        "civilization__bottom-second-text": "Uzbekistan is the beating heart of Central Asia, a country where history lives in every mosaic and hospitality greets you at every turn. From the towering minarets of Khiva to the majestic Registan in Samarkand, Uzbekistan offers a cultural journey like no other. Here, scholarship once flourished, trade thrived, and traditions were born that continue to color this land today. Let the Great Silk Road guide your footsteps across this timeless terrain."
+      },
+      "uzbekistan__map": {
+        "uzbekistan__map-title1": "Samarkand",
+        "uzbekistan__map-text1": "Step into Samarkand, where turquoise domes and ancient architecture tell stories of the Silk Road. Registan Square, majestic madrasahs, and old mosques reflect the city's timeless wisdom.",
+        "uzbekistan__map-title2": "Tashkent",
+        "uzbekistan__map-text2": "Step into Tashkent – a dynamic city where history meets modern energy. As Uzbekistan’s capital, it thrives with broad boulevards, elegant metros, lively streets, and a spirit rich in both tradition and modern charm.",
+        "uzbekistan__map-title3": "Fergana",
+        "uzbekistan__map-text3": "Step into Fergana — a vibrant gem of the Fergana Valley. Known for rich culture, lively bazaars, and warm people, it’s a city where tradition and modern life blend into a timeless, energetic atmosphere.",
+        "uzbekistan__map-title4": "Andijan",
+        "uzbekistan__map-text4": "Step into Andijan — the vibrant heart of the Fergana Valley, where history and tradition meet. With orchards, lively bazaars, and warm hospitality, the city shines with culture, resilience, and deep-rooted spirit.",
+        "uzbekistan__map-title5": "Kashkadarya",
+        "uzbekistan__map-text5": "Discover Qashqadaryo – where mountains meet rich culture, and every valley holds ancient stories. From Gissar’s peaks to Karshi’s plains, the region reflects Uzbekistan’s history, nature, and enduring spirit.",
+        "uzbekistan__map-title6": "Surkhandarya",
+        "uzbekistan__map-text6": "Venture into Surkhandarya – a land of contrasts and timeless spirit. Between sunlit plains and towering mountains, it reveals ancient secrets, vibrant culture, and enduring resilience in Uzbekistan’s southern heart.",
+        "uzbekistan__map-title7": "Bukhara",
+        "uzbekistan__map-text7": "Step into Bukhara – a timeless city where history lives in every breeze and brick. With its bazaars, mosques, and rich culture, Bukhara invites all to explore a world shaped by tradition and time.",
+        "uzbekistan__map-title8": "Navoi",
+        "uzbekistan__map-text8": "Discover Navoi – where golden deserts meet progress. Named after poet Alisher Navoi, the region blends creative spirit, cultural heritage, and strong industry, shaping a dynamic future rooted in history and innovation.",
+        "uzbekistan__map-title9": "Khorezm",
+        "uzbekistan__map-text9": "Step into Khorezm – a cradle of ancient civilizations where time preserves stories of kings, scholars, and merchants. This historic land echoes with rich culture and enduring legacies that continue to inspire generations.",
+        "uzbekistan__map-title10": "Nukus",
+        "uzbekistan__map-text10": "Discover Nukus – a city of quiet strength and rich culture in Karakalpakstan’s heart. Surrounded by deserts and plateaus, it stands as a sanctuary of art, history, and a deep, enduring cultural identity."
+      },
+      "uzbekistan__filter": {
+        "uzbekistan__filter-title1": "Samarkand",
+        "uzbekistan__filter-text1": "Step into Samarkand, where turquoise domes and ancient architecture tell stories of the Silk Road. Registan Square, majestic madrasahs, and old mosques reflect the city's timeless wisdom.",
+        "uzbekistan__filter-title2": "Tashkent",
+        "uzbekistan__filter-text2": "Step into Tashkent – a dynamic city where history meets modern energy. As Uzbekistan’s capital, it thrives with broad boulevards, elegant metros, lively streets, and a spirit rich in both tradition and modern charm.",
+        "uzbekistan__filter-title3": "Fergana",
+        "uzbekistan__filter-text3": "Step into Fergana — a vibrant gem of the Fergana Valley. Known for rich culture, lively bazaars, and warm people, it’s a city where tradition and modern life blend into a timeless, energetic atmosphere.",
+        "uzbekistan__filter-title4": "Andijan",
+        "uzbekistan__filter-text4": "Step into Andijan — the vibrant heart of the Fergana Valley, where history and tradition meet. With orchards, lively bazaars, and warm hospitality, the city shines with culture, resilience, and deep-rooted spirit.",
+        "uzbekistan__filter-title5": "Kashkadarya",
+        "uzbekistan__filter-text5": "Discover Qashqadaryo – where mountains meet rich culture, and every valley holds ancient stories. From Gissar’s peaks to Karshi’s plains, the region reflects Uzbekistan’s history, nature, and enduring spirit.",
+        "uzbekistan__filter-title6": "Surkhandarya",
+        "uzbekistan__filter-text6": "Venture into Surkhandarya – a land of contrasts and timeless spirit. Between sunlit plains and towering mountains, it reveals ancient secrets, vibrant culture, and enduring resilience in Uzbekistan’s southern heart.",
+        "uzbekistan__filter-title7": "Bukhara",
+        "uzbekistan__filter-text7": "Step into Bukhara – a timeless city where history lives in every breeze and brick. With its bazaars, mosques, and rich culture, Bukhara invites all to explore a world shaped by tradition and time.",
+        "uzbekistan__filter-title8": "Navoi",
+        "uzbekistan__filter-text8": "Discover Navoi – where golden deserts meet progress. Named after poet Alisher Navoi, the region blends creative spirit, cultural heritage, and strong industry, shaping a dynamic future rooted in history and innovation.",
+        "uzbekistan__filter-title9": "Khorezm",
+        "uzbekistan__filter-text9": "Step into Khorezm – a cradle of ancient civilizations where time preserves stories of kings, scholars, and merchants. This historic land echoes with rich culture and enduring legacies that continue to inspire generations.",
+        "uzbekistan__filter-title10": "Nukus",
+        "uzbekistan__filter-text10": "Discover Nukus – a city of quiet strength and rich culture in Karakalpakstan’s heart. Surrounded by deserts and plateaus, it stands as a sanctuary of art, history, and a deep, enduring cultural identity."
+      },
+      "uzbekistan__gallery": {
+        "uzbekistan__gallery-text": "Trip Finder",
+        "uzbekistan__gallery-title": "Exclusive photos"
+      }
     },
     "kazakhstan": {
-      "about_country_title": "Kazakhstan: Land of Wide Horizons and Bold Spirits",
-      "about_country_text1": "Kazakhstan’s true magic lies not only in its vastness but in its contrasts—where silence meets strength and ancient traditions meet modern ambition. Venture beyond the skylines of Astana and Almaty, and you’ll discover a world sculpted by wind, time, and nomadic pride. The boundless steppe isn’t just a landscape—it’s a symbol of freedom that has shaped generations of resilient, welcoming people.",
-      "about_country_text2": "In every village, you'll find stories passed down around the fire. In every traditional yurt, a connection to the past. The Kazakh way of life is deeply rooted in respect for nature, hospitality, and courage—whether you're sharing fermented kumis with a herder or climbing snow-covered peaks in the Tien Shan. This is a land for wanderers, dreamers, and anyone yearning to reconnect with something pure, powerful, and timeless.",
-      "hero_title": "Land of Endless Horizons and Great Steppes",
-      "tours_title": "Explore Kazakhstan with Our Signature Tours",
-      "tours_text": "Each itinerary is designed to immerse you in the soul of the steppe—where heritage, nature, and adventure blend into unforgettable experiences."
+      "kazakhstan__hero": {
+        "hero__title": "Kazakhstan",
+        "hero__text": "Kazakhstan: Land of Wide Horizons and Bold Spirits"
+      },
+      "kazakhstan__civilization": {
+        "civilization__title": "About the country",
+        "civilization__text": "Kazakhstan: Land of Wide Horizons and Bold Spirits",
+        "civilization__bottom-title": "About Kazakhstan",
+        "civilization__bottom-text": "Kazakhstan’s true magic lies not only in its vastness but in its contrasts—where silence meets strength and ancient traditions meet modern ambition. Venture beyond the skylines of Astana and Almaty, and you’ll discover a world sculpted by wind, time, and nomadic pride. The boundless steppe isn’t just a landscape—it’s a symbol of freedom that has shaped generations of resilient, welcoming people.",
+        "civilization__bottom-second-text": "Kazakhstan’s true magic lies not only in its vastness but in its contrasts—where silence meets strength and ancient traditions meet modern ambition. Venture beyond the skylines of Astana and Almaty, and you’ll discover a world sculpted by wind, time, and nomadic pride. The boundless steppe isn’t just a landscape—it’s a symbol of freedom that has shaped generations of resilient, welcoming people."
+      },
+      "kazakhstan__map": {
+        "kazakhstan__map-title1": "Turkistan",
+        "kazakhstan__map-text1": "Turkistan, in southern Kazakhstan, is a historic city and cultural center of Central Asia. Famous for the Mausoleum of Khoja Ahmed Yasawi, it has deep Silk Road roots and remains vital for agriculture, trade, and spiritual heritage.",
+        "kazakhstan__map-title2": "Astana",
+        "kazakhstan__map-text2": "Astana (formerly Nur-Sultan) is Kazakhstan’s capital, located in the north. Known for its modern architecture and fast growth, it serves as a political and cultural hub with institutions, events, and symbols of national progress.",
+        "kazakhstan__map-title3": "Shymkent",
+        "kazakhstan__map-text3": "Shymkent, a major city in southern Kazakhstan, is an important industrial, cultural, and economic center. Known for its warm climate, lively markets, and historic sites, it blends traditional Kazakh culture with modern urban development.",
+        "kazakhstan__map-title4": "Almaty",
+        "kazakhstan__map-text4": "Almaty, Kazakhstan’s largest city, lies in the southeast near the Trans-Ili Alatau mountains. It is a key cultural, financial, and educational hub, known for parks, vibrant arts, diverse cuisine, and its ongoing role in business and tourism."
+      },
+      "kazakhstan__filter": {
+        "kazakhstan__filter-title1": "Turkistan",
+        "kazakhstan__filter-text1": "Turkistan, in southern Kazakhstan, is a historic city and cultural center of Central Asia. Famous for the Mausoleum of Khoja Ahmed Yasawi, it has deep Silk Road roots and remains vital for agriculture, trade, and spiritual heritage.",
+        "kazakhstan__filter-title2": "Astana",
+        "kazakhstan__filter-text2": "Astana (formerly Nur-Sultan) is Kazakhstan’s capital, located in the north. Known for its modern architecture and fast growth, it serves as a political and cultural hub with institutions, events, and symbols of national progress.",
+        "kazakhstan__filter-title3": "Shymkent",
+        "kazakhstan__filter-text3": "Shymkent, a major city in southern Kazakhstan, is an important industrial, cultural, and economic center. Known for its warm climate, lively markets, and historic sites, it blends traditional Kazakh culture with modern urban development.",
+        "kazakhstan__filter-title4": "Almaty",
+        "kazakhstan__filter-text4": "Almaty, Kazakhstan’s largest city, lies in the southeast near the Trans-Ili Alatau mountains. It is a key cultural, financial, and educational hub, known for parks, vibrant arts, diverse cuisine, and its ongoing role in business and tourism."
+      },
+      "kazakhstan__gallery": {
+        "kazakhstan__gallery-text": "Trip Finder",
+        "kazakhstan__gallery-title": "Exclusive photos"
+      }
     },
     "tajikistan": {
-      "about_country_title": "Tajikistan: Roof of Central Asia",
-      "about_country_text1": "Tajikistan is a land of staggering mountains and deep-rooted history—a place where the Pamir Mountains scrape the sky and ancient caravan routes still echo with stories of travelers long gone. Here, rugged beauty and raw nature create a backdrop like no other in Central Asia. With over 90% of the country covered in mountains, this is where trekkers, dreamers, and seekers of solitude find their path.",
-      "about_country_text2": "But Tajikistan is not only wilderness—it is warmth. In remote villages, hospitality is a way of life. Chai is shared, stories are offered, and traditions are kept alive in dances, fabrics, and festivals. Whether you’re tracing the Wakhan Corridor or wandering the vibrant markets of Dushanbe, every step here connects you with something ancient, soulful, and utterly unforgettable.",
-      "hero_title": "Land of Mountains, Glaciers & Ancient Cultures",
-      "tours_title": "Explore Tajikistan with Our Signature Tours",
-      "tours_text": "Our curated tours reveal the untamed beauty and cultural heartbeat of Tajikistan—from high-altitude adventures to quiet moments with local families."
+      "tajikistan__hero": {
+        "hero__title": "Tajikistan",
+        "hero__text": "Land of Mountains and Glaciers and Ancient Cultures"
+      },
+      "tajikistan__civilization": {
+        "civilization__title": "About the country",
+        "civilization__text": "Tajikistan: Roof of Central Asia",
+        "civilization__bottom-title": "About Tajikistan",
+        "civilization__bottom-text": "Tajikistan is a land of staggering mountains and deep-rooted history—a place where the Pamir Mountains scrape the sky and ancient caravan routes still echo with stories of travelers long gone. Here, rugged beauty and raw nature create a backdrop like no other in Central Asia. With over 90% of the country covered in mountains, this is where trekkers, dreamers, and seekers of solitude find their path.",
+        "civilization__bottom-second-text": "Tajikistan is a land of staggering mountains and deep-rooted history—a place where the Pamir Mountains scrape the sky and ancient caravan routes still echo with stories of travelers long gone. Here, rugged beauty and raw nature create a backdrop like no other in Central Asia. With over 90% of the country covered in mountains, this is where trekkers, dreamers, and seekers of solitude find their path."
+      },
+      "tajikistan__map": {
+        "tajikistan__map-title1": "Dushanbe",
+        "tajikistan__map-text1": "Dushanbe is the vibrant capital of Tajikistan, surrounded by majestic mountains. The city blends modern architecture with traditional culture and features wide boulevards, green parks, historic monuments, friendly people, and a calm atmosphere.",
+        "tajikistan__map-title2": "Khujand",
+        "tajikistan__map-text2": "Khujand, one of Central Asia’s oldest cities, lies in northern Tajikistan along the Syr Darya River. As Sughd’s capital, it blends ancient traditions with modern development and remains a vibrant cultural, economic, and historical center."
+      },
+      "tajikistan__filter": {
+        "tajikistan__filter-title1": "Dushanbe",
+        "tajikistan__filter-text1": "Dushanbe, the vibrant capital of Tajikistan, lies among majestic mountains. Known for its unique mix of modern architecture and tradition, the city features wide boulevards, green parks, historic monuments, friendly locals, and a calm atmosphere.",
+        "tajikistan__filter-title2": "Khujand",
+        "tajikistan__filter-text2": "Khujand, one of Central Asia’s oldest cities, lies in northern Tajikistan along the Syr Darya River. As Sughd’s capital, it blends ancient traditions with modern development and remains a vibrant cultural, economic, and historical center."
+      },
+      "tajikistan__gallery": {
+        "tajikistan__gallery-text": "Trip Finder",
+        "tajikistan__gallery-title": "Exclusive photos"
+      }
     },
     "kyrgyzstan": {
-      "about_country_title": "Kyrgyzstan: Land of Peaks, Lakes & Nomads",
-      "about_country_text1": "More than just scenery—Kyrgyzstan is a living legacy of the nomadic soul. In the vast jailoo (summer pastures), families still herd livestock, welcoming travelers with warm kumis and open hearts as guests. Sharing stories under the stars, listening to the music of komuz, and tasting bread baked in clay tandyrs—this is everyday life, rich as the land itself.",
-      "about_country_text2": "Kyrgyzstan is more than scenery—it’s a living culture. In the high pastures, families still herd livestock and welcome travelers with open arms and warm kumis. Festivals celebrate eagle hunters, felt artisans, and horse games that date back millennia. Every visit becomes a soulful journey into a world untouched by time, yet alive with tradition.",
-      "hero_title": "Where Mountains Whisper Ancient Tales",
-      "tours_title": "Explore Kyrgyzstan with Our Signature Tours",
-      "tours_text": "Our Kyrgyzstan tours connect you with majestic nature, ancient ways of life, and the open-hearted spirit of the mountains."
+      "kyrgyzstan__hero": {
+        "hero__title": "Kyrgyzstan",
+        "hero__text": "Where Mountains Whisper Ancient Tales"
+      },
+      "kyrgyzstan__civilization": {
+        "civilization__title": "About the country",
+        "civilization__text": "Kyrgyzstan: Land of Peaks, Lakes & Nomads",
+        "civilization__bottom-title": "About Kyrgyzstan",
+        "civilization__bottom-text": "But Kyrgyzstan is more than scenery — it's a living legacy of the nomadic soul. In the vast jailoo (summer pastures), families still herd their animals as they have for generations. Travelers are not strangers here — they are guests, welcomed with a bowl of warm kumis and heartfelt hospitality that knows no boundaries. Sharing stories under the stars, listening to the music of komuz, and tasting bread baked in clay tandyrs — this is everyday life, as rich as the land itself.",
+        "civilization__bottom-second-text": "But Kyrgyzstan is more than scenery — it's a living culture. In the high pastures (jailoo), families still herd livestock and welcome travelers with open arms and warm kumis. Festivals celebrate eagle hunters, felt artisans, and horse games that date back millennia. Every visit becomes a soulful journey into a world untouched by time, yet alive with tradition."
+      },
+      "kyrgyzstan__map": {
+        "kyrgyzstan__map-title1": "Bishkek",
+        "kyrgyzstan__map-text1": "Bishkek is the capital and largest city of Kyrgyzstan, located near the Kyrgyz Ala-Too mountains. It features wide streets, Soviet-era and modern architecture, vibrant markets, green parks, and serves as the country’s cultural and political hub.",
+        "kyrgyzstan__map-title2": "Osh",
+        "kyrgyzstan__map-text2": "Osh Region in southern Kyrgyzstan is known for its rich history, diverse culture, and lively bazaars. Centered around the ancient city of Osh, it features mountains, fertile valleys, hospitality, and an economy based on agriculture and trade.",
+        "kyrgyzstan__map-title3": "Issyk-Kul",
+        "kyrgyzstan__map-text3": "Issyk-Kul Region in northeastern Kyrgyzstan surrounds the famous alpine Issyk-Kul Lake. Known for its stunning nature, warm climate, scenic mountains, beautiful resorts, and friendly people, it attracts visitors seeking relaxation, adventure, and cultural exploration."
+      },
+      "kyrgyzstan__filter": {
+        "kyrgyzstan__filter-title1": "Bishkek",
+        "kyrgyzstan__filter-text1": "Bishkek is the capital and largest city of Kyrgyzstan, located near the Kyrgyz Ala-Too mountains. It features wide streets, Soviet-era and modern architecture, vibrant markets, green parks, and serves as the country’s cultural and political hub.",
+        "kyrgyzstan__filter-title2": "Osh",
+        "kyrgyzstan__filter-text2": "Osh Region in southern Kyrgyzstan is known for its rich history, diverse culture, and lively bazaars. Centered around the ancient city of Osh, it features mountains, fertile valleys, hospitality, and an economy based on agriculture and trade.",
+        "kyrgyzstan__filter-title3": "Issyk-Kul",
+        "kyrgyzstan__filter-text3": "Issyk-Kul Region in northeastern Kyrgyzstan surrounds the famous alpine Issyk-Kul Lake. Known for its stunning nature, warm climate, scenic mountains, beautiful resorts, and friendly people, it attracts visitors seeking relaxation, adventure, and cultural exploration."
+      },
+      "kyrgyzstan__gallery": {
+        "kyrgyzstan__gallery-text": "Trip Finder",
+        "kyrgyzstan__gallery-title": "Exclusive photos"
+      }
     },
     "turkmenistan": {
-      "about_country_title": "Turkmenistan: The Hidden Jewel of the Silk Road",
-      "about_country_text1": "Turkmenistan is a land of deep silence and timeless secrets—where golden sands hide ancient cities, and marble cities rise in the desert. Once home to mighty empires like Parthia and Khwarezm, this country holds the ruins of Merv and Nisa, whispering stories of traders, scholars, and civilizations that shaped the Silk Road.",
-      "about_country_text2": "But beyond the history lies a living culture: proud, resilient, and welcoming. In traditional villages, carpets are still handwoven with centuries-old symbolism; in the vast Karakum Desert, yurts still dot the horizon. The blazing Darvaza Gas Crater—“The Door to Hell”—lights up the night like a torch from the underworld. Hospitality here is sacred—tea is shared, stories are offered, and visitors are treated as honored guests. Turkmenistan isn’t just a destination—it’s a revelation waiting to unfold, for the curious and the courageous.",
-      "hero_title": "Where the Past Still Breathes & Oasis of Timeless Traditions",
-      "tours_title": "Explore Our Exclusive Tour Packages",
-      "tours_text": "Find your perfect getaway with our curated tour packages. Adventure, relaxation or culture—it's all here for you!"
+      "turkmenistan__hero": {
+        "hero__title": "Turkmenistan",
+        "hero__text": "Land of Great Scholars and Cultural Crossroads"
+      },
+      "turkmenistan__civilization": {
+        "civilization__title": "About the country",
+        "civilization__text": "Turkmenistan: Crossroads of Civilizations",
+        "civilization__bottom-title": "About Turkmenistan",
+        "civilization__bottom-text": "Turkmenistan is the beating heart of Central Asia, a country where history lives in every mosaic and hospitality greets you at every turn. From the towering minarets of Khiva to the majestic Registan in Samarkand, turkmenistan offers a cultural journey like no other. Here, scholarship once flourished, trade thrived, and traditions were born that continue to color this land today. Let the Great Silk Road guide your footsteps across this timeless terrain.",
+        "civilization__bottom-second-text": "Turkmenistan is the beating heart of Central Asia, a country where history lives in every mosaic and hospitality greets you at every turn. From the towering minarets of Khiva to the majestic Registan in Samarkand, turkmenistan offers a cultural journey like no other. Here, scholarship once flourished, trade thrived, and traditions were born that continue to color this land today. Let the Great Silk Road guide your footsteps across this timeless terrain."
+      },
+      "turkmenistan__map": {
+        "turkmenistan__map-title1": "Ashgabat",
+        "turkmenistan__map-text1": "Ashgabat is the capital and largest city of Turkmenistan, known for white marble buildings, monuments, and broad streets. Located near the Kopet Dag mountains, it is the country's political, cultural, and economic center.",
+        "turkmenistan__map-title2": "Balkan",
+        "turkmenistan__map-text2": "Balkan Region is in western Turkmenistan, by the Caspian Sea. It’s rich in oil and gas, with deserts, Balkan Mountains, and key ports like Türkmenbaşy, making it vital to the economy and trade.",
+        "turkmenistan__map-title3": "Dashoguz",
+        "turkmenistan__map-text3": "Dashoguz Region, in northern Turkmenistan, is known for vast deserts and steppes. It has a strong cotton and grain-based agriculture and features historic sites like Konye-Urgench, a UNESCO World Heritage landmark.",
+        "turkmenistan__map-title4": "Lebap",
+        "turkmenistan__map-text4": "Lebap Region, in eastern Turkmenistan near Afghanistan, is fed by the Amu Darya River. It has fertile land for cotton and wheat, rich natural gas reserves, major cities like Türkmenabat, and cultural landmarks.",
+        "turkmenistan__map-title5": "Mary",
+        "turkmenistan__map-text5": "Mary Region, in southeastern Turkmenistan, is a key agricultural and industrial area, known for cotton, grain, and energy. Mary city is the cultural and economic center, and the region hosts ancient Merv, a UNESCO site."
+      },
+      "turkmenistan__filter": {
+        "turkmenistan__filter-title1": "Ashgabat",
+        "turkmenistan__filter-text1": "Ashgabat is the capital and largest city of Turkmenistan, known for white marble buildings, monuments, and broad streets. Located near the Kopet Dag mountains, it is the country's political, cultural, and economic center.",
+        "turkmenistan__filter-title2": "Balkan",
+        "turkmenistan__filter-text2": "Balkan Region is in western Turkmenistan, by the Caspian Sea. It’s rich in oil and gas, with deserts, Balkan Mountains, and key ports like Türkmenbaşy, making it vital to the economy and trade.",
+        "turkmenistan__filter-title3": "Dashoguz",
+        "turkmenistan__filter-text3": "Dashoguz Region, in northern Turkmenistan, is known for vast deserts and steppes. It has a strong cotton and grain-based agriculture and features historic sites like Konye-Urgench, a UNESCO World Heritage landmark.",
+        "turkmenistan__filter-title4": "Lebap",
+        "turkmenistan__filter-text4": "Lebap Region, in eastern Turkmenistan near Afghanistan, is fed by the Amu Darya River. It has fertile land for cotton and wheat, rich natural gas reserves, major cities like Türkmenabat, and cultural landmarks.",
+        "turkmenistan__filter-title5": "Mary",
+        "turkmenistan__filter-text5": "Mary Region, in southeastern Turkmenistan, is a key agricultural and industrial area, known for cotton, grain, and energy. Mary city is the cultural and economic center, and the region hosts ancient Merv, a UNESCO site."
+      },
+      "turkmenistan__gallery": {
+        "turkmenistan__gallery-text": "Trip Finder",
+        "turkmenistan__gallery-title": "Exclusive photos"
+      }
     }
   },
   "trip_finder": {

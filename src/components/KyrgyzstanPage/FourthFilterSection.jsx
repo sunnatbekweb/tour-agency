@@ -1,27 +1,35 @@
 "use client";
 import { useState } from "react";
 import "./FourthFilterSection.css";
+import { useTranslations } from "next-intl";
 export default function FourthFilterSection() {
+  const t = useTranslations();
   const countryData = [
     {
       id: 1,
-      title: "Bishkek",
-      text: `Bishkek is the capital and largest city of Kyrgyzstan. It is located near the Kyrgyz Ala-Too mountains and features wide streets, Soviet-era architecture, modern buildings, vibrant markets, green parks, cultural centers, friendly people, and serves as the political, economic, and educational heart of the country.`,
+      title: t(
+        "destinations.kyrgyzstan.kyrgyzstan__map.kyrgyzstan__map-title1"
+      ),
+      text: t("destinations.kyrgyzstan.kyrgyzstan__map.kyrgyzstan__map-text1"),
       images: "/images/bishkek.jpg",
       description: "city__images",
     },
 
     {
       id: 2,
-      title: "Issyk-Kul",
-      text: `Issyk-Kul Region is located in the northeastern part of Kyrgyzstan. It surrounds the famous Issyk-Kul Lake, one of the largest alpine lakes in the world. The region is known for its stunning natural beauty, tourism, mountains, resorts, warm climate, and friendly people.`,
+      title: t(
+        "destinations.kyrgyzstan.kyrgyzstan__map.kyrgyzstan__map-title2"
+      ),
+      text: t("destinations.kyrgyzstan.kyrgyzstan__map.kyrgyzstan__map-text2"),
       images: "/images/Issyk-Kul.jpg",
       description: "city__images",
     },
     {
       id: 3,
-      title: "Osh",
-      text: `Osh Region is located in the southern part of Kyrgyzstan. It is known for its rich history, diverse culture, and vibrant bazaars. The region includes the city of Osh, beautiful mountains, fertile valleys, and friendly people. Agriculture and trade play important roles in its economy.`,
+      title: t(
+        "destinations.kyrgyzstan.kyrgyzstan__map.kyrgyzstan__map-title3"
+      ),
+      text: t("destinations.kyrgyzstan.kyrgyzstan__map.kyrgyzstan__map-text3"),
       images: "/images/osh.jpg",
       description: "city__images",
     },

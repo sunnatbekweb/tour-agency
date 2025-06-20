@@ -1,19 +1,29 @@
 "use client";
 import { useState } from "react";
 import "./ThirdFilterSection.css";
+import { useTranslations } from "next-intl";
 export default function ThirdFilterSection() {
+  const t = useTranslations();
   const countryData = [
     {
       id: 1,
-      title: "Dushanbe",
-      text: `Dushanbe is the beautiful and vibrant capital city of Tajikistan. Surrounded by majestic mountains, it is known for its unique blend of modern architecture and traditional culture. The city features wide boulevards, green parks, historical monuments, friendly people, and a peaceful atmosphere.`,
+      title: t(
+        "destinations.tajikistan.tajikistan__filter.tajikistan__filter-title1"
+      ),
+      text: t(
+        "destinations.tajikistan.tajikistan__filter.tajikistan__filter-text1"
+      ),
       images: "/images/tajikistan.jpg",
       description: "city__images",
     },
     {
       id: 2,
-      title: "Khujand",
-      text: `Khujand is one of the oldest cities in Central Asia, located in northern Tajikistan. It lies along the Syr Darya River. As the capital of Sughd region, Khujand is an important cultural, economic, and historical center. The city blends ancient traditions with modern development and vibrant urban life.`,
+      title: t(
+        "destinations.tajikistan.tajikistan__filter.tajikistan__filter-title2"
+      ),
+      text: t(
+        "destinations.tajikistan.tajikistan__filter.tajikistan__filter-text2"
+      ),
       images: "/images/sughd.png",
       description: "city__images",
     },

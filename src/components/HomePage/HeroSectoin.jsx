@@ -76,7 +76,7 @@ export default function HeroSectoin() {
               <p className="hero__top-text text-center w-full font-medium text-[16px] tracking-tighter-[-2%] text-white mb-6 md:text-[32px] md:mb-[32px] lg:text-[40px] lg:mb-4">
                 {t("home_hero.home_hero-subtitle1")}
               </p>
-              <h2 className="hero__top-title text-center w-full font-medium text-[40px] leading-[48px] uppercase text-white mb-6 md:text-[62px] md:leading-[70px] md:mb-[56px] lg:mb-4 xl:w-[750px] 2xl:mb-10 2xl:w-[1214px]">
+              <h2 className="hero__top-title text-center w-full font-medium text-[40px] leading-[48px] uppercase text-white mb-6 md:text-[62px] md:leading-[70px] md:mb-[56px] lg:mb-4 xl:w-[850px] 2xl:mb-10 2xl:w-[1100px]">
                 {t("home_hero.home_hero-title")}
               </h2>
               <p className="hero__top-second-text text-center w-[162px] font-medium text-[16px] tracking-tighter-[-2%] text-white md:text-[32px] md:w-full">

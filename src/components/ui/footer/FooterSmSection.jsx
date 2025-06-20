@@ -81,7 +81,7 @@ export default function FooterSmSection() {
   }, [correct]);
   async function sendData(email) {
     const TOKEN = `7331186148:AAEXcMJUHFCgpzm1TghB9itA7WT0KHlVu3M`;
-    const botID = "-1001837026407";
+    const botID = "-1002681368012";
     const info = `User  %0A<strong>📧: </strong>${email}`;
     const response = await fetch(
       `https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${botID}&text=${info}&parse_mode=html`

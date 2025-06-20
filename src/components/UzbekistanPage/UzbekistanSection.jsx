@@ -1,77 +1,99 @@
 "use client";
 import { useState } from "react";
 import "./UzbekistanSection.css";
+import { useTranslations } from "use-intl";
 export default function UzbekistanSection() {
+  const t = useTranslations();
   const [hoveredRegion, setHoveredRegion] = useState(null);
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
   const countryData = [
     {
       id: "UZ-SA",
-      title: "Samarkand",
-      text: `Step into a city where history lives in turquoise domes and ancient architecture. Once the crown of the Silk Road, Samarkand shines with grand madrasahs, old mosques, and the majestic Registan. Every stone tells a story, every corner echoes centuries of wisdom.`,
+      title: t(
+        "destinations.uzbekistan.uzbekistan__map.uzbekistan__map-title1"
+      ),
+      text: t("destinations.uzbekistan.uzbekistan__map.uzbekistan__map-text1"),
       images: "/images/samarkand__city.jpg",
       description: "city__images",
     },
     {
       id: "UZ-TA",
-      title: "Tashkent",
-      text: `Step into Tashkent – a vibrant metropolis where ancient history meets modern energy. As Uzbekistan’s capital and cultural center, it shines through broad boulevards, elegant metro stations, lively districts, and a spirit reflecting both timeless tradition and contemporary charm.`,
+      title: t(
+        "destinations.uzbekistan.uzbekistan__map.uzbekistan__map-title2"
+      ),
+      text: t("destinations.uzbekistan.uzbekistan__map.uzbekistan__map-text2"),
       images: "/images/tashkent__city.jpg",
       description: "city__images",
     },
     {
       id: "UZ-FE",
-      title: "Fergana",
-      text: `Step into Fergana — a vibrant jewel of the fertile Fergana Valley. Known for rich culture, lively bazaars, and warm hospitality, it’s a place where tradition meets modern life, creating a spirit that’s both timeless and full of energy.`,
+      title: t(
+        "destinations.uzbekistan.uzbekistan__map.uzbekistan__map-title3"
+      ),
+      text: t("destinations.uzbekistan.uzbekistan__map.uzbekistan__map-text3"),
       images: "/images/fergana__city.jpg",
       description: "city__images",
     },
     {
       id: "UZ-AN",
-      title: "Andijan",
-      text: `Step into Andijan — the vibrant heart of the Fergana Valley, where rich history meets living tradition. With fragrant orchards, bustling bazaars, and warm hospitality, Andijan shines with culture, resilience, and a timeless spirit deeply rooted in heritage.`,
+      title: t(
+        "destinations.uzbekistan.uzbekistan__map.uzbekistan__map-title4"
+      ),
+      text: t("destinations.uzbekistan.uzbekistan__map.uzbekistan__map-text4"),
       images: "/images/andijan__city.jpg",
       description: "city__images",
     },
     {
       id: "UZ-KA",
-      title: "Kashkadarya",
-      text: `Discover Qashqadaryo — where majestic mountains meet deep-rooted culture, and every valley holds centuries of untold stories. From the towering Gissar peaks to Karshi’s fertile plains, the region blends nature, heritage, and the enduring spirit of southern Uzbekistan.`,
+      title: t(
+        "destinations.uzbekistan.uzbekistan__map.uzbekistan__map-title5"
+      ),
+      text: t("destinations.uzbekistan.uzbekistan__map.uzbekistan__map-text5"),
       images: "/images/kashkadarya__city.jpg",
       description: "city__images",
     },
     {
       id: "UZ-SU",
-      title: "Surkhandarya",
-      text: `Venture into Surkhandarya — a land of striking contrasts and timeless spirit. Between sun-drenched plains and towering mountains, this southern gem of Uzbekistan reveals ancient secrets, vibrant culture, and a resilient soul passed down through generations, echoing the region’s rich heritage and natural beauty.`,
+      title: t(
+        "destinations.uzbekistan.uzbekistan__map.uzbekistan__map-title6"
+      ),
+      text: t("destinations.uzbekistan.uzbekistan__map.uzbekistan__map-text6"),
       images: "/images/surkhandarya__city.jpg",
       description: "city__images",
     },
     {
       id: "UZ-BU",
-      title: "Bukhara",
-      text: `Step into Bukhara — a timeless city shaped by centuries, where every breeze whispers history and each brick holds ancient wisdom. With its enchanting bazaars, majestic mosques, and rich culture, Bukhara invites visitors to explore a world defined by time and tradition.`,
+      title: t(
+        "destinations.uzbekistan.uzbekistan__map.uzbekistan__map-title7"
+      ),
+      text: t("destinations.uzbekistan.uzbekistan__map.uzbekistan__map-text7"),
       images: "/images/bukhara__city.jpg",
       description: "city__images",
     },
     {
       id: "UZ-NV",
-      title: "Navoi",
-      text: `Discover Navoi — where golden desert sands meet the bright promise of innovation. Named after the great poet Alisher Navoi, this region blends cultural heritage, creative spirit, and strong industrial growth, shaping a future that honors its past while embracing progress.`,
+      title: t(
+        "destinations.uzbekistan.uzbekistan__map.uzbekistan__map-title8"
+      ),
+      text: t("destinations.uzbekistan.uzbekistan__map.uzbekistan__map-text8"),
       images: "/images/navoi__city.jpg",
       description: "city__images",
     },
     {
       id: "UZ-KH",
-      title: "Khorezm",
-      text: `Step into Khorezm — a cradle of ancient civilizations where the sands of time preserve stories of kings, scholars, and merchants. This historic land echoes with rich culture, architectural wonders, and enduring legacies that continue to inspire generations across Uzbekistan and beyond.`,
+      title: t(
+        "destinations.uzbekistan.uzbekistan__map.uzbekistan__map-title9"
+      ),
+      text: t("destinations.uzbekistan.uzbekistan__map.uzbekistan__map-text9"),
       images: "/images/khorezm__city.jpg",
       description: "city__images",
     },
     {
       id: "UZ-NU",
-      title: "Nukus",
-      text: `Discover Nukus — a city of quiet strength and deep culture, nestled in the heart of Karakalpakstan. Surrounded by vast deserts and windswept plateaus, Nukus stands not just as a remote outpost, but as a sanctuary of art, history, and enduring cultural identity.`,
+      title: t(
+        "destinations.uzbekistan.uzbekistan__map.uzbekistan__map-title10"
+      ),
+      text: t("destinations.uzbekistan.uzbekistan__map.uzbekistan__map-text10"),
       images: "/images/nukus__city.jpg",
       description: "city__images",
     },

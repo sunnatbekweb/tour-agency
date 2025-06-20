@@ -164,48 +164,206 @@
     "footer__toast-error": "Xatolik yuz berdi"
   },
   "destinations": {
-    "about": "Mamlakat haqida",
-    "about_text": "Mamlakat haqida ma’lumot",
-    "exclusive_text": "Eksklyuziv suratlar",
     "uzbekistan": {
-      "about_country_title": "Oʻzbekiston: Sivilizatsiyalar Qarshisida",
-      "about_country_text1": "O‘zbekiston — Markaziy Osiyoning yuragi bo‘lib, tarix har bir mozaikada yashaydi, mehmondo‘stlik esa sizni har bir burilishda qarshi oladi. Xivaning osmon bilan tenglashgan minoralari va Samarqandning ulug‘vor Registoni — bularning barchasi sizni tengsiz madaniy sayohatga chorlaydi. Ilgari bu yerda ilm-fan gullab-yashnagan, savdo-sotiq avj olgan va bugungi kungacha o‘z rangini yo‘qotmagan urf-odatlar paydo bo‘lgan. Ipak yo‘li sizning qadamingizga yo‘l ko‘rsatsin.",
-      "about_country_text2": "O‘zbekistonning jozibasi nafaqat uning arxitektura mo‘jizalarida, balki odamlarining iliqligida va uning hayotiy an'alarining boyligida yotadi. Shovqinli bozorlarida, ziravorlarning hidlari hunarmandlarning ish faoliyatining ovozi bilan aralashadi. Musiqa, hikoyalar va murakkab san'at asarlari kundalik hayotning ajralmas qismi bo‘lib qolmoqda — qadimiy meros va hayotiy madaniyatning haqiqiy uyg‘unligi. Siz tarixiy karvonsaroylardan o‘tayotganingizda yoki mahalliy aholi bilan ovqatlanayotganingizda, O‘zbekiston sizni ochiq quchoq bilan va abadiy ruh bilan kutib oladi.",
-      "hero_title": "Buyuk allomalar yurti va madaniyatlar chorrahasi",
-      "tours_title": "Bizning maxsus turlar bilan O‘zbekistonni kashf eting",
-      "tours_text": "Samarqandning moviy gumbazlaridan tortib Xivaning qadimiy ko‘chalarigacha — O‘zbekiston bo‘ylab sayohatlarimiz madaniyat ixlosmandlari, tarix izlovchilari va sarguzashtsevarlar uchun yaratilgan. Dam olish kunlari sayohatidan tortib bir necha kunlik sarguzashtlargacha — sizning safaringiz aynan shu yerda boshlanadi."
+      "uzbekistan__hero": {
+        "hero__title": "O'zbekiston",
+        "hero__text": "Buyuk Allomalar va Madaniy Chorrahalar Mamlakati"
+      },
+      "uzbekistan__civilization": {
+        "civilization__title": "Mamlakat haqida",
+        "civilization__text": "O‘zbekiston: Sivilizatsiyalar Chorrahasi",
+        "civilization__bottom-title": "O'zbekiston Haqida",
+        "civilization__bottom-text": "O‘zbekiston – Markaziy Osiyoning urayotgan yuragi, har bir mozaikada tarix yashaydigan va har qadamda sizni mehmondo‘stlik bilan kutib oladigan mamlakat. O‘zbekiston Xivaning baland minoralaridan Samarqanddagi ulug‘vor Registongacha hech kimga o‘xshamaydigan madaniy sayohatni taklif etadi. Bu yerda bir paytlar stipendiya gullab-yashnagan, savdo-sotiq gullab-yashnagan va bugungi kunda bu zaminga rang berishda davom etayotgan an'analar tug'ilgan. Buyuk Ipak yo'li bu abadiy zamin bo'ylab qadamlaringizni boshqarsin.",
+        "civilization__bottom-second-text": "O‘zbekiston – Markaziy Osiyoning urayotgan yuragi, har bir mozaikada tarix yashaydigan va har qadamda sizni mehmondo‘stlik bilan kutib oladigan mamlakat. O‘zbekiston Xivaning baland minoralaridan Samarqanddagi ulug‘vor Registongacha hech kimga o‘xshamaydigan madaniy sayohatni taklif etadi. Bu yerda bir paytlar stipendiya gullab-yashnagan, savdo-sotiq gullab-yashnagan va bugungi kunda bu zaminga rang berishda davom etayotgan an'analar tug'ilgan. Buyuk Ipak yo'li bu abadiy zamin bo'ylab qadamlaringizni boshqarsin."
+      },
+      "uzbekistan__map": {
+        "uzbekistan__map-title1": "Samarqand",
+        "uzbekistan__map-text1": "Turkuaz gumbazlari va qadimiy me'morchiligi Ipak yo'li haqida hikoya qiluvchi Samarqandga qadam qo'ying. Registon maydoni, muhtasham madrasalar, ko‘hna masjidlar shaharning abadiy hikmatini aks ettiradi.",
+        "uzbekistan__map-title2": "Toshkent",
+        "uzbekistan__map-text2": "Toshkentga qadam qo‘ying – tarix zamonaviy energiya bilan uchrashadigan dinamik shahar. O‘zbekiston poytaxti sifatida u keng xiyobonlar, nafis metrolar, jonli ko‘chalar, an’ana va zamonaviy jozibaga boy ruhi bilan gullab-yashnamoqda.",
+        "uzbekistan__map-title3": "Farg'ona",
+        "uzbekistan__map-text3": "Farg'onaga qadam qo'ying - Farg'ona vodiysining jo'shqin durdonasi. Boy madaniyati, jonli bozorlari va iliq odamlari bilan mashhur bo'lgan bu shahar an'analar va zamonaviy hayot abadiy, baquvvat muhitga uyg'unlashadi.",
+        "uzbekistan__map-title4": "Andijon",
+        "uzbekistan__map-text4": "Andijonga qadam qo‘ying – tarix va an’analar to‘qnash kelgan Farg‘ona vodiysining jo‘shqin yuragi. Meva bog‘lari, jonli bozorlari va samimiy mehmondo‘stligi bilan shahar madaniyat, matonat va chuqur ildiz otgan ruh bilan porlaydi.",
+        "uzbekistan__map-title5": "Qashqadaryo",
+        "uzbekistan__map-text5": "Qashqadaryoni kashf eting - u erda tog'lar boy madaniyatga to'la va har bir vodiyda qadimiy hikoyalar mavjud. Hisor cho‘qqilaridan Qarshi tekisliklarigacha bo‘lgan hududda O‘zbekiston tarixi, tabiati va bardavom ruhi aks etgan.",
+        "uzbekistan__map-title6": "Surxondaryo",
+        "uzbekistan__map-text6": "Surxondaryoga sayohat – qarama-qarshiliklar va abadiy ruh. Quyoshli tekisliklar va baland tog‘lar oralig‘ida O‘zbekistonning janubiy yuragidagi qadimiy sirlarni, jo‘shqin madaniyatni va mustahkam mustahkamlikni ochib beradi.",
+        "uzbekistan__map-title7": "Buxoro",
+        "uzbekistan__map-text7": "Buxoroga qadam qo'ying - tarix har bir shabada va g'ishtda yashaydigan abadiy shahar. Buxoro o'zining bozorlari, masjidlari va boy madaniyati bilan barchani an'ana va zamon bilan shakllangan dunyoni kashf etishga chorlaydi.",
+        "uzbekistan__map-title8": "Navoiy",
+        "uzbekistan__map-text8": "Oltin cho'llar taraqqiyot bilan uchrashadigan Navoiyni kashf eting. Shoir Alisher Navoiy nomi bilan atalgan hudud ijodiy ruh, madaniy meros va kuchli sanoatni uyg‘unlashtirib, tarix va innovatsiyalarga asoslangan dinamik kelajakni shakllantiradi.",
+        "uzbekistan__map-title9": "Xorazm",
+        "uzbekistan__map-text9": "Xorazmga qadam qo'ying – qadimiy sivilizatsiyalar beshigi bo'lib, u yerda shohlar, olimlar va savdogarlar hikoyalari saqlanib qolgan. Bu tarixiy zamin boy madaniyati va avlodlarni ilhomlantirishda davom etayotgan abadiy merosi bilan aks sado beradi.",
+        "uzbekistan__map-title10": "Nukus",
+        "uzbekistan__map-text10": "Nukusni kashf eting – Qoraqalpog‘iston qalbidagi sokin kuch va boy madaniyat shahri. Cho'llar va platolar bilan o'ralgan, u san'at, tarix va chuqur, mustahkam madaniy o'ziga xoslik ziyoratgohi sifatida turadi."
+      },
+      "uzbekistan__filter": {
+        "uzbekistan__filter-title1": "Samarqand",
+        "uzbekistan__filter-text1": "Turkuaz gumbazlari va qadimiy me'morchiligi Ipak yo'li haqida hikoya qiluvchi Samarqandga qadam qo'ying. Registon maydoni, muhtasham madrasalar, ko‘hna masjidlar shaharning abadiy hikmatini aks ettiradi.",
+        "uzbekistan__filter-title2": "Toshkent",
+        "uzbekistan__filter-text2": "Toshkentga qadam qo‘ying – tarix zamonaviy energiya bilan uchrashadigan dinamik shahar. O‘zbekiston poytaxti sifatida u keng xiyobonlar, nafis metrolar, jonli ko‘chalar, an’ana va zamonaviy jozibaga boy ruhi bilan gullab-yashnamoqda.",
+        "uzbekistan__filter-title3": "Farg'ona",
+        "uzbekistan__filter-text3": "Farg'onaga qadam qo'ying - Farg'ona vodiysining jo'shqin durdonasi. Boy madaniyati, jonli bozorlari va iliq odamlari bilan mashhur bo'lgan bu shahar an'analar va zamonaviy hayot abadiy, baquvvat muhitga uyg'unlashadi.",
+        "uzbekistan__filter-title4": "Andijon",
+        "uzbekistan__filter-text4": "Andijonga qadam qo‘ying – tarix va an’analar to‘qnash kelgan Farg‘ona vodiysining jo‘shqin yuragi. Meva bog‘lari, jonli bozorlari va samimiy mehmondo‘stligi bilan shahar madaniyat, matonat va chuqur ildiz otgan ruh bilan porlaydi.",
+        "uzbekistan__filter-title5": "Qashqadaryo",
+        "uzbekistan__filter-text5": "Qashqadaryoni kashf eting - u erda tog'lar boy madaniyatga to'la va har bir vodiyda qadimiy hikoyalar mavjud. Hisor cho‘qqilaridan Qarshi tekisliklarigacha bo‘lgan hududda O‘zbekiston tarixi, tabiati va bardavom ruhi aks etgan.",
+        "uzbekistan__filter-title6": "Surxondaryo",
+        "uzbekistan__filter-text6": "Surxondaryoga sayohat – qarama-qarshiliklar va abadiy ruh. Quyoshli tekisliklar va baland tog‘lar oralig‘ida O‘zbekistonning janubiy yuragidagi qadimiy sirlarni, jo‘shqin madaniyatni va mustahkam mustahkamlikni ochib beradi.",
+        "uzbekistan__filter-title7": "Buxoro",
+        "uzbekistan__filter-text7": "Buxoroga qadam qo'ying - tarix har bir shabada va g'ishtda yashaydigan abadiy shahar. Buxoro o'zining bozorlari, masjidlari va boy madaniyati bilan barchani an'ana va zamon bilan shakllangan dunyoni kashf etishga chorlaydi.",
+        "uzbekistan__filter-title8": "Navoiy",
+        "uzbekistan__filter-text8": "Oltin cho'llar taraqqiyot bilan uchrashadigan Navoiyni kashf eting. Shoir Alisher Navoiy nomi bilan atalgan hudud ijodiy ruh, madaniy meros va kuchli sanoatni uyg‘unlashtirib, tarix va innovatsiyalarga asoslangan dinamik kelajakni shakllantiradi.",
+        "uzbekistan__filter-title9": "Xorazm",
+        "uzbekistan__filter-text9": "Xorazmga qadam qo'ying – qadimiy sivilizatsiyalar beshigi bo'lib, u yerda shohlar, olimlar va savdogarlar hikoyalari saqlanib qolgan. Bu tarixiy zamin boy madaniyati va avlodlarni ilhomlantirishda davom etayotgan abadiy merosi bilan aks sado beradi.",
+        "uzbekistan__filter-title10": "Nukus",
+        "uzbekistan__filter-text10": "Nukusni kashf eting – Qoraqalpog‘iston qalbidagi sokin kuch va boy madaniyat shahri. Cho'llar va platolar bilan o'ralgan, u san'at, tarix va chuqur, mustahkam madaniy o'ziga xoslik ziyoratgohi sifatida turadi."
+      },
+      "uzbekistan__gallery": {
+        "uzbekistan__gallery-text": "Sayohat Qidiruvchisi",
+        "uzbekistan__gallery-title": "Eksklyuziv Fotosuratlar"
+      }
     },
     "kazakhstan": {
-      "about_country_title": "Qozog'iston: Keng Ufqlar va Dadil Ruhlar Diyori",
-      "about_country_text1": "Qozog‘istonning chinakam mo‘jizasi nafaqat uning kengligida, balki uning qarama-qarshiliklaridadir — bu yerda sukunat kuch bilan, qadimiy an’analar zamonaviy intilishlar bilan uchrashadi. Astana va Olmaotaning zamonaviy osmono‘par binolaridan tashqariga chiqing — bu yerda shamol, vaqt va ko‘chmanchi g‘ururi bilan yasalgan dunyoni topasiz. Cheksiz dasht faqat manzara emas — u erkinlik ramzidir, avlodlarni shakllantirgan xalqning ruhidir.",
-      "about_country_text2": "Har bir qishloqda, olov atrofida aytilgan afsonalar mavjud. Har bir an’anaviy yurtda — o‘tmishga bog‘liqlik. Qozog‘ hayoti tabiatga hurmat, mehmondo‘stlik va jasoratga asoslangan — siz chorvador bilan qimiz ichayotganingizda yoki Tyan-Shan tog‘lariga chiqayotganingizda. Bu yer sayohatchilar, orzuchilar va sof, qudratli hamda abadiy narsani izlayotganlar uchun diyordir.",
-      "hero_title": "Cheksiz Ufqlar va Buyuk Dashtlar Diyori",
-      "tours_title": "Qozog‘istondagi Maxsus Turlarimizni Kashf Qiling",
-      "tours_text": "Har bir marshrut sizni dashtning yuragiga olib kiradi — bu yerda meros, tabiat va sarguzashtlar unutilmas tajribaga aylanadi."
+      "kazakhstan__hero": {
+        "hero__title": "Qozog'iston",
+        "hero__text": "Qozog'iston: keng ufqlar va dadil ruhlar mamlakati"
+      },
+      "kazakhstan__civilization": {
+        "civilization__title": "Mamlakat haqida",
+        "civilization__text": "Qozog'iston: keng ufqlar va dadil ruhlar mamlakati",
+        "civilization__bottom-title": "Qozog'iston Haqida",
+        "civilization__bottom-text": "Qozog'istonning haqiqiy sehri nafaqat uning kengligida, balki qarama-qarshiligida - sukunat kuch va qadimiy an'analar zamonaviy ambitsiyalarga mos keladi. Ostona va Olmaota osmonidan tashqariga chiqing va siz shamol, vaqt va ko'chmanchilar g'ururi bilan yaratilgan dunyoni kashf etasiz. Cheksiz dasht shunchaki landshaft emas - bu chidamli va mehmondo'st odamlar avlodlarini shakllantirgan erkinlik ramzi.",
+        "civilization__bottom-second-text": "Qozog'istonning haqiqiy sehri nafaqat uning kengligida, balki qarama-qarshiligida - sukunat kuch va qadimiy an'analar zamonaviy ambitsiyalarga mos keladi. Ostona va Olmaota osmonidan tashqariga chiqing va siz shamol, vaqt va ko'chmanchilar g'ururi bilan yaratilgan dunyoni kashf etasiz. Cheksiz dasht shunchaki landshaft emas - bu chidamli va mehmondo'st odamlar avlodlarini shakllantirgan erkinlik ramzi."
+      },
+      "kazakhstan__map": {
+        "kazakhstan__map-title1": "Turkiston",
+        "kazakhstan__map-text1": "Turkiston janubiy Qozogʻistonda Markaziy Osiyoning tarixiy shahri va madaniy markazidir. Xoja Ahmad Yasaviy maqbarasi bilan mashhur boʻlgan bu yer chuqur Ipak yoʻli ildizlariga ega boʻlib, qishloq xoʻjaligi, savdo-sotiq va maʼnaviy meros uchun hayotiy ahamiyatga ega.",
+        "kazakhstan__map-title2": "Ostona",
+        "kazakhstan__map-text2": "Ostona (sobiq Nur-Sulton) — Qozogʻistonning poytaxti, shimolda joylashgan. Zamonaviy arxitekturasi va tez o'sishi bilan mashhur bo'lib, u institutlar, tadbirlar va milliy taraqqiyot ramzlari bilan siyosiy va madaniy markaz bo'lib xizmat qiladi.",
+        "kazakhstan__map-title3": "Chimkent",
+        "kazakhstan__map-text3": "Qozogʻiston janubidagi yirik shahar boʻlgan Chimkent muhim sanoat, madaniy va iqtisodiy markaz hisoblanadi. O'zining iliq iqlimi, jonli bozorlari va tarixiy joylari bilan mashhur bo'lib, u an'anaviy qozoq madaniyatini zamonaviy shaharsozlik bilan uyg'unlashtiradi.",
+        "kazakhstan__map-title4": "Olmaota",
+        "kazakhstan__map-text4": "Qozog'istonning eng yirik shahri Olmaota janubi-sharqda Ili Olatau tog'lari yaqinida joylashgan. Bu asosiy madaniy, moliyaviy va ta'lim markazi bo'lib, bog'lar, jonli san'at, rang-barang taomlari va biznes va turizmdagi doimiy roli bilan mashhur."
+      },
+      "kazakhstan__filter": {
+        "kazakhstan__filter-title1": "Turkiston",
+        "kazakhstan__filter-text1": "Turkiston janubiy Qozogʻistonda Markaziy Osiyoning tarixiy shahri va madaniy markazidir. Xoja Ahmad Yasaviy maqbarasi bilan mashhur boʻlgan bu yer chuqur Ipak yoʻli ildizlariga ega boʻlib, qishloq xoʻjaligi, savdo-sotiq va maʼnaviy meros uchun hayotiy ahamiyatga ega.",
+        "kazakhstan__filter-title2": "Ostona",
+        "kazakhstan__filter-text2": "Ostona (sobiq Nur-Sulton) — Qozogʻistonning poytaxti, shimolda joylashgan. Zamonaviy arxitekturasi va tez o'sishi bilan mashhur bo'lib, u institutlar, tadbirlar va milliy taraqqiyot ramzlari bilan siyosiy va madaniy markaz bo'lib xizmat qiladi.",
+        "kazakhstan__filter-title3": "Chimkent",
+        "kazakhstan__filter-text3": "Qozogʻiston janubidagi yirik shahar boʻlgan Chimkent muhim sanoat, madaniy va iqtisodiy markaz hisoblanadi. O'zining iliq iqlimi, jonli bozorlari va tarixiy joylari bilan mashhur bo'lib, u an'anaviy qozoq madaniyatini zamonaviy shaharsozlik bilan uyg'unlashtiradi.",
+        "kazakhstan__filter-title4": "Olmaota",
+        "kazakhstan__filter-text4": "Qozog'istonning eng yirik shahri Olmaota janubi-sharqda Ili Olatau tog'lari yaqinida joylashgan. Bu asosiy madaniy, moliyaviy va ta'lim markazi bo'lib, bog'lar, jonli san'at, rang-barang taomlari va biznes va turizmdagi doimiy roli bilan mashhur."
+      },
+      "kazakhstan__gallery": {
+        "kazakhstan__gallery-text": "Sayohat qidiruvchisi",
+        "kazakhstan__gallery-title": "Eksklyuziv fotosuratlar"
+      }
     },
     "tajikistan": {
-      "about_country_title": "Tojikiston: Markaziy Osiyoning Tomi",
-      "about_country_text1": "Tojikiston — bu osmonu falakka cho‘zilgan tog‘lar va qadimiy tarix yurti. Pomir tog‘lari osmonga tegadi, va qadimiy karvon yo‘llari hanuz sayohatchilar hikoyalarini eslatadi. Bu yerda yovvoyi tabiat va go‘zallik Markaziy Osiyoda betakror manzara yaratadi. Mamlakat hududining 90 foizidan ortig‘i tog‘lardan iborat — bu joylar yurakdan tinchlik izlaganlar va orzuchilar uchun mo‘ljallangan.",
-      "about_country_text2": "Ammo Tojikiston faqat tog‘lar emas — bu iliqlik yurti. O‘lkadagi chekka qishloqlarda mehmondo‘stlik hayot tarzidir. Choy ulashiladi, hikoyalar aytiladi, urf-odatlar esa raqslar, matolar va bayramlar orqali yashaydi. Siz Vaxon Daryosi bo‘yidan yurganingizda ham, Dushanbening jonli bozorlarida sayr qilganingizda ham, har bir qadamingiz sizni qadimiy, ma’noli va unutilmas dunyoga olib boradi.",
-      "hero_title": "Tog‘lar, Muzliklar va Qadimiy Madaniyatlar Diyori",
-      "tours_title": "Tojikistondagi Maxsus Turlarimizni O‘rganing",
-      "tours_text": "Bizning tanlangan sayohatlarimiz sizni Tojikistonning yovvoyi go‘zalligi va madaniy yuragi bilan tanishtiradi — baland tog‘li sarguzashtlardan tortib, mahalliy oilalar bilan iliq suhbatlargacha."
+      "tajikistan__hero": {
+        "hero__title": "Tojikiston",
+        "hero__text": "Tog'lar va muzliklar va qadimiy madaniyatlar o'lkasi"
+      },
+      "tajikistan__civilization": {
+        "civilization__title": "Mamlakat haqida",
+        "civilization__text": "Tojikiston: Markaziy Osiyo tomi",
+        "civilization__bottom-title": "Tojikiston Haqida",
+        "civilization__bottom-text": "Tojikiston — hayratlanarli togʻlar va chuqur tarixga ega mamlakat — Pomir togʻlari osmonni yirtib tashlagan va qadimiy karvon yoʻllari hanuzgacha oʻtgan sayohatchilarning hikoyalari bilan aks-sado beradigan joy. Bu yerda qo'pol go'zallik va xom tabiat Markaziy Osiyoda hech kimga o'xshamaydigan fon yaratadi. Mamlakatning 90% dan ortig'i tog'lar bilan qoplangan, bu erda sayohatchilar, xayolparastlar va yolg'izlikni izlovchilar o'z yo'lini topadilar.",
+        "civilization__bottom-second-text": "Tojikiston — hayratlanarli togʻlar va chuqur tarixga ega mamlakat — Pomir togʻlari osmonni yirtib tashlagan va qadimiy karvon yoʻllari hanuzgacha oʻtgan sayohatchilarning hikoyalari bilan aks-sado beradigan joy. Bu yerda qo'pol go'zallik va xom tabiat Markaziy Osiyoda hech kimga o'xshamaydigan fon yaratadi. Mamlakatning 90% dan ortig'i tog'lar bilan qoplangan, bu erda sayohatchilar, xayolparastlar va yolg'izlikni izlovchilar o'z yo'lini topadilar."
+      },
+      "tajikistan__map": {
+        "tajikistan__map-title1": "Dushanbe",
+        "tajikistan__map-text1": "Dushanbe Tojikistonning jonli poytaxti bo'lib, ulug'vor tog'lar bilan o'ralgan. Shahar zamonaviy arxitekturani anʼanaviy madaniyat bilan uygʻunlashtirib, keng xiyobonlar, yashil bogʻlar, tarixiy obidalar, mehribon odamlar va sokin muhitga ega.",
+        "tajikistan__map-title2": "Xoʻjand",
+        "tajikistan__map-text2": "Markaziy Osiyoning eng qadimiy shaharlaridan biri boʻlgan Xoʻjand Tojikiston shimolida, Sirdaryo boʻyida joylashgan. Sug'd poytaxti sifatida u qadimiy an'analarni zamonaviy taraqqiyot bilan uyg'unlashtiradi va jonli madaniy, iqtisodiy va tarixiy markaz bo'lib qolmoqda."
+      },
+      "tajikistan__filter": {
+        "tajikistan__filter-title1": "Dushanbe",
+        "tajikistan__filter-text1": "Dushanbe Tojikistonning jonli poytaxti bo'lib, ulug'vor tog'lar bilan o'ralgan. Shahar zamonaviy arxitekturani anʼanaviy madaniyat bilan uygʻunlashtirib, keng xiyobonlar, yashil bogʻlar, tarixiy obidalar, mehribon odamlar va sokin muhitga ega.",
+        "tajikistan__filter-title2": "Xoʻjand",
+        "tajikistan__filter-text2": "Markaziy Osiyoning eng qadimiy shaharlaridan biri boʻlgan Xoʻjand Tojikiston shimolida, Sirdaryo boʻyida joylashgan. Sug'd poytaxti sifatida u qadimiy an'analarni zamonaviy taraqqiyot bilan uyg'unlashtiradi va jonli madaniy, iqtisodiy va tarixiy markaz bo'lib qolmoqda."
+      },
+      "tajikistan__gallery": {
+        "tajikistan__gallery-text": "Sayohat qidiruvchisi",
+        "tajikistan__gallery-title": "Eksklyuziv fotosuratlar"
+      }
     },
     "kyrgyzstan": {
-      "about_country_title": "Qirg‘iziston: Tog‘lar, Ko‘llar va Ko‘chmanchilar Diyori",
-      "about_country_text1": "Ammo Qirg‘iziston faqat manzara emas — bu ko‘chmanchi ruhning yashovchan merosidir. Keng yaylovlarda (jailoo) oilalar hali ham chorva boqadi, bu ajdodlardan qolgan hayot tarzidir. Sayohatchilar bu yerda begonalar emas — ular mehmon sifatida kutib olinadi: iliq qimiz va cheksiz samimiyat bilan. Yulduzlar ostida ertaklar tinglash, komuz ohanglari eshitish, tandirda pishirilgan nonni tatib ko‘rish — bu hayotning kundalik bir qismi, va u yerning o‘ziday boy.",
-      "about_country_text2": "Qirg‘iziston — bu tirik madaniyat. Baland yaylovlarda chorvachilik davom etmoqda, sayohatchilar ochiq qo‘llar bilan kutib olinadi. Bayramlarda burgutchilar, kiyiz ustalari va qadimiy ot o‘yinlari nishonlanadi. Har bir tashrif vaqt sayohatiga aylanadi — abadiy an’analarga boy, ammo hanuz hayotga to‘la olamga.",
-      "hero_title": "Tog‘lar Qadimiy Rivoyatlarni Pichirlaydi",
-      "tours_title": "Qirg‘izistondagi Maxsus Turlarimizni Kashf Qiling",
-      "tours_text": "Qirg‘izistondagi sayohatlarimiz sizni muhtasham tabiat, qadimiy turmush tarzi va tog‘larning ochiqko‘ngil ruhi bilan bog‘laydi."
+      "kyrgyzstan__hero": {
+        "hero__title": "Qirg'iziston",
+        "hero__text": "Qadimgi ertaklarni pichirlagan tog'lar"
+      },
+      "kyrgyzstan__civilization": {
+        "civilization__title": "Mamlakat haqida",
+        "civilization__text": "Qirg'iziston: cho'qqilar, ko'llar va ko'chmanchilar mamlakati",
+        "civilization__bottom-title": "Qirg'iziston Haqida",
+        "civilization__bottom-text": "Ammo Qirg'iziston manzaradan ko'ra ko'proq - bu ko'chmanchilar qalbining tirik merosi. Keng qamoqxonada (yozgi yaylovlar) oilalar hali ham avlodlar o'tadigan hayvonlarni boqishadi. Sayohatchilar bu yerda begona emaslar — ular mehmon bo‘lib, bir piyola iliq qumiz va chegara bilmaydigan samimiy mehmondo‘stlik bilan kutib olinadi. Yulduzlar ostida hikoyalar bilan o‘rtoqlashish, komuz sadolari, loy tandirlarda pishirilgan nonni tatib ko‘rish – bu yerning o‘zi kabi boy hayot.",
+        "civilization__bottom-second-text": "Ammo Qirg'iziston manzaradan ko'ra ko'proq - bu tirik madaniyat. Baland yaylovlarda (jayloda) oilalar hali ham chorva boqishadi va sayohatchilarni quchoq ochib, issiq qimiz bilan kutib olishadi. Festivallarda ming yillar oldin burgut ovchilari, kigiz hunarmandlari va ot o'yinlari nishonlanadi. Har bir tashrif vaqt tegmagan, ammo an'analar bilan jonli dunyoga ruhiy sayohatga aylanadi."
+      },
+      "kyrgyzstan__map": {
+        "kyrgyzstan__map-title1": "Bishkek",
+        "kyrgyzstan__map-text1": "Bishkek Qirgʻizistonning poytaxti va eng yirik shahri boʻlib, Qirgʻiziston Ala-Too togʻlari yaqinida joylashgan. U keng ko‘chalar, sovet davridagi va zamonaviy arxitektura, jonli bozorlar, yashil bog‘lar bilan ajralib turadi va mamlakatning madaniy va siyosiy markazi bo‘lib xizmat qiladi.",
+        "kyrgyzstan__map-title2": "O'sh",
+        "kyrgyzstan__map-text2": "Qirg'iziston janubidagi O'sh viloyati o'zining boy tarixi, rang-barang madaniyati va jonli bozorlari bilan mashhur. Markazi qadimiy O‘sh shahri atrofida joylashgan bo‘lib, u tog‘lar, unumdor vodiylar, mehmondo‘stlik, qishloq xo‘jaligi va savdoga asoslangan iqtisodiyotni o‘z ichiga oladi.",
+        "kyrgyzstan__map-title3": "Issiqkoʻl",
+        "kyrgyzstan__map-text3": "Qirgʻiziston shimoli-sharqidagi Issiqkoʻl viloyati mashhur alp togʻli Issiqkoʻlni oʻrab oladi. O'zining ajoyib tabiati, iliq iqlimi, go'zal tog'lari, go'zal dam olish maskanlari va samimiy odamlari bilan mashhur bo'lib, u dam olish, sarguzasht va madaniy kashfiyotlarni izlayotgan tashrif buyuruvchilarni o'ziga jalb qiladi."
+      },
+      "kyrgyzstan__filter": {
+        "kyrgyzstan__filter-title1": "Bishkek",
+        "kyrgyzstan__filter-text1": "Bishkek Qirgʻizistonning poytaxti va eng yirik shahri boʻlib, Qirgʻiziston Ala-Too togʻlari yaqinida joylashgan. U keng ko‘chalar, sovet davridagi va zamonaviy arxitektura, jonli bozorlar, yashil bog‘lar bilan ajralib turadi va mamlakatning madaniy va siyosiy markazi bo‘lib xizmat qiladi.",
+        "kyrgyzstan__filter-title2": "O'sh",
+        "kyrgyzstan__filter-text2": "Qirg'iziston janubidagi O'sh viloyati o'zining boy tarixi, rang-barang madaniyati va jonli bozorlari bilan mashhur. Markazi qadimiy O‘sh shahri atrofida joylashgan bo‘lib, u tog‘lar, unumdor vodiylar, mehmondo‘stlik, qishloq xo‘jaligi va savdoga asoslangan iqtisodiyotni o‘z ichiga oladi.",
+        "kyrgyzstan__filter-title3": "Issiqkoʻl",
+        "kyrgyzstan__filter-text3": "Qirgʻiziston shimoli-sharqidagi Issiqkoʻl viloyati mashhur alp togʻli Issiqkoʻlni oʻrab oladi. O'zining ajoyib tabiati, iliq iqlimi, go'zal tog'lari, go'zal dam olish maskanlari va samimiy odamlari bilan mashhur bo'lib, u dam olish, sarguzasht va madaniy kashfiyotlarni izlayotgan tashrif buyuruvchilarni o'ziga jalb qiladi."
+      },
+      "kyrgyzstan__gallery": {
+        "kyrgyzstan__gallery-text": "Sayohat qidiruvchisi",
+        "kyrgyzstan__gallery-title": "Eksklyuziv fotosuratlar"
+      }
     },
     "turkmenistan": {
-      "about_country_title": "Turkmaniston: Ipak Yo‘lining Yashirin Gavhari",
-      "about_country_text1": "Turkmaniston — bu sokinlik va abadiy sirlar diyori. Bu yerda oltin qumlar qadimiy shaharlarni yashiradi, cho‘l bag‘ridan esa marmardan shaharlar qad ko‘taradi. Qadimda Parfiya va Xorazm kabi qudratli imperiyalar hukmronlik qilgan, Merv va Nisa xarobalari esa savdogarlar, olimlar va Ipak yo‘lini bosib o‘tgan sivilizatsiyalar haqidagi hikoyalarni pichirlab turadi.",
-      "about_country_text2": "Ammo tarix ortida tirik madaniyat yashaydi: g‘ururli, bardoshli va mehmondo‘st. An’anaviy qishloqlarda gilamlar hanuz qadimiy ramzlar bilan to‘qiladi, keng Qoraqum cho‘lida yurtdan yurtdagi hayot davom etadi. Mashhur Darvoza gaz krateri — “Do‘zax darvozasi” — tunni go‘yo yer ostidan chiqqan mash’al kabi yoritadi. Bu yurtda mehmondo‘stlik muqaddas — choy ulashiladi, hikoyalar aytiladi, mehmon esa aziz inson sifatida kutib olinadi. Turkmaniston — bu shunchaki manzil emas, balki jasoratli va qiziquvchanlar uchun ochiladigan kashfiyotdir.",
-      "hero_title": "Tarix Nafas Olayotgan Zamin va Abadiy An’analar Oazisi",
-      "tours_title": "Eksklyuziv Sayohat Dasturlarimizni Ko‘rib Chiqing",
-      "tours_text": "Bizning maxsus tuzilgan sayohat paketlarimiz orom, sarguzasht va madaniyatni uyg‘unlashtiradi. Siz uchun eng zo‘r sayohat bu yerda!"
+      "turkmenistan__hero": {
+        "hero__title": "Turkmaniston",
+        "hero__text": "Buyuk allomalar va madaniy chorrahalar mamlakati"
+      },
+      "turkmenistan__civilization": {
+        "civilization__title": "Mamlakat haqida",
+        "civilization__text": "Turkmaniston: Sivilizatsiyalar chorrahasi",
+        "civilization__bottom-title": "Turkmaniston Haqida",
+        "civilization__bottom-text": "Turkmaniston Markaziy Osiyoning urayotgan yuragi, har bir mozaikada tarix yashaydigan va har qadamda sizni mehmondo'stlik bilan kutib oladigan mamlakat. Turkmaniston Xivaning baland minoralaridan Samarqanddagi ulug‘vor Registongacha bo‘lgan madaniy sayohatni taklif etadi. Bu yerda bir paytlar stipendiya gullab-yashnagan, savdo-sotiq gullab-yashnagan va bugungi kunda bu zaminga rang berishda davom etayotgan an'analar tug'ilgan. Buyuk Ipak yo'li bu abadiy zamin bo'ylab qadamlaringizni boshqarsin.",
+        "civilization__bottom-second-text": "Turkmaniston Markaziy Osiyoning urayotgan yuragi, har bir mozaikada tarix yashaydigan va har qadamda sizni mehmondo'stlik bilan kutib oladigan mamlakat. Turkmaniston Xivaning baland minoralaridan Samarqanddagi ulug‘vor Registongacha bo‘lgan madaniy sayohatni taklif etadi. Bu yerda bir paytlar stipendiya gullab-yashnagan, savdo-sotiq gullab-yashnagan va bugungi kunda bu zaminga rang berishda davom etayotgan an'analar tug'ilgan. Buyuk Ipak yo'li bu abadiy zamin bo'ylab qadamlaringizni boshqarsin."
+      },
+      "turkmenistan__map": {
+        "turkmenistan__map-title1": "Ashxobod",
+        "turkmenistan__map-text1": "Ashxobod - Turkmanistonning poytaxti va eng yirik shahri, oq marmar binolari, yodgorliklari va keng ko'chalari bilan mashhur. Kopet Dag tog'lari yaqinida joylashgan bo'lib, u mamlakatning siyosiy, madaniy va iqtisodiy markazidir.",
+        "turkmenistan__map-title2": "Bolqon",
+        "turkmenistan__map-text2": "Bolqon viloyati Turkmanistonning gʻarbiy qismida, Kaspiy dengizi boʻyida joylashgan. U neft va gazga boy, cho'llar, Bolqon tog'lari va Turkmanboshi kabi muhim portlari bilan uni iqtisodiyot va savdo uchun muhim qiladi.",
+        "turkmenistan__map-title3": "Toshhovuz",
+        "turkmenistan__map-text3": "Turkmaniston shimolidagi Toshhovuz viloyati bepoyon cho'llari va zinapoyalari bilan mashhur. U kuchli paxta va g‘allachilikka asoslangan qishloq xo‘jaligiga ega va YuNESKOning Butunjahon merosi ro‘yxatiga kiritilgan Konye-Urganch kabi tarixiy joylarga ega.",
+        "turkmenistan__map-title4": "Lebap",
+        "turkmenistan__map-text4": "Lebap viloyati, Turkmanistonning sharqiy qismida, Afg'onistonga yaqin, Amudaryo bilan to'yingan. Bu yerda paxta va g‘alla uchun unumdor yerlar, boy tabiiy gaz zaxiralari, Turkmanobod kabi yirik shaharlar va madaniy obidalar mavjud.",
+        "turkmenistan__map-title5": "Meri",
+        "turkmenistan__map-text5": "Turkmaniston janubi-sharqidagi Maryam viloyati paxta, g'alla va energiya bilan mashhur bo'lgan asosiy qishloq xo'jaligi va sanoat hududidir. Meri shahri madaniy va iqtisodiy markaz bo'lib, mintaqada YUNESKO ob'ekti bo'lgan qadimiy Marv joylashgan."
+      },
+      "turkmenistan__filter": {
+        "turkmenistan__filter-title1": "Ashxobod",
+        "turkmenistan__filter-text1": "Ashxobod - Turkmanistonning poytaxti va eng yirik shahri, oq marmar binolari, yodgorliklari va keng ko'chalari bilan mashhur. Kopet Dag tog'lari yaqinida joylashgan bo'lib, u mamlakatning siyosiy, madaniy va iqtisodiy markazidir.",
+        "turkmenistan__filter-title2": "Bolqon",
+        "turkmenistan__filter-text2": "Bolqon viloyati Turkmanistonning gʻarbiy qismida, Kaspiy dengizi boʻyida joylashgan. U neft va gazga boy, cho'llar, Bolqon tog'lari va Turkmanboshi kabi muhim portlari bilan uni iqtisodiyot va savdo uchun muhim qiladi.",
+        "turkmenistan__filter-title3": "Toshhovuz",
+        "turkmenistan__filter-text3": "Turkmaniston shimolidagi Toshhovuz viloyati bepoyon cho'llari va zinapoyalari bilan mashhur. U kuchli paxta va g‘allachilikka asoslangan qishloq xo‘jaligiga ega va YuNESKOning Butunjahon merosi ro‘yxatiga kiritilgan Konye-Urganch kabi tarixiy joylarga ega.",
+        "turkmenistan__filter-title4": "Lebap",
+        "turkmenistan__filter-text4": "Lebap viloyati, Turkmanistonning sharqiy qismida, Afg'onistonga yaqin, Amudaryo bilan to'yingan. Bu yerda paxta va g‘alla uchun unumdor yerlar, boy tabiiy gaz zaxiralari, Turkmanobod kabi yirik shaharlar va madaniy obidalar mavjud.",
+        "turkmenistan__filter-title5": "Meri",
+        "turkmenistan__filter-text5": "Turkmaniston janubi-sharqidagi Maryam viloyati paxta, g'alla va energiya bilan mashhur bo'lgan asosiy qishloq xo'jaligi va sanoat hududidir. Meri shahri madaniy va iqtisodiy markaz bo'lib, mintaqada YUNESKO ob'ekti bo'lgan qadimiy Marv joylashgan."
+      },
+      "turkmenistan__gallery": {
+        "turkmenistan__gallery-text": "Sayohat qidiruvchisi",
+        "turkmenistan__gallery-title": "Eksklyuziv fotosuratlar "
+      }
     }
   },
   "trip_finder": {

@@ -2,34 +2,19 @@
 import React from "react";
 import HeroSecondSection from "@/components/UzbekistanPage/HeroSecondSection";
 import CivilizationSection from "@/components/UzbekistanPage/CivilizationSection";
+import UzbekistanSection from "@/components/UzbekistanPage/UzbekistanSection";
 import FilterSection from "@/components/UzbekistanPage/FilterSection";
 import GallerySection from "@/components/UzbekistanPage/GallerySection";
 import { DestinationTours } from "@/components/ui/DestinationTours";
-import { usePathname } from "next/navigation";
-import { useAboutCountries } from "@/store/data";
-import UzbekistanSection from "@/components/UzbekistanPage/UzbekistanSection";
-import { useTranslations } from "next-intl";
 export default function Uzbekistan() {
-  const AboutCountries = useAboutCountries();
-  const pathname = usePathname();
-  const country = pathname.split("/")[3];
-  const aboutCountry = AboutCountries.filter((item) => item.slug === country);
-  const t = useTranslations();
   return (
     <div>
-      <HeroSecondSection
-        image={"/images/uzbekistan__xl.jpg"}
-        title={t("header.destinations.uz")}
-        subtitle={t("destinations.uzbekistan.hero_title")}
-      />
-      <CivilizationSection props={aboutCountry[0]} />
+      <HeroSecondSection />
+      <CivilizationSection />
       <UzbekistanSection />
-      <GallerySection />
       <FilterSection />
-      <DestinationTours
-        title={t("destinations.uzbekistan.tours_title")}
-        text={t("destinations.uzbekistan.tours_text")}
-      />
+      <GallerySection />
+      <DestinationTours />
     </div>
   );
 }

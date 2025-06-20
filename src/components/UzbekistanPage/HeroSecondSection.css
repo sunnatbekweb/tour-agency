@@ -3,11 +3,18 @@
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  font-family: "ppneuemontreal";
+  width: 100%;
 }
-.heroSecond__container {
-  position: relative;
-  z-index: 1;
+.heroSecond::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../../../public/images/uzbekistan__xl.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform-origin: center;
+  animation: zoomInOut 10s ease-in-out infinite;
+  z-index: 0;
 }
 @keyframes zoomInOut {
   0% {
@@ -19,4 +26,16 @@
   100% {
     transform: scale(1);
   }
+}
+.heroSecond__container {
+  position: relative;
+  z-index: 1;
+}
+.heroSecond__title {
+  font-family: "ppneuemontreal";
+}
+.heroSecond__text {
+  font-family: "ppneuemontreal";
+}
+.heroSecond__button {
 }

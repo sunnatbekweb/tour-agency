@@ -1,28 +1,36 @@
 "use client";
 import { useState } from "react";
 import "./KyrgyzstanSection.css";
+import { useTranslations } from "next-intl";
 export default function KyrgyzstanSection() {
+  const t = useTranslations();
   const [hoveredRegion, setHoveredRegion] = useState(null);
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
   const countryData = [
     {
       id: "KG-BI",
-      title: "Bishkek",
-      text: `Bishkek is the capital and largest city of Kyrgyzstan. It is located near the Kyrgyz Ala-Too mountains and features wide streets, Soviet-era architecture, modern buildings, vibrant markets, green parks, cultural centers, friendly people, and serves as the political, economic, and educational heart of the country.`,
+      title: t(
+        "destinations.kyrgyzstan.kyrgyzstan__map.kyrgyzstan__map-title1"
+      ),
+      text: t("destinations.kyrgyzstan.kyrgyzstan__map.kyrgyzstan__map-text1"),
       images: "/images/bishkek.jpg",
       description: "city__images",
     },
     {
       id: "KG-OS",
-      title: "Osh",
-      text: `Osh Region lies in southern Kyrgyzstan and is known for its deep history, diverse culture, and lively bazaars. Home to the ancient city of Osh, the region features stunning mountains, fertile valleys, and warm hospitality. Agriculture and trade are central to its thriving local economy.`,
+      title: t(
+        "destinations.kyrgyzstan.kyrgyzstan__map.kyrgyzstan__map-title2"
+      ),
+      text: t("destinations.kyrgyzstan.kyrgyzstan__map.kyrgyzstan__map-text2"),
       images: "/images/osh.jpg",
       description: "city__images",
     },
     {
       id: "KG-YS",
-      title: "Issyk-Kul",
-      text: `Issyk-Kul Region lies in northeastern Kyrgyzstan, surrounding the famous Issyk-Kul Lake — one of the world’s largest alpine lakes. Renowned for its breathtaking nature, warm climate, scenic mountains, resorts, and welcoming people, the region is a beloved destination for relaxation, adventure, and cultural exploration.`,
+      title: t(
+        "destinations.kyrgyzstan.kyrgyzstan__map.kyrgyzstan__map-title3"
+      ),
+      text: t("destinations.kyrgyzstan.kyrgyzstan__map.kyrgyzstan__map-text3"),
       images: "/images/Issyk-Kul.jpg",
       description: "city__images",
     },

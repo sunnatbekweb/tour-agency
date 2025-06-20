@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import HeroSectoin from "@/components/HomePage/HeroSectoin";
 import ExploreSection from "@/components/HomePage/ExploreSection";
 import CarouselSection from "@/components/HomePage/CarouselSection";
-import { XlCountry } from "@/components/HomePage/XlCountry";
 import SmCountriesSection from "@/components/HomePage/SmCountriesSection";
 import UniqueSection from "@/components/HomePage/UniqueSection";
 import DesertSection from "@/components/HomePage/DesertSection";
@@ -38,7 +37,6 @@ export default function Home() {
         <HeroSectoin />
         <ExploreSection />
         <CarouselSection />
-        <XlCountry />
         <SmCountriesSection />
         <UniqueSection />
         <DesertSection />

@@ -1,34 +1,51 @@
 "use client";
 import { useState } from "react";
 import "./SecondFilterSection.css";
+import { useTranslations } from "next-intl";
 export default function SecondFilterSection() {
+  const t = useTranslations();
   const countryData = [
     {
       id: 1,
-      title: "Turkistan",
-      text: `Turkistan is a historic city and region in southern Kazakhstan, known as a cultural and spiritual center of Central Asia. It is famous for the Mausoleum of Khoja Ahmed Yasawi, a UNESCO World Heritage site. The area has a rich history linked to the Silk Road and is important for agriculture and trade.`,
+      title: t(
+        "destinations.kazakhstan.kazakhstan__filter.kazakhstan__filter-title1"
+      ),
+      text: t(
+        "destinations.kazakhstan.kazakhstan__filter.kazakhstan__filter-text1"
+      ),
       images: "/images/turkistan__city.jpg",
       description: "city__images",
     },
     {
       id: 2,
-      title: "Astana",
-      text: `Astana, now officially called Nur-Sultan, is the capital city of Kazakhstan. It is located in the northern part of the country and is known for its modern architecture and rapid development. As the political and cultural center, it hosts government institutions, businesses, and cultural events, symbolizing Kazakhstan’s progress and future.`,
+      title: t(
+        "destinations.kazakhstan.kazakhstan__filter.kazakhstan__filter-title2"
+      ),
+      text: t(
+        "destinations.kazakhstan.kazakhstan__filter.kazakhstan__filter-text2"
+      ),
       images: "/images/astana__city.jpg",
       description: "city__images",
     },
     {
       id: 3,
-      title: "Shymkent",
-      text: `Shymkent is a major city in southern Kazakhstan and one of the country’s largest urban centers. It is an important industrial, cultural, and economic hub with a diverse population. Shymkent is known for its warm climate, vibrant markets, and historical sites, blending traditional Kazakh culture with modern development.`,
+      title: t(
+        "destinations.kazakhstan.kazakhstan__filter.kazakhstan__filter-title3"
+      ),
+      text: t(
+        "destinations.kazakhstan.kazakhstan__filter.kazakhstan__filter-text3"
+      ),
       images: "/images/shymkent__city.jpg",
       description: "city__images",
     },
     {
       id: 4,
-      title: "Almaty",
-      text: `Almaty is the largest city in Kazakhstan, located in the southeastern part of the country near the foothills of the Trans-Ili Alatau mountains. It is a major cultural, financial, and educational center, famous for its beautiful parks, vibrant arts scene, and diverse cuisine. Almaty was the former capital and remains an important hub for business and tourism.`,
-      images: "/images/almaty__city.jpg",
+      title: t(
+        "destinations.kazakhstan.kazakhstan__filter.kazakhstan__filter-title4"
+      ),
+      text: t(
+        "destinations.kazakhstan.kazakhstan__filter.kazakhstan__filter-text4"
+      ),
       description: "city__images",
     },
   ];

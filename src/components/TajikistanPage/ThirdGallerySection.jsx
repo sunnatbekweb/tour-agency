@@ -165,10 +165,14 @@ export default function ThirdGallerySection() {
       <div className="container thirdGallery__container w-full flex flex-col justify-center items-start gap-10 px-6 md:px-9 md:gap-[56px] lg:gap-[51px]">
         <div className="thirdGallery__top flex flex-col justify-center items-start gap-2 md:gap-4">
           <p className="thirdGallery__top-text text-[16px] leading-[100%] text-[#A5958B] uppercase md:text-[24px]">
-            Trip founder
+            {t(
+              "destinations.tajikistan.tajikistan__gallery.tajikistan__gallery-text"
+            )}
           </p>
           <h2 className="thirdGallery__top-title w-full font-medium text-[22px] leading-[30px] text-[#323232] uppercase md:w-[620px] md:text-[36px] md:leading-[40px] lg:w-[642px] xl:text-[40px] xl:leading-[46px]">
-            {t("destinations.exclusive_text")}
+            {t(
+              "destinations.tajikistan.tajikistan__gallery.tajikistan__gallery-title"
+            )}
           </h2>
         </div>
         <div className="thirdGallery__bottom-box w-full">
