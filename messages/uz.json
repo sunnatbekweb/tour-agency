@@ -366,6 +366,10 @@
       }
     }
   },
+  "notFoundSection": {
+    "notFoundSection__title": "Voy! Sahifa topilmadi",
+    "notFoundSection__text": "Siz xaritadan adashib ketganga o‘xshaysiz — hatto bizning tuyamiz ham bu joyni topa olmaydi. Keling, orqaga qaytaylik va sayohatni davom ettiramiz!"
+  },
   "trip_finder": {
     "top_title": "Sayohat qidiruvi",
     "title": "Maxsus Sayohat Dasturlarimizni Kashiﬂang",

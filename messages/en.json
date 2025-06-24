@@ -366,6 +366,10 @@
       }
     }
   },
+  "notFoundSection": {
+    "notFoundSection__title": "Ooops! Page Not Found",
+    "notFoundSection__text": "Looks like you've wandered off the map — even our camel can't find this place. Let’s head back and continue the journey!"
+  },
   "trip_finder": {
     "top_title": "Trip Finder",
     "title": "Explore Our Exclusive Tour Packages",
