@@ -50,16 +50,13 @@
 .language-switcher {
   width: 86px;
 }
-
 .language-switcher:hover {
   width: 168px;
 }
-
 .language-switcher span,
 .language-switcher .gray_text {
   display: none;
 }
-
 .language-switcher:hover span,
 .language-switcher:hover .gray_text {
   display: block;

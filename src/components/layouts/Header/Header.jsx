@@ -8,9 +8,10 @@ import SecondContactButton from "@/components/ui/SecondContactButton";
 import { isDynamicRoute } from "@/lib/utils/routes";
 import "./Header.css";
 export const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [langDropdown, setLangDropdown] = useState(false);
+  const [showHeader, setShowHeader] = useState(true);
+  const [scrollY, setScrollY] = useState(0);
   const pathname = usePathname();
   const locale = useLocale();
   const cleanPath = pathname.replace(`/${locale}`, "");
@@ -35,7 +36,18 @@ export const Header = () => {
     { icon: "/icons/blog__icon.svg", path: "/blog", label: t("nav.blog") },
   ];
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 0);
+    let lastScrollY = window.scrollY;
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      const scrollDiff = currentScrollY - lastScrollY;
+      setScrollY(currentScrollY);
+      if (currentScrollY > 10 && scrollDiff > 0) {
+        setShowHeader(false);
+      } else if (scrollDiff < -1) {
+        setShowHeader(true);
+      }
+      lastScrollY = currentScrollY;
+    };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -43,10 +55,14 @@ export const Header = () => {
   return (
     <div>
       <header
-        className={`header fixed top-0 w-full z-[1111] ${
-          isScrolled
-            ? `backdrop-blur-2xl shadow-2xl duration-500 ${isDimmed ? "bg-white" : "bg-black/40"}`
-            : "duration-500"
+        className={`header w-full z-[1111] transition-all duration-500 ease-in-out ${
+          showHeader
+            ? `fixed top-0 opacity-100 translate-y-0 pointer-events-auto ${
+                scrollY === 0
+                  ? "backdrop-blur-none shadow-none"
+                  : `backdrop-blur-2xl shadow-2xl ${isDimmed ? "bg-white" : "bg-black/40"}`
+              }`
+            : "fixed top-0 opacity-0 -translate-y-full pointer-events-none backdrop-blur-none shadow-none"
         }`}
       >
         <div className="container header__container flex justify-between items-center px-6 py-5 md:px-9 md:py-[30px] xl:py-[10px]">
@@ -154,7 +170,6 @@ export const Header = () => {
             <div className="hidden 2xl:block">
               <SecondContactButton>{t("contact")}</SecondContactButton>
             </div>
-
             <div
               className={`language-switcher hidden lg:flex items-center border cursor-pointer duration-300 overflow-hidden border-[#FFFFFF33] rounded-[24px] px-[11px] h-[48px] ${isDimmed && "bg-[#CBBCB3]"}`}
             >
@@ -177,6 +192,7 @@ export const Header = () => {
                 ))}
               </div>
             </div>
+
             <button
               onClick={() => setLangDropdown(!langDropdown)}
               className={`language-switcher-sm relative lg:hidden flex flex-col gap-y-[10px] items-center px-3 py-1.5 border-[1px] md:py-[10px] border-[#B9B9B9] rounded-[12px] ${langDropdown && "rounded-b-none"} ${isDimmed ? "bg-[#CBBCB3]" : "bg-[#ffffff33]"}`}
@@ -192,8 +208,8 @@ export const Header = () => {
               <div
                 className={`w-[70.56px] md:w-[88.56px] absolute top-full px-3 pb-1.5 rounded-b-xl border-[1px] border-[#B9B9B9] overflow-hidden duration-500 ${isDimmed ? "bg-[#CBBCB3]" : "bg-[#ffffff33]"} ${
                   langDropdown
-                    ? `opacity-100 pt-[8px] visible translate-y-0 duration-500  ${isDimmed && "bg-[#CBBCB3]"}`
-                    : "h-0 opacity-0 collapse -translate-y-5 duration-[600ms]"
+                    ? `opacity-100 pt-[8px] visible translate-y-0`
+                    : "h-0 opacity-0 collapse -translate-y-5"
                 }`}
               >
                 <ul className="flex flex-col gap-y-2">
