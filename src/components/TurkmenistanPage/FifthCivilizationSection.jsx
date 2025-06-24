@@ -1,3 +1,4 @@
+"use client";
 import "./FifthCivilizationSection.css";
 import { useTranslations } from "next-intl";
 export default function FifthCivilizationSection() {

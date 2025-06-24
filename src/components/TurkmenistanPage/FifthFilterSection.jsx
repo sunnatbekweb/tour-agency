@@ -1,7 +1,9 @@
 "use client";
 import { useState } from "react";
 import "./FifthFilterSection.css";
+import { useTranslations } from "next-intl";
 export default function FifthFilterSection() {
+  const t = useTranslations();
   const countryData = [
     {
       id: 1,
