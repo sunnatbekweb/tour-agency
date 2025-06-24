@@ -16,13 +16,13 @@
   max-width: 450px !important;
 }
 .carousel__box {
-  transition: 0.8s ease-in-out;
+  transition: 0.4s ease-in-out;
   width: 100% !important;
   max-width: 450px !important;
 }
 .swiper-slide-active .carousel__box {
   box-shadow: rgba(165, 164, 163, 0.829) 0px 3px 8px;
-  transition: 0.8s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 .carousel__top-box {
   width: 100% !important;
@@ -31,12 +31,12 @@
 .carousel__image {
   width: 100% !important;
   height: 390px !important;
-  transition: 0.8s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 .swiper-slide-active .carousel__image {
   width: 100% !important;
   height: 250px !important;
-  transition: 0.8s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 .carousel__location-text {
   font-family: "ppneuemontreal";
@@ -46,7 +46,7 @@
   transform: translateY(140px);
 }
 .swiper-slide-active .carousel__bottom-box {
-  transition: 0.8s ease-in-out;
+  transition: 0.4s ease-in-out;
   transform: translateY(0px);
 }
 .carousel__location-title {
@@ -63,7 +63,7 @@
 .swiper-slide-active .carousel__lists-main-box {
   transform: translateY(0px);
   opacity: 1;
-  transition: 0.8s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 .carousel__texts {
   font-family: "ppneuemontreal";
@@ -75,13 +75,13 @@
   }
   .carousel__box {
     filter: grayscale(1);
-    transition: 0.8s ease-in-out;
+    transition: 0.4s ease-in-out;
     width: 100% !important;
     max-width: 327px !important;
   }
   .swiper-slide-active .carousel__box {
     box-shadow: rgba(165, 164, 163, 0.829) 0px 3px 8px;
-    transition: 0.8s ease-in-out;
+    transition: 0.4s ease-in-out;
     filter: grayscale(0);
   }
   .carousel__top-box {
@@ -91,13 +91,13 @@
   .carousel__image {
     filter: grayscale(1);
     width: 100% !important;
-    transition: 0.8s ease-in-out;
+    transition: 0.4s ease-in-out;
     height: 289.6px !important;
   }
   .swiper-slide-active .carousel__image {
     filter: grayscale(0);
     width: 100% !important;
-    transition: 0.8s ease-in-out;
+    transition: 0.4s ease-in-out;
     height: 219.6px !important;
   }
   .carousel__location-text {
@@ -108,7 +108,7 @@
     transform: translateY(90px);
   }
   .swiper-slide-active .carousel__bottom-box {
-    transition: 0.8s ease-in-out;
+    transition: 0.4s ease-in-out;
     transform: translateY(0px);
   }
   .carousel__location-title {
@@ -125,7 +125,7 @@
   .swiper-slide-active .carousel__lists-main-box {
     transform: translateY(0px);
     opacity: 1;
-    transition: 0.8s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
   .carousel__texts {
     font-family: "ppneuemontreal";
