@@ -41,7 +41,7 @@ export const Header = () => {
       const currentScrollY = window.scrollY;
       const scrollDiff = currentScrollY - lastScrollY;
       setScrollY(currentScrollY);
-      if (currentScrollY > 10 && scrollDiff > 0) {
+      if (currentScrollY > 5 && scrollDiff > 0) {
         setShowHeader(false);
       } else if (scrollDiff < -1) {
         setShowHeader(true);
