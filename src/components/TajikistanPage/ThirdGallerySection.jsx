@@ -101,7 +101,7 @@ export default function ThirdGallerySection() {
         {
           image: "/images/tajikistan__first.jpg",
           description: "images",
-          height: 368,
+          height: 328,
         },
         {
           image: "/images/tajikistan__second.jpg",
@@ -111,7 +111,7 @@ export default function ThirdGallerySection() {
         {
           image: "/images/tajikistan__third.jpg",
           description: "images",
-          height: 368,
+          height: 328,
         },
         {
           image: "/images/tajikistan__fourth.jpg",
@@ -121,12 +121,12 @@ export default function ThirdGallerySection() {
         {
           image: "/images/tajikistan__seventh.jpg",
           description: "images",
-          height: 368,
+          height: 328,
         },
         {
           image: "/images/tajikistan__sixth.jpg",
           description: "images",
-          height: 368,
+          height: 328,
         },
         {
           image: "/images/tajikistan__eight.jpg",

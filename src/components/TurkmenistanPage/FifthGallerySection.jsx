@@ -101,7 +101,7 @@ export default function FifthGallerySection() {
         {
           image: "/images/turkmenistan__first.jpg",
           description: "images",
-          height: 368,
+          height: 328,
         },
         {
           image: "/images/turkmenistan__second.jpg",
@@ -111,7 +111,7 @@ export default function FifthGallerySection() {
         {
           image: "/images/turkmenistan__third.jpg",
           description: "images",
-          height: 368,
+          height: 328,
         },
         {
           image: "/images/turkmenistan__fourth.jpg",
@@ -121,12 +121,12 @@ export default function FifthGallerySection() {
         {
           image: "/images/turkmenistan__fifth.jpg",
           description: "images",
-          height: 368,
+          height: 328,
         },
         {
           image: "/images/turkmenistan__sixth.jpg",
           description: "images",
-          height: 368,
+          height: 328,
         },
         {
           image: "/images/turkmenistan__seventh.jpg",

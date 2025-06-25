@@ -101,7 +101,7 @@ export default function FourthGallerySection() {
         {
           image: "/images/kyrgyzstan__first.jpg",
           description: "images",
-          height: 368,
+          height: 328,
         },
         {
           image: "/images/kyrgyzstan__second.jpg",
@@ -111,7 +111,7 @@ export default function FourthGallerySection() {
         {
           image: "/images/kyrgyzstan__third.jpg",
           description: "images",
-          height: 368,
+          height: 328,
         },
         {
           image: "/images/kyrgyzstan__fourth.jpg",
@@ -121,12 +121,12 @@ export default function FourthGallerySection() {
         {
           image: "/images/kyrgyzstan__fifth.jpg",
           description: "images",
-          height: 368,
+          height: 328,
         },
         {
           image: "/images/kyrgyzstan__sixth.jpg",
           description: "images",
-          height: 368,
+          height: 328,
         },
         {
           image: "/images/kyrgyzstan__seventh.jpg",

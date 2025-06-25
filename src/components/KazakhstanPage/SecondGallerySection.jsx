@@ -101,7 +101,7 @@ export default function SecondGallerySection() {
         {
           image: "/images/kazakhstan__first.jpg",
           description: "images",
-          height: 368,
+          height: 328,
         },
         {
           image: "/images/kazakhstan__second.jpg",
@@ -111,7 +111,7 @@ export default function SecondGallerySection() {
         {
           image: "/images/kazakhstan__third.jpg",
           description: "images",
-          height: 368,
+          height: 328,
         },
         {
           image: "/images/kazakhstan__fourth.jpg",
@@ -121,12 +121,12 @@ export default function SecondGallerySection() {
         {
           image: "/images/kazakhstan__fifth.jpg",
           description: "images",
-          height: 368,
+          height: 328,
         },
         {
           image: "/images/kazakhstan__sixth.jpg",
           description: "images",
-          height: 368,
+          height: 328,
         },
         {
           image: "/images/kazakhstan__seventh.jpg",

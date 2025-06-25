@@ -101,7 +101,7 @@ export default function GallerySection() {
         {
           image: "/images/uzbekistan__first.jpg",
           description: "images",
-          height: 368,
+          height: 328,
         },
         {
           image: "/images/uzbekistan__fourth.jpg",
@@ -111,7 +111,7 @@ export default function GallerySection() {
         {
           image: "/images/uzbekistan__third.jpg",
           description: "images",
-          height: 368,
+          height: 328,
         },
         {
           image: "/images/uzbekistan__fifth.jpg",
@@ -121,12 +121,12 @@ export default function GallerySection() {
         {
           image: "/images/uzbekistan__second.jpg ",
           description: "images",
-          height: 368,
+          height: 328,
         },
         {
           image: "/images/uzbekistan__sixth.jpg",
           description: "images",
-          height: 368,
+          height: 328,
         },
         {
           image: "/images/uzbekistan__seventh.jpg",
