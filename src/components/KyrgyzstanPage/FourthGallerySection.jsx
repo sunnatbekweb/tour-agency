@@ -1,11 +1,11 @@
 "use client";
-import "./FourthGallerySection.css";
 import Box from "@mui/material/Box";
 import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import Masonry from "@mui/lab/Masonry";
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
+import "./FourthGallerySection.css";
 export default function FourthGallerySection() {
   const t = useTranslations();
   const [images, setImages] = useState([]);
