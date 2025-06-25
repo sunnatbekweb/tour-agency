@@ -1,5 +1,5 @@
-import "./SecondCivilizationSection.css";
 import { useTranslations } from "use-intl";
+import "./SecondCivilizationSection.css";
 export default function SecondCivilizationSection() {
   const t = useTranslations();
   return (
