@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
-import Image from 'next/image';
-import { useLocale } from 'next-intl';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
+import Image from "next/image";
+import { useLocale } from "next-intl";
 
 export const TripPlacesSlide = ({ props }) => {
   const locale = useLocale();
@@ -22,11 +22,11 @@ export const TripPlacesSlide = ({ props }) => {
       </div>
       <Swiper
         navigation={{
-          prevEl: '.slide_button-prev',
-          nextEl: '.slide_button-next',
+          prevEl: ".slide_button-prev",
+          nextEl: ".slide_button-next",
         }}
         modules={[Navigation]}
-        slidesPerView={'auto'}
+        slidesPerView={"auto"}
         spaceBetween={16}
         breakpoints={{
           1024: {
@@ -39,6 +39,7 @@ export const TripPlacesSlide = ({ props }) => {
       >
         {props?.map((item, index) => (
           <SwiperSlide key={index}>
+            <div className="w-full h-full bg-black/60 absolute top-0 left-0"></div>
             <Image
               src={item?.image}
               width={520}
@@ -46,7 +47,7 @@ export const TripPlacesSlide = ({ props }) => {
               className="w-[270px] h-[280px] lg:w-[520px] lg:h-[540px]"
               alt="Slide image"
             />
-            <h3 className="text-2xl lg:text-5xl text-white absolute left-4 bottom-6 lg:left-10 lg:bottom-10 w-3/4">
+            <h3 className="text-2xl lg:text-5xl font-medium text-white absolute left-4 bottom-6 lg:left-10 lg:bottom-10 w-3/4">
               {item?.[`text_${locale}`]}
             </h3>
           </SwiperSlide>

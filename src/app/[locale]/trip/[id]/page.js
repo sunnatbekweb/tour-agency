@@ -84,7 +84,7 @@ export default function TripDetail() {
                   </strong>
                 </div>
               </div>
-              <ul className="w-full flex flex-col gap-y-3 my-20">
+              <ul className="w-full flex flex-col gap-y-3">
                 {[...Array(3)].map((_, index) => (
                   <li key={index} className="flex items-center gap-3">
                     <Image
@@ -170,7 +170,7 @@ export default function TripDetail() {
               width={1700}
               height={500}
               alt="Map"
-              className="rounded-2xl overflow-hidden"
+              className="rounded-2xl max-h-[620px] object-cover object-center overflow-hidden"
             />
           )}
         </div>

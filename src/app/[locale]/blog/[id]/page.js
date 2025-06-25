@@ -44,7 +44,7 @@ export default function BlogDetail() {
             src={post?.image}
             width={1920}
             height={820}
-            className="w-full rounded-2xl"
+            className="w-full max-h-[820px] object-cover object-center rounded-2xl"
             alt="Blog image"
           />
         )}
