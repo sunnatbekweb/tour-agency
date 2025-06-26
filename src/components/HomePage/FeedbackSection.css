@@ -1,330 +1,153 @@
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  display: flex !important;
-  backdrop-filter: blur(5px) !important;
+/* ====== Общие стили ====== */
+.feedback .container {
+  position: relative;
 }
+.feedback__swiper {
+  position: static;
+}
+.feedback__swiper .swiper-button-prev,
+.feedback__swiper .swiper-button-next {
+  width: 54px;
+  height: 54px;
+  color: #a5958b;
+  background: #a5958b33;
+  border: 2px solid #a5958b;
+  border-radius: 50%;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.feedback__swiper .swiper-button-prev::after,
+.feedback__swiper .swiper-button-next::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-left: 3px solid #a5958b;
+  border-bottom: 3px solid #a5958b;
+  pointer-events: none;
+}
+
+.feedback__swiper .swiper-button-prev {
+  left: -50px;
+  top: 55%;
+}
+.feedback__swiper .swiper-button-next {
+  right: -50px;
+  top: 55%;
+}
+.feedback__swiper .swiper-button-prev::after {
+  transform: rotate(45deg);
+}
+
+.feedback__swiper .swiper-button-next::after {
+  transform: rotate(-135deg);
+}
+
+.feedback__swiper .swiper-button-prev::before,
+.feedback__swiper .swiper-button-next::before {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #a5958b;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.feedback__swiper .swiper-button-prev::before {
+  left: 45px;
+}
+
+.feedback__swiper .swiper-button-prev:hover::before {
+  left: 15px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.feedback__swiper .swiper-button-next::before {
+  right: 45px;
+}
+
+.feedback__swiper .swiper-button-next:hover::before {
+  right: 15px;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ====== Стили текста и шрифтов ====== */
+.feedback__top-text,
+.feedback__top-title,
+.feedback__swiper-comment,
+.feedback__swiper-name-texts,
+.feedback__swiper-job-title {
+  font-family: "ppneuemontreal";
+}
+
+/* ====== Пагинация (по умолчанию) ====== */
 .swiper-pagination {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 82px;
   position: relative !important;
+  margin-top: 82px;
 }
+
 .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #d9d9d9;
+  background-color: #a5958b;
   opacity: 1;
   border-radius: 12px;
   transition: all 0.5s ease;
   margin: 0 12px !important;
 }
+
 .swiper-pagination-bullet-active {
   width: 32px;
   height: 12px;
   background-color: #b4a297;
   border-radius: 12px;
 }
-.feedback__top-text {
-  font-family: "ppneuemontreal";
-}
-.feedback__top-title {
-  font-family: "ppneuemontreal";
-}
-.feedback__swiper-left-box {
-  margin: 0 0 !important;
-}
-.feedback__swiper-comment {
-  font-family: "ppneuemontreal";
-}
-.feedback__swiper-name-texts {
-  font-family: "ppneuemontreal";
-}
-.feedback__swiper-job-title {
-  font-family: "ppneuemontreal";
-}
-@media (max-width: 1366px) {
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
-    display: flex !important;
-    backdrop-filter: blur(5px) !important;
-  }
-  .swiper-pagination {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 82px;
-    position: relative !important;
-  }
-  .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background-color: #d9d9d9;
-    opacity: 1;
-    border-radius: 12px;
-    transition: all 0.5s ease;
-    margin: 0 12px !important;
-  }
-  .swiper-pagination-bullet-active {
-    width: 32px;
-    height: 12px;
-    background-color: #b4a297;
-    border-radius: 12px;
-  }
-  .feedback__top-text {
-    font-family: "ppneuemontreal";
-  }
-  .feedback__top-title {
-    font-family: "ppneuemontreal";
-  }
-  .feedback__swiper-left-box {
-    margin: 0 0 !important;
-  }
-  .feedback__swiper-comment {
-    font-family: "ppneuemontreal";
-  }
-  .feedback__swiper-name-texts {
-    font-family: "ppneuemontreal";
-  }
-  .feedback__swiper-job-title {
-    font-family: "ppneuemontreal";
-  }
-}
+
+/* ====== Медиа-запросы ====== */
+
 @media (max-width: 1024px) {
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
+  .swiper-button-next,
+  .swiper-button-prev {
     display: none !important;
   }
-  .swiper-pagination {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 82px;
-    position: relative !important;
-  }
-  .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background-color: #d9d9d9;
-    opacity: 1;
-    border-radius: 12px;
-    transition: all 0.5s ease;
-    margin: 0 12px !important;
-  }
-  .swiper-pagination-bullet-active {
-    width: 32px;
-    height: 12px;
-    background-color: #b4a297;
-    border-radius: 12px;
-  }
-  .feedback__top-text {
-    font-family: "ppneuemontreal";
-  }
-  .feedback__top-title {
-    font-family: "ppneuemontreal";
-  }
-  .feedback__swiper-left-box {
-    margin: 0 auto !important;
-  }
-  .feedback__swiper-comment {
-    font-family: "ppneuemontreal";
-  }
-  .feedback__swiper-name-texts {
-    font-family: "ppneuemontreal";
-  }
-  .feedback__swiper-job-title {
-    font-family: "ppneuemontreal";
-  }
 }
-@media (max-width: 820px) {
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
-    display: none !important;
-  }
-  .swiper-pagination {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 82px;
-    position: relative !important;
-  }
-  .swiper-pagination-bullet {
-    width: 8px;
-    height: 8px;
-    background-color: #d9d9d9;
-    opacity: 1;
-    border-radius: 999px;
-    transition: all 0.5s ease;
-    margin: 0 7px !important;
-  }
-  .swiper-pagination-bullet-active {
-    width: 32px;
-    height: 8px;
-    background-color: #b4a297;
-    border-radius: 999px;
-  }
-  .feedback__top-text {
-    font-family: "ppneuemontreal";
-  }
-  .feedback__top-title {
-    font-family: "ppneuemontreal";
-  }
-  .feedback__swiper-left-box {
-    margin: 0 auto !important;
-    width: 90.5% !important;
-  }
-  .feedback__swiper-comment {
-    font-family: "ppneuemontreal";
-  }
-  .feedback__swiper-name-texts {
-    font-family: "ppneuemontreal";
-  }
-  .feedback__swiper-job-title {
-    font-family: "ppneuemontreal";
-  }
-}
+
 @media (max-width: 768px) {
   .swiper-button-next::after,
   .swiper-button-prev::after {
     display: none !important;
   }
+
   .swiper-pagination {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 82px;
-    position: relative !important;
-  }
-  .swiper-pagination-bullet {
-    width: 8px;
-    height: 8px;
-    background-color: #d9d9d9;
-    opacity: 1;
-    border-radius: 999px;
-    transition: all 0.5s ease;
-    margin: 0 7px !important;
-  }
-  .swiper-pagination-bullet-active {
-    width: 32px;
-    height: 8px;
-    background-color: #b4a297;
-    border-radius: 999px;
-  }
-  .feedback__top-text {
-    font-family: "ppneuemontreal";
-  }
-  .feedback__top-title {
-    font-family: "ppneuemontreal";
-  }
-  .feedback__swiper-left-box {
-    margin: 0 auto !important;
-  }
-  .feedback__swiper-comment {
-    font-family: "ppneuemontreal";
-  }
-  .feedback__swiper-name-texts {
-    font-family: "ppneuemontreal";
-  }
-  .feedback__swiper-job-title {
-    font-family: "ppneuemontreal";
-  }
-}
-@media (max-width: 767px) {
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
-    display: none !important;
-  }
-  .swiper-pagination {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     margin-top: 33px;
-    position: relative !important;
   }
+
   .swiper-pagination-bullet {
     width: 8px;
     height: 8px;
-    background-color: #d9d9d9;
-    opacity: 1;
     border-radius: 999px;
-    transition: all 0.5s ease;
     margin: 0 7px !important;
   }
+
   .swiper-pagination-bullet-active {
     width: 32px;
     height: 8px;
-    background-color: #b4a297;
     border-radius: 999px;
   }
-  .feedback__top-text {
-    font-family: "ppneuemontreal";
-  }
-  .feedback__top-title {
-    font-family: "ppneuemontreal";
-  }
+
   .feedback__swiper-left-box {
     margin: 0 auto !important;
-  }
-  .feedback__swiper-comment {
-    font-family: "ppneuemontreal";
-  }
-  .feedback__swiper-name-texts {
-    font-family: "ppneuemontreal";
-  }
-  .feedback__swiper-job-title {
-    font-family: "ppneuemontreal";
-  }
-}
-@media (max-width: 414px) {
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
-    display: none !important;
-  }
-  .swiper-pagination {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 33px;
-    position: relative !important;
-  }
-  .swiper-pagination-bullet {
-    width: 8px;
-    height: 8px;
-    background-color: #d9d9d9;
-    opacity: 1;
-    border-radius: 999px;
-    transition: all 0.5s ease;
-    margin: 0 7px !important;
-  }
-  .swiper-pagination-bullet-active {
-    width: 32px;
-    height: 8px;
-    background-color: #b4a297;
-    border-radius: 999px;
-  }
-  .feedback__top-text {
-    font-family: "ppneuemontreal";
-  }
-  .feedback__top-title {
-    font-family: "ppneuemontreal";
-  }
-  .feedback__swiper-left-box {
-    margin: 0 auto !important;
-  }
-  .feedback__swiper-comment {
-    font-family: "ppneuemontreal";
-  }
-  .feedback__swiper-name-texts {
-    font-family: "ppneuemontreal";
-  }
-  .feedback__swiper-job-title {
-    font-family: "ppneuemontreal";
+    width: 90.5% !important;
   }
 }

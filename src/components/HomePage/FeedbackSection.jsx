@@ -50,7 +50,7 @@ export default function FeedbackSection() {
   ];
   return (
     <section className="feedback mt-[120px] md:mt-[100px] overflow-x-hidden">
-      <div className="container feedback__container flex flex-col justify-center items-start gap-14 ">
+      <div className="container px-6 feedback__container flex flex-col justify-center items-start gap-14 ">
         <div className="feedback__top-box flex flex-col items-start gap-2 pl-6 md:pl-9 md:gap-4">
           <p className="feedback__top-text font-medium text-[#A5958B] text-[16px] leading-[100%] uppercase md:text-[24px]">
             {t("home_feedback.home_feedback-text")}
