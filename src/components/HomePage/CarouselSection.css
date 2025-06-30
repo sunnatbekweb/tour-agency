@@ -1,15 +1,19 @@
-.swiper-button-next {
-  display: none !important;
+.swiper-button-left {
+  width: 96px;
+  height: 96px;
+  background-image: url("../../../public/icons/chevron.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
 }
-.swiper-button-prev {
-  display: none !important;
-}
-.swiper-button-next::after {
-  display: none !important;
-}
-
-.swiper-button-prev::after {
-  display: none !important;
+.swiper-button-right {
+  width: 96px;
+  height: 96px;
+  background-image: url("../../../public/icons/chevron.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(180deg);
+  cursor: pointer;
 }
 .carousel .swiper-slide {
   width: 100% !important;
@@ -67,6 +71,27 @@
 }
 .carousel__texts {
   font-family: "ppneuemontreal";
+}
+@media (max-width: 1024px) {
+  .swiper-button-left {
+    display: none;
+    width: 96px;
+    height: 96px;
+    background-image: url("../../../public/icons/chevron.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+  }
+  .swiper-button-right {
+    display: none;
+    width: 96px;
+    height: 96px;
+    background-image: url("../../../public/icons/chevron.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(180deg);
+    cursor: pointer;
+  }
 }
 @media (max-width: 767px) {
   .carousel .swiper-slide {

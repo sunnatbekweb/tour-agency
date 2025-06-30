@@ -132,7 +132,7 @@ export default function CarouselSection() {
     },
   ];
   return (
-    <section className="carousel w-full mt-8 md:mt-[88px] lg:mt-[232px]">
+    <section className="carousel w-full mt-8 md:mt-[88px] xl:mt-[102px]">
       <div className="container carousel__container relative w-full flex flex-row justify-between items-center px-6 md:px-9">
         <div className="swiper-button-left"></div>
         <div className="swiper-button-right"></div>
@@ -156,7 +156,7 @@ export default function CarouselSection() {
       >
         {data.map((item, index) => (
           <SwiperSlide
-            className="carousel__swiperSlide flex flex-row justify-center items-center md:py-[20px]"
+            className="carousel__swiperSlide flex flex-row justify-center items-center py-2 md:py-[20px] lg:py-2"
             key={index}
           >
             <div className="carousel__box flex flex-col justify-center items-start pt-[11.5px] pb-[21.94px] px-[11.53px] border-2 border-[#EBEBEB] bg-white rounded-[16px] md:px-[23px] md:pt-[22px] md:pb-[22px] md:rounded-[40px]">

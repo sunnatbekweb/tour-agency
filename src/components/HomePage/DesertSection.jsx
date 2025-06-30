@@ -11,7 +11,7 @@ export default function DesertSection() {
             {t("home_desert.home_desert-text")}
           </p>
           <div className="desert__bottom-box w-full flex flex-col justify-center items-start gap-6 md:gap-[36px] xl:flex xl:flex-row xl:justify-between xl:items-start xl:gap-0">
-            <h2 className="desert__bottom-title w-full font-medium text-xl text-[#323232] uppercase md:w-[620px] md:text-2xl lg:w-[620px] xl:text-4xl">
+            <h2 className="desert__bottom-title w-full font-medium text-[22px] leading-[30px] text-[#323232] uppercase md:w-[620px] md:text-[36px] md:leading-[40px] lg:w-[642px] xl:text-[40px] xl:leading-[46px]">
               {t("home_desert.home_desert-title")}
             </h2>
             <p className="desert__bottom-text w-full font-medium text-sm text-[#323232] md:text-xl lg:w-[500px]">
