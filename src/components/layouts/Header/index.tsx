@@ -13,7 +13,7 @@ export const Header = () => {
 						<ul className={styles.nav__list}>
 							<li className={`${styles[`nav__list--item`]}`}>
 								<Link
-									href={"#"}
+									href={"/"}
 									className={`${styles[`nav__list--item-link`]} ${styles.active}`}
 								>
 									<House />
@@ -26,17 +26,17 @@ export const Header = () => {
 								</Link>
 							</li>
 							<li className={styles[`nav__list--item`]}>
-								<Link href={"#"} className={styles[`nav__list--item-link`]}>
+								<Link href={"/trip-finder"} className={styles[`nav__list--item-link`]}>
 									Trip finder
 								</Link>
 							</li>
 							<li className={styles[`nav__list--item`]}>
-								<Link href={"#"} className={styles[`nav__list--item-link`]}>
+								<Link href={"/about"} className={styles[`nav__list--item-link`]}>
 									About us
 								</Link>
 							</li>
 							<li className={styles[`nav__list--item`]}>
-								<Link href={"#"} className={styles[`nav__list--item-link`]}>
+								<Link href={"/blog"} className={styles[`nav__list--item-link`]}>
 									Blog
 								</Link>
 							</li>

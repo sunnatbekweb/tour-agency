@@ -1,8 +1,30 @@
 @import "tailwindcss";
 
+@font-face {
+	font-family: "PP Neue Montreal";
+	src: url(/fonts/ppneuemontreal-medium.otf);
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "PP Neue Montreal";
+	src: url(/fonts/ppneuemontreal-bold.otf);
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "PP Neue Montreal";
+	src: url(/fonts/ppneuemontreal-semibolditalic.otf);
+	font-weight: 600;
+	font-style: italic;
+}
+
 :root {
 	--background: #ffffff;
 	--foreground: #171717;
+	--font-PP_Neue_Montreal: "PP Neue Montreal";
 }
 
 @theme inline {
@@ -10,6 +32,7 @@
 	--color-foreground: var(--foreground);
 	--font-sans: var(--font-geist-sans);
 	--font-mono: var(--font-geist-mono);
+	--font-family: var(--PP_Neue_Montreal);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,10 +45,73 @@
 body {
 	background: var(--background);
 	color: var(--foreground);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: var(--font-PP_Neue_Montreal), sans-serif;
 }
 
 .container {
 	margin: 0 auto;
 	padding: 0 10px;
+}
+
+.hero {
+	background-image: url(/images/hero_bg.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	font-weight: 500;
+	position: relative;
+}
+
+.destination__list {
+	width: 300px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.destination__list--item {
+	border-top: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.destination__list--item-link {
+	height: 120px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	place-items: center;
+	justify-content: center;
+}
+
+.destination__list--item-link .icon {
+	position: relative;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.destination__list--item-link .icon .lucide.lucide-move-right {
+	position: absolute;
+	top: 50%;
+	left: -100%;
+	transform: translateY(-50%);
+	transition: all 0.3s ease;
+}
+
+.destination__list--item-link:hover {
+	background: rgba(255, 255, 255, 0.1);
+
+	& .icon {
+		opacity: 1;
+
+		& .lucide.lucide-move-right {
+			left: -30%;
+		}
+	}
+}
+
+.destination__list--item:last-child {
+	border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.destination__list--item span {
+	font-size: 1.5rem;
+	grid-column: 2 span / 2 span;
 }
