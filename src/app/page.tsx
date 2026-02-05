@@ -5,14 +5,14 @@ export default function Home() {
 	return (
 		<section className="h-screen hero">
 			<div className="container h-full">
-				<div className="w-[65%] h-full mx-auto flex flex-col my-auto items-center justify-center">
-					<span className="text-4xl">
+				<div className="w-full lg:w-[65%] h-full mx-auto flex flex-col my-auto items-center justify-center">
+					<span className="text-base md:text-2xl lg:text-4xl text-center">
 						From Ancient Steppes to Timeless Cities
 					</span>
-					<h1 className="text-8xl text-center mt-4 mb-10">
+					<h1 className="text-4xl md:text-6xl lg:text-8xl text-center my-6 md:mt-4 md:mb-10">
 						Welcome to the Heart of the Silk Road
 					</h1>
-					<span className="text-4xl">
+					<span className="text-base md:text-2xl lg:text-4xl text-center">
 						Your Central Asian Adventure Begins Here
 					</span>
 				</div>

@@ -1,12 +1,16 @@
 import { Logo } from "@/components/ui/Logo"
-import { House } from "lucide-react"
+import { House, Menu } from "lucide-react"
 import Link from "next/link"
 import styles from "./style.module.scss"
+import Image from "next/image"
 
 export const Header = () => {
 	return (
 		<header className={styles.header}>
 			<div className={`container ${styles.header__container}`}>
+				<button className={styles.menu_button}>
+					<Menu size={32} />
+				</button>
 				<Logo />
 				<div className={styles[`header__container--wrapper`]}>
 					<nav className={styles.nav}>
@@ -26,12 +30,18 @@ export const Header = () => {
 								</Link>
 							</li>
 							<li className={styles[`nav__list--item`]}>
-								<Link href={"/trip-finder"} className={styles[`nav__list--item-link`]}>
+								<Link
+									href={"/trip-finder"}
+									className={styles[`nav__list--item-link`]}
+								>
 									Trip finder
 								</Link>
 							</li>
 							<li className={styles[`nav__list--item`]}>
-								<Link href={"/about"} className={styles[`nav__list--item-link`]}>
+								<Link
+									href={"/about"}
+									className={styles[`nav__list--item-link`]}
+								>
 									About us
 								</Link>
 							</li>
@@ -42,11 +52,17 @@ export const Header = () => {
 							</li>
 						</ul>
 					</nav>
-					<div className="flex items-center gap-x-12 text-2xl">
-						<button>Contact us</button>
-						<div>
-							<button>Eng</button>
-						</div>
+					<div className={`${styles[`header__container--wrapper-end`]}`}>
+						<button className={styles.contact_button}>Contact us</button>
+						<button className={`${styles.lang_button}`}>
+							<Image
+								src={"/icons/globe.svg"}
+								width={30}
+								height={30}
+								alt="Globe icon"
+							/>
+							<span>Eng</span>
+						</button>
 					</div>
 				</div>
 			</div>

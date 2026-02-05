@@ -22,8 +22,8 @@
 }
 
 :root {
-	--background: #ffffff;
-	--foreground: #171717;
+	--background: #171717;
+	--foreground: #ffffff;
 	--font-PP_Neue_Montreal: "PP Neue Montreal";
 }
 
@@ -33,13 +33,6 @@
 	--font-sans: var(--font-geist-sans);
 	--font-mono: var(--font-geist-mono);
 	--font-family: var(--PP_Neue_Montreal);
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--background: #0a0a0a;
-		--foreground: #ededed;
-	}
 }
 
 body {
@@ -67,10 +60,17 @@ body {
 	position: absolute;
 	left: 0;
 	bottom: 0;
+	display: none;
 }
 
 .destination__list--item {
-	border-top: 2px solid rgba(255, 255, 255, 0.3);
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.destination__list--item:hover {
+	border-top: 1px solid rgba(255, 255, 255, 0.4);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .destination__list--item-link {
@@ -79,6 +79,8 @@ body {
 	grid-template-columns: repeat(3, 1fr);
 	place-items: center;
 	justify-content: center;
+	color: #c3c3c3;
+	text-transform: uppercase;
 }
 
 .destination__list--item-link .icon {
@@ -97,6 +99,7 @@ body {
 
 .destination__list--item-link:hover {
 	background: rgba(255, 255, 255, 0.1);
+	color: #ffffff;
 
 	& .icon {
 		opacity: 1;
@@ -107,11 +110,25 @@ body {
 	}
 }
 
+.destination__list--item:first-child {
+	border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.destination__list--item:first-child:hover {
+	border-color: rgba(255, 255, 255, 0.4);
+}
+
 .destination__list--item:last-child {
-	border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+	border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .destination__list--item span {
 	font-size: 1.5rem;
 	grid-column: 2 span / 2 span;
+}
+
+@media screen and (min-width: 1280px) {
+	.destination__list {
+		display: block;
+	}
 }
