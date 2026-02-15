@@ -33,12 +33,13 @@
 	--font-sans: var(--font-geist-sans);
 	--font-mono: var(--font-geist-mono);
 	--font-family: var(--PP_Neue_Montreal);
+	--color-primary: #a5958b;
+	--color-text: #323232;
 }
 
 body {
-	background: var(--background);
-	color: var(--foreground);
 	font-family: var(--font-PP_Neue_Montreal), sans-serif;
+	background: #fff7f3;
 }
 
 .container {
@@ -53,6 +54,7 @@ body {
 	background-repeat: no-repeat;
 	font-weight: 500;
 	position: relative;
+	color: var(--color-white);
 }
 
 .destination__list {
@@ -125,6 +127,22 @@ body {
 .destination__list--item span {
 	font-size: 1.5rem;
 	grid-column: 2 span / 2 span;
+}
+
+.country__info {
+	padding: 40px 0;
+	background-image: url(/images/country_info-bg.png);
+	background-size: cover;
+	background-position: 700px center;
+	background-repeat: no-repeat;
+}
+
+.craft__adventure {
+	height: 100vh;
+	background-image: url(/images/home_section_bg.png);
+	background-size: cover;
+	color: var(--color-white);
+	font-weight: 500;
 }
 
 @media screen and (min-width: 1280px) {

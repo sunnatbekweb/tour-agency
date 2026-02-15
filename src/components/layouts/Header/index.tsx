@@ -1,8 +1,8 @@
 import { Logo } from "@/components/ui/Logo"
 import { House, Menu } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 import styles from "./style.module.scss"
-import Image from "next/image"
 
 export const Header = () => {
 	return (
