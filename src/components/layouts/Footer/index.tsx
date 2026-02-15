@@ -7,14 +7,14 @@ import styles from "./style.module.scss"
 export const Footer = () => {
 	return (
 		<footer className={styles.footer}>
-			<div className="container flex justify-between">
-				<div className="w-120">
+			<div className="container flex flex-col gap-y-12 lg:flex-row justify-between">
+				<div className="lg:w-120">
 					<Logo />
 					<p className="text-xl mt-16 mb-10.5">
 						Sign up to get exclusive offers, travel tips, and destination
 						inspiration straight to your inbox!
 					</p>
-					<form className="w-fit flex items-center py-2 px-3 rounded-[50px] bg-white text-text">
+					<form className="lg:w-fit flex items-center justify-between py-2 px-3 rounded-[50px] bg-white text-text">
 						<input
 							type="text"
 							name="email"
@@ -56,7 +56,7 @@ export const Footer = () => {
 						</li>
 					</ul>
 				</div>
-				<div className="w-1/4 flex flex-col justify-between">
+				<div className="lg:w-1/4 flex flex-col gap-y-6 justify-between">
 					<strong className="text-2xl">Why Travel with Us?</strong>
 					<div className="flex items-center gap-10">
 						<p className="text-xl">
@@ -71,7 +71,7 @@ export const Footer = () => {
 						</Link>
 					</div>
 					<div>
-						<ul className="flex items-center gap-10">
+						<ul className="flex items-center justify-between gap-10 md:justify-start">
 							<li>
 								<Link
 									href={"#"}

@@ -141,6 +141,7 @@ body {
 	height: 100vh;
 	background-image: url(/images/home_section_bg.png);
 	background-size: cover;
+	background-position: center;
 	color: var(--color-white);
 	font-weight: 500;
 }

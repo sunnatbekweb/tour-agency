@@ -10,7 +10,7 @@ export const EndSection = () => {
 				<div className="w-fit mx-auto">
 					<Logo color="#B4A297" />
 				</div>
-				<h2 className="w-[70%] mx-auto text-7xl text-center uppercase mt-16 mb-20">
+				<h2 className="md:w-[70%] mx-auto text-3xl lg:text-7xl text-center uppercase mt-16 mb-20">
 					Explore and find yourself In Silk road Journey
 				</h2>
 				<Button text="Contact us" icon={<ArrowUpRight size={28} />} />

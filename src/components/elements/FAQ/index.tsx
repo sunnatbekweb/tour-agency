@@ -9,11 +9,11 @@ export const FAQ = () => {
 				<span className="md:text-xl text-primary uppercase">
 					FREQUENTLY ASKED QUESTION
 				</span>
-				<h2 className="w-[65%] text-3xl md:text-4xl lg:text-6xl uppercase mt-8">
+				<h2 className="md:w-[65%] text-3xl md:text-4xl lg:text-6xl uppercase mt-8">
 					Need Help Before You Go? We&#39;ve Got Answers
 				</h2>
-				<div className="grid grid-cols-2 gap-10 mt-25">
-					<div className="relative w-full h-full rounded-3xl overflow-hidden">
+				<div className="grid lg:grid-cols-2 gap-10 mt-25">
+					<div className="relative hidden lg:block w-full h-full rounded-3xl overflow-hidden">
 						<div className="absolute left-12 top-12 flex items-center gap-4 p-4 rounded-4xl bg-[#D9D9D966] border border-[#B6B6B6] text-white">
 							<MapPin />
 							<span>Uzbekistan, Samarkand</span>
@@ -46,7 +46,7 @@ export const FAQ = () => {
 											{index + 1} How do I booking trip with your agency?
 										</span>
 										<div className={styles.accordion__icon}>
-											<ArrowDownRight size={32} color="#A38E82" />
+											<ArrowDownRight color="#A38E82" />
 										</div>
 									</summary>
 								</details>

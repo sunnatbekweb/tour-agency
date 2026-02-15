@@ -10,18 +10,22 @@
 		align-items: center;
 		justify-content: space-between;
 		gap: 8px;
-		padding: 28px 24px;
+		// padding: 28px 24px; lg
+		padding: 20px 16px;
 	}
 
 	&__title {
 		font-weight: 500;
-		font-size: 32px;
+		// font-size: 32px; lg
+		font-size: 20px;
 		line-height: normal;
 	}
 
 	&__icon {
-		min-width: 48px;
-		height: 48px;
+		// min-width: 48px; lg
+		min-width: 32px;
+		// height: 48px; lg
+		height: 32px;
 		background: #b4a29733;
 		border-radius: 50%;
 		display: grid;
@@ -31,6 +35,7 @@
 
 	&__summary svg {
 		transition: all 0.3s ease;
+		width: 32px;
 	}
 
 	&__content {
@@ -43,8 +48,10 @@
 		}
 
 		&-body p {
-			padding: 0 32px 32px 32px;
-			font-size: 20px;
+			// padding: 0 32px 32px; lg
+			padding: 0 24px 24px;
+			// font-size: 20px; lg
+			font-size: 16px;
 			color: #a6a6a6;
 		}
 	}
@@ -73,4 +80,7 @@
 
 summary::-webkit-details-marker {
 	content: "";
+}
+
+@media screen and (min-width: 1024px) {
 }

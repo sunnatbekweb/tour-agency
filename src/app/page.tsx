@@ -76,19 +76,19 @@ export default function Home() {
 					<span className="md:text-xl text-primary uppercase">
 						See Your Own Adventure
 					</span>
-					<h2 className="w-1/2 text-3xl md:text-4xl lg:text-6xl text-text uppercase mt-2 sm:mt-4 lg:mt-6">
+					<h2 className="w-full md:w-1/2 text-3xl md:text-4xl lg:text-6xl text-text uppercase mt-2 sm:mt-4 lg:mt-6">
 						Unveil Central Asia’s Hidden Wonders
 					</h2>
-					<div className="grid grid-cols-2 mt-16">
+					<div className="grid grid-cols-1 md:grid-cols-2 mt-16">
 						<div className="flex flex-col gap-10">
 							<div className="p-6 rounded-3xl bg-[#E9DED8]">
 								<div className="flex items-center justify-between mb-5">
-									<strong className="font-medium text-4xl">Kazakhistan</strong>
-									<button className="min-w-12 aspect-square rounded-full bg-primary grid place-content-center">
+									<strong className="font-medium text-2xl sm:text-4xl">Kazakhistan</strong>
+									<button className="min-w-10 sm:min-w-12 aspect-square rounded-full bg-primary grid place-content-center">
 										<ArrowUpRight size={32} color="#ffffff" />
 									</button>
 								</div>
-								<p className="text-[#878787] text-lg">
+								<p className="text-[#878787] sm:text-lg">
 									Welcome to Kazakhstan — a land where golden steppes stretch
 									beyond the horizon, where futuristic cities rise beside
 									ancient traditions. As the world’s largest landlocked country,
@@ -98,7 +98,7 @@ export default function Home() {
 									here tells a story.
 								</p>
 							</div>
-							<div className="grid grid-cols-2 grid-rows-2 gap-6">
+							<div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6">
 								<Image
 									src={"/images/home_country-img.jpg"}
 									width={460}
@@ -127,14 +127,14 @@ export default function Home() {
 				</div>
 			</section>
 			<section className="craft__adventure h-screen">
-				<div className="container flex flex-col items-center">
+				<div className="container h-full flex flex-col items-center justify-evenly">
 					<div className="mt-[10%] mb-[10%]">
 						<Logo />
 					</div>
 
-					<div className="max-w-[40%] mb-20">
-						<h3 className="text-4xl text-center">Craft Your Own Adventure </h3>
-						<h2 className="text-7xl text-center">
+					<div className="w-full md:w-[40%] mb-20">
+						<h3 className="text-2xl md:text-4xl text-center mb-2">Craft Your Own Adventure </h3>
+						<h2 className="text-5xl md:text-7xl text-center">
 							Unique, Personal, Unforgettable
 						</h2>
 					</div>
@@ -148,12 +148,12 @@ export default function Home() {
 					<span className="md:text-xl text-primary uppercase">
 						Cultural Highlights
 					</span>
-					<div className="flex justify-between mt-8">
-						<h2 className="w-[60%] text-3xl md:text-4xl lg:text-6xl uppercase">
+					<div className="flex flex-col gap-y-6 md:flex-row justify-between mt-8">
+						<h2 className=" md:w-[60%] text-3xl md:text-4xl lg:text-6xl uppercase">
 							From Desert Fortresses to Mountain Festivals — Central Asia is
 							Calling
 						</h2>
-						<p className="w-[30%] text-xl">
+						<p className=" md:w-[30%] text-base md:text-xl">
 							At Silk Road Wonders, we don&#39;t just offer tours — we open
 							doors to ancient civilizations, vibrant traditions, and
 							breathtaking landscapes. Whether you&#39;re drawn to architectural
