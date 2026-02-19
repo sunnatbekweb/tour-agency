@@ -4,6 +4,8 @@ import { FAQ } from "@/components/elements/FAQ"
 import { HighlightSlide } from "@/components/elements/Home/HighlightSlide"
 import Slider from "@/components/elements/Home/Slider"
 import { Logo } from "@/components/ui/Logo"
+import { Title } from "@/components/ui/Title"
+import { TopTitle } from "@/components/ui/TopTitle"
 import { destinations } from "@/data/destination.data"
 import { ArrowUpRight, MoveRight, Search } from "lucide-react"
 import Image from "next/image"
@@ -39,7 +41,10 @@ export default function Home() {
 				<ul className="destination__list">
 					{destinations.map((destination, index) => (
 						<li key={index} className="destination__list--item">
-							<Link href={""} className="destination__list--item-link">
+							<Link
+								href={`/destination/${destination.url}`}
+								className="destination__list--item-link"
+							>
 								<span>{destination.name}</span>
 								<div className="icon">
 									<MoveRight size={36} />
@@ -54,12 +59,8 @@ export default function Home() {
 				<div className="container">
 					<div className="flex flex-col xl:flex-row items-end gap-6">
 						<div className="xl:w-3/5">
-							<span className="md:text-xl text-primary uppercase">
-								destination preview
-							</span>
-							<h2 className="text-3xl md:text-4xl lg:text-6xl text-text uppercase mt-2 sm:mt-4 lg:mt-6">
-								Explore Central Asia Like Never Before
-							</h2>
+							<TopTitle text="destination preview" />
+							<Title text="Explore Central Asia Like Never Before" />
 						</div>
 						<p className="xl:w-2/5 sm:text-xl text-text">
 							At SRW (Silk Road Wonders), we craft unforgettable journeys across
@@ -73,17 +74,17 @@ export default function Home() {
 			</section>
 			<section className="country__info">
 				<div className="container">
-					<span className="md:text-xl text-primary uppercase">
-						See Your Own Adventure
-					</span>
-					<h2 className="w-full md:w-1/2 text-3xl md:text-4xl lg:text-6xl text-text uppercase mt-2 sm:mt-4 lg:mt-6">
-						Unveil Central Asia’s Hidden Wonders
-					</h2>
+					<TopTitle text="See Your Own Adventure" />
+					<div className="md:w-1/2">
+						<Title text="Unveil Central Asia’s Hidden Wonders" />
+					</div>
 					<div className="grid grid-cols-1 md:grid-cols-2 mt-16">
 						<div className="flex flex-col gap-10">
 							<div className="p-6 rounded-3xl bg-[#E9DED8]">
 								<div className="flex items-center justify-between mb-5">
-									<strong className="font-medium text-2xl sm:text-4xl">Kazakhistan</strong>
+									<strong className="font-medium text-2xl sm:text-4xl">
+										Kazakhistan
+									</strong>
 									<button className="min-w-10 sm:min-w-12 aspect-square rounded-full bg-primary grid place-content-center">
 										<ArrowUpRight size={32} color="#ffffff" />
 									</button>
@@ -127,13 +128,14 @@ export default function Home() {
 				</div>
 			</section>
 			<section className="craft__adventure h-screen">
-				<div className="container h-full flex flex-col items-center justify-evenly">
-					<div className="mt-[10%] mb-[10%]">
+				<div className="container h-full lg:h-fit flex flex-col items-center justify-evenly">
+					<div className="my-[10%]">
 						<Logo />
 					</div>
-
-					<div className="w-full md:w-[40%] mb-20">
-						<h3 className="text-2xl md:text-4xl text-center mb-2">Craft Your Own Adventure </h3>
+					<div className="w-full sm:w-[75%] lg:w-[60%] mb-20">
+						<h3 className="text-2xl md:text-4xl text-center mb-2">
+							Craft Your Own Adventure{" "}
+						</h3>
 						<h2 className="text-5xl md:text-7xl text-center">
 							Unique, Personal, Unforgettable
 						</h2>
@@ -149,10 +151,9 @@ export default function Home() {
 						Cultural Highlights
 					</span>
 					<div className="flex flex-col gap-y-6 md:flex-row justify-between mt-8">
-						<h2 className=" md:w-[60%] text-3xl md:text-4xl lg:text-6xl uppercase">
-							From Desert Fortresses to Mountain Festivals — Central Asia is
-							Calling
-						</h2>
+						<div className="md:w-[60%]">
+							<Title text="From Desert Fortresses to Mountain Festivals — Central Asia is Calling" />
+						</div>
 						<p className=" md:w-[30%] text-base md:text-xl">
 							At Silk Road Wonders, we don&#39;t just offer tours — we open
 							doors to ancient civilizations, vibrant traditions, and

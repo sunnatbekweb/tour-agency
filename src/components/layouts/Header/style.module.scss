@@ -14,42 +14,42 @@
 			cursor: pointer;
 		}
 
-		&--wrapper {
-			@include flex-items-center;
-			column-gap: 60px;
+		& .nav {
+			display: none;
 
-			& .nav {
-				display: none;
+			&__list {
+				@include flex-items-center;
+				column-gap: 24px;
 
-				&__list {
-					@include flex-items-center;
-					column-gap: 24px;
+				&--item {
+					&-link {
+						@include flex-items-center;
+						column-gap: 8px;
+						font-weight: 500;
+						font-size: 1rem;
+						text-transform: uppercase;
+					}
 
-					&--item {
-						&-link {
-							@include flex-items-center;
-							column-gap: 8px;
-							font-weight: 500;
-							font-size: 1rem;
-							text-transform: uppercase;
-						}
-
-						& .active {
-							padding: 10px 18px;
-							border-radius: 22px;
-							background: rgba($color: #ffffff, $alpha: 0.7);
-							font-weight: 700;
-							color: #656267;
-						}
+					& .active {
+						padding: 10px 18px;
+						border-radius: 22px;
+						background: rgba($color: #ffffff, $alpha: 0.7);
+						font-weight: 700;
+						color: #656267;
 					}
 				}
 			}
+		}
+
+		&--wrapper {
+			@include flex-items-center;
+			column-gap: 60px;
 
 			&-end {
 				@include flex-items-center;
 				column-gap: 24px;
 				font-size: 1.25rem;
-				
+
 				& .contact_button {
 					display: none;
 					padding: 8px 12px;
@@ -77,20 +77,20 @@
 				display: none;
 			}
 
-			&--wrapper {
-				column-gap: 30px;
+			& .nav {
+				display: flex;
 
-				& .nav {
-					display: flex;
-
-					&__list {
-						&--item {
-							& .active {
-								padding: 12px 24px;
-							}
+				&__list {
+					&--item {
+						& .active {
+							padding: 12px 24px;
 						}
 					}
 				}
+			}
+
+			&--wrapper {
+				column-gap: 30px;
 
 				&-end {
 					& .contact_button {
@@ -106,14 +106,14 @@
 @media screen and (min-width: 1280px) {
 	.header {
 		&__container {
+			& .nav {
+				&__list {
+					column-gap: 64px;
+				}
+			}
+
 			&--wrapper {
 				column-gap: 60px;
-
-				& .nav {
-					&__list {
-						column-gap: 64px;
-					}
-				}
 
 				&-end {
 					column-gap: 48px;
@@ -130,4 +130,3 @@
 		}
 	}
 }
-

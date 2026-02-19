@@ -1,3 +1,4 @@
+import { TopTitle } from "@/components/ui/TopTitle"
 import { ArrowDownRight, MapPin } from "lucide-react"
 import Image from "next/image"
 import styles from "./style.module.scss"
@@ -6,9 +7,7 @@ export const FAQ = () => {
 	return (
 		<section className="py-10">
 			<div className="container">
-				<span className="md:text-xl text-primary uppercase">
-					FREQUENTLY ASKED QUESTION
-				</span>
+				<TopTitle text="FREQUENTLY ASKED QUESTION" />
 				<h2 className="md:w-[65%] text-3xl md:text-4xl lg:text-6xl uppercase mt-8">
 					Need Help Before You Go? We&#39;ve Got Answers
 				</h2>
