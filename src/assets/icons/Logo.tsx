@@ -6,8 +6,8 @@ interface IProps {
 
 export const Logo = ({
 	color = "#B4A297",
-	width = 42,
-	height = 75,
+	width = 30,
+	height
 }: IProps) => {
 	return (
 		<svg

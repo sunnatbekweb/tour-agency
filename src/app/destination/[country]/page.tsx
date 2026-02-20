@@ -1,7 +1,9 @@
 "use client"
 
+import { Tours } from "@/components/containers/Tours"
 import { DestinationHero } from "@/components/elements/DestinationHero"
 import { EndSection } from "@/components/elements/EndSection"
+import { FeedbackSlide } from "@/components/elements/FeddbackSlide"
 import { Title } from "@/components/ui/Title"
 import { TopTitle } from "@/components/ui/TopTitle"
 import Image from "next/image"
@@ -21,7 +23,7 @@ export default function Uzbekistan() {
 				title={country || "Uzbekistan"}
 				subtitle="Land of Great Scholars and Crossroads of Cultures"
 			/>
-			<section className="py-25">
+			<section className="py-12.5">
 				<div className="container">
 					<TopTitle text="About country" />
 					<div className="md:w-[55%] mb-10">
@@ -50,102 +52,61 @@ export default function Uzbekistan() {
 								Uzbekistan welcomes you with open arms and timeless soul.
 							</p>
 						</div>
-						<div>
-							<div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6">
-								<Image
-									src={"/images/home_country-img.jpg"}
-									width={460}
-									height={520}
-									alt="Image"
-									className="row-span-2 w-full h-full object-cover rounded-2xl"
-								/>
-								<Image
-									src={"/images/home_country-img1.jpg"}
-									width={310}
-									height={250}
-									alt="Image"
-									className="w-full h-full object-cover rounded-2xl"
-								/>
-								<Image
-									src={"/images/home_country-img2.jpg"}
-									width={310}
-									height={250}
-									alt="Image"
-									className="w-full h-full object-cover rounded-2xl"
-								/>
-							</div>
+						<div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6">
+							<Image
+								src={"/images/home_country-img.jpg"}
+								width={460}
+								height={520}
+								alt="Image"
+								className="row-span-2 w-full h-full object-cover rounded-2xl"
+							/>
+							<Image
+								src={"/images/home_country-img1.jpg"}
+								width={310}
+								height={250}
+								alt="Image"
+								className="w-full h-full object-cover rounded-2xl"
+							/>
+							<Image
+								src={"/images/home_country-img2.jpg"}
+								width={310}
+								height={250}
+								alt="Image"
+								className="w-full h-full object-cover rounded-2xl"
+							/>
 						</div>
 					</div>
 				</div>
 			</section>
 			<section className={styles.exclusivePhotos}>
-				<div className="container">
-					<div className="mb-5">
+				<div className={`container ${styles.exclusivePhotos__container}`}>
+					<div className="mb-10">
 						<Title text="Exclusive photos" />
 					</div>
-					<div className="grid grid-cols-4 grid-rows-3 gap-4">
-						{/* {[...Array(8)].map((_, index) => (
-						))} */}
-						<Image
-							// key={index}
-							src={`/images/exclusive_image0.png`}
-							width={440}
-							height={480}
-							alt=""
-							className="w-full h-full object-cover row-span-2"
-						/>
-						<Image
-							src={"/images/exclusive_image1.png"}
-							width={440}
-							height={340}
-							alt=""
-							className="w-full h-full object-cover"
-						/>
-						<Image
-							src={"/images/exclusive_image2.png"}
-							width={440}
-							height={340}
-							alt=""
-							className="w-full h-full object-cover row-span-2"
-						/>
-						<Image
-							src={"/images/exclusive_image3.png"}
-							width={440}
-							height={480}
-							alt=""
-							className="w-full h-full object-cover"
-						/>
-						<Image
-							src={"/images/exclusive_image4.png"}
-							width={440}
-							height={340}
-							alt=""
-							className="w-full h-full object-cover row-span-2"
-						/>
-						<Image
-							src={"/images/exclusive_image5.png"}
-							width={440}
-							height={340}
-							alt=""
-							className="w-full h-full object-cover row-span-2"
-						/>
-						<Image
-							src={"/images/exclusive_image6.png"}
-							width={440}
-							height={340}
-							alt=""
-							className="w-full h-full object-cover"
-						/>
-						<Image
-							src={"/images/exclusive_image7.png"}
-							width={440}
-							height={340}
-							alt=""
-							className="w-full h-full object-cover"
-						/>
+					<div className={styles.wrapper}>
+						{[...Array(8)].map((_, index) => (
+							<Image
+								key={index}
+								src={`/images/exclusive_image${index}.png`}
+								width={340}
+								height={340}
+								alt={`Image ${index}`}
+								className={`${styles.image}`}
+							/>
+						))}
 					</div>
 				</div>
 			</section>
+			<section className="py-12.5">
+				<div className="container">
+					<TopTitle text="About country" />
+					<div className="md:w-[55%] mb-10">
+						<Title text="Uzbekistan: Crossroads of Civilizations" />
+					</div>
+					<FeedbackSlide />
+				</div>
+			</section>
+			<Tours />
 			<EndSection />
 		</>
 	)

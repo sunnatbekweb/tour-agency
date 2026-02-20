@@ -146,6 +146,43 @@ body {
 	font-weight: 500;
 }
 
+.pagination {
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+}
+.pagination li {
+	list-style: none;
+}
+.pagination li a {
+	width: 48px;
+	height: 48px;
+	display: grid;
+	place-content: center;
+	border: 1px solid #f1f1f1;
+	border-radius: 12px;
+	text-decoration: none;
+	color: #333;
+	cursor: pointer;
+	font-weight: 600;
+}
+.pagination li.active a {
+	background-color: #a5958b;
+	color: white;
+	border-color: #f1f1f1;
+	cursor: pointer;
+}
+.pagination li.disabled a {
+	opacity: 0.5;
+	pointer-events: none;
+	cursor: not-allowed;
+	color: #cccccc;
+}
+.pagination .next a,
+.pagination .previous a {
+	color: #a5958b;
+}
+
 @media screen and (min-width: 1280px) {
 	.destination__list {
 		display: block;

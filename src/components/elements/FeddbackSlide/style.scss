@@ -1,0 +1,52 @@
+.feedbackSlide {
+	margin-top: 80px;
+	padding-bottom: 80px;
+	position: static;
+
+	& .swiper-button-prev,
+	& .swiper-button-next {
+		width: 64px;
+		height: 64px;
+		background: #a5958b1a;
+		border-radius: 50%;
+
+		& svg {
+			width: 16px;
+			height: 24px;
+
+			& path {
+				fill: $color-primary;
+			}
+		}
+	}
+
+	& .swiper-button-prev {
+		left: -40px;
+	}
+
+	& .swiper-button-next {
+		right: -40px;
+	}
+
+	& .swiper-pagination {
+		bottom: 0;
+
+		&-bullet {
+			width: 16px;
+			height: 16px;
+			background: #d9d9d9;
+			transition: all 0.3s ease;
+			opacity: 1;
+			margin: 0 8px !important;
+		}
+
+		&-bullet-active {
+			width: 64px;
+			background: $color-primary;
+			border-radius: 16px;
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+}

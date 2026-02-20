@@ -27,8 +27,10 @@ export const Footer = () => {
 					</form>
 				</div>
 				<div className="">
-					<strong className="text-2xl">Explore</strong>
-					<ul className="mt-12 flex flex-col gap-6">
+					<strong className="block text-2xl text-center sm:text-start">
+						Explore
+					</strong>
+					<ul className="mt-12 flex flex-col items-center sm:items-start gap-6">
 						<li>
 							<Link href="/" className="text-xl">
 								Home

@@ -11,7 +11,7 @@ export const Logo = ({ color = "#ffffff" }: IProps) => {
 			<LogoIcon color={color} />
 			<span
 				style={{ color: color }}
-				className={`text-lg md:text-[22px] leading-5 md:leading-6`}
+				className={`md:text-[22px] leading-4 md:leading-6`}
 			>
 				Silk <br />
 				Road <br />

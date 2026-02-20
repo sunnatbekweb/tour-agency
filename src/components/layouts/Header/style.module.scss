@@ -64,6 +64,11 @@
 					background: #ffffff66;
 					border: 1px solid #b9b9b9;
 					border-radius: 32px;
+					font-size: 0.875rem;
+
+					& img {
+						width: 20px;
+					}
 				}
 			}
 		}
@@ -96,6 +101,14 @@
 					& .contact_button {
 						display: flex;
 						border-radius: 32px;
+					}
+
+					& .lang_button {
+						font-size: 1rem;
+
+						& img {
+							width: auto;
+						}
 					}
 				}
 			}

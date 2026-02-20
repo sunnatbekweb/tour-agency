@@ -17,13 +17,13 @@ export default function Home() {
 			<section className="h-screen hero">
 				<div className="container h-full">
 					<div className="w-full lg:w-[65%] h-full mx-auto flex flex-col my-auto items-center justify-center">
-						<span className="text-base md:text-2xl lg:text-4xl text-center">
+						<span className="text-lg md:text-2xl lg:text-4xl text-center">
 							From Ancient Steppes to Timeless Cities
 						</span>
-						<h1 className="text-4xl md:text-6xl lg:text-8xl text-center my-6 md:mt-4 md:mb-10">
+						<h1 className="text-4xl md:text-6xl lg:text-8xl text-center my-3 md:mt-4 md:mb-10">
 							Welcome to the Heart of the Silk Road
 						</h1>
-						<span className="text-base md:text-2xl lg:text-4xl text-center">
+						<span className="text-lg md:text-2xl lg:text-4xl text-center">
 							Your Central Asian Adventure Begins Here
 						</span>
 						<form className="w-full flex items-center px-4 h-14 lg:h-16 rounded-4xl bg-white text-black mt-20">
