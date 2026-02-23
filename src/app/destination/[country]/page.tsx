@@ -29,10 +29,10 @@ export default function Uzbekistan() {
 					<div className="md:w-[55%] mb-10">
 						<Title text="Uzbekistan: Crossroads of Civilizations" />
 					</div>
-					<div className="p-8 rounded-3xl bg-[#E9DED8] grid grid-cols-2 gap-10">
+					<div className="px-4 py-6 md:p-8 rounded-3xl bg-[#E9DED8] grid grid-cols-1 lg:grid-cols-2 gap-10">
 						<div>
-							<h3 className="text-5xl mb-7">About {country}</h3>
-							<p className="text-xl text-[#878787]">
+							<h3 className="text-2xl md:text-5xl mb-3 md:mb-7">About {country}</h3>
+							<p className="text-sm md:text-xl text-[#878787]">
 								Uzbekistan is the beating heart of Central Asia — a country
 								where history lives in every mosaic and hospitality greets you
 								at every corner. From the towering minarets of Khiva to the

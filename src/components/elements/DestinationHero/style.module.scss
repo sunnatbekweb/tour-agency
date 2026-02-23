@@ -18,14 +18,40 @@
 		color: var(--color-white);
 
 		& .title {
-			font-size: 10rem;
+			font-size: 4rem;
 			text-transform: capitalize;
 			line-height: normal;
+			margin-bottom: 16px;
 		}
 
 		& .subtitle {
-			font-size: 2.25rem;
+			font-size: 1.75rem;
 			line-height: normal;
+			text-align: center;
 		}
 	}
+}
+
+@media screen and (min-width: 768px) {
+	.hero {
+		&__container {
+			& .title {
+				font-size: 8rem;
+			}
+
+			& .subtitle {
+				font-size: 2.5rem;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.hero {
+		&__container {
+			& .title {
+				font-size: 10rem;
+			}
+		}
+	}	
 }

@@ -8,11 +8,11 @@ export const Tours = () => {
 		<section className="py-12.5">
 			<div className="container">
 				<TopTitle text="Trip Blogs" />
-				<div className="flex items-center justify-between mt-6">
-					<div className="md:w-[55%] mb-10">
+				<div className="flex flex-col lg:flex-row items-center justify-between mt-6">
+					<div className="lg:w-[55%] mb-10">
 						<Title text="Explore Uzbekistan with Our Signature Tours" />
 					</div>
-					<p className="w-[40%] text-xl">
+					<p className="lg:w-[40%] text-xl">
 						From the blue domes of Samarkand to the ancient streets of Khiva —
 						our Uzbekistan tour packages are crafted for culture lovers, history
 						seekers, and adventurous souls. Whether it’s a weekend escape or a
@@ -24,7 +24,7 @@ export const Tours = () => {
 						All tours
 					</button>
 				</div>
-				<div className="grid grid-cols-3 gap-4">
+				<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
 					{[...Array(6)].map((_, index) => (
 						<TourCard key={index} />
 					))}
