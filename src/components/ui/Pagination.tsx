@@ -1,3 +1,5 @@
+"use client"
+
 import ReactPaginate from "react-paginate"
 
 interface IProps {
@@ -10,7 +12,7 @@ export const Pagination = ({ onPageChange, count, forcePage }: IProps) => {
 	return (
 		<ReactPaginate
 			onPageChange={onPageChange}
-			pageRangeDisplayed={3}
+			pageRangeDisplayed={2}
 			marginPagesDisplayed={1}
 			pageCount={count}
 			forcePage={forcePage}
