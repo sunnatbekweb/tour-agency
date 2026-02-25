@@ -1,243 +1,249 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
-import { useLocale, useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
-import DrawerHeader from "@/components/ui/DrawerHeader";
-import SecondContactButton from "@/components/ui/SecondContactButton";
-import { isDynamicRoute } from "@/lib/utils/routes";
-import "./Header.css";
+'use client'
+import DrawerHeader from '@/components/ui/DrawerHeader'
+import SecondContactButton from '@/components/ui/SecondContactButton'
+import { Link } from '@/i18n/navigation'
+import { isDynamicRoute } from '@/lib/utils/routes'
+import { useLocale, useTranslations } from 'next-intl'
+import { usePathname } from 'next/navigation'
+import { useEffect, useState } from 'react'
+import './Header.css'
 export const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [langDropdown, setLangDropdown] = useState(false);
-  const [showHeader, setShowHeader] = useState(true);
-  const [scrollY, setScrollY] = useState(0);
-  const pathname = usePathname();
-  const locale = useLocale();
-  const cleanPath = pathname.replace(`/${locale}`, "");
-  const t = useTranslations("header");
-  const isDimmed = isDynamicRoute(cleanPath, ["/trip", "/blog"]);
-  const isDestinationPage = cleanPath.startsWith("/destination");
-  const newPathname = pathname.replace(`/${locale}`, "") || "/";
-  const destinations = [
-    { path: "/destination/uzbekistan", label: t("destinations.uz") },
-    { path: "/destination/kazakhstan", label: t("destinations.kz") },
-    { path: "/destination/tajikistan", label: t("destinations.tj") },
-    { path: "/destination/kyrgyzstan", label: t("destinations.kg") },
-    { path: "/destination/turkmenistan", label: t("destinations.tk") },
-  ];
-  const links = [
-    {
-      icon: "/icons/tripFound__icon.svg",
-      path: "/trip-finder",
-      label: t("nav.finder"),
-    },
-    { icon: "/icons/aboutUs__icon.svg", path: "/about", label: t("nav.about") },
-    { icon: "/icons/blog__icon.svg", path: "/blog", label: t("nav.blog") },
-  ];
-  useEffect(() => {
-    let lastScrollY = window.scrollY;
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      const scrollDiff = currentScrollY - lastScrollY;
-      setScrollY(currentScrollY);
-      if (currentScrollY > 5 && scrollDiff > 0) {
-        setShowHeader(false);
-      } else if (scrollDiff < -1) {
-        setShowHeader(true);
-      }
-      lastScrollY = currentScrollY;
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-  const closeBurger = () => setIsOpen(false);
-  return (
-    <div>
-      <header
-        className={`header w-full z-[1111] transition-all duration-500 ease-in-out ${
-          showHeader
-            ? `fixed top-0 opacity-100 translate-y-0 pointer-events-auto ${
-                scrollY === 0
-                  ? "backdrop-blur-none shadow-none"
-                  : `backdrop-blur-2xl shadow-2xl ${isDimmed ? "bg-white" : "bg-black/40"}`
-              }`
-            : "fixed top-0 opacity-0 -translate-y-full pointer-events-none backdrop-blur-none shadow-none"
-        }`}
-      >
-        <div className="container header__container flex justify-between items-center px-6 py-5 md:px-9 md:py-[30px] xl:py-[10px]">
-          <div className="header__left-box">
-            <button
-              className={`header__left-open-burger-button ${isDimmed && "bg-[#F3ECE8] rounded-lg"}`}
-              onClick={() => setIsOpen(true)}
-            >
-              <img
-                className="header__left-open-burger-icon w-[40px] h-[40px] md:w-[72px] md:h-[72px]"
-                src={
-                  isDimmed
-                    ? "/icons/open__burger_colored.svg"
-                    : "/icons/open__burger.svg"
-                }
-                alt="Open menu"
-              />
-            </button>
-            <Link href="/">
-              <img
-                className="header__left-mini-logo lg:w-[140px] lg:h-[77px]"
-                src={isDimmed ? "/icons/Logo_colored.svg" : "/icons/logo.svg"}
-                alt="Logo"
-              />
-            </Link>
-          </div>
-          <div className="header__middle-box">
-            <Link href="/">
-              <img
-                className="header__middle-mini-logo w-[67px] h-[37px] md:w-[140px] md:h-[77px]"
-                src={isDimmed ? "/icons/Logo_colored.svg" : "/icons/logo.svg"}
-                alt="Logo"
-              />
-            </Link>
-            <nav className="header__middle-nav">
-              <ul className="header__middle-list">
-                <li className="relative group">
-                  <div
-                    className={`header__middle-links ${isDestinationPage && "bg-white/70"} cursor-pointer flex items-center px-4 py-2`}
-                  >
-                    {isDestinationPage && (
-                      <img
-                        className="header__middle-links-texts-icons"
-                        src="/icons/destinations__icon.svg"
-                        alt="Destinations"
-                      />
-                    )}
-                    <p
-                      className={`font-bold uppercase xl:16px 2xl:text-[20px] ${
-                        isDestinationPage || isDimmed
-                          ? "text-[#656267]"
-                          : "text-white"
-                      }`}
-                    >
-                      {destinations.find((dest) => dest.path === cleanPath)
-                        ?.label || t("destinations.index")}
-                    </p>
-                  </div>
-                  <ul className="w-full absolute left-0 top-full bg-black/40 backdrop-blur-2xl shadow-2xl rounded-[8px] translate-y-[24px] opacity-0 pointer-events-none flex flex-col justify-center group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-50">
-                    {destinations.map((dest, i) => (
-                      <Link
-                        key={i}
-                        href={dest.path}
-                        className={`block text-center text-white hover:bg-white/10 font-bold uppercase xl:16px 2xl:text-[20px] py-2 ${
-                          i === 0 ? "rounded-t-[8px]" : ""
-                        } ${i === destinations.length - 1 ? "rounded-b-[8px]" : ""}`}
-                      >
-                        {dest.label}
-                      </Link>
-                    ))}
-                  </ul>
-                </li>
-                {links.map((item, index) => (
-                  <li key={index}>
-                    <Link
-                      href={item.path}
-                      className={`header__middle-links flex items-center px-4 py-2 ${
-                        cleanPath === item.path &&
-                        (isDimmed ? "bg-[#CBBCB3]" : "bg-white/70")
-                      }`}
-                    >
-                      {cleanPath === item.path && (
-                        <img
-                          className="header__middle-links-texts-icons"
-                          src={item.icon}
-                          alt="icon"
-                        />
-                      )}
-                      <p
-                        className={`font-bold uppercase xl:16px 2xl:text-[20px] ${
-                          cleanPath === item.path || isDimmed
-                            ? "text-[#656267]"
-                            : "text-white"
-                        }`}
-                      >
-                        {item.label}
-                      </p>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          </div>
-          <div className="header__right-box flex items-center gap-x-[48px]">
-            <div className="hidden 2xl:block">
-              <SecondContactButton>{t("contact")}</SecondContactButton>
-            </div>
-            <div
-              className={`language-switcher hidden lg:flex items-center border cursor-pointer duration-300 overflow-hidden border-[#FFFFFF33] rounded-[24px] px-[11px] h-[48px] ${isDimmed && "bg-[#CBBCB3]"}`}
-            >
-              <img
-                className="w-[16px] h-[16px] md:w-[32px] md:h-[32px]"
-                src="/icons/language__icon.svg"
-                alt="Lang icon"
-              />
-              <div className="flex items-center gap-x-2 ml-2">
-                {["uz", "ru", "en"].map((lang) => (
-                  <Link
-                    key={lang}
-                    href={newPathname}
-                    locale={lang}
-                    aria-pressed={locale === lang}
-                    className={`pr-2 font-medium text-xs md:text-base 2xl:text-lg ${locale === lang ? "text-white" : "gray_text"}`}
-                  >
-                    {lang.toUpperCase()}
-                  </Link>
-                ))}
-              </div>
-            </div>
+	const [isOpen, setIsOpen] = useState(false)
+	const [langDropdown, setLangDropdown] = useState(false)
+	const [showHeader, setShowHeader] = useState(true)
+	const [scrollY, setScrollY] = useState(0)
+	const pathname = usePathname()
+	const locale = useLocale()
+	const cleanPath = pathname.replace(`/${locale}`, '')
+	const t = useTranslations('header')
+	const isDimmed = isDynamicRoute(cleanPath, ['/trip', '/blog'])
+	const isDestinationPage = cleanPath.startsWith('/destination')
+	const newPathname = pathname.replace(`/${locale}`, '') || '/'
+	const destinations = [
+		{ path: '/destination/uzbekistan', label: t('destinations.uz') },
+		{ path: '/destination/kazakhstan', label: t('destinations.kz') },
+		{ path: '/destination/tajikistan', label: t('destinations.tj') },
+		{ path: '/destination/kyrgyzstan', label: t('destinations.kg') },
+		{ path: '/destination/turkmenistan', label: t('destinations.tk') }
+	]
+	const links = [
+		{
+			icon: '/icons/tripFound__icon.svg',
+			path: '/trip-finder',
+			label: t('nav.finder')
+		},
+		{ icon: '/icons/aboutUs__icon.svg', path: '/about', label: t('nav.about') },
+		{ icon: '/icons/blog__icon.svg', path: '/blog', label: t('nav.blog') }
+	]
+	useEffect(() => {
+		let lastScrollY = window.scrollY
+		const handleScroll = () => {
+			const currentScrollY = window.scrollY
+			const scrollDiff = currentScrollY - lastScrollY
+			setScrollY(currentScrollY)
+			if (currentScrollY > 5 && scrollDiff > 0) {
+				setShowHeader(false)
+			} else if (scrollDiff < -1) {
+				setShowHeader(true)
+			}
+			lastScrollY = currentScrollY
+		}
+		window.addEventListener('scroll', handleScroll)
+		return () => window.removeEventListener('scroll', handleScroll)
+	}, [])
+	const closeBurger = () => setIsOpen(false)
+	return (
+		<div>
+			<header
+				className={`header w-full z-1111 transition-all duration-500 ease-in-out ${
+					showHeader
+						? `fixed top-0 opacity-100 translate-y-0 pointer-events-auto ${
+								scrollY === 0
+									? 'backdrop-blur-none shadow-none'
+									: `backdrop-blur-2xl shadow-2xl ${isDimmed ? 'bg-white' : 'bg-black/40'}`
+							}`
+						: 'fixed top-0 opacity-0 -translate-y-full pointer-events-none backdrop-blur-none shadow-none'
+				}`}
+			>
+				<div className="container header__container flex justify-between items-center px-6 py-5 md:px-9 md:py-7.5 xl:py-2.5">
+					<div className="header__left-box">
+						<button
+							className={`header__left-open-burger-button ${isDimmed && 'bg-[#F3ECE8] rounded-lg'}`}
+							onClick={() => setIsOpen(true)}
+						>
+							<img
+								className="header__left-open-burger-icon w-10 h-10 md:w-18 md:h-18"
+								src={
+									isDimmed
+										? '/icons/open__burger_colored.svg'
+										: '/icons/open__burger.svg'
+								}
+								alt="Open menu"
+							/>
+						</button>
+						<Link href="/">
+							<img
+								className="header__left-mini-logo lg:w-35 lg:h-19.25"
+								src={isDimmed ? '/icons/Logo_colored.svg' : '/icons/logo.svg'}
+								alt="Logo"
+							/>
+						</Link>
+					</div>
+					<div className="header__middle-box">
+						<Link href="/">
+							<img
+								className="header__middle-mini-logo w-16.75 h-9.25 md:w-35 md:h-19.25"
+								src={isDimmed ? '/icons/Logo_colored.svg' : '/icons/logo.svg'}
+								alt="Logo"
+							/>
+						</Link>
+						<nav className="header__middle-nav">
+							<ul className="header__middle-list">
+								<li className="relative group">
+									<div
+										className={`header__middle-links ${isDestinationPage && 'bg-white/70'} cursor-pointer flex items-center px-4 py-2`}
+									>
+										{isDestinationPage && (
+											<img
+												className="header__middle-links-texts-icons"
+												src="/icons/destinations__icon.svg"
+												alt="Destinations"
+											/>
+										)}
+										<p
+											className={`font-bold uppercase xl:16px 2xl:text-[20px] ${
+												isDestinationPage || isDimmed
+													? 'text-[#656267]'
+													: 'text-white'
+											}`}
+										>
+											{destinations.find(dest => dest.path === cleanPath)
+												?.label || t('destinations.index')}
+										</p>
+									</div>
+									<ul className="w-full absolute left-0 top-full bg-black/40 backdrop-blur-2xl shadow-2xl rounded-lg translate-y-6 opacity-0 pointer-events-none flex flex-col justify-center group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-50">
+										{destinations.map((dest, i) => (
+											<Link
+												key={i}
+												href={dest.path}
+												className={`block text-center text-white hover:bg-white/10 font-bold uppercase xl:16px 2xl:text-[20px] py-2 ${
+													i === 0 ? 'rounded-t-lg' : ''
+												} ${i === destinations.length - 1 ? 'rounded-b-lg' : ''}`}
+											>
+												{dest.label}
+											</Link>
+										))}
+									</ul>
+								</li>
+								{links.map((item, index) => (
+									<li key={index}>
+										<Link
+											href={item.path}
+											className={`header__middle-links flex items-center px-4 py-2 ${
+												cleanPath === item.path &&
+												(isDimmed ? 'bg-[#CBBCB3]' : 'bg-white/70')
+											}`}
+										>
+											{cleanPath === item.path && (
+												<img
+													className="header__middle-links-texts-icons"
+													src={item.icon}
+													alt="icon"
+												/>
+											)}
+											<p
+												className={`font-bold uppercase xl:16px 2xl:text-[20px] ${
+													cleanPath === item.path || isDimmed
+														? 'text-[#656267]'
+														: 'text-white'
+												}`}
+											>
+												{item.label}
+											</p>
+										</Link>
+									</li>
+								))}
+							</ul>
+						</nav>
+					</div>
+					<div className="header__right-box flex items-center gap-x-12">
+						<div className="hidden 2xl:block">
+							<SecondContactButton>{t('contact')}</SecondContactButton>
+						</div>
+						<div
+							className={`language-switcher hidden lg:flex items-center border cursor-pointer duration-300 overflow-hidden border-[#FFFFFF33] rounded-3xl px-2.75 h-12 ${isDimmed && 'bg-[#CBBCB3]'}`}
+						>
+							<img
+								className="w-4 h-4 md:w-8 md:h-8"
+								src="/icons/language__icon.svg"
+								alt="Lang icon"
+							/>
+							<div className="flex items-center gap-x-2 ml-2">
+								{['uz', 'ru', 'en'].map(lang => (
+									<Link
+										key={lang}
+										href={newPathname}
+										locale={lang}
+										aria-pressed={locale === lang}
+										className={`pr-2 font-medium text-xs md:text-base 2xl:text-lg ${locale === lang ? 'text-white' : 'gray_text'}`}
+									>
+										{lang.toUpperCase()}
+									</Link>
+								))}
+							</div>
+						</div>
 
-            <button
-              onClick={() => setLangDropdown(!langDropdown)}
-              className={`language-switcher-sm relative lg:hidden flex flex-col gap-y-[10px] items-center px-3 py-1.5 border-[1px] md:py-[10px] border-[#B9B9B9] rounded-[12px] ${langDropdown && "rounded-b-none"} ${isDimmed ? "bg-[#CBBCB3]" : "bg-[#ffffff33]"}`}
-            >
-              <div className="flex items-center gap-2">
-                <img
-                  className="object-contain inline-block w-[15px] h-[15px] md:w-[33px] md:h-[33px]"
-                  src="/icons/language__icon.svg"
-                  alt="Lang icon"
-                />
-                <p className="font-medium uppercase text-white">{locale}</p>
-              </div>
-              <div
-                className={`w-[70.56px] md:w-[88.56px] absolute top-full px-3 pb-1.5 rounded-b-xl border-[1px] border-[#B9B9B9] overflow-hidden duration-500 ${isDimmed ? "bg-[#CBBCB3]" : "bg-[#ffffff33]"} ${
-                  langDropdown
-                    ? `opacity-100 pt-[8px] visible translate-y-0`
-                    : "h-0 opacity-0 collapse -translate-y-5"
-                }`}
-              >
-                <ul className="flex flex-col gap-y-2">
-                  {["uz", "ru", "en"]
-                    .filter((lang) => lang !== locale)
-                    .map((lang, index) => (
-                      <li key={index} className="flex items-center gap-2">
-                        <img
-                          className="w-[15px] h-[15px] md:w-[33px] md:h-[33px]"
-                          src="/icons/language__icon.svg"
-                          alt="Lang icon"
-                        />
-                        <Link
-                          href={newPathname}
-                          locale={lang}
-                          className="uppercase font-medium text-white/60"
-                        >
-                          {lang}
-                        </Link>
-                      </li>
-                    ))}
-                </ul>
-              </div>
-            </button>
-          </div>
-        </div>
-      </header>
-      <DrawerHeader modal={isOpen} close={closeBurger} />
-    </div>
-  );
-};
+						<button
+							onClick={() => setLangDropdown(!langDropdown)}
+							className={`language-switcher-sm relative lg:hidden flex flex-col gap-y-2.5 items-center px-3 py-1.5 border md:py-2.5 border-[#B9B9B9] rounded-xl ${langDropdown && 'rounded-b-none'} ${isDimmed ? 'bg-[#CBBCB3]' : 'bg-[#ffffff33]'}`}
+						>
+							<div className="flex items-center gap-2">
+								<img
+									className="object-contain inline-block w-3.75 h-3.75 md:w-8.25 md:h-8.25"
+									src="/icons/language__icon.svg"
+									alt="Lang icon"
+								/>
+								<p className="font-medium uppercase text-white">{locale}</p>
+							</div>
+							<div
+								className={`w-[70.56px] md:w-[88.56px] absolute top-full px-3 pb-1.5 rounded-b-xl border border-[#B9B9B9] overflow-hidden duration-500 ${isDimmed ? 'bg-[#CBBCB3]' : 'bg-[#ffffff33]'} ${
+									langDropdown
+										? `opacity-100 pt-2 visible translate-y-0`
+										: 'h-0 opacity-0 collapse -translate-y-5'
+								}`}
+							>
+								<ul className="flex flex-col gap-y-2">
+									{['uz', 'ru', 'en']
+										.filter(lang => lang !== locale)
+										.map((lang, index) => (
+											<li
+												key={index}
+												className="flex items-center gap-2"
+											>
+												<img
+													className="w-3.75 h-3.75 md:w-8.25 md:h-8.25"
+													src="/icons/language__icon.svg"
+													alt="Lang icon"
+												/>
+												<Link
+													href={newPathname}
+													locale={lang}
+													className="uppercase font-medium text-white/60"
+												>
+													{lang}
+												</Link>
+											</li>
+										))}
+								</ul>
+							</div>
+						</button>
+					</div>
+				</div>
+			</header>
+			<DrawerHeader
+				modal={isOpen}
+				close={closeBurger}
+			/>
+		</div>
+	)
+}

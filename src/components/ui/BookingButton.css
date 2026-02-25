@@ -1,81 +1,82 @@
 .bookingButton {
-  cursor: pointer !important;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 100%;
-  letter-spacing: 2%;
-  color: white;
-  padding: 15px 37px;
-  border: 2px solid rgba(255, 255, 255, 0.801);
-  border-radius: 32px;
-  background: linear-gradient(90deg, #b4a297, #b4a297, #b4a297, #ffffff);
-  background-size: 180% 180%;
-  animation: gradient-animation-third 5s ease infinite;
-  font-family: "ppneuemontreal";
+  width: 100%;
+	cursor: pointer !important;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 100%;
+	letter-spacing: 2%;
+	color: white;
+	padding: 15px 37px;
+	border: 2px solid rgba(255, 255, 255, 0.801);
+	border-radius: 32px;
+	background: linear-gradient(90deg, #b4a297, #b4a297, #b4a297, #ffffff);
+	background-size: 180% 180%;
+	animation: gradient-animation-third 5s ease infinite;
+	font-family: 'ppneuemontreal';
 }
 @keyframes gradient-animation-third {
-  0% {
-    background-position: 0% 100%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 100%;
-  }
+	0% {
+		background-position: 0% 100%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 100%;
+	}
 }
 @media (max-width: 1024px) {
-  .bookingButton {
-    cursor: pointer !important;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 100%;
-    letter-spacing: 2%;
-    color: white;
-    padding: 15px 27px;
-  border: 2px solid rgba(255, 255, 255, 0.801);;
-    border-radius: 32px;
-    background: linear-gradient(90deg, #b4a297, #b4a297, #b4a297, #ffffff);
-    background-size: 180% 180%;
-    animation: gradient-animation-third 8s ease infinite;
-    font-family: "ppneuemontreal";
-  }
-  @keyframes gradient-animation-third {
-    0% {
-      background-position: 0% 100%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 100%;
-    }
-  }
+	.bookingButton {
+		cursor: pointer !important;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 100%;
+		letter-spacing: 2%;
+		color: white;
+		padding: 15px 27px;
+		border: 2px solid rgba(255, 255, 255, 0.801);
+		border-radius: 32px;
+		background: linear-gradient(90deg, #b4a297, #b4a297, #b4a297, #ffffff);
+		background-size: 180% 180%;
+		animation: gradient-animation-third 8s ease infinite;
+		font-family: 'ppneuemontreal';
+	}
+	@keyframes gradient-animation-third {
+		0% {
+			background-position: 0% 100%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 0% 100%;
+		}
+	}
 }
 @media (max-width: 767px) {
-  .bookingButton {
-    cursor: pointer !important;
-    font-size: 12.58px;
-    font-weight: 500;
-    line-height: 100%;
-    color: white;
-    padding: 11.5px 29.35px;
-  border: 2px solid rgba(255, 255, 255, 0.801);;
-    border-radius: 15px;
-    background: linear-gradient(90deg, #b4a297, #b4a297, #b4a297, #ffffff);
-    background-size: 180% 180%;
-    animation: gradient-animation-third 8s ease infinite;
-    font-family: "ppneuemontreal";
-  }
-  @keyframes gradient-animation-third {
-    0% {
-      background-position: 0% 100%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 100%;
-    }
-  }
+	.bookingButton {
+		cursor: pointer !important;
+		font-size: 12.58px;
+		font-weight: 500;
+		line-height: 100%;
+		color: white;
+		padding: 11.5px 29.35px;
+		border: 2px solid rgba(255, 255, 255, 0.801);
+		border-radius: 15px;
+		background: linear-gradient(90deg, #b4a297, #b4a297, #b4a297, #ffffff);
+		background-size: 180% 180%;
+		animation: gradient-animation-third 8s ease infinite;
+		font-family: 'ppneuemontreal';
+	}
+	@keyframes gradient-animation-third {
+		0% {
+			background-position: 0% 100%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 0% 100%;
+		}
+	}
 }

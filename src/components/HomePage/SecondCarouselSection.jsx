@@ -12,27 +12,27 @@ export default function SecondCarouselSection() {
     {
       image: "/images/first__image.jpg",
       titles: t("home_SecondCarousel.home_SecondCarousel-title"),
-      description: "images",
+      description: "/images",
     },
     {
       image: "/images/second__image.jpg",
       titles: t("home_SecondCarousel.home_SecondCarousel-second-title"),
-      description: "images",
+      description: "/images",
     },
     {
       image: "/images/third__image.jpg",
       titles: t("home_SecondCarousel.home_SecondCarousel-third-title"),
-      description: "images",
+      description: "/images",
     },
     {
       image: "/images/second__image.jpg",
       titles: t("home_SecondCarousel.home_SecondCarousel-fourth-title"),
-      description: "images",
+      description: "/images",
     },
     {
       image: "/images/third__image.jpg",
       titles: t("home_SecondCarousel.home_SecondCarousel-fifth-title"),
-      description: "images",
+      description: "/images",
     },
   ];
   return (

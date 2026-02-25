@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { Slide, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import RoadSection from "../RoadSection";
-import WhiteChevron from "../../../../public/icons/WhiteChevron";
+import WhiteChevron from "../../../assets/icons/WhiteChevron";
 import { useTranslations } from "use-intl";
 export default function FooterSection() {
   const t = useTranslations();

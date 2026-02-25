@@ -1,170 +1,177 @@
-"use client";
-import React, { useEffect, useRef, useState } from "react";
-import "../HomePage/QuestionSection.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css";
+'use client'
+import Image from 'next/image'
+import { useEffect, useRef, useState } from 'react'
+import 'swiper/css'
+import { Autoplay } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import '../HomePage/QuestionSection.css'
 export const AboutFAQ = () => {
-  const data = [
-    {
-      id: 1,
-      number: "1.",
-      title: "How do I booking trip with your agency?",
-      text: `Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; `,
-      iconOpen: "/icons/open__chevron.svg",
-      iconClose: "/icons/close__chevron.svg",
-    },
-    {
-      id: 2,
-      number: "2.",
-      title: "Can I customize my travel?",
-      text: `Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; `,
-      iconOpen: "/icons/open__chevron.svg",
-      iconClose: "/icons/close__chevron.svg",
-    },
-    {
-      id: 3,
-      number: "3.",
-      title: "Do you offer travel insurance?",
-      text: `Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; `,
-      iconOpen: "/icons/open__chevron.svg",
-      iconClose: "/icons/close__chevron.svg",
-    },
-    {
-      id: 4,
-      number: "4.",
-      title: "Can you arrange flights and accomandations?",
-      text: `Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; `,
-      iconOpen: "/icons/open__chevron.svg",
-      iconClose: "/icons/close__chevron.svg",
-    },
-  ];
-  const secondData = [
-    {
-      image: "/images/hero__background-image.jpg",
-      locationIcon: "/icons/location__icon.svg",
-      locationText: "Uzbekistan, Samarkand",
-      text: `Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; Kazakhstan has a population of 20 million and one of the lowest population densities in the world`,
-    },
-    {
-      image: "/images/hero__second-background-image.jpg",
-      locationIcon: "/icons/location__icon.svg",
-      locationText: "Uzbekistan, Samarkand",
-      text: `Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; Kazakhstan has a population of 20 million and one of the lowest population densities in the world`,
-    },
-    {
-      image: "/images/hero__third-background-image.jpg",
-      locationIcon: "/icons/location__icon.svg",
-      locationText: "Uzbekistan, Samarkand",
-      text: `Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; Kazakhstan has a population of 20 million and one of the lowest population densities in the world`,
-    },
-  ];
-  const [activeId, setActiveId] = useState(null);
-  const toggleAnswer = (id) => {
-    setActiveId((prev) => (prev === id ? null : id));
-  };
-  const contentRefs = useRef([]);
-  useEffect(() => {
-    contentRefs.current.forEach((ref, index) => {
-      const itemId = data[index].id;
-      if (ref) {
-        if (activeId === itemId) {
-          ref.style.maxHeight = ref.scrollHeight + "px";
+	const data = [
+		{
+			id: 1,
+			number: '1.',
+			title: 'How do I booking trip with your agency?',
+			text: `Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; `,
+			iconOpen: '/icons/open__chevron.svg',
+			iconClose: '/icons/close__chevron.svg'
+		},
+		{
+			id: 2,
+			number: '2.',
+			title: 'Can I customize my travel?',
+			text: `Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; `,
+			iconOpen: '/icons/open__chevron.svg',
+			iconClose: '/icons/close__chevron.svg'
+		},
+		{
+			id: 3,
+			number: '3.',
+			title: 'Do you offer travel insurance?',
+			text: `Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; `,
+			iconOpen: '/icons/open__chevron.svg',
+			iconClose: '/icons/close__chevron.svg'
+		},
+		{
+			id: 4,
+			number: '4.',
+			title: 'Can you arrange flights and accomandations?',
+			text: `Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; `,
+			iconOpen: '/icons/open__chevron.svg',
+			iconClose: '/icons/close__chevron.svg'
+		}
+	]
+	const secondData = [
+		{
+			image: '/images/hero__background-image.jpg',
+			locationIcon: '/icons/location__icon.svg',
+			locationText: 'Uzbekistan, Samarkand',
+			text: `Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; Kazakhstan has a population of 20 million and one of the lowest population densities in the world`
+		},
+		{
+			image: '/images/hero__second-background-image.jpg',
+			locationIcon: '/icons/location__icon.svg',
+			locationText: 'Uzbekistan, Samarkand',
+			text: `Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; Kazakhstan has a population of 20 million and one of the lowest population densities in the world`
+		},
+		{
+			image: '/images/hero__third-background-image.jpg',
+			locationIcon: '/icons/location__icon.svg',
+			locationText: 'Uzbekistan, Samarkand',
+			text: `Kazakhstan is the world's ninth-largest country by land area and the largest landlocked country. Hilly plateaus and plains account for nearly half its vast territory, with lowlands composing another third; Kazakhstan has a population of 20 million and one of the lowest population densities in the world`
+		}
+	]
+	const [activeId, setActiveId] = useState(null)
+	const toggleAnswer = id => {
+		setActiveId(prev => (prev === id ? null : id))
+	}
+	const contentRefs = useRef([])
+	useEffect(() => {
+		contentRefs.current.forEach((ref, index) => {
+			const itemId = data[index].id
+			if (ref) {
+				if (activeId === itemId) {
+					ref.style.maxHeight = ref.scrollHeight + 'px'
 
-          const width = window.innerWidth;
-          if (width <= 767) {
-            ref.style.marginTop = "24.32px";
-          } else if (width <= 1023) {
-            ref.style.marginTop = "40px";
-          } else {
-            ref.style.marginTop = "33px";
-          }
-        } else {
-          ref.style.maxHeight = "0px";
-          ref.style.marginTop = "0px";
-        }
-      }
-    });
-  }, [activeId]);
-  return (
-    <div className="question__bottom-box w-full flex flex-col justify-center items-center gap-2 md:gap-4 xl:w-full xl:flex xl:flex-row xl:justify-between xl:items-start xl:gap-5 xl:relative">
-      <div className="question__swiper-box hidden xl:block xl:absolute xl:left-0 ">
-        <Swiper
-          className="question__swiper xl:top-0 xl:relative xl:block xl:rounded-3xl"
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          speed={2500}
-          loop={true}
-          modules={[Autoplay]}
-        >
-          {secondData.map((content, id) => (
-            <SwiperSlide
-              className="question__swiper-slide hidden xl:flex xl:flex-col xl:justify-center xl:items-center"
-              key={id}
-            >
-              <img
-                className="question__swiper-image cursor-grab xl:object-cover xl:relative"
-                src={content.image}
-                alt="nature__image"
-              />
-              <div className="question__image-info-box lg:absolute lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-3 lg:bg-white/40 lg:rounded-[50px] lg:left-[24px] lg:top-[24px] lg:px-[18px] lg:py-[12px]">
-                <img
-                  className="question__location-icon"
-                  src={content.locationIcon}
-                  alt="location__icon"
-                />
-                <p className="question__location-text lg:text-white lg:font-medium lg:text-[14px] lg:leading-[18px]">
-                  {content.locationText}
-                </p>
-              </div>
-              <p className="question__swiper-text md:w-full md:absolute md:bottom-[24px] md:px-[24px] md:text-[16px] md:leading-[20px] md:text-[#F2F2F2] 2xl:text-[24px] 2xl:leading-[32px]">
-                {content.text}
-              </p>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-      <div className="question__right-box w-full flex flex-col justify-center items-center gap-2 md:gap-4 xl:flex xl:flex-col xl:justify-center xl:items-end">
-        {data.map((item, index) => (
-          <div
-            key={item.id}
-            className="question__right-mini-box w-full flex flex-col justify-between items-center border-[1px] border-[#DCDCDC] rounded-[8px] px-[18px] py-4 md:px-[40px] md:py-10 md:rounded-[24px] xl:w-[700px] xl:px-[24px] xl:py-5 2xl:px-[20px] 2xl:py-[35px]"
-          >
-            <div
-              className="question__right-bottom-box w-full flex flex-row justify-between items-center h-[32px] cursor-pointer md:h-[60px]"
-              onClick={() => toggleAnswer(item.id)}
-            >
-              <div className="question__right-texts-box flex flex-row justify-center items-start gap-x-1.5 md:flex md:flex-row md:justify-start md:items-start md:gap-x-3 md:w-full">
-                <p className="question__right-number font-medium text-[16px] text-[#323232] leading-[22px] md:text-[32px] md:leading-[40px] xl:text-[24px] xl:leading-[30px]">
-                  {item.number}
-                </p>
-                <p className="question__right-title font-medium text-[16px] text-[#323232] leading-[22px] md:text-[32px] md:leading-[40px] xl:text-[24px] xl:leading-[30px]">
-                  {item.title}
-                </p>
-              </div>
-              <div
-                className={`question__right-icon-box w-[32px] h-[32px] rounded-full flex flex-row justify-center items-center md:w-[45px] md:h-[45px] ${activeId === item.id ? "bg-[#A38E82]" : "bg-[#F0ECEA]"} `}
-              >
-                <img
-                  className="question__right-icon object-contain transition-transform duration-500 w-[12px] h-[12px] md:w-[22px] md:h-[22px]"
-                  src={activeId === item.id ? item.iconOpen : item.iconClose}
-                  alt="toggle icon"
-                />
-              </div>
-            </div>
-            <div
-              ref={(el) => (contentRefs.current[index] = el)}
-              className="question__right-text-box font-medium text-[12px] leading-[16px] text-[#323232] w-full overflow-hidden transition-all duration-500 ease-in-out max-h-0"
-            >
-              <p className="question__right-text text-[12px] leading-[16px] md:text-[18px] md:leading-[22px] md:w-full lg:w-full">
-                {item.text}
-              </p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
+					const width = window.innerWidth
+					if (width <= 767) {
+						ref.style.marginTop = '24.32px'
+					} else if (width <= 1023) {
+						ref.style.marginTop = '40px'
+					} else {
+						ref.style.marginTop = '33px'
+					}
+				} else {
+					ref.style.maxHeight = '0px'
+					ref.style.marginTop = '0px'
+				}
+			}
+		})
+	}, [activeId])
+	return (
+		<div className="question__bottom-box w-full flex flex-col justify-center items-center gap-2 md:gap-4 xl:w-full xl:flex xl:flex-row xl:justify-between xl:items-start xl:gap-5 xl:relative">
+			<div className="question__swiper-box hidden xl:block xl:absolute xl:left-0 ">
+				<Swiper
+					className="question__swiper xl:top-0 xl:relative xl:block xl:rounded-3xl"
+					autoplay={{
+						delay: 2500,
+						disableOnInteraction: false
+					}}
+					speed={2500}
+					loop={true}
+					modules={[Autoplay]}
+				>
+					{secondData.map((content, id) => (
+						<SwiperSlide
+							className="question__swiper-slide hidden xl:flex xl:flex-col xl:justify-center xl:items-center"
+							key={id}
+						>
+							<img
+								className="question__swiper-image cursor-grab xl:object-cover xl:relative"
+								src={content.image}
+								alt="nature__image"
+							/>
+							<div className="question__image-info-box lg:absolute lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-3 lg:bg-white/40 lg:rounded-[50px] lg:left-6 lg:top-6 lg:px-4.5 lg:py-3">
+								<Image
+									className="question__location-icon"
+									src={content.locationIcon}
+									width={16}
+									height={16}
+									loading="lazy"
+									alt="location__icon"
+								/>
+								<p className="question__location-text lg:text-white lg:font-medium lg:text-[14px] lg:leading-4.5">
+									{content.locationText}
+								</p>
+							</div>
+							<p className="question__swiper-text md:w-full md:absolute md:bottom-6 md:px-6 md:text-[16px] md:leading-5 md:text-[#F2F2F2] 2xl:text-[24px] 2xl:leading-8">
+								{content.text}
+							</p>
+						</SwiperSlide>
+					))}
+				</Swiper>
+			</div>
+			<div className="question__right-box w-full flex flex-col justify-center items-center gap-2 md:gap-4 xl:flex xl:flex-col xl:justify-center xl:items-end">
+				{data.map((item, index) => (
+					<div
+						key={item.id}
+						className="question__right-mini-box w-full flex flex-col justify-between items-center border border-[#DCDCDC] rounded-lg px-4.5 py-4 md:px-10 md:py-10 md:rounded-3xl xl:w-175 xl:px-6 xl:py-5 2xl:px-5 2xl:py-8.75"
+					>
+						<div
+							className="question__right-bottom-box w-full flex flex-row justify-between items-center h-8 cursor-pointer md:h-15"
+							onClick={() => toggleAnswer(item.id)}
+						>
+							<div className="question__right-texts-box flex flex-row justify-center items-start gap-x-1.5 md:flex md:flex-row md:justify-start md:items-start md:gap-x-3 md:w-full">
+								<p className="question__right-number font-medium text-[16px] text-[#323232] leading-5.5 md:text-8 md:leading-10 xl:text-[24px] xl:leading-7.5">
+									{item.number}
+								</p>
+								<p className="question__right-title font-medium text-[16px] text-[#323232] leading-5.5 md:text-8 md:leading-10 xl:text-[24px] xl:leading-7.5">
+									{item.title}
+								</p>
+							</div>
+							<div
+								className={`question__right-icon-box w-8 h-8 rounded-full flex flex-row justify-center items-center md:w-11.25 md:h-11.25 ${activeId === item.id ? 'bg-[#A38E82]' : 'bg-[#F0ECEA]'} `}
+							>
+								<Image
+									className="question__right-icon object-contain transition-transform duration-500 w-3 h-3 md:w-5.5 md:h-5.5"
+									src={activeId === item.id ? item.iconOpen : item.iconClose}
+									width={12}
+									height={12}
+									alt="toggle icon"
+									loading="lazy"
+								/>
+							</div>
+						</div>
+						<div
+							ref={el => (contentRefs.current[index] = el)}
+							className="question__right-text-box font-medium text-[12px] leading-4 text-[#323232] w-full overflow-hidden transition-all duration-500 ease-in-out max-h-0"
+						>
+							<p className="question__right-text text-[12px] leading-4 md:text-[18px] md:leading-5.5 md:w-full lg:w-full">
+								{item.text}
+							</p>
+						</div>
+					</div>
+				))}
+			</div>
+		</div>
+	)
+}

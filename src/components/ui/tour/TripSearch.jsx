@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Location } from "../../../../public/icons/Location";
-import { Clock } from "../../../../public/icons/Clock";
-import { Flag } from "../../../../public/icons/Flag";
+import { Location } from "../../../assets/icons/Location";
+import { Clock } from "../../../assets/icons/Clock";
+import { Flag } from "../../../assets/icons/Flag";
 import { useLocale, useTranslations } from "next-intl";
 import { useDispatch } from "react-redux";
 import { setFilters } from "@/features/tours/toursSlice";
