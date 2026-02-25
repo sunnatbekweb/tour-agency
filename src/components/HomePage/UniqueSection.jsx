@@ -3,6 +3,7 @@ import RightChevron from '@/assets/icons/RightChevron.jsx'
 import { Link } from '@/i18n/navigation'
 import { useTranslations } from 'use-intl'
 import './UniqueSection.css'
+import Image from 'next/image'
 export default function UniqueSection() {
 	const t = useTranslations()
 	return (
@@ -10,10 +11,13 @@ export default function UniqueSection() {
 			<section className="unique">
 				<div className="container unique__container flex flex-col justify-center items-center min-h-screen">
 					<Link>
-						<img
+						<Image
 							className="unique__logo-image inline-block mb-[123px] w-[80px] h-[44px] md:w-[140px] md:h-[77px] md:mb-[140px] xl:mb-[114px]"
 							src="/icons/logo.svg"
+							width={80}
+							height={44}
 							alt="logo__image"
+							loading='lazy'
 						/>
 					</Link>
 					<div className="w-full flex flex-col justify-center items-center sm:w-[80%] md:w-full xl:w-3/4">
