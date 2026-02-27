@@ -12,7 +12,7 @@ export const TourCards = ({ props }) => {
 
   return (
     <div className="p-4 pb-6 border border-[#EBEBEB] rounded-4xl shadow-xl">
-      <div className="h-[200px] xl:h-[320px] rounded-xl lg:rounded-3xl overflow-hidden">
+      <div className="h-50 xl:h-80 rounded-xl lg:rounded-3xl overflow-hidden">
         <Image
           src={props.map_image}
           width={300}
@@ -68,7 +68,7 @@ export const TourCards = ({ props }) => {
             ))}
           </ul>
           <Link href={`/trip/${props.id}`} className="w-full 2xl:w-1/2">
-            <button className="w-full h-[36px] bg-[#B4A297] rounded-4xl font-medium text-white text-base mt-8 ml-auto ">
+            <button className="w-full h-9 bg-[#B4A297] rounded-4xl font-medium text-white text-base mt-8 ml-auto ">
               Booking
             </button>
           </Link>

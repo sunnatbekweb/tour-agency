@@ -14,12 +14,12 @@ export default function SmRoadSection() {
 						href={'/'}
 					>
 						<img
-							className="smRoad__logo-image inline-block w-[80px] h-[44px] mb-[40px]"
+							className="smRoad__logo-image inline-block w-20 h-11 mb-10"
 							src={'/icons/gold__logo.svg'}
 							alt="logo"
 						/>
 					</Link>
-					<div className="smRoad__text-boxes flex flex-col justify-center items-center mb-[80px]">
+					<div className="smRoad__text-boxes flex flex-col justify-center items-center mb-20">
 						<h3 className="smRoad__first-title text-center block font-medium text-[24px] leading-[100%] tracking-tighter-[-2%] uppercase text-[#323232]">
 							{locale === 'en'
 								? 'Explore and find'

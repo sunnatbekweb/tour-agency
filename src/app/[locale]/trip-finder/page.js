@@ -49,7 +49,7 @@ export default function TripFinder() {
           <TripSearch />
         </div>
       </section>
-      <section className="pt-[240px] sm:pt-[180px] lg:pt-[145px] bg-[#FFF7F3]">
+      <section className="pt-60 sm:pt-45 lg:pt-36.25 bg-[#FFF7F3]">
         <div className="container">
           <div className="font-medium px-6 lg:px-0 uppercase md:hidden mb-12">
             <span className="text-[#A5958B]">{t("trip_finder.top_title")}</span>
@@ -74,7 +74,7 @@ export default function TripFinder() {
           </div>
         </div>
       </section>
-      <div className="pt-[100px]">
+      <div className="pt-25">
         {count > 0 && (
           <Pagination
             count={Math.ceil(count / 6)}

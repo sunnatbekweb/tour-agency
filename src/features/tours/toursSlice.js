@@ -19,7 +19,7 @@ export const fetchTours = createAsyncThunk(
     }
 
     const response = await axios.get(
-      `${process.env.NEXT_PUBLIC_BASE_URL}/tour/tour-cards/search/?${params.toString()}`
+      `${process.env.NEXT_PUBLIC_BACKEND_URL}/tour/tour-cards/search/?${params.toString()}`
     );
     return response.data;
   }

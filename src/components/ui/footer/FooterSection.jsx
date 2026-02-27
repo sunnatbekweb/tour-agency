@@ -135,34 +135,34 @@ export default function FooterSection() {
         theme="colored"
         transition={Slide}
       />
-      <div className="relative top-[200px]">
+      <div className="relative top-50">
         <RoadSection />
       </div>
       <footer className="footer bg-[#A98D7D] xl:w-full xl:rounded-tr-[56px] xl:rounded-tl-[56px] xl:absolute">
-        <div className="container footer__container xl:pt-[100px] px-6 md:px-9">
+        <div className="container footer__container xl:pt-25 px-6 md:px-9">
           <div className="footer__top-box xl:flex xl:flex-row xl:justify-between xl:items-start">
-            <div className="footer__top-left-box xl:flex xl:flex-col xl:justify-center xl:items-start xl:w-[419px] 2xl:w-[519px]">
+            <div className="footer__top-left-box xl:flex xl:flex-col xl:justify-center xl:items-start xl:w-104.75 2xl:w-129.75">
               <Link className="footer__top-left-logo-link" href={"/"}>
                 <img
-                  className="footer__top-left-logo-image xl:inline-block xl:w-[140px] xl:h-[77px] xl:mb-[24px]"
+                  className="footer__top-left-logo-image xl:inline-block xl:w-35 xl:h-19.25 xl:mb-6"
                   src={"/icons/logo.svg"}
                   alt="logo"
                 />
               </Link>
-              <p className="footer__top-left-text xl:font-normal xl:text-2xl xl:tracking-tighter-[-2%] xl:text-white xl:w-[419px] xl:mb-[24px] 2xl:w-[519px]">
+              <p className="footer__top-left-text xl:font-normal xl:text-2xl xl:tracking-tighter-[-2%] xl:text-white xl:w-104.75 xl:mb-6 2xl:w-129.75">
                 {t("footer.email_text")}
               </p>
               <form
-                className="footer__top-left-form xl:w-[419px] 2xl:w-[519px]"
+                className="footer__top-left-form xl:w-104.75 2xl:w-129.75"
                 onSubmit={formSubmission}
               >
-                <div className="footer__top-left-form-box xl:w-[419px] xl:flex xl:flex-col xl:justify-items-center xl:items-start xl:gap-3 xl:h-[116px] 2xl:w-[519px]">
+                <div className="footer__top-left-form-box xl:w-104.75 xl:flex xl:flex-col xl:justify-items-center xl:items-start xl:gap-3 xl:h-29 2xl:w-129.75">
                   <div
                     className="footer__top-left-form-input-box xl:w-full xl:flex xl:flex-col xl:justify-items-center xl:items-start xl:relative xl:bg-white xl:rounded-[50px] xl:py-6 xl:pl-10"
                     ref={emailRef}
                   >
                     <input
-                      className="footer__top-left-form-email-input xl:font-medium xl:text-[18px] xl:leading-[24px] xl:text-[#323232] xl:outline-none"
+                      className="footer__top-left-form-email-input xl:font-medium xl:text-[18px] xl:leading-6 xl:text-[#323232] xl:outline-none"
                       onChange={(e) => {
                         e.preventDefault();
                         setForm({ ...form, email: e.target.value.trimStart() });
@@ -174,7 +174,7 @@ export default function FooterSection() {
                       value={form.email}
                       required
                     />
-                    <button className="footer__top-left-form-button xl:flex xl:justify-center xl:items-center xl:absolute xl:rounded-[36px] xl:px-[22px] xl:py-[19px] xl:top-[9px] xl:bottom-[9px] xl:right-[9px] xl:bg-[#A98D7D]">
+                    <button className="footer__top-left-form-button xl:flex xl:justify-center xl:items-center xl:absolute xl:rounded-[36px] xl:px-5.5 xl:py-4.75 xl:top-2.25 xl:bottom-2.25 xl:right-2.25 xl:bg-[#A98D7D]">
                       <img
                         className="footer__top-left-button-icon xl:inline-block xl:object-contain xl:w-[28.69px] xl:h-[30.94px]"
                         src="/icons/right__submit.svg"
@@ -212,11 +212,11 @@ export default function FooterSection() {
                 ))}
               </ul>
             </nav>
-            <div className="footer__top-seond-middle-bottom-right-box xl:w-[350px] xl:flex xl:flex-col xl:justify-center xl:items-start 2xl:w-[418px]">
-              <h4 className="footer__top-seond-middle-bottom-right-box-title xl:w-[350px] xl:font-medium xl:text-[35px] xl:leading-[100%] xl:tracking-tighter-[-2%] xl:mb-[50px] xl:text-white 2xl:w-[418px] 2xl:text-4xl">
+            <div className="footer__top-seond-middle-bottom-right-box xl:w-87.5 xl:flex xl:flex-col xl:justify-center xl:items-start 2xl:w-104.5">
+              <h4 className="footer__top-seond-middle-bottom-right-box-title xl:w-87.5 xl:font-medium xl:text-[35px] xl:leading-[100%] xl:tracking-tighter-[-2%] xl:mb-12.5 xl:text-white 2xl:w-104.5 2xl:text-4xl">
                 {t("footer.why_travel_title")}
               </h4>
-              <q className="footer__top-seond-middle-bottom-right-box-texts xl:font-medium xl:text-2xl xl:w-[350px] xl:mb-[24px] xl:text-white/70 xl:tracking-tighter-[-2%] 2xl:w-[418px]">
+              <q className="footer__top-seond-middle-bottom-right-box-texts xl:font-medium xl:text-2xl xl:w-87.5 xl:mb-6 xl:text-white/70 xl:tracking-tighter-[-2%] 2xl:w-104.5">
                 {t("footer.why_travel_text")}
               </q>
               <div className="footer__top-seond-middle-icon-box xl:w-full xl:flex xl:flex-row xl:justify-between xl:items-center">
@@ -232,7 +232,7 @@ export default function FooterSection() {
                       rel="noopener noreferrer"
                     >
                       <img
-                        className="footer__top-seond-middle-icon-images xl:object-cover xl:inline-block xl:w-[64px] xl:h-[64px]"
+                        className="footer__top-seond-middle-icon-images xl:object-cover xl:inline-block xl:w-16 xl:h-16"
                         src={icons.icons}
                         alt={icons.descriptions}
                       />
@@ -248,8 +248,8 @@ export default function FooterSection() {
               <WhiteChevron />
             </button>
           </div>
-          <hr className="footer__hr xl:border-none xl:outline-none xl:bg-white/15 xl:w-full xl:h-[2px] xl:my-[24px]" />
-          <div className="footer__bottom-box xl:pb-[24px]">
+          <hr className="footer__hr xl:border-none xl:outline-none xl:bg-white/15 xl:w-full xl:h-0.5 xl:my-6" />
+          <div className="footer__bottom-box xl:pb-6">
             <div className="footer__bottom-box-copy-box xl:w-full xl:flex xl:flex-row xl:justify-between xl:items-center xl:gap-8">
               <p className="footer__bottom-box-copy-text xl:font-medium xl:text-xl xl:leading-[100%] xl:tracking-tighter-[-2%] xl:text-white xl:uppercase">
                 &copy; "Silk Road Wonders" 2025

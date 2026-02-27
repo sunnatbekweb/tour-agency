@@ -1,106 +1,111 @@
-"use client";
-import { fetchTours, setTripTheme } from "@/features/tours/toursSlice";
-import { useAppDispatch, useAppSelector } from "@/lib/hooks";
-import axios from "axios";
-import { useLocale, useTranslations } from "next-intl";
-import React, { useEffect, useState } from "react";
-import { TourCards } from "./tour/TourCards";
-import { Pagination } from "./Pagination";
+'use client'
+import { fetchTours, setTripTheme } from '@/features/tours/toursSlice'
+import { useAppDispatch, useAppSelector } from '@/lib/hooks'
+import axios from 'axios'
+import { useLocale, useTranslations } from 'next-intl'
+import { useEffect, useState } from 'react'
+import { Pagination } from './Pagination'
+import { TourCards } from './tour/TourCards'
 export const DestinationTours = ({ title, text }) => {
-  const [tripThemes, setTripThemes] = useState();
-  const locale = useLocale();
-  const t = useTranslations();
-  const dispatch = useAppDispatch();
-  const { list, count, loading, currentPage, filters } = useAppSelector(
-    (state) => state.tours
-  );
-  const getTripThemes = async () => {
-    try {
-      const res = await axios.get(
-        `${process.env.NEXT_PUBLIC_BASE_URL}/tour/trip-theme/`
-      );
-      setTripThemes(res.data.results);
-    } catch (error) {
-      console.error(error);
-    }
-  };
-  const handlePageChange = ({ selected }) => {
-    dispatch(setPage(selected + 1));
-  };
-  useEffect(() => {
-    dispatch(fetchTours({ page: currentPage, filters }));
-  }, [currentPage, filters]);
-  const handleThemeSelect = (id) => {
-    dispatch(setTripTheme(id));
-  };
-  useEffect(() => {
-    getTripThemes();
-  }, []);
-  return (
-    <section className="pt-[120px] px-6 font-medium">
-      <div className="container">
-        <span className="font-medium text-[16px] leading-[100%] text-[#A5958B] uppercase md:text-[24px]">
-          Trip Blogs
-        </span>
-        <div className="w-full flex flex-col justify-center items-start gap-6 md:gap-[36px] xl:w-full xl:flex xl:flex-row xl:justify-between xl:items-start xl:gap-0">
-          <h2 className="w-full font-medium text-[22px] leading-[30px] text-[#323232] uppercase md:w-[620px] md:text-[36px] md:leading-[40px] lg:w-[642px] xl:text-[40px] xl:leading-[46px]">
-            {title}
-          </h2>
-          <p className="w-full font-medium text-[12px] leading-[16px] text-[#323232] md:text-[20px] md:leading-[28px] lg:w-[500px]">
-            {text}
-          </p>
-        </div>
-        <div className="w-full flex items-center gap-x-6 overflow-x-auto scrollbar-hidden mt-20 mb-14">
-          <button
-            onClick={() => dispatch(setTripTheme(""))}
-            className={`px-10 lg:px-20 py-3 lg:py-5 rounded-2xl lg:rounded-4xl text-sm md:text-base lg:text-xl ${
-              !filters.trip_theme
-                ? "bg-[#A5958B] text-white"
-                : "bg-[#EDEDED] text-[#A5958B]"
-            }`}
-          >
-            {t("all")}
-          </button>
-          {tripThemes?.map((theme) => (
-            <button
-              key={theme?.id}
-              onClick={() => handleThemeSelect(theme.id)}
-              className={`px-10 lg:px-20 py-3 lg:py-5 whitespace-nowrap rounded-2xl lg:rounded-4xl text-sm md:text-base lg:text-xl ${
-                filters.trip_theme === theme.id
-                  ? "bg-[#A5958B] text-white"
-                  : "bg-[#EDEDED] text-[#A5958B]"
-              }`}
-            >
-              {theme?.[`name_${locale}`]}
-            </button>
-          ))}
-        </div>
+	const [tripThemes, setTripThemes] = useState()
+	const locale = useLocale()
+	const t = useTranslations()
+	const dispatch = useAppDispatch()
+	const { list, count, loading, currentPage, filters } = useAppSelector(
+		state => state.tours
+	)
+	const getTripThemes = async () => {
+		try {
+			const res = await axios.get(
+				`${process.env.NEXT_PUBLIC_BACKEND_URL}/tour/trip-theme/`
+			)
+			setTripThemes(res.data.results)
+		} catch (error) {
+			console.error(error)
+		}
+	}
+	const handlePageChange = ({ selected }) => {
+		dispatch(setPage(selected + 1))
+	}
+	useEffect(() => {
+		dispatch(fetchTours({ page: currentPage, filters }))
+	}, [currentPage, filters])
+	const handleThemeSelect = id => {
+		dispatch(setTripTheme(id))
+	}
+	useEffect(() => {
+		getTripThemes()
+	}, [])
+	return (
+		<section className="pt-30 px-6 font-medium">
+			<div className="container">
+				<span className="font-medium text-[16px] leading-[100%] text-[#A5958B] uppercase md:text-[24px]">
+					Trip Blogs
+				</span>
+				<div className="w-full flex flex-col justify-center items-start gap-6 md:gap-9 xl:w-full xl:flex xl:flex-row xl:justify-between xl:items-start xl:gap-0">
+					<h2 className="w-full font-medium text-[22px] leading-7.5 text-[#323232] uppercase md:w-155 md:text-[36px] md:leading-10 lg:w-160.5 xl:text-[40px] xl:leading-11.5">
+						{title}
+					</h2>
+					<p className="w-full font-medium text-[12px] leading-4 text-[#323232] md:text-[20px] md:leading-7 lg:w-125">
+						{text}
+					</p>
+				</div>
+				<div className="w-full flex items-center gap-x-6 overflow-x-auto scrollbar-hidden mt-20 mb-14">
+					<button
+						onClick={() => dispatch(setTripTheme(''))}
+						className={`px-10 lg:px-20 py-3 lg:py-5 rounded-2xl lg:rounded-4xl text-sm md:text-base lg:text-xl ${
+							!filters.trip_theme
+								? 'bg-[#A5958B] text-white'
+								: 'bg-[#EDEDED] text-[#A5958B]'
+						}`}
+					>
+						{t('all')}
+					</button>
+					{tripThemes?.map(theme => (
+						<button
+							key={theme?.id}
+							onClick={() => handleThemeSelect(theme.id)}
+							className={`px-10 lg:px-20 py-3 lg:py-5 whitespace-nowrap rounded-2xl lg:rounded-4xl text-sm md:text-base lg:text-xl ${
+								filters.trip_theme === theme.id
+									? 'bg-[#A5958B] text-white'
+									: 'bg-[#EDEDED] text-[#A5958B]'
+							}`}
+						>
+							{theme?.[`name_${locale}`]}
+						</button>
+					))}
+				</div>
 
-        <div
-          className={`${list?.length > 0 && loading === false && "grid"} grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4`}
-        >
-          {loading ? (
-            <p className="font-medium text-2xl text-center mt-40">
-              {t("loading")}
-            </p>
-          ) : list?.length > 0 ? (
-            list?.map((card, index) => <TourCards props={card} key={index} />)
-          ) : (
-            <p className="font-medium text-2xl text-center mt-40">
-              {t("not_found")}
-            </p>
-          )}
-        </div>
-      </div>
-      <div className="pt-[100px]">
-        {count > 0 && (
-          <Pagination
-            count={Math.ceil(count / 6)}
-            onPageChange={handlePageChange}
-            forcePage={currentPage - 1}
-          />
-        )}
-      </div>
-    </section>
-  );
-};
+				<div
+					className={`${list?.length > 0 && loading === false && 'grid'} grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4`}
+				>
+					{loading ? (
+						<p className="font-medium text-2xl text-center mt-40">
+							{t('loading')}
+						</p>
+					) : list?.length > 0 ? (
+						list?.map((card, index) => (
+							<TourCards
+								props={card}
+								key={index}
+							/>
+						))
+					) : (
+						<p className="font-medium text-2xl text-center mt-40">
+							{t('not_found')}
+						</p>
+					)}
+				</div>
+			</div>
+			<div className="pt-25">
+				{count > 0 && (
+					<Pagination
+						count={Math.ceil(count / 6)}
+						onPageChange={handlePageChange}
+						forcePage={currentPage - 1}
+					/>
+				)}
+			</div>
+		</section>
+	)
+}

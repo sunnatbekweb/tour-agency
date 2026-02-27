@@ -121,14 +121,14 @@ export default function FilterSection() {
     setSelectedCountry(country);
   };
   return (
-    <section className="filter w-full mt-[56px] md:mt-[100px]">
+    <section className="filter w-full mt-14 md:mt-25">
       <div className="container filter__container">
-        <div className="filter__top-box flex flex-row justify-start items-center gap-2 overflow-x-auto mb-[35px] px-6 md:px-9 md:gap-4 md:mb-[50px]">
+        <div className="filter__top-box flex flex-row justify-start items-center gap-2 overflow-x-auto mb-8.75 px-6 md:px-9 md:gap-4 md:mb-12.5">
           {countryData.map((item) => (
             <button
               key={item.id}
               onClick={() => handleCountrySelect(item)}
-              className={`filter__top-buttons transition-all border-[2px] border-[#B4A297] duration-500 ease-in-out flex justify-center items-center px-[18px] py-[12px] rounded-[16px] font-medium text-[16px] leading-[100%] md:text-[22px] md:px-[25px] md:py-[17px] md:rounded-[32px]
+              className={`filter__top-buttons transition-all border-2 border-[#B4A297] duration-500 ease-in-out flex justify-center items-center px-4.5 py-3 rounded-2xl font-medium text-[16px] leading-[100%] md:text-[22px] md:px-6 md:py-4 md:rounded-4xl
               ${
                 selectedCountry.id === item.id
                   ? "bg-[#B4A297] text-white"
@@ -140,16 +140,16 @@ export default function FilterSection() {
           ))}
         </div>
         <div className="filter__bottom-box w-full px-6 md:px-9">
-          <div className="filter__bottom-card flex flex-col justify-center items-start shadow-xl rounded-[14px] bg-white px-3.5 pt-3.5 pb-[44px] border-[1px] border-[#E5E5E5] md:pt-6 md:px-6 md:rounded-[16px]">
+          <div className="filter__bottom-card flex flex-col justify-center items-start shadow-xl rounded-[14px] bg-white px-3.5 pt-3.5 pb-11 border border-[#E5E5E5] md:pt-6 md:px-6 md:rounded-2xl">
             <img
               src={selectedCountry.images}
               alt={selectedCountry.description}
-              className="filter__bottom-card-image w-full rounded-[14px] h-[187px] object-cover mb-3.5 md:h-[423px] md:mb-6 lg:h-[523px] lg:mb-10"
+              className="filter__bottom-card-image w-full rounded-[14px] h-45 object-cover mb-3.5 md:h-105 md:mb-6 lg:h-130 lg:mb-10"
             />
             <h4 className="filter__bottom-card-title font-medium text-[27px] leading-[100%] mb-3.5 text-[#333333] md:text-[32px] md:mb-4">
               {selectedCountry.title}
             </h4>
-            <p className="filter__bottom-card-text w-full font-medium text-[14px] leading-[18px] text-[#878787] md:text-[24px] md:leading-[30px]">
+            <p className="filter__bottom-card-text w-full font-medium text-[14px] leading-4.5 text-[#878787] md:text-[24px] md:leading-7.5">
               {selectedCountry.text}
             </p>
           </div>

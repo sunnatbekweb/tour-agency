@@ -35,7 +35,7 @@ export const DatePriceItem = ({ props }) => {
                     {props?.[`dates_${locale}`]}
                   </h4>
                   <button
-                    className={`w-[85px] md:w-[150px] py-2 rounded-2xl text-xs md:text-lg ${props?.ticket_type === "sold_out" ? "bg-[#A5958B] font-bold text-white" : "bg-[#F0ECEA] font-medium text-[#A5958B]"}`}
+                    className={`w-20 md:w-37.5 py-2 rounded-2xl text-xs md:text-lg ${props?.ticket_type === "sold_out" ? "bg-[#A5958B] font-bold text-white" : "bg-[#F0ECEA] font-medium text-[#A5958B]"}`}
                   >
                     {props?.ticket_type === "sold_out"
                       ? t("trip_finder.trip_detail.sold_out")

@@ -23,7 +23,7 @@ export const FormSuccess = () => {
         </p>
         <Link
           href={"/"}
-          className="w-full sm:w-2/5 h-12 lg:h-[72px] flex items-center justify-center rounded-lg bg-[#A5958B] text-white text-lg lg:text-2xl text-center"
+          className="w-full sm:w-2/5 h-12 lg:h-18 flex items-center justify-center rounded-lg bg-[#A5958B] text-white text-lg lg:text-2xl text-center"
         >
           {t("button")}
         </Link>

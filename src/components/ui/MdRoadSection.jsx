@@ -7,20 +7,20 @@ export default function MdRoadSection() {
 	const t = useTranslations()
 	return (
 		<div>
-			<section className="mdRoad hidden md:mt-[60px] md:block xl:hidden">
+			<section className="mdRoad hidden md:mt-15 md:block xl:hidden">
 				<div className="container mdRoad__container md:flex md:flex-col md:justify-center md:items-center md:px-6">
 					<Link
 						className="mdRoad-logo-link"
 						href={'/'}
 					>
 						<img
-							className="mdRoad__logo-image md:inline-block md:w-[140px] md:h-[77px] md:mb-[76px]"
+							className="mdRoad__logo-image md:inline-block md:w-35 md:h-19.25 md:mb-19"
 							src={'/icons/gold__logo.svg'}
 							alt="logo"
 						/>
 					</Link>
-					<div className="mdRoad__text-boxes md:flex md:flex-col md:justify-center md:items-center md:mb-[114px]">
-						<h3 className="mdRoad__first-title text-center md:block md:font-medium md:text-[32px] md:leading-[38px] md:tracking-tighter-[-2%] md:uppercase md:text-[#323232] lg:text-[64px] lg:leading-[100%]">
+					<div className="mdRoad__text-boxes md:flex md:flex-col md:justify-center md:items-center md:mb-28.5">
+						<h3 className="mdRoad__first-title text-center md:block md:font-medium md:text-[32px] md:leading-9.5 md:tracking-tighter-[-2%] md:uppercase md:text-[#323232] lg:text-[64px] lg:leading-[100%]">
 							{locale === 'en'
 								? 'Explore and find yourself'
 								: locale === 'uz'

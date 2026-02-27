@@ -134,34 +134,34 @@ export default function FooterSmSection() {
         theme="colored"
         transition={Slide}
       />
-      <div className="top-[100px] z-[-1] relative">
+      <div className="top-25 z-[-1] relative">
         <SmRoadSection />
       </div>
       <footer
-        className="footerSmSection w-full bg-[#A98D7D] rounded-tr-[30px] rounded-tl-[30px] py-[32px]"
+        className="footerSmSection w-full bg-[#A98D7D] rounded-tr-[30px] rounded-tl-[30px] py-8"
         onSubmit={formSubmission}
       >
         <div className="container w-full footerSmSection__container flex flex-col justify-center items-center px-6">
           <div className="footerSmSection__top w-full flex flex-row justify-between items-start">
             <Link href={"/"}>
               <img
-                className="footerSmSection__top-logo inline-block w-[80px] h-[44px] md:w-[140px] md:h-[77px]"
+                className="footerSmSection__top-logo inline-block w-20 h-11 md:w-35 md:h-19.25"
                 src={"/icons/logo.svg"}
                 alt="logo"
               />
             </Link>
-            <p className="footerSmSection__top-text w-[196px] font-normal text-[14px] leading-[18px] tracking-tighter-[-2%] text-white">
+            <p className="footerSmSection__top-text w-49 font-normal text-[14px] leading-4.5 tracking-tighter-[-2%] text-white">
               {t("footer.email_text")}
             </p>
           </div>
-          <form className="footerSmSection__form w-full flex flex-row justify-center items-center mt-[24px]">
-            <div className="footerSmSection__form-box w-full flex flex-col justify-items-center items-start gap-2 h-[90px]">
+          <form className="footerSmSection__form w-full flex flex-row justify-center items-center mt-6">
+            <div className="footerSmSection__form-box w-full flex flex-col justify-items-center items-start gap-2 h-22.5">
               <div
-                className="footerSmSection__form-input-box w-full flex flex-row justify-start items-center relative bg-white rounded-[26.5px] py-[15px]"
+                className="footerSmSection__form-input-box w-full flex flex-row justify-start items-center relative bg-white rounded-[26.5px] py-4"
                 ref={emailRef}
               >
                 <input
-                  className="footerSmSection__form-email-input w-[78%] outline-none pl-[24px] font-medium text-[18px] leading-[100%] text-[#323232]"
+                  className="footerSmSection__form-email-input w-[78%] outline-none pl-6 font-medium text-[18px] leading-[100%] text-[#323232]"
                   onChange={(e) => {
                     e.preventDefault();
                     setForm({ ...form, email: e.target.value.trimStart() });
@@ -173,7 +173,7 @@ export default function FooterSmSection() {
                   value={form.email}
                   required
                 />
-                <button className="footerSmSection__form-button flex justify-center items-center rounded-[20.8px] right-[14px] absolute top-[6px] bottom-[6px] bg-[#A98D7D] px-[18px] py-[9px] active:opacity-50">
+                <button className="footerSmSection__form-button flex justify-center items-center rounded-[20.8px] right-3.5 absolute top-1.5 bottom-1.5 bg-[#A98D7D] px-4 py-2 active:opacity-50">
                   <img
                     className="footerSmSection__form-button-icon"
                     src="/icons/right__submit.svg"
@@ -186,7 +186,7 @@ export default function FooterSmSection() {
               ) : null}
             </div>
           </form>
-          <div className="footerSmSection__bottom-box w-full flex flex-row justify-between items-start mt-[24px]">
+          <div className="footerSmSection__bottom-box w-full flex flex-row justify-between items-start mt-6">
             <nav className="footerSmSection__nav flex flex-col justify-center items-start">
               <ul className="footerSmSection__list flex flex-col justify-center items-start gap-6">
                 <h4 className="footerSmSection__list-text font-medium text-[24px] leading-[100%] tracking-tighter-[-2%] text-white">
@@ -209,16 +209,16 @@ export default function FooterSmSection() {
                 ))}
               </ul>
             </nav>
-            <div className="footerSmSection__bottom-right-box flex flex-col justify-center items-start w-[151px] gap-6">
-              <h4 className="footerSmSection__bottom-right-box-title font-medium text-[19px] leading-[24px] tracking-tighter-[-2%] text-white">
+            <div className="footerSmSection__bottom-right-box flex flex-col justify-center items-start w-37.5 gap-6">
+              <h4 className="footerSmSection__bottom-right-box-title font-medium text-[19px] leading-6 tracking-tighter-[-2%] text-white">
                 {t("footer.why_travel_title")}
               </h4>
-              <q className="footerSmSection__bottom-right-box-texts font-medium text-[16px] leading-[20px] tracking-tighter-[-2%] text-white/70">
+              <q className="footerSmSection__bottom-right-box-texts font-medium text-[16px] leading-5 tracking-tighter-[-2%] text-white/70">
                 {t("footer.why_travel_text")}
               </q>
             </div>
           </div>
-          <div className="footerSmSection__icon-box flex flex-row justify-center items-center gap-[70px] mt-[24px]">
+          <div className="footerSmSection__icon-box flex flex-row justify-center items-center gap-17.5 mt-6">
             {icon.map((icons, id) => (
               <div className="footerSmSection__icon-mini-boxes" key={id}>
                 <a
@@ -228,7 +228,7 @@ export default function FooterSmSection() {
                   rel="noopener noreferrer"
                 >
                   <img
-                    className="footerSmSection__icon-images object-cover inline-block w-[48px] h-[48px]"
+                    className="footerSmSection__icon-images object-cover inline-block w-12 h-12"
                     src={icons.icons}
                     alt={icons.descriptions}
                   />
@@ -237,22 +237,22 @@ export default function FooterSmSection() {
             ))}
           </div>
           <button
-            className="footerSmSection__button mt-[44px] active:duration-100 duration-100 active:opacity-50 border-4 border-white/50 rounded-full outline-none"
+            className="footerSmSection__button mt-11 active:duration-100 duration-100 active:opacity-50 border-4 border-white/50 rounded-full outline-none"
             onClick={moveTop}
           >
             <img
-              className="footerSmSection__button-icon rotate-[316deg]"
+              className="footerSmSection__button-icon rotate-316"
               src={"/icons/white__arrow-icon.svg"}
               alt="button__icon"
             />
           </button>
-          <hr className="border-none outline-none bg-white/15 w-full h-[2px] my-[30px]" />
+          <hr className="border-none outline-none bg-white/15 w-full h-0.5 my-7.5" />
           <div className="footerSmSection__copy-box flex flex-col justify-center items-center gap-4 xl:gap-12">
-            <p className="footerSmSection__copy-text font-medium text-[19px] leading-[24px] tracking-tighter-[-2%] text-white uppercase">
+            <p className="footerSmSection__copy-text font-medium text-[19px] leading-6 tracking-tighter-[-2%] text-white uppercase">
               &copy; SRW 2025
             </p>
             <div className="footerSmSection__copy-logo-box flex flex-row justify-center items-center">
-              <p className="footerSmSection__developing-text font-medium text-[19px] leading-[24px] tracking-tighter-[-2%] text-white">
+              <p className="footerSmSection__developing-text font-medium text-[19px] leading-6 tracking-tighter-[-2%] text-white">
                 {t("footer.developed_by")}:&nbsp;&nbsp;
               </p>
               <a
@@ -261,7 +261,7 @@ export default function FooterSmSection() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <p className="footerSmSection__copy-logo-text font-medium text-[19px] leading-[24px] tracking-tighter-[-2%] text-white active:opacity-50">
+                <p className="footerSmSection__copy-logo-text font-medium text-[19px] leading-6 tracking-tighter-[-2%] text-white active:opacity-50">
                   OneSystem
                 </p>
               </a>

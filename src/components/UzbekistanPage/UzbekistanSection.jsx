@@ -106,7 +106,7 @@ export default function UzbekistanSection() {
     <section className="uzbekistan">
       <div className="container uzbekistan__container w-full flex flex-col justify-center items-center px-6 md:px-9">
         <img
-          className="uzbekistan__circle-map w-[295px] h-[295px] translate-y-[200px] relative ml-auto"
+          className="uzbekistan__circle-map w-73.75 h-73.75 translate-y-50 relative ml-auto"
           src={"/icons/uzbekistan__circle-map.svg"}
           alt=""
         />
@@ -258,7 +258,7 @@ export default function UzbekistanSection() {
         <div className="uzbekistan__top-box absolute z-50 pointer-events-none">
           {hoveredRegion && hoveredData && (
             <div
-              className="uzbekistan__bottom-card flex flex-col justify-center items-start bg-white/80 w-[287px] shadow-xl rounded-[14px] px-3.5 pt-3.5 pb-3.5 border-[#E5E5E5] border-2 transition-all duration-500 ease-in-out"
+              className="uzbekistan__bottom-card flex flex-col justify-center items-start bg-white/80 w-70 shadow-xl rounded-[14px] px-3.5 pt-3.5 pb-3.5 border-[#E5E5E5] border-2 transition-all duration-500 ease-in-out"
               style={{
                 position: "fixed",
                 top: cursorPos.y + 10,
@@ -269,12 +269,12 @@ export default function UzbekistanSection() {
               <img
                 src={hoveredData.images}
                 alt={hoveredData.title}
-                className="uzbekistan__bottom-card-image w-full rounded-[6px] h-[147px] object-cover mb-3.5"
+                className="uzbekistan__bottom-card-image w-full rounded-md h-35.5 object-cover mb-3.5"
               />
               <h4 className="uzbekistan__bottom-card-title font-medium text-[27px] leading-[100%] mb-3.5 text-[#333333]">
                 {hoveredData.title}
               </h4>
-              <p className="uzbekistan__bottom-card-text w-full font-medium text-[14px] leading-[16px] text-[#878787]">
+              <p className="uzbekistan__bottom-card-text w-full font-medium text-[14px] leading-4 text-[#878787]">
                 {hoveredData.text}
               </p>
             </div>

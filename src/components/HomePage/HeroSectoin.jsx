@@ -25,27 +25,27 @@ export default function HeroSectoin() {
 	const t = useTranslations()
 	const link = [
 		{
-			icon: 'icons/right__arrow.svg',
+			icon: '/icons/right__arrow.svg',
 			path: '/destination/uzbekistan',
 			label: t('header.destinations.uz')
 		},
 		{
-			icon: 'icons/right__arrow.svg',
+			icon: '/icons/right__arrow.svg',
 			path: '/destination/kazakhstan',
 			label: t('header.destinations.kz')
 		},
 		{
-			icon: 'icons/right__arrow.svg',
+			icon: '/icons/right__arrow.svg',
 			path: '/destination/tajikistan',
 			label: t('header.destinations.tj')
 		},
 		{
-			icon: 'icons/right__arrow.svg',
+			icon: '/icons/right__arrow.svg',
 			path: '/destination/kyrgizistain',
 			label: t('header.destinations.kg')
 		},
 		{
-			icon: 'icons/right__arrow.svg',
+			icon: '/icons/right__arrow.svg',
 			path: '/destination/turkmanistan',
 			label: t('header.destinations.tk')
 		}

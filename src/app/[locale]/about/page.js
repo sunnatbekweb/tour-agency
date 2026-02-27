@@ -17,7 +17,7 @@ export default function About() {
 	const getTripLeaders = async () => {
 		try {
 			await axios
-				.get(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/team-info/`)
+				.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}/blog/team-info/`)
 				.then(response => setTripLeaders(response.data))
 		} catch (error) {
 			console.error(error)
@@ -26,7 +26,7 @@ export default function About() {
 	const getStatistics = async () => {
 		try {
 			await axios
-				.get(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/statistics/`)
+				.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}/blog/statistics/`)
 				.then(response => setStatistics(response.data.results[0]))
 		} catch (error) {
 			console.error(error)

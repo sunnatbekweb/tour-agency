@@ -11,13 +11,13 @@ export default function CarouselSection() {
 	const t = useTranslations()
 	const data = [
 		{
-			locationIcon: 'icons/location__icon.svg',
+			locationIcon: '/icons/location__icon.svg',
 			locationText: t('home_carousel.home_carousel-text'),
-			locationImage: 'images/hystorical__samarkand.jpg',
+			locationImage: '/images/hystorical__samarkand.jpg',
 			locationDescription: 'samarkand__image',
 			locationTitle: t('home_carousel.home_carousel-title'),
 			locationPrice: '$456.99',
-			locationTickIcon: 'icons/tick__icon.svg',
+			locationTickIcon: '/icons/tick__icon.svg',
 			locationDetails: [
 				t(
 					'home_carousel.home_carousel-detail-first.home_carousel-detail-first-1'
@@ -31,13 +31,13 @@ export default function CarouselSection() {
 			]
 		},
 		{
-			locationIcon: 'icons/location__icon.svg',
+			locationIcon: '/icons/location__icon.svg',
 			locationText: t('home_carousel.home_carousel-second-text'),
-			locationImage: 'images/hystorical__samarkand.jpg',
+			locationImage: '/images/hystorical__samarkand.jpg',
 			locationDescription: 'samarkand__image',
 			locationTitle: t('home_carousel.home_carousel-second-title'),
 			locationPrice: '$456.99',
-			locationTickIcon: 'icons/tick__icon.svg',
+			locationTickIcon: '/icons/tick__icon.svg',
 			locationDetails: [
 				t(
 					'home_carousel.home_carousel-detail-second.home_carousel-detail-second-1'
@@ -51,13 +51,13 @@ export default function CarouselSection() {
 			]
 		},
 		{
-			locationIcon: 'icons/location__icon.svg',
+			locationIcon: '/icons/location__icon.svg',
 			locationText: t('home_carousel.home_carousel-third-text'),
-			locationImage: 'images/hystorical__samarkand.jpg',
+			locationImage: '/images/hystorical__samarkand.jpg',
 			locationDescription: 'samarkand__image',
 			locationTitle: t('home_carousel.home_carousel-third-title'),
 			locationPrice: '$456.99',
-			locationTickIcon: 'icons/tick__icon.svg',
+			locationTickIcon: '/icons/tick__icon.svg',
 			locationDetails: [
 				t(
 					'home_carousel.home_carousel-detail-third.home_carousel-detail-third-1'
@@ -71,13 +71,13 @@ export default function CarouselSection() {
 			]
 		},
 		{
-			locationIcon: 'icons/location__icon.svg',
+			locationIcon: '/icons/location__icon.svg',
 			locationText: t('home_carousel.home_carousel-fourth-text'),
-			locationImage: 'images/hystorical__samarkand.jpg',
+			locationImage: '/images/hystorical__samarkand.jpg',
 			locationDescription: 'samarkand__image',
 			locationTitle: t('home_carousel.home_carousel-fourth-title'),
 			locationPrice: '$456.99',
-			locationTickIcon: 'icons/tick__icon.svg',
+			locationTickIcon: '/icons/tick__icon.svg',
 			locationDetails: [
 				t(
 					'home_carousel.home_carousel-detail-fourth.home_carousel-detail-fourth-1'
@@ -91,13 +91,13 @@ export default function CarouselSection() {
 			]
 		},
 		{
-			locationIcon: 'icons/location__icon.svg',
+			locationIcon: '/icons/location__icon.svg',
 			locationText: t('home_carousel.home_carousel-fifth-text'),
-			locationImage: 'images/hystorical__samarkand.jpg',
+			locationImage: '/images/hystorical__samarkand.jpg',
 			locationDescription: 'samarkand__image',
 			locationTitle: t('home_carousel.home_carousel-fifth-title'),
 			locationPrice: '$456.99',
-			locationTickIcon: 'icons/tick__icon.svg',
+			locationTickIcon: '/icons/tick__icon.svg',
 			locationDetails: [
 				t(
 					'home_carousel.home_carousel-detail-fifth.home_carousel-detail-fifth-1'
@@ -111,13 +111,13 @@ export default function CarouselSection() {
 			]
 		},
 		{
-			locationIcon: 'icons/location__icon.svg',
+			locationIcon: '/icons/location__icon.svg',
 			locationText: t('home_carousel.home_carousel-sixth-text'),
-			locationImage: 'images/hystorical__samarkand.jpg',
+			locationImage: '/images/hystorical__samarkand.jpg',
 			locationDescription: 'samarkand__image',
 			locationTitle: t('home_carousel.home_carousel-sixth-title'),
 			locationPrice: '$456.99',
-			locationTickIcon: 'icons/tick__icon.svg',
+			locationTickIcon: '/icons/tick__icon.svg',
 			locationDetails: [
 				t(
 					'home_carousel.home_carousel-detail-sixth.home_carousel-detail-sixth-1'

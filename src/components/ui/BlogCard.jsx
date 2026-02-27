@@ -17,7 +17,7 @@ export const BlogCard = ({ post }) => {
 
   return (
     <div className="p-4 pb-6 border border-[#EBEBEB] rounded-4xl shadow-xl">
-      <div className="h-[200px] xl:h-[320px] rounded-xl lg:rounded-3xl overflow-hidden">
+      <div className="h-50 xl:h-80 rounded-xl lg:rounded-3xl overflow-hidden">
         <Image
           src={post.image}
           width={300}
@@ -39,7 +39,7 @@ export const BlogCard = ({ post }) => {
             {formatDate(post.created_at)}
           </span>
           <Link href={`/blog/${post.id}`} className="w-1/2">
-            <button className="w-full h-[48px] bg-[#B4A297] rounded-4xl font-medium text-white text-base">
+            <button className="w-full h-12 bg-[#B4A297] rounded-4xl font-medium text-white text-base">
               {t("blog.read_more")}
             </button>
           </Link>
